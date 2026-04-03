@@ -212,9 +212,21 @@ async function applyView() {
 }
 
 async function addHeatmap() {
-  var fname = currentLayer === 'all' ? 'data/heat_all.json' : 'data/heat_'+currentLayer+'.json';
   try {
-    var pts = await fetch(fname).then(function(r){return r.json()});
+    var pts;
+    if (currentLayer === 'all') {
+      var layers = ['crime','traffic','disaster'];
+      var allPts = [];
+      for (var i=0; i<layers.length; i++) {
+        try {
+          var lpts = await fetch('data/heat_'+layers[i]+'.json').then(function(r){return r.json()});
+          allPts = allPts.concat(lpts);
+        } catch(e2){}
+      }
+      pts = allPts;
+    } else {
+      pts = await fetch('data/heat_'+currentLayer+'.json').then(function(r){return r.json()});
+    }
     var gradients = {
       all: {0:'#28b870',0.3:'#80c040',0.5:'#d8b840',0.7:'#e07820',1:'#e04040'},
       crime: {0:'#ffe0e0',0.4:'#e84040',1:'#800000'},
