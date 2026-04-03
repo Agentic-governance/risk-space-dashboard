@@ -181,7 +181,11 @@ async function init() {
         var subMap = {tb:'theft_bicycle',tc:'theft_car_breakin',tp:'theft_parts',
           tm:'theft_motorcycle',tv:'theft_vehicle',tvn:'theft_vending',
           ts:'theft_purse_snatching',ci:'collision_injury',cf:'collision_fatal',
-          co:'collision',q:'quake'};
+          co:'collision',q:'quake',thef:'theft',coll:'collision',crim:'crime_other',
+          susp:'suspicious_person',assa:'assault',robb:'robbery',frau:'fraud',
+          quak:'quake',wild:'wildlife',sp:'suspicious_person',sa:'suspicious_person_approach',
+          ss:'suspicious_person_stalking',sg:'sexual_crime_groping',ro:'robbery',
+          wp:'weapons',wb:'wildlife_bear',wi:'wildlife_boar',ps:'purse_snatching',th:'theft'};
         return arr.map(function(a){return{lat:a[0],lon:a[1],layer:layerMap[a[2]]||a[2],
           subtype:subMap[a[3]]||a[3],severity:a[4],pref:a[5],risk_score:0};});
       }),
