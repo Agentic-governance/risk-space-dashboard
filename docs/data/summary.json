@@ -1,0 +1,17 @@
+{
+  "total": 419972,
+  "layers": {
+    "crime": 369756,
+    "traffic": 50000,
+    "disaster": 216
+  },
+  "grid_cells": 3996,
+  "data_sources": {
+    "tokyo_geocoded": 28936,
+    "prefectures_22": 150999,
+    "synthetic_25_pref": 189821,
+    "traffic": 50000,
+    "disaster": 216
+  },
+  "generated_at": "2026-04-03T08:21:38.377299"
+}
