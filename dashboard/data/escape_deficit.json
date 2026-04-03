@@ -1,0 +1,302 @@
+[
+  {
+    "cell_id": "17319_56999_0.0025",
+    "center": [
+      142.49875,
+      43.29875
+    ],
+    "risk_score": 0.76,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.056599,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17320_56998_0.0025",
+    "center": [
+      142.49625,
+      43.30125
+    ],
+    "risk_score": 0.76,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.056599,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17322_57000_0.0025",
+    "center": [
+      142.50125,
+      43.30625
+    ],
+    "risk_score": 0.748,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.055706,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17319_56998_0.0025",
+    "center": [
+      142.49625,
+      43.29875
+    ],
+    "risk_score": 0.736,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.054812,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17318_56999_0.0025",
+    "center": [
+      142.49875,
+      43.29625
+    ],
+    "risk_score": 0.73,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.054365,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17321_56998_0.0025",
+    "center": [
+      142.49625,
+      43.30375
+    ],
+    "risk_score": 0.724,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.053918,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17321_56999_0.0025",
+    "center": [
+      142.49875,
+      43.30375
+    ],
+    "risk_score": 0.706,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.052578,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17320_56999_0.0025",
+    "center": [
+      142.49875,
+      43.30125
+    ],
+    "risk_score": 0.706,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.052578,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17318_57000_0.0025",
+    "center": [
+      142.50125,
+      43.29625
+    ],
+    "risk_score": 0.7,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.052131,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17320_56996_0.0025",
+    "center": [
+      142.49125,
+      43.30125
+    ],
+    "risk_score": 0.7,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.052131,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17318_56998_0.0025",
+    "center": [
+      142.49625,
+      43.29625
+    ],
+    "risk_score": 0.676,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.050344,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17317_57000_0.0025",
+    "center": [
+      142.50125,
+      43.29375
+    ],
+    "risk_score": 0.67,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.049897,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17322_56998_0.0025",
+    "center": [
+      142.49625,
+      43.30625
+    ],
+    "risk_score": 0.64,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.047663,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17317_56997_0.0025",
+    "center": [
+      142.49375,
+      43.29375
+    ],
+    "risk_score": 0.628,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.046769,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17317_56998_0.0025",
+    "center": [
+      142.49625,
+      43.29375
+    ],
+    "risk_score": 0.616,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.045875,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17316_56997_0.0025",
+    "center": [
+      142.49375,
+      43.29125
+    ],
+    "risk_score": 0.598,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.044535,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17318_56997_0.0025",
+    "center": [
+      142.49375,
+      43.29625
+    ],
+    "risk_score": 0.592,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.044088,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17322_56997_0.0025",
+    "center": [
+      142.49375,
+      43.30625
+    ],
+    "risk_score": 0.592,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.044088,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17320_56997_0.0025",
+    "center": [
+      142.49375,
+      43.30125
+    ],
+    "risk_score": 0.592,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.044088,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  },
+  {
+    "cell_id": "17321_56997_0.0025",
+    "center": [
+      142.49375,
+      43.30375
+    ],
+    "risk_score": 0.586,
+    "severity_score": 0.4,
+    "p_escape": 0.0691,
+    "expected_harm": 0.043641,
+    "haven_count_500m": 0,
+    "haven_count_2km": 0,
+    "nearest_haven_dist": null,
+    "nearest_haven_type": null
+  }
+]
