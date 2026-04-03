@@ -1,5 +1,5 @@
 {
-  "total": 419972,
+  "total": 420002,
   "layers": {
     "crime": 369756,
     "traffic": 50000,
@@ -13,5 +13,6 @@
     "traffic": 50000,
     "disaster": 216
   },
-  "generated_at": "2026-04-03T08:21:38.377299"
+  "generated_at": "2026-04-03T08:21:38.377299",
+  "realtime_fushinsha": 30
 }
