@@ -1,0 +1,14 @@
+{
+  "name": "risk-space-line-bot",
+  "version": "1.0.0",
+  "description": "Risk Space LINE Bot — location-based risk alerts via LINE Messaging API",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^3.99.0"
+  }
+}

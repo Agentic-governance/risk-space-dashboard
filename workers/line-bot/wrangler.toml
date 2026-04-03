@@ -1,0 +1,20 @@
+name = "risk-space-line-bot"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# --- KV namespace binding ---
+[[kv_namespaces]]
+binding = "LINE_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# --- Environment variables ---
+[vars]
+MCP_BASE_URL = "https://risk-space-mcp.YOUR_SUBDOMAIN.workers.dev"
+
+# --- Secrets (set via `wrangler secret put`) ---
+# LINE_CHANNEL_SECRET       — LINE Developers Console → Channel secret
+# LINE_CHANNEL_ACCESS_TOKEN — LINE Developers Console → Channel access token (long-lived)
+#
+# To set:
+#   wrangler secret put LINE_CHANNEL_SECRET
+#   wrangler secret put LINE_CHANNEL_ACCESS_TOKEN
