@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Risk Space MCP — Risk Distribution Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+:root{
+  --bg:#09111a;--s1:#0f1c2e;--s2:#162640;--bd:#1a3050;
+  --text:#d8eaf8;--muted:#4a6880;--dim:#2a4060;
+  --cyan:#00c8e8;--red:#e04040;--orange:#e07820;
+  --yellow:#d8b840;--green:#28b870;--blue:#3878d8;
+  --purple:#8860d8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo',sans-serif;font-size:12px;height:100vh;display:flex;flex-direction:column;overflow:hidden}
+#hd{display:flex;align-items:center;justify-content:space-between;padding:7px 14px;background:var(--s1);border-bottom:1px solid var(--bd);flex-shrink:0;height:36px}
+#hd-title{font-size:12px;font-weight:600;color:var(--cyan);letter-spacing:1px}
+.hd-r{display:flex;align-items:center;gap:10px}
+.tag{font-size:9px;padding:2px 7px;border-radius:3px;font-weight:600;border:1px solid}
+.tag-live{border-color:var(--green);color:var(--green)}
+.tag-warn{border-color:var(--yellow);color:var(--yellow)}
+#ts{font-size:10px;color:var(--muted)}
+#view-bar{display:flex;align-items:center;gap:4px;padding:5px 10px;background:var(--s1);border-bottom:1px solid var(--bd);flex-shrink:0;height:32px;flex-wrap:wrap}
+.vb-label{font-size:10px;color:var(--muted);margin-right:4px}
+.vb-btn{font-size:10px;padding:2px 10px;border-radius:3px;border:1px solid var(--bd);background:transparent;color:var(--muted);cursor:pointer;transition:all .15s}
+.vb-btn.on{border-color:var(--cyan);color:var(--cyan);background:rgba(0,200,232,0.08)}
+.sep{width:1px;height:16px;background:var(--bd);margin:0 6px}
+.vb-btn.active-layer{border-color:var(--yellow);color:var(--yellow);background:rgba(216,184,64,0.08)}
+#main{display:flex;flex:1;overflow:hidden}
+#lp{width:220px;flex-shrink:0;background:var(--s1);border-right:1px solid var(--bd);display:flex;flex-direction:column;overflow-y:auto}
+#lp::-webkit-scrollbar{width:3px}
+#lp::-webkit-scrollbar-thumb{background:var(--bd)}
+.lp-sec{padding:8px 10px;border-bottom:1px solid var(--bd)}
+.lp-ttl{font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.hs{display:flex;align-items:center;gap:6px;padding:4px 0;border-bottom:1px solid var(--dim);cursor:pointer;border-radius:3px;transition:background .1s}
+.hs:last-child{border:none}
+.hs:hover{background:var(--s2);margin:0 -10px;padding:4px 10px}
+.hs-rk{font-size:9px;color:var(--muted);width:14px;flex-shrink:0}
+.hs-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.hs-body{flex:1}
+.hs-place{font-size:10px}
+.hs-meta{font-size:9px;color:var(--muted)}
+.hs-sc{font-size:10px;font-weight:600}
+.leg-grad{height:6px;border-radius:3px;background:linear-gradient(to right,#28b870,#d8b840,#e04040);margin:5px 0}
+.leg-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted)}
+.leg-lines{margin-top:8px}
+.leg-row{display:flex;align-items:center;gap:6px;padding:2px 0;font-size:10px;color:var(--muted)}
+.leg-line{width:24px;height:2px;flex-shrink:0}
+#map-wrap{flex:1;position:relative;overflow:hidden}
+#map{width:100%;height:100%}
+#mc{position:absolute;bottom:20px;left:10px;z-index:1000;display:flex;flex-direction:column;gap:4px}
+.mc-btn{background:var(--s1);border:1px solid var(--bd);color:var(--text);padding:4px 10px;border-radius:3px;cursor:pointer;font-size:10px;transition:all .15s;text-align:center}
+.mc-btn:hover,.mc-btn.on{border-color:var(--cyan);color:var(--cyan)}
+#rp{width:260px;flex-shrink:0;background:var(--s1);border-left:1px solid var(--bd);display:flex;flex-direction:column;overflow-y:auto}
+#rp::-webkit-scrollbar{width:3px}
+#rp::-webkit-scrollbar-thumb{background:var(--bd)}
+.rp-sec{padding:10px 12px;border-bottom:1px solid var(--bd)}
+.rp-ttl{font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+#rp-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;padding:20px;text-align:center;color:var(--muted)}
+#rp-empty .icon{font-size:32px;margin-bottom:10px;opacity:0.4}
+#rp-empty p{font-size:11px;line-height:1.6}
+.risk-level-bar{height:8px;border-radius:4px;margin:6px 0 4px;position:relative;overflow:hidden;background:linear-gradient(to right,#28b870,#d8b840,#e04040)}
+.risk-indicator{position:absolute;top:-3px;width:14px;height:14px;border-radius:50%;border:2px solid #fff;background:var(--bg);transition:left .3s}
+.reason-card{background:var(--s2);border-radius:4px;padding:8px 10px;margin-bottom:6px;border-left:3px solid}
+.reason-card.crime{border-color:var(--red)}
+.reason-card.traffic{border-color:var(--orange)}
+.reason-card.disaster{border-color:var(--blue)}
+.reason-card.all{border-color:var(--green)}
+.reason-title{font-size:11px;font-weight:600;margin-bottom:4px}
+.reason-detail{font-size:10px;color:var(--muted);line-height:1.6}
+.stat-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid var(--dim);font-size:11px}
+.stat-row:last-child{border:none}
+.stat-k{color:var(--muted)}
+.stat-v{font-weight:600}
+.time-chart-wrap{height:60px;position:relative}
+.src-badge{display:inline-block;font-size:9px;padding:2px 6px;border-radius:3px;border:1px solid var(--bd);color:var(--muted);margin:2px}
+.leaflet-popup-content-wrapper{background:var(--s1) !important;border:1px solid var(--bd) !important;border-radius:5px !important;color:var(--text) !important;box-shadow:0 4px 20px rgba(0,0,0,0.5) !important}
+.leaflet-popup-tip{background:var(--s1) !important}
+.lp-layer{font-size:9px;padding:2px 6px;border-radius:3px;display:inline-block;margin-bottom:4px}
+.lp-score{font-size:22px;font-weight:700;line-height:1}
+.lp-desc{font-size:11px;color:var(--muted);margin-top:4px}
+</style>
+</head>
+<body>
+
+<div id="hd">
+  <div id="hd-title">&#x2B21; RISK SPACE MCP &mdash; Risk Distribution Map</div>
+  <div class="hd-r">
+    <span class="tag tag-live">&#x25CF; LIVE</span>
+    <span class="tag tag-warn" id="geocode-tag">犯罪ジオコーディング進行中</span>
+    <span id="ts"></span>
+  </div>
+</div>
+
+<div id="view-bar">
+  <span class="vb-label">表示：</span>
+  <button class="vb-btn on" id="vb-heat" onclick="setView('heat')">ヒートマップ</button>
+  <button class="vb-btn" id="vb-contour" onclick="setView('contour')">等高線</button>
+  <button class="vb-btn" id="vb-both" onclick="setView('both')">重ね合わせ</button>
+  <button class="vb-btn" id="vb-points" onclick="setView('points')">ポイント</button>
+  <div class="sep"></div>
+  <span class="vb-label">レイヤー：</span>
+  <button class="vb-btn active-layer" id="vbl-all" onclick="setLayer('all')">全体</button>
+  <button class="vb-btn" id="vbl-crime" onclick="setLayer('crime')">犯罪</button>
+  <button class="vb-btn" id="vbl-traffic" onclick="setLayer('traffic')">交通</button>
+  <button class="vb-btn" id="vbl-disaster" onclick="setLayer('disaster')">災害</button>
+  <div class="sep"></div>
+  <button class="vb-btn" onclick="map.flyTo([36.2,138.2],6)">全国</button>
+  <button class="vb-btn" onclick="map.flyTo([35.681,139.767],11)">東京</button>
+  <button class="vb-btn" onclick="map.flyTo([34.693,135.502],11)">大阪</button>
+  <button class="vb-btn" onclick="map.flyTo([35.183,136.906],11)">名古屋</button>
+</div>
+
+<div id="main">
+  <div id="lp">
+    <div class="lp-sec">
+      <div class="lp-ttl">Hotspot Top 10</div>
+      <div id="hs-list"></div>
+    </div>
+    <div class="lp-sec">
+      <div class="lp-ttl">凡例 / Legend</div>
+      <div class="leg-grad"></div>
+      <div class="leg-lbl"><span>低リスク</span><span>中リスク</span><span>高リスク</span></div>
+      <div class="leg-lines" id="contour-legend">
+        <div style="font-size:9px;color:var(--muted);margin-bottom:4px">等高線レベル</div>
+        <div class="leg-row"><div class="leg-line" style="background:#e04040;height:3px"></div>スコア 0.8以上</div>
+        <div class="leg-row"><div class="leg-line" style="background:#e07820"></div>スコア 0.6</div>
+        <div class="leg-row"><div class="leg-line" style="background:#d8b840"></div>スコア 0.4</div>
+        <div class="leg-row"><div class="leg-line" style="background:#28b870"></div>スコア 0.2</div>
+      </div>
+    </div>
+    <div class="lp-sec" style="flex:1">
+      <div class="lp-ttl">Data Status</div>
+      <div id="lp-status"></div>
+    </div>
+  </div>
+
+  <div id="map-wrap">
+    <div id="map"></div>
+    <div id="mc">
+      <div class="mc-btn" onclick="map.flyTo([35.681,139.767],13)">渋谷/新宿</div>
+      <div class="mc-btn" onclick="map.flyTo([35.172,136.882],12)">名駅</div>
+      <div class="mc-btn" onclick="map.flyTo([33.589,130.421],12)">博多</div>
+    </div>
+  </div>
+
+  <div id="rp">
+    <div id="rp-empty">
+      <div class="icon">&#x2299;</div>
+      <p>地図上の地点をクリックすると<br>そのエリアのリスク解説が<br>ここに表示されます</p>
+    </div>
+    <div id="rp-content" style="display:none"></div>
+  </div>
+</div>
+
+<script>
+var map = L.map('map', {center:[36.2,138.2],zoom:6,zoomControl:false});
+L.control.zoom({position:'topright'}).addTo(map);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{
+  attribution:'&copy; OpenStreetMap &copy; CARTO', maxZoom:18
+}).addTo(map);
+
+var eventsData = [], gridData = [], contourMatrix = null;
+var heatLayer = null, contourLayer = null, pointsLayer = null;
+var currentView = 'heat', currentLayer = 'all';
+var miniChart = null;
+var contourRenderFn = null;
+
+async function init() {
+  document.getElementById('ts').textContent =
+    new Date().toLocaleString('ja-JP',{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});
+  try {
+    var results = await Promise.all([
+      fetch('data/events_compact.json').then(function(r){return r.json()}).then(function(arr){
+        var layerMap = {c:'crime',t:'traffic',d:'disaster',w:'weather'};
+        var subMap = {tb:'theft_bicycle',tc:'theft_car_breakin',tp:'theft_parts',
+          tm:'theft_motorcycle',tv:'theft_vehicle',tvn:'theft_vending',
+          ts:'theft_purse_snatching',ci:'collision_injury',cf:'collision_fatal',
+          co:'collision',q:'quake'};
+        return arr.map(function(a){return{lat:a[0],lon:a[1],layer:layerMap[a[2]]||a[2],
+          subtype:subMap[a[3]]||a[3],severity:a[4],pref:a[5],risk_score:0};});
+      }),
+      fetch('data/grid_risk.json').then(function(r){return r.json()}),
+      fetch('data/contour_matrix.json').then(function(r){return r.json()}),
+      fetch('data/summary.json').then(function(r){return r.json()}),
+    ]);
+    eventsData = results[0];
+    gridData = results[1];
+    contourMatrix = results[2];
+    buildHotspotList(gridData);
+    buildStatus(results[3]);
+    await applyView();
+    map.on('click', onMapClick);
+    console.log('イベント: '+eventsData.length+'件, グリッド: '+gridData.length+'セル');
+  } catch(e) {
+    console.error(e);
+    document.getElementById('rp-empty').querySelector('p').textContent =
+      'data/events_compact.json が見つかりません。scripts/prepare_map_data.py を実行してください。';
+  }
+}
+
+async function applyView() {
+  clearLayers();
+  if(currentView === 'heat' || currentView === 'both') await addHeatmap();
+  if(currentView === 'contour' || currentView === 'both') addContourLines();
+  if(currentView === 'points') addPoints();
+}
+
+async function addHeatmap() {
+  var fname = currentLayer === 'all' ? 'data/heat_all.json' : 'data/heat_'+currentLayer+'.json';
+  try {
+    var pts = await fetch(fname).then(function(r){return r.json()});
+    var gradients = {
+      all: {0:'#28b870',0.3:'#80c040',0.5:'#d8b840',0.7:'#e07820',1:'#e04040'},
+      crime: {0:'#ffe0e0',0.4:'#e84040',1:'#800000'},
+      traffic: {0:'#fff0d0',0.4:'#e07820',1:'#804000'},
+      disaster: {0:'#d0e8ff',0.4:'#3878d8',1:'#003090'},
+    };
+    heatLayer = L.heatLayer(pts,{
+      radius: currentView==='both' ? 18 : 25,
+      blur: currentView==='both' ? 15 : 20,
+      max:1.0,
+      gradient: gradients[currentLayer] || gradients.all,
+      minOpacity: currentView==='both' ? 0.3 : 0.5,
+    }).addTo(map);
+  } catch(e) { console.warn(fname+' なし'); }
+}
+
+function addContourLines() {
+  if(!contourMatrix) return;
+  var cm = contourMatrix;
+  var svg = d3.select(map.getPanes().overlayPane).append('svg')
+    .attr('id','contour-svg')
+    .style('position','absolute')
+    .style('width','100%').style('height','100%')
+    .style('pointer-events','none')
+    .style('overflow','visible');
+
+  var levels = [0.2, 0.4, 0.6, 0.8];
+  var colors = ['#28b870','#d8b840','#e07820','#e04040'];
+  var widths = [1, 1.5, 2, 2.5];
+  var dashes = ['4,4','3,3','',''];
+
+  var flat = [];
+  for(var i=0;i<cm.matrix.length;i++){
+    for(var j=0;j<cm.matrix[i].length;j++){
+      flat.push(cm.matrix[i][j]);
+    }
+  }
+
+  var contours = d3.contours()
+    .size([cm.lon_steps, cm.lat_steps])
+    .thresholds(levels)(flat);
+
+  function renderContours() {
+    svg.selectAll('path').remove();
+    contours.forEach(function(c, ci) {
+      var path = d3.geoPath().projection(
+        d3.geoTransform({
+          point: function(lon_idx, lat_idx) {
+            var lat = cm.lat_min + lat_idx * cm.grid;
+            var lon = cm.lon_min + lon_idx * cm.grid;
+            var pt = map.latLngToLayerPoint([lat, lon]);
+            this.stream.point(pt.x, pt.y);
+          }
+        })
+      );
+      svg.append('path')
+        .datum(c)
+        .attr('d', path)
+        .attr('fill', 'none')
+        .attr('stroke', colors[ci] || '#888')
+        .attr('stroke-width', widths[ci] || 1)
+        .attr('stroke-dasharray', dashes[ci] || '')
+        .attr('opacity', currentView === 'both' ? 0.7 : 0.9);
+    });
+  }
+
+  renderContours();
+  contourRenderFn = renderContours;
+  map.on('zoom move', contourRenderFn);
+  contourLayer = { remove: function() {
+    svg.remove();
+    if(contourRenderFn) map.off('zoom move', contourRenderFn);
+    contourRenderFn = null;
+  }};
+}
+
+function addPoints() {
+  var filtered = currentLayer === 'all' ? eventsData
+    : eventsData.filter(function(e) { return e.layer === currentLayer; });
+  var colors = {crime:'#e04040',traffic:'#e07820',disaster:'#3878d8',weather:'#00c8e8'};
+  var MAX = 8000;
+  var sample = filtered.length > MAX
+    ? filtered.slice().sort(function(){return Math.random()-.5}).slice(0,MAX) : filtered;
+  pointsLayer = L.layerGroup();
+  sample.forEach(function(e) {
+    var col = colors[e.layer] || '#888';
+    L.circleMarker([e.lat,e.lon],{
+      radius: Math.max(2,e.severity*1.2),
+      fillColor:col, color:col, weight:0, fillOpacity:0.5,
+    })
+    .bindPopup(makePopupHTML(e, col))
+    .addTo(pointsLayer);
+  });
+  pointsLayer.addTo(map);
+}
+
+function clearLayers() {
+  if(heatLayer){map.removeLayer(heatLayer);heatLayer=null}
+  if(contourLayer){contourLayer.remove();contourLayer=null}
+  if(pointsLayer){map.removeLayer(pointsLayer);pointsLayer=null}
+  d3.select('#contour-svg').remove();
+  if(contourRenderFn){map.off('zoom move',contourRenderFn);contourRenderFn=null}
+}
+
+function setView(v) {
+  currentView = v;
+  ['heat','contour','both','points'].forEach(function(id){
+    document.getElementById('vb-'+id).classList.toggle('on', id===v);
+  });
+  applyView();
+}
+
+function setLayer(l) {
+  currentLayer = l;
+  ['all','crime','traffic','disaster'].forEach(function(id){
+    document.getElementById('vbl-'+id).classList.toggle('active-layer', id===l);
+  });
+  applyView();
+}
+
+function onMapClick(e) {
+  var lat = e.latlng.lat, lng = e.latlng.lng;
+  var nearest = null, minDist = Infinity;
+  gridData.forEach(function(cell) {
+    var d = Math.sqrt(Math.pow(cell.lat-lat,2) + Math.pow(cell.lon-lng,2));
+    if(d < minDist) { minDist = d; nearest = cell; }
+  });
+  var nearby = eventsData.filter(function(ev) {
+    return Math.sqrt(Math.pow(ev.lat-lat,2) + Math.pow(ev.lon-lng,2)) < 0.1;
+  });
+  showRiskPanel(lat, lng, nearest, nearby);
+}
+
+function translateSubtype(s) {
+  var m = {
+    theft_bicycle:'自転車盗',theft_purse_snatching:'ひったくり',
+    theft_vehicle:'自動車盗',theft_car_parts:'車上ねらい',
+    theft_motorcycle:'バイク盗',theft_vending_machine:'自販機ねらい',
+    suspicious_person:'不審者',crime_other:'その他犯罪',
+    collision_fatal:'死亡事故',collision_injury:'負傷事故',collision:'交通事故',
+    quake:'地震',typhoon:'台風',warning:'警報',observation:'観測',
+  };
+  return m[s] || s;
+}
+
+function showRiskPanel(lat, lng, cell, nearby) {
+  document.getElementById('rp-empty').style.display = 'none';
+  var panel = document.getElementById('rp-content');
+  panel.style.display = 'block';
+
+  var score = cell ? cell.risk_score : 0;
+  var scoreColor = score>=0.7?'var(--red)':score>=0.5?'var(--orange)':score>=0.3?'var(--yellow)':'var(--green)';
+  var riskLabel = score>=0.7?'高リスク':score>=0.5?'中〜高リスク':score>=0.3?'中リスク':'低リスク';
+
+  var layerCounts = {};
+  nearby.forEach(function(e) { layerCounts[e.layer] = (layerCounts[e.layer]||0)+1; });
+  var subtypeCounts = {};
+  nearby.forEach(function(e) { subtypeCounts[e.subtype] = (subtypeCounts[e.subtype]||0)+1; });
+  var topSubtypes = Object.entries(subtypeCounts).sort(function(a,b){return b[1]-a[1]}).slice(0,5);
+
+  var hourBins = new Array(24).fill(0);
+  nearby.forEach(function(e) {
+    var t = e.occurred_at;
+    if(t && t.indexOf('T')>-1) {
+      var h = parseInt(t.split('T')[1].split(':')[0]);
+      if(!isNaN(h)) hourBins[h]++;
+    }
+  });
+
+  var reasons = [];
+  if(layerCounts.traffic > 0) {
+    reasons.push({
+      layer:'traffic',
+      title:'交通事故リスク（'+layerCounts.traffic+'件）',
+      detail: layerCounts.traffic >= 10
+        ? 'このエリアは交通事故の発生密度が高く、特に交差点付近での衝突事故が集中しています。夜間・雨天時は特に注意が必要です。'
+        : '周辺'+layerCounts.traffic+'件の交通事故データが確認されています。'
+    });
+  }
+  if(layerCounts.crime > 0) {
+    var crimeDetail = topSubtypes.filter(function(x){return x[0].indexOf('theft')===0||x[0]==='suspicious_person'});
+    reasons.push({
+      layer:'crime',
+      title:'犯罪リスク（'+layerCounts.crime+'件）',
+      detail: crimeDetail.length > 0
+        ? '主な発生種別：'+crimeDetail.map(function(x){return translateSubtype(x[0])+' '+x[1]+'件'}).join('、')+'。帰宅時間帯（17〜21時）に集中する傾向があります。'
+        : '犯罪発生情報'+layerCounts.crime+'件が記録されています。'
+    });
+  }
+  if(layerCounts.disaster > 0) {
+    reasons.push({
+      layer:'disaster',
+      title:'災害リスク（'+layerCounts.disaster+'件）',
+      detail:'地震活動または気象警報の発令履歴があるエリアです。避難場所と経路を事前に確認してください。'
+    });
+  }
+  if(reasons.length === 0) {
+    reasons.push({layer:'all',title:'リスクデータ少（安全寄り）',detail:'現在収集されているデータでは、このエリアのリスク事象は少数です。'});
+  }
+
+  var reasonsHTML = reasons.map(function(r) {
+    return '<div class="reason-card '+r.layer+'"><div class="reason-title">'+r.title+'</div><div class="reason-detail">'+r.detail+'</div></div>';
+  }).join('');
+
+  var sources = {};
+  nearby.forEach(function(e){sources[e.layer]=1});
+  var srcMap = {crime:'警視庁',traffic:'警察庁',disaster:'気象庁',weather:'気象庁アメダス'};
+  var srcBadges = Object.keys(sources).map(function(s){return '<span class="src-badge">'+( srcMap[s]||s)+'</span>'}).join('');
+
+  var layerStatsHTML = Object.entries(layerCounts).map(function(kv){
+    var labels = {crime:'犯罪',traffic:'交通事故',disaster:'地震・災害',weather:'気象'};
+    return '<div class="stat-row"><span class="stat-k">'+(labels[kv[0]]||kv[0])+'</span><span class="stat-v">'+kv[1]+'件</span></div>';
+  }).join('');
+
+  var subtypeHTML = topSubtypes.length>0 ? '<div class="rp-sec"><div class="rp-ttl">主な発生種別 Top5</div>'+
+    topSubtypes.map(function(kv){return '<div class="stat-row"><span class="stat-k">'+translateSubtype(kv[0])+'</span><span class="stat-v">'+kv[1]+'件</span></div>'}).join('')+'</div>' : '';
+
+  panel.innerHTML =
+    '<div class="rp-sec">'+
+      '<div class="rp-ttl">エリアリスクスコア</div>'+
+      '<div style="font-size:28px;font-weight:700;color:'+scoreColor+'">'+score.toFixed(3)+'</div>'+
+      '<div style="font-size:11px;color:'+scoreColor+';margin-top:2px">'+riskLabel+'</div>'+
+      '<div class="risk-level-bar"><div class="risk-indicator" style="left:calc('+score*100+'% - 7px)"></div></div>'+
+      '<div style="font-size:9px;color:var(--muted)">'+lat.toFixed(4)+'&deg;N, '+lng.toFixed(4)+'&deg;E &middot; 半径約10km圏内 '+nearby.length+'件</div>'+
+    '</div>'+
+    '<div class="rp-sec"><div class="rp-ttl">&#x26A0; なぜ危険か / Risk Reasons</div>'+reasonsHTML+'</div>'+
+    '<div class="rp-sec"><div class="rp-ttl">詳細統計</div>'+
+      '<div class="stat-row"><span class="stat-k">総イベント数</span><span class="stat-v">'+nearby.length+'件</span></div>'+
+      layerStatsHTML+
+      (cell?'<div class="stat-row"><span class="stat-k">平均severity</span><span class="stat-v">'+cell.avg_severity+'/5</span></div>'+
+            '<div class="stat-row"><span class="stat-k">最高severity</span><span class="stat-v">'+cell.max_severity+'/5</span></div>':'')+
+    '</div>'+
+    subtypeHTML+
+    (nearby.length>0?'<div class="rp-sec"><div class="rp-ttl">時間帯別発生分布</div><div class="time-chart-wrap"><canvas id="time-chart"></canvas></div></div>':'')+
+    '<div class="rp-sec"><div class="rp-ttl">データ出典</div><div>'+srcBadges+'</div>'+
+      '<div style="font-size:9px;color:var(--muted);margin-top:6px">確率分布はガウシアンカーネル（&sigma;=30km）で平滑化。severity加重。</div></div>';
+
+  if(nearby.length > 0) {
+    setTimeout(function(){
+      var ctx = document.getElementById('time-chart');
+      if(!ctx) return;
+      if(miniChart) miniChart.destroy();
+      miniChart = new Chart(ctx,{
+        type:'bar',
+        data:{
+          labels:Array.from({length:24},function(_,i){return i%6===0?i+'時':''}),
+          datasets:[{
+            data:hourBins,
+            backgroundColor:hourBins.map(function(_,i){
+              if(i>=22||i<6) return '#3878d8';
+              if(i>=6&&i<9) return '#d8b840';
+              if(i>=17&&i<21) return '#e04040';
+              return '#4a6880';
+            }),
+            borderRadius:2,
+          }]
+        },
+        options:{responsive:true,maintainAspectRatio:false,
+          plugins:{legend:{display:false}},
+          scales:{
+            x:{ticks:{color:'#4a6880',font:{size:8}},grid:{display:false}},
+            y:{ticks:{color:'#4a6880',font:{size:8}},grid:{color:'rgba(255,255,255,0.05)'}}
+          }
+        }
+      });
+    }, 100);
+  }
+}
+
+function makePopupHTML(e, col) {
+  return '<span class="lp-layer" style="background:'+col+'20;color:'+col+'">'+e.layer+'</span>'+
+    '<div class="lp-score" style="color:'+col+'">'+(e.risk_score>0?e.risk_score.toFixed(3):'&ndash;')+'</div>'+
+    '<div class="lp-desc">'+translateSubtype(e.subtype)+' &middot; severity '+e.severity+'/5<br>'+(e.pref||'')+' '+(e.city||'')+'<br>'+(e.occurred_at||'')+'</div>';
+}
+
+function buildHotspotList(grid) {
+  var top = grid.slice(0,10);
+  var el = document.getElementById('hs-list');
+  el.innerHTML = '';
+  top.forEach(function(cell,i) {
+    var entries = Object.entries(cell.layers).sort(function(a,b){return b[1]-a[1]});
+    var mainLayer = entries.length>0 ? entries[0][0] : 'all';
+    var col = mainLayer==='crime'?'var(--red)':mainLayer==='traffic'?'var(--orange)':mainLayer==='disaster'?'var(--blue)':'var(--cyan)';
+    var div = document.createElement('div');
+    div.className = 'hs';
+    div.innerHTML =
+      '<span class="hs-rk">'+(i+1)+'</span>'+
+      '<div class="hs-dot" style="background:'+col+'"></div>'+
+      '<div class="hs-body">'+
+        '<div class="hs-place">'+cell.count+'件集中エリア</div>'+
+        '<div class="hs-meta">'+mainLayer+' &middot; '+cell.lat.toFixed(2)+','+cell.lon.toFixed(2)+'</div>'+
+      '</div>'+
+      '<span class="hs-sc" style="color:'+col+'">'+cell.risk_score.toFixed(3)+'</span>';
+    div.onclick = (function(c){return function(){
+      map.flyTo([c.lat, c.lon], 13, {duration:1.2});
+      var nb = eventsData.filter(function(e){
+        return Math.sqrt(Math.pow(e.lat-c.lat,2)+Math.pow(e.lon-c.lon,2))<0.1;
+      });
+      showRiskPanel(c.lat, c.lon, c, nb);
+    }})(cell);
+    el.appendChild(div);
+  });
+}
+
+function buildStatus(sum) {
+  var items = [
+    {k:'交通事故',v:(sum.layers.traffic||0).toLocaleString()+'件',c:'var(--green)'},
+    {k:'地震・災害',v:(sum.layers.disaster||0).toLocaleString()+'件',c:'var(--green)'},
+    {k:'犯罪',v:(sum.layers.crime||0).toLocaleString()+'件',c:'var(--yellow)'},
+    {k:'グリッドセル',v:(sum.grid_cells||0).toLocaleString()+'セル',c:'var(--cyan)'},
+  ];
+  document.getElementById('lp-status').innerHTML = items.map(function(i){
+    return '<div style="display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid var(--dim);font-size:9px">'+
+      '<span style="color:var(--muted)">'+i.k+'</span>'+
+      '<span style="color:'+i.c+'">'+i.v+'</span></div>';
+  }).join('');
+}
+
+init();
+</script>
+</body>
+</html>

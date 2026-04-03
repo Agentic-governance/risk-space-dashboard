@@ -1,0 +1,15 @@
+data/
+scripts/
+dashboard/data/events.json
+dashboard/data/heat_all.json
+dashboard/data/heat_crime.json
+!dashboard/data/events_compact.json
+!dashboard/data/grid_risk.json
+!dashboard/data/contour_matrix.json
+!dashboard/data/heat_traffic.json
+!dashboard/data/heat_disaster.json
+!dashboard/data/heat_weather.json
+!dashboard/data/summary.json
+__pycache__/
+*.pyc
+.DS_Store
