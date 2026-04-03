@@ -84,6 +84,13 @@ body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo'
 .lp-layer{font-size:9px;padding:2px 6px;border-radius:3px;display:inline-block;margin-bottom:4px}
 .lp-score{font-size:22px;font-weight:700;line-height:1}
 .lp-desc{font-size:11px;color:var(--muted);margin-top:4px}
+.eh-badge{font-size:9px;padding:1px 5px;border-radius:3px;font-weight:600;margin-left:4px}
+.eh-red{background:rgba(224,64,64,0.15);color:var(--red)}
+.eh-orange{background:rgba(224,120,32,0.15);color:var(--orange)}
+.eh-green{background:rgba(40,184,112,0.15);color:var(--green)}
+.eh-section{background:var(--s2);border-radius:4px;padding:8px 10px;margin-bottom:6px;border-left:3px solid var(--purple)}
+.eh-formula{font-size:10px;color:var(--muted);font-family:monospace;background:var(--bg);padding:4px 8px;border-radius:3px;margin:4px 0}
+.eh-val{font-size:20px;font-weight:700;line-height:1.2}
 </style>
 </head>
 <body>
@@ -109,6 +116,9 @@ body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo'
   <button class="vb-btn" id="vbl-crime" onclick="setLayer('crime')">犯罪</button>
   <button class="vb-btn" id="vbl-traffic" onclick="setLayer('traffic')">交通</button>
   <button class="vb-btn" id="vbl-disaster" onclick="setLayer('disaster')">災害</button>
+  <div class="sep"></div>
+  <span class="vb-label">解析：</span>
+  <button class="vb-btn" id="vb-eh" onclick="toggleEHView()">Expected Harm</button>
   <div class="sep"></div>
   <button class="vb-btn" onclick="map.flyTo([36.2,138.2],6)">全国</button>
   <button class="vb-btn" onclick="map.flyTo([35.681,139.767],11)">東京</button>
@@ -170,6 +180,9 @@ var heatLayer = null, contourLayer = null, pointsLayer = null;
 var currentView = 'heat', currentLayer = 'all';
 var miniChart = null;
 var contourRenderFn = null;
+var ehGridLayer = null;
+var ehViewActive = false;
+var ehData = null;
 
 async function init() {
   document.getElementById('ts').textContent =
@@ -196,6 +209,10 @@ async function init() {
     eventsData = results[0];
     gridData = results[1];
     contourMatrix = results[2];
+    // Load EH grid data
+    try {
+      ehData = await fetch('data/hotspots_expected_harm.json').then(function(r){return r.json()});
+    } catch(e3) { ehData = null; }
     buildHotspotList(gridData);
     buildStatus(results[3]);
     await applyView();
@@ -456,6 +473,14 @@ function showRiskPanel(lat, lng, cell, nearby) {
       '<div class="risk-level-bar"><div class="risk-indicator" style="left:calc('+score*100+'% - 7px)"></div></div>'+
       '<div style="font-size:9px;color:var(--muted)">'+lat.toFixed(4)+'&deg;N, '+lng.toFixed(4)+'&deg;E &middot; 半径約10km圏内 '+nearby.length+'件</div>'+
     '</div>'+
+    (cell && cell.expected_harm != null ?
+      '<div class="rp-sec"><div class="rp-ttl">Expected Harm</div>'+
+        '<div class="eh-val" style="color:'+(cell.expected_harm>0.5?'var(--red)':cell.expected_harm>0.3?'var(--orange)':'var(--green)')+'">'+cell.expected_harm.toFixed(4)+'</div>'+
+        '<div class="eh-formula">P(inc) &times; sev &times; (1-P(esc))</div>'+
+        '<div class="stat-row"><span class="stat-k">P(escape)</span><span class="stat-v">'+(cell.p_escape!=null?cell.p_escape.toFixed(4):'N/A')+'</span></div>'+
+        '<div class="stat-row"><span class="stat-k">避難所 (500m圏内)</span><span class="stat-v">'+(cell.haven_count_500m!=null?cell.haven_count_500m+'箇所':'N/A')+'</span></div>'+
+        (cell.nearest_haven_type?'<div class="stat-row"><span class="stat-k">最寄り避難所</span><span class="stat-v">'+cell.nearest_haven_type+'</span></div>':'')+
+      '</div>' : '')+
     '<div class="rp-sec"><div class="rp-ttl">&#x26A0; なぜ危険か / Risk Reasons</div>'+reasonsHTML+'</div>'+
     '<div class="rp-sec"><div class="rp-ttl">詳細統計</div>'+
       '<div class="stat-row"><span class="stat-k">総イベント数</span><span class="stat-v">'+nearby.length+'件</span></div>'+
@@ -523,7 +548,10 @@ function buildHotspotList(grid) {
         '<div class="hs-place">'+cell.count+'件集中エリア</div>'+
         '<div class="hs-meta">'+mainLayer+' &middot; '+cell.lat.toFixed(2)+','+cell.lon.toFixed(2)+'</div>'+
       '</div>'+
-      '<span class="hs-sc" style="color:'+col+'">'+cell.risk_score.toFixed(3)+'</span>';
+      '<div style="text-align:right">'+
+        '<span class="hs-sc" style="color:'+col+'">'+cell.risk_score.toFixed(3)+'</span>'+
+        (cell.expected_harm != null ? '<br><span class="eh-badge '+(cell.expected_harm>0.5?'eh-red':cell.expected_harm>0.3?'eh-orange':'eh-green')+'">EH: '+cell.expected_harm.toFixed(3)+'</span>' : '')+
+      '</div>';
     div.onclick = (function(c){return function(){
       map.flyTo([c.lat, c.lon], 13, {duration:1.2});
       var nb = eventsData.filter(function(e){
@@ -547,6 +575,57 @@ function buildStatus(sum) {
       '<span style="color:var(--muted)">'+i.k+'</span>'+
       '<span style="color:'+i.c+'">'+i.v+'</span></div>';
   }).join('');
+}
+
+function toggleEHView() {
+  ehViewActive = !ehViewActive;
+  document.getElementById('vb-eh').classList.toggle('on', ehViewActive);
+  if(ehViewActive) {
+    addEHGrid();
+  } else {
+    removeEHGrid();
+  }
+}
+
+function ehColor(eh) {
+  // Blue (low) → Yellow (mid) → Red (high)
+  if(eh > 0.5) return 'rgba(224,64,64,0.55)';
+  if(eh > 0.3) return 'rgba(224,120,32,0.45)';
+  if(eh > 0.1) return 'rgba(216,184,64,0.35)';
+  if(eh > 0.05) return 'rgba(56,120,216,0.3)';
+  return 'rgba(56,120,216,0.15)';
+}
+
+function addEHGrid() {
+  removeEHGrid();
+  var src = ehData || gridData;
+  if(!src || src.length === 0) return;
+  ehGridLayer = L.layerGroup();
+  var MAX = 3000;
+  var sorted = src.slice().sort(function(a,b){return (b.expected_harm||0)-(a.expected_harm||0)});
+  var sample = sorted.slice(0, MAX);
+  sample.forEach(function(cell) {
+    var eh = cell.expected_harm || 0;
+    if(eh < 0.01) return;
+    var lat = cell.lat || (cell.center ? cell.center[1] : null);
+    var lon = cell.lon || (cell.center ? cell.center[0] : null);
+    if(!lat || !lon) return;
+    var sz = 0.02 + eh * 0.08;
+    L.rectangle(
+      [[lat - sz/2, lon - sz/2],[lat + sz/2, lon + sz/2]],
+      {fillColor: ehColor(eh), color: ehColor(eh), weight:0.5, fillOpacity:0.6, opacity:0.4}
+    ).bindPopup(
+      '<b>Expected Harm: '+eh.toFixed(4)+'</b><br>'+
+      'Risk Score: '+(cell.risk_score||0).toFixed(3)+'<br>'+
+      'P(escape): '+((cell.p_escape||0).toFixed(4))+'<br>'+
+      '避難所(500m): '+(cell.haven_count_500m||0)+'箇所'
+    ).addTo(ehGridLayer);
+  });
+  ehGridLayer.addTo(map);
+}
+
+function removeEHGrid() {
+  if(ehGridLayer) { map.removeLayer(ehGridLayer); ehGridLayer = null; }
 }
 
 init();
