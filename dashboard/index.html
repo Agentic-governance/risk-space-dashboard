@@ -91,6 +91,16 @@ body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo'
 .eh-section{background:var(--s2);border-radius:4px;padding:8px 10px;margin-bottom:6px;border-left:3px solid var(--purple)}
 .eh-formula{font-size:10px;color:var(--muted);font-family:monospace;background:var(--bg);padding:4px 8px;border-radius:3px;margin:4px 0}
 .eh-val{font-size:20px;font-weight:700;line-height:1.2}
+@keyframes pulse-red{0%{box-shadow:0 0 0 0 rgba(220,40,40,0.7)}70%{box-shadow:0 0 0 8px rgba(220,40,40,0)}100%{box-shadow:0 0 0 0 rgba(220,40,40,0)}}
+@keyframes pulse-orange{0%{box-shadow:0 0 0 0 rgba(224,120,32,0.6)}70%{box-shadow:0 0 0 6px rgba(224,120,32,0)}100%{box-shadow:0 0 0 0 rgba(224,120,32,0)}}
+.rt-marker-high{animation:pulse-red 1.5s infinite}
+.rt-marker-mid{animation:pulse-orange 2s infinite}
+.rt-popup-title{font-size:12px;font-weight:700;margin-bottom:4px}
+.rt-popup-meta{font-size:10px;color:var(--muted);line-height:1.5}
+.rt-popup-badge{display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;font-weight:600;margin-right:4px}
+#eh-legend{position:absolute;bottom:12px;left:12px;z-index:1000;background:var(--s1);border:1px solid var(--bd);border-radius:5px;padding:8px 10px;font-size:9px;color:var(--muted);display:none;min-width:130px}
+#eh-legend .leg-item{display:flex;align-items:center;gap:6px;padding:2px 0}
+#eh-legend .leg-swatch{width:16px;height:10px;border-radius:2px;flex-shrink:0}
 </style>
 </head>
 <body>
@@ -120,6 +130,8 @@ body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo'
   <span class="vb-label">解析：</span>
   <button class="vb-btn" id="vb-eh" onclick="toggleEHView()">Expected Harm</button>
   <button class="vb-btn" id="vb-grid" onclick="toggleGridLines()">グリッド</button>
+  <div class="sep"></div>
+  <button class="vb-btn" id="vb-fushinsha" onclick="toggleFushinsha()" style="border-color:var(--red);color:var(--muted)">不審者</button>
   <div class="sep"></div>
   <button class="vb-btn" onclick="map.flyTo([36.2,138.2],6)">全国</button>
   <button class="vb-btn" onclick="map.flyTo([35.681,139.767],11)">東京</button>
@@ -153,6 +165,13 @@ body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo'
 
   <div id="map-wrap">
     <div id="map"></div>
+    <div id="eh-legend">
+      <div style="font-weight:600;margin-bottom:4px;color:var(--text)">Expected Harm</div>
+      <div class="leg-item"><div class="leg-swatch" style="background:rgba(220,40,40,0.6)"></div>EH &gt; 0.5 (高危険)</div>
+      <div class="leg-item"><div class="leg-swatch" style="background:rgba(224,120,32,0.5)"></div>EH &gt; 0.3 (中危険)</div>
+      <div class="leg-item"><div class="leg-swatch" style="background:rgba(216,184,64,0.35)"></div>EH &gt; 0.1 (注意)</div>
+      <div class="leg-item"><div class="leg-swatch" style="background:rgba(56,120,216,0.15)"></div>EH &le; 0.1 (低)</div>
+    </div>
     <div id="mc">
       <div class="mc-btn" onclick="map.flyTo([35.681,139.767],13)">渋谷/新宿</div>
       <div class="mc-btn" onclick="map.flyTo([35.172,136.882],12)">名駅</div>
@@ -594,6 +613,7 @@ function buildStatus(sum) {
 function toggleEHView() {
   ehViewActive = !ehViewActive;
   document.getElementById('vb-eh').classList.toggle('on', ehViewActive);
+  document.getElementById('eh-legend').style.display = ehViewActive ? 'block' : 'none';
   if(ehViewActive) {
     addEHGrid();
   } else {
@@ -620,17 +640,21 @@ function getCellHalfWidth(cell) {
 }
 
 function ehColor(eh) {
-  if(eh > 0.5) return '#e04040';
-  if(eh > 0.3) return '#e07820';
-  if(eh > 0.1) return '#d8b840';
-  return '#3878d8';
+  if(eh > 0.5) return 'rgba(220,40,40,1)';
+  if(eh > 0.3) return 'rgba(224,120,32,1)';
+  if(eh > 0.1) return 'rgba(216,184,64,1)';
+  return 'rgba(56,120,216,1)';
+}
+
+function ehFillColor(eh) {
+  if(eh > 0.5) return 'rgba(220,40,40,0.6)';
+  if(eh > 0.3) return 'rgba(224,120,32,0.5)';
+  if(eh > 0.1) return 'rgba(216,184,64,0.35)';
+  return 'rgba(56,120,216,0.15)';
 }
 
 function ehFillOpacity(eh) {
-  if(eh > 0.5) return 0.50;
-  if(eh > 0.3) return 0.40;
-  if(eh > 0.1) return 0.30;
-  return 0.15;
+  return 1; // opacity is baked into fillColor rgba now
 }
 
 function addEHGrid() {
@@ -697,19 +721,20 @@ function drawEHCell(cell, layer) {
   var hw = getCellHalfWidth(cell);
   var bounds = [[lat - hw, lon - hw],[lat + hw, lon + hw]];
   var col = ehColor(eh);
+  var fill = ehFillColor(eh);
   L.rectangle(bounds, {
-    fillColor: col,
-    color: '#ffffff',
-    weight: 0.5,
-    fillOpacity: ehFillOpacity(eh),
-    opacity: 0.4
+    fillColor: fill,
+    color: col,
+    weight: 1.5,
+    fillOpacity: 1,
+    opacity: 0.7
   }).bindPopup(
     '<div style="font-size:12px">'+
     '<b style="font-size:14px;color:'+col+'">EH: '+(cell.expected_harm||0).toFixed(4)+'</b><br>'+
     '<hr style="border-color:#333;margin:4px 0">'+
     'P(incident): '+(cell.risk_score||0).toFixed(4)+'<br>'+
     'P(escape): '+((cell.p_escape!=null?cell.p_escape:0).toFixed(4))+'<br>'+
-    '件数: '+(cell.count||0)+'<br>'+
+    '件数: <b>'+(cell.count||0)+'</b><br>'+
     '解像度: '+(cell.resolution||'?')+'<br>'+
     '避難所(500m): '+(cell.haven_count_500m!=null?cell.haven_count_500m:0)+'箇所<br>'+
     (cell.nearest_haven_type?'最寄り: '+cell.nearest_haven_type+'<br>':'')+
@@ -747,6 +772,83 @@ function addGridLines() {
 
 function removeGridLines() {
   if(gridLinesLayer) { map.removeLayer(gridLinesLayer); gridLinesLayer = null; }
+}
+
+// === Fushinsha / Realtime Markers Layer ===
+var fushinshaLayer = null;
+var fushinshaActive = false;
+var realtimeMarkers = null;
+
+function toggleFushinsha() {
+  fushinshaActive = !fushinshaActive;
+  var btn = document.getElementById('vb-fushinsha');
+  btn.classList.toggle('on', fushinshaActive);
+  if(fushinshaActive) {
+    btn.style.borderColor = 'var(--red)';
+    btn.style.color = 'var(--red)';
+    btn.style.background = 'rgba(224,64,64,0.08)';
+    addFushinshaMarkers();
+  } else {
+    btn.style.borderColor = 'var(--bd)';
+    btn.style.color = 'var(--muted)';
+    btn.style.background = 'transparent';
+    removeFushinshaMarkers();
+  }
+}
+
+async function addFushinshaMarkers() {
+  removeFushinshaMarkers();
+  if(!realtimeMarkers) {
+    try {
+      realtimeMarkers = await fetch('data/realtime_markers.json').then(function(r){return r.json()});
+    } catch(e) { console.warn('realtime_markers.json not found'); return; }
+  }
+  fushinshaLayer = L.layerGroup();
+  var subtypeLabels = {
+    suspicious_person:'不審者',suspicious_person_approach:'声かけ',
+    suspicious_person_stalking:'つきまとい',sexual_crime_groping:'痴漢',
+    weapons:'刃物所持',robbery:'強盗',purse_snatching:'ひったくり',
+    theft:'窃盗',wildlife_bear:'クマ出没',wildlife_boar:'イノシシ出没',
+    unknown:'不審な接触',crime:'犯罪',disaster:'災害',traffic:'交通',
+    homicide_arson:'放火殺人',assault:'暴行',sexual_crime:'性犯罪',
+    crime_other:'その他犯罪',animal_hazard:'動物危険'
+  };
+  realtimeMarkers.forEach(function(m) {
+    var sev = m.severity || 2;
+    var col, cssClass, radius;
+    if(sev >= 4) { col = '#dc2828'; cssClass = 'rt-marker-high'; radius = 7; }
+    else if(sev >= 3) { col = '#e07820'; cssClass = 'rt-marker-mid'; radius = 6; }
+    else { col = '#d8b840'; cssClass = ''; radius = 5; }
+    var icon = L.divIcon({
+      className: '',
+      html: '<div class="'+cssClass+'" style="width:'+radius*2+'px;height:'+radius*2+'px;border-radius:50%;background:'+col+';border:2px solid rgba(255,255,255,0.8);"></div>',
+      iconSize: [radius*2, radius*2],
+      iconAnchor: [radius, radius]
+    });
+    var marker = L.marker([m.lat, m.lon], {icon: icon});
+    var subLabel = subtypeLabels[m.subtype] || m.subtype;
+    var sevLabel = sev >= 4 ? '高' : sev >= 3 ? '中' : '低';
+    var sevCol = sev >= 4 ? '#dc2828' : sev >= 3 ? '#e07820' : '#d8b840';
+    marker.bindPopup(
+      '<div style="min-width:180px">'+
+        '<div class="rt-popup-title" style="color:'+col+'">'+m.title+'</div>'+
+        '<div class="rt-popup-meta">'+
+          '<span class="rt-popup-badge" style="background:'+col+'20;color:'+col+'">'+subLabel+'</span>'+
+          '<span class="rt-popup-badge" style="background:'+sevCol+'20;color:'+sevCol+'">危険度: '+sevLabel+' ('+sev+'/5)</span><br>'+
+          (m.date ? '日付: '+m.date+'<br>' : '')+
+          '出典: '+m.source+'<br>'+
+          '種別: '+m.type+
+        '</div>'+
+      '</div>'
+    );
+    marker.addTo(fushinshaLayer);
+  });
+  fushinshaLayer.addTo(map);
+  console.log('不審者マーカー: '+realtimeMarkers.length+'件表示');
+}
+
+function removeFushinshaMarkers() {
+  if(fushinshaLayer) { map.removeLayer(fushinshaLayer); fushinshaLayer = null; }
 }
 
 init();
