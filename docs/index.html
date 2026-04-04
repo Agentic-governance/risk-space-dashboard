@@ -119,6 +119,7 @@ body{background:var(--bg);color:var(--text);font-family:'Hiragino Sans','Meiryo'
   <div class="sep"></div>
   <span class="vb-label">解析：</span>
   <button class="vb-btn" id="vb-eh" onclick="toggleEHView()">Expected Harm</button>
+  <button class="vb-btn" id="vb-grid" onclick="toggleGridLines()">グリッド</button>
   <div class="sep"></div>
   <button class="vb-btn" onclick="map.flyTo([36.2,138.2],6)">全国</button>
   <button class="vb-btn" onclick="map.flyTo([35.681,139.767],11)">東京</button>
@@ -183,6 +184,8 @@ var contourRenderFn = null;
 var ehGridLayer = null;
 var ehViewActive = false;
 var ehData = null;
+var gridLinesLayer = null;
+var gridLinesActive = false;
 
 async function init() {
   document.getElementById('ts').textContent =
@@ -539,18 +542,25 @@ function buildHotspotList(grid) {
     var entries = Object.entries(cell.layers).sort(function(a,b){return b[1]-a[1]});
     var mainLayer = entries.length>0 ? entries[0][0] : 'all';
     var col = mainLayer==='crime'?'var(--red)':mainLayer==='traffic'?'var(--orange)':mainLayer==='disaster'?'var(--blue)':'var(--cyan)';
+    var eh = cell.expected_harm;
+    var ehStr = eh != null ? eh.toFixed(3) : '--';
+    var ehCol = eh > 0.5 ? 'var(--red)' : eh > 0.3 ? 'var(--orange)' : eh > 0.1 ? 'var(--yellow)' : 'var(--green)';
+    var ehClass = eh > 0.5 ? 'eh-red' : eh > 0.3 ? 'eh-orange' : 'eh-green';
     var div = document.createElement('div');
     div.className = 'hs';
     div.innerHTML =
       '<span class="hs-rk">'+(i+1)+'</span>'+
       '<div class="hs-dot" style="background:'+col+'"></div>'+
       '<div class="hs-body">'+
-        '<div class="hs-place">'+cell.count+'件集中エリア</div>'+
+        '<div class="hs-place">'+cell.count+'件集中エリア'+
+          (eh != null ? ' <span class="eh-badge '+ehClass+'" style="font-size:10px;font-weight:700">EH '+ehStr+'</span>' : '')+
+        '</div>'+
         '<div class="hs-meta">'+mainLayer+' &middot; '+cell.lat.toFixed(2)+','+cell.lon.toFixed(2)+'</div>'+
       '</div>'+
       '<div style="text-align:right">'+
-        '<span class="hs-sc" style="color:'+col+'">'+cell.risk_score.toFixed(3)+'</span>'+
-        (cell.expected_harm != null ? '<br><span class="eh-badge '+(cell.expected_harm>0.5?'eh-red':cell.expected_harm>0.3?'eh-orange':'eh-green')+'">EH: '+cell.expected_harm.toFixed(3)+'</span>' : '')+
+        (eh != null
+          ? '<span style="font-size:16px;font-weight:700;color:'+ehCol+'">'+ehStr+'</span><br><span style="font-size:8px;color:var(--muted)">EH</span>'
+          : '<span class="hs-sc" style="color:'+col+'">'+cell.risk_score.toFixed(3)+'</span>')+
       '</div>';
     div.onclick = (function(c){return function(){
       map.flyTo([c.lat, c.lon], 13, {duration:1.2});
@@ -587,13 +597,36 @@ function toggleEHView() {
   }
 }
 
+function toggleGridLines() {
+  gridLinesActive = !gridLinesActive;
+  document.getElementById('vb-grid').classList.toggle('on', gridLinesActive);
+  if(gridLinesActive) {
+    addGridLines();
+  } else {
+    removeGridLines();
+  }
+}
+
+function getCellHalfWidth(cell) {
+  // Determine cell half-width from resolution field
+  var resMap = {ultra:0.0025, high:0.005, mid:0.01, low:0.05};
+  if(cell.resolution && resMap[cell.resolution]) return resMap[cell.resolution];
+  if(cell.grid_size) return cell.grid_size / 2;
+  return 0.005; // default half-width
+}
+
 function ehColor(eh) {
-  // Blue (low) → Yellow (mid) → Red (high)
-  if(eh > 0.5) return 'rgba(224,64,64,0.55)';
-  if(eh > 0.3) return 'rgba(224,120,32,0.45)';
-  if(eh > 0.1) return 'rgba(216,184,64,0.35)';
-  if(eh > 0.05) return 'rgba(56,120,216,0.3)';
-  return 'rgba(56,120,216,0.15)';
+  if(eh > 0.5) return '#e04040';
+  if(eh > 0.3) return '#e07820';
+  if(eh > 0.1) return '#d8b840';
+  return '#3878d8';
+}
+
+function ehFillOpacity(eh) {
+  if(eh > 0.5) return 0.50;
+  if(eh > 0.3) return 0.40;
+  if(eh > 0.1) return 0.30;
+  return 0.15;
 }
 
 function addEHGrid() {
@@ -601,24 +634,34 @@ function addEHGrid() {
   var src = ehData || gridData;
   if(!src || src.length === 0) return;
   ehGridLayer = L.layerGroup();
-  var MAX = 3000;
+  var MAX = 5000;
   var sorted = src.slice().sort(function(a,b){return (b.expected_harm||0)-(a.expected_harm||0)});
   var sample = sorted.slice(0, MAX);
   sample.forEach(function(cell) {
     var eh = cell.expected_harm || 0;
-    if(eh < 0.01) return;
+    if(eh < 0.005) return;
     var lat = cell.lat || (cell.center ? cell.center[1] : null);
     var lon = cell.lon || (cell.center ? cell.center[0] : null);
     if(!lat || !lon) return;
-    var sz = 0.02 + eh * 0.08;
-    L.rectangle(
-      [[lat - sz/2, lon - sz/2],[lat + sz/2, lon + sz/2]],
-      {fillColor: ehColor(eh), color: ehColor(eh), weight:0.5, fillOpacity:0.6, opacity:0.4}
-    ).bindPopup(
-      '<b>Expected Harm: '+eh.toFixed(4)+'</b><br>'+
-      'Risk Score: '+(cell.risk_score||0).toFixed(3)+'<br>'+
-      'P(escape): '+((cell.p_escape||0).toFixed(4))+'<br>'+
-      '避難所(500m): '+(cell.haven_count_500m||0)+'箇所'
+    var hw = getCellHalfWidth(cell);
+    var bounds = [[lat - hw, lon - hw],[lat + hw, lon + hw]];
+    var col = ehColor(eh);
+    L.rectangle(bounds, {
+      fillColor: col,
+      color: '#ffffff',
+      weight: 1,
+      fillOpacity: ehFillOpacity(eh),
+      opacity: 0.5
+    }).bindPopup(
+      '<div style="font-size:12px">'+
+      '<b style="font-size:14px;color:'+col+'">EH: '+eh.toFixed(4)+'</b><br>'+
+      '<hr style="border-color:#333;margin:4px 0">'+
+      'P(incident): '+(cell.risk_score||0).toFixed(4)+'<br>'+
+      'P(escape): '+((cell.p_escape!=null?cell.p_escape:0).toFixed(4))+'<br>'+
+      '避難所(500m): '+(cell.haven_count_500m!=null?cell.haven_count_500m:0)+'箇所<br>'+
+      (cell.nearest_haven_type?'最寄り: '+cell.nearest_haven_type+'<br>':'')+
+      '<span style="color:#888">'+lat.toFixed(4)+'N, '+lon.toFixed(4)+'E</span>'+
+      '</div>'
     ).addTo(ehGridLayer);
   });
   ehGridLayer.addTo(map);
@@ -626,6 +669,33 @@ function addEHGrid() {
 
 function removeEHGrid() {
   if(ehGridLayer) { map.removeLayer(ehGridLayer); ehGridLayer = null; }
+}
+
+function addGridLines() {
+  removeGridLines();
+  var src = ehData || gridData;
+  if(!src || src.length === 0) return;
+  gridLinesLayer = L.layerGroup();
+  var MAX = 5000;
+  var sample = src.slice(0, MAX);
+  sample.forEach(function(cell) {
+    var lat = cell.lat || (cell.center ? cell.center[1] : null);
+    var lon = cell.lon || (cell.center ? cell.center[0] : null);
+    if(!lat || !lon) return;
+    var hw = getCellHalfWidth(cell);
+    var bounds = [[lat - hw, lon - hw],[lat + hw, lon + hw]];
+    L.rectangle(bounds, {
+      fillColor: 'transparent',
+      fillOpacity: 0,
+      color: 'rgba(255,255,255,0.35)',
+      weight: 1
+    }).addTo(gridLinesLayer);
+  });
+  gridLinesLayer.addTo(map);
+}
+
+function removeGridLines() {
+  if(gridLinesLayer) { map.removeLayer(gridLinesLayer); gridLinesLayer = null; }
 }
 
 init();
