@@ -186,6 +186,9 @@ var ehViewActive = false;
 var ehData = null;
 var gridLinesLayer = null;
 var gridLinesActive = false;
+var tileIndex = null;
+var loadedTiles = {};
+var tileGridLayer = null;
 
 async function init() {
   document.getElementById('ts').textContent =
@@ -212,10 +215,11 @@ async function init() {
     eventsData = results[0];
     gridData = results[1];
     contourMatrix = results[2];
-    // Load EH grid data
+    // Load tile index for dynamic mesh loading
     try {
-      ehData = await fetch('data/hotspots_expected_harm.json').then(function(r){return r.json()});
-    } catch(e3) { ehData = null; }
+      tileIndex = await fetch('data/tiles/index.json').then(function(r){return r.json()});
+      console.log('タイルインデックス: '+Object.keys(tileIndex).length+'タイル');
+    } catch(e3) { tileIndex = null; }
     buildHotspotList(gridData);
     buildStatus(results[3]);
     await applyView();
@@ -631,67 +635,114 @@ function ehFillOpacity(eh) {
 
 function addEHGrid() {
   removeEHGrid();
-  var src = ehData || gridData;
-  if(!src || src.length === 0) return;
-  ehGridLayer = L.layerGroup();
-  var MAX = 5000;
-  var sorted = src.slice().sort(function(a,b){return (b.expected_harm||0)-(a.expected_harm||0)});
-  var sample = sorted.slice(0, MAX);
-  sample.forEach(function(cell) {
-    var eh = cell.expected_harm || 0;
-    if(eh < 0.005) return;
-    var lat = cell.lat || (cell.center ? cell.center[1] : null);
-    var lon = cell.lon || (cell.center ? cell.center[0] : null);
-    if(!lat || !lon) return;
-    var hw = getCellHalfWidth(cell);
-    var bounds = [[lat - hw, lon - hw],[lat + hw, lon + hw]];
-    var col = ehColor(eh);
-    L.rectangle(bounds, {
-      fillColor: col,
-      color: '#ffffff',
-      weight: 1,
-      fillOpacity: ehFillOpacity(eh),
-      opacity: 0.5
-    }).bindPopup(
-      '<div style="font-size:12px">'+
-      '<b style="font-size:14px;color:'+col+'">EH: '+eh.toFixed(4)+'</b><br>'+
-      '<hr style="border-color:#333;margin:4px 0">'+
-      'P(incident): '+(cell.risk_score||0).toFixed(4)+'<br>'+
-      'P(escape): '+((cell.p_escape!=null?cell.p_escape:0).toFixed(4))+'<br>'+
-      '避難所(500m): '+(cell.haven_count_500m!=null?cell.haven_count_500m:0)+'箇所<br>'+
-      (cell.nearest_haven_type?'最寄り: '+cell.nearest_haven_type+'<br>':'')+
-      '<span style="color:#888">'+lat.toFixed(4)+'N, '+lon.toFixed(4)+'E</span>'+
-      '</div>'
-    ).addTo(ehGridLayer);
-  });
-  ehGridLayer.addTo(map);
+  if(!tileIndex) {
+    // Fallback to static grid_risk.json
+    var src = gridData;
+    if(!src || src.length === 0) return;
+    ehGridLayer = L.layerGroup();
+    src.forEach(function(cell) { drawEHCell(cell, ehGridLayer); });
+    ehGridLayer.addTo(map);
+    return;
+  }
+  // Tile-based dynamic loading
+  tileGridLayer = L.layerGroup().addTo(map);
+  loadVisibleTiles();
+  map.on('moveend zoomend', loadVisibleTiles);
+}
+
+function loadVisibleTiles() {
+  if(!tileIndex || !tileGridLayer) return;
+  var bounds = map.getBounds();
+  var latMin = Math.floor(bounds.getSouth());
+  var latMax = Math.floor(bounds.getNorth());
+  var lonMin = Math.floor(bounds.getWest());
+  var lonMax = Math.floor(bounds.getEast());
+  var zoom = map.getZoom();
+  // Only load tiles when zoomed in enough (zoom >= 8)
+  if(zoom < 8) {
+    // At low zoom, show summary from gridData
+    if(!ehGridLayer) {
+      ehGridLayer = L.layerGroup().addTo(map);
+      gridData.forEach(function(cell) { drawEHCell(cell, ehGridLayer); });
+    }
+    return;
+  }
+  // Remove summary layer at high zoom
+  if(ehGridLayer) { map.removeLayer(ehGridLayer); ehGridLayer = null; }
+
+  for(var lat = latMin; lat <= latMax; lat++) {
+    for(var lon = lonMin; lon <= lonMax; lon++) {
+      var key = lat + '_' + lon;
+      if(!tileIndex[key]) continue;
+      if(loadedTiles[key]) continue;
+      loadedTiles[key] = true;
+      (function(k) {
+        fetch('data/tiles/grid_' + k + '.json')
+          .then(function(r) { return r.json(); })
+          .then(function(cells) {
+            cells.forEach(function(cell) { drawEHCell(cell, tileGridLayer); });
+            console.log('タイル ' + k + ': ' + cells.length + 'セル描画');
+          })
+          .catch(function(e) { loadedTiles[k] = false; });
+      })(key);
+    }
+  }
+}
+
+function drawEHCell(cell, layer) {
+  var eh = cell.expected_harm || cell.risk_score || 0;
+  if(eh < 0.005) return;
+  var lat = cell.lat, lon = cell.lon;
+  if(!lat || !lon) return;
+  var hw = getCellHalfWidth(cell);
+  var bounds = [[lat - hw, lon - hw],[lat + hw, lon + hw]];
+  var col = ehColor(eh);
+  L.rectangle(bounds, {
+    fillColor: col,
+    color: '#ffffff',
+    weight: 0.5,
+    fillOpacity: ehFillOpacity(eh),
+    opacity: 0.4
+  }).bindPopup(
+    '<div style="font-size:12px">'+
+    '<b style="font-size:14px;color:'+col+'">EH: '+(cell.expected_harm||0).toFixed(4)+'</b><br>'+
+    '<hr style="border-color:#333;margin:4px 0">'+
+    'P(incident): '+(cell.risk_score||0).toFixed(4)+'<br>'+
+    'P(escape): '+((cell.p_escape!=null?cell.p_escape:0).toFixed(4))+'<br>'+
+    '件数: '+(cell.count||0)+'<br>'+
+    '解像度: '+(cell.resolution||'?')+'<br>'+
+    '避難所(500m): '+(cell.haven_count_500m!=null?cell.haven_count_500m:0)+'箇所<br>'+
+    (cell.nearest_haven_type?'最寄り: '+cell.nearest_haven_type+'<br>':'')+
+    '<span style="color:#888">'+lat.toFixed(5)+'N, '+lon.toFixed(5)+'E</span>'+
+    '</div>'
+  ).addTo(layer);
 }
 
 function removeEHGrid() {
   if(ehGridLayer) { map.removeLayer(ehGridLayer); ehGridLayer = null; }
+  if(tileGridLayer) {
+    map.removeLayer(tileGridLayer); tileGridLayer = null;
+    map.off('moveend zoomend', loadVisibleTiles);
+    loadedTiles = {};
+  }
 }
 
 function addGridLines() {
   removeGridLines();
-  var src = ehData || gridData;
-  if(!src || src.length === 0) return;
-  gridLinesLayer = L.layerGroup();
-  var MAX = 5000;
-  var sample = src.slice(0, MAX);
-  sample.forEach(function(cell) {
-    var lat = cell.lat || (cell.center ? cell.center[1] : null);
-    var lon = cell.lon || (cell.center ? cell.center[0] : null);
-    if(!lat || !lon) return;
-    var hw = getCellHalfWidth(cell);
-    var bounds = [[lat - hw, lon - hw],[lat + hw, lon + hw]];
-    L.rectangle(bounds, {
-      fillColor: 'transparent',
-      fillOpacity: 0,
-      color: 'rgba(255,255,255,0.35)',
-      weight: 1
-    }).addTo(gridLinesLayer);
-  });
-  gridLinesLayer.addTo(map);
+  // Grid lines also use tile-based loading
+  gridLinesLayer = L.layerGroup().addTo(map);
+  var src = gridData;
+  if(src && src.length > 0) {
+    src.forEach(function(cell) {
+      var lat = cell.lat, lon = cell.lon;
+      if(!lat || !lon) return;
+      var hw = getCellHalfWidth(cell);
+      L.rectangle([[lat-hw,lon-hw],[lat+hw,lon+hw]], {
+        fillColor: 'transparent', fillOpacity: 0,
+        color: 'rgba(255,255,255,0.3)', weight: 0.5
+      }).addTo(gridLinesLayer);
+    });
+  }
 }
 
 function removeGridLines() {

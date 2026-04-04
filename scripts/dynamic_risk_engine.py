@@ -43,10 +43,6 @@ def get_temporal_multipliers(dt: datetime) -> Dict[str, float]:
     elif weekday == 5:  inc *= 1.25; esc *= 0.9
     elif weekday == 6:  inc *= 1.1;  esc *= 0.95
 
-    # Payday proximity
-    if day in (24, 25, 26):
-        inc *= 1.2
-
     return {"incident": round(inc, 3), "escape": round(esc, 3)}
 
 
