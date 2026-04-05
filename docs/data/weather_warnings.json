@@ -1,0 +1,6789 @@
+{
+  "metadata": {
+    "source": "Japan Meteorological Agency (JMA) Warning API",
+    "fetched_at": "2026-04-05T01:15:52Z",
+    "prefectures_checked": 53,
+    "prefectures_with_active_warnings_or_headline": 53,
+    "total_active_warnings": 1048,
+    "errors": 0,
+    "error_details": [],
+    "warning_code_legend": {
+      "02": "暴風雪警報",
+      "03": "大雨警報",
+      "04": "洪水警報",
+      "05": "暴風警報",
+      "06": "大雪警報",
+      "07": "波浪警報",
+      "08": "高潮警報",
+      "10": "大雨注意報",
+      "12": "大雪注意報",
+      "13": "風雪注意報",
+      "14": "雷注意報",
+      "15": "強風注意報",
+      "16": "波浪注意報",
+      "17": "融雪注意報",
+      "18": "洪水注意報",
+      "19": "高潮注意報",
+      "20": "なだれ注意報",
+      "21": "着氷注意報",
+      "22": "着雪注意報",
+      "23": "乾燥注意報",
+      "24": "低温注意報",
+      "25": "霜注意報",
+      "26": "濃霧注意報",
+      "32": "暴風雪特別警報",
+      "33": "大雨特別警報",
+      "35": "暴風特別警報",
+      "36": "大雪特別警報",
+      "37": "波浪特別警報",
+      "38": "高潮特別警報"
+    }
+  },
+  "warnings": [
+    {
+      "prefecture": "北海道(宗谷)",
+      "pref_code": "011000",
+      "report_datetime": "2026-04-05T09:31:00+09:00",
+      "headline": "宗谷地方では、５日夕方まで融雪による土砂災害や濃霧による視程障害に、５日までなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "011000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "011000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "011000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0151900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0152000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0152000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0152000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 19
+    },
+    {
+      "prefecture": "北海道(上川・留萌)",
+      "pref_code": "012000",
+      "report_datetime": "2026-04-05T09:41:00+09:00",
+      "headline": "上川、留萌地方では、５日夜遅くまで融雪による土砂災害に、７日までなだれに注意してください。留萌地方では、５日夕方まで濃霧による視程障害に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "012010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "012010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "012020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "012020",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "012020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0145900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0146900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0147000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0147000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0147100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0147100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0147200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0147200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148401",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148401",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148401",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148402",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0148700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 76
+    },
+    {
+      "prefecture": "北海道(網走・北見・紋別)",
+      "pref_code": "013000",
+      "report_datetime": "2026-04-05T04:09:00+09:00",
+      "headline": "網走、北見、紋別地方では、５日夜遅くまで融雪による土砂災害に、６日までなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "013010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "013010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "013020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "013020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "013030",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "013030",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120801",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120801",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120802",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120802",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0154900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0155900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0156400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 44
+    },
+    {
+      "prefecture": "北海道(釧路・根室・十勝)",
+      "pref_code": "015000",
+      "report_datetime": "2026-04-05T09:45:00+09:00",
+      "headline": "日高地方では、５日夜遅くまで高波に注意してください。胆振、日高地方では、５日夕方まで融雪による土砂災害に、６日昼前まで濃霧による視程障害に、６日までなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "015010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "015010",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "015010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "015020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "015020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "015020",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "015020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123301",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123301",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123301",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123302",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123302",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0157800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0158600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160101",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160101",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160102",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160102",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160102",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0160900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0161000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0161000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0161000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 65
+    },
+    {
+      "prefecture": "北海道(胆振・日高・石狩・空知・後志)",
+      "pref_code": "016000",
+      "report_datetime": "2026-04-05T10:12:00+09:00",
+      "headline": "石狩、空知、後志地方では、５日夜遅くまで融雪による土砂災害に、７日までなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "016010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "016010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "016020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "016020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "016030",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "016030",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0110000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0110000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0120900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0121600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0122800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0123500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0130300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0130300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0139900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0140900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0143800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 76
+    },
+    {
+      "prefecture": "青森県",
+      "pref_code": "020000",
+      "report_datetime": "2026-04-05T04:05:00+09:00",
+      "headline": "下北、三八上北では、高波に注意してください。青森県では、濃霧による視程障害に注意してください。津軽、三八上北では、なだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "020010",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "020010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "020020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "020020",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "020030",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "020030",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "020030",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0220900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0221000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0221000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0230700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0232100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0232100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0232300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0232300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0234300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0234300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0236100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0236200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0236200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0236700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0238100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0238400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0238700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0238700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0240800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0241100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0241100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0241200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0241200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0242600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0244600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0245000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0245000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 80
+    },
+    {
+      "prefecture": "岩手県",
+      "pref_code": "030000",
+      "report_datetime": "2026-04-05T10:05:00+09:00",
+      "headline": "内陸、沿岸北部では、５日昼前まで土砂災害に注意してください。沿岸北部、沿岸南部では、６日明け方まで高波に注意してください。内陸では、ここしばらくなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "030010",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "030010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "030020",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "030020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "030030",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320100",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320200",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320800",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0320900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0321000",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0321100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0321400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0321500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0330100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0330300",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0336600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0338100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0346100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0348200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0348300",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0348300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0348400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0348500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0350300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0350700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 30
+    },
+    {
+      "prefecture": "宮城県",
+      "pref_code": "040000",
+      "report_datetime": "2026-04-05T09:42:00+09:00",
+      "headline": "東部では、６日明け方まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "040010",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0410001",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0420200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0420300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0420500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0420700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0420900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0421100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0421400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0436100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0436200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0440100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0440400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0440600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0458100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0460600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 16
+    },
+    {
+      "prefecture": "秋田県",
+      "pref_code": "050000",
+      "report_datetime": "2026-04-05T09:57:00+09:00",
+      "headline": "秋田県では、６日昼前まで濃霧による視程障害に、ここしばらくなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "050010",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "050010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "050020",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "050020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0520900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0521500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0530300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0530300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0532700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0532700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0534600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0534600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0534800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0534900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0534900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0536100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0536300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0536600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0536800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0543400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0543400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0546300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0546300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0546400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0546400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 46
+    },
+    {
+      "prefecture": "山形県",
+      "pref_code": "060000",
+      "report_datetime": "2026-04-05T04:12:00+09:00",
+      "headline": "山形県では、ここしばらくなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "060010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "060020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "060030",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "060040",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0620900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0621000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0621100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0621200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0621300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0630100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0630200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0632100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0632200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0632300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0632400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0634100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0636700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0638100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0638200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0640100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0640200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0640300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0642800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0646100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 38
+    },
+    {
+      "prefecture": "福島県",
+      "pref_code": "070000",
+      "report_datetime": "2026-04-05T09:42:00+09:00",
+      "headline": "浜通りでは、６日明け方まで高波に注意してください。会津では、ここしばらくなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "070020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "070030",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0720400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0720800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0720900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0721200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0736200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0736400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0736700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0736800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0740200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0740500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0740700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0740800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0742300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0744400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0744500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0744600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0744700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0754100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0754200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0754300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0754500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0754600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0754700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0756100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 26
+    },
+    {
+      "prefecture": "茨城県",
+      "pref_code": "080000",
+      "report_datetime": "2026-04-05T10:08:00+09:00",
+      "headline": "北部では６日明け方まで、南部では６日昼前まで、高波に注意してください。茨城県では、５日夕方から５日夜遅くまで急な強い雨や落雷に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "080010",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "080010",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "080020",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "080020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0820100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0820200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0820200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0820300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0820400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0820500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0820700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0820800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0821500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0821600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0821900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0822200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0822300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0822900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0823300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0823500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0823600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0830200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0830900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0830900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0831000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0834100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0834100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0836400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0844200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0844300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0844700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0852100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0854200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0854600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "0856400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        }
+      ],
+      "count": 57
+    },
+    {
+      "prefecture": "栃木県",
+      "pref_code": "090000",
+      "report_datetime": "2026-04-05T09:03:00+09:00",
+      "headline": "栃木県では、５日昼過ぎから５日夜遅くまで急な強い雨や落雷に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "090010",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "090020",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920601",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920602",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920603",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920604",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920605",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0920900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0921000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0921100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0921300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0921400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0921500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0921600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0930100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0934200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0934300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0934400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0934500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0936100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0936400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0938400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0938600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0940700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "0941100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 31
+    },
+    {
+      "prefecture": "群馬県",
+      "pref_code": "100000",
+      "report_datetime": "2026-04-05T09:07:00+09:00",
+      "headline": "群馬県では、５日昼過ぎから５日夜遅くまで急な強い雨や落雷に注意してください。北部では、６日までなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "100010",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "100020",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "100020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1020900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1021000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1021100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1021200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1034400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1034500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1036600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1036700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1038200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1038300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1038400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1042100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1042400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1042500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1042600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1042800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1042900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1044300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1044300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1044400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1044800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1044900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1044900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1046400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1052100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1052200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1052300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1052400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1052500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 40
+    },
+    {
+      "prefecture": "埼玉県",
+      "pref_code": "110000",
+      "report_datetime": "2026-04-05T10:03:00+09:00",
+      "headline": "埼玉県では、５日夕方から５日夜遅くまで急な強い雨や落雷に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "110010",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "110020",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "110030",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1110000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1120900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1121900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1122900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1123900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1124000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1124100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1124200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1124300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1124500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1124600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1130100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1132400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1132600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1132700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134600",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1134900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1136100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1136200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1136300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1136500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1136900",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1138100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1138300",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1138500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1140800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1144200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1146400",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "1146500",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "発表"
+        }
+      ],
+      "count": 66
+    },
+    {
+      "prefecture": "千葉県",
+      "pref_code": "120000",
+      "report_datetime": "2026-04-05T10:07:00+09:00",
+      "headline": "北東部、南部では、６日昼前まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "120020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "120030",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1220200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1220500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1221500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1221800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1222300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1223400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1223500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1223700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1223800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1223900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1240300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1241000",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1242100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1242300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1242400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1244300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1246300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 19
+    },
+    {
+      "prefecture": "東京都",
+      "pref_code": "130000",
+      "report_datetime": "2026-04-05T07:45:00+09:00",
+      "headline": "伊豆諸島南部では、５日夕方まで強風や急な強い雨、落雷に注意してください。伊豆諸島北部、伊豆諸島南部では、６日朝まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "130020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "130030",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "130030",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "130030",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1336100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1336200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1336300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1336400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1338100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1338100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1338100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1338200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1338200",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1338200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1340100",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1340100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1340100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1340200",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1340200",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1340200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 20
+    },
+    {
+      "prefecture": "神奈川県",
+      "pref_code": "140000",
+      "report_datetime": "2026-04-05T09:09:00+09:00",
+      "headline": "東部では、５日昼前まで土砂災害に注意してください。神奈川県では、５日夜遅くまで強風に注意してください。西部では５日夜遅くまで、東部では６日明け方まで、高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "140010",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "140010",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "140020",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "140020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1410000",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1413000",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420100",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420300",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420400",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420500",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420600",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420700",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420800",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1420800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1421000",
+          "warning_code": "10",
+          "warning_name": "大雨注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1421000",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1430100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1430100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1434100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1434100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1434200",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1434200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1438300",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1438300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1438400",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1438400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 32
+    },
+    {
+      "prefecture": "新潟県",
+      "pref_code": "150000",
+      "report_datetime": "2026-04-05T09:08:00+09:00",
+      "headline": "下越、中越、上越では、融雪による土砂災害やなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "150010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "150010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "150020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "150020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "150030",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "150030",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520900",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1520900",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1521800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1522700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1538500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1538500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1546100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1546100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1548200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1548200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1558100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 40
+    },
+    {
+      "prefecture": "富山県",
+      "pref_code": "160000",
+      "report_datetime": "2026-04-05T07:28:00+09:00",
+      "headline": "富山県では、融雪による土砂災害に注意してください。東部では、なだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "160010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "160010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "160020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1620100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1620100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1620400",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1620400",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1620700",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1620700",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1621000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1632200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1632200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1632300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1632300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1634300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "1634300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 16
+    },
+    {
+      "prefecture": "石川県",
+      "pref_code": "170000",
+      "report_datetime": "2026-04-05T04:34:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "福井県",
+      "pref_code": "180000",
+      "report_datetime": "2026-04-05T04:35:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "山梨県",
+      "pref_code": "190000",
+      "report_datetime": "2026-04-05T10:05:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "長野県",
+      "pref_code": "200000",
+      "report_datetime": "2026-04-05T07:50:00+09:00",
+      "headline": "北部、中部では、融雪による土砂災害やなだれに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "200010",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "200010",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "200020",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "200020",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2020100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2020100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2020202",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2020202",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2021100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2021100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2021200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2021200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2021300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2021300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2048500",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2048500",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2048600",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2048600",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2054300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2054300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2056100",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2056100",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2056200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2056200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2056300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2056300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2058300",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2058300",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2058800",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2058800",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2059000",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2059000",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2060200",
+          "warning_code": "17",
+          "warning_name": "融雪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2060200",
+          "warning_code": "22",
+          "warning_name": "着雪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 34
+    },
+    {
+      "prefecture": "岐阜県",
+      "pref_code": "210000",
+      "report_datetime": "2026-04-05T08:05:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "静岡県",
+      "pref_code": "220000",
+      "report_datetime": "2026-04-05T07:04:00+09:00",
+      "headline": "東部では５日昼前まで、中部、伊豆、西部では５日夜遅くまで、高波に注意してください。静岡県では、５日昼前まで濃霧による視程障害に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "220010",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220010",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220020",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220030",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220030",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220040",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "220040",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2210001",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2210001",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2210002",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2213001",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2213001",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2213002",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220700",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220800",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2220900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221000",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2221900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222000",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222300",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2222600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2230600",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2232500",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2234100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2234200",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2234400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2242400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2242400",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2242900",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2246100",
+          "warning_code": "20",
+          "warning_name": "なだれ注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 66
+    },
+    {
+      "prefecture": "愛知県",
+      "pref_code": "230000",
+      "report_datetime": "2026-04-05T10:03:00+09:00",
+      "headline": "愛知県では、５日夜のはじめ頃まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "230010",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "230020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2320100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2321600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2323100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2344500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2344600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 7
+    },
+    {
+      "prefecture": "三重県",
+      "pref_code": "240000",
+      "report_datetime": "2026-04-05T10:04:00+09:00",
+      "headline": "南部では、５日夜のはじめ頃まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "240020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2420300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2420900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2421100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2421200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2421500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2447100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2447200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2454300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2456100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2456200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 11
+    },
+    {
+      "prefecture": "滋賀県",
+      "pref_code": "250000",
+      "report_datetime": "2026-04-04T22:11:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "京都府",
+      "pref_code": "260000",
+      "report_datetime": "2026-04-05T09:34:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "大阪府",
+      "pref_code": "270000",
+      "report_datetime": "2026-04-04T22:37:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "兵庫県",
+      "pref_code": "280000",
+      "report_datetime": "2026-04-05T09:33:00+09:00",
+      "headline": "南部では、５日夜遅くまで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "280010",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2820500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "2822400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "prefecture": "奈良県",
+      "pref_code": "290000",
+      "report_datetime": "2026-04-04T22:35:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "和歌山県",
+      "pref_code": "300000",
+      "report_datetime": "2026-04-05T09:31:00+09:00",
+      "headline": "南部では、５日夜遅くまで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "300020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3020601",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3020700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3040100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3040600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3042100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3042200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3042800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 8
+    },
+    {
+      "prefecture": "鳥取県",
+      "pref_code": "310000",
+      "report_datetime": "2026-04-04T20:30:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "島根県",
+      "pref_code": "320000",
+      "report_datetime": "2026-04-05T10:12:00+09:00",
+      "headline": "東部、西部では、６日朝は霜に対する農作物の管理に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "320010",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "320020",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220100",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220200",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220300",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220400",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220500",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220600",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220700",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3220900",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3234300",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3238600",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3244100",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3244800",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3244900",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3250100",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3250500",
+          "warning_code": "24",
+          "warning_name": "低温注意報",
+          "status": "発表"
+        }
+      ],
+      "count": 17
+    },
+    {
+      "prefecture": "岡山県",
+      "pref_code": "330000",
+      "report_datetime": "2026-04-05T09:50:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "広島県",
+      "pref_code": "340000",
+      "report_datetime": "2026-04-05T09:50:00+09:00",
+      "headline": "南部では、６日まで空気の乾燥した状態が続くため、火の取り扱いに注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "340010",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410100",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410200",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410300",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410400",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410500",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410600",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410700",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3410800",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3420200",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3420300",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3420400",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3420500",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3420700",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3420800",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3421100",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3421200",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3421300",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3421500",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3430200",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3430400",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3430700",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3430900",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3443100",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3446200",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        },
+        {
+          "area_code": "3454500",
+          "warning_code": "21",
+          "warning_name": "着氷注意報",
+          "status": "発表"
+        }
+      ],
+      "count": 26
+    },
+    {
+      "prefecture": "山口県",
+      "pref_code": "350000",
+      "report_datetime": "2026-04-05T03:40:00+09:00",
+      "headline": "西部、北部では、強風に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "350010",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "350040",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3520100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3520400",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3521100",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3550200",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 6
+    },
+    {
+      "prefecture": "徳島県",
+      "pref_code": "360000",
+      "report_datetime": "2026-04-04T23:50:00+09:00",
+      "headline": "南部では、５日昼前まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "360020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3620400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3638300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3638700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3638800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 5
+    },
+    {
+      "prefecture": "香川県",
+      "pref_code": "370000",
+      "report_datetime": "2026-04-04T20:39:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "愛媛県",
+      "pref_code": "380000",
+      "report_datetime": "2026-04-05T04:22:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "高知県",
+      "pref_code": "390000",
+      "report_datetime": "2026-04-05T04:19:00+09:00",
+      "headline": "高知県では、５日昼前まで高波に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "390010",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "390020",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "390030",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920500",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920600",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3920900",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3921000",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3921100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3930100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3930200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3930300",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3930400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3930700",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3940100",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3941200",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3942400",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "3942800",
+          "warning_code": "16",
+          "warning_name": "波浪注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 22
+    },
+    {
+      "prefecture": "福岡県",
+      "pref_code": "400000",
+      "report_datetime": "2026-04-05T02:07:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "佐賀県",
+      "pref_code": "410000",
+      "report_datetime": "2026-04-04T21:49:00+09:00",
+      "headline": "北部では、５日夜のはじめ頃まで強風に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "410020",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "4120200",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "4138700",
+          "warning_code": "15",
+          "warning_name": "強風注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 3
+    },
+    {
+      "prefecture": "長崎県",
+      "pref_code": "420000",
+      "report_datetime": "2026-04-05T03:39:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "熊本県",
+      "pref_code": "430000",
+      "report_datetime": "2026-04-05T09:38:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "大分県",
+      "pref_code": "440000",
+      "report_datetime": "2026-04-05T10:04:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "宮崎県",
+      "pref_code": "450000",
+      "report_datetime": "2026-04-05T04:19:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "鹿児島県(本土)",
+      "pref_code": "460100",
+      "report_datetime": "2026-04-05T04:20:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "鹿児島県(奄美)",
+      "pref_code": "460040",
+      "report_datetime": "2026-04-05T04:19:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "沖縄県(本島)",
+      "pref_code": "471000",
+      "report_datetime": "2026-04-05T09:16:00+09:00",
+      "headline": "注意報を解除します。",
+      "active_warnings": [],
+      "count": 0
+    },
+    {
+      "prefecture": "沖縄県(先島)",
+      "pref_code": "472000",
+      "report_datetime": "2026-04-05T04:06:00+09:00",
+      "headline": "大東島地方では、５日夕方まで竜巻などの激しい突風や急な強い雨、落雷に注意してください。",
+      "active_warnings": [
+        {
+          "area_code": "472000",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "4735700",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        },
+        {
+          "area_code": "4735800",
+          "warning_code": "14",
+          "warning_name": "雷注意報",
+          "status": "継続"
+        }
+      ],
+      "count": 3
+    }
+  ]
+}
