@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-04-05T12:00:00Z",
+  "version": "1.0",
+  "triggers": [
+    {
+      "name": "Tokyo Crime Surge Index",
+      "peril_class": "property_crime",
+      "index_formula": "sum(expected_harm_tokyo) / baseline",
+      "baseline": 1.0,
+      "observation_window_days": 30,
+      "data_source": "heat_crime.json (Tokyo subset)",
+      "trigger_levels": {
+        "level_1": 1.2,
+        "level_2": 1.5,
+        "level_3": 2.0
+      },
+      "payout_schedule": {
+        "level_1": {"payout_pct_of_limit": 0.25, "example_payout_jpy": 250000000},
+        "level_2": {"payout_pct_of_limit": 0.60, "example_payout_jpy": 600000000},
+        "level_3": {"payout_pct_of_limit": 1.00, "example_payout_jpy": 1000000000}
+      },
+      "limit_jpy": 1000000000,
+      "basis_risk": "low",
+      "settlement_days": 30
+    },
+    {
+      "name": "Japan Natural Disaster Composite Index",
+      "peril_class": "multi_peril_nat_cat",
+      "index_formula": "w_eq*EQ_mag + w_ty*typhoon_windspeed + w_fl*river_level_exceedance",
+      "weights": {"w_eq": 0.45, "w_ty": 0.35, "w_fl": 0.20},
+      "baseline": 0.0,
+      "data_source": "earthquakes_latest.json, jma_typhoon, river_level",
+      "trigger_levels": {
+        "level_1": 0.30,
+        "level_2": 0.60,
+        "level_3": 0.85
+      },
+      "payout_schedule": {
+        "level_1": {"payout_pct_of_limit": 0.20},
+        "level_2": {"payout_pct_of_limit": 0.55},
+        "level_3": {"payout_pct_of_limit": 1.00}
+      },
+      "limit_jpy": 50000000000,
+      "basis_risk": "medium",
+      "settlement_days": 45
+    },
+    {
+      "name": "Osaka Traffic Mortality Trigger",
+      "peril_class": "traffic_liability",
+      "index_formula": "rolling_30d_fatalities_osaka / 5yr_median",
+      "baseline": 1.0,
+      "data_source": "heat_traffic.json, all_events_v2.json",
+      "trigger_levels": {"level_1": 1.40, "level_2": 1.80, "level_3": 2.50},
+      "payout_schedule": {
+        "level_1": {"payout_pct_of_limit": 0.30},
+        "level_2": {"payout_pct_of_limit": 0.70},
+        "level_3": {"payout_pct_of_limit": 1.00}
+      },
+      "limit_jpy": 500000000,
+      "basis_risk": "low",
+      "settlement_days": 21
+    },
+    {
+      "name": "Kanto Heatwave Index",
+      "peril_class": "health_weather",
+      "index_formula": "consecutive_days(Tmax_max >= 35C) + hospitalizations_proxy",
+      "baseline": 0,
+      "data_source": "amedas_current.json, heat_disaster.json",
+      "trigger_levels": {"level_1": 5, "level_2": 10, "level_3": 15},
+      "payout_schedule": {
+        "level_1": {"payout_pct_of_limit": 0.25},
+        "level_2": {"payout_pct_of_limit": 0.60},
+        "level_3": {"payout_pct_of_limit": 1.00}
+      },
+      "limit_jpy": 2000000000,
+      "basis_risk": "low",
+      "settlement_days": 14
+    },
+    {
+      "name": "Japan Civil Commotion Index",
+      "peril_class": "civil_unrest",
+      "index_formula": "sum(protest_events * severity_weight) / national_baseline",
+      "baseline": 1.0,
+      "data_source": "all_events.json filtered for civil_commotion",
+      "trigger_levels": {"level_1": 1.5, "level_2": 2.5, "level_3": 4.0},
+      "payout_schedule": {
+        "level_1": {"payout_pct_of_limit": 0.20},
+        "level_2": {"payout_pct_of_limit": 0.55},
+        "level_3": {"payout_pct_of_limit": 1.00}
+      },
+      "limit_jpy": 5000000000,
+      "basis_risk": "medium",
+      "settlement_days": 60
+    }
+  ],
+  "methodology": "Parametric triggers measure an objective index rather than actual loss. Payout is based on pre-agreed index thresholds, offering rapid settlement and eliminating claims adjustment. Basis risk (difference between index payout and actual loss) is assessed qualitatively.",
+  "regulatory_framework": "Aligned with FSA guidance on index-linked insurance and IAIS parametric product principles.",
+  "references": ["elt_japan_v1.json", "compound_risk_tensor.json", "heat_crime.json", "heat_traffic.json"]
+}
