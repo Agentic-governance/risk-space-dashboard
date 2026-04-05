@@ -2013,6 +2013,227 @@ if(document.readyState==='loading'){
     setTimeout(function(){try{applyLang();}catch(e){}},100);
   }
 })();
+
+/* === FINAL Feature A: Saved Locations (home/school/office) === */
+var savedLocationMarkers=[];
+function getSavedLocations(){try{return JSON.parse(localStorage.getItem('riskspace_saved_locations')||'[]')}catch(e){return[]}}
+function setSavedLocations(arr){localStorage.setItem('riskspace_saved_locations',JSON.stringify(arr))}
+function saveCurrentLocation(){
+  if(!lastClickLatLng){alert('地図をクリックしてから保存してください');return}
+  var name=prompt('この場所の名前（例: 自宅 / 学校 / 職場）:');
+  if(!name)return;
+  var arr=getSavedLocations();
+  arr.push({name:name,lat:lastClickLatLng.lat,lon:lastClickLatLng.lng||lastClickLatLng.lon,t:Date.now()});
+  setSavedLocations(arr);
+  renderSavedLocationMarkers();
+  renderSavedLocationsDropdown();
+  var btn=document.getElementById('btn-save-loc');if(btn){var o=btn.textContent;btn.textContent='✓ 保存';setTimeout(function(){btn.textContent=o},1500)}
+}
+function deleteSavedLocation(idx){
+  var arr=getSavedLocations();arr.splice(idx,1);setSavedLocations(arr);
+  renderSavedLocationMarkers();renderSavedLocationsDropdown();
+}
+function gotoSavedLocation(idx){
+  var arr=getSavedLocations();var s=arr[idx];if(!s)return;
+  map.setView([s.lat,s.lon],15);
+  lastClickLatLng={lat:s.lat,lng:s.lon};
+  if(typeof onMapClick==='function'){try{onMapClick({latlng:{lat:s.lat,lng:s.lon}})}catch(e){}}
+}
+function renderSavedLocationMarkers(){
+  savedLocationMarkers.forEach(function(m){if(m._map)map.removeLayer(m)});
+  savedLocationMarkers=[];
+  var arr=getSavedLocations();
+  arr.forEach(function(s){
+    var icon=L.divIcon({className:'saved-loc-icon',html:'<div style="background:#2196f3;border:2px solid #fff;border-radius:50%;width:14px;height:14px;box-shadow:0 0 4px rgba(33,150,243,.8)"></div>',iconSize:[14,14],iconAnchor:[7,7]});
+    var m=L.marker([s.lat,s.lon],{icon:icon,title:'📍 '+s.name}).addTo(map);
+    m.bindPopup('<b>📍 '+s.name+'</b><br><span style="font-size:10px;color:#666">保存済み</span>');
+    savedLocationMarkers.push(m);
+  });
+}
+function renderSavedLocationsDropdown(){
+  var dd=document.getElementById('saved-loc-dropdown');if(!dd)return;
+  var arr=getSavedLocations();
+  if(!arr.length){dd.innerHTML='<div style="padding:8px;color:#666;font-size:11px">保存なし</div>';return}
+  var html='';arr.forEach(function(s,i){
+    html+='<div style="display:flex;align-items:center;padding:4px 8px;border-bottom:1px solid #1e1e2e;font-size:11px;cursor:pointer" onclick="gotoSavedLocation('+i+')">';
+    html+='<span style="flex:1;color:#7eb3f0">📍 '+s.name+'</span>';
+    html+='<span style="color:#f44336;padding:0 4px;cursor:pointer" onclick="event.stopPropagation();deleteSavedLocation('+i+')">×</span></div>';
+  });
+  dd.innerHTML=html;
+}
+function toggleSavedLocationsDropdown(){
+  var dd=document.getElementById('saved-loc-dropdown');
+  if(!dd)return;
+  dd.style.display=(dd.style.display==='none'||!dd.style.display)?'block':'none';
+  if(dd.style.display==='block')renderSavedLocationsDropdown();
+}
+(function(){
+  // Inject UI controls after header-subtitle
+  var header=document.querySelector('#left-panel .panel-header');
+  if(header){
+    var ui=document.createElement('div');
+    ui.style.cssText='margin-top:6px;display:flex;gap:4px;position:relative';
+    ui.innerHTML='<button class="panel-action-btn" id="btn-save-loc" onclick="saveCurrentLocation()" title="現在クリック位置を保存">🏠 保存</button>'+
+      '<button class="panel-action-btn" id="btn-saved-locs" onclick="toggleSavedLocationsDropdown()" title="保存済み場所">📍 保存済み</button>'+
+      '<div id="saved-loc-dropdown" style="display:none;position:absolute;top:28px;left:0;min-width:180px;max-height:200px;overflow-y:auto;background:#12121a;border:1px solid #2a2a3a;border-radius:4px;z-index:9000;box-shadow:0 4px 12px rgba(0,0,0,.4)"></div>';
+    header.appendChild(ui);
+  }
+  setTimeout(renderSavedLocationMarkers,1500);
+})();
+
+/* === FINAL Feature B: Extended share with layers + view mode === */
+(function(){
+  if(typeof shareView!=='function')return;
+  var _origShare=shareView;
+  window.shareView=function(){
+    var c=map.getCenter();var z=map.getZoom();var h=selectedHour;
+    var layers=Object.keys(activeLayers).filter(function(k){return activeLayers[k]}).join(',');
+    var hash='#lat='+c.lat.toFixed(4)+'&lon='+c.lng.toFixed(4)+'&z='+z+'&h='+h+'&m='+displayMode+'&a='+analysisMode+'&L='+encodeURIComponent(layers);
+    var url=window.location.origin+window.location.pathname+hash;
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){
+        var btn=document.getElementById('btn-share');if(btn){btn.textContent='✓';setTimeout(function(){btn.textContent='🔗'},1500)}
+      });
+    }else{prompt('URLをコピー:',url)}
+  };
+  var _origRestore=restoreFromHash;
+  window.restoreFromHash=function(){
+    _origRestore();
+    var h=window.location.hash;if(!h)return;
+    var params={};h.slice(1).split('&').forEach(function(p){var kv=p.split('=');if(kv.length===2)params[kv[0]]=decodeURIComponent(kv[1])});
+    if(params.m&&typeof setDisplayMode==='function'){try{setDisplayMode(params.m)}catch(e){}}
+    if(params.a&&typeof setAnalysisMode==='function'){try{setAnalysisMode(params.a)}catch(e){}}
+    if(params.L!==undefined){
+      var wanted={};params.L.split(',').forEach(function(k){if(k)wanted[k]=1});
+      Object.keys(activeLayers).forEach(function(k){
+        var should=!!wanted[k];
+        if(activeLayers[k]!==should&&typeof toggleLayer==='function'){try{toggleLayer(k)}catch(e){}}
+      });
+    }
+  };
+})();
+
+/* === FINAL Feature C: Heatmap intensity slider === */
+var heatIntensity=1.0;
+function setHeatIntensity(v){
+  heatIntensity=v/100;
+  var el=document.getElementById('heat-intensity-val');if(el)el.textContent=v+'%';
+  Object.keys(heatLayers).forEach(function(k){
+    var layer=heatLayers[k];if(!layer)return;
+    try{
+      if(layer._container){layer._container.style.opacity=heatIntensity}
+      else if(layer.setOptions){layer.setOptions({minOpacity:heatIntensity*0.1})}
+    }catch(e){}
+  });
+}
+(function(){
+  var legend=document.getElementById('legend');
+  if(legend){
+    var div=document.createElement('div');
+    div.style.cssText='padding:6px 0;border-top:1px solid #1e1e2e;margin-top:6px';
+    div.innerHTML='<div style="font-size:10px;color:#888;margin-bottom:3px">🔆 ヒート強度: <span id="heat-intensity-val">100%</span></div>'+
+      '<input type="range" min="10" max="100" value="100" oninput="setHeatIntensity(this.value)" aria-label="ヒートマップ強度" style="width:100%">';
+    legend.appendChild(div);
+  }
+})();
+
+/* === FINAL Feature D: Crime subtype icon legend === */
+(function(){
+  var container=document.getElementById('donut-chart-wrap');
+  if(container){
+    var div=document.createElement('div');
+    div.style.cssText='margin-top:6px;padding-top:6px;border-top:1px solid #1e1e2e;font-size:9px;color:#888;line-height:1.6';
+    div.innerHTML='<div style="font-weight:700;color:#aaa;margin-bottom:3px">凡例</div>'+
+      '🎵 声かけ &nbsp; 👁 不審者 &nbsp; ✋ 痴漢<br>'+
+      '💥 暴行 &nbsp; 🚲 窃盗 &nbsp; 📷 盗撮<br>'+
+      '🔪 凶器 &nbsp; 🏠 侵入';
+    container.appendChild(div);
+  }
+})();
+
+/* === FINAL Feature E: Help tooltips for technical terms === */
+var HELP_TERMS={
+  'Expected Harm':'E[Harm] = Σ P(incident_i) × Severity_i。各リスクカテゴリの発生確率に重篤度を掛け、合計した「期待被害量」です。0-100スケール。',
+  'P(incident)':'単位時間・単位面積あたりの事件発生確率。ポアソン分布を仮定した過去データ+時間/気象補正から算出。',
+  'P(escape)':'事件発生時に安全地帯（Safe Haven）へ到達できる確率。距離・時刻・歩行速度から算出。',
+  'Safety Rank':'S/A/B/C/Dの5段階。Expected Harmの逆数ベース。S=安全、D=高リスク。',
+  'Adaptive mesh':'リスクの勾配に応じてメッシュサイズを変える適応的グリッド。リスク変動が大きい地域ほど細かいメッシュで表示。'
+};
+function showHelpTooltip(term,ev){
+  ev.stopPropagation();
+  var existing=document.getElementById('help-tooltip');if(existing)existing.remove();
+  var text=HELP_TERMS[term]||'';
+  var tt=document.createElement('div');
+  tt.id='help-tooltip';
+  tt.style.cssText='position:fixed;z-index:10000;background:#0a0a0f;border:1px solid #4a7ab5;border-radius:4px;padding:8px 10px;font-size:11px;color:#e0e0e0;max-width:260px;box-shadow:0 4px 12px rgba(0,0,0,.5);line-height:1.5';
+  tt.innerHTML='<b style="color:#7eb3f0">'+term+'</b><br>'+text+'<div style="text-align:right;margin-top:4px"><span style="cursor:pointer;color:#888" onclick="document.getElementById(\'help-tooltip\').remove()">✕ 閉じる</span></div>';
+  document.body.appendChild(tt);
+  var x=ev.clientX,y=ev.clientY;
+  tt.style.left=Math.min(x+12,window.innerWidth-280)+'px';
+  tt.style.top=Math.min(y+12,window.innerHeight-120)+'px';
+  setTimeout(function(){document.addEventListener('click',function h(){var el=document.getElementById('help-tooltip');if(el)el.remove();document.removeEventListener('click',h)})},100);
+}
+(function(){
+  // Attach help icons to labels containing technical terms
+  function attachHelp(){
+    var mappings=[
+      {sel:'.eh-label',term:'Expected Harm'},
+      {sel:'#safety-sublabel',term:'Safety Rank'}
+    ];
+    mappings.forEach(function(m){
+      document.querySelectorAll(m.sel).forEach(function(el){
+        if(el.querySelector('.help-icon'))return;
+        var h=document.createElement('span');
+        h.className='help-icon';
+        h.textContent=' ⓘ';
+        h.style.cssText='cursor:pointer;color:#4a7ab5;font-size:10px;margin-left:3px';
+        h.onclick=function(e){showHelpTooltip(m.term,e)};
+        el.appendChild(h);
+      });
+    });
+    // Floating help button
+    if(!document.getElementById('help-float-btn')){
+      var btn=document.createElement('button');
+      btn.id='help-float-btn';
+      btn.textContent='?';
+      btn.title='用語ヘルプ';
+      btn.style.cssText='position:fixed;bottom:70px;right:12px;width:32px;height:32px;border-radius:50%;background:#1a3a5c;border:1px solid #4a7ab5;color:#7eb3f0;font-size:16px;font-weight:700;cursor:pointer;z-index:5000;box-shadow:0 2px 6px rgba(0,0,0,.4)';
+      btn.onclick=function(e){
+        e.stopPropagation();
+        var existing=document.getElementById('help-tooltip');if(existing){existing.remove();return}
+        var tt=document.createElement('div');
+        tt.id='help-tooltip';
+        tt.style.cssText='position:fixed;z-index:10000;background:#0a0a0f;border:1px solid #4a7ab5;border-radius:6px;padding:12px;font-size:11px;color:#e0e0e0;max-width:300px;box-shadow:0 4px 12px rgba(0,0,0,.5);line-height:1.5;right:12px;bottom:110px';
+        var html='<b style="color:#7eb3f0;font-size:12px">用語解説</b><div style="text-align:right;margin-top:-18px"><span style="cursor:pointer;color:#888" onclick="document.getElementById(\'help-tooltip\').remove()">✕</span></div><hr style="border-color:#2a2a3a;margin:6px 0">';
+        Object.keys(HELP_TERMS).forEach(function(t){
+          html+='<div style="margin-bottom:6px"><b style="color:#7eb3f0">'+t+'</b><br><span style="color:#aaa">'+HELP_TERMS[t]+'</span></div>';
+        });
+        tt.innerHTML=html;
+        document.body.appendChild(tt);
+      };
+      document.body.appendChild(btn);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(attachHelp,500)})}
+  else{setTimeout(attachHelp,500)}
+})();
+
+/* === FINAL: Mobile CSS for new elements === */
+(function(){
+  var css='@media (max-width:768px){'+
+    '#help-float-btn{bottom:60px;right:8px;width:36px;height:36px}'+
+    '#saved-loc-dropdown{max-height:140px}'+
+    '#help-tooltip{max-width:85vw!important;font-size:12px!important}'+
+    '.panel-action-btn{min-height:28px;padding:4px 8px}'+
+    '}';
+  var s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
+  // Light mode support
+  var lm='body.light-mode #saved-loc-dropdown{background:#fff;border-color:#ccc}'+
+    'body.light-mode #saved-loc-dropdown div{border-color:#eee;color:#555}'+
+    'body.light-mode #help-tooltip{background:#fff;color:#222;border-color:#5a9ad5}'+
+    'body.light-mode #help-float-btn{background:#e3edf7;border-color:#5a9ad5;color:#2a6cb5}';
+  var s2=document.createElement('style');s2.textContent=lm;document.head.appendChild(s2);
+})();
 </script>
 </body>
 </html>
