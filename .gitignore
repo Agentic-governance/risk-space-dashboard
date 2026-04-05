@@ -13,3 +13,8 @@ dashboard/data/heat_crime.json
 __pycache__/
 *.pyc
 .DS_Store
+# Oversized data files (>50MB) — never commit
+docs/data/events.json
+docs/data/heat_all.json
+docs/data/events_7days.json
+dashboard/data/events_7days.json
