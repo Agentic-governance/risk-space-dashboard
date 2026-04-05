@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-05T12:00:00Z",
+    "description": "Loss development triangle (incurred JPY) for crime-insurance-related incidents",
+    "currency": "JPY"
+  },
+  "accident_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "development_years": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "triangle_jpy": [
+    [
+      160034780,
+      226958416,
+      258965372,
+      273513988,
+      282243158,
+      288062605,
+      290972328
+    ],
+    [
+      146567852,
+      207859863,
+      237173434,
+      250497784,
+      258492394,
+      263822134,
+      null
+    ],
+    [
+      120266430,
+      170559664,
+      194612950,
+      205546262,
+      212106249,
+      null,
+      null
+    ],
+    [
+      111234763,
+      157751119,
+      179998071,
+      190110323,
+      null,
+      null,
+      null
+    ],
+    [
+      117740610,
+      166977592,
+      190525714,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      137716126,
+      195306506,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      144892000,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "methodology": "Severity-weighted incident count × severity_to_jpy_factor × incident-to-loss ratio (0.08%). Development pattern synthesized from typical short-tail property-crime claim development.",
+  "severity_to_jpy": {
+    "1": 50000,
+    "2": 150000,
+    "3": 500000,
+    "4": 2000000,
+    "5": 10000000
+  },
+  "severity_mix": {
+    "1": 0.55,
+    "2": 0.25,
+    "3": 0.12,
+    "4": 0.06,
+    "5": 0.02
+  },
+  "incident_to_loss_ratio": 0.0008,
+  "development_pattern": [
+    0.55,
+    0.78,
+    0.89,
+    0.94,
+    0.97,
+    0.99,
+    1.0
+  ]
+}

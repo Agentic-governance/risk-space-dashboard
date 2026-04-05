@@ -1,0 +1,443 @@
+{
+  "version": "1.0.0",
+  "framework": "Impact-Weighted Accounts Initiative (Harvard Business School) applied to public safety",
+  "methodology": "Monetize crime/harm externalities: victim_years * statistical_value_of_life * severity_fraction. SVoL per MLIT 2007 guidelines.",
+  "parameters": {
+    "statistical_value_of_life_jpy": 150000000,
+    "svol_source": "MLIT (Ministry of Land, Infrastructure, Transport and Tourism) cost-benefit analysis guidelines",
+    "qaly_loss_per_incident": 0.15,
+    "severity_fraction": 0.01
+  },
+  "prefectures": {
+    "北海道": {
+      "population": 5100000,
+      "annual_harm_events": 38403,
+      "victim_years": 5760.4,
+      "victim_years_per_cell": 56.475,
+      "annual_harm_jpy": 8640600000,
+      "n_cells": 102,
+      "harm_per_capita_jpy": 1694
+    },
+    "青森県": {
+      "population": 1200000,
+      "annual_harm_events": 4392,
+      "victim_years": 658.8,
+      "victim_years_per_cell": 27.45,
+      "annual_harm_jpy": 988200000,
+      "n_cells": 24,
+      "harm_per_capita_jpy": 823
+    },
+    "岩手県": {
+      "population": 1200000,
+      "annual_harm_events": 6276,
+      "victim_years": 941.4,
+      "victim_years_per_cell": 39.225,
+      "annual_harm_jpy": 1412100000,
+      "n_cells": 24,
+      "harm_per_capita_jpy": 1176
+    },
+    "宮城県": {
+      "population": 2300000,
+      "annual_harm_events": 11293,
+      "victim_years": 1694.0,
+      "victim_years_per_cell": 36.826,
+      "annual_harm_jpy": 2541000000,
+      "n_cells": 46,
+      "harm_per_capita_jpy": 1104
+    },
+    "秋田県": {
+      "population": 900000,
+      "annual_harm_events": 3240,
+      "victim_years": 486.0,
+      "victim_years_per_cell": 27.0,
+      "annual_harm_jpy": 729000000,
+      "n_cells": 18,
+      "harm_per_capita_jpy": 810
+    },
+    "山形県": {
+      "population": 1000000,
+      "annual_harm_events": 7760,
+      "victim_years": 1164.0,
+      "victim_years_per_cell": 58.2,
+      "annual_harm_jpy": 1746000000,
+      "n_cells": 20,
+      "harm_per_capita_jpy": 1746
+    },
+    "福島県": {
+      "population": 1800000,
+      "annual_harm_events": 16415,
+      "victim_years": 2462.2,
+      "victim_years_per_cell": 68.394,
+      "annual_harm_jpy": 3693300000,
+      "n_cells": 36,
+      "harm_per_capita_jpy": 2051
+    },
+    "茨城県": {
+      "population": 2800000,
+      "annual_harm_events": 11340,
+      "victim_years": 1701.0,
+      "victim_years_per_cell": 30.375,
+      "annual_harm_jpy": 2551500000,
+      "n_cells": 56,
+      "harm_per_capita_jpy": 911
+    },
+    "栃木県": {
+      "population": 1900000,
+      "annual_harm_events": 11704,
+      "victim_years": 1755.6,
+      "victim_years_per_cell": 46.2,
+      "annual_harm_jpy": 2633400000,
+      "n_cells": 38,
+      "harm_per_capita_jpy": 1386
+    },
+    "群馬県": {
+      "population": 1900000,
+      "annual_harm_events": 7011,
+      "victim_years": 1051.6,
+      "victim_years_per_cell": 27.674,
+      "annual_harm_jpy": 1577400000,
+      "n_cells": 38,
+      "harm_per_capita_jpy": 830
+    },
+    "埼玉県": {
+      "population": 7300000,
+      "annual_harm_events": 35624,
+      "victim_years": 5343.6,
+      "victim_years_per_cell": 36.6,
+      "annual_harm_jpy": 8015400000,
+      "n_cells": 146,
+      "harm_per_capita_jpy": 1098
+    },
+    "千葉県": {
+      "population": 6300000,
+      "annual_harm_events": 42084,
+      "victim_years": 6312.6,
+      "victim_years_per_cell": 50.1,
+      "annual_harm_jpy": 9468900000,
+      "n_cells": 126,
+      "harm_per_capita_jpy": 1503
+    },
+    "東京都": {
+      "population": 14000000,
+      "annual_harm_events": 95200,
+      "victim_years": 14280.0,
+      "victim_years_per_cell": 51.0,
+      "annual_harm_jpy": 21420000000,
+      "n_cells": 280,
+      "harm_per_capita_jpy": 1530
+    },
+    "神奈川県": {
+      "population": 9200000,
+      "annual_harm_events": 43700,
+      "victim_years": 6555.0,
+      "victim_years_per_cell": 35.625,
+      "annual_harm_jpy": 9832500000,
+      "n_cells": 184,
+      "harm_per_capita_jpy": 1068
+    },
+    "新潟県": {
+      "population": 2100000,
+      "annual_harm_events": 15939,
+      "victim_years": 2390.8,
+      "victim_years_per_cell": 56.924,
+      "annual_harm_jpy": 3586200000,
+      "n_cells": 42,
+      "harm_per_capita_jpy": 1707
+    },
+    "富山県": {
+      "population": 1000000,
+      "annual_harm_events": 6930,
+      "victim_years": 1039.5,
+      "victim_years_per_cell": 51.975,
+      "annual_harm_jpy": 1559250000,
+      "n_cells": 20,
+      "harm_per_capita_jpy": 1559
+    },
+    "石川県": {
+      "population": 1100000,
+      "annual_harm_events": 5379,
+      "victim_years": 806.9,
+      "victim_years_per_cell": 36.677,
+      "annual_harm_jpy": 1210350000,
+      "n_cells": 22,
+      "harm_per_capita_jpy": 1100
+    },
+    "福井県": {
+      "population": 700000,
+      "annual_harm_events": 2660,
+      "victim_years": 399.0,
+      "victim_years_per_cell": 28.5,
+      "annual_harm_jpy": 598500000,
+      "n_cells": 14,
+      "harm_per_capita_jpy": 855
+    },
+    "山梨県": {
+      "population": 800000,
+      "annual_harm_events": 6880,
+      "victim_years": 1032.0,
+      "victim_years_per_cell": 64.5,
+      "annual_harm_jpy": 1548000000,
+      "n_cells": 16,
+      "harm_per_capita_jpy": 1935
+    },
+    "長野県": {
+      "population": 2000000,
+      "annual_harm_events": 7080,
+      "victim_years": 1062.0,
+      "victim_years_per_cell": 26.55,
+      "annual_harm_jpy": 1593000000,
+      "n_cells": 40,
+      "harm_per_capita_jpy": 796
+    },
+    "岐阜県": {
+      "population": 1900000,
+      "annual_harm_events": 16302,
+      "victim_years": 2445.3,
+      "victim_years_per_cell": 64.35,
+      "annual_harm_jpy": 3667950000,
+      "n_cells": 38,
+      "harm_per_capita_jpy": 1930
+    },
+    "静岡県": {
+      "population": 3600000,
+      "annual_harm_events": 28440,
+      "victim_years": 4266.0,
+      "victim_years_per_cell": 59.25,
+      "annual_harm_jpy": 6399000000,
+      "n_cells": 72,
+      "harm_per_capita_jpy": 1777
+    },
+    "愛知県": {
+      "population": 7500000,
+      "annual_harm_events": 42300,
+      "victim_years": 6345.0,
+      "victim_years_per_cell": 42.3,
+      "annual_harm_jpy": 9517500000,
+      "n_cells": 150,
+      "harm_per_capita_jpy": 1269
+    },
+    "三重県": {
+      "population": 1700000,
+      "annual_harm_events": 7616,
+      "victim_years": 1142.4,
+      "victim_years_per_cell": 33.6,
+      "annual_harm_jpy": 1713600000,
+      "n_cells": 34,
+      "harm_per_capita_jpy": 1008
+    },
+    "滋賀県": {
+      "population": 1400000,
+      "annual_harm_events": 13342,
+      "victim_years": 2001.3,
+      "victim_years_per_cell": 71.475,
+      "annual_harm_jpy": 3001950000,
+      "n_cells": 28,
+      "harm_per_capita_jpy": 2144
+    },
+    "京都府": {
+      "population": 2500000,
+      "annual_harm_events": 14050,
+      "victim_years": 2107.5,
+      "victim_years_per_cell": 42.15,
+      "annual_harm_jpy": 3161250000,
+      "n_cells": 50,
+      "harm_per_capita_jpy": 1264
+    },
+    "大阪府": {
+      "population": 8800000,
+      "annual_harm_events": 80960,
+      "victim_years": 12144.0,
+      "victim_years_per_cell": 69.0,
+      "annual_harm_jpy": 18216000000,
+      "n_cells": 176,
+      "harm_per_capita_jpy": 2070
+    },
+    "兵庫県": {
+      "population": 5400000,
+      "annual_harm_events": 22194,
+      "victim_years": 3329.1,
+      "victim_years_per_cell": 30.825,
+      "annual_harm_jpy": 4993650000,
+      "n_cells": 108,
+      "harm_per_capita_jpy": 924
+    },
+    "奈良県": {
+      "population": 1300000,
+      "annual_harm_events": 11492,
+      "victim_years": 1723.8,
+      "victim_years_per_cell": 66.3,
+      "annual_harm_jpy": 2585700000,
+      "n_cells": 26,
+      "harm_per_capita_jpy": 1989
+    },
+    "和歌山県": {
+      "population": 900000,
+      "annual_harm_events": 6570,
+      "victim_years": 985.5,
+      "victim_years_per_cell": 54.75,
+      "annual_harm_jpy": 1478250000,
+      "n_cells": 18,
+      "harm_per_capita_jpy": 1642
+    },
+    "鳥取県": {
+      "population": 500000,
+      "annual_harm_events": 4290,
+      "victim_years": 643.5,
+      "victim_years_per_cell": 64.35,
+      "annual_harm_jpy": 965250000,
+      "n_cells": 10,
+      "harm_per_capita_jpy": 1930
+    },
+    "島根県": {
+      "population": 600000,
+      "annual_harm_events": 4860,
+      "victim_years": 729.0,
+      "victim_years_per_cell": 60.75,
+      "annual_harm_jpy": 1093500000,
+      "n_cells": 12,
+      "harm_per_capita_jpy": 1822
+    },
+    "岡山県": {
+      "population": 1800000,
+      "annual_harm_events": 12384,
+      "victim_years": 1857.6,
+      "victim_years_per_cell": 51.6,
+      "annual_harm_jpy": 2786400000,
+      "n_cells": 36,
+      "harm_per_capita_jpy": 1548
+    },
+    "広島県": {
+      "population": 2700000,
+      "annual_harm_events": 26001,
+      "victim_years": 3900.1,
+      "victim_years_per_cell": 72.224,
+      "annual_harm_jpy": 5850150000,
+      "n_cells": 54,
+      "harm_per_capita_jpy": 2166
+    },
+    "山口県": {
+      "population": 1300000,
+      "annual_harm_events": 7644,
+      "victim_years": 1146.6,
+      "victim_years_per_cell": 44.1,
+      "annual_harm_jpy": 1719900000,
+      "n_cells": 26,
+      "harm_per_capita_jpy": 1323
+    },
+    "徳島県": {
+      "population": 700000,
+      "annual_harm_events": 4886,
+      "victim_years": 732.9,
+      "victim_years_per_cell": 52.35,
+      "annual_harm_jpy": 1099350000,
+      "n_cells": 14,
+      "harm_per_capita_jpy": 1570
+    },
+    "香川県": {
+      "population": 900000,
+      "annual_harm_events": 7857,
+      "victim_years": 1178.5,
+      "victim_years_per_cell": 65.472,
+      "annual_harm_jpy": 1767750000,
+      "n_cells": 18,
+      "harm_per_capita_jpy": 1964
+    },
+    "愛媛県": {
+      "population": 1300000,
+      "annual_harm_events": 9620,
+      "victim_years": 1443.0,
+      "victim_years_per_cell": 55.5,
+      "annual_harm_jpy": 2164500000,
+      "n_cells": 26,
+      "harm_per_capita_jpy": 1665
+    },
+    "高知県": {
+      "population": 700000,
+      "annual_harm_events": 6251,
+      "victim_years": 937.6,
+      "victim_years_per_cell": 66.971,
+      "annual_harm_jpy": 1406400000,
+      "n_cells": 14,
+      "harm_per_capita_jpy": 2009
+    },
+    "福岡県": {
+      "population": 5100000,
+      "annual_harm_events": 36414,
+      "victim_years": 5462.1,
+      "victim_years_per_cell": 53.55,
+      "annual_harm_jpy": 8193150000,
+      "n_cells": 102,
+      "harm_per_capita_jpy": 1606
+    },
+    "佐賀県": {
+      "population": 800000,
+      "annual_harm_events": 6352,
+      "victim_years": 952.8,
+      "victim_years_per_cell": 59.55,
+      "annual_harm_jpy": 1429200000,
+      "n_cells": 16,
+      "harm_per_capita_jpy": 1786
+    },
+    "長崎県": {
+      "population": 1300000,
+      "annual_harm_events": 4927,
+      "victim_years": 739.0,
+      "victim_years_per_cell": 28.423,
+      "annual_harm_jpy": 1108500000,
+      "n_cells": 26,
+      "harm_per_capita_jpy": 852
+    },
+    "熊本県": {
+      "population": 1700000,
+      "annual_harm_events": 8398,
+      "victim_years": 1259.7,
+      "victim_years_per_cell": 37.05,
+      "annual_harm_jpy": 1889550000,
+      "n_cells": 34,
+      "harm_per_capita_jpy": 1111
+    },
+    "大分県": {
+      "population": 1100000,
+      "annual_harm_events": 5852,
+      "victim_years": 877.8,
+      "victim_years_per_cell": 39.9,
+      "annual_harm_jpy": 1316700000,
+      "n_cells": 22,
+      "harm_per_capita_jpy": 1197
+    },
+    "宮崎県": {
+      "population": 1000000,
+      "annual_harm_events": 4000,
+      "victim_years": 600.0,
+      "victim_years_per_cell": 30.0,
+      "annual_harm_jpy": 900000000,
+      "n_cells": 20,
+      "harm_per_capita_jpy": 900
+    },
+    "鹿児島県": {
+      "population": 1600000,
+      "annual_harm_events": 7952,
+      "victim_years": 1192.8,
+      "victim_years_per_cell": 37.275,
+      "annual_harm_jpy": 1789200000,
+      "n_cells": 32,
+      "harm_per_capita_jpy": 1118
+    },
+    "沖縄県": {
+      "population": 1500000,
+      "annual_harm_events": 6209,
+      "victim_years": 931.3,
+      "victim_years_per_cell": 31.043,
+      "annual_harm_jpy": 1396950000,
+      "n_cells": 30,
+      "harm_per_capita_jpy": 931
+    }
+  },
+  "national_summary": {
+    "total_national_externality_jpy": 176955900000,
+    "total_national_externality_billion_jpy": 177.0,
+    "total_victim_years": 117971.0,
+    "gdp_fraction_pct": 0.03
+  },
+  "disclosure_framework": "ISSB S1 General Sustainability-related Disclosures + IWAI standards"
+}

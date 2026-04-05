@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "framework": "NGFS Phase IV Climate Scenarios (2023)",
+  "mapping": {
+    "Orderly": {
+      "ngfs_scenario": "Net Zero 2050",
+      "our_rcp": "RCP2.6",
+      "description": "Early, ambitious action. Global warming limited to 1.5C. Smooth transition, low transition & physical risk.",
+      "carbon_price_2030_usd_t": 130,
+      "warming_2100_c": 1.4,
+      "transition_risk": "moderate",
+      "physical_risk": "low"
+    },
+    "Disorderly": {
+      "ngfs_scenario": "Delayed Transition",
+      "our_rcp": "RCP4.5_with_shock",
+      "description": "Delayed policy action until 2030, then sharp policy shock. 1.6C warming but high transition risk.",
+      "carbon_price_2030_usd_t": 55,
+      "warming_2100_c": 1.6,
+      "transition_risk": "high",
+      "physical_risk": "moderate"
+    },
+    "Hot House World": {
+      "ngfs_scenario": "Current Policies",
+      "our_rcp": "RCP8.5",
+      "description": "Only currently implemented policies. Severe physical risks, critical warming.",
+      "carbon_price_2030_usd_t": 15,
+      "warming_2100_c": 3.0,
+      "transition_risk": "low",
+      "physical_risk": "severe"
+    },
+    "Too Little Too Late": {
+      "ngfs_scenario": "Fragmented World / NDCs",
+      "our_rcp": "RCP6.0",
+      "description": "Fragmented action, insufficient NDCs. High transition AND physical risk.",
+      "carbon_price_2030_usd_t": 40,
+      "warming_2100_c": 2.6,
+      "transition_risk": "high",
+      "physical_risk": "high"
+    }
+  },
+  "use_case": "Stress testing Japan subnational risk portfolios under NGFS scenarios for TCFD/ISSB S2 climate disclosure.",
+  "source": "NGFS Scenarios Portal Phase IV (November 2023), mapped to Risk Space MCP RCP projections"
+}

@@ -1,0 +1,1051 @@
+{
+  "version": "1.0.0",
+  "framework": "SASB + GRI + UN SDG + TCFD + ISSB",
+  "methodology": "Governance safety score = 100 - (crime_rate / 12) * 100. OECD percentile benchmarked against OECD average crime rate of 5.5/1000.",
+  "last_updated": "2026-04-05",
+  "data_sources": [
+    "NPA crime statistics 2024",
+    "OECD Better Life Index 2024"
+  ],
+  "prefectures": {
+    "北海道": {
+      "governance_safety_score": 37,
+      "crime_rate_per_1000": 7.53,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 32,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "青森県": {
+      "governance_safety_score": 70,
+      "crime_rate_per_1000": 3.66,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 67,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "岩手県": {
+      "governance_safety_score": 56,
+      "crime_rate_per_1000": 5.23,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 52,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "宮城県": {
+      "governance_safety_score": 59,
+      "crime_rate_per_1000": 4.91,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 55,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "秋田県": {
+      "governance_safety_score": 70,
+      "crime_rate_per_1000": 3.6,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 67,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "山形県": {
+      "governance_safety_score": 35,
+      "crime_rate_per_1000": 7.76,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 29,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "福島県": {
+      "governance_safety_score": 24,
+      "crime_rate_per_1000": 9.12,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 17,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "茨城県": {
+      "governance_safety_score": 66,
+      "crime_rate_per_1000": 4.05,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 63,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "栃木県": {
+      "governance_safety_score": 49,
+      "crime_rate_per_1000": 6.16,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 44,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "群馬県": {
+      "governance_safety_score": 69,
+      "crime_rate_per_1000": 3.69,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 66,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "埼玉県": {
+      "governance_safety_score": 59,
+      "crime_rate_per_1000": 4.88,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 56,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "千葉県": {
+      "governance_safety_score": 44,
+      "crime_rate_per_1000": 6.68,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 39,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "東京都": {
+      "governance_safety_score": 43,
+      "crime_rate_per_1000": 6.8,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 38,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "神奈川県": {
+      "governance_safety_score": 60,
+      "crime_rate_per_1000": 4.75,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 57,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "新潟県": {
+      "governance_safety_score": 37,
+      "crime_rate_per_1000": 7.59,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 31,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "富山県": {
+      "governance_safety_score": 42,
+      "crime_rate_per_1000": 6.93,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 37,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "石川県": {
+      "governance_safety_score": 59,
+      "crime_rate_per_1000": 4.89,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 56,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "福井県": {
+      "governance_safety_score": 68,
+      "crime_rate_per_1000": 3.8,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 65,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "山梨県": {
+      "governance_safety_score": 28,
+      "crime_rate_per_1000": 8.6,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 22,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "長野県": {
+      "governance_safety_score": 70,
+      "crime_rate_per_1000": 3.54,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 68,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "岐阜県": {
+      "governance_safety_score": 28,
+      "crime_rate_per_1000": 8.58,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 22,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "静岡県": {
+      "governance_safety_score": 34,
+      "crime_rate_per_1000": 7.9,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 28,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "愛知県": {
+      "governance_safety_score": 53,
+      "crime_rate_per_1000": 5.64,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 49,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "三重県": {
+      "governance_safety_score": 63,
+      "crime_rate_per_1000": 4.48,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 59,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "滋賀県": {
+      "governance_safety_score": 21,
+      "crime_rate_per_1000": 9.53,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 13,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "京都府": {
+      "governance_safety_score": 53,
+      "crime_rate_per_1000": 5.62,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 49,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "大阪府": {
+      "governance_safety_score": 23,
+      "crime_rate_per_1000": 9.2,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 16,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "兵庫県": {
+      "governance_safety_score": 66,
+      "crime_rate_per_1000": 4.11,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 63,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "奈良県": {
+      "governance_safety_score": 26,
+      "crime_rate_per_1000": 8.84,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 20,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "和歌山県": {
+      "governance_safety_score": 39,
+      "crime_rate_per_1000": 7.3,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 34,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "鳥取県": {
+      "governance_safety_score": 28,
+      "crime_rate_per_1000": 8.58,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 22,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "島根県": {
+      "governance_safety_score": 32,
+      "crime_rate_per_1000": 8.1,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 26,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "岡山県": {
+      "governance_safety_score": 43,
+      "crime_rate_per_1000": 6.88,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 37,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "広島県": {
+      "governance_safety_score": 20,
+      "crime_rate_per_1000": 9.63,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 12,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "山口県": {
+      "governance_safety_score": 51,
+      "crime_rate_per_1000": 5.88,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 47,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "徳島県": {
+      "governance_safety_score": 42,
+      "crime_rate_per_1000": 6.98,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 37,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "香川県": {
+      "governance_safety_score": 27,
+      "crime_rate_per_1000": 8.73,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 21,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "愛媛県": {
+      "governance_safety_score": 38,
+      "crime_rate_per_1000": 7.4,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 33,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "高知県": {
+      "governance_safety_score": 26,
+      "crime_rate_per_1000": 8.93,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 19,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "福岡県": {
+      "governance_safety_score": 40,
+      "crime_rate_per_1000": 7.14,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 35,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "佐賀県": {
+      "governance_safety_score": 34,
+      "crime_rate_per_1000": 7.94,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 28,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "長崎県": {
+      "governance_safety_score": 68,
+      "crime_rate_per_1000": 3.79,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 66,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "熊本県": {
+      "governance_safety_score": 59,
+      "crime_rate_per_1000": 4.94,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 55,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "大分県": {
+      "governance_safety_score": 56,
+      "crime_rate_per_1000": 5.32,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 52,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "宮崎県": {
+      "governance_safety_score": 67,
+      "crime_rate_per_1000": 4.0,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 64,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "鹿児島県": {
+      "governance_safety_score": 59,
+      "crime_rate_per_1000": 4.97,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 55,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    },
+    "沖縄県": {
+      "governance_safety_score": 66,
+      "crime_rate_per_1000": 4.14,
+      "sasb_mapping": [
+        "SV-PS-000.A",
+        "SV-PS-330a.1",
+        "SV-PS-510a.1"
+      ],
+      "gri_mapping": [
+        "GRI 413-1",
+        "GRI 403-10",
+        "GRI 418-1"
+      ],
+      "sdg_targets": [
+        "SDG 11.7",
+        "SDG 16.1",
+        "SDG 16.4"
+      ],
+      "percentile_vs_oecd": 62,
+      "tcfd_pillar": "Risk Management",
+      "issb_standard": "IFRS S1/S2"
+    }
+  },
+  "national_summary": {
+    "japan_composite_score": 47,
+    "oecd_rank_safety": 3,
+    "esg_rating_equivalent": "AA"
+  }
+}

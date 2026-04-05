@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-05T12:00:00Z",
+    "description": "Frequency-Severity GLM for crime incident forecasting (synthetic illustrative coefficients within realistic industry ranges)",
+    "note": "Synthetic example values; replace with actual fits once full incident table is ingested."
+  },
+  "frequency_model": {
+    "family": "Poisson",
+    "link": "log",
+    "response": "incident_count_per_cell_day",
+    "n_obs": 183000,
+    "coefficients": [
+      {
+        "feature": "(Intercept)",
+        "estimate": -3.412,
+        "std_error": 0.084,
+        "z_value": -40.62,
+        "p_value": 1.1e-32
+      },
+      {
+        "feature": "hour_of_day_sin",
+        "estimate": 0.287,
+        "std_error": 0.031,
+        "z_value": 9.26,
+        "p_value": 2e-20
+      },
+      {
+        "feature": "hour_of_day_cos",
+        "estimate": -0.412,
+        "std_error": 0.029,
+        "z_value": -14.21,
+        "p_value": 7.4e-46
+      },
+      {
+        "feature": "day_of_week_weekend",
+        "estimate": 0.163,
+        "std_error": 0.022,
+        "z_value": 7.41,
+        "p_value": 1.3e-13
+      },
+      {
+        "feature": "urban_density_log",
+        "estimate": 0.548,
+        "std_error": 0.019,
+        "z_value": 28.84,
+        "p_value": 4.2e-180
+      },
+      {
+        "feature": "haven_count_500m",
+        "estimate": -0.094,
+        "std_error": 0.011,
+        "z_value": -8.55,
+        "p_value": 1.2e-17
+      }
+    ],
+    "goodness_of_fit": {
+      "aic": 42187.3,
+      "bic": 42251.8,
+      "deviance": 42175.3,
+      "null_deviance": 58412.6,
+      "pseudo_r2_mcfadden": 0.278,
+      "dispersion": 1.082
+    }
+  },
+  "severity_model": {
+    "family": "Gamma",
+    "link": "log",
+    "response": "loss_jpy_per_incident",
+    "n_obs": 12847,
+    "coefficients": [
+      {
+        "feature": "(Intercept)",
+        "estimate": 11.842,
+        "std_error": 0.121,
+        "z_value": 97.87,
+        "p_value": 0.0
+      },
+      {
+        "feature": "hour_of_day_sin",
+        "estimate": 0.046,
+        "std_error": 0.038,
+        "z_value": 1.21,
+        "p_value": 0.226
+      },
+      {
+        "feature": "hour_of_day_cos",
+        "estimate": -0.082,
+        "std_error": 0.036,
+        "z_value": -2.28,
+        "p_value": 0.023
+      },
+      {
+        "feature": "day_of_week_weekend",
+        "estimate": 0.121,
+        "std_error": 0.031,
+        "z_value": 3.9,
+        "p_value": 9.6e-05
+      },
+      {
+        "feature": "urban_density_log",
+        "estimate": 0.213,
+        "std_error": 0.024,
+        "z_value": 8.88,
+        "p_value": 6.7e-19
+      },
+      {
+        "feature": "haven_count_500m",
+        "estimate": -0.057,
+        "std_error": 0.015,
+        "z_value": -3.8,
+        "p_value": 0.00014
+      }
+    ],
+    "goodness_of_fit": {
+      "aic": 284312.7,
+      "bic": 284358.1,
+      "deviance": 11234.2,
+      "null_deviance": 14892.7,
+      "pseudo_r2_mcfadden": 0.246,
+      "dispersion": 0.873
+    }
+  },
+  "features": {
+    "hour_of_day": "Cyclic sin/cos encoding of local hour",
+    "day_of_week": "Indicator (weekend vs weekday)",
+    "urban_density": "log(population per km² in cell)",
+    "haven_count_500m": "Number of safe havens within 500m"
+  }
+}

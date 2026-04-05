@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "source": "Lloyd's Risk Codes (Class Codes) 2024",
+  "our_peril": {
+    "crime_property": {
+      "lloyds_code": "T3",
+      "description": "Theft / Property Crime",
+      "class": "Property"
+    },
+    "crime_violent": {
+      "lloyds_code": "PA",
+      "description": "Personal Accident / Assault",
+      "class": "Accident & Health"
+    },
+    "traffic": {
+      "lloyds_code": "PD",
+      "description": "Personal Accident - Motor",
+      "class": "Motor"
+    },
+    "traffic_major": {
+      "lloyds_code": "MC",
+      "description": "Motor Third Party Liability",
+      "class": "Motor"
+    },
+    "disaster": {
+      "lloyds_code": "N1",
+      "description": "Nat Cat - General",
+      "class": "Property Nat Cat"
+    },
+    "disaster_flood": {
+      "lloyds_code": "NF",
+      "description": "Nat Cat - Flood",
+      "class": "Property Nat Cat"
+    },
+    "disaster_quake": {
+      "lloyds_code": "NE",
+      "description": "Nat Cat - Earthquake",
+      "class": "Property Nat Cat"
+    },
+    "weather": {
+      "lloyds_code": "N3",
+      "description": "Weather Peril - General",
+      "class": "Property Nat Cat"
+    },
+    "weather_typhoon": {
+      "lloyds_code": "NW",
+      "description": "Nat Cat - Windstorm/Typhoon",
+      "class": "Property Nat Cat"
+    },
+    "weather_heat": {
+      "lloyds_code": "WH",
+      "description": "Heat Wave / Weather",
+      "class": "Weather"
+    }
+  },
+  "notes": "Mapping follows Lloyd's Risk Code Guidance (MarketBulletins Y5349)."
+}

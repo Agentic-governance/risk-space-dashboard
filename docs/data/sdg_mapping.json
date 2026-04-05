@@ -1,0 +1,61 @@
+{
+  "version": "1.0.0",
+  "framework": "UN Sustainable Development Goals 2030 Agenda",
+  "field_mapping": {
+    "expected_harm": {
+      "sdg_target": "SDG 16.1",
+      "target_text": "Significantly reduce all forms of violence and related death rates everywhere",
+      "indicator": "16.1.1 / 16.1.3 / 16.1.4",
+      "direction": "minimize"
+    },
+    "safe_haven_density": {
+      "sdg_target": "SDG 11.7",
+      "target_text": "Provide universal access to safe, inclusive and accessible, green and public spaces",
+      "indicator": "11.7.1",
+      "direction": "maximize"
+    },
+    "evacuation_coverage": {
+      "sdg_target": "SDG 11.B",
+      "target_text": "Implement integrated policies and plans towards inclusion, resource efficiency, disaster risk reduction",
+      "indicator": "11.B.2",
+      "direction": "maximize"
+    },
+    "traffic_accidents": {
+      "sdg_target": "SDG 3.6",
+      "target_text": "Halve the number of global deaths and injuries from road traffic accidents",
+      "indicator": "3.6.1",
+      "direction": "minimize"
+    },
+    "crime_property": {
+      "sdg_target": "SDG 16.4",
+      "target_text": "Significantly reduce illicit financial and arms flows, combat all forms of organized crime",
+      "indicator": "16.4.2",
+      "direction": "minimize"
+    },
+    "heat_days": {
+      "sdg_target": "SDG 13.1",
+      "target_text": "Strengthen resilience and adaptive capacity to climate-related hazards",
+      "indicator": "13.1.1",
+      "direction": "minimize"
+    },
+    "flood_risk": {
+      "sdg_target": "SDG 13.1 / 11.5",
+      "target_text": "Reduce deaths and economic losses from disasters",
+      "indicator": "11.5.1 / 11.5.2",
+      "direction": "minimize"
+    },
+    "earthquake_exposure": {
+      "sdg_target": "SDG 11.5",
+      "target_text": "Reduce adverse effects of natural disasters",
+      "indicator": "11.5.2",
+      "direction": "minimize"
+    }
+  },
+  "reporting_aligned": [
+    "GRI Standards 2021",
+    "SASB Industry Standards",
+    "TCFD Recommendations",
+    "ISSB IFRS S1/S2"
+  ],
+  "source": "UN Department of Economic and Social Affairs - SDG Indicators Database"
+}
