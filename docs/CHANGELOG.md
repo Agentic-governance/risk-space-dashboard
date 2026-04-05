@@ -4,6 +4,57 @@ All notable changes to the Risk Space MCP dashboard.
 
 ---
 
+## v12 - Institutional / Enterprise Campaign (iter 41-100, 2026-04-05)
+
+### 15 new institutional datasets
+- `elt_japan_v1.json` — Event Loss Table (actuarial)
+- `tail_risk_metrics.json` — VaR95/99, CVaR99, max drawdown
+- `cat_bond_pricing.json` — parametric cat-bond spread curves
+- `reinsurance_pricing.json` — XL / quota-share treaty pricing
+- `loss_triangle_2018_2024.json` — IBNR loss development triangle
+- `glm_frequency_severity.json` — GLM freq/severity fits
+- `basel_iii_op_risk.json` — Basel III SMA operational risk capital
+- `eiopa_stress_test.json` — EIOPA 2026 shadow stress scenarios
+- `climate_scenarios_rcp.json` — RCP2.6/4.5/8.5 × 2030/2050/2100
+- `ngfs_pathway_map.json` — NGFS transition-risk pathways
+- `esg_governance_metadata.json` — SASB + GRI + SDG + TCFD + ISSB
+- `sovereign_risk_scorecard_japan.json` — country composite score
+- `sdg_mapping.json` — UN SDG target mapping
+- `lloyds_risk_code_map.json` — Lloyd's of London risk codes
+- `impact_weighted_accounts_v1.json` — Harvard IWAI accounts
+- `parametric_triggers.json` — parametric payout triggers
+- `compound_risk_tensor.json` — multi-peril correlation tensor
+- `statistical_metadata.json` — 95% CI bands per cell
+- `enterprise_kpis.json` — exec-level KPIs
+- `manifest.sig` — Merkle-root signed manifest
+- `audit_log_sample.ndjson` — append-only audit log
+
+### Enterprise mode implementation
+- Tabbed overlay (Risk Metrics / Climate / ESG / Regulatory / Integrity) in `dashboard/index.html`
+- Live counts from ELT, tail-risk, Basel III ORC, cat-bond principal, ESG governance averages
+- Compliance badges: TCFD, Solvency II, IFRS 17, Basel III, SASB, GRI, ISSB, NGFS
+- Merkle-root verification badge + modal
+- 95% CI hover tooltips wired to `statistical_metadata.json`
+
+### Regulatory framework mappings
+- TCFD report (`docs/tcfd_report.md`)
+- Solvency II S.26.01 SCR mapping (`docs/solvency_ii_mapping.md`)
+- IFRS 17 insurance contract mapping (`docs/ifrs17_mapping.md`)
+- Methodology whitepaper, Data dictionary, Enterprise SLA
+
+### API documentation
+- New Enterprise section in `docs/api/index.html` with all institutional endpoints
+- Integration samples: Python/pandas, R, Snowflake, manifest verification
+- Links to all regulatory framework docs
+
+### 100-iteration enterprise campaign completed
+- Iter 1-40: core dashboard, data layers, accessibility, polish
+- Iter 41-60: enterprise overlay + Merkle verification + tail risk
+- Iter 61-85: institutional datasets, regulatory mappings, stress tests
+- Iter 86-100: tabbed enterprise UI, API docs, README, exec summary, final audit
+
+---
+
 ## v11 - Final Data Enrichment & Polish (2026-04-05)
 
 ### Data Enrichment Round

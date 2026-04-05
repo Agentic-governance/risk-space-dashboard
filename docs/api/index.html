@@ -56,6 +56,7 @@ footer{text-align:center;padding:32px;color:#555;font-size:12px;border-top:1px s
     <a href="#weather">Weather</a>
     <a href="#events">Events</a>
     <a href="#metadata">Metadata</a>
+    <a href="#enterprise">Enterprise</a>
     <a href="#embed">Embed</a>
     <a href="#cors">CORS</a>
     <a href="openapi.yaml">OpenAPI Spec</a>
@@ -418,6 +419,85 @@ import json,sys; d=json.load(sys.stdin); print(f'{len(d)} schools')
 curl -s https://your-domain.com/data/parking_tokyo.json | python3 -c "
 import json,sys; d=json.load(sys.stdin); print(f'{len(d)} parking lots')
 "</code></pre>
+
+<!-- Enterprise / Institutional Datasets -->
+<h2 id="enterprise">Enterprise / Institutional Datasets <span class="badge">Enterprise tier</span></h2>
+
+<p class="desc">Institutional-grade datasets mapped to regulatory frameworks. All files are served as static JSON under <code>/data/</code>. Free to read; Enterprise tier adds SLA, signed manifests, and per-field provenance.</p>
+
+<table>
+  <tr><th>Endpoint</th><th>Framework / Use</th></tr>
+  <tr><td><code>/data/elt_japan_v1.json</code></td><td>Event Loss Table — actuarial reserving</td></tr>
+  <tr><td><code>/data/tail_risk_metrics.json</code></td><td>VaR95/99, CVaR99, max drawdown</td></tr>
+  <tr><td><code>/data/cat_bond_pricing.json</code></td><td>Parametric cat-bond spread curves</td></tr>
+  <tr><td><code>/data/reinsurance_pricing.json</code></td><td>XL/Quota-share treaty pricing</td></tr>
+  <tr><td><code>/data/loss_triangle_2018_2024.json</code></td><td>IBNR loss development triangle</td></tr>
+  <tr><td><code>/data/glm_frequency_severity.json</code></td><td>GLM freq/severity fits</td></tr>
+  <tr><td><code>/data/basel_iii_op_risk.json</code></td><td>Basel III SMA — operational risk ORC</td></tr>
+  <tr><td><code>/data/eiopa_stress_test.json</code></td><td>EIOPA 2026 stress-test shadow run</td></tr>
+  <tr><td><code>/data/climate_scenarios_rcp.json</code></td><td>RCP2.6/4.5/8.5 × 2030/2050/2100</td></tr>
+  <tr><td><code>/data/ngfs_pathway_map.json</code></td><td>NGFS climate-transition pathways</td></tr>
+  <tr><td><code>/data/esg_governance_metadata.json</code></td><td>SASB + GRI + SDG + TCFD + ISSB</td></tr>
+  <tr><td><code>/data/sovereign_risk_scorecard_japan.json</code></td><td>Country-level composite score</td></tr>
+  <tr><td><code>/data/sdg_mapping.json</code></td><td>UN SDG 11/16 target mapping</td></tr>
+  <tr><td><code>/data/lloyds_risk_code_map.json</code></td><td>Lloyd's of London risk codes</td></tr>
+  <tr><td><code>/data/impact_weighted_accounts_v1.json</code></td><td>Harvard IWAI impact accounts</td></tr>
+  <tr><td><code>/data/parametric_triggers.json</code></td><td>Parametric payout triggers</td></tr>
+  <tr><td><code>/data/compound_risk_tensor.json</code></td><td>Multi-peril correlation tensor</td></tr>
+  <tr><td><code>/data/statistical_metadata.json</code></td><td>95% CI bands per grid cell</td></tr>
+  <tr><td><code>/data/enterprise_kpis.json</code></td><td>Exec KPIs for dashboards</td></tr>
+  <tr><td><code>/data/manifest.sig</code></td><td>Merkle-root signed manifest</td></tr>
+  <tr><td><code>/data/audit_log_sample.ndjson</code></td><td>Append-only audit log sample</td></tr>
+</table>
+
+<h3>Regulatory Framework Documentation</h3>
+<ul>
+  <li><a href="../tcfd_report.md">TCFD Climate Disclosure Report</a></li>
+  <li><a href="../solvency_ii_mapping.md">Solvency II Mapping (S.26.01 SCR)</a></li>
+  <li><a href="../ifrs17_mapping.md">IFRS 17 Insurance Contracts Mapping</a></li>
+  <li><a href="../methodology.md">Methodology Whitepaper</a></li>
+  <li><a href="../data_dictionary.md">Data Dictionary</a></li>
+  <li><a href="../SLA.md">Enterprise SLA</a></li>
+  <li><a href="../CHANGELOG.md">CHANGELOG</a></li>
+</ul>
+
+<h3>Enterprise Tier Access</h3>
+<p class="desc">Free tier serves all JSON files above without authentication. Enterprise tier adds:</p>
+<ul>
+  <li><strong>Signed manifests</strong> — Merkle root + SHA-256 per file (<code>manifest.sig</code>)</li>
+  <li><strong>SLA</strong> — 99.9% availability, &lt;500ms p95 latency, incident notifications (<a href="../SLA.md">details</a>)</li>
+  <li><strong>Audit trail</strong> — append-only NDJSON log with cryptographic chaining</li>
+  <li><strong>Private R2 endpoint</strong> — dedicated Cloudflare R2 bucket with signed URLs</li>
+  <li><strong>Support</strong> — Slack connect + named CSM</li>
+</ul>
+
+<h3>Integration Sample — Python (pandas)</h3>
+<pre><code>import pandas as pd, requests
+BASE = 'https://agentic-governance.github.io/risk-space-dashboard/data'
+elt = pd.DataFrame(requests.get(f'{BASE}/elt_japan_v1.json').json()['events'])
+elt['aal'] = elt['annual_rate'] * elt['mean_loss_jpy']
+print('National AAL (JPY):', int(elt['aal'].sum()))
+print(elt.groupby('peril')['aal'].sum().sort_values(ascending=False))</code></pre>
+
+<h3>Integration Sample — R (actuaries)</h3>
+<pre><code>library(jsonlite); library(dplyr)
+base <- "https://agentic-governance.github.io/risk-space-dashboard/data"
+tail <- fromJSON(paste0(base,"/tail_risk_metrics.json"))
+cat("VaR99:", tail$national$var_99, "  CVaR99:", tail$national$cvar_99, "\n")</code></pre>
+
+<h3>Integration Sample — Bloomberg / Snowflake</h3>
+<pre><code>-- Snowflake external stage
+CREATE STAGE risk_space_stage
+  URL='https://agentic-governance.github.io/risk-space-dashboard/data/'
+  FILE_FORMAT=(TYPE=JSON);
+COPY INTO risk_elt FROM @risk_space_stage/elt_japan_v1.json;</code></pre>
+
+<h3>Integration Sample — Verify signed manifest</h3>
+<pre><code>import json, hashlib, requests
+sig = requests.get(f'{BASE}/manifest.sig').json()
+print('Merkle root:', sig['merkle_root'])
+print('Files indexed:', sig['file_count'])
+# Recompute root from sig['files'] and compare</code></pre>
 
 <!-- Client-side API -->
 <h2 id="query-api">Client-Side Query API</h2>

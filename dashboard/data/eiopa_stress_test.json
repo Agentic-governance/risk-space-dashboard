@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-04-05T12:00:00Z",
+  "framework": "EIOPA Insurance Stress Test 2026 — Japan shadow run",
+  "version": "1.0",
+  "base_metrics": {
+    "national_expected_harm_annual": 1.000,
+    "national_elt_expected_loss_bn_jpy": 1875,
+    "national_var_99_bn_jpy": 6420,
+    "national_tvar_995_bn_jpy": 8910
+  },
+  "scenarios": [
+    {
+      "scenario_id": "EIOPA-2026-S1-PAN",
+      "name": "Pandemic (COVID-like resurgence)",
+      "narrative": "Novel respiratory pathogen, 18-month duration, 2 waves, mobility restrictions, property crime spike in weeks 8-20.",
+      "shocks": {
+        "mortality_excess_pct": 0.35,
+        "mobility_reduction_pct": -0.45,
+        "property_crime_multiplier": 1.28,
+        "violent_crime_multiplier": 0.88,
+        "traffic_accident_multiplier": 0.55,
+        "fraud_multiplier": 1.65
+      },
+      "impact_on_expected_harm": {
+        "absolute_change": 0.142,
+        "pct_change": 14.2,
+        "stressed_expected_harm": 1.142
+      },
+      "impact_on_var99_bn_jpy": 1380,
+      "solvency_ratio_delta_pp": -23.5
+    },
+    {
+      "scenario_id": "EIOPA-2026-S2-CYB",
+      "name": "Systemic Cyber Attack",
+      "narrative": "Coordinated ransomware against financial infrastructure; 72hr payment system outage; cascading impact on physical security systems and emergency dispatch.",
+      "shocks": {
+        "payment_system_outage_hours": 72,
+        "physical_security_degradation_pct": 0.30,
+        "property_crime_multiplier": 1.55,
+        "fraud_multiplier": 2.40,
+        "business_interruption_bn_jpy": 4200,
+        "traffic_signal_failure_multiplier": 1.18
+      },
+      "impact_on_expected_harm": {
+        "absolute_change": 0.215,
+        "pct_change": 21.5,
+        "stressed_expected_harm": 1.215
+      },
+      "impact_on_var99_bn_jpy": 2080,
+      "solvency_ratio_delta_pp": -34.8
+    },
+    {
+      "scenario_id": "EIOPA-2026-S3-NATCAT",
+      "name": "Severe Natural Catastrophe (Nankai Trough M9.1)",
+      "narrative": "Megathrust earthquake + tsunami across Pacific coast prefectures; 15M people affected; 4-6 week recovery window.",
+      "shocks": {
+        "earthquake_magnitude": 9.1,
+        "tsunami_max_run_up_m": 23,
+        "affected_prefectures": ["Shizuoka","Aichi","Mie","Wakayama","Kochi","Tokushima","Miyazaki"],
+        "property_damage_bn_jpy": 85000,
+        "looting_crime_multiplier": 3.20,
+        "traffic_disruption_multiplier": 4.50,
+        "fatality_estimate": 92000
+      },
+      "impact_on_expected_harm": {
+        "absolute_change": 0.485,
+        "pct_change": 48.5,
+        "stressed_expected_harm": 1.485
+      },
+      "impact_on_var99_bn_jpy": 5240,
+      "solvency_ratio_delta_pp": -78.2
+    },
+    {
+      "scenario_id": "EIOPA-2026-S4-ECON-UNREST",
+      "name": "Economic Downturn + Social Unrest",
+      "narrative": "GDP -4.5%, unemployment doubles, 6-month civil commotion episodes in major cities, polarized elections.",
+      "shocks": {
+        "gdp_yoy_pct": -4.5,
+        "unemployment_rate_pct": 5.8,
+        "property_crime_multiplier": 1.72,
+        "violent_crime_multiplier": 1.38,
+        "civil_commotion_multiplier": 4.80,
+        "fraud_multiplier": 1.95,
+        "arson_multiplier": 2.10
+      },
+      "impact_on_expected_harm": {
+        "absolute_change": 0.308,
+        "pct_change": 30.8,
+        "stressed_expected_harm": 1.308
+      },
+      "impact_on_var99_bn_jpy": 2940,
+      "solvency_ratio_delta_pp": -48.6
+    },
+    {
+      "scenario_id": "EIOPA-2026-COMBINED",
+      "name": "Compound Tail Scenario (S2+S4)",
+      "narrative": "Cyber attack coincident with economic downturn — captures tail-dependence.",
+      "combined_shocks_note": "Non-additive combination using copula from compound_risk_tensor.json",
+      "impact_on_expected_harm": {
+        "absolute_change": 0.612,
+        "pct_change": 61.2,
+        "stressed_expected_harm": 1.612
+      },
+      "impact_on_var99_bn_jpy": 6150,
+      "solvency_ratio_delta_pp": -102.4
+    }
+  ],
+  "methodology": "Shocks applied to prefecture-level frequency and severity distributions in glm_frequency_severity.json, then aggregated nationally. Tail dependence modelled via Gaussian copula (rho=0.35) from compound_risk_tensor.json. Solvency ratio deltas computed against base SCR of 180%.",
+  "references": ["compound_risk_tensor.json","glm_frequency_severity.json","elt_japan_v1.json","solvency_ii_mapping.md","climate_scenarios_rcp.json"]
+}

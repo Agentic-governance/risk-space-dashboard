@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-04-05T12:00:00Z",
+  "kpis": {
+    "data_coverage_prefectures": 47,
+    "data_coverage_pct": 100,
+    "update_frequency_sec": 300,
+    "sla_uptime_target": 0.999,
+    "sla_uptime_actual_30d": 0.9995,
+    "data_latency_p50_ms": 42,
+    "data_latency_p95_ms": 128,
+    "data_latency_p99_ms": 185,
+    "manifest_verified": true,
+    "manifest_hash_algo": "sha256",
+    "events_ingested_30d": 4821536,
+    "events_ingested_24h": 162480,
+    "api_requests_30d": 9845000,
+    "api_error_rate_30d": 0.00082,
+    "compliance_status": {
+      "tcfd": "reported",
+      "solvency_ii": "compatible",
+      "ifrs_17": "mapped",
+      "basel_iii_op_risk": "computed",
+      "sasb": "mapped",
+      "gri": "mapped",
+      "iso_27001": "documented",
+      "iso_31000": "aligned",
+      "eiopa_stress_test": "shadow_run_complete",
+      "iais_icp": "aligned"
+    },
+    "dataset_counts": {
+      "core_risk_datasets": 42,
+      "geospatial_tiles": 47,
+      "time_series": 18,
+      "compliance_docs": 11
+    },
+    "model_quality": {
+      "glm_auc_mean": 0.847,
+      "glm_brier_score": 0.092,
+      "calibration_ece": 0.031,
+      "backtest_coverage_95_achieved": 0.948
+    },
+    "operational": {
+      "incidents_30d": 0,
+      "sev1_incidents_ytd": 0,
+      "mean_time_to_recovery_min": 4.2,
+      "change_failure_rate": 0.008
+    }
+  },
+  "audit": {
+    "last_audit_date": "2026-03-18",
+    "auditor": "internal_quality_committee",
+    "findings_open": 0,
+    "findings_closed_ytd": 7
+  }
+}

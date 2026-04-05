@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "country": "JP",
+  "iso_3166": "JPN",
+  "assessment_date": "2026-04-05",
+  "sub_scores": {
+    "civil_unrest": 12,
+    "terror": 8,
+    "cyber": 45,
+    "crime": 24,
+    "political_stability": 15,
+    "natural_disaster": 68,
+    "climate_physical": 55
+  },
+  "percentile_vs_oecd": {
+    "crime": 15,
+    "terror": 5,
+    "civil_unrest": 8,
+    "cyber": 52,
+    "political_stability": 10,
+    "natural_disaster": 92,
+    "climate_physical": 70
+  },
+  "composite": 22,
+  "composite_weighted": 34,
+  "risk_tier": "low",
+  "sovereign_rating_implied": "AA-/A1",
+  "methodology": "Inverse-normalized sub-scores (0=safest, 100=highest risk) from NPA crime stats, GTD terror incidents, ACLED civil unrest, ENISA cyber, J-SHIS natural disaster. Composite = weighted average. Percentiles benchmarked vs 38 OECD members.",
+  "sources": [
+    "NPA White Paper on Police 2024",
+    "Global Terrorism Database (START, Univ Maryland)",
+    "ACLED Political Violence Dataset",
+    "ENISA Threat Landscape 2024",
+    "J-SHIS Seismic Hazard Map (NIED)",
+    "Notre Dame GAIN Climate Index"
+  ],
+  "use_case": "Sovereign bond risk premia, country limit setting, cross-border reinsurance treaty pricing",
+  "benchmark_peers": {
+    "USA": {
+      "composite": 48,
+      "tier": "moderate"
+    },
+    "GBR": {
+      "composite": 31,
+      "tier": "low-moderate"
+    },
+    "DEU": {
+      "composite": 25,
+      "tier": "low"
+    },
+    "KOR": {
+      "composite": 28,
+      "tier": "low"
+    },
+    "SGP": {
+      "composite": 18,
+      "tier": "very-low"
+    }
+  }
+}

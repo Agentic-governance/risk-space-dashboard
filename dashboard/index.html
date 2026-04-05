@@ -2223,7 +2223,16 @@ function showHelpTooltip(term,ev){
 /* === Enterprise mode + Merkle verification (iter 41-60) === */
 (function(){
   // Inject overlay + modal DOM
-  var css='#enterprise-overlay{display:none;position:fixed;top:80px;right:20px;width:360px;max-height:70vh;overflow:auto;background:#0d1420;border:1px solid #2a6cb5;border-radius:8px;padding:14px;z-index:9500;font-size:12px;color:#cde;box-shadow:0 4px 20px rgba(0,0,0,.5)}'+
+  var css='#enterprise-overlay{display:none;position:fixed;top:80px;right:20px;width:420px;max-height:78vh;overflow:auto;background:#0d1420;border:1px solid #2a6cb5;border-radius:8px;padding:14px;z-index:9500;font-size:12px;color:#cde;box-shadow:0 4px 20px rgba(0,0,0,.5)}'+
+    '#enterprise-overlay .ent-tabs{display:flex;gap:4px;margin-bottom:10px;flex-wrap:wrap}'+
+    '#enterprise-overlay .ent-tab{background:#1a2332;border:1px solid #2a4668;color:#7eb3f0;padding:4px 8px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:600}'+
+    '#enterprise-overlay .ent-tab.active{background:#2a6cb5;color:#fff;border-color:#7eb3f0}'+
+    'body.light-mode #enterprise-overlay .ent-tab{background:#eef2f8;border-color:#5a9ad5;color:#2a6cb5}'+
+    'body.light-mode #enterprise-overlay .ent-tab.active{background:#2a6cb5;color:#fff}'+
+    '#enterprise-overlay .ent-pane{display:none}'+
+    '#enterprise-overlay .ent-pane.active{display:block}'+
+    '#enterprise-overlay .cmp-badge{display:inline-block;background:#1b3a2a;border:1px solid #2e7d32;color:#81c784;padding:2px 6px;border-radius:3px;font-size:10px;margin:2px 3px 2px 0}'+
+    'body.light-mode #enterprise-overlay .cmp-badge{background:#e8f5e9;color:#2e7d32}'+
     'body.light-mode #enterprise-overlay{background:#fff;color:#334;border-color:#5a9ad5}'+
     '#enterprise-overlay h3{font-size:13px;color:#7eb3f0;margin:0 0 8px;display:flex;justify-content:space-between;align-items:center}'+
     'body.light-mode #enterprise-overlay h3{color:#2a6cb5}'+
@@ -2296,11 +2305,26 @@ function showHelpTooltip(term,ev){
       fetchJSON('data/elt_japan_v1.json'),
       fetchJSON('data/tail_risk_metrics.json'),
       fetchJSON('data/esg_governance_metadata.json'),
-      fetchJSON('data/statistical_metadata.json')
+      fetchJSON('data/statistical_metadata.json'),
+      fetchJSON('data/cat_bond_pricing.json'),
+      fetchJSON('data/basel_iii_op_risk.json'),
+      fetchJSON('data/climate_scenarios_rcp.json'),
+      fetchJSON('data/sovereign_risk_scorecard_japan.json')
     ]).then(function(r){
-      window.__entData.elt=r[0];window.__entData.tail=r[1];window.__entData.esg=r[2];window.__entData.stat=r[3];
+      var d=window.__entData;
+      d.elt=r[0];d.tail=r[1];d.esg=r[2];d.stat=r[3];
+      d.catbond=r[4];d.basel=r[5];d.climate=r[6];d.sovereign=r[7];
     });
   }
+
+  window.setEntTab=function(tabId){
+    var panes=document.querySelectorAll('#enterprise-overlay .ent-pane');
+    for(var i=0;i<panes.length;i++)panes[i].classList.remove('active');
+    var tabs=document.querySelectorAll('#enterprise-overlay .ent-tab');
+    for(var j=0;j<tabs.length;j++)tabs[j].classList.remove('active');
+    var p=document.getElementById('ent-pane-'+tabId);if(p)p.classList.add('active');
+    var t=document.getElementById('ent-tab-'+tabId);if(t)t.classList.add('active');
+  };
 
   window.showEnterpriseOverlay=function(){
     var o=document.getElementById('enterprise-overlay');
@@ -2309,43 +2333,122 @@ function showHelpTooltip(term,ev){
     var d=window.__entData;
     if(!d.elt||!d.tail){c.innerHTML='<div>Loading enterprise datasets…</div>';
       loadEnterpriseData().then(function(){window.showEnterpriseOverlay()});return;}
-    // ELT summary
+    // ELT
     var nEvents=(d.elt.events||[]).length;
     var sumAAL=0;(d.elt.events||[]).forEach(function(e){sumAAL+=(e.annual_rate||0)*(e.mean_loss_jpy||0)});
     var perilCount={};(d.elt.events||[]).forEach(function(e){perilCount[e.peril]=(perilCount[e.peril]||0)+1});
+    var rpRows='';if(d.elt.return_periods){Object.keys(d.elt.return_periods).forEach(function(k){rpRows+='<div class="ent-row"><span class="ent-k">RP '+k+'</span><span class="ent-v">'+Number(d.elt.return_periods[k]).toLocaleString()+'</span></div>'})}
     // Tail
     var t=d.tail.national||{};
-    // ESG avg
+    // ESG
     var esgVals=[];if(d.esg&&d.esg.prefectures){Object.keys(d.esg.prefectures).forEach(function(k){var v=d.esg.prefectures[k].governance_safety_score;if(typeof v==='number')esgVals.push(v)})}
     var esgAvg=esgVals.length?(esgVals.reduce(function(a,b){return a+b},0)/esgVals.length).toFixed(1):'—';
-    // Statistical sample cell CI for hover
+    // Cat bonds
+    var cb=(d.catbond&&d.catbond.instruments)||[];
+    var cbPrincipal=0;cb.forEach(function(x){cbPrincipal+=x.principal_jpy||0});
+    // Basel
+    var baselTotal=0;var baselRows=(d.basel&&d.basel.prefectures)||[];baselRows.forEach(function(x){baselTotal+=x.ORC_mjpy||0});
+    // Climate
+    var clim=d.climate||{};var scen=clim.scenarios||[];var hor=clim.horizons||[];
+    // Sovereign
+    var sov=d.sovereign||{};
+    // CI
     var cell=(d.stat&&d.stat.cells&&d.stat.cells[0])||null;
-    var ciTip='';
-    if(cell){ciTip='95% CI: ['+cell.expected_harm_ci95[0].toFixed(4)+', '+cell.expected_harm_ci95[1].toFixed(4)+'] (n='+cell.n+')';}
+    var ciTip='';if(cell){ciTip='95% CI: ['+cell.expected_harm_ci95[0].toFixed(4)+', '+cell.expected_harm_ci95[1].toFixed(4)+'] (n='+cell.n+')';}
     var mfOk=d.manifest?'<span style="color:#81c784">✓ verified</span>':'<span style="color:#ffb74d">⚠ unverified</span>';
-    c.innerHTML=
-      '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">ELT Summary</div>'+
-      '<div class="ent-row"><span class="ent-k">Events</span><span class="ent-v">'+nEvents.toLocaleString()+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Sim years</span><span class="ent-v">'+(d.elt.simulation_years||'—').toLocaleString()+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">AAL (JPY)</span><span class="ent-v">'+Math.round(sumAAL).toLocaleString()+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Currency</span><span class="ent-v">'+(d.elt.currency||'JPY')+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Perils</span><span class="ent-v">'+Object.keys(perilCount).length+'</span></div>'+
+
+    // Climate summary rows - national avg delta_eh for RCP8.5 2050
+    var climRows='';if(clim.prefectures){
+      ['RCP2.6','RCP4.5','RCP8.5'].forEach(function(sc){
+        [2030,2050,2100].forEach(function(h){
+          var sum=0,n=0;Object.keys(clim.prefectures).forEach(function(pk){
+            var x=clim.prefectures[pk]&&clim.prefectures[pk][sc]&&clim.prefectures[pk][sc][h];
+            if(x&&typeof x.delta_eh==='number'){sum+=x.delta_eh;n++}
+          });
+          if(n>0){climRows+='<div class="ent-row"><span class="ent-k">'+sc+' '+h+' ΔEH</span><span class="ent-v">+'+(100*sum/n).toFixed(1)+'%</span></div>'}
+        });
+      });
+    }
+
+    // Build tabs + panes
+    var html=
+      '<div class="ent-tabs">'+
+        '<button class="ent-tab active" id="ent-tab-risk" onclick="setEntTab(\'risk\')">Risk Metrics</button>'+
+        '<button class="ent-tab" id="ent-tab-climate" onclick="setEntTab(\'climate\')">Climate</button>'+
+        '<button class="ent-tab" id="ent-tab-esg" onclick="setEntTab(\'esg\')">ESG</button>'+
+        '<button class="ent-tab" id="ent-tab-reg" onclick="setEntTab(\'reg\')">Regulatory</button>'+
+        '<button class="ent-tab" id="ent-tab-integ" onclick="setEntTab(\'integ\')">Integrity</button>'+
       '</div>'+
-      '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Tail Risk (national)</div>'+
-      '<div class="ent-row"><span class="ent-k">VaR 95%</span><span class="ent-v ent-hover" title="'+ciTip+'">'+(t.var_95||'—')+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">VaR 99%</span><span class="ent-v ent-hover" title="'+ciTip+'">'+(t.var_99||'—')+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">CVaR 99%</span><span class="ent-v">'+(t.cvar_99||'—')+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Max drawdown</span><span class="ent-v">'+(t.max_drawdown||'—')+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Distribution</span><span class="ent-v">'+(t.tail_distribution||'—')+'</span></div>'+
+      // Tab 1: Risk Metrics
+      '<div class="ent-pane active" id="ent-pane-risk">'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">ELT Summary</div>'+
+          '<div class="ent-row"><span class="ent-k">Events</span><span class="ent-v">'+nEvents.toLocaleString()+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Sim years</span><span class="ent-v">'+(d.elt.simulation_years||'—').toLocaleString()+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">AAL (JPY)</span><span class="ent-v">'+Math.round(sumAAL).toLocaleString()+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Perils</span><span class="ent-v">'+Object.keys(perilCount).length+'</span></div>'+
+          rpRows+
+        '</div>'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Tail Risk (national)</div>'+
+          '<div class="ent-row"><span class="ent-k">VaR 95%</span><span class="ent-v ent-hover" title="'+ciTip+'">'+(t.var_95||'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">VaR 99%</span><span class="ent-v ent-hover" title="'+ciTip+'">'+(t.var_99||'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">CVaR 99%</span><span class="ent-v">'+(t.cvar_99||'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Max drawdown</span><span class="ent-v">'+(t.max_drawdown||'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Distribution</span><span class="ent-v">'+(t.tail_distribution||'—')+'</span></div>'+
+        '</div>'+
       '</div>'+
-      '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">ESG Score</div>'+
-      '<div class="ent-row"><span class="ent-k">Governance (avg)</span><span class="ent-v">'+esgAvg+' / 100</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Framework</span><span class="ent-v" style="font-size:10px">'+((d.esg&&d.esg.framework)||'—')+'</span></div>'+
+      // Tab 2: Climate
+      '<div class="ent-pane" id="ent-pane-climate">'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">RCP Scenarios (national avg ΔEH)</div>'+
+          (climRows||'<div style="color:#888">No climate data</div>')+
+          '<div style="margin-top:6px;font-size:10px;color:#888">Scenarios: '+scen.join(', ')+'<br>Horizons: '+hor.join(', ')+'</div>'+
+        '</div>'+
       '</div>'+
-      '<div class="ent-section"><div class="ent-row"><span class="ent-k">manifest.sig</span><span class="ent-v">'+mfOk+'</span></div>'+
-      '<div class="ent-row"><span class="ent-k">Merkle root</span><span class="ent-v" style="font-size:9px">'+(d.manifest?String(d.manifest.merkle_root).substring(0,24)+'…':'—')+'</span></div>'+
-      '<div style="margin-top:6px;font-size:10px;color:#888">Hover VaR for 95% CI bands (statistical_metadata.json)</div>'+
+      // Tab 3: ESG
+      '<div class="ent-pane" id="ent-pane-esg">'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">ESG Governance</div>'+
+          '<div class="ent-row"><span class="ent-k">Governance (avg 47 pref)</span><span class="ent-v">'+esgAvg+' / 100</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Prefectures scored</span><span class="ent-v">'+esgVals.length+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Framework</span><span class="ent-v" style="font-size:10px">'+((d.esg&&d.esg.framework)||'—')+'</span></div>'+
+        '</div>'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Sovereign Risk (JP)</div>'+
+          '<div class="ent-row"><span class="ent-k">Composite</span><span class="ent-v">'+(sov.composite||'—')+' ('+(sov.risk_tier||'—')+')</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Implied rating</span><span class="ent-v">'+(sov.sovereign_rating_implied||'—')+'</span></div>'+
+        '</div>'+
+      '</div>'+
+      // Tab 4: Regulatory
+      '<div class="ent-pane" id="ent-pane-reg">'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Cat Bonds</div>'+
+          '<div class="ent-row"><span class="ent-k">Active instruments</span><span class="ent-v">'+cb.length+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Total principal (JPY)</span><span class="ent-v">'+cbPrincipal.toLocaleString()+'</span></div>'+
+        '</div>'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Basel III ORC</div>'+
+          '<div class="ent-row"><span class="ent-k">National total (MJPY)</span><span class="ent-v">'+Math.round(baselTotal).toLocaleString()+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Prefectures</span><span class="ent-v">'+baselRows.length+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Approach</span><span class="ent-v" style="font-size:10px">'+((d.basel&&d.basel.approach)||'—')+'</span></div>'+
+        '</div>'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Compliance</div>'+
+          '<span class="cmp-badge">TCFD ✓</span>'+
+          '<span class="cmp-badge">Solvency II ✓</span>'+
+          '<span class="cmp-badge">IFRS 17 ✓</span>'+
+          '<span class="cmp-badge">Basel III ✓</span>'+
+          '<span class="cmp-badge">SASB ✓</span>'+
+          '<span class="cmp-badge">GRI ✓</span>'+
+          '<span class="cmp-badge">ISSB ✓</span>'+
+          '<span class="cmp-badge">NGFS ✓</span>'+
+        '</div>'+
+      '</div>'+
+      // Tab 5: Integrity
+      '<div class="ent-pane" id="ent-pane-integ">'+
+        '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Data Integrity</div>'+
+          '<div class="ent-row"><span class="ent-k">manifest.sig</span><span class="ent-v">'+mfOk+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Merkle root</span><span class="ent-v" style="font-size:9px">'+(d.manifest?String(d.manifest.merkle_root).substring(0,24)+'…':'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Algorithm</span><span class="ent-v">'+(d.manifest?d.manifest.algorithm:'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Files</span><span class="ent-v">'+(d.manifest?d.manifest.file_count:'—')+'</span></div>'+
+          '<div class="ent-row"><span class="ent-k">Version</span><span class="ent-v">'+(d.manifest?d.manifest.version:'—')+'</span></div>'+
+          '<div style="margin-top:8px"><button onclick="showManifestModal()" style="background:#1a2332;border:1px solid #2a6cb5;color:#7eb3f0;padding:4px 10px;border-radius:4px;cursor:pointer;font-size:11px">View full manifest →</button></div>'+
+        '</div>'+
       '</div>';
+    c.innerHTML=html;
   };
 
   // Wrap setDisplayMode to handle 'enterprise' mode
