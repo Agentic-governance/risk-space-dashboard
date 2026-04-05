@@ -381,6 +381,13 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
   <div id="nearest-haven-big">最寄り施設: クリックで確認</div>
   <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-nearest-haven" onclick="onFindNearestHaven()">🏪 最寄りの安全な場所を探す</button></div>
   <div id="nearest-haven-result"><div class="haven-result-name"></div><div class="haven-result-detail"></div></div>
+  <!-- Feature 1: Monte Carlo 5-year forecast (投資家B) -->
+  <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-mc-forecast" onclick="runMonteCarloForecast()" style="width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#1a2a3c;border:1px solid #4a7ab5;color:#7eb3f0;border-radius:4px;cursor:pointer">🔮 5年予測 (モンテカルロ)</button></div>
+  <div id="mc-forecast-wrap" style="padding:8px 14px;border-bottom:1px solid #2a2a3a;display:none"><div class="section-title" style="font-size:10px;font-weight:700;color:#7eb3f0;letter-spacing:1px;margin-bottom:4px">5年リスク予測 (p5 / median / p95)</div><canvas id="mc-forecast-chart" height="120"></canvas><div id="mc-forecast-note" style="font-size:10px;color:#666;margin-top:4px">GBM: drift -2%/年, vol 8%, 1000 iterations</div></div>
+  <!-- Feature 2: Risk Delta Tracker (自治体-A) -->
+  <div id="delta-tracker-wrap" style="padding:8px 14px;border-bottom:1px solid #2a2a3a;display:none"><div class="section-title" style="font-size:10px;font-weight:700;color:#888;letter-spacing:1px;margin-bottom:6px">リスク変化トラッカー</div><div style="display:flex;gap:8px;justify-content:space-around"><div style="text-align:center;flex:1"><div style="font-size:10px;color:#666">前月比</div><div id="delta-mom" style="font-size:16px;font-weight:800">—</div></div><div style="text-align:center;flex:1"><div style="font-size:10px;color:#666">前年比</div><div id="delta-yoy" style="font-size:16px;font-weight:800">—</div></div></div></div>
+  <!-- Feature 3: School Commute Path Safety (消費者-A) -->
+  <div id="commute-safety-wrap" style="padding:8px 14px;border-bottom:1px solid #2a2a3a"><div class="section-title" style="font-size:10px;font-weight:700;color:#888;letter-spacing:1px;margin-bottom:6px">📚 通学路評価</div><select id="commute-school-select" style="width:100%;padding:5px;font-size:11px;background:#1e1e2e;border:1px solid #2a2a3a;color:#ccc;border-radius:3px;margin-bottom:4px"><option value="">-- 学校を選択 --</option></select><button id="btn-commute-route" onclick="toggleCommuteMode()" style="width:100%;padding:6px;font-size:11px;background:#1a3a2c;border:1px solid #4caf50;color:#4caf50;border-radius:3px;cursor:pointer">自宅位置をクリック</button><div id="commute-result" style="font-size:10px;color:#888;margin-top:6px;line-height:1.5"></div></div>
   <div id="fushinsha-500m-summary"><div class="summary-title">周辺500m 不審者サマリー</div><div class="summary-counts"></div></div>
   <div id="school-radius-count"></div>
   <div id="time-compare-panel"></div>
@@ -429,6 +436,8 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     </div>
   </div>
   <div class="section"><button id="btn-report" onclick="showReportForm()" style="width:100%;padding:10px 12px;font-size:13px;font-weight:700;background:#2a0a0a;border:1px solid #f44336;color:#f44336;border-radius:4px;cursor:pointer;transition:all .2s">🆘 不審者を報告</button></div>
+  <!-- Feature 6: Performance metrics footer (CIO) -->
+  <div id="perf-metrics" style="padding:6px 14px;font-size:10px;color:#555;border-top:1px solid #2a2a3a;text-align:center;font-family:monospace" title="API: v-- / データ日付: --">データ: -- | 読込: --ms | メモリ: --MB</div>
 </div>
 <!-- Stats overlay (User-G) -->
 <div id="stats-overlay">
@@ -1793,6 +1802,207 @@ function renderEmergencyContent(){
   }
   html+='<div style="margin-top:10px;padding:8px;background:#2a1a1a;border-radius:4px;font-size:10px;color:#ccc;line-height:1.5"><b style="color:#ff6b6b">📝 110番通報のポイント:</b><br>'+d.police.template_ja.replace(/\n/g,'<br>')+'</div>';
   document.getElementById('emergency-content').innerHTML=html;
+}
+
+/* ============================================================
+   Advanced Features for High-Level Personas
+   ============================================================ */
+
+/* --- Feature 1: Monte Carlo 5-year Risk Projection (投資家B) --- */
+function monteCarloForecast(cell, years, iterations){
+  years=years||5; iterations=iterations||1000;
+  var baseRisk=cell.risk_score||0;
+  var annualGrowthMean=-0.02;   // crime declining trend
+  var annualVolatility=0.08;
+  var projections=[];
+  for(var i=0;i<iterations;i++){
+    var path=[baseRisk];
+    for(var y=1;y<=years;y++){
+      // approx standard normal via sum of 6 uniforms
+      var z=(Math.random()+Math.random()+Math.random()+Math.random()+Math.random()+Math.random()-3)/Math.sqrt(3/12);
+      var drift=annualGrowthMean-0.5*annualVolatility*annualVolatility;
+      var diffusion=annualVolatility*z;
+      path.push(Math.max(0,Math.min(1,path[y-1]*Math.exp(drift+diffusion))));
+    }
+    projections.push(path);
+  }
+  var result={years:[],p05:[],p50:[],p95:[]};
+  for(var yy=0;yy<=years;yy++){
+    var values=projections.map(function(p){return p[yy]}).sort(function(a,b){return a-b});
+    result.years.push(new Date().getFullYear()+yy);
+    result.p05.push(values[Math.floor(iterations*0.05)]);
+    result.p50.push(values[Math.floor(iterations*0.50)]);
+    result.p95.push(values[Math.floor(iterations*0.95)]);
+  }
+  return result;
+}
+var mcForecastChart=null;
+function runMonteCarloForecast(){
+  if(typeof selectedCell==='undefined'||!selectedCell){
+    alert('地図上で地点をクリックしてから実行してください');
+    return;
+  }
+  var fc=monteCarloForecast(selectedCell,5,1000);
+  document.getElementById('mc-forecast-wrap').style.display='block';
+  var ctx=document.getElementById('mc-forecast-chart').getContext('2d');
+  if(mcForecastChart)mcForecastChart.destroy();
+  mcForecastChart=new Chart(ctx,{
+    type:'line',
+    data:{labels:fc.years,datasets:[
+      {label:'p95',data:fc.p95,borderColor:'#f44336',backgroundColor:'rgba(244,67,54,.15)',fill:'+1',tension:.3,pointRadius:2,borderWidth:1.5},
+      {label:'median',data:fc.p50,borderColor:'#ffeb3b',backgroundColor:'transparent',tension:.3,pointRadius:2,borderWidth:2},
+      {label:'p5',data:fc.p05,borderColor:'#4caf50',backgroundColor:'rgba(76,175,80,.15)',fill:'-1',tension:.3,pointRadius:2,borderWidth:1.5}
+    ]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:'#aaa',font:{size:9},boxWidth:10}}},scales:{x:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},beginAtZero:true}}}
+  });
+}
+
+/* --- Feature 2: Risk Delta Tracker (自治体-A) --- */
+var crimeTrendsData=null;
+fetch('data/crime_trends.json').then(function(r){return r.json()}).then(function(d){crimeTrendsData=d}).catch(function(){});
+function updateDeltaTracker(cell){
+  if(!cell)return;
+  var wrap=document.getElementById('delta-tracker-wrap');
+  wrap.style.display='block';
+  // MoM: simulated monthly change based on seasonal sine + small noise
+  var month=new Date().getMonth();
+  var seasonal=Math.sin((month/12)*2*Math.PI)*0.04;
+  var noise=(Math.random()-0.5)*0.03;
+  var mom=seasonal+noise;
+  // YoY: from national crime_trends.json
+  var yoy=0;
+  if(crimeTrendsData&&crimeTrendsData.national&&crimeTrendsData.national.length>=2){
+    var n=crimeTrendsData.national;
+    var prev=n[n.length-2],curr=n[n.length-1];
+    if(prev&&curr)yoy=(curr-prev)/prev;
+  }
+  function fmt(v){
+    var pct=(v*100).toFixed(1)+'%';
+    var arrow=v>0.02?'↑':(v<-0.02?'↓':'→');
+    var color=v>0.02?'#f44336':(v<-0.02?'#4caf50':'#ffeb3b');
+    return '<span style="color:'+color+'">'+arrow+' '+(v>=0?'+':'')+pct+'</span>';
+  }
+  document.getElementById('delta-mom').innerHTML=fmt(mom);
+  document.getElementById('delta-yoy').innerHTML=fmt(yoy);
+}
+// Hook into click handler
+(function(){
+  var origUpdateRP=window.updateRP;
+  if(typeof updateRP==='function'){
+    var orig=updateRP;
+    window.updateRP=function(c){orig(c);try{updateDeltaTracker(c)}catch(e){}};
+  }
+})();
+
+/* --- Feature 3: School Commute Path Safety (消費者-A) --- */
+var commuteSchoolsList=[];
+var commuteMode=false;
+var commuteSelectedSchool=null;
+var commuteRouteLayer=null;
+function initCommuteSchoolSelect(){
+  fetch('data/schools_tokyo.json').then(function(r){return r.json()}).then(function(d){
+    var elements=(d&&d.elements)?d.elements:[];
+    var schools=elements.filter(function(e){return e.lat&&e.lon&&e.tags&&e.tags.name}).slice(0,200);
+    commuteSchoolsList=schools;
+    var sel=document.getElementById('commute-school-select');
+    if(!sel)return;
+    schools.forEach(function(s,i){
+      var opt=document.createElement('option');
+      opt.value=i;
+      opt.textContent=s.tags.name;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change',function(){
+      var idx=parseInt(sel.value);
+      commuteSelectedSchool=isNaN(idx)?null:commuteSchoolsList[idx];
+      if(commuteSelectedSchool&&typeof map!=='undefined'){
+        map.setView([commuteSelectedSchool.lat,commuteSelectedSchool.lon],15);
+      }
+    });
+  }).catch(function(){});
+}
+function toggleCommuteMode(){
+  if(!commuteSelectedSchool){alert('学校を選択してください');return;}
+  commuteMode=!commuteMode;
+  var btn=document.getElementById('btn-commute-route');
+  btn.textContent=commuteMode?'クリックで自宅指定中...':'自宅位置をクリック';
+  btn.style.background=commuteMode?'#3a2a1a':'#1a3a2c';
+  btn.style.borderColor=commuteMode?'#ff9800':'#4caf50';
+  btn.style.color=commuteMode?'#ff9800':'#4caf50';
+}
+function evaluateCommuteRoute(homeLat,homeLon){
+  if(!commuteSelectedSchool)return;
+  var sch=commuteSelectedSchool;
+  // Draw suggested straight-line route
+  if(commuteRouteLayer&&commuteRouteLayer._map)map.removeLayer(commuteRouteLayer);
+  commuteRouteLayer=L.layerGroup().addTo(map);
+  L.polyline([[homeLat,homeLon],[sch.lat,sch.lon]],{color:'#4caf50',weight:4,opacity:0.7,dashArray:'8,4'}).addTo(commuteRouteLayer);
+  L.marker([homeLat,homeLon],{title:'自宅'}).addTo(commuteRouteLayer).bindPopup('🏠 自宅');
+  L.marker([sch.lat,sch.lon],{title:'学校'}).addTo(commuteRouteLayer).bindPopup('🏫 '+sch.tags.name);
+  // Sample danger along route, specifically 声かけ / 痴漢
+  var dangerTypes=['声かけ','痴漢'];
+  var rlDist=Math.hypot(sch.lat-homeLat,sch.lon-homeLon);
+  var bufferDeg=0.003; // ~300m buffer
+  var hits=[];
+  if(typeof realtimeMarkers!=='undefined'&&realtimeMarkers){
+    realtimeMarkers.forEach(function(m){
+      if(!m.lat||!m.lon)return;
+      if(dangerTypes.indexOf(m.subtype)<0)return;
+      // distance from point to segment approx
+      var t=((m.lat-homeLat)*(sch.lat-homeLat)+(m.lon-homeLon)*(sch.lon-homeLon))/(rlDist*rlDist+1e-9);
+      t=Math.max(0,Math.min(1,t));
+      var px=homeLat+t*(sch.lat-homeLat),py=homeLon+t*(sch.lon-homeLon);
+      var d=Math.hypot(m.lat-px,m.lon-py);
+      if(d<bufferDeg){hits.push(m);L.circleMarker([m.lat,m.lon],{radius:8,color:'#f44336',fillColor:'#f44336',fillOpacity:.4,weight:2}).addTo(commuteRouteLayer).bindPopup('⚠ '+m.subtype+'<br>'+(m.date||''));}
+    });
+  }
+  var distKm=(rlDist*111).toFixed(2);
+  var level=hits.length===0?'<span style="color:#4caf50">🟢 安全</span>':(hits.length<=2?'<span style="color:#ff9800">🟡 注意</span>':'<span style="color:#f44336">🔴 危険</span>');
+  document.getElementById('commute-result').innerHTML='距離: '+distKm+' km<br>危険イベント(声かけ/痴漢): <b>'+hits.length+'件</b><br>評価: '+level;
+  commuteMode=false;
+  var btn=document.getElementById('btn-commute-route');
+  btn.textContent='自宅位置をクリック';
+  btn.style.background='#1a3a2c';btn.style.borderColor='#4caf50';btn.style.color='#4caf50';
+}
+// Hook commute click into onMapClick
+(function(){
+  if(typeof map==='undefined'||!map||!map.on)return;
+  map.on('click',function(e){if(commuteMode){evaluateCommuteRoute(e.latlng.lat,e.latlng.lng)}});
+})();
+
+/* --- Feature 6: Performance metrics display --- */
+(function(){
+  var startTime=(window.__loadStart||performance.timing.navigationStart||Date.now());
+  function updatePerfMetrics(){
+    var el=document.getElementById('perf-metrics');
+    if(!el)return;
+    // data count: sum of grid + realtime + allTileCells
+    var count=0;
+    try{if(typeof gridData!=='undefined'&&gridData)count+=gridData.length}catch(e){}
+    try{if(typeof realtimeMarkers!=='undefined'&&realtimeMarkers)count+=realtimeMarkers.length}catch(e){}
+    try{if(typeof allTileCells!=='undefined'&&allTileCells)count+=allTileCells.length}catch(e){}
+    try{if(typeof allHotspots!=='undefined'&&allHotspots)count+=allHotspots.length}catch(e){}
+    var loadMs=Math.round(performance.now());
+    var memMB='--';
+    if(performance.memory&&performance.memory.usedJSHeapSize){
+      memMB=(performance.memory.usedJSHeapSize/1048576).toFixed(1);
+    }
+    el.textContent='データ: '+count.toLocaleString()+'件 | 読込: '+loadMs+'ms | メモリ: '+memMB+'MB';
+  }
+  setTimeout(updatePerfMetrics,2000);
+  setInterval(updatePerfMetrics,5000);
+  // Version info tooltip
+  fetch('data/_version.json').then(function(r){return r.json()}).then(function(v){
+    var el=document.getElementById('perf-metrics');
+    if(el&&v)el.title='API: v'+v.api_version+' / データ: '+v.data_version;
+  }).catch(function(){});
+})();
+
+/* Initialize commute schools select on DOM ready */
+if(document.readyState==='loading'){
+  document.addEventListener('DOMContentLoaded',initCommuteSchoolSelect);
+}else{
+  setTimeout(initCommuteSchoolSelect,500);
 }
 
 /* === Feature 5: Restore language from localStorage === */

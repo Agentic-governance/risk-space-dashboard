@@ -460,6 +460,72 @@ getRisk(35.68, 139.75).then(cell =&gt; {
     console.log('Expected harm:', cell.expected_harm);
 });</code></pre>
 
+<!-- Webhook Simulation -->
+<h2 id="webhook">Webhook Simulation (Polling Pattern)</h2>
+
+<div class="note">
+  <strong>Note:</strong> Since Risk Space is served as static files from GitHub Pages, true push webhooks aren't possible. However, you can achieve equivalent behaviour by polling the realtime endpoint and comparing snapshots.
+</div>
+
+<p class="desc">Recommended polling strategy:</p>
+<ul>
+  <li><code>GET /data/realtime_slim.json</code> every <strong>5 minutes</strong></li>
+  <li>Compare with previous snapshot (by event <code>id</code> or <code>date+lat+lon</code>) to detect new events</li>
+  <li>Trigger your own webhook / Slack / email / push notification when new events appear</li>
+  <li>Also poll <code>/data/_version.json</code> daily to detect new data releases</li>
+</ul>
+
+<h3>Sample Implementation (Node.js)</h3>
+<pre><code>const BASE = 'https://agentic-governance.github.io/risk-space-dashboard';
+let seen = new Set();
+
+async function pollRealtime() {
+  const events = await fetch(BASE + '/data/realtime_slim.json').then(r =&gt; r.json());
+  const fresh = events.filter(e =&gt; {
+    const key = (e.id || '') + ':' + e.date + ':' + e.lat + ':' + e.lon;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+  if (fresh.length &gt; 0) {
+    // Trigger YOUR webhook here
+    await fetch('https://your-webhook.example.com/hook', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({source: 'risk-space-mcp', new_events: fresh})
+    });
+  }
+}
+
+// First call populates baseline (won't fire), then poll every 5 minutes
+pollRealtime().then(() =&gt; setInterval(pollRealtime, 5 * 60 * 1000));</code></pre>
+
+<h3>Sample Implementation (Browser / Service Worker)</h3>
+<pre><code>// In a service worker or background tab
+const CACHE_KEY = 'risk-space-last-snapshot';
+
+async function checkForNewEvents() {
+  const res = await fetch('/data/realtime_slim.json', {cache: 'no-store'});
+  const events = await res.json();
+  const prev = JSON.parse(localStorage.getItem(CACHE_KEY) || '[]');
+  const prevIds = new Set(prev.map(e =&gt; e.id + ':' + e.date));
+  const fresh = events.filter(e =&gt; !prevIds.has(e.id + ':' + e.date));
+  if (fresh.length &gt; 0 &amp;&amp; 'Notification' in window) {
+    new Notification('⚠ Risk Space: ' + fresh.length + ' new incidents', {
+      body: fresh[0].subtype + ' near ' + fresh[0].location
+    });
+  }
+  localStorage.setItem(CACHE_KEY, JSON.stringify(events));
+}
+setInterval(checkForNewEvents, 5 * 60 * 1000);</code></pre>
+
+<h3>Rate Limits & Etiquette</h3>
+<ul>
+  <li>Don't poll more frequently than once per minute - underlying data only updates every ~30 minutes</li>
+  <li>Use conditional requests (<code>If-Modified-Since</code>) when possible</li>
+  <li>Cache the previous snapshot locally to minimize bandwidth</li>
+</ul>
+
 <!-- CORS Note -->
 <h2 id="cors">CORS & Cross-Origin Access</h2>
 
