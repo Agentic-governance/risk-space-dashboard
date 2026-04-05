@@ -1,32 +1,11 @@
 [
   {
-    "lat": 26.40625,
-    "lon": 127.84375,
-    "count": 2,
-    "risk_score": 0.4944,
-    "expected_harm": 0.2472,
-    "p_escape": 0.5,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "ultra",
-    "layers": {
-      "traffic": 2
-    },
-    "subtypes": {
-      "collision": 2
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 35.69125,
-    "lon": 139.32125,
+    "lat": 36.53375,
+    "lon": 139.09875,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -42,12 +21,12 @@
     "safety_rank": "C"
   },
   {
-    "lat": 35.67125,
-    "lon": 139.30625,
+    "lat": 35.03625,
+    "lon": 135.90875,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -63,12 +42,12 @@
     "safety_rank": "C"
   },
   {
-    "lat": 35.77125,
-    "lon": 139.51125,
+    "lat": 35.04125,
+    "lon": 135.91125,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -84,12 +63,12 @@
     "safety_rank": "C"
   },
   {
-    "lat": 35.64375,
-    "lon": 139.37375,
+    "lat": 36.50375,
+    "lon": 138.11625,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -105,12 +84,12 @@
     "safety_rank": "C"
   },
   {
-    "lat": 35.69125,
-    "lon": 139.26125,
+    "lat": 35.51625,
+    "lon": 140.23375,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -126,12 +105,12 @@
     "safety_rank": "C"
   },
   {
-    "lat": 35.58875,
-    "lon": 139.40125,
+    "lat": 34.45875,
+    "lon": 136.68375,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -147,12 +126,12 @@
     "safety_rank": "C"
   },
   {
-    "lat": 43.02125,
-    "lon": 141.35375,
+    "lat": 34.95125,
+    "lon": 136.17875,
     "count": 1,
     "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "expected_harm": 0.4628,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
     "resolution": "ultra",
@@ -168,15 +147,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 41.81875,
-    "lon": 140.70875,
+    "lat": 35.8025,
+    "lon": 140.2275,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -189,15 +168,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 43.16875,
-    "lon": 140.98875,
+    "lat": 40.6675,
+    "lon": 140.5675,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -210,15 +189,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 39.62375,
-    "lon": 140.31375,
+    "lat": 40.1725,
+    "lon": 140.0175,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -231,15 +210,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 40.26375,
-    "lon": 140.57875,
+    "lat": 39.4825,
+    "lon": 140.5225,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -252,15 +231,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 39.75375,
-    "lon": 140.08375,
+    "lat": 37.0375,
+    "lon": 140.8125,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -273,15 +252,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.43625,
-    "lon": 140.52625,
+    "lat": 35.5575,
+    "lon": 140.4325,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -294,15 +273,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.07875,
-    "lon": 140.24375,
+    "lat": 34.9075,
+    "lon": 135.9375,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -315,15 +294,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.18125,
-    "lon": 139.72875,
+    "lat": 34.9275,
+    "lon": 134.8975,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -336,15 +315,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.33125,
-    "lon": 140.28375,
+    "lat": 34.8275,
+    "lon": 134.7825,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -357,15 +336,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.29125,
-    "lon": 140.25375,
+    "lat": 34.2625,
+    "lon": 135.4875,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -378,15 +357,15 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.05375,
-    "lon": 140.12125,
+    "lat": 34.5775,
+    "lon": 133.4825,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
@@ -399,15 +378,36 @@
     "safety_rank": "C"
   },
   {
-    "lat": 36.20625,
-    "lon": 139.74625,
+    "lat": 33.3825,
+    "lon": 130.4025,
     "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.2436,
-    "p_escape": 0.5,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
-    "resolution": "ultra",
+    "resolution": "high",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 26.4175,
+    "lon": 127.7725,
+    "count": 1,
+    "risk_score": 0.4818,
+    "expected_harm": 0.4577,
+    "p_escape": 0.05,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "high",
     "layers": {
       "traffic": 1
     },
