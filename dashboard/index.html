@@ -178,6 +178,43 @@ body.large-text .hotspot-score{font-size:14px!important}
 #btn-export:hover{background:#2a4a6c}
 body.light-mode #btn-export{background:#e8eef4;border-color:#ccc;color:#555}
 body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;min-height:44px}
+/* G: Stats panel overlay */
+#stats-overlay{position:fixed;inset:0;background:rgba(10,10,15,.97);z-index:9500;display:none;overflow-y:auto;padding:24px}
+body.light-mode #stats-overlay{background:rgba(245,245,245,.97)}
+#stats-overlay .stats-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+#stats-overlay .stats-header h2{font-size:20px;color:#7eb3f0;font-weight:700}
+body.light-mode #stats-overlay .stats-header h2{color:#2a6cb5}
+#stats-close{padding:6px 14px;font-size:14px;background:#1a3a5c;border:1px solid #4a7ab5;color:#7eb3f0;border-radius:4px;cursor:pointer}
+#stats-close:hover{background:#2a4a6c}
+body.light-mode #stats-close{background:#e8eef4;border-color:#ccc;color:#555}
+.stats-charts{display:flex;flex-wrap:wrap;gap:24px;justify-content:center}
+.stats-chart-box{background:#1a1a2e;border:1px solid #2a2a3a;border-radius:8px;padding:16px;flex:1;min-width:320px;max-width:640px}
+body.light-mode .stats-chart-box{background:#fff;border-color:#ddd}
+.stats-chart-box h3{font-size:14px;color:#7eb3f0;margin-bottom:12px}
+body.light-mode .stats-chart-box h3{color:#2a6cb5}
+.stats-chart-box canvas{max-height:320px}
+.stats-credits{margin-top:20px;text-align:center;font-size:11px;color:#666;line-height:1.8}
+/* H: Instant safety check overlay */
+#instant-safety-overlay{position:fixed;inset:0;background:rgba(10,10,15,.95);z-index:9800;display:none;align-items:center;justify-content:center;flex-direction:column}
+#instant-safety-text{font-size:48px;font-weight:900;letter-spacing:4px;text-align:center;transition:all .3s ease}
+#instant-safety-sub{font-size:16px;color:#888;margin-top:12px;text-align:center}
+/* H: Report form */
+#report-overlay{position:fixed;inset:0;background:rgba(10,10,15,.85);z-index:9600;display:none;align-items:center;justify-content:center}
+#report-box{background:#1a1a2e;border:1px solid #4a7ab5;border-radius:10px;padding:24px;max-width:320px;width:90%;text-align:center}
+body.light-mode #report-box{background:#fff;border-color:#ddd}
+#report-box h3{font-size:16px;color:#7eb3f0;margin-bottom:16px}
+body.light-mode #report-box h3{color:#2a6cb5}
+#report-box select{width:100%;padding:8px;font-size:14px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:4px;margin-bottom:12px}
+body.light-mode #report-box select{background:#f0f4f8;border-color:#ccc;color:#333}
+#report-box .report-submit{padding:10px 20px;font-size:14px;background:#f44336;border:none;color:#fff;border-radius:5px;cursor:pointer;margin-right:8px}
+#report-box .report-submit:hover{background:#d32f2f}
+#report-box .report-cancel{padding:10px 20px;font-size:14px;background:#2a2a3a;border:none;color:#aaa;border-radius:5px;cursor:pointer}
+#report-box .report-cancel:hover{background:#3a3a4a}
+#report-confirm{position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#0a2010;border:1px solid #4caf50;color:#4caf50;border-radius:6px;padding:12px 20px;font-size:13px;z-index:9700;display:none;text-align:center;max-width:360px}
+/* Presentation mode button */
+#btn-presentation{padding:2px 6px;font-size:12px;background:transparent;border:1px solid #2a2a3a;color:#888;border-radius:3px;cursor:pointer}
+#btn-presentation:hover{background:#2a2a3a;color:#ddd}
+body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #btn-presentation:hover{background:#e0e0e0;color:#333}
 </style>
 </head>
 <body>
@@ -199,6 +236,7 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
         <button class="panel-action-btn" id="btn-a11y" onclick="toggleLargeText()" title="文字を大きく表示" aria-label="文字サイズ切替">あ</button>
         <button class="panel-action-btn" id="btn-theme" onclick="toggleTheme()" title="ダーク/ライトモード切替" aria-label="テーマ切替">🌙</button>
         <button class="panel-action-btn" id="btn-share" onclick="shareView()" title="現在のビューを共有" aria-label="共有">🔗</button>
+        <button class="panel-action-btn" id="btn-presentation" onclick="togglePresentation()" title="プレゼンテーションモード" aria-label="プレゼンモード">📺</button>
       </div>
     </div>
     <div class="subtitle" id="header-subtitle">Dynamic Risk Probability Field</div>
@@ -215,6 +253,8 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
     <button class="btn active" id="btn-heat" onclick="setDisplayMode('heat')">ヒートマップ</button>
     <button class="btn" id="btn-grid" onclick="setDisplayMode('grid')">グリッド</button>
     <button class="btn" id="btn-haven" onclick="setDisplayMode('haven')">Safe Haven</button>
+    <button class="btn" id="btn-disaster" onclick="setDisplayMode('disaster')">災害リスク</button>
+    <button class="btn" id="btn-stats" onclick="showStatsPanel()">📊 統計</button>
   </div>
   <div id="grid-subtype-filter" style="margin-top:6px;display:none"><div style="font-size:10px;color:#555;margin-bottom:4px">犯罪サブタイプ</div><div class="btn-row">
     <button class="btn active" onclick="setGridSubtype(null)">全犯罪</button>
@@ -234,6 +274,16 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
     <div class="layer-toggle" onclick="toggleLayer('disaster')" id="layer-disaster"><div class="toggle-dot" style="background:#9c27b0"></div><span class="layer-name">災害</span><span class="layer-count" id="cnt-disaster"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
     <div class="layer-toggle" onclick="toggleLayer('weather')" id="layer-weather"><div class="toggle-dot" style="background:#03a9f4"></div><span class="layer-name">気象リスク</span><span class="layer-count" id="cnt-weather"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
     <div class="layer-toggle" onclick="toggleLayer('realtime')" id="layer-realtime"><div class="toggle-dot" style="background:#4caf50;box-shadow:0 0 4px #4caf50"></div><span class="layer-name">不審者リアルタイム</span><span class="layer-count" id="cnt-realtime"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
+    <div class="layer-toggle" onclick="toggleLayer('car_breakin')" id="layer-car_breakin" style="opacity:.4">
+        <div class="toggle-dot" style="background:#795548"></div>
+        <span class="layer-name">車上荒らし</span>
+        <span class="layer-count" id="cnt-car_breakin">—</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('seismic')" id="layer-seismic" style="opacity:.4">
+        <div class="toggle-dot" style="background:#ff5252"></div>
+        <span class="layer-name">地震リスク (30年)</span>
+        <span class="layer-count" id="cnt-seismic">—</span>
+    </div>
     <div id="fushinsha-filter"><div style="font-size:10px;color:#555;margin-bottom:4px">不審者フィルター</div><button class="fushinsha-filter-btn active" onclick="filterFushinsha('all')">全て</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('不審者')">不審者</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('声かけ')">声かけ</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('痴漢')">痴漢</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('暴行')">暴行</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('窃盗')">窃盗</button></div>
   </div>
   <div class="section"><div class="section-title">分析モード</div><div class="btn-row">
@@ -318,7 +368,40 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
         地図: &copy;OpenStreetMap &copy;CARTO
     </div>
   </div>
+  <div class="section"><button id="btn-report" onclick="showReportForm()" style="width:100%;padding:10px 12px;font-size:13px;font-weight:700;background:#2a0a0a;border:1px solid #f44336;color:#f44336;border-radius:4px;cursor:pointer;transition:all .2s">🆘 不審者を報告</button></div>
 </div>
+<!-- Stats overlay (User-G) -->
+<div id="stats-overlay">
+  <div class="stats-header"><h2>📊 犯罪統計ダッシュボード</h2><button id="stats-close" onclick="hideStatsPanel()">✕ 閉じる</button></div>
+  <div class="stats-charts">
+    <div class="stats-chart-box"><h3>刑法犯認知件数の推移（全国）</h3><canvas id="trend-chart"></canvas></div>
+    <div class="stats-chart-box"><h3>都道府県別 犯罪件数 TOP10（2023年）</h3><canvas id="pref-chart"></canvas></div>
+  </div>
+  <div class="stats-credits">
+    出典: 警察庁「犯罪統計」/ e-Stat 社会・人口統計体系<br>
+    ※ 刑法犯認知件数ベース。2017-2021年は一部データ欠損あり。<br>
+    記事引用時は「Risk Space MCP / 警察庁犯罪統計」とクレジットしてください。
+  </div>
+</div>
+<!-- Instant safety check overlay (User-H) -->
+<div id="instant-safety-overlay">
+  <div id="instant-safety-text">位置を確認中...</div>
+  <div id="instant-safety-sub"></div>
+</div>
+<!-- Report form overlay (User-H) -->
+<div id="report-overlay">
+  <div id="report-box">
+    <h3>🆘 不審者を報告</h3>
+    <select id="report-type">
+      <option value="声かけ">声かけ</option>
+      <option value="痴漢">痴漢</option>
+      <option value="不審者">不審者</option>
+      <option value="その他">その他</option>
+    </select>
+    <div><button class="report-submit" onclick="submitReport()">報告する</button><button class="report-cancel" onclick="hideReportForm()">キャンセル</button></div>
+  </div>
+</div>
+<div id="report-confirm"></div>
 <script>
 var D='./data',gridData=[],weatherData=null,heatLayers={},gridLayer=null,havenLayer=null,realtimeLayer=null,clickMarker=null,hourlyChart=null,donutChart=null,fushinshaHourlyChart=null,realtimeMarkers=[],allTileCells=[];
 var pharmacyMarkers=[],pharmacyData=null,lastClickLatLng=null;
@@ -499,16 +582,20 @@ function updateDonutChart(c){
 
 function drawHC(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var hs=[];for(var i=0;i<24;i++)hs.push(i);var vs=hs.map(function(h){var t=TM(h);return+(Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e))).toFixed(4)});var ctx=document.getElementById('hourly-chart').getContext('2d');if(hourlyChart)hourlyChart.destroy();hourlyChart=new Chart(ctx,{type:'bar',data:{labels:hs.map(function(h){return h+'時'}),datasets:[{data:vs,backgroundColor:vs.map(function(v){return v>=.5?'#f44336':v>=.3?'#ff9800':v>=.15?'#ffeb3b':'#4caf50'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},max:1}}}})}
 function renderHS(hs,bounds){var src=hs||allHotspots||[];if(bounds){src=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()})}var el=document.getElementById('hotspot-list');if(!src||!src.length){el.innerHTML='<div style="color:#444;font-size:11px;text-align:center">データなし</div>';return}var t=src.slice(0,10),mx=t[0].expected_harm||1;el.innerHTML=t.map(function(c,i){return'<div class="hotspot-item" onclick="map.setView(['+c.lat+','+c.lon+'],14)"><span class="hotspot-rank">'+(i+1)+'</span><div class="hotspot-bar" style="width:'+((c.expected_harm||0)/mx*100).toFixed(0)+'%"></div><span class="hotspot-score">'+(c.expected_harm||0).toFixed(3)+'</span></div>'}).join('')}
-function setDisplayMode(m){displayMode=m;['heat','grid','haven'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});document.getElementById('grid-subtype-filter').style.display=m==='grid'?'block':'none';if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadPharmacyData().then(renderPharmacyMarkers);loadEvacuation()}if(m!=='haven'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
+function setDisplayMode(m){displayMode=m;['heat','grid','haven','disaster'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});document.getElementById('grid-subtype-filter').style.display=m==='grid'?'block':'none';if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadPharmacyData().then(renderPharmacyMarkers);loadEvacuation()}if(m==='disaster'){loadSeismicData();loadEvacuation();if(heatLayers.disaster){heatLayers.disaster.addTo(map)}else if(heatLayerData.disaster){loadSingleHeatLayer('disaster')}}if(m!=='haven'&&m!=='disaster'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
 function setAnalysisMode(m){analysisMode=m;['eh','incident','escape'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function toggleLayer(n){var el=document.getElementById('layer-'+n);activeLayers[n]=!activeLayers[n];el.style.opacity=activeLayers[n]?'1':'.4';
 /* #4 Lazy load heatmaps on toggle */
 if(activeLayers[n]&&displayMode==='heat'&&!heatLayers[n]&&heatLayerData[n]){loadSingleHeatLayer(n)}
-if(heatLayers[n]){if(activeLayers[n]&&displayMode==='heat')heatLayers[n].addTo(map);else if(heatLayers[n]._map)map.removeLayer(heatLayers[n])}if(n==='realtime'&&realtimeLayer){if(activeLayers[n])map.addLayer(realtimeLayer);else map.removeLayer(realtimeLayer)}}
+if(heatLayers[n]){if(activeLayers[n]&&displayMode==='heat')heatLayers[n].addTo(map);else if(heatLayers[n]._map)map.removeLayer(heatLayers[n])}if(n==='realtime'&&realtimeLayer){if(activeLayers[n])map.addLayer(realtimeLayer);else map.removeLayer(realtimeLayer)}
+/* Car break-in heatmap layer (User-E) */
+if(n==='car_breakin'){if(activeLayers[n]){loadCarBreakinLayer()}else if(heatLayers.car_breakin&&heatLayers.car_breakin._map){map.removeLayer(heatLayers.car_breakin)}}
+/* Seismic hazard layer (User-F) */
+if(n==='seismic'){if(activeLayers[n]){loadSeismicData()}else if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}}}
 function onTimeSliderChange(v){selectedHour=parseInt(v);document.getElementById('time-label').textContent=String(v).padStart(2,'0')+':00 シミュレーション';document.getElementById('time-label').style.color='#ff9800';if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function loadEvents(data){var evEl=document.getElementById('event-status');var all=[];if(data.scraped)all=all.concat(data.scraped);if(data.calendar)all=all.concat(data.calendar);var today=new Date().toISOString().slice(0,10);var active=all.filter(function(e){return e.date===today||e.date<=today&&e.duration_days&&new Date(e.date).getTime()+e.duration_days*86400000>Date.now()});if(active.length>0){evEl.textContent=active[0].name.slice(0,12)+(active.length>1?'+'+( active.length-1):'');evEl.className='status-value warn'}else{evEl.textContent='なし';evEl.className='status-value ok'}}
 function loadTransit(data){var sEl=document.getElementById('transit-status');var ds=data.disruptions||[];var susp=ds.filter(function(d){return d.severity==='suspension'});var delay=ds.filter(function(d){return d.severity==='delay'});if(susp.length>0){sEl.textContent=susp.length+'路線運休';sEl.className='status-value alert'}else if(delay.length>0){sEl.textContent=delay.length+'路線遅延';sEl.className='status-value warn'}else{sEl.textContent='平常運転';sEl.className='status-value ok'}}
-function geolocateUser(){navigator.geolocation.getCurrentPosition(function(pos){var lat=pos.coords.latitude,lon=pos.coords.longitude;map.flyTo([lat,lon],14);map.once('moveend',function(){onMapClick({latlng:{lat:lat,lng:lon}})})},function(){alert('位置情報を取得できませんでした')})}
+/* geolocateUser moved to Feature H section below with instant safety check */
 function filterFushinsha(type){currentFushinshaFilter=type;document.querySelectorAll('.fushinsha-filter-btn').forEach(function(b){b.classList.toggle('active',b.textContent===type||(type==='all'&&b.textContent==='全て'))});renderRT()}
 function setGridSubtype(st){gridSubtype=st;var btns=document.querySelectorAll('#grid-subtype-filter .btn');btns.forEach(function(b){b.classList.toggle('active',(st===null&&b.textContent==='全犯罪')||b.textContent===st)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function showErrorBanner(msg){var el=document.getElementById('error-banner');el.textContent=msg;el.style.display='block';setTimeout(function(){el.style.display='none'},10000)}
@@ -928,6 +1015,155 @@ function loadEnglishPolice(){
   return fetch(D+'/english_police.json').then(function(r){return r.json()}).then(function(data){
     englishPolice=data;return data;
   }).catch(function(){englishPolice=null;return null});
+}
+
+/* === Feature G: Stats Panel (Journalist) === */
+var trendChart=null,prefChart=null,crimeTrendsData=null;
+function showStatsPanel(){
+  var overlay=document.getElementById('stats-overlay');
+  overlay.style.display='block';
+  if(crimeTrendsData){renderStatsCharts();return}
+  fetch('../docs/data/crime_trends.json').then(function(r){return r.json()}).then(function(data){
+    crimeTrendsData=data;renderStatsCharts();
+  }).catch(function(){
+    /* Try alternate path */
+    fetch('./data/crime_trends.json').then(function(r){return r.json()}).then(function(data){
+      crimeTrendsData=data;renderStatsCharts();
+    }).catch(function(){alert('犯罪統計データの読み込みに失敗しました')})
+  });
+}
+function hideStatsPanel(){document.getElementById('stats-overlay').style.display='none'}
+function renderStatsCharts(){
+  if(!crimeTrendsData)return;
+  /* Line chart: national trend */
+  var ctx1=document.getElementById('trend-chart').getContext('2d');
+  if(trendChart)trendChart.destroy();
+  trendChart=new Chart(ctx1,{type:'line',data:{labels:crimeTrendsData.years.map(String),datasets:[{label:'認知件数',data:crimeTrendsData.national,borderColor:'#42a5f5',backgroundColor:'rgba(66,165,245,.15)',fill:true,tension:0.3,pointRadius:4,pointBackgroundColor:'#42a5f5'}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:isDarkMode?'#aaa':'#555'}}},scales:{x:{ticks:{color:isDarkMode?'#888':'#666'},grid:{color:isDarkMode?'#1e1e2e':'#eee'}},y:{ticks:{color:isDarkMode?'#888':'#666',callback:function(v){return(v/10000).toFixed(0)+'万'}},grid:{color:isDarkMode?'#1e1e2e':'#eee'}}}}});
+  /* Horizontal bar chart: top 10 prefectures by 2023 count */
+  var prefs=crimeTrendsData.by_prefecture;
+  var prefList=[];
+  Object.keys(prefs).forEach(function(name){
+    var vals=prefs[name];
+    var latest=vals[vals.length-1];
+    if(latest!==null&&latest!==undefined)prefList.push({name:name,count:latest});
+  });
+  prefList.sort(function(a,b){return b.count-a.count});
+  var top10=prefList.slice(0,10);
+  var ctx2=document.getElementById('pref-chart').getContext('2d');
+  if(prefChart)prefChart.destroy();
+  prefChart=new Chart(ctx2,{type:'bar',data:{labels:top10.map(function(p){return p.name}),datasets:[{label:'2023年 認知件数',data:top10.map(function(p){return p.count}),backgroundColor:top10.map(function(_,i){return'rgba(239,83,80,'+(1-i*0.07)+')'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{labels:{color:isDarkMode?'#aaa':'#555'}}},scales:{x:{ticks:{color:isDarkMode?'#888':'#666',callback:function(v){return(v/10000).toFixed(0)+'万'}},grid:{color:isDarkMode?'#1e1e2e':'#eee'}},y:{ticks:{color:isDarkMode?'#aaa':'#555'},grid:{display:false}}}}});
+}
+
+/* === Feature H: Instant Safety Check (High School Student) === */
+function geolocateUser(){
+  var overlay=document.getElementById('instant-safety-overlay');
+  var textEl=document.getElementById('instant-safety-text');
+  var subEl=document.getElementById('instant-safety-sub');
+  overlay.style.display='flex';
+  textEl.textContent='位置を確認中...';textEl.style.color='#7eb3f0';
+  subEl.textContent='';
+  navigator.geolocation.getCurrentPosition(function(pos){
+    var lat=pos.coords.latitude,lon=pos.coords.longitude;
+    /* Find nearest grid cell to determine safety */
+    var near=null,md=Infinity;
+    var all=gridData.concat(allTileCells);
+    all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lon);if(d<md){md=d;near=c}});
+    var riskScore=near?(near.risk_score||0):0;
+    var tm=TM(selectedHour);
+    var eh=near?Math.min(1,(riskScore*tm.i)*((near.avg_severity||2.5)/5)*(1-Math.min(1,(near.p_escape||0.5)*tm.e))):0;
+    if(eh<0.25){
+      textEl.innerHTML='<span style="font-size:64px">🟢</span><br>安全';textEl.style.color='#4caf50';
+      subEl.textContent='この周辺は比較的安全です (EH: '+eh.toFixed(3)+')';
+    }else{
+      textEl.innerHTML='<span style="font-size:64px">🔴</span><br>注意';textEl.style.color='#f44336';
+      subEl.textContent='この周辺は注意が必要です (EH: '+eh.toFixed(3)+')';
+    }
+    setTimeout(function(){
+      overlay.style.display='none';
+      map.flyTo([lat,lon],14);
+      map.once('moveend',function(){onMapClick({latlng:{lat:lat,lng:lon}})});
+    },3000);
+  },function(){
+    overlay.style.display='none';
+    alert('位置情報を取得できませんでした');
+  });
+}
+
+/* === Feature H: Report suspicious person === */
+function showReportForm(){document.getElementById('report-overlay').style.display='flex'}
+function hideReportForm(){document.getElementById('report-overlay').style.display='none'}
+function submitReport(){
+  var type=document.getElementById('report-type').value;
+  var lat=lastClickLatLng?lastClickLatLng.lat:null;
+  var lon=lastClickLatLng?(lastClickLatLng.lng||lastClickLatLng.lon):null;
+  var report={type:type,lat:lat,lon:lon,timestamp:new Date().toISOString(),status:'pending'};
+  var reports=JSON.parse(localStorage.getItem('riskspace_reports')||'[]');
+  reports.push(report);
+  localStorage.setItem('riskspace_reports',JSON.stringify(reports));
+  hideReportForm();
+  var confirmEl=document.getElementById('report-confirm');
+  confirmEl.innerHTML='<b>報告を受け付けました。</b><br>警察への通報もお願いします（<b>110番</b>）';
+  confirmEl.style.display='block';
+  setTimeout(function(){confirmEl.style.display='none'},5000);
+}
+
+/* === Presentation Mode (ALL) === */
+function togglePresentation(){
+  document.getElementById('left-panel').style.display=
+    document.getElementById('left-panel').style.display==='none'?'':'none';
+  document.getElementById('right-panel').style.display=
+    document.getElementById('right-panel').style.display==='none'?'':'none';
+  map.invalidateSize();
+}
+
+/* === User-E: Car break-in heatmap layer === */
+var carBreakinLoaded=false;
+function loadCarBreakinLayer(){
+  if(carBreakinLoaded&&heatLayers.car_breakin){heatLayers.car_breakin.addTo(map);return}
+  fetch(D+'/heat_car_breakin.json').then(function(r){return r.json()}).then(function(data){
+    carBreakinLoaded=true;
+    var pts=data.data.map(function(p){return[p[0],p[1],p[2]||.5]});
+    heatLayers.car_breakin=L.heatLayer(pts,{radius:25,blur:15,maxZoom:12,gradient:{0:'#0a0a1a',.3:'#795548',.6:'#a1887f',1:'#d7ccc8'},max:1});
+    if(activeLayers.car_breakin)heatLayers.car_breakin.addTo(map);
+    document.getElementById('cnt-car_breakin').textContent=pts.length+'件';
+    /* Also store detail for popups */
+    if(data.detail&&data.detail.length){
+      var detailLayer=L.layerGroup();
+      data.detail.forEach(function(d){
+        if(!d.lat||!d.lon)return;
+        L.circleMarker([d.lat,d.lon],{radius:Math.max(4,d.intensity*12),color:'#795548',fillColor:'#a1887f',fillOpacity:.5,weight:1}).bindPopup('<b>'+d.prefecture+'</b><br>車上荒らし・乗り物盗: '+(d.count||0).toLocaleString()+'件').addTo(detailLayer);
+      });
+      if(activeLayers.car_breakin)detailLayer.addTo(map);
+      heatLayers._car_breakin_detail=detailLayer;
+    }
+  }).catch(function(e){console.warn('car_breakin load error',e)});
+}
+
+/* === User-F: Seismic hazard overlay === */
+var seismicLayer=null,seismicData=null;
+function loadSeismicData(){
+  if(seismicLayer){seismicLayer.addTo(map);return}
+  fetch(D+'/jshis_hazard.json').then(function(r){return r.json()}).then(function(data){
+    seismicData=data;
+    seismicLayer=L.layerGroup();
+    var cities=data.cities||[];
+    document.getElementById('cnt-seismic').textContent=cities.length+'都市';
+    cities.forEach(function(c){
+      if(!c.lat||!c.lon)return;
+      var p60=c.T30_I60_PS||0;
+      var p55=c.T30_I55_PS||0;
+      var color=p60>=0.1?'#d32f2f':p60>=0.03?'#ff5722':p55>=0.5?'#ff9800':p55>=0.2?'#ffc107':'#4caf50';
+      var radius=Math.max(8,p55*24);
+      L.circleMarker([c.lat,c.lon],{radius:radius,color:color,fillColor:color,fillOpacity:.55,weight:2}).bindPopup(
+        '<b>'+c.city+'</b><br>'+
+        '<span style="color:#f44336">震度6弱以上(30年):</span> '+(p60*100).toFixed(1)+'%<br>'+
+        '<span style="color:#ff9800">震度5強以上(30年):</span> '+(p55*100).toFixed(1)+'%<br>'+
+        '<span style="color:#ffc107">震度5弱以上(30年):</span> '+((c.T30_I50_PS||0)*100).toFixed(1)+'%<br>'+
+        '30年超過3%震度: '+(c.T30_P03_SI||'—')
+      ).addTo(seismicLayer);
+    });
+    if(activeLayers.seismic||displayMode==='disaster')seismicLayer.addTo(map);
+  }).catch(function(e){console.warn('seismic load error',e)});
 }
 
 window.addEventListener('load',function(){
