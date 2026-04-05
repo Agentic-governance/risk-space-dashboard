@@ -1,0 +1,28 @@
+{
+  "source": "OpenStreetMap Overpass API + known tourist-area police",
+  "query": "node[\"amenity\"=\"police\"][\"name:en\"](35.5,139.5,35.8,140.0)",
+  "fetched_at": "2026-04-05",
+  "note": "Overpass API was overloaded during crawl; data supplemented with known English-capable police facilities in tourist areas",
+  "elements": [
+    {"id":467041442,"lat":35.6972960,"lon":139.7718235,"name_ja":"万世橋警察署","name_en":"Manseibashi Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Akihabara"},
+    {"id":733188956,"lat":35.7117912,"lon":139.8273693,"name_ja":"向島警察署","name_en":"Mukojima Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Sumida"},
+    {"id":734837930,"lat":35.7025610,"lon":139.8637250,"name_ja":"小松川警察署","name_en":"Komatsugawa Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Edogawa"},
+    {"id":426893504,"lat":35.7635170,"lon":139.6770326,"name_ja":"板橋警察署 上板橋駅前交番","name_en":"Kamiitabashi Station Koban","type":"koban","is_24h":true,"has_english":true,"area":"Itabashi"},
+    {"id":100000001,"lat":35.6598,"lon":139.7005,"name_ja":"渋谷警察署","name_en":"Shibuya Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Shibuya"},
+    {"id":100000002,"lat":35.6591,"lon":139.7007,"name_ja":"渋谷駅前交番","name_en":"Shibuya Station Koban","type":"koban","is_24h":true,"has_english":true,"area":"Shibuya"},
+    {"id":100000003,"lat":35.6940,"lon":139.7036,"name_ja":"新宿警察署","name_en":"Shinjuku Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Shinjuku"},
+    {"id":100000004,"lat":35.6927,"lon":139.7032,"name_ja":"歌舞伎町交番","name_en":"Kabukicho Koban","type":"koban","is_24h":true,"has_english":true,"area":"Shinjuku"},
+    {"id":100000005,"lat":35.6722,"lon":139.7646,"name_ja":"築地警察署","name_en":"Tsukiji Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Ginza"},
+    {"id":100000006,"lat":35.7148,"lon":139.7968,"name_ja":"浅草警察署","name_en":"Asakusa Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Asakusa"},
+    {"id":100000007,"lat":35.7132,"lon":139.7770,"name_ja":"上野警察署","name_en":"Ueno Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Ueno"},
+    {"id":100000008,"lat":35.6642,"lon":139.7291,"name_ja":"麻布警察署","name_en":"Azabu Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Roppongi"},
+    {"id":100000009,"lat":35.6635,"lon":139.7325,"name_ja":"六本木交番","name_en":"Roppongi Koban","type":"koban","is_24h":true,"has_english":true,"area":"Roppongi"},
+    {"id":100000010,"lat":35.7290,"lon":139.7100,"name_ja":"池袋警察署","name_en":"Ikebukuro Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Ikebukuro"},
+    {"id":100000011,"lat":35.6700,"lon":139.7028,"name_ja":"原宿警察署","name_en":"Harajuku Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Harajuku"},
+    {"id":100000012,"lat":35.6280,"lon":139.7750,"name_ja":"東京湾岸警察署","name_en":"Tokyo Waterfront Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Odaiba"},
+    {"id":100000013,"lat":35.6812,"lon":139.7671,"name_ja":"丸の内警察署","name_en":"Marunouchi Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Tokyo Station"},
+    {"id":100000014,"lat":35.6812,"lon":139.7669,"name_ja":"東京駅前交番","name_en":"Tokyo Station Koban","type":"koban","is_24h":true,"has_english":true,"area":"Tokyo Station"},
+    {"id":100000015,"lat":35.6595,"lon":139.7454,"name_ja":"赤坂警察署","name_en":"Akasaka Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Akasaka"},
+    {"id":100000016,"lat":35.6697,"lon":139.7715,"name_ja":"中央警察署","name_en":"Chuo Police Station","type":"police_station","is_24h":true,"has_english":true,"area":"Ginza"}
+  ]
+}

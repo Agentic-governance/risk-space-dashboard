@@ -105,6 +105,13 @@ body.light-mode #fushinsha-500m-summary .summary-counts{color:#666}
   #nearest-haven-result { padding: 6px 10px; }
   #fushinsha-500m-summary { padding: 6px 10px; }
   #fushinsha-hourly-wrap canvas { max-height: 60px; }
+  #stats-overlay { padding: 12px; }
+  .stats-chart-box { min-width: unset; width: 100%; }
+  #instant-safety-overlay { width: 100%; overflow: hidden; }
+  #instant-safety-text { font-size: 32px; padding: 0 12px; }
+  #instant-safety-sub { font-size: 13px; padding: 0 12px; }
+  #report-box { max-width: 90%; }
+  #onboarding-box { max-width: 90%; padding: 16px; }
 }
 #onboarding-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:10000;display:flex;align-items:center;justify-content:center}
 #onboarding-box{background:#1a1a2e;border:1px solid #4a7ab5;border-radius:10px;padding:24px 28px;max-width:360px;text-align:center;color:#e0e0e0}
@@ -958,9 +965,12 @@ function applyLang(){
     if(L[key])el.textContent=L[key];
   });
   /* Update specific UI texts */
+  document.getElementById('btn-lang').textContent=currentLang==='en'?'JP':'EN';
   document.getElementById('btn-heat').textContent=L.heatmap;
   document.getElementById('btn-grid').textContent=L.grid;
   document.getElementById('btn-haven').textContent=L.safe_haven;
+  document.getElementById('btn-disaster').textContent=currentLang==='en'?'Disaster':'災害リスク';
+  document.getElementById('btn-stats').textContent=currentLang==='en'?'📊 Stats':'📊 統計';
   document.getElementById('btn-eh').textContent=L.total_risk;
   document.getElementById('btn-incident').textContent=L.crime_prob;
   document.getElementById('btn-escape').textContent=L.escapability;
@@ -1023,11 +1033,11 @@ function showStatsPanel(){
   var overlay=document.getElementById('stats-overlay');
   overlay.style.display='block';
   if(crimeTrendsData){renderStatsCharts();return}
-  fetch('../docs/data/crime_trends.json').then(function(r){return r.json()}).then(function(data){
+  fetch(D+'/crime_trends.json').then(function(r){if(!r.ok)throw new Error('not found');return r.json()}).then(function(data){
     crimeTrendsData=data;renderStatsCharts();
   }).catch(function(){
     /* Try alternate path */
-    fetch('./data/crime_trends.json').then(function(r){return r.json()}).then(function(data){
+    fetch('../docs/data/crime_trends.json').then(function(r){if(!r.ok)throw new Error('not found');return r.json()}).then(function(data){
       crimeTrendsData=data;renderStatsCharts();
     }).catch(function(){alert('犯罪統計データの読み込みに失敗しました')})
   });

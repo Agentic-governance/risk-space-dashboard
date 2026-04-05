@@ -5,9 +5,9 @@
     "traffic": 1589944,
     "disaster": 216
   },
-  "grid_cells": 8336,
-  "sample_events": 227078,
-  "sample_rate": 10,
-  "years": "2018-2024",
-  "generated_at": "2026-04-03T09:52:21.473894"
+  "grid_cells": 10000,
+  "fushinsha": 18206,
+  "safe_haven": 174911,
+  "evacuation": 13254,
+  "generated_at": "2026-04-05T12:00:00"
 }

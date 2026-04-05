@@ -1,0 +1,2234 @@
+{
+  "generated_at": "2026-04-05T05:48:23.054756",
+  "stats": {
+    "jalan": 3,
+    "jleague": 33,
+    "npb": 44,
+    "holidays": 35,
+    "generated": 60
+  },
+  "total_events": 175,
+  "events": [
+    {
+      "source": "jalan",
+      "type": "festival_event",
+      "name": "�k�C��",
+      "date_raw": "",
+      "location": "",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "jalan",
+      "type": "festival_event",
+      "name": "�_�ސ�",
+      "date_raw": "",
+      "location": "",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "jalan",
+      "type": "festival_event",
+      "name": "�a�̎R",
+      "date_raw": "",
+      "location": "",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: イングランドvs日本の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 町田vsFC東京の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 神戸vs清水の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 千葉vs東京Ｖの試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 水戸vs鹿島の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 名古屋vsＣ大阪の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: Ｇ大阪vs京都の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 仙台vs群馬の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 栃木Ｃvs相模原の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 横浜FCvs秋田の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 湘南vs栃木SCの試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 札幌vs福島の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 大宮vs岐阜の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 磐田vs甲府の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 藤枝vs長野の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 新潟vs金沢の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 琉球vs熊本の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 柏vs横浜FMの試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: FC東京vs町田の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 川崎Ｆvs浦和の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 長崎vs清水の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 岡山vs神戸の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 広島vs福岡の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 八戸vs山形の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 松本vsいわきの試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 今治vs愛媛の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 富山vs奈良の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 徳島vsFC大阪の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 高知vs讃岐の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 鳥栖vs大分の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 宮崎vs山口の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 鳥取vs滋賀の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "jleague",
+      "type": "sports_match",
+      "name": "J-League: 鹿児島vs北九州の試合詳細",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic",
+        "public_order"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ï¼æ±äº¬ãã¼ã ï¼\n                    14æ00å",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(å·¨)äºãä¸",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ã)ç³ç°è£",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ï¼ç¥ãå®®ï¼\n                    13æ30å",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ã¤)é«ãæ¢¨",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ä¸­)é«æ©å®",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ï¼ãããã¹ã¿ã¸ã¢ã ï¼\n                    14æ00å",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(åº)æ ãæ",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ç¥)é«ãæ©",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ï¼ã¨ã¹ã³ã³ï¼¦ï¼\n                    13æ00å",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(æ¥)æãå",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ãª)ã¸ã§ãªã¼",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ï¼ãã«ã¼ããã¼ã ï¼\n                    14æ00å",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(è¥¿)å¹³ãè¯",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(æ¥½)è¤ãå",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ï¼ZOZOããªã³ï¼\n                    13æ00å",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ã­)å°ãå³¶",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åçº(ã½)ã¹ãã¥ã¯ã¼ãã»ã¸ã¥ãã¢",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: è©¦ååæååçå·®",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: æ±äº¬ã¤ã¯ã«ãã¹ã¯ã­ã¼ãºæ±äº¬ã¤ã¯ã«ã7610.857-",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: éªç¥ã¿ã¤ã¬ã¼ã¹éªç¥8620.7500.5",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: èª­å£²ã¸ã£ã¤ã¢ã³ãèª­å£²8440.5002.5",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åºå³¶æ±æ´ã«ã¼ãåºå³¶æ±æ´7340.4293.0",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: æ¨ªæµDeNAãã¤ã¹ã¿ã¼ãºæ¨ªæµDeNA8260.2504.5",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ä¸­æ¥ãã©ã´ã³ãºä¸­æ¥8260.2504.5",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: è©¦ååæååçå·®",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ç¦å²¡ã½ãããã³ã¯ãã¼ã¯ã¹ç¦å²¡ã½ãããã³ã¯8620.750-",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åæµ·éæ¥æ¬ãã ãã¡ã¤ã¿ã¼ãºåæµ·éæ¥æ¬ãã8440.5002.0",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ãªãªãã¯ã¹ã»ããã¡ã­ã¼ãºãªãªãã¯ã¹8440.5002.0",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: æ±åæ¥½å¤©ã´ã¼ã«ãã³ã¤ã¼ã°ã«ã¹æ±åæ¥½å¤©8440.5002.0",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: åèã­ããããªã¼ã³ãºåèã­ãã8440.5002.0",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: å¼çè¥¿æ­¦ã©ã¤ãªã³ãºå¼çè¥¿æ­¦8260.2504.0",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ç¥ãå®®",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ãã³ããªã³ãã¼ã",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: äº¬ã»ã©Då¤§éª",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ã¨ã¹ã³ã³ï¼¦",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: æ¥½å¤©ã¢ãã¤ã«",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ãã«ã¼ããã¼ã",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: æ±äº¬ãã¼ã",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ç¥ãå®®",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ãããã¹ã¿ã¸ã¢ã",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: 12-3",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ã¨ã¹ã³ã³ï¼¦",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "npb",
+      "type": "sports_match",
+      "name": "NPB: ãã«ã¼ããã¼ã",
+      "date_raw": "",
+      "venue": "",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "crowd",
+        "traffic"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "元日",
+      "date": "2026-01-01",
+      "risk_multiplier": 1.3,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "成人の日",
+      "date": "2026-01-12",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "建国記念の日",
+      "date": "2026-02-11",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "天皇誕生日",
+      "date": "2026-02-23",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "春分の日",
+      "date": "2026-03-20",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "昭和の日",
+      "date": "2026-04-29",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "憲法記念日",
+      "date": "2026-05-03",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "みどりの日",
+      "date": "2026-05-04",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "こどもの日",
+      "date": "2026-05-05",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "憲法記念日 振替休日",
+      "date": "2026-05-06",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "海の日",
+      "date": "2026-07-20",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "山の日",
+      "date": "2026-08-11",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "敬老の日",
+      "date": "2026-09-21",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "国民の休日",
+      "date": "2026-09-22",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "秋分の日",
+      "date": "2026-09-23",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "スポーツの日",
+      "date": "2026-10-12",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "文化の日",
+      "date": "2026-11-03",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "勤労感謝の日",
+      "date": "2026-11-23",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "元日",
+      "date": "2027-01-01",
+      "risk_multiplier": 1.3,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "成人の日",
+      "date": "2027-01-11",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "建国記念の日",
+      "date": "2027-02-11",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "天皇誕生日",
+      "date": "2027-02-23",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "春分の日",
+      "date": "2027-03-21",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "春分の日 振替休日",
+      "date": "2027-03-22",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "昭和の日",
+      "date": "2027-04-29",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "憲法記念日",
+      "date": "2027-05-03",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "みどりの日",
+      "date": "2027-05-04",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "こどもの日",
+      "date": "2027-05-05",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "海の日",
+      "date": "2027-07-19",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "山の日",
+      "date": "2027-08-11",
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "敬老の日",
+      "date": "2027-09-20",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "秋分の日",
+      "date": "2027-09-23",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "スポーツの日",
+      "date": "2027-10-11",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "文化の日",
+      "date": "2027-11-03",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "holidays-jp",
+      "type": "public_holiday",
+      "name": "勤労感謝の日",
+      "date": "2027-11-23",
+      "risk_multiplier": 1.1,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident"
+      ]
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/01/25)",
+      "date": "2026-01-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/01/31)",
+      "date": "2026-01-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/02/25)",
+      "date": "2026-02-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/02/28)",
+      "date": "2026-02-28",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/03/25)",
+      "date": "2026-03-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/03/31)",
+      "date": "2026-03-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/04/25)",
+      "date": "2026-04-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/04/30)",
+      "date": "2026-04-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/05/25)",
+      "date": "2026-05-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/05/31)",
+      "date": "2026-05-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/06/25)",
+      "date": "2026-06-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/06/30)",
+      "date": "2026-06-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/07/25)",
+      "date": "2026-07-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/07/31)",
+      "date": "2026-07-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/08/25)",
+      "date": "2026-08-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/08/31)",
+      "date": "2026-08-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/09/25)",
+      "date": "2026-09-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/09/30)",
+      "date": "2026-09-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/10/25)",
+      "date": "2026-10-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/10/31)",
+      "date": "2026-10-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/11/25)",
+      "date": "2026-11-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/11/30)",
+      "date": "2026-11-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2026/12/25)",
+      "date": "2026-12-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2026/12/31)",
+      "date": "2026-12-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/01/25)",
+      "date": "2027-01-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/01/31)",
+      "date": "2027-01-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/02/25)",
+      "date": "2027-02-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/02/28)",
+      "date": "2027-02-28",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/03/25)",
+      "date": "2027-03-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/03/31)",
+      "date": "2027-03-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/04/25)",
+      "date": "2027-04-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/04/30)",
+      "date": "2027-04-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/05/25)",
+      "date": "2027-05-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/05/31)",
+      "date": "2027-05-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/06/25)",
+      "date": "2027-06-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/06/30)",
+      "date": "2027-06-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/07/25)",
+      "date": "2027-07-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/07/31)",
+      "date": "2027-07-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/08/25)",
+      "date": "2027-08-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/08/31)",
+      "date": "2027-08-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/09/25)",
+      "date": "2027-09-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/09/30)",
+      "date": "2027-09-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/10/25)",
+      "date": "2027-10-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/10/31)",
+      "date": "2027-10-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/11/25)",
+      "date": "2027-11-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/11/30)",
+      "date": "2027-11-30",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "給料日 (2027/12/25)",
+      "date": "2027-12-25",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "payday effect: increased spending, drinking, incidents"
+    },
+    {
+      "source": "generated",
+      "type": "payday",
+      "name": "月末給料日 (2027/12/31)",
+      "date": "2027-12-31",
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "incident",
+        "nightlife",
+        "traffic"
+      ],
+      "note": "month-end payday effect"
+    },
+    {
+      "source": "generated",
+      "type": "school_break",
+      "name": "春休み開始 (2026)",
+      "date_start": "2026-03-20",
+      "date_end": "2026-04-03",
+      "duration_days": 14,
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "juvenile",
+        "traffic",
+        "crowd"
+      ],
+      "note": "school term end: increased juvenile activity, family travel"
+    },
+    {
+      "source": "generated",
+      "type": "school_break",
+      "name": "夏休み開始 (2026)",
+      "date_start": "2026-07-20",
+      "date_end": "2026-08-03",
+      "duration_days": 14,
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "juvenile",
+        "traffic",
+        "crowd"
+      ],
+      "note": "school term end: increased juvenile activity, family travel"
+    },
+    {
+      "source": "generated",
+      "type": "school_break",
+      "name": "冬休み開始 (2026)",
+      "date_start": "2026-12-20",
+      "date_end": "2027-01-03",
+      "duration_days": 14,
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "juvenile",
+        "traffic",
+        "crowd"
+      ],
+      "note": "school term end: increased juvenile activity, family travel"
+    },
+    {
+      "source": "generated",
+      "type": "school_break",
+      "name": "春休み開始 (2027)",
+      "date_start": "2027-03-20",
+      "date_end": "2027-04-03",
+      "duration_days": 14,
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "juvenile",
+        "traffic",
+        "crowd"
+      ],
+      "note": "school term end: increased juvenile activity, family travel"
+    },
+    {
+      "source": "generated",
+      "type": "school_break",
+      "name": "夏休み開始 (2027)",
+      "date_start": "2027-07-20",
+      "date_end": "2027-08-03",
+      "duration_days": 14,
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "juvenile",
+        "traffic",
+        "crowd"
+      ],
+      "note": "school term end: increased juvenile activity, family travel"
+    },
+    {
+      "source": "generated",
+      "type": "school_break",
+      "name": "冬休み開始 (2027)",
+      "date_start": "2027-12-20",
+      "date_end": "2028-01-03",
+      "duration_days": 14,
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "juvenile",
+        "traffic",
+        "crowd"
+      ],
+      "note": "school term end: increased juvenile activity, family travel"
+    },
+    {
+      "source": "generated",
+      "type": "holiday_period",
+      "name": "ゴールデンウィーク (2026)",
+      "date_start": "2026-04-29",
+      "date_end": "2026-05-06",
+      "duration_days": 8,
+      "risk_multiplier": 1.3,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident",
+        "tourism"
+      ],
+      "note": "GW: peak travel, highway congestion, tourist area crowding"
+    },
+    {
+      "source": "generated",
+      "type": "holiday_period",
+      "name": "ゴールデンウィーク (2027)",
+      "date_start": "2027-04-29",
+      "date_end": "2027-05-06",
+      "duration_days": 8,
+      "risk_multiplier": 1.3,
+      "risk_category": [
+        "traffic",
+        "crowd",
+        "incident",
+        "tourism"
+      ],
+      "note": "GW: peak travel, highway congestion, tourist area crowding"
+    },
+    {
+      "source": "generated",
+      "type": "holiday_period",
+      "name": "お盆 (2026)",
+      "date_start": "2026-08-13",
+      "date_end": "2026-08-17",
+      "duration_days": 5,
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "burglary",
+        "traffic",
+        "urban_crime"
+      ],
+      "note": "Obon: urban areas emptied → increased burglary risk; highway congestion"
+    },
+    {
+      "source": "generated",
+      "type": "holiday_period",
+      "name": "お盆 (2027)",
+      "date_start": "2027-08-13",
+      "date_end": "2027-08-17",
+      "duration_days": 5,
+      "risk_multiplier": 1.2,
+      "risk_category": [
+        "burglary",
+        "traffic",
+        "urban_crime"
+      ],
+      "note": "Obon: urban areas emptied → increased burglary risk; highway congestion"
+    },
+    {
+      "source": "generated",
+      "type": "holiday_period",
+      "name": "年末年始 (2026-2027)",
+      "date_start": "2026-12-28",
+      "date_end": "2027-01-03",
+      "duration_days": 7,
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "burglary",
+        "traffic",
+        "incident",
+        "fire"
+      ],
+      "note": "year-end: drinking, fire risk, empty homes → burglary"
+    },
+    {
+      "source": "generated",
+      "type": "holiday_period",
+      "name": "年末年始 (2027-2028)",
+      "date_start": "2027-12-28",
+      "date_end": "2028-01-03",
+      "duration_days": 7,
+      "risk_multiplier": 1.25,
+      "risk_category": [
+        "burglary",
+        "traffic",
+        "incident",
+        "fire"
+      ],
+      "note": "year-end: drinking, fire risk, empty homes → burglary"
+    }
+  ]
+}
