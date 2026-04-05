@@ -252,6 +252,68 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     #eh-meter { background: #fff !important; color: #000 !important; }
     .eh-value, .breakdown-value { color: #000 !important; }
 }
+/* === Mimamori (Child Watch) Mode === */
+#btn-mimamori{padding:4px 10px;font-size:12px;background:#1a3a2c;border:1px solid #4caf50;color:#66bb6a;border-radius:4px;cursor:pointer;transition:all .2s;white-space:nowrap}
+#btn-mimamori:hover{background:#2a4a3c;color:#81c784}
+#btn-mimamori.active{background:#2e7d32;border-color:#66bb6a;color:#fff;font-weight:700}
+body.light-mode #btn-mimamori{background:#e8f5e9;border-color:#4caf50;color:#2e7d32}
+body.light-mode #btn-mimamori.active{background:#4caf50;color:#fff}
+#mimamori-left-panel{display:none;padding:10px 14px}
+#mimamori-left-panel .mima-section{margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #2a2a3a}
+#mimamori-left-panel .mima-title{font-size:11px;font-weight:700;color:#66bb6a;letter-spacing:1px;margin-bottom:6px}
+.mima-loc-item{display:flex;align-items:center;gap:6px;padding:5px 4px;border-radius:4px;cursor:pointer;font-size:11px;transition:background .15s}
+.mima-loc-item:hover{background:#1a2a1a}
+.mima-loc-icon{font-size:16px;width:22px;text-align:center}
+.mima-loc-name{flex:1;color:#ccc}
+.mima-loc-eh{font-weight:700;font-size:11px;min-width:32px;text-align:right}
+.mima-loc-del{opacity:0;font-size:10px;color:#f44336;cursor:pointer;padding:2px 4px}
+.mima-loc-item:hover .mima-loc-del{opacity:1}
+.mima-route-item{display:flex;align-items:center;gap:6px;padding:5px 4px;border-radius:4px;cursor:pointer;font-size:11px;transition:background .15s}
+.mima-route-item:hover{background:#1a2a1a}
+.mima-route-color{width:8px;height:8px;border-radius:50%}
+.mima-route-name{flex:1;color:#ccc}
+.mima-route-eh{font-weight:700;font-size:11px;min-width:50px;text-align:right}
+.mima-route-del{opacity:0;font-size:10px;color:#f44336;cursor:pointer;padding:2px 4px}
+.mima-route-item:hover .mima-route-del{opacity:1}
+.mima-add-btn{width:100%;padding:6px 10px;font-size:11px;background:#0d1117;border:1px dashed #4caf50;color:#66bb6a;border-radius:4px;cursor:pointer;transition:all .2s;margin-top:6px}
+.mima-add-btn:hover{background:#1a2a1a;border-style:solid}
+body.light-mode .mima-loc-name,body.light-mode .mima-route-name{color:#333}
+body.light-mode .mima-loc-item:hover,body.light-mode .mima-route-item:hover{background:#e8f5e9}
+body.light-mode .mima-add-btn{background:#f0f4f8;border-color:#4caf50;color:#2e7d32}
+body.light-mode #mimamori-left-panel .mima-section{border-color:#eee}
+body.light-mode #mimamori-left-panel .mima-title{color:#2e7d32}
+/* Mimamori right panel dashboard */
+#mimamori-dashboard{display:none;padding:14px}
+#mimamori-dashboard .mima-dash-header{font-size:16px;font-weight:800;color:#66bb6a;text-align:center;margin-bottom:8px}
+#mimamori-dashboard .mima-dash-divider{border:none;border-top:2px solid #2a3a2a;margin:8px 0}
+body.light-mode #mimamori-dashboard .mima-dash-divider{border-color:#c8e6c9}
+#mimamori-dashboard .mima-dash-loc{display:flex;align-items:center;gap:8px;padding:6px 4px;cursor:pointer;border-radius:4px;transition:background .15s}
+#mimamori-dashboard .mima-dash-loc:hover{background:#1a2a1a}
+body.light-mode #mimamori-dashboard .mima-dash-loc:hover{background:#e8f5e9}
+.mima-dash-icon{font-size:18px;width:26px;text-align:center}
+.mima-dash-name{flex:1;font-size:13px;font-weight:600;color:#ccc}
+body.light-mode .mima-dash-name{color:#333}
+.mima-dash-safety{font-size:13px;min-width:24px;text-align:center}
+.mima-dash-eh{font-size:12px;font-weight:700;min-width:36px;text-align:right}
+.mima-dash-route-section{margin-top:10px;padding:8px;background:#0d1117;border-radius:6px}
+body.light-mode .mima-dash-route-section{background:#f0f4f8}
+.mima-dash-route-title{font-size:12px;font-weight:700;color:#7eb3f0;margin-bottom:6px}
+.mima-dash-route{display:flex;align-items:center;gap:6px;padding:4px 0;font-size:12px;cursor:pointer}
+.mima-dash-route:hover{color:#7eb3f0}
+.mima-dash-stats{margin-top:10px;font-size:12px;color:#aaa;line-height:1.8}
+body.light-mode .mima-dash-stats{color:#666}
+.mima-dash-alert{margin-top:8px;padding:8px;border-radius:4px;font-size:12px;font-weight:600}
+/* Simplified Mode (Grandparent-friendly) */
+#simplified-overlay{position:fixed;inset:0;background:#fff;z-index:10200;display:none;flex-direction:column;align-items:center;justify-content:center;padding:20px}
+#simplified-overlay .simp-circle{width:200px;height:200px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:48px;font-weight:900;margin-bottom:20px;border:4px solid #eee}
+#simplified-overlay .simp-location{font-size:24px;font-weight:700;color:#333;margin-bottom:12px;text-align:center}
+#simplified-overlay .simp-status{font-size:20px;color:#555;margin-bottom:30px;text-align:center}
+#simplified-overlay .simp-sos{width:80%;max-width:300px;padding:20px;font-size:24px;font-weight:900;background:#d32f2f;border:3px solid #f44336;color:#fff;border-radius:12px;cursor:pointer;text-align:center;margin-top:20px}
+#simplified-overlay .simp-sos:hover{background:#b71c1c}
+#simplified-overlay .simp-close{position:absolute;top:16px;right:16px;font-size:16px;background:#eee;border:none;color:#666;border-radius:50%;width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+/* Quick-Exit Button (DV) */
+#quick-exit-btn{position:fixed;top:8px;right:8px;z-index:10300;width:28px;height:28px;background:rgba(42,42,58,.5);border:1px solid rgba(100,100,120,.3);color:rgba(150,150,160,.6);border-radius:50%;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;line-height:1}
+#quick-exit-btn:hover{background:rgba(42,42,58,.8);color:rgba(200,200,210,.8);border-color:rgba(150,150,160,.5)}
 </style>
 </head>
 <body>
@@ -275,6 +337,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
         <button class="panel-action-btn" id="btn-share" onclick="shareView()" title="現在のビューを共有" aria-label="共有">🔗</button>
         <button class="panel-action-btn" id="btn-qr" onclick="showQR()" title="QRコードで共有" aria-label="QRコード共有">QR</button>
         <button class="panel-action-btn" id="btn-presentation" onclick="togglePresentation()" title="プレゼンテーションモード" aria-label="プレゼンモード">📺</button>
+        <button id="btn-mimamori" onclick="toggleMimamoriMode()" title="子供見守りモード" aria-label="子供見守りモード">&#x1F466; 子供見守りモード</button>
         <button class="panel-action-btn" id="btn-emergency" onclick="showEmergencyModal()" title="緊急連絡先" aria-label="緊急連絡" style="background:#d32f2f;border-color:#f44336;color:#fff">🚨 緊急連絡</button>
         <span id="merkle-badge" onclick="showManifestModal()" title="Click for manifest details" style="cursor:pointer;font-size:10px;padding:2px 6px;border-radius:3px;background:#1b3a2a;border:1px solid #2e7d32;color:#81c784;margin-left:4px">… verifying</span>
       </div>
@@ -362,6 +425,27 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
       <div class="legend-row"><span style="font-size:14px;width:20px">💊</span><span>24H薬局</span></div>
     </div>
   </div>
+  <!-- Mimamori (Child Watch) Left Panel Controls -->
+  <div id="mimamori-left-panel">
+    <div class="mima-section">
+      <div class="mima-title">&#x1F4CD; 登録地点</div>
+      <div id="mima-loc-list"></div>
+      <button class="mima-add-btn" id="btn-mima-add-loc" onclick="startMimamoriAddLocation()">&#xFF0B; 地点を追加</button>
+      <div id="mima-loc-msg" style="font-size:10px;color:#888;margin-top:4px;display:none"></div>
+    </div>
+    <div class="mima-section">
+      <div class="mima-title">&#x1F5FA;&#xFE0F; ルート</div>
+      <div id="mima-route-list"></div>
+      <button class="mima-add-btn" id="btn-mima-add-route" onclick="startMimamoriAddRoute()">&#xFF0B; ルートを追加</button>
+      <div id="mima-route-msg" style="font-size:10px;color:#888;margin-top:4px;display:none"></div>
+    </div>
+    <div class="mima-section">
+      <div class="mima-title">&#x2699;&#xFE0F; 設定</div>
+      <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#aaa;cursor:pointer;margin-bottom:6px">
+        <input type="checkbox" id="mima-simplified-toggle" onchange="toggleSimplifiedMode(this.checked)"> 簡易モード（祖母向け）
+      </label>
+    </div>
+  </div>
 </div>
 <div id="map"><div id="error-banner"></div><div id="data-freshness-banner"></div><div id="map-container"></div>
   <div id="map-overlay-msg"></div>
@@ -370,6 +454,18 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
   <div id="loader"><div class="spinner"></div><div id="loader-text">データ読み込み中...</div></div>
 </div>
 <div id="right-panel">
+  <!-- Mimamori Dashboard (shown when mimamori mode active) -->
+  <div id="mimamori-dashboard">
+    <div class="mima-dash-header">&#x1F466; 見守りダッシュボード</div>
+    <hr class="mima-dash-divider">
+    <div id="mima-dash-locations"></div>
+    <div class="mima-dash-route-section">
+      <div class="mima-dash-route-title">&#x1F5FA;&#xFE0F; ルート</div>
+      <div id="mima-dash-routes"></div>
+    </div>
+    <div class="mima-dash-stats" id="mima-dash-stats"></div>
+    <div class="mima-dash-alert" id="mima-dash-alert" style="display:none"></div>
+  </div>
   <div id="click-location-name" style="padding:6px 14px;font-size:12px;color:#7eb3f0;text-align:center;border-bottom:1px solid #2a2a3a;min-height:20px"></div>
   <div id="safety-grade">
     <div id="safety-grade-letter" style="color:#666">—</div>
@@ -473,6 +569,55 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
   </div>
 </div>
 <div id="report-confirm"></div>
+<!-- Quick-Exit Button (DV safety) -->
+<button id="quick-exit-btn" onclick="window.location='https://www.yahoo.co.jp/'" title="閉じる" aria-label="閉じる">&#x2715;</button>
+<!-- Simplified Mode Overlay (Grandparent-friendly) -->
+<div id="simplified-overlay">
+  <button class="simp-close" onclick="toggleSimplifiedMode(false);document.getElementById('mima-simplified-toggle').checked=false" aria-label="戻る">&#x2190;</button>
+  <div class="simp-circle" id="simp-circle">&#x1F7E2; 安全</div>
+  <div class="simp-location" id="simp-location">—</div>
+  <div class="simp-status" id="simp-status">孫の通学路: 問題なし</div>
+  <button class="simp-sos" onclick="window.location='tel:110'">&#x1F6A8; 110番通報</button>
+</div>
+<!-- Mimamori Location Registration Popup -->
+<div id="mima-loc-popup" style="position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:10150;display:none;align-items:center;justify-content:center">
+  <div style="background:#1a1a2e;border:1px solid #4caf50;border-radius:10px;padding:20px;max-width:300px;width:90%;color:#e0e0e0">
+    <h3 style="font-size:14px;color:#66bb6a;margin-bottom:12px">&#x1F4CD; 地点を登録</h3>
+    <div style="margin-bottom:8px"><label style="font-size:11px;color:#888">名前</label><input id="mima-loc-name-input" type="text" placeholder="例: 自宅" style="width:100%;padding:6px;font-size:12px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;margin-top:2px"></div>
+    <div style="margin-bottom:12px"><label style="font-size:11px;color:#888">種別</label>
+      <select id="mima-loc-type-input" style="width:100%;padding:6px;font-size:12px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;margin-top:2px">
+        <option value="home">&#x1F3E0; 自宅</option>
+        <option value="school">&#x1F3EB; 学校</option>
+        <option value="juku">&#x1F4D6; 塾</option>
+        <option value="lesson">&#x1F3B5; 習い事</option>
+        <option value="other">&#x1F4CD; その他</option>
+      </select>
+    </div>
+    <div id="mima-loc-latlng" style="font-size:10px;color:#888;margin-bottom:8px"></div>
+    <div style="display:flex;gap:8px">
+      <button onclick="saveMimamoriLocation()" style="flex:1;padding:8px;background:#2e7d32;border:none;color:#fff;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600">保存</button>
+      <button onclick="cancelMimamoriAddLocation()" style="flex:1;padding:8px;background:#2a2a3a;border:none;color:#aaa;border-radius:4px;cursor:pointer;font-size:12px">キャンセル</button>
+    </div>
+  </div>
+</div>
+<!-- Mimamori Route Registration Popup -->
+<div id="mima-route-popup" style="position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:10150;display:none;align-items:center;justify-content:center">
+  <div style="background:#1a1a2e;border:1px solid #4a7ab5;border-radius:10px;padding:20px;max-width:300px;width:90%;color:#e0e0e0">
+    <h3 style="font-size:14px;color:#7eb3f0;margin-bottom:12px">&#x1F5FA;&#xFE0F; ルートを登録</h3>
+    <div style="margin-bottom:8px"><label style="font-size:11px;color:#888">ルート名</label><input id="mima-route-name-input" type="text" placeholder="例: 通学路（往路）" style="width:100%;padding:6px;font-size:12px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;margin-top:2px"></div>
+    <div style="margin-bottom:8px"><label style="font-size:11px;color:#888">出発地</label>
+      <select id="mima-route-from" style="width:100%;padding:6px;font-size:12px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;margin-top:2px"></select>
+    </div>
+    <div style="margin-bottom:8px"><label style="font-size:11px;color:#888">目的地</label>
+      <select id="mima-route-to" style="width:100%;padding:6px;font-size:12px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;margin-top:2px"></select>
+    </div>
+    <div style="font-size:10px;color:#888;margin-bottom:8px">経由地: 保存後に地図上をクリックで追加</div>
+    <div style="display:flex;gap:8px">
+      <button onclick="saveMimamoriRoute()" style="flex:1;padding:8px;background:#1a3a5c;border:none;color:#fff;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600">保存</button>
+      <button onclick="cancelMimamoriAddRoute()" style="flex:1;padding:8px;background:#2a2a3a;border:none;color:#aaa;border-radius:4px;cursor:pointer;font-size:12px">キャンセル</button>
+    </div>
+  </div>
+</div>
 <!-- Emergency Contact Modal -->
 <div id="emergency-overlay" style="position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10100;display:none;align-items:center;justify-content:center;overflow-y:auto;padding:20px">
   <div id="emergency-box" style="background:#1a0a0a;border:2px solid #f44336;border-radius:10px;padding:20px;max-width:420px;width:95%;color:#e0e0e0;max-height:90vh;overflow-y:auto">
@@ -482,6 +627,16 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     </div>
     <div id="emergency-content" style="font-size:12px;line-height:1.6">
       <div style="color:#aaa;text-align:center;padding:20px">読み込み中...</div>
+    </div>
+    <!-- DV-specific resources -->
+    <div id="dv-resources" style="margin-top:14px;padding-top:12px;border-top:2px solid #9c27b0">
+      <div style="font-size:14px;font-weight:800;color:#ce93d8;margin-bottom:8px">&#x1F49C; DV・暴力相談</div>
+      <a href="tel:8008" style="display:block;padding:10px;margin-bottom:6px;background:#4a1a5e;border:1px solid #9c27b0;color:#fff;border-radius:5px;text-decoration:none;font-size:13px;font-weight:600">&#x260E;&#xFE0F; #8008 &#x2014; DV相談ナビ（24H）</a>
+      <a href="tel:0120279889" style="display:block;padding:10px;margin-bottom:6px;background:#4a1a5e;border:1px solid #9c27b0;color:#fff;border-radius:5px;text-decoration:none;font-size:13px;font-weight:600">&#x260E;&#xFE0F; 0120-279-889 &#x2014; 配偶者暴力相談支援センター</a>
+      <a href="tel:0120279338" style="display:block;padding:10px;margin-bottom:6px;background:#4a1a5e;border:1px solid #9c27b0;color:#fff;border-radius:5px;text-decoration:none;font-size:13px;font-weight:600">&#x260E;&#xFE0F; 0120-279-338 &#x2014; よりそいホットライン</a>
+      <a href="tel:0357429104" style="display:block;padding:10px;margin-bottom:6px;background:#4a1a5e;border:1px solid #9c27b0;color:#fff;border-radius:5px;text-decoration:none;font-size:13px;font-weight:600">&#x260E;&#xFE0F; 03-5742-9104 &#x2014; 品川区配偶者暴力相談窓口</a>
+      <button onclick="mimamoriDeleteAllData()" style="width:100%;padding:12px;margin-top:10px;background:#b71c1c;border:2px solid #f44336;color:#fff;border-radius:6px;cursor:pointer;font-size:14px;font-weight:800">&#x1F5D1;&#xFE0F; 全データを削除</button>
+      <div style="font-size:10px;color:#888;margin-top:4px;text-align:center">※ 閲覧履歴・保存データを全て消去します</div>
     </div>
     <div style="margin-top:12px;font-size:10px;color:#888;text-align:center">※ 緊急時は必ず公式窓口に連絡してください</div>
   </div>
@@ -2469,6 +2624,443 @@ function showHelpTooltip(term,ev){
   if(document.readyState==='loading'){
     document.addEventListener('DOMContentLoaded',function(){verifyManifest();loadEnterpriseData()});
   } else {verifyManifest();loadEnterpriseData();}
+})();
+
+/* === Feature: Mimamori (Child Watch) Mode === */
+(function(){
+var MIMAMORI_KEY='riskspace_mimamori';
+var MIMAMORI_DEFAULT={
+    locations:[],
+    routes:[],
+    settings:{simplifiedMode:false,voiceEnabled:false}
+};
+var mimamoriActive=false;
+var mimamoriData=null;
+var mimamoriMapMarkers=[];
+var mimamoriRoutePolylines=[];
+var mimamoriAddingLocation=false;
+var mimamoriAddingRoutePending=null;
+var mimamoriPendingLatLng=null;
+var LOC_TYPES={home:{icon:'\uD83C\uDFE0',label:'自宅'},school:{icon:'\uD83C\uDFEB',label:'学校'},juku:{icon:'\uD83D\uDCD6',label:'塾'},lesson:{icon:'\uD83C\uDFB5',label:'習い事'},other:{icon:'\uD83D\uDCCD',label:'その他'}};
+var LOC_COLORS={home:'#4caf50',school:'#2196f3',juku:'#ff9800',lesson:'#e91e63',other:'#9e9e9e'};
+
+function loadMimamoriData(){
+  try{var d=JSON.parse(localStorage.getItem(MIMAMORI_KEY));if(d&&d.locations)return d;}catch(e){}
+  return JSON.parse(JSON.stringify(MIMAMORI_DEFAULT));
+}
+function saveMimamoriData(){localStorage.setItem(MIMAMORI_KEY,JSON.stringify(mimamoriData));}
+
+function computeEHForPoint(lat,lon){
+  /* Find nearest grid cell or compute approximate EH */
+  var src=(typeof gridData!=='undefined'?gridData:[]).concat(typeof allTileCells!=='undefined'?allTileCells:[]);
+  var bestDist=Infinity,bestCell=null;
+  for(var i=0;i<src.length;i++){
+    var c=src[i];
+    var d=Math.hypot(c.lat-lat,c.lon-lon);
+    if(d<bestDist){bestDist=d;bestCell=c;}
+  }
+  if(!bestCell||bestDist>0.02)return 0.05;/* default low risk if no data */
+  var h=typeof selectedHour!=='undefined'?selectedHour:new Date().getHours();
+  var tm=TM(h);
+  var br=bestCell.risk_score||0;
+  var bp=bestCell.p_escape||0.5;
+  var sv=(bestCell.avg_severity||2.5)/5;
+  var dr=Math.min(1,br*tm.i);
+  var de=Math.min(1,bp*tm.e);
+  return dr*sv*(1-de);
+}
+function ehToSafety(eh){
+  if(eh>=0.3)return{emoji:'\uD83D\uDD34',label:'危険',color:'#f44336'};
+  if(eh>=0.15)return{emoji:'\uD83D\uDFE1',label:'注意',color:'#ff9800'};
+  return{emoji:'\uD83D\uDFE2',label:'安全',color:'#4caf50'};
+}
+
+window.toggleMimamoriMode=function(){
+  mimamoriActive=!mimamoriActive;
+  mimamoriData=loadMimamoriData();
+  var btn=document.getElementById('btn-mimamori');
+  btn.classList.toggle('active',mimamoriActive);
+  /* Toggle left panel sections visibility */
+  var leftSections=document.querySelectorAll('#left-panel > .section, #left-panel > #status-bar, #left-panel > #muni-select-wrap, #left-panel > #address-search, #left-panel > #legend, #left-panel > #school-radius-filter');
+  leftSections.forEach(function(s){s.style.display=mimamoriActive?'none':''});
+  document.getElementById('mimamori-left-panel').style.display=mimamoriActive?'block':'none';
+  /* Toggle right panel */
+  var rightChildren=document.getElementById('right-panel').children;
+  for(var i=0;i<rightChildren.length;i++){
+    var child=rightChildren[i];
+    if(child.id==='mimamori-dashboard'){child.style.display=mimamoriActive?'block':'none';}
+    else{child.style.display=mimamoriActive?'none':'';}
+  }
+  if(mimamoriActive){
+    renderMimamoriLocations();
+    renderMimamoriRoutes();
+    renderMimamoriDashboard();
+    renderMimamoriMapMarkers();
+    renderMimamoriRoutePolylines();
+  }else{
+    clearMimamoriMapMarkers();
+    clearMimamoriRoutePolylines();
+    if(document.getElementById('simplified-overlay').style.display==='flex'){
+      toggleSimplifiedMode(false);
+      document.getElementById('mima-simplified-toggle').checked=false;
+    }
+  }
+};
+
+function clearMimamoriMapMarkers(){
+  mimamoriMapMarkers.forEach(function(m){if(m._map)map.removeLayer(m)});
+  mimamoriMapMarkers=[];
+}
+function clearMimamoriRoutePolylines(){
+  mimamoriRoutePolylines.forEach(function(p){if(p._map)map.removeLayer(p)});
+  mimamoriRoutePolylines=[];
+}
+
+function renderMimamoriMapMarkers(){
+  clearMimamoriMapMarkers();
+  if(!mimamoriData)return;
+  mimamoriData.locations.forEach(function(loc){
+    var t=LOC_TYPES[loc.type]||LOC_TYPES.other;
+    var color=LOC_COLORS[loc.type]||'#9e9e9e';
+    var marker=L.marker([loc.lat,loc.lon],{
+      icon:L.divIcon({html:'<div style="font-size:22px;text-shadow:0 0 4px '+color+'">'+t.icon+'</div>',className:'',iconSize:[26,26],iconAnchor:[13,13]})
+    }).bindTooltip(t.icon+' '+loc.name).addTo(map);
+    mimamoriMapMarkers.push(marker);
+  });
+}
+
+function renderMimamoriRoutePolylines(){
+  clearMimamoriRoutePolylines();
+  if(!mimamoriData)return;
+  mimamoriData.routes.forEach(function(route){
+    var fromLoc=mimamoriData.locations.find(function(l){return l.id===route.fromId});
+    var toLoc=mimamoriData.locations.find(function(l){return l.id===route.toId});
+    if(!fromLoc||!toLoc)return;
+    var points=[[fromLoc.lat,fromLoc.lon]];
+    if(route.waypoints){route.waypoints.forEach(function(wp){points.push([wp.lat,wp.lon])});}
+    points.push([toLoc.lat,toLoc.lon]);
+    /* Evaluate EH along segments and color them */
+    for(var i=0;i<points.length-1;i++){
+      var midLat=(points[i][0]+points[i+1][0])/2;
+      var midLon=(points[i][1]+points[i+1][1])/2;
+      var eh=computeEHForPoint(midLat,midLon);
+      var safety=ehToSafety(eh);
+      var poly=L.polyline([points[i],points[i+1]],{
+        color:safety.color,weight:4,opacity:0.8,dashArray:'8,6'
+      }).bindTooltip(route.name+' EH:'+eh.toFixed(2)).addTo(map);
+      mimamoriRoutePolylines.push(poly);
+    }
+  });
+}
+
+function renderMimamoriLocations(){
+  var el=document.getElementById('mima-loc-list');
+  if(!mimamoriData||!mimamoriData.locations.length){el.innerHTML='<div style="font-size:10px;color:#555;padding:4px 0">地点が未登録です</div>';return;}
+  el.innerHTML=mimamoriData.locations.map(function(loc){
+    var t=LOC_TYPES[loc.type]||LOC_TYPES.other;
+    var eh=computeEHForPoint(loc.lat,loc.lon);
+    var safety=ehToSafety(eh);
+    return '<div class="mima-loc-item" onclick="map.flyTo(['+loc.lat+','+loc.lon+'],15)">'+
+      '<span class="mima-loc-icon">'+t.icon+'</span>'+
+      '<span class="mima-loc-name">'+loc.name+'</span>'+
+      '<span class="mima-loc-eh" style="color:'+safety.color+'">'+eh.toFixed(2)+'</span>'+
+      '<span class="mima-loc-del" onclick="event.stopPropagation();deleteMimamoriLocation(\''+loc.id+'\')">\u2715</span>'+
+    '</div>';
+  }).join('');
+}
+
+function renderMimamoriRoutes(){
+  var el=document.getElementById('mima-route-list');
+  if(!mimamoriData||!mimamoriData.routes.length){el.innerHTML='<div style="font-size:10px;color:#555;padding:4px 0">ルートが未登録です</div>';return;}
+  el.innerHTML=mimamoriData.routes.map(function(route){
+    var avgEH=computeRouteAvgEH(route);
+    var safety=ehToSafety(avgEH);
+    return '<div class="mima-route-item" onclick="flyToRoute(\''+route.id+'\')">'+
+      '<span class="mima-route-color" style="background:'+safety.color+'"></span>'+
+      '<span class="mima-route-name">'+route.name+'</span>'+
+      '<span class="mima-route-eh" style="color:'+safety.color+'">avg:'+avgEH.toFixed(2)+'</span>'+
+      '<span class="mima-route-del" onclick="event.stopPropagation();deleteMimamoriRoute(\''+route.id+'\')">\u2715</span>'+
+    '</div>';
+  }).join('');
+}
+
+function computeRouteAvgEH(route){
+  var fromLoc=mimamoriData.locations.find(function(l){return l.id===route.fromId});
+  var toLoc=mimamoriData.locations.find(function(l){return l.id===route.toId});
+  if(!fromLoc||!toLoc)return 0;
+  var points=[[fromLoc.lat,fromLoc.lon]];
+  if(route.waypoints){route.waypoints.forEach(function(wp){points.push([wp.lat,wp.lon])});}
+  points.push([toLoc.lat,toLoc.lon]);
+  var total=0;
+  for(var i=0;i<points.length-1;i++){
+    var midLat=(points[i][0]+points[i+1][0])/2;
+    var midLon=(points[i][1]+points[i+1][1])/2;
+    total+=computeEHForPoint(midLat,midLon);
+  }
+  return points.length>1?total/(points.length-1):0;
+}
+
+window.flyToRoute=function(routeId){
+  var route=mimamoriData.routes.find(function(r){return r.id===routeId});
+  if(!route)return;
+  var fromLoc=mimamoriData.locations.find(function(l){return l.id===route.fromId});
+  var toLoc=mimamoriData.locations.find(function(l){return l.id===route.toId});
+  if(!fromLoc||!toLoc)return;
+  var bounds=L.latLngBounds([[fromLoc.lat,fromLoc.lon],[toLoc.lat,toLoc.lon]]);
+  if(route.waypoints){route.waypoints.forEach(function(wp){bounds.extend([wp.lat,wp.lon])});}
+  map.flyToBounds(bounds,{padding:[40,40]});
+};
+
+function renderMimamoriDashboard(){
+  if(!mimamoriData)return;
+  /* Locations */
+  var locHtml='';
+  mimamoriData.locations.forEach(function(loc){
+    var t=LOC_TYPES[loc.type]||LOC_TYPES.other;
+    var eh=computeEHForPoint(loc.lat,loc.lon);
+    var safety=ehToSafety(eh);
+    locHtml+='<div class="mima-dash-loc" onclick="map.flyTo(['+loc.lat+','+loc.lon+'],15)">'+
+      '<span class="mima-dash-icon">'+t.icon+'</span>'+
+      '<span class="mima-dash-name">'+loc.name+'</span>'+
+      '<span class="mima-dash-safety">'+safety.emoji+'</span>'+
+      '<span class="mima-dash-eh" style="color:'+safety.color+'">'+eh.toFixed(2)+'</span>'+
+    '</div>';
+  });
+  if(!locHtml)locHtml='<div style="font-size:11px;color:#555;padding:8px;text-align:center">左パネルから地点を追加</div>';
+  document.getElementById('mima-dash-locations').innerHTML=locHtml;
+
+  /* Routes */
+  var routeHtml='';
+  mimamoriData.routes.forEach(function(route,idx){
+    var avgEH=computeRouteAvgEH(route);
+    var safety=ehToSafety(avgEH);
+    var prefix=idx===mimamoriData.routes.length-1?'\u2514':'\u251C';
+    routeHtml+='<div class="mima-dash-route" onclick="flyToRoute(\''+route.id+'\')">'+
+      '<span style="color:#555">'+prefix+'</span> '+route.name+' '+safety.emoji+' <span style="color:'+safety.color+';font-weight:700">avg:'+avgEH.toFixed(2)+'</span>'+
+    '</div>';
+  });
+  if(!routeHtml)routeHtml='<div style="font-size:11px;color:#555">ルート未登録</div>';
+  document.getElementById('mima-dash-routes').innerHTML=routeHtml;
+
+  /* Stats: count fushinsha near routes */
+  var fushinshaOnRoute=0;
+  if(typeof realtimeMarkers!=='undefined'&&realtimeMarkers&&realtimeMarkers.length){
+    mimamoriData.routes.forEach(function(route){
+      var fromLoc=mimamoriData.locations.find(function(l){return l.id===route.fromId});
+      var toLoc=mimamoriData.locations.find(function(l){return l.id===route.toId});
+      if(!fromLoc||!toLoc)return;
+      var points=[[fromLoc.lat,fromLoc.lon]];
+      if(route.waypoints)route.waypoints.forEach(function(wp){points.push([wp.lat,wp.lon])});
+      points.push([toLoc.lat,toLoc.lon]);
+      realtimeMarkers.forEach(function(m){
+        if(!m.lat||!m.lon)return;
+        for(var i=0;i<points.length;i++){
+          if(Math.hypot(m.lat-points[i][0],m.lon-points[i][1])<0.005){fushinshaOnRoute++;break;}
+        }
+      });
+    });
+  }
+  document.getElementById('mima-dash-stats').innerHTML=
+    '\uD83D\uDCCA 不審者(24h): 通学路沿い '+fushinshaOnRoute+'件';
+
+  /* Alert */
+  var alertEl=document.getElementById('mima-dash-alert');
+  var maxEH=0;
+  mimamoriData.locations.forEach(function(loc){var eh=computeEHForPoint(loc.lat,loc.lon);if(eh>maxEH)maxEH=eh});
+  mimamoriData.routes.forEach(function(route){var avg=computeRouteAvgEH(route);if(avg>maxEH)maxEH=avg});
+  if(maxEH>=0.3){
+    alertEl.style.display='block';alertEl.style.background='#2a0a0a';alertEl.style.color='#f44336';alertEl.style.border='1px solid #f44336';
+    alertEl.textContent='\uD83D\uDD14 アラート: 危険レベルの地点があります (EH:'+maxEH.toFixed(2)+')';
+  }else if(maxEH>=0.15){
+    alertEl.style.display='block';alertEl.style.background='#2a2a00';alertEl.style.color='#ff9800';alertEl.style.border='1px solid #ff9800';
+    alertEl.textContent='\uD83D\uDD14 アラート: 注意レベル (EH:'+maxEH.toFixed(2)+')';
+  }else{
+    alertEl.style.display='block';alertEl.style.background='#0a2010';alertEl.style.color='#4caf50';alertEl.style.border='1px solid #4caf50';
+    alertEl.textContent='\uD83D\uDD14 アラート: なし';
+  }
+
+  /* Update simplified mode if active */
+  updateSimplifiedOverlay();
+}
+
+/* === Location Registration === */
+window.startMimamoriAddLocation=function(){
+  if(!mimamoriData)mimamoriData=loadMimamoriData();
+  if(mimamoriData.locations.length>=10){
+    var msg=document.getElementById('mima-loc-msg');msg.textContent='最大10地点まで登録可能です';msg.style.display='block';msg.style.color='#f44336';
+    setTimeout(function(){msg.style.display='none'},3000);return;
+  }
+  mimamoriAddingLocation=true;
+  var msg=document.getElementById('mima-loc-msg');msg.textContent='地図上をクリックして地点を選択...';msg.style.display='block';msg.style.color='#66bb6a';
+};
+window.cancelMimamoriAddLocation=function(){
+  mimamoriAddingLocation=false;
+  document.getElementById('mima-loc-popup').style.display='none';
+  document.getElementById('mima-loc-msg').style.display='none';
+  mimamoriPendingLatLng=null;
+};
+window.saveMimamoriLocation=function(){
+  var name=document.getElementById('mima-loc-name-input').value.trim();
+  var type=document.getElementById('mima-loc-type-input').value;
+  if(!name){alert('名前を入力してください');return;}
+  if(!mimamoriPendingLatLng){alert('地図上で地点を選択してください');return;}
+  var t=LOC_TYPES[type]||LOC_TYPES.other;
+  var loc={id:'loc_'+Date.now(),name:name,type:type,lat:mimamoriPendingLatLng.lat,lon:mimamoriPendingLatLng.lng||mimamoriPendingLatLng.lon,icon:t.icon};
+  mimamoriData.locations.push(loc);
+  saveMimamoriData();
+  mimamoriAddingLocation=false;mimamoriPendingLatLng=null;
+  document.getElementById('mima-loc-popup').style.display='none';
+  document.getElementById('mima-loc-msg').style.display='none';
+  document.getElementById('mima-loc-name-input').value='';
+  renderMimamoriLocations();renderMimamoriDashboard();renderMimamoriMapMarkers();renderMimamoriRoutePolylines();
+};
+window.deleteMimamoriLocation=function(id){
+  if(!confirm('この地点を削除しますか？'))return;
+  mimamoriData.locations=mimamoriData.locations.filter(function(l){return l.id!==id});
+  /* Also remove routes using this location */
+  mimamoriData.routes=mimamoriData.routes.filter(function(r){return r.fromId!==id&&r.toId!==id});
+  saveMimamoriData();
+  renderMimamoriLocations();renderMimamoriRoutes();renderMimamoriDashboard();renderMimamoriMapMarkers();renderMimamoriRoutePolylines();
+};
+
+/* Intercept map click for mimamori location adding */
+var _origMapClick=null;
+function mimamoriMapClickHandler(e){
+  if(mimamoriAddingLocation&&mimamoriActive){
+    mimamoriPendingLatLng=e.latlng;
+    document.getElementById('mima-loc-latlng').textContent='位置: '+e.latlng.lat.toFixed(5)+', '+e.latlng.lng.toFixed(5);
+    document.getElementById('mima-loc-popup').style.display='flex';
+    return;
+  }
+  if(mimamoriAddingRoutePending&&mimamoriActive){
+    /* Adding waypoint to a route */
+    var route=mimamoriData.routes.find(function(r){return r.id===mimamoriAddingRoutePending});
+    if(route){
+      if(!route.waypoints)route.waypoints=[];
+      route.waypoints.push({lat:e.latlng.lat,lon:e.latlng.lng});
+      saveMimamoriData();
+      renderMimamoriRoutes();renderMimamoriDashboard();renderMimamoriRoutePolylines();
+      var msg=document.getElementById('mima-route-msg');
+      msg.textContent='経由地追加済み ('+route.waypoints.length+'点)。別の点をクリックするか、完了でそのまま。';
+      msg.style.display='block';msg.style.color='#7eb3f0';
+    }
+    return;
+  }
+  /* Normal click handling */
+  if(typeof onMapClick==='function')onMapClick(e);
+}
+/* Replace map click handler when mimamori mode activates */
+var origMapClickBound=false;
+var _origOnMapClick=null;
+(function patchMapClick(){
+  /* We need to intercept map.on('click') - wrap the handler */
+  map.off('click',onMapClick);
+  _origOnMapClick=onMapClick;
+  map.on('click',function(e){
+    if(mimamoriActive&&(mimamoriAddingLocation||mimamoriAddingRoutePending)){
+      mimamoriMapClickHandler(e);
+    }else{
+      _origOnMapClick(e);
+    }
+  });
+})();
+
+/* === Route Registration === */
+window.startMimamoriAddRoute=function(){
+  if(!mimamoriData)mimamoriData=loadMimamoriData();
+  if(mimamoriData.locations.length<2){
+    var msg=document.getElementById('mima-route-msg');msg.textContent='ルート作成には2つ以上の地点が必要です';msg.style.display='block';msg.style.color='#f44336';
+    setTimeout(function(){msg.style.display='none'},3000);return;
+  }
+  /* Populate dropdowns */
+  var opts=mimamoriData.locations.map(function(l){var t=LOC_TYPES[l.type]||LOC_TYPES.other;return '<option value="'+l.id+'">'+t.icon+' '+l.name+'</option>'}).join('');
+  document.getElementById('mima-route-from').innerHTML=opts;
+  document.getElementById('mima-route-to').innerHTML=opts;
+  if(mimamoriData.locations.length>1)document.getElementById('mima-route-to').selectedIndex=1;
+  document.getElementById('mima-route-popup').style.display='flex';
+};
+window.cancelMimamoriAddRoute=function(){
+  document.getElementById('mima-route-popup').style.display='none';
+  document.getElementById('mima-route-msg').style.display='none';
+  mimamoriAddingRoutePending=null;
+};
+window.saveMimamoriRoute=function(){
+  var name=document.getElementById('mima-route-name-input').value.trim();
+  var fromId=document.getElementById('mima-route-from').value;
+  var toId=document.getElementById('mima-route-to').value;
+  if(!name){alert('ルート名を入力してください');return;}
+  if(fromId===toId){alert('出発地と目的地を別々に選択してください');return;}
+  var route={id:'route_'+Date.now(),name:name,fromId:fromId,toId:toId,waypoints:[],timeWindows:[]};
+  mimamoriData.routes.push(route);
+  saveMimamoriData();
+  document.getElementById('mima-route-popup').style.display='none';
+  document.getElementById('mima-route-name-input').value='';
+  /* Enter waypoint adding mode */
+  mimamoriAddingRoutePending=route.id;
+  var msg=document.getElementById('mima-route-msg');
+  msg.textContent='地図上をクリックして経由地を追加（任意）。完了したらそのまま。';
+  msg.style.display='block';msg.style.color='#7eb3f0';
+  setTimeout(function(){mimamoriAddingRoutePending=null;msg.style.display='none'},15000);
+  renderMimamoriRoutes();renderMimamoriDashboard();renderMimamoriRoutePolylines();
+};
+window.deleteMimamoriRoute=function(id){
+  if(!confirm('このルートを削除しますか？'))return;
+  mimamoriData.routes=mimamoriData.routes.filter(function(r){return r.id!==id});
+  saveMimamoriData();
+  renderMimamoriRoutes();renderMimamoriDashboard();renderMimamoriRoutePolylines();
+};
+
+/* === Simplified Mode (Grandparent-friendly) === */
+window.toggleSimplifiedMode=function(active){
+  var overlay=document.getElementById('simplified-overlay');
+  if(active){
+    overlay.style.display='flex';
+    updateSimplifiedOverlay();
+  }else{
+    overlay.style.display='none';
+  }
+};
+function updateSimplifiedOverlay(){
+  if(document.getElementById('simplified-overlay').style.display!=='flex')return;
+  if(!mimamoriData)return;
+  var maxEH=0;var worstName='';
+  mimamoriData.locations.forEach(function(loc){
+    var eh=computeEHForPoint(loc.lat,loc.lon);
+    if(eh>maxEH){maxEH=eh;worstName=loc.name}
+  });
+  mimamoriData.routes.forEach(function(route){
+    var avg=computeRouteAvgEH(route);
+    if(avg>maxEH){maxEH=avg;worstName=route.name}
+  });
+  var circle=document.getElementById('simp-circle');
+  var locEl=document.getElementById('simp-location');
+  var statusEl=document.getElementById('simp-status');
+  var safety=ehToSafety(maxEH);
+  circle.textContent=safety.emoji+' '+safety.label;
+  circle.style.background=safety.color+'22';
+  circle.style.borderColor=safety.color;
+  circle.style.color=safety.color;
+  locEl.textContent=worstName||'地点を登録してください';
+  if(maxEH>=0.3){statusEl.textContent='孫の通学路: 注意が必要です';}
+  else if(maxEH>=0.15){statusEl.textContent='孫の通学路: やや注意';}
+  else{statusEl.textContent='孫の通学路: 問題なし';}
+}
+
+/* === Delete All Data (DV safety) === */
+window.mimamoriDeleteAllData=function(){
+  if(!confirm('全てのデータ（見守り地点・ルート・閲覧設定）を削除しますか？\nこの操作は取り消せません。'))return;
+  /* Clear all localStorage items for this app */
+  var keys=[];
+  for(var i=0;i<localStorage.length;i++){
+    var k=localStorage.key(i);
+    if(k&&k.indexOf('riskspace')===0)keys.push(k);
+  }
+  keys.forEach(function(k){localStorage.removeItem(k)});
+  mimamoriData=JSON.parse(JSON.stringify(MIMAMORI_DEFAULT));
+  /* Redirect to safe page */
+  window.location='https://www.yahoo.co.jp/';
+};
+
 })();
 
 /* === FINAL: Mobile CSS for new elements === */
