@@ -2066,8 +2066,9 @@ function renderEmergencyContent(){
 function monteCarloForecast(cell, years, iterations){
   years=years||5; iterations=iterations||1000;
   var baseRisk=cell.risk_score||0;
-  var annualGrowthMean=-0.02;   // crime declining trend
-  var annualVolatility=0.08;
+  // Data-derived: NPA 2006-2016 CAGR=-6.0% vol=1.96%. Post-2022 reversal uncertain.
+  var annualGrowthMean=-0.03;   // blended conservative estimate
+  var annualVolatility=0.10;    // elevated uncertainty due to regime change
   var projections=[];
   for(var i=0;i<iterations;i++){
     var path=[baseRisk];
