@@ -314,6 +314,52 @@ body.light-mode .mima-dash-stats{color:#666}
 /* Quick-Exit Button (DV) */
 #quick-exit-btn{position:fixed;top:8px;right:8px;z-index:10300;width:28px;height:28px;background:rgba(42,42,58,.5);border:1px solid rgba(100,100,120,.3);color:rgba(150,150,160,.6);border-radius:50%;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;line-height:1}
 #quick-exit-btn:hover{background:rgba(42,42,58,.8);color:rgba(200,200,210,.8);border-color:rgba(150,150,160,.5)}
+/* Phase 2-3: Morning Briefing Panel */
+#morning-briefing-overlay{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10150;display:none;align-items:center;justify-content:center;overflow-y:auto;padding:20px}
+#morning-briefing-box{background:#0d1117;border:2px solid #4caf50;border-radius:10px;padding:20px;max-width:420px;width:95%;color:#e0e0e0;max-height:90vh;overflow-y:auto}
+#morning-briefing-box .mb-header{font-size:16px;font-weight:800;color:#66bb6a;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+#morning-briefing-box .mb-divider{border:none;border-top:1px solid #2a3a2a;margin:8px 0}
+.mb-route-row{padding:8px;border-radius:6px;margin-bottom:6px;font-size:12px;line-height:1.6}
+.mb-route-row.safe{background:#0a2010;border:1px solid #2e7d32}
+.mb-route-row.warn{background:#2a2a00;border:1px solid #ff9800}
+.mb-route-row.danger{background:#2a0a0a;border:1px solid #f44336}
+.mb-route-name{font-weight:700;font-size:13px}
+.mb-fushinsha-info{font-size:11px;color:#aaa;margin-top:2px}
+.mb-weather-row{padding:8px;margin-top:8px;font-size:12px;color:#aaa;background:#1a1a2e;border-radius:4px}
+body.light-mode #morning-briefing-box{background:#fff;border-color:#4caf50;color:#333}
+body.light-mode .mb-route-row.safe{background:#e8f5e9;border-color:#4caf50}
+body.light-mode .mb-route-row.warn{background:#fff8e1;border-color:#ff9800}
+body.light-mode .mb-route-row.danger{background:#ffebee;border-color:#f44336}
+body.light-mode .mb-weather-row{background:#f0f4f8}
+/* Phase 2: Time Window Editor */
+.tw-row{display:flex;align-items:center;gap:4px;margin-bottom:4px;font-size:11px}
+.tw-row input[type=time]{padding:3px;font-size:11px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;width:80px}
+.tw-row input[type=text]{padding:3px;font-size:11px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;flex:1}
+.tw-dow-btn{padding:1px 4px;font-size:9px;background:#1e1e2e;border:1px solid #2a2a3a;color:#aaa;border-radius:2px;cursor:pointer}
+.tw-dow-btn.active{background:#1a3a5c;border-color:#4a7ab5;color:#7eb3f0}
+.tw-del{color:#f44336;cursor:pointer;font-size:10px;padding:2px 4px}
+.tw-add-btn{padding:3px 8px;font-size:10px;background:#0d1117;border:1px dashed #4a7ab5;color:#7eb3f0;border-radius:3px;cursor:pointer;margin-top:4px}
+/* Phase 3: Emergency Scripts */
+#emergency-scripts-tab{margin-top:14px;padding-top:12px;border-top:2px solid #ff9800}
+.escript-lang-tabs{display:flex;gap:4px;margin-bottom:8px;flex-wrap:wrap}
+.escript-lang-btn{padding:4px 8px;font-size:11px;background:#1e1e2e;border:1px solid #2a2a3a;color:#aaa;border-radius:3px;cursor:pointer}
+.escript-lang-btn.active{background:#3a2a0a;border-color:#ff9800;color:#ff9800}
+.escript-card{background:#1a1a0a;border:1px solid #ff9800;border-radius:8px;padding:12px;margin-bottom:8px;position:relative}
+.escript-card-title{font-size:11px;font-weight:700;color:#ff9800;margin-bottom:6px}
+.escript-card-text{font-size:16px;line-height:1.6;color:#e0e0e0;word-break:break-word}
+.escript-copy-btn{position:absolute;top:8px;right:8px;padding:4px 8px;font-size:11px;background:#2a2a0a;border:1px solid #ff9800;color:#ff9800;border-radius:4px;cursor:pointer}
+.escript-copy-btn:hover{background:#3a3a1a}
+body.light-mode .escript-card{background:#fff8e1;border-color:#ff9800}
+body.light-mode .escript-card-text{color:#333}
+body.light-mode .escript-lang-btn{background:#f0f4f8;border-color:#ccc;color:#666}
+body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800;color:#e65100}
+/* Phase 3: Privacy Mode */
+#privacy-mode-banner{position:absolute;top:40px;left:50%;transform:translateX(-50%);background:rgba(156,39,176,.9);border:1px solid #ce93d8;border-radius:4px;padding:4px 12px;font-size:11px;color:#fff;z-index:600;display:none;white-space:nowrap}
+/* Phase 3: Voice Readout Button */
+.simp-voice-btn{width:60px;height:60px;border-radius:50%;background:#1a3a5c;border:2px solid #4a7ab5;color:#7eb3f0;font-size:24px;cursor:pointer;margin-top:12px;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.simp-voice-btn:hover{background:#2a4a6c;transform:scale(1.1)}
+#mima-notif-btn{padding:4px 8px;font-size:11px;background:#1a3a2c;border:1px solid #4caf50;color:#66bb6a;border-radius:3px;cursor:pointer;margin-top:4px}
+#mima-notif-btn:hover{background:#2a4a3c}
 </style>
 </head>
 <body>
@@ -403,6 +449,16 @@ body.light-mode .mima-dash-stats{color:#666}
         <span class="layer-name">地震リスク (30年)</span>
         <span class="layer-count" id="cnt-seismic">—</span>
     </div>
+    <div class="layer-toggle" onclick="toggleLayer('streetlights')" id="layer-streetlights" style="opacity:.4">
+        <div class="toggle-dot" style="background:#fdd835"></div>
+        <span class="layer-name">&#x1F4A1; 街灯</span>
+        <span class="layer-count" id="cnt-streetlights">5,805</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('railway')" id="layer-railway" style="opacity:.4">
+        <div class="toggle-dot" style="background:#42a5f5"></div>
+        <span class="layer-name">&#x1F683; 鉄道</span>
+        <span class="layer-count" id="cnt-railway">—</span>
+    </div>
     <div id="fushinsha-filter"><div style="font-size:10px;color:#555;margin-bottom:4px" id="fushinsha-filter-label">不審者フィルター</div><button class="fushinsha-filter-btn active" data-type="all" onclick="filterFushinsha('all')">全て</button><button class="fushinsha-filter-btn" data-type="不審者" onclick="filterFushinsha('不審者')">不審者</button><button class="fushinsha-filter-btn" data-type="声かけ" onclick="filterFushinsha('声かけ')">声かけ</button><button class="fushinsha-filter-btn" data-type="痴漢" onclick="filterFushinsha('痴漢')">痴漢</button><button class="fushinsha-filter-btn" data-type="暴行" onclick="filterFushinsha('暴行')">暴行</button><button class="fushinsha-filter-btn" data-type="窃盗" onclick="filterFushinsha('窃盗')">窃盗</button></div>
     <div id="school-radius-filter"><div style="font-size:10px;color:#555;margin-bottom:4px">🏫 学校周辺フィルター</div><button class="school-radius-btn" onclick="setSchoolRadius(500)">500m</button><button class="school-radius-btn" onclick="setSchoolRadius(1000)">1km</button><button class="school-radius-btn active" onclick="setSchoolRadius(0)">OFF</button></div>
   </div>
@@ -423,6 +479,8 @@ body.light-mode .mima-dash-stats{color:#666}
       <div class="legend-row"><span style="font-size:14px;width:20px">🏥</span><span>救急病院</span></div>
       <div class="legend-row"><span style="font-size:14px;width:20px">🚒</span><span>消防署</span></div>
       <div class="legend-row"><span style="font-size:14px;width:20px">💊</span><span>24H薬局</span></div>
+      <div class="legend-row"><div class="legend-color" style="background:#fdd835;border-radius:50%"></div><span>街灯</span></div>
+      <div class="legend-row"><div class="legend-color" style="background:#42a5f5"></div><span>鉄道路線</span></div>
     </div>
   </div>
   <!-- Mimamori (Child Watch) Left Panel Controls -->
@@ -444,6 +502,14 @@ body.light-mode .mima-dash-stats{color:#666}
       <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#aaa;cursor:pointer;margin-bottom:6px">
         <input type="checkbox" id="mima-simplified-toggle" onchange="toggleSimplifiedMode(this.checked)"> 簡易モード（祖母向け）
       </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#aaa;cursor:pointer;margin-bottom:6px">
+        <input type="checkbox" id="mima-voice-toggle" onchange="toggleMimamoriVoice(this.checked)"> &#x1F50A; 音声読み上げ
+      </label>
+      <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#aaa;cursor:pointer;margin-bottom:6px">
+        <input type="checkbox" id="mima-privacy-toggle" onchange="togglePrivacyMode(this.checked)"> &#x1F512; プライバシーモード
+      </label>
+      <button id="mima-notif-btn" onclick="requestMimamoriNotification()">&#x1F514; 通知を許可</button>
+      <button id="mima-morning-btn" onclick="showMorningBriefing()" style="padding:4px 8px;font-size:11px;background:#1a3a2c;border:1px solid #4caf50;color:#66bb6a;border-radius:3px;cursor:pointer;margin-top:4px;display:block;width:100%;text-align:center">&#x1F305; 朝の安全チェック</button>
     </div>
   </div>
 </div>
@@ -479,6 +545,12 @@ body.light-mode .mima-dash-stats{color:#666}
   <div id="nearest-haven-big">最寄り施設: クリックで確認</div>
   <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-nearest-haven" onclick="onFindNearestHaven()">🏪 最寄りの安全な場所を探す</button></div>
   <div id="nearest-haven-result"><div class="haven-result-name"></div><div class="haven-result-detail"></div></div>
+  <!-- Phase 4: Haven-hopping route (Parent 9) -->
+  <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-haven-route" onclick="startHavenRoute()" style="width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#1a3a2c;border:1px solid #66bb6a;color:#66bb6a;border-radius:4px;cursor:pointer">&#x1F3EA; 安全ルート（Haven経由）</button></div>
+  <div id="haven-route-result" style="padding:8px 14px;border-bottom:1px solid #2a2a3a;font-size:11px;color:#888;display:none"><div id="haven-route-info"></div></div>
+  <!-- Phase 4: Area comparison (Parent 3) -->
+  <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-area-compare" onclick="startAreaCompare()" style="width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#1a2a3c;border:1px solid #ce93d8;color:#ce93d8;border-radius:4px;cursor:pointer">&#x1F4CA; エリア比較</button></div>
+  <div id="area-compare-wrap" style="padding:8px 14px;border-bottom:1px solid #2a2a3a;display:none"><div id="area-compare-table"></div><canvas id="area-radar-chart" height="200" style="margin-top:8px"></canvas></div>
   <!-- Feature 1: Monte Carlo 5-year forecast (投資家B) -->
   <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-mc-forecast" onclick="runMonteCarloForecast()" style="width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#1a2a3c;border:1px solid #4a7ab5;color:#7eb3f0;border-radius:4px;cursor:pointer">🔮 5年予測 (モンテカルロ)</button></div>
   <div id="mc-forecast-wrap" style="padding:8px 14px;border-bottom:1px solid #2a2a3a;display:none"><div class="section-title" style="font-size:10px;font-weight:700;color:#7eb3f0;letter-spacing:1px;margin-bottom:4px">5年リスク予測 (p5 / median / p95)</div><canvas id="mc-forecast-chart" height="120"></canvas><div id="mc-forecast-note" style="font-size:10px;color:#666;margin-top:4px">GBM: drift -2%/年, vol 8%, 1000 iterations</div></div>
@@ -577,8 +649,23 @@ body.light-mode .mima-dash-stats{color:#666}
   <div class="simp-circle" id="simp-circle">&#x1F7E2; 安全</div>
   <div class="simp-location" id="simp-location">—</div>
   <div class="simp-status" id="simp-status">孫の通学路: 問題なし</div>
+  <button class="simp-voice-btn" id="simp-voice-btn" onclick="speakCurrentSafety()" title="音声読み上げ" aria-label="音声読み上げ">&#x1F50A;</button>
   <button class="simp-sos" onclick="window.location='tel:110'">&#x1F6A8; 110番通報</button>
 </div>
+<!-- Morning Briefing Overlay -->
+<div id="morning-briefing-overlay">
+  <div id="morning-briefing-box">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div class="mb-header">&#x1F305; 朝の安全チェック</div>
+      <button onclick="hideMorningBriefing()" style="padding:4px 10px;background:#2a2a3a;border:none;color:#fff;border-radius:4px;cursor:pointer;font-size:14px">&#x2715;</button>
+    </div>
+    <div id="morning-briefing-time" style="font-size:12px;color:#888;margin-bottom:8px"></div>
+    <hr class="mb-divider">
+    <div id="morning-briefing-content"></div>
+  </div>
+</div>
+<!-- Privacy Mode Banner -->
+<div id="privacy-mode-banner">&#x1F512; 外部通信を停止しています</div>
 <!-- Mimamori Location Registration Popup -->
 <div id="mima-loc-popup" style="position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:10150;display:none;align-items:center;justify-content:center">
   <div style="background:#1a1a2e;border:1px solid #4caf50;border-radius:10px;padding:20px;max-width:300px;width:90%;color:#e0e0e0">
@@ -612,6 +699,10 @@ body.light-mode .mima-dash-stats{color:#666}
       <select id="mima-route-to" style="width:100%;padding:6px;font-size:12px;background:#0d1117;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;margin-top:2px"></select>
     </div>
     <div style="font-size:10px;color:#888;margin-bottom:8px">経由地: 保存後に地図上をクリックで追加</div>
+    <div style="margin-bottom:8px"><label style="font-size:11px;color:#888">時間帯スケジュール</label>
+      <div id="mima-route-tw-list"></div>
+      <button class="tw-add-btn" onclick="addRouteTimeWindow()">&#xFF0B; 時間帯を追加</button>
+    </div>
     <div style="display:flex;gap:8px">
       <button onclick="saveMimamoriRoute()" style="flex:1;padding:8px;background:#1a3a5c;border:none;color:#fff;border-radius:4px;cursor:pointer;font-size:12px;font-weight:600">保存</button>
       <button onclick="cancelMimamoriAddRoute()" style="flex:1;padding:8px;background:#2a2a3a;border:none;color:#aaa;border-radius:4px;cursor:pointer;font-size:12px">キャンセル</button>
@@ -637,6 +728,12 @@ body.light-mode .mima-dash-stats{color:#666}
       <a href="tel:0357429104" style="display:block;padding:10px;margin-bottom:6px;background:#4a1a5e;border:1px solid #9c27b0;color:#fff;border-radius:5px;text-decoration:none;font-size:13px;font-weight:600">&#x260E;&#xFE0F; 03-5742-9104 &#x2014; 品川区配偶者暴力相談窓口</a>
       <button onclick="mimamoriDeleteAllData()" style="width:100%;padding:12px;margin-top:10px;background:#b71c1c;border:2px solid #f44336;color:#fff;border-radius:6px;cursor:pointer;font-size:14px;font-weight:800">&#x1F5D1;&#xFE0F; 全データを削除</button>
       <div style="font-size:10px;color:#888;margin-top:4px;text-align:center">※ 閲覧履歴・保存データを全て消去します</div>
+    </div>
+    <!-- Phase 3: Emergency Scripts Tab -->
+    <div id="emergency-scripts-tab">
+      <div style="font-size:14px;font-weight:800;color:#ff9800;margin-bottom:8px">&#x1F4DE; 緊急通報スクリプト</div>
+      <div class="escript-lang-tabs" id="escript-lang-tabs"></div>
+      <div id="escript-cards"></div>
     </div>
     <div style="margin-top:12px;font-size:10px;color:#888;text-align:center">※ 緊急時は必ず公式窓口に連絡してください</div>
   </div>
@@ -671,7 +768,7 @@ var LANG={
   ko:{safety:'안전',caution:'주의',danger:'위험',safest_area:'최안전 지역',safe_area:'안전 지역',standard_area:'표준 지역',caution_area:'주의 지역',alert_area:'경계 지역',safety_grade_sub:'클릭하여 안전 등급 표시',safety_sublabel:'이 장소의 안전도',haven_table_title:'주변 안전 피난처 (500m 이내)',ht_type:'종류',ht_name:'명칭',ht_dist:'거리',tourist_title:'관광지 안전 카드',hourly_title:'24시간 위험 변동',donut_title:'의심 행위 유형 (500m)',display_mode:'표시 모드',heatmap:'히트맵',grid:'그리드',safe_haven:'안전 피난처',time_sim:'시간대 시뮬레이션',data_layers:'데이터 레이어',crime:'범죄',traffic_acc:'교통사고',disaster:'재해',weather_risk:'기상 위험',suspicious:'수상한 사람 실시간',analysis_mode:'분석 모드',total_risk:'종합 위험도',crime_prob:'범죄 발생 확률',escapability:'탈출 용이성',advice:'조언',export_section:'데이터 내보내기',nearest_facility:'가장 가까운 시설',no_data:'데이터 없음',click_to_check:'지도를 클릭하여 자세히 보기',haven_none:'클릭하여 표시',adv_safe:'평소 주의로 안전하게 이동할 수 있습니다.',adv_caution:'안전 시설을 확인한 후 이동하세요.',adv_warn:'밝은 거리를 선택하여 이동하세요.',adv_danger:'가장 가까운 편의점이나 파출소로 이동하세요.',adv_weather:'악천후로 위험이 상승 중입니다.',adv_escape:'탈출 경로가 적은 지역입니다.',filter_all:'전체',hotspot:'EH 핫스팟',legend:'범례',risk_mult:'동적 위험 승수',current_time:'현재',weather:'날씨',transit:'교통',event:'이벤트',data_date:'데이터',search_placeholder:'주소 검색 (예: 도쿄역)',geoloc:'현재 위치',csv_export:'CSV 내보내기',json_export:'JSON 내보내기',grade_from_data:'(그리드 데이터)',no_haven_warn:'탈출 경로 부족'},
   en:{safety:'Safe',caution:'Caution',danger:'Danger',safest_area:'Safest Area',safe_area:'Safe Area',standard_area:'Standard Area',caution_area:'Caution Area',alert_area:'High Alert Area',safety_grade_sub:'Click to show safety grade',safety_sublabel:'Safety level at this point',haven_table_title:'Nearby Safe Havens (within 500m)',ht_type:'Type',ht_name:'Name',ht_dist:'Dist',tourist_title:'Tourist Area Safety Cards',hourly_title:'24H Risk Variation',donut_title:'Suspicious Activity Types (500m)',display_mode:'Display Mode',heatmap:'Heatmap',grid:'Grid',safe_haven:'Safe Haven',time_sim:'Time Simulation',data_layers:'Data Layers',crime:'Crime',traffic_acc:'Traffic Accidents',disaster:'Disaster',weather_risk:'Weather Risk',suspicious:'Suspicious Activity Live',analysis_mode:'Analysis Mode',total_risk:'Total Risk',crime_prob:'Crime Probability',escapability:'Escapability',advice:'Advice',export_section:'Data Export',nearest_facility:'Nearest Facility',no_data:'No data',click_to_check:'Click to check',haven_none:'Click to view',adv_safe:'Safe to move around with normal caution.',adv_caution:'Confirm safety facilities before moving.',adv_warn:'Choose well-lit streets when moving.',adv_danger:'Move to nearest convenience store or police box.',adv_weather:'Risk elevated due to bad weather.',adv_escape:'Few escape options in this area.',filter_all:'All',hotspot:'EH Hotspots',legend:'Legend',risk_mult:'Dynamic Risk Multipliers',current_time:'Now',weather:'Weather',transit:'Transit',event:'Events',data_date:'Data',search_placeholder:'Search address (e.g. Tokyo Station)',geoloc:'My Location',csv_export:'CSV Export',json_export:'JSON Export',grade_from_data:'(grid data)',no_haven_warn:'Few escape options'}
 };
-var activeLayers={crime:1,traffic:1,disaster:1,weather:1,realtime:1};
+var activeLayers={crime:1,traffic:1,disaster:1,weather:1,realtime:1,streetlights:0,railway:0};
 var gridSubtype=null;/* null = all crimes */
 var displayMode='heat',analysisMode='eh',selectedHour=new Date().getHours();
 var currentFushinshaFilter='all';var allHotspots=[];
@@ -826,7 +923,7 @@ function loadHT(){if(!havenTileIdx)return;if(!havenLayer){havenLayer=L.layerGrou
 function loadRT(data){if(!data||!data.length)return;allRTData=data;realtimeMarkers=[];var SUBTYPE_MAP={'不審者':'不審者','痴漢':'痴漢','声かけ':'声かけ','暴行':'暴行','窃盗':'窃盗','盗撮':'盗撮','のぞき':'のぞき','ひった':'ひったくり','凶器':'凶器所持','脅迫':'脅迫','迷惑行':'迷惑行為','侵入':'侵入','子供被':'子供被害','火災':'火災','災害':'災害','事故':'事故','動物':'動物','緊急':'緊急','傷病':'傷病','生活':'生活','行方不':'行方不明','詐欺':'詐欺','アポ電':'アポ電'};data.forEach(function(e){var lat,lon,severity,subtype,dateStr;if(Array.isArray(e)){lat=e[0];lon=e[1];subtype=SUBTYPE_MAP[e[2]]||e[2]||'不審者';severity=e[3]||2;dateStr=e[4]||''}else{if(e.geometry&&e.geometry.coordinates){lon=e.geometry.coordinates[0];lat=e.geometry.coordinates[1]}else if(e.lat&&e.lon){lat=e.lat;lon=e.lon}else return;subtype=e.subtype||'';severity=e.severity||2;dateStr=e.occurred_at||e.published_at||''}if(!lat||!lon)return;realtimeMarkers.push({lat:lat,lon:lon,severity:severity,subtype:subtype,date:dateStr,raw:Array.isArray(e)?{subtype:subtype,severity:severity,occurred_at:dateStr}:e})});document.getElementById('cnt-realtime').textContent=realtimeMarkers.length+'件';if(realtimeMarkers.length>0){var latest=realtimeMarkers[0];document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge">LIVE</span> '+(latest.subtype||'不審者')+' — '+(latest.date||'').slice(0,16)}renderRT();map.on('moveend',renderRT)}
 function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLayer=L.layerGroup();var z=map.getZoom();var b=map.getBounds();var visible=realtimeMarkers.filter(function(m){return b.contains([m.lat,m.lon])&&(currentFushinshaFilter==='all'||m.subtype===currentFushinshaFilter)});if(z<10){var grid={};var step=0.5;visible.forEach(function(m){var gk=Math.floor(m.lat/step)+'_'+Math.floor(m.lon/step);if(!grid[gk])grid[gk]={lat:0,lon:0,count:0,maxSev:0};grid[gk].lat+=m.lat;grid[gk].lon+=m.lon;grid[gk].count++;grid[gk].maxSev=Math.max(grid[gk].maxSev,m.severity)});Object.keys(grid).forEach(function(k){var g=grid[k];var clat=g.lat/g.count,clon=g.lon/g.count;var sz=Math.min(40,16+g.count*0.5);var c=g.maxSev>=4?'#f44336':g.maxSev>=3?'#ff9800':'#ffeb3b';L.marker([clat,clon],{icon:L.divIcon({html:'<div class="cluster-marker" style="width:'+sz+'px;height:'+sz+'px;background:rgba('+(g.maxSev>=4?'244,67,54':g.maxSev>=3?'255,152,0':'255,235,59')+',.7)">'+g.count+'</div>',className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]})}).bindPopup('不審者情報: '+g.count+'件').addTo(realtimeLayer)})}else{visible.forEach(function(m){var e=m.raw;var s=m.severity;var c=s>=4?'#f44336':s>=3?'#ff9800':'#ffeb3b';var pref=(e.admin||{}).prefecture||'';var sub=m.subtype||e.subtype||'';var dt=m.date||e.occurred_at||(e.published_at||'');L.circleMarker([m.lat,m.lon],{radius:5+s,color:c,fillColor:c,fillOpacity:.65,weight:1.5}).bindPopup('<b>'+(pref?pref+' ':'')+crimeTr(sub)+'</b><br>severity:'+s+'/5<br>'+(dt?dt.slice(0,16):'')+'<br>'+(e.raw_text||(e.raw||{}).title||'').slice(0,60)).addTo(realtimeLayer)})}if(activeLayers.realtime)map.addLayer(realtimeLayer)}
 function updateWS(){if(!weatherData||!Array.isArray(weatherData))return;var mp=0,mw=0;weatherData.forEach(function(s){if(s.precip10m)mp=Math.max(mp,s.precip10m);if(s.wind_ms)mw=Math.max(mw,s.wind_ms)});var se=document.getElementById('weather-status'),ie=document.getElementById('weather-icon');if(mp>=20){se.textContent='豪雨 '+mp+'mm';se.className='status-value alert';ie.textContent='⛈'}else if(mp>=5){se.textContent='雨 '+mp+'mm';se.className='status-value warn';ie.textContent='🌧'}else if(mw>=15){se.textContent='強風 '+mw+'m/s';se.className='status-value warn';ie.textContent='🌬'}else{se.textContent='概ね晴れ';se.className='status-value ok';ie.textContent='☀️'}var wp=weatherData.filter(function(s){return s.incident_multiplier>1.1}).map(function(s){return[s.lat,s.lon,(s.incident_multiplier-1)/1.5]});if(wp.length>0){heatLayers.weather=L.heatLayer(wp,{radius:30,blur:20,maxZoom:10,gradient:{0:'#03a9f4',.5:'#00bcd4',1:'#0288d1'}});if(activeLayers.weather)heatLayers.weather.addTo(map);document.getElementById('cnt-weather').textContent=wp.length+'局'}}
-function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;if(routeMode){addRoutePoint(lat,lng);return;}if(compareMode){addComparePoint(lat,lng);return;}lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;selectedCell=c;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map);
+function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;if(typeof havenRouteMode!=='undefined'&&havenRouteMode){onHavenRouteClick(lat,lng);return;}if(typeof areaCompareMode!=='undefined'&&areaCompareMode){onAreaCompareClick(lat,lng);return;}if(routeMode){addRoutePoint(lat,lng);return;}if(compareMode){addComparePoint(lat,lng);return;}lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;selectedCell=c;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map);
 /* P1-5: Reverse geocode for municipality name */
 fetch('https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat='+lat+'&lon='+lng).then(function(r){return r.json()}).then(function(data){var muniName=data.results?(data.results.mupiName||'')+(data.results.lv01Nm||''):'';document.getElementById('click-location-name').textContent=muniName}).catch(function(){});
 /* Update time comparison panel if visible */
@@ -3046,6 +3143,387 @@ function updateSimplifiedOverlay(){
   else{statusEl.textContent='孫の通学路: 問題なし';}
 }
 
+/* === Phase 2: Background Risk Check (mimamori monitoring) === */
+var mimamoriCheckInterval=null;
+function startMimamoriMonitoring(){
+    if(mimamoriCheckInterval)return;
+    mimamoriCheckInterval=setInterval(mimamoriCheck,60000);
+    mimamoriCheck();
+}
+function stopMimamoriMonitoring(){
+    if(mimamoriCheckInterval){clearInterval(mimamoriCheckInterval);mimamoriCheckInterval=null;}
+}
+function mimamoriCheck(){
+    if(!mimamoriData||!mimamoriData.routes||!mimamoriData.locations)return;
+    var now=new Date();
+    var hhmm=String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
+    var dow=now.getDay();
+    mimamoriData.routes.forEach(function(route){
+        if(!route.timeWindows||!route.timeWindows.length)return;
+        route.timeWindows.forEach(function(tw){
+            if(!isInTimeWindow(hhmm,tw.start,tw.end))return;
+            if(tw.days&&tw.days.length&&tw.days.indexOf(dow)===-1)return;
+            var avgEH=computeRouteAvgEH(route);
+            if(avgEH>0.3&&typeof Notification!=='undefined'&&Notification.permission==='granted'){
+                new Notification('\u26A0 '+route.name+' \u30EA\u30B9\u30AF\u4E0A\u6607',{
+                    body:'\u6700\u5927EH: '+avgEH.toFixed(3)+' ('+tw.label+')',
+                    icon:'\uD83D\uDEA8'
+                });
+            }
+        });
+    });
+}
+function isInTimeWindow(now,start,end){
+    if(!start||!end)return false;
+    return now>=start&&now<=end;
+}
+window.requestMimamoriNotification=function(){
+    if(!('Notification' in window)){alert('\u3053\u306E\u30D6\u30E9\u30A6\u30B6\u306F\u901A\u77E5\u3092\u30B5\u30DD\u30FC\u30C8\u3057\u3066\u3044\u307E\u305B\u3093');return;}
+    Notification.requestPermission().then(function(perm){
+        if(perm==='granted'){
+            alert('\u901A\u77E5\u304C\u8A31\u53EF\u3055\u308C\u307E\u3057\u305F\u3002\u30EB\u30FC\u30C8\u306E\u6642\u9593\u5E2F\u306B\u30EA\u30B9\u30AF\u30C1\u30A7\u30C3\u30AF\u3092\u884C\u3044\u307E\u3059\u3002');
+            startMimamoriMonitoring();
+        }else{
+            alert('\u901A\u77E5\u304C\u62D2\u5426\u3055\u308C\u307E\u3057\u305F');
+        }
+    });
+};
+
+/* === Phase 2: Morning Briefing === */
+window.showMorningBriefing=function(){
+    if(!mimamoriData)mimamoriData=loadMimamoriData();
+    var now=new Date();
+    var timeStr=String(now.getHours()).padStart(2,'0')+':'+String(now.getMinutes()).padStart(2,'0');
+    document.getElementById('morning-briefing-time').textContent=timeStr;
+    var html='';
+    if(!mimamoriData.routes.length&&!mimamoriData.locations.length){
+        html='<div style="font-size:12px;color:#888;text-align:center;padding:12px">\u30EB\u30FC\u30C8\u3092\u767B\u9332\u3057\u3066\u304F\u3060\u3055\u3044</div>';
+    }else{
+        mimamoriData.routes.forEach(function(route){
+            var avgEH=computeRouteAvgEH(route);
+            var safety=ehToSafety(avgEH);
+            var cssClass=avgEH>=0.3?'danger':avgEH>=0.15?'warn':'safe';
+            var statusIcon=avgEH>=0.3?'\u26A0\uFE0F':avgEH>=0.15?'\u26A0\uFE0F':'\u2705';
+            /* Count fushinsha near route in last 24h */
+            var fCount=0;
+            var fDetail='';
+            if(typeof realtimeMarkers!=='undefined'&&realtimeMarkers.length){
+                var fromLoc=mimamoriData.locations.find(function(l){return l.id===route.fromId});
+                var toLoc=mimamoriData.locations.find(function(l){return l.id===route.toId});
+                if(fromLoc&&toLoc){
+                    var pts=[[fromLoc.lat,fromLoc.lon]];
+                    if(route.waypoints)route.waypoints.forEach(function(wp){pts.push([wp.lat,wp.lon])});
+                    pts.push([toLoc.lat,toLoc.lon]);
+                    realtimeMarkers.forEach(function(m){
+                        if(!m.lat||!m.lon)return;
+                        for(var i=0;i<pts.length;i++){
+                            if(Math.hypot(m.lat-pts[i][0],m.lon-pts[i][1])<0.005){
+                                fCount++;
+                                if(!fDetail&&m.type)fDetail=m.type;
+                                break;
+                            }
+                        }
+                    });
+                }
+            }
+            html+='<div class="mb-route-row '+cssClass+'">'+
+                '<div class="mb-route-name">'+statusIcon+' '+route.name+': '+safety.label+' (EH '+avgEH.toFixed(2)+')</div>'+
+                '<div class="mb-fushinsha-info">\u00A0\u00A0\u00A0\u4E0D\u5BE9\u8005(24h): '+fCount+'\u4EF6'+(fDetail?' ('+fDetail+')':'')+'</div>'+
+            '</div>';
+        });
+        /* Weather info */
+        var wStatus=document.getElementById('weather-status');
+        var wText=wStatus?wStatus.textContent:'--';
+        html+='<div class="mb-weather-row">\u2600\uFE0F \u5929\u6C17: '+wText+'</div>';
+    }
+    document.getElementById('morning-briefing-content').innerHTML=html;
+    document.getElementById('morning-briefing-overlay').style.display='flex';
+};
+window.hideMorningBriefing=function(){
+    document.getElementById('morning-briefing-overlay').style.display='none';
+};
+
+/* === Phase 2: Time Window Schedule Editor === */
+var routeTimeWindows=[];
+window.addRouteTimeWindow=function(){
+    var idx=routeTimeWindows.length;
+    routeTimeWindows.push({label:'',start:'07:00',end:'08:30',days:[1,2,3,4,5]});
+    renderRouteTimeWindows();
+};
+window.removeRouteTimeWindow=function(idx){
+    routeTimeWindows.splice(idx,1);
+    renderRouteTimeWindows();
+};
+window.toggleTwDay=function(idx,day){
+    var tw=routeTimeWindows[idx];
+    if(!tw)return;
+    var di=tw.days.indexOf(day);
+    if(di>=0)tw.days.splice(di,1);else tw.days.push(day);
+    renderRouteTimeWindows();
+};
+function renderRouteTimeWindows(){
+    var el=document.getElementById('mima-route-tw-list');
+    if(!el)return;
+    var DOW_LABELS=['\u65E5','\u6708','\u706B','\u6C34','\u6728','\u91D1','\u571F'];
+    var html='';
+    routeTimeWindows.forEach(function(tw,idx){
+        html+='<div class="tw-row">';
+        html+='<input type="text" value="'+(tw.label||'')+'" placeholder="\u4F8B:\u767B\u6821" onchange="routeTimeWindows['+idx+'].label=this.value" style="width:50px">';
+        html+='<input type="time" value="'+tw.start+'" onchange="routeTimeWindows['+idx+'].start=this.value">';
+        html+='<span style="color:#888">-</span>';
+        html+='<input type="time" value="'+tw.end+'" onchange="routeTimeWindows['+idx+'].end=this.value">';
+        for(var d=0;d<7;d++){
+            var active=tw.days.indexOf(d)>=0?'active':'';
+            html+='<button class="tw-dow-btn '+active+'" onclick="toggleTwDay('+idx+','+d+')">'+DOW_LABELS[d]+'</button>';
+        }
+        html+='<span class="tw-del" onclick="removeRouteTimeWindow('+idx+')">\u2715</span>';
+        html+='</div>';
+    });
+    el.innerHTML=html;
+}
+
+/* Patch saveMimamoriRoute to include timeWindows */
+var _origSaveMimamoriRoute=window.saveMimamoriRoute;
+window.saveMimamoriRoute=function(){
+    var name=document.getElementById('mima-route-name-input').value.trim();
+    var fromId=document.getElementById('mima-route-from').value;
+    var toId=document.getElementById('mima-route-to').value;
+    if(!name){alert('\u30EB\u30FC\u30C8\u540D\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044');return;}
+    if(fromId===toId){alert('\u51FA\u767A\u5730\u3068\u76EE\u7684\u5730\u3092\u5225\u3005\u306B\u9078\u629E\u3057\u3066\u304F\u3060\u3055\u3044');return;}
+    var route={id:'route_'+Date.now(),name:name,fromId:fromId,toId:toId,waypoints:[],timeWindows:routeTimeWindows.slice()};
+    mimamoriData.routes.push(route);
+    saveMimamoriData();
+    document.getElementById('mima-route-popup').style.display='none';
+    document.getElementById('mima-route-name-input').value='';
+    routeTimeWindows=[];
+    renderRouteTimeWindows();
+    mimamoriAddingRoutePending=route.id;
+    var msg=document.getElementById('mima-route-msg');
+    msg.textContent='\u5730\u56F3\u4E0A\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u7D4C\u7531\u5730\u3092\u8FFD\u52A0\uFF08\u4EFB\u610F\uFF09\u3002\u5B8C\u4E86\u3057\u305F\u3089\u305D\u306E\u307E\u307E\u3002';
+    msg.style.display='block';msg.style.color='#7eb3f0';
+    setTimeout(function(){mimamoriAddingRoutePending=null;msg.style.display='none'},15000);
+    renderMimamoriRoutes();renderMimamoriDashboard();renderMimamoriRoutePolylines();
+    if(route.timeWindows.length)startMimamoriMonitoring();
+};
+/* Reset time windows when opening route popup */
+var _origStartMimamoriAddRoute=window.startMimamoriAddRoute;
+window.startMimamoriAddRoute=function(){
+    routeTimeWindows=[];
+    renderRouteTimeWindows();
+    _origStartMimamoriAddRoute();
+};
+
+/* === Phase 3: Emergency Scripts (Multilingual) === */
+var EMERGENCY_SCRIPTS={
+    ja:{label:'\u65E5\u672C\u8A9E',police:'110\u756A\u3067\u3059\u3002\u4E8B\u4EF6\u3067\u3059\u3002\u5834\u6240\u306F[ADDRESS]\u3067\u3059\u3002\u4E0D\u5BE9\u8005\u304C\u3044\u307E\u3059\u3002\u52A9\u3051\u3066\u304F\u3060\u3055\u3044\u3002',fire:'119\u756A\u3067\u3059\u3002\u6551\u6025\u3067\u3059\u3002\u5834\u6240\u306F[ADDRESS]\u3067\u3059\u3002'},
+    en:{label:'English',police:'Police please. There is a suspicious person at [ADDRESS]. Please send help. My name is [NAME].',fire:'Ambulance please. Location is [ADDRESS]. Someone is injured.'},
+    tl:{label:'Tagalog',police:'Pulis po. May kahina-hinalang tao sa [ADDRESS]. Pakipadala ng tulong.',fire:'Ambulansya po. Nasa [ADDRESS]. May nasaktan.'},
+    vi:{label:'Ti\u1EBFng Vi\u1EC7t',police:'C\u1EA3nh s\u00E1t \u01A1i. C\u00F3 ng\u01B0\u1EDDi \u0111\u00E1ng ng\u1EDD \u1EDF [ADDRESS]. Xin g\u1EEDi gi\u00FAp \u0111\u1EE1.',fire:'Xe c\u1EE9u th\u01B0\u01A1ng \u01A1i. \u1EDE [ADDRESS]. C\u00F3 ng\u01B0\u1EDDi b\u1ECB th\u01B0\u01A1ng.'},
+    pt:{label:'Portugu\u00EAs',police:'Pol\u00EDcia por favor. H\u00E1 uma pessoa suspeita em [ADDRESS]. Envie ajuda.',fire:'Ambul\u00E2ncia por favor. Local: [ADDRESS]. Algu\u00E9m est\u00E1 ferido.'}
+};
+var currentEscriptLang='ja';
+var lastKnownAddress='';
+
+function initEmergencyScripts(){
+    var tabsEl=document.getElementById('escript-lang-tabs');
+    if(!tabsEl)return;
+    var html='';
+    Object.keys(EMERGENCY_SCRIPTS).forEach(function(lang){
+        var active=lang===currentEscriptLang?'active':'';
+        html+='<button class="escript-lang-btn '+active+'" onclick="setEscriptLang(\''+lang+'\')">'+EMERGENCY_SCRIPTS[lang].label+'</button>';
+    });
+    tabsEl.innerHTML=html;
+    renderEmergencyScriptCards();
+}
+window.setEscriptLang=function(lang){
+    currentEscriptLang=lang;
+    initEmergencyScripts();
+};
+function renderEmergencyScriptCards(){
+    var el=document.getElementById('escript-cards');
+    if(!el)return;
+    var scripts=EMERGENCY_SCRIPTS[currentEscriptLang];
+    if(!scripts){el.innerHTML='';return;}
+    /* Try to get current address from GPS */
+    var addr=lastKnownAddress||'\u73FE\u5728\u5730\u4E0D\u660E';
+    /* Try GPS */
+    if(navigator.geolocation&&!lastKnownAddress){
+        navigator.geolocation.getCurrentPosition(function(pos){
+            lastKnownAddress=pos.coords.latitude.toFixed(5)+', '+pos.coords.longitude.toFixed(5);
+            renderEmergencyScriptCards();
+        },function(){},{timeout:3000});
+    }
+    var html='';
+    if(scripts.police){
+        var txt=scripts.police.replace('[ADDRESS]',addr).replace('[NAME]','');
+        html+='<div class="escript-card"><div class="escript-card-title">\uD83D\uDCDE \u8B66\u5BDF (110)</div><div class="escript-card-text">'+txt+'</div><button class="escript-copy-btn" onclick="copyEscript(this,\''+escapeQuotes(txt)+'\')">\uD83D\uDCCB \u30B3\u30D4\u30FC</button></div>';
+    }
+    if(scripts.fire){
+        var txt2=scripts.fire.replace('[ADDRESS]',addr).replace('[NAME]','');
+        html+='<div class="escript-card"><div class="escript-card-title">\uD83D\uDE91 \u6551\u6025 (119)</div><div class="escript-card-text">'+txt2+'</div><button class="escript-copy-btn" onclick="copyEscript(this,\''+escapeQuotes(txt2)+'\')">\uD83D\uDCCB \u30B3\u30D4\u30FC</button></div>';
+    }
+    el.innerHTML=html;
+}
+function escapeQuotes(s){return s.replace(/'/g,"\\'").replace(/"/g,'&quot;')}
+window.copyEscript=function(btn,text){
+    text=text.replace(/&quot;/g,'"');
+    if(navigator.clipboard){
+        navigator.clipboard.writeText(text).then(function(){
+            btn.textContent='\u2705 \u30B3\u30D4\u30FC\u6E08';
+            setTimeout(function(){btn.textContent='\uD83D\uDCCB \u30B3\u30D4\u30FC'},2000);
+        });
+    }else{
+        /* Fallback */
+        var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+        btn.textContent='\u2705 \u30B3\u30D4\u30FC\u6E08';
+        setTimeout(function(){btn.textContent='\uD83D\uDCCB \u30B3\u30D4\u30FC'},2000);
+    }
+};
+/* Auto-detect language for emergency scripts */
+function detectBrowserLang(){
+    var lang=(navigator.language||navigator.userLanguage||'ja').toLowerCase();
+    if(lang.indexOf('tl')===0||lang.indexOf('fil')===0)return 'tl';
+    if(lang.indexOf('vi')===0)return 'vi';
+    if(lang.indexOf('pt')===0)return 'pt';
+    if(lang.indexOf('en')===0)return 'en';
+    return 'ja';
+}
+/* Patch showEmergencyModal to init scripts */
+var _origShowEmergency=window.showEmergencyModal||showEmergencyModal;
+var _emergencyPatched=false;
+function patchEmergencyModal(){
+    if(_emergencyPatched)return;
+    _emergencyPatched=true;
+    var origFn=window.showEmergencyModal;
+    window.showEmergencyModal=function(){
+        origFn();
+        currentEscriptLang=detectBrowserLang();
+        initEmergencyScripts();
+    };
+}
+patchEmergencyModal();
+
+/* === Phase 3: Privacy Mode === */
+var privacyModeActive=false;
+var _origFetch=window.fetch;
+window.togglePrivacyMode=function(active){
+    privacyModeActive=active;
+    var banner=document.getElementById('privacy-mode-banner');
+    if(banner)banner.style.display=active?'block':'none';
+    /* Disable address search */
+    var addrInput=document.getElementById('address-input');
+    if(addrInput){
+        if(active){
+            addrInput.disabled=true;
+            addrInput.placeholder='\u30D7\u30E9\u30A4\u30D0\u30B7\u30FC\u30E2\u30FC\u30C9: \u691C\u7D22\u7121\u52B9';
+        }else{
+            addrInput.disabled=false;
+            addrInput.placeholder='\u4F4F\u6240\u3092\u691C\u7D22\uFF08\u4F8B\uFF1A\u6771\u4EAC\u99C5\uFF09';
+        }
+    }
+    /* Override fetch to block external APIs */
+    if(active){
+        window.fetch=function(url,opts){
+            var urlStr=typeof url==='string'?url:(url&&url.url?url.url:'');
+            /* Allow local data and tile loading */
+            if(urlStr.indexOf('./')===0||urlStr.indexOf('data/')===0||urlStr.indexOf('/data/')>=0){
+                return _origFetch.apply(this,arguments);
+            }
+            /* Allow tile servers for map display */
+            if(urlStr.indexOf('basemaps.cartocdn.com')>=0||urlStr.indexOf('tile.openstreetmap.org')>=0){
+                return _origFetch.apply(this,arguments);
+            }
+            /* Block external APIs (GSI geocoder, etc.) */
+            console.log('[Privacy Mode] Blocked fetch: '+urlStr);
+            return Promise.reject(new Error('Privacy mode: external requests blocked'));
+        };
+    }else{
+        window.fetch=_origFetch;
+    }
+    /* Round coordinates if privacy mode */
+    if(mimamoriData&&active){
+        mimamoriData.locations.forEach(function(loc){
+            loc._origLat=loc._origLat||loc.lat;
+            loc._origLon=loc._origLon||loc.lon;
+        });
+    }
+    /* Save setting */
+    if(mimamoriData){
+        mimamoriData.settings=mimamoriData.settings||{};
+        mimamoriData.settings.privacyMode=active;
+        saveMimamoriData();
+    }
+};
+function getPrivacyCoords(lat,lon){
+    if(!privacyModeActive)return{lat:lat,lon:lon};
+    return{lat:Math.round(lat*100)/100,lon:Math.round(lon*100)/100};
+}
+
+/* === Phase 3: Voice Readout === */
+function speakSafety(text){
+    if(!('speechSynthesis' in window))return;
+    var utterance=new SpeechSynthesisUtterance(text);
+    utterance.lang='ja-JP';
+    utterance.rate=0.8;
+    speechSynthesis.speak(utterance);
+}
+window.toggleMimamoriVoice=function(active){
+    if(mimamoriData){
+        mimamoriData.settings=mimamoriData.settings||{};
+        mimamoriData.settings.voiceEnabled=active;
+        saveMimamoriData();
+    }
+};
+window.speakCurrentSafety=function(){
+    if(!mimamoriData)return;
+    var maxEH=0;var worstName='';
+    mimamoriData.locations.forEach(function(loc){
+        var eh=computeEHForPoint(loc.lat,loc.lon);
+        if(eh>maxEH){maxEH=eh;worstName=loc.name}
+    });
+    mimamoriData.routes.forEach(function(route){
+        var avg=computeRouteAvgEH(route);
+        if(avg>maxEH){maxEH=avg;worstName=route.name}
+    });
+    var safety=ehToSafety(maxEH);
+    var text=worstName?worstName+'\u3001\u73FE\u5728'+safety.label+'\u3067\u3059':'\u5730\u70B9\u3092\u767B\u9332\u3057\u3066\u304F\u3060\u3055\u3044';
+    speakSafety(text);
+};
+
+/* Patch updateSimplifiedOverlay to auto-speak */
+var _origUpdateSimplified=updateSimplifiedOverlay;
+updateSimplifiedOverlay=function(){
+    _origUpdateSimplified();
+    if(!mimamoriData||!mimamoriData.settings||!mimamoriData.settings.voiceEnabled)return;
+    if(document.getElementById('simplified-overlay').style.display!=='flex')return;
+    var maxEH=0;var worstName='';
+    mimamoriData.locations.forEach(function(loc){
+        var eh=computeEHForPoint(loc.lat,loc.lon);
+        if(eh>maxEH){maxEH=eh;worstName=loc.name}
+    });
+    var safety=ehToSafety(maxEH);
+    var text=worstName?worstName+'\u3001\u73FE\u5728'+safety.label+'\u3067\u3059':'\u5730\u70B9\u3092\u767B\u9332\u3057\u3066\u304F\u3060\u3055\u3044';
+    speakSafety(text);
+};
+
+/* Start monitoring if routes have time windows on load */
+mimamoriData=loadMimamoriData();
+if(mimamoriData&&mimamoriData.routes){
+    var hasTimeWindows=mimamoriData.routes.some(function(r){return r.timeWindows&&r.timeWindows.length>0});
+    if(hasTimeWindows)startMimamoriMonitoring();
+}
+/* Restore privacy mode if saved */
+if(mimamoriData&&mimamoriData.settings&&mimamoriData.settings.privacyMode){
+    togglePrivacyMode(true);
+    var pt=document.getElementById('mima-privacy-toggle');
+    if(pt)pt.checked=true;
+}
+/* Restore voice setting */
+if(mimamoriData&&mimamoriData.settings&&mimamoriData.settings.voiceEnabled){
+    var vt=document.getElementById('mima-voice-toggle');
+    if(vt)vt.checked=true;
+}
+
 /* === Delete All Data (DV safety) === */
 window.mimamoriDeleteAllData=function(){
   if(!confirm('全てのデータ（見守り地点・ルート・閲覧設定）を削除しますか？\nこの操作は取り消せません。'))return;
@@ -3061,6 +3539,319 @@ window.mimamoriDeleteAllData=function(){
   window.location='https://www.yahoo.co.jp/';
 };
 
+})();
+
+/* === Phase 4: Streetlight Layer === */
+var streetlightLayer=null,streetlightData=null;
+function loadStreetlights(){
+  if(streetlightData)return Promise.resolve(streetlightData);
+  return fetch(D+'/streetlights_tokyo.json').then(function(r){return r.json()}).then(function(data){
+    streetlightData=data;
+    document.getElementById('cnt-streetlights').textContent=(data.features?data.features.length:0).toLocaleString();
+    return data;
+  }).catch(function(){streetlightData={features:[]};return streetlightData});
+}
+function renderStreetlights(){
+  if(!streetlightData||!streetlightData.features)return;
+  if(streetlightLayer){map.removeLayer(streetlightLayer)}
+  if(map.getZoom()<13){
+    streetlightLayer=null;
+    return;
+  }
+  streetlightLayer=L.layerGroup();
+  var b=map.getBounds();
+  streetlightData.features.forEach(function(s){
+    if(!s.lat||!s.lon)return;
+    if(!b.contains([s.lat,s.lon]))return;
+    L.circleMarker([s.lat,s.lon],{radius:3,color:'#fdd835',fillColor:'#fdd835',fillOpacity:0.7,weight:0.5}).addTo(streetlightLayer);
+  });
+  if(activeLayers.streetlights)streetlightLayer.addTo(map);
+}
+var _slDebounce=null;
+function debouncedRenderStreetlights(){clearTimeout(_slDebounce);_slDebounce=setTimeout(renderStreetlights,300)}
+
+/* === Phase 4: Railway Layer === */
+var railwayLayer=null,railwayData=null;
+var RAILWAY_COLORS={'JR':'#4caf50','東京メトロ':'#ffeb3b','都営':'#f44336','小田急':'#2196f3','京王':'#e91e63','西武':'#42a5f5','東武':'#ff9800','京急':'#f44336','京成':'#03a9f4','相鉄':'#3f51b5','東急':'#ef5350','つくばエクスプレス':'#2196f3'};
+function getRailwayColor(name,op){
+  var s=name+' '+op;
+  for(var k in RAILWAY_COLORS){if(s.indexOf(k)>=0)return RAILWAY_COLORS[k]}
+  return '#90caf9';
+}
+function loadRailway(){
+  if(railwayData)return Promise.resolve(railwayData);
+  return fetch(D+'/railway_lines_tokyo.json').then(function(r){return r.json()}).then(function(data){
+    railwayData=data;
+    document.getElementById('cnt-railway').textContent=(data.lines?data.lines.length:0).toLocaleString();
+    return data;
+  }).catch(function(){railwayData={lines:[]};return railwayData});
+}
+function renderRailway(){
+  if(!railwayData||!railwayData.lines)return;
+  if(railwayLayer){map.removeLayer(railwayLayer)}
+  railwayLayer=L.layerGroup();
+  railwayData.lines.forEach(function(line){
+    if(!line.coords||line.coords.length<2)return;
+    var col=getRailwayColor(line.name||'',line.operator||'');
+    L.polyline(line.coords,{color:col,weight:2.5,opacity:0.8}).bindTooltip((line.name||'railway')+(line.operator?' ('+line.operator+')':'')).addTo(railwayLayer);
+  });
+  if(activeLayers.railway)railwayLayer.addTo(map);
+}
+
+/* === Phase 4: Haven-hopping Route Planner (Parent 9) === */
+var havenRouteLine=null,havenRouteMarkers=[];
+var havenRouteMode=false,havenRouteStart=null,havenRouteEnd=null,havenRouteStep=0;
+function startHavenRoute(){
+  if(havenRouteMode){cancelHavenRoute();return}
+  havenRouteMode=true;havenRouteStep=0;havenRouteStart=null;havenRouteEnd=null;
+  clearHavenRouteDisplay();
+  document.getElementById('btn-haven-route').textContent='\u274C \u5B89\u5168\u30EB\u30FC\u30C8\u3092\u30AD\u30E3\u30F3\u30BB\u30EB';
+  document.getElementById('btn-haven-route').style.borderColor='#f44336';
+  document.getElementById('btn-haven-route').style.color='#f44336';
+  var info=document.getElementById('haven-route-result');info.style.display='block';
+  document.getElementById('haven-route-info').innerHTML='\u51FA\u767A\u5730\u70B9\u3092\u5730\u56F3\u4E0A\u3067\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044';
+}
+function cancelHavenRoute(){
+  havenRouteMode=false;havenRouteStep=0;
+  document.getElementById('btn-haven-route').textContent='\uD83C\uDFEA \u5B89\u5168\u30EB\u30FC\u30C8\uFF08Haven\u7D4C\u7531\uFF09';
+  document.getElementById('btn-haven-route').style.borderColor='#66bb6a';
+  document.getElementById('btn-haven-route').style.color='#66bb6a';
+  document.getElementById('haven-route-result').style.display='none';
+  clearHavenRouteDisplay();
+}
+function clearHavenRouteDisplay(){
+  if(havenRouteLine){map.removeLayer(havenRouteLine);havenRouteLine=null}
+  havenRouteMarkers.forEach(function(m){map.removeLayer(m)});havenRouteMarkers=[];
+}
+function onHavenRouteClick(lat,lon){
+  if(havenRouteStep===0){
+    havenRouteStart={lat:lat,lon:lon};havenRouteStep=1;
+    var m=L.circleMarker([lat,lon],{radius:10,color:'#66bb6a',fillColor:'#66bb6a',fillOpacity:0.5,weight:2}).bindTooltip('\u51FA\u767A').addTo(map);
+    havenRouteMarkers.push(m);
+    document.getElementById('haven-route-info').innerHTML='\u76EE\u7684\u5730\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044';
+    return true;
+  }
+  if(havenRouteStep===1){
+    havenRouteEnd={lat:lat,lon:lon};havenRouteStep=2;
+    var m2=L.circleMarker([lat,lon],{radius:10,color:'#f44336',fillColor:'#f44336',fillOpacity:0.5,weight:2}).bindTooltip('\u76EE\u7684\u5730').addTo(map);
+    havenRouteMarkers.push(m2);
+    planHavenRoute();
+    return true;
+  }
+  return false;
+}
+function haversine(a,b){
+  var R=6371000,dLat=(b.lat-a.lat)*Math.PI/180,dLon=(b.lon-a.lon)*Math.PI/180;
+  var la=a.lat*Math.PI/180,lb=b.lat*Math.PI/180;
+  var x=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(la)*Math.cos(lb)*Math.sin(dLon/2)*Math.sin(dLon/2);
+  return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x));
+}
+function planHavenRoute(){
+  if(!havenRouteStart||!havenRouteEnd)return;
+  var havens=allLoadedHavens.filter(function(h){return h.is_24h&&h.lat&&h.lon});
+  var route=[havenRouteStart];
+  var current={lat:havenRouteStart.lat,lon:havenRouteStart.lon};
+  var maxIter=50,iter=0;
+  while(haversine(current,havenRouteEnd)>300&&iter<maxIter){
+    iter++;
+    var distToEnd=haversine(current,havenRouteEnd);
+    var candidates=havens.filter(function(h){
+      return haversine(h,havenRouteEnd)<distToEnd&&haversine(h,current)>30;
+    });
+    if(candidates.length===0)break;
+    var next=candidates.reduce(function(best,h){
+      var d=haversine(current,h);return d<haversine(current,best)?h:best;
+    },candidates[0]);
+    route.push({lat:next.lat,lon:next.lon,name:next.name,type:next.type});
+    current={lat:next.lat,lon:next.lon};
+  }
+  route.push(havenRouteEnd);
+  /* Draw polyline */
+  var coords=route.map(function(p){return[p.lat,p.lon]});
+  havenRouteLine=L.polyline(coords,{color:'#66bb6a',weight:4,opacity:0.8,dashArray:'8,6'}).addTo(map);
+  /* Add haven markers along route */
+  var totalDist=0;
+  for(var i=1;i<route.length;i++){totalDist+=haversine(route[i-1],route[i])}
+  var waypoints=route.filter(function(p){return p.name});
+  waypoints.forEach(function(p){
+    var ic={koban:'\uD83D\uDE94',police_station:'\uD83D\uDE94',convenience_store:'\uD83C\uDFEA',fire_station:'\uD83D\uDE92',hospital:'\uD83C\uDFE5',station:'\uD83D\uDE89'};
+    var emoji=ic[p.type]||'\uD83D\uDCCD';
+    var mk=L.marker([p.lat,p.lon],{icon:L.divIcon({html:'<div style="font-size:16px;text-shadow:0 0 4px #000">'+emoji+'</div>',className:'',iconSize:[20,20],iconAnchor:[10,10]})}).bindTooltip(emoji+' '+(p.name||p.type)+' (24H)').addTo(map);
+    havenRouteMarkers.push(mk);
+  });
+  map.fitBounds(havenRouteLine.getBounds(),{padding:[40,40]});
+  /* Show info */
+  var info=document.getElementById('haven-route-info');
+  info.innerHTML='<div style="font-weight:700;color:#66bb6a;margin-bottom:4px">\u5B89\u5168\u30EB\u30FC\u30C8\u751F\u6210\u5B8C\u4E86</div>'+
+    '<div>\u7D8F\u8DDD\u96E2: '+(totalDist/1000).toFixed(1)+'km</div>'+
+    '<div>24H\u7D4C\u7531\u5730\u70B9: '+waypoints.length+'\u7B87\u6240</div>'+
+    '<div style="font-size:10px;color:#666;margin-top:4px">\u203B \u30B0\u30EA\u30FC\u30C7\u30A3\u6700\u8FD1\u508D Haven \u30A2\u30EB\u30B4\u30EA\u30BA\u30E0</div>';
+  havenRouteMode=false;
+  document.getElementById('btn-haven-route').textContent='\uD83C\uDFEA \u5B89\u5168\u30EB\u30FC\u30C8\uFF08Haven\u7D4C\u7531\uFF09';
+  document.getElementById('btn-haven-route').style.borderColor='#66bb6a';
+  document.getElementById('btn-haven-route').style.color='#66bb6a';
+}
+
+/* === Phase 4: Area Comparison Mode (Parent 3 - 転勤族) === */
+var areaCompareMode=false,areaComparePoints=[],areaCompareMarkers=[],areaRadarChart=null;
+function startAreaCompare(){
+  if(areaCompareMode){cancelAreaCompare();return}
+  areaCompareMode=true;areaComparePoints=[];
+  areaCompareMarkers.forEach(function(m){map.removeLayer(m)});areaCompareMarkers=[];
+  document.getElementById('btn-area-compare').textContent='\u274C \u30A8\u30EA\u30A2\u6BD4\u8F03\u3092\u30AD\u30E3\u30F3\u30BB\u30EB';
+  document.getElementById('btn-area-compare').style.borderColor='#f44336';
+  document.getElementById('btn-area-compare').style.color='#f44336';
+  var wrap=document.getElementById('area-compare-wrap');wrap.style.display='block';
+  document.getElementById('area-compare-table').innerHTML='<div style="color:#888;font-size:11px">\u5730\u56F3\u4E0A\u3067 2\u301C3 \u5730\u70B9\u3092\u30AF\u30EA\u30C3\u30AF\u3057\u3066\u304F\u3060\u3055\u3044</div>';
+}
+function cancelAreaCompare(){
+  areaCompareMode=false;areaComparePoints=[];
+  areaCompareMarkers.forEach(function(m){map.removeLayer(m)});areaCompareMarkers=[];
+  document.getElementById('btn-area-compare').textContent='\uD83D\uDCCA \u30A8\u30EA\u30A2\u6BD4\u8F03';
+  document.getElementById('btn-area-compare').style.borderColor='#ce93d8';
+  document.getElementById('btn-area-compare').style.color='#ce93d8';
+  document.getElementById('area-compare-wrap').style.display='none';
+  if(areaRadarChart){areaRadarChart.destroy();areaRadarChart=null}
+}
+function onAreaCompareClick(lat,lon){
+  if(!areaCompareMode||areaComparePoints.length>=3)return false;
+  var colors=['#42a5f5','#66bb6a','#ffa726'];
+  var labels=['A','B','C'];
+  var idx=areaComparePoints.length;
+  areaComparePoints.push({lat:lat,lon:lon,label:labels[idx]});
+  var mk=L.circleMarker([lat,lon],{radius:12,color:colors[idx],fillColor:colors[idx],fillOpacity:0.4,weight:3}).bindTooltip('\u30A8\u30EA\u30A2 '+labels[idx]).addTo(map);
+  areaCompareMarkers.push(mk);
+  if(areaComparePoints.length>=2)renderAreaComparison();
+  if(areaComparePoints.length>=3){
+    areaCompareMode=false;
+    document.getElementById('btn-area-compare').textContent='\uD83D\uDCCA \u30A8\u30EA\u30A2\u6BD4\u8F03';
+    document.getElementById('btn-area-compare').style.borderColor='#ce93d8';
+    document.getElementById('btn-area-compare').style.color='#ce93d8';
+  }
+  return true;
+}
+function computeAreaStats(lat,lon){
+  var eh=computeEHForPoint(lat,lon);
+  var grade=eh<0.05?'S':eh<0.1?'A':eh<0.2?'B':eh<0.35?'C':'D';
+  /* Count havens within 500m */
+  var havenCount=0,haven24h=0;
+  allLoadedHavens.forEach(function(h){
+    if(!h.lat||!h.lon)return;
+    var d=haversine({lat:lat,lon:lon},h);
+    if(d<=500){havenCount++;if(h.is_24h)haven24h++}
+  });
+  /* Count fushinsha within 500m */
+  var fushCount=0;
+  if(realtimeMarkers&&realtimeMarkers.length){
+    realtimeMarkers.forEach(function(m){
+      if(!m.lat||!m.lon)return;
+      var d=haversine({lat:lat,lon:lon},{lat:m.lat,lon:m.lon});
+      if(d<=500)fushCount++;
+    });
+  }
+  /* Count schools */
+  var schoolCount=0;
+  if(window._schoolsData){
+    window._schoolsData.forEach(function(s){
+      if(!s.lat||!s.lon)return;
+      var d=haversine({lat:lat,lon:lon},s);
+      if(d<=1000)schoolCount++;
+    });
+  }
+  return{eh:eh,grade:grade,havenCount:havenCount,haven24h:haven24h,fushCount:fushCount,schoolCount:schoolCount};
+}
+function renderAreaComparison(){
+  var stats=areaComparePoints.map(function(p){return computeAreaStats(p.lat,p.lon)});
+  var colors=['#42a5f5','#66bb6a','#ffa726'];
+  var gradeColors={S:'#4caf50',A:'#8bc34a',B:'#ffeb3b',C:'#ff9800',D:'#f44336'};
+  var html='<table style="width:100%;font-size:11px;border-collapse:collapse">';
+  html+='<tr style="border-bottom:1px solid #2a2a3a"><th style="text-align:left;padding:4px;color:#888">\u9805\u76EE</th>';
+  areaComparePoints.forEach(function(p,i){html+='<th style="text-align:center;padding:4px;color:'+colors[i]+'">\u30A8\u30EA\u30A2 '+p.label+'</th>'});
+  html+='</tr>';
+  var rows=[
+    {label:'\u5B89\u5168\u30E9\u30F3\u30AF',key:'grade',fmt:function(s){return '<span style="color:'+gradeColors[s.grade]+';font-weight:700;font-size:14px">'+s.grade+'</span>'}},
+    {label:'EH\u5024',key:'eh',fmt:function(s){return s.eh.toFixed(3)}},
+    {label:'Haven (500m)',key:'havenCount',fmt:function(s){return s.havenCount+'\u7B87\u6240'}},
+    {label:'24H\u65BD\u8A2D',key:'haven24h',fmt:function(s){return s.haven24h+'\u7B87\u6240'}},
+    {label:'\u4E0D\u5BE9\u8005 (500m)',key:'fushCount',fmt:function(s){return s.fushCount+'\u4EF6'}},
+    {label:'\u5B66\u6821 (1km)',key:'schoolCount',fmt:function(s){return s.schoolCount+'\u6821'}}
+  ];
+  rows.forEach(function(row){
+    html+='<tr style="border-bottom:1px solid #1e1e2e"><td style="padding:4px;color:#aaa">'+row.label+'</td>';
+    stats.forEach(function(s,i){
+      var val=row.fmt(s);
+      html+='<td style="text-align:center;padding:4px;color:#e0e0e0">'+val+'</td>';
+    });
+    html+='</tr>';
+  });
+  html+='</table>';
+  document.getElementById('area-compare-table').innerHTML=html;
+  /* Radar chart */
+  var ctx=document.getElementById('area-radar-chart').getContext('2d');
+  if(areaRadarChart)areaRadarChart.destroy();
+  var datasets=stats.map(function(s,i){
+    /* Normalize: safety=1-eh, haven=count/10, 24h=count/5, fush=1-count/10, school=count/5 */
+    return{
+      label:'\u30A8\u30EA\u30A2 '+areaComparePoints[i].label,
+      data:[Math.max(0,1-s.eh*3),Math.min(1,s.havenCount/10),Math.min(1,s.haven24h/5),Math.max(0,1-s.fushCount/10),Math.min(1,s.schoolCount/5)],
+      borderColor:colors[i],backgroundColor:colors[i]+'33',pointBackgroundColor:colors[i],borderWidth:2
+    };
+  });
+  areaRadarChart=new Chart(ctx,{type:'radar',data:{labels:['\u5B89\u5168\u5EA6','Haven\u6570','24H\u65BD\u8A2D','\u4E0D\u5BE9\u8005\u5C11','\u5B66\u6821\u8FD1'],datasets:datasets},
+    options:{responsive:true,maintainAspectRatio:false,scales:{r:{ticks:{display:false},grid:{color:'#2a2a3a'},angleLines:{color:'#2a2a3a'},pointLabels:{color:'#aaa',font:{size:10}},min:0,max:1}},plugins:{legend:{labels:{color:'#aaa',font:{size:10},boxWidth:10}}}}});
+}
+
+/* === Phase 4: Extend toggleLayer for streetlights & railway === */
+var _origToggleLayer=window.toggleLayer||toggleLayer;
+/* Patch into toggleLayer */
+(function(){
+  var origTL=toggleLayer;
+  toggleLayer=function(n){
+    origTL(n);
+    if(n==='streetlights'){
+      if(activeLayers.streetlights){
+        loadStreetlights().then(function(){renderStreetlights();map.on('moveend',debouncedRenderStreetlights)});
+      }else{
+        if(streetlightLayer&&streetlightLayer._map)map.removeLayer(streetlightLayer);
+        map.off('moveend',debouncedRenderStreetlights);
+      }
+    }
+    if(n==='railway'){
+      if(activeLayers.railway){
+        loadRailway().then(renderRailway);
+      }else{
+        if(railwayLayer&&railwayLayer._map)map.removeLayer(railwayLayer);
+      }
+    }
+  };
+  window.toggleLayer=toggleLayer;
+})();
+
+/* Phase 4: Haven-route and area-compare clicks handled via onMapClick patch above */
+
+/* === Phase 4: Fix loadSchools to handle Overpass format === */
+(function(){
+  var _origLoadSchools=loadSchools;
+  loadSchools=function(){
+    if(window._schoolsLoaded)return;
+    fetch(D+'/schools_tokyo.json').then(function(r){return r.json()}).then(function(data){
+      window._schoolsLoaded=true;
+      var arr=Array.isArray(data)?data:(data.elements||[]);
+      window._schoolsData=[];
+      arr.forEach(function(s){
+        var lat=s.lat,lon=s.lon,name=(s.tags&&s.tags.name)||s.name||'\u5B66\u6821';
+        if(!lat||!lon)return;
+        window._schoolsData.push({lat:lat,lon:lon,name:name});
+        if(havenLayer){
+          L.marker([lat,lon],{icon:L.divIcon({html:'\uD83C\uDFEB',className:'',iconSize:[16,16],iconAnchor:[8,8]})})
+            .bindTooltip('\uD83C\uDFEB '+name)
+            .addTo(havenLayer);
+        }
+      });
+      document.getElementById('cnt-streetlights').textContent;/* no-op */
+    }).catch(function(){});
+  };
+  window.loadSchools=loadSchools;
 })();
 
 /* === FINAL: Mobile CSS for new elements === */
