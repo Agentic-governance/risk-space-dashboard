@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "generated": "2026-04-05",
+    "source": "国土地理院 浸水ナビ / 国土数値情報 A31 洪水浸水想定区域",
+    "status": "API_UNAVAILABLE",
+    "note": "浸水ナビAPIが応答なし（fetch failed）。国土数値情報A31データのダウンロードリンクを記載。後日自動取得予定。",
+    "download_urls": {
+      "nlftp_a31": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31.html",
+      "disaportal_flood_l2": "https://disaportaldata.gsi.go.jp/raster/01_flood_l2_shinsuishin_data/",
+      "disaportal_api": "https://disaportaldata.gsi.go.jp/raster/01_flood_l2_shinsuishin/"
+    },
+    "fallback_tool": "mcp__japan-gov-mcp__flood_depth(lat, lon)"
+  },
+  "known_high_risk_areas": [
+    {
+      "area": "荒川流域",
+      "prefecture": "東京都・埼玉県",
+      "max_depth_m": 5.0,
+      "affected_pop_est": 2500000
+    },
+    {
+      "area": "利根川流域",
+      "prefecture": "茨城県・千葉県・埼玉県",
+      "max_depth_m": 10.0,
+      "affected_pop_est": 3000000
+    },
+    {
+      "area": "淀川流域",
+      "prefecture": "大阪府・京都府",
+      "max_depth_m": 5.0,
+      "affected_pop_est": 1500000
+    },
+    {
+      "area": "庄内川流域",
+      "prefecture": "愛知県",
+      "max_depth_m": 5.0,
+      "affected_pop_est": 800000
+    },
+    {
+      "area": "筑後川流域",
+      "prefecture": "福岡県・���賀県",
+      "max_depth_m": 5.0,
+      "affected_pop_est": 500000
+    },
+    {
+      "area": "木曽川流域",
+      "prefecture": "愛知県・岐阜県・三重県",
+      "max_depth_m": 5.0,
+      "affected_pop_est": 600000
+    },
+    {
+      "area": "信濃川流域",
+      "prefecture": "新潟県・長野県",
+      "max_depth_m": 5.0,
+      "affected_pop_est": 400000
+    },
+    {
+      "area": "多摩川流域",
+      "prefecture": "東京都・神奈川県",
+      "max_depth_m": 3.0,
+      "affected_pop_est": 1000000
+    },
+    {
+      "area": "鶴見川流域",
+      "prefecture": "神奈川県",
+      "max_depth_m": 3.0,
+      "affected_pop_est": 500000
+    },
+    {
+      "area": "大和川流域",
+      "prefecture": "大阪府・奈良県",
+      "max_depth_m": 3.0,
+      "affected_pop_est": 400000
+    }
+  ]
+}

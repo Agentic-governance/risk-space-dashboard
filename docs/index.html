@@ -215,7 +215,14 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
     <button class="btn active" id="btn-heat" onclick="setDisplayMode('heat')">ヒートマップ</button>
     <button class="btn" id="btn-grid" onclick="setDisplayMode('grid')">グリッド</button>
     <button class="btn" id="btn-haven" onclick="setDisplayMode('haven')">Safe Haven</button>
-  </div></div>
+  </div>
+  <div id="grid-subtype-filter" style="margin-top:6px;display:none"><div style="font-size:10px;color:#555;margin-bottom:4px">犯罪サブタイプ</div><div class="btn-row">
+    <button class="btn active" onclick="setGridSubtype(null)">全犯罪</button>
+    <button class="btn" onclick="setGridSubtype('自転車盗')">自転車盗</button>
+    <button class="btn" onclick="setGridSubtype('車上荒らし')">車上荒らし</button>
+    <button class="btn" onclick="setGridSubtype('部品盗')">部品盗</button>
+    <button class="btn" onclick="setGridSubtype('オートバイ盗')">オートバイ盗</button>
+  </div></div></div>
   <div class="section"><div class="section-title">時間帯シミュレーション</div><div id="time-slider-wrap">
     <input type="range" id="time-slider" min="0" max="23" value="0" oninput="onTimeSliderChange(this.value)" aria-label="時間帯シミュレーション">
     <div id="time-label">現在時刻</div>
@@ -298,6 +305,19 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
     </div>
     <div style="font-size:10px;color:#444;margin-top:6px">地点クリック後に周辺データを出力</div>
   </div>
+  <div class="section" id="attribution">
+    <div class="section-title" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="cursor:pointer">&#x1F4CA; データ出典 &#x25BC;</div>
+    <div style="font-size:10px;color:#666;display:none">
+        犯罪統計: 警察庁・各都道府県警察オープンデータ<br>
+        交通事故: 警察庁交通事故統計<br>
+        地震: 気象庁地震情報API<br>
+        気象: 気象庁AMeDAS観測値<br>
+        不審者: ガッコム安全ナビ・各都道府県警察HP<br>
+        Safe Haven: 国土数値情報(P17/P18)・OpenStreetMap<br>
+        避難場所: 国土数値情報P20<br>
+        地図: &copy;OpenStreetMap &copy;CARTO
+    </div>
+  </div>
 </div>
 <script>
 var D='./data',gridData=[],weatherData=null,heatLayers={},gridLayer=null,havenLayer=null,realtimeLayer=null,clickMarker=null,hourlyChart=null,donutChart=null,fushinshaHourlyChart=null,realtimeMarkers=[],allTileCells=[];
@@ -310,6 +330,7 @@ var LANG={
   en:{safety:'Safe',caution:'Caution',danger:'Danger',safest_area:'Safest Area',safe_area:'Safe Area',standard_area:'Standard Area',caution_area:'Caution Area',alert_area:'High Alert Area',safety_grade_sub:'Click to show safety grade',safety_sublabel:'Safety level at this point',haven_table_title:'Nearby Safe Havens (within 500m)',ht_type:'Type',ht_name:'Name',ht_dist:'Dist',tourist_title:'Tourist Area Safety Cards',hourly_title:'24H Risk Variation',donut_title:'Suspicious Activity Types (500m)',display_mode:'Display Mode',heatmap:'Heatmap',grid:'Grid',safe_haven:'Safe Haven',time_sim:'Time Simulation',data_layers:'Data Layers',crime:'Crime',traffic_acc:'Traffic Accidents',disaster:'Disaster',weather_risk:'Weather Risk',suspicious:'Suspicious Activity Live',analysis_mode:'Analysis Mode',total_risk:'Total Risk',crime_prob:'Crime Probability',escapability:'Escapability',advice:'Advice',export_section:'Data Export',nearest_facility:'Nearest Facility',no_data:'No data',click_to_check:'Click to check',haven_none:'Click to view',adv_safe:'Safe to move around with normal caution.',adv_caution:'Confirm safety facilities before moving.',adv_warn:'Choose well-lit streets when moving.',adv_danger:'Move to nearest convenience store or police box.',adv_weather:'Risk elevated due to bad weather.',adv_escape:'Few escape options in this area.',filter_all:'All',hotspot:'EH Hotspots',legend:'Legend',risk_mult:'Dynamic Risk Multipliers',current_time:'Now',weather:'Weather',transit:'Transit',event:'Events',data_date:'Data',search_placeholder:'Search address (e.g. Tokyo Station)',geoloc:'My Location',csv_export:'CSV Export',json_export:'JSON Export',grade_from_data:'(grid data)',no_haven_warn:'Few escape options'}
 };
 var activeLayers={crime:1,traffic:1,disaster:1,weather:1,realtime:1};
+var gridSubtype=null;/* null = all crimes */
 var displayMode='heat',analysisMode='eh',selectedHour=new Date().getHours();
 var currentFushinshaFilter='all';var allHotspots=[];
 var havenTileIdx=null,loadedHT={},gridTileIdx=null,loadedGT={};
@@ -411,13 +432,13 @@ async function loadSingleHeatLayer(k){
   }catch(e){console.warn(k,e)}
 }
 
-function drawGrid(data){if(gridLayer){map.removeLayer(gridLayer);gridLayer=null}if(displayMode!=='grid')return;gridLayer=L.layerGroup();var tm=TM(selectedHour);(data||gridData).slice(0,5000).forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.3)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.5,weight:.5});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('<b>EH:'+eh.toFixed(4)+'</b><br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>件数:'+(c.count||0)+'<br>Haven500m:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});map.addLayer(gridLayer)}
+function drawGrid(data){if(gridLayer){map.removeLayer(gridLayer);gridLayer=null}if(displayMode!=='grid')return;gridLayer=L.layerGroup();var tm=TM(selectedHour);(data||gridData).slice(0,5000).forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.3)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.5,weight:.5});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('<b>EH:'+eh.toFixed(4)+'</b><br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>件数:'+(c.count||0)+'<br>Haven500m:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});map.addLayer(gridLayer)}
 
 /* #5 Debounced moveend handlers */
 var debouncedLoadGT=debounce(function(){loadGT()},300);
 var debouncedLoadHT=debounce(function(){loadHT()},300);
 
-function loadGT(){if(!gridTileIdx||displayMode!=='grid'||map.getZoom()<10)return;var b=map.getBounds();for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!gridTileIdx[k]||loadedGT[k])continue;loadedGT[k]=1;showTileLoading();(function(key){fetch(D+'/tiles/grid_'+key+'.json').then(function(r){return r.json()}).then(function(cs){var tm=TM(selectedHour);cs.forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de;if(v<.01)return;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.2)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.45,weight:.3});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('EH:'+eh.toFixed(4)+'<br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>Haven:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});allTileCells=allTileCells.concat(cs);if(allTileCells.length>50000)allTileCells=allTileCells.slice(-50000);hideTileLoading()}).catch(function(){loadedGT[key]=0;hideTileLoading()})})(k)}}
+function loadGT(){if(!gridTileIdx||displayMode!=='grid'||map.getZoom()<10)return;var b=map.getBounds();for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!gridTileIdx[k]||loadedGT[k])continue;loadedGT[k]=1;showTileLoading();(function(key){fetch(D+'/tiles/grid_'+key+'.json').then(function(r){return r.json()}).then(function(cs){var tm=TM(selectedHour);cs.forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}if(v<.01)return;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.2)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.45,weight:.3});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('EH:'+eh.toFixed(4)+'<br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>Haven:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});allTileCells=allTileCells.concat(cs);if(allTileCells.length>50000)allTileCells=allTileCells.slice(-50000);hideTileLoading()}).catch(function(){loadedGT[key]=0;hideTileLoading()})})(k)}}
 function loadHT(){if(!havenTileIdx)return;if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}if(map.getZoom()<12)return;var b=map.getBounds();var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!havenTileIdx[k]||loadedHT[k])continue;loadedHT[k]=1;(function(key){fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){hs.forEach(function(h){if(!h.lat||!h.lon)return;allLoadedHavens.push(h);var i=ic[h.type]||'📍';L.marker([h.lat,h.lon],{icon:L.divIcon({html:'<div style="font-size:14px">'+i+'</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip(i+' '+(h.name||h.type)+'<br>'+(h.is_24h?'🟢 24H':'🔴 時間制限')).addTo(havenLayer)})}).catch(function(){loadedHT[key]=0})})(k)}}
 function loadRT(data){if(!data||!data.length)return;allRTData=data;realtimeMarkers=[];var SUBTYPE_MAP={'不審者':'不審者','痴漢':'痴漢','声かけ':'声かけ','暴行':'暴行','窃盗':'窃盗','盗撮':'盗撮','のぞき':'のぞき','ひった':'ひったくり','凶器':'凶器所持','脅迫':'脅迫','迷惑行':'迷惑行為','侵入':'侵入','子供被':'子供被害','火災':'火災','災害':'災害','事故':'事故','動物':'動物','緊急':'緊急','傷病':'傷病','生活':'生活','行方不':'行方不明','詐欺':'詐欺','アポ電':'アポ電'};data.forEach(function(e){var lat,lon,severity,subtype,dateStr;if(Array.isArray(e)){lat=e[0];lon=e[1];subtype=SUBTYPE_MAP[e[2]]||e[2]||'不審者';severity=e[3]||2;dateStr=e[4]||''}else{if(e.geometry&&e.geometry.coordinates){lon=e.geometry.coordinates[0];lat=e.geometry.coordinates[1]}else if(e.lat&&e.lon){lat=e.lat;lon=e.lon}else return;subtype=e.subtype||'';severity=e.severity||2;dateStr=e.occurred_at||e.published_at||''}if(!lat||!lon)return;realtimeMarkers.push({lat:lat,lon:lon,severity:severity,subtype:subtype,date:dateStr,raw:Array.isArray(e)?{subtype:subtype,severity:severity,occurred_at:dateStr}:e})});document.getElementById('cnt-realtime').textContent=realtimeMarkers.length+'件';if(realtimeMarkers.length>0){var latest=realtimeMarkers[0];document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge">LIVE</span> '+(latest.subtype||'不審者')+' — '+(latest.date||'').slice(0,16)}renderRT();map.on('moveend',renderRT)}
 function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLayer=L.layerGroup();var z=map.getZoom();var b=map.getBounds();var visible=realtimeMarkers.filter(function(m){return b.contains([m.lat,m.lon])&&(currentFushinshaFilter==='all'||m.subtype===currentFushinshaFilter)});if(z<10){var grid={};var step=0.5;visible.forEach(function(m){var gk=Math.floor(m.lat/step)+'_'+Math.floor(m.lon/step);if(!grid[gk])grid[gk]={lat:0,lon:0,count:0,maxSev:0};grid[gk].lat+=m.lat;grid[gk].lon+=m.lon;grid[gk].count++;grid[gk].maxSev=Math.max(grid[gk].maxSev,m.severity)});Object.keys(grid).forEach(function(k){var g=grid[k];var clat=g.lat/g.count,clon=g.lon/g.count;var sz=Math.min(40,16+g.count*0.5);var c=g.maxSev>=4?'#f44336':g.maxSev>=3?'#ff9800':'#ffeb3b';L.marker([clat,clon],{icon:L.divIcon({html:'<div class="cluster-marker" style="width:'+sz+'px;height:'+sz+'px;background:rgba('+(g.maxSev>=4?'244,67,54':g.maxSev>=3?'255,152,0':'255,235,59')+',.7)">'+g.count+'</div>',className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]})}).bindPopup('不審者情報: '+g.count+'件').addTo(realtimeLayer)})}else{visible.forEach(function(m){var e=m.raw;var s=m.severity;var c=s>=4?'#f44336':s>=3?'#ff9800':'#ffeb3b';var pref=(e.admin||{}).prefecture||'';var sub=m.subtype||e.subtype||'';var dt=m.date||e.occurred_at||(e.published_at||'');L.circleMarker([m.lat,m.lon],{radius:5+s,color:c,fillColor:c,fillOpacity:.65,weight:1.5}).bindPopup('<b>'+(pref?pref+' ':'')+sub+'</b><br>severity:'+s+'/5<br>'+(dt?dt.slice(0,16):'')+'<br>'+(e.raw_text||(e.raw||{}).title||'').slice(0,60)).addTo(realtimeLayer)})}if(activeLayers.realtime)map.addLayer(realtimeLayer)}
@@ -478,7 +499,7 @@ function updateDonutChart(c){
 
 function drawHC(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var hs=[];for(var i=0;i<24;i++)hs.push(i);var vs=hs.map(function(h){var t=TM(h);return+(Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e))).toFixed(4)});var ctx=document.getElementById('hourly-chart').getContext('2d');if(hourlyChart)hourlyChart.destroy();hourlyChart=new Chart(ctx,{type:'bar',data:{labels:hs.map(function(h){return h+'時'}),datasets:[{data:vs,backgroundColor:vs.map(function(v){return v>=.5?'#f44336':v>=.3?'#ff9800':v>=.15?'#ffeb3b':'#4caf50'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},max:1}}}})}
 function renderHS(hs,bounds){var src=hs||allHotspots||[];if(bounds){src=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()})}var el=document.getElementById('hotspot-list');if(!src||!src.length){el.innerHTML='<div style="color:#444;font-size:11px;text-align:center">データなし</div>';return}var t=src.slice(0,10),mx=t[0].expected_harm||1;el.innerHTML=t.map(function(c,i){return'<div class="hotspot-item" onclick="map.setView(['+c.lat+','+c.lon+'],14)"><span class="hotspot-rank">'+(i+1)+'</span><div class="hotspot-bar" style="width:'+((c.expected_harm||0)/mx*100).toFixed(0)+'%"></div><span class="hotspot-score">'+(c.expected_harm||0).toFixed(3)+'</span></div>'}).join('')}
-function setDisplayMode(m){displayMode=m;['heat','grid','haven'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadPharmacyData().then(renderPharmacyMarkers)}if(m!=='haven'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
+function setDisplayMode(m){displayMode=m;['heat','grid','haven'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});document.getElementById('grid-subtype-filter').style.display=m==='grid'?'block':'none';if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadPharmacyData().then(renderPharmacyMarkers);loadEvacuation()}if(m!=='haven'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
 function setAnalysisMode(m){analysisMode=m;['eh','incident','escape'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function toggleLayer(n){var el=document.getElementById('layer-'+n);activeLayers[n]=!activeLayers[n];el.style.opacity=activeLayers[n]?'1':'.4';
 /* #4 Lazy load heatmaps on toggle */
@@ -489,6 +510,7 @@ function loadEvents(data){var evEl=document.getElementById('event-status');var a
 function loadTransit(data){var sEl=document.getElementById('transit-status');var ds=data.disruptions||[];var susp=ds.filter(function(d){return d.severity==='suspension'});var delay=ds.filter(function(d){return d.severity==='delay'});if(susp.length>0){sEl.textContent=susp.length+'路線運休';sEl.className='status-value alert'}else if(delay.length>0){sEl.textContent=delay.length+'路線遅延';sEl.className='status-value warn'}else{sEl.textContent='平常運転';sEl.className='status-value ok'}}
 function geolocateUser(){navigator.geolocation.getCurrentPosition(function(pos){var lat=pos.coords.latitude,lon=pos.coords.longitude;map.flyTo([lat,lon],14);map.once('moveend',function(){onMapClick({latlng:{lat:lat,lng:lon}})})},function(){alert('位置情報を取得できませんでした')})}
 function filterFushinsha(type){currentFushinshaFilter=type;document.querySelectorAll('.fushinsha-filter-btn').forEach(function(b){b.classList.toggle('active',b.textContent===type||(type==='all'&&b.textContent==='全て'))});renderRT()}
+function setGridSubtype(st){gridSubtype=st;var btns=document.querySelectorAll('#grid-subtype-filter .btn');btns.forEach(function(b){b.classList.toggle('active',(st===null&&b.textContent==='全犯罪')||b.textContent===st)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function showErrorBanner(msg){var el=document.getElementById('error-banner');el.textContent=msg;el.style.display='block';setTimeout(function(){el.style.display='none'},10000)}
 function dismissOnboarding(){document.getElementById('onboarding-overlay').style.display='none';localStorage.setItem('riskspace_onboarded','1')}
 function showOnboardingIfNeeded(){if(!localStorage.getItem('riskspace_onboarded')){document.getElementById('onboarding-overlay').style.display='flex'}}
@@ -662,6 +684,22 @@ function renderPharmacyMarkers(){
     L.marker([p.lat,p.lon],{icon:L.divIcon({html:'<div style="font-size:14px">💊</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip('💊 '+(p.name||'24H薬局')+'<br>🟢 24H').addTo(pharmacyLayerGroup);
   });
   if(displayMode==='haven')pharmacyLayerGroup.addTo(map);
+}
+
+/* === Feature A3: Evacuation shelters === */
+var evacuationLoaded=false;
+function loadEvacuation(){
+  if(evacuationLoaded)return;
+  if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}
+  fetch(D+'/evacuation_shelters.json').then(function(r){return r.json()}).then(function(shelters){
+    evacuationLoaded=true;
+    shelters.forEach(function(s){
+      if(!s.lat||!s.lon)return;
+      L.marker([s.lat,s.lon],{icon:L.divIcon({html:'<div style="font-size:14px">\uD83C\uDFEB</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})})
+        .bindTooltip('\uD83C\uDFEB '+(s.name||'避難場所')+'<br>'+(s.facility_type||'指定避難場所'))
+        .addTo(havenLayer);
+    });
+  }).catch(function(e){console.warn('evacuation_shelters load error',e)});
 }
 
 /* === Feature B1: 周辺500m不審者件数サマリー === */
@@ -846,7 +884,11 @@ function applyLang(){
   if(jsonBtn)jsonBtn.textContent=L.json_export;
   /* Section titles */
   var titles=document.querySelectorAll('.section-title');
-  var titleMap={ja:['表示モード','時間帯シミュレーション','データレイヤー','分析モード','EH ホットスポット','凡例','動的リスク乗数','Safe Haven（最寄り施設）','周辺Safe Haven一覧（500m以内）','観光地安全カード','24時間リスク変動','不審者種別（周辺500m）','アドバイス','データエクスポート'],en:['Display Mode','Time Simulation','Data Layers','Analysis Mode','EH Hotspots','Legend','Dynamic Risk Multipliers','Safe Haven (Nearest)','Nearby Safe Havens (500m)','Tourist Area Safety','24H Risk Variation','Suspicious Types (500m)','Advice','Data Export']};
+  var titleMap={ja:['表示モード','時間帯シミュレーション','データレイヤー','分析モード','EH ホットスポット','凡例','動的リスク乗数','Safe Haven（最寄り施設）','周辺Safe Haven一覧（500m以内）','観光地安全カード','24時間リスク変動','不審者種別（周辺500m）','不審者 時間帯別（周辺2km）','アドバイス','データエクスポート','データ出典'],en:['Display Mode','Time Simulation','Data Layers','Analysis Mode','EH Hotspots','Legend','Dynamic Risk Multipliers','Safe Haven (Nearest)','Nearby Safe Havens (500m)','Tourist Area Safety','24H Risk Variation','Suspicious Types (500m)','Suspicious by Hour (2km)','Advice','Data Export','Data Sources']};
+  var lang=currentLang;
+  titles.forEach(function(el,i){
+    if(titleMap[lang]&&titleMap[lang][i]){el.textContent=titleMap[lang][i]}
+  });
   /* Update tourist cards */
   renderTouristCards();
   /* Update haven table if we have coordinates */
