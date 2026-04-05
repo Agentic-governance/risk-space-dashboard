@@ -57,6 +57,23 @@ body.light-mode .panel-action-btn{border-color:#ccc;color:#666}body.light-mode .
 #nearest-haven-big{padding:8px 14px;text-align:center;border-bottom:1px solid #2a2a3a;background:#0d1117;font-size:14px;font-weight:700;color:#7eb3f0;transition:all .3s ease}
 #eh-meter{padding:14px;background:#0d1117;border-bottom:1px solid #2a2a3a;text-align:center;transition:all .3s ease}.eh-value{font-size:36px;font-weight:900;letter-spacing:-1px;transition:color .3s ease}.eh-label{font-size:11px;color:#666;margin-top:2px}.eh-formula{font-size:10px;color:#444;margin-top:6px;font-family:monospace;transition:color .3s ease}.breakdown-row{display:flex;align-items:center;padding:5px 14px;gap:8px;border-bottom:1px solid #1a1a2a;transition:all .3s ease}.breakdown-icon{font-size:14px;width:20px}.breakdown-label{font-size:11px;color:#888;flex:1}.breakdown-value{font-size:12px;font-weight:700;transition:color .3s ease}.breakdown-mult{font-size:10px;color:#555;background:#1e1e2e;padding:1px 4px;border-radius:2px}#safe-haven-panel{padding:10px 14px;border-bottom:1px solid #1e1e2e}.haven-row{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:11px}.haven-icon{width:18px;text-align:center;font-size:12px}.haven-name{flex:1;color:#ccc}.haven-dist{color:#666;font-size:10px}.haven-24h{font-size:9px;color:#4caf50;background:#0a2010;padding:1px 3px;border-radius:2px}#transit-panel{padding:10px 14px;border-bottom:1px solid #1e1e2e}#hourly-chart-wrap{padding:10px 14px;border-bottom:1px solid #1e1e2e}#hourly-chart-wrap canvas{max-height:80px}
 #donut-chart-wrap{padding:10px 14px;border-bottom:1px solid #1e1e2e}#donut-chart-wrap canvas{max-height:120px}
+#fushinsha-hourly-wrap{padding:10px 14px;border-bottom:1px solid #1e1e2e}#fushinsha-hourly-wrap canvas{max-height:80px}
+#btn-nearest-haven{width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#1a3a2c;border:1px solid #4caf50;color:#4caf50;border-radius:4px;cursor:pointer;margin-top:0;transition:all .2s}
+#btn-nearest-haven:hover{background:#2a4a3c;color:#66bb6a}
+body.light-mode #btn-nearest-haven{background:#e8f5e9;border-color:#4caf50;color:#2e7d32}
+body.light-mode #btn-nearest-haven:hover{background:#c8e6c9}
+body.large-text #btn-nearest-haven{font-size:15px!important;padding:12px 16px!important;min-height:44px}
+#nearest-haven-result{padding:8px 14px;border-bottom:1px solid #2a2a3a;font-size:12px;color:#aaa;display:none}
+#nearest-haven-result .haven-result-name{font-size:14px;font-weight:700;color:#7eb3f0}
+#nearest-haven-result .haven-result-detail{font-size:11px;color:#888;margin-top:4px}
+body.light-mode #nearest-haven-result{color:#555}
+body.light-mode #nearest-haven-result .haven-result-name{color:#2a6cb5}
+body.light-mode #nearest-haven-result .haven-result-detail{color:#888}
+#fushinsha-500m-summary{padding:8px 14px;border-bottom:1px solid #2a2a3a;font-size:12px;display:none}
+#fushinsha-500m-summary .summary-title{font-size:11px;font-weight:700;color:#ff9800;margin-bottom:4px}
+#fushinsha-500m-summary .summary-counts{font-size:11px;color:#aaa;line-height:1.6}
+body.light-mode #fushinsha-500m-summary .summary-title{color:#e65100}
+body.light-mode #fushinsha-500m-summary .summary-counts{color:#666}
 #realtime-ticker{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:rgba(10,10,15,.9);border:1px solid #2a2a3a;border-radius:4px;padding:6px 12px;font-size:11px;color:#aaa;max-width:400px;z-index:500;white-space:nowrap;overflow:hidden}.ticker-badge{background:#f44336;color:#fff;font-size:9px;padding:1px 4px;border-radius:2px;margin-right:4px}#loader{position:absolute;inset:0;background:rgba(10,10,15,.95);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999}#loader-text{color:#7eb3f0;font-size:13px;margin-top:16px}.spinner{width:40px;height:40px;border:3px solid #2a2a3a;border-top-color:#4a7ab5;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 #address-search{padding:8px 14px;border-bottom:1px solid #2a2a3a;background:#0d1117}#address-input{width:100%;padding:6px 8px;font-size:11px;background:#1e1e2e;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;outline:none}#address-input:focus{border-color:#4a7ab5}#address-input::placeholder{color:#555}
 #map-overlay-msg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(10,10,15,.85);border:1px solid #4a7ab5;border-radius:6px;padding:12px 20px;font-size:13px;color:#7eb3f0;z-index:600;pointer-events:none;display:none;white-space:nowrap}
@@ -84,6 +101,10 @@ body.light-mode .panel-action-btn{border-color:#ccc;color:#666}body.light-mode .
   .eh-value { font-size: 28px; }
   #safety-badge { font-size: 18px !important; }
   .btn { min-height: 36px; min-width: 36px; }
+  #btn-nearest-haven { font-size: 11px; padding: 6px 10px; }
+  #nearest-haven-result { padding: 6px 10px; }
+  #fushinsha-500m-summary { padding: 6px 10px; }
+  #fushinsha-hourly-wrap canvas { max-height: 60px; }
 }
 #onboarding-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:10000;display:flex;align-items:center;justify-content:center}
 #onboarding-box{background:#1a1a2e;border:1px solid #4a7ab5;border-radius:10px;padding:24px 28px;max-width:360px;text-align:center;color:#e0e0e0}
@@ -98,6 +119,40 @@ body.light-mode .skeleton{background:linear-gradient(90deg,#e0e0e0 25%,#f0f0f0 5
 @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
 .skeleton-line{height:12px;width:60px}
 .skeleton-block{height:36px;width:80px}
+/* C1: Safety Grade Display */
+#safety-grade{padding:14px;text-align:center;border-bottom:1px solid #2a2a3a;background:#0d1117;transition:background .3s ease}
+#safety-grade-letter{font-size:64px;font-weight:900;letter-spacing:4px;line-height:1;transition:color .3s ease}
+#safety-grade-desc{font-size:14px;font-weight:600;margin-top:4px;transition:color .3s ease}
+#safety-grade-sub{font-size:10px;color:#666;margin-top:2px}
+body.light-mode #safety-grade{background:#f8f9fa}
+body.light-mode #safety-grade-sub{color:#999}
+/* C2: Haven Table */
+#haven-table-wrap{padding:8px 14px;border-bottom:1px solid #1e1e2e;max-height:180px;overflow-y:auto}
+#haven-table{width:100%;border-collapse:collapse;font-size:10px}
+#haven-table th{text-align:left;color:#555;font-weight:600;padding:3px 4px;border-bottom:1px solid #2a2a3a;font-size:9px;text-transform:uppercase}
+#haven-table td{padding:3px 4px;border-bottom:1px solid #1a1a2a;color:#ccc}
+#haven-table .ht-24h{font-size:9px;color:#4caf50}
+#haven-table .ht-no24h{font-size:9px;color:#f44336}
+body.light-mode #haven-table th{color:#888;border-color:#ddd}
+body.light-mode #haven-table td{color:#444;border-color:#eee}
+/* D1: Language toggle */
+#btn-lang{padding:2px 6px;font-size:12px;background:transparent;border:1px solid #2a2a3a;color:#888;border-radius:3px;cursor:pointer}
+#btn-lang:hover{background:#2a2a3a;color:#ddd}
+body.light-mode #btn-lang{border-color:#ccc;color:#666}body.light-mode #btn-lang:hover{background:#e0e0e0;color:#333}
+/* D2: Tourist area cards */
+#tourist-cards-wrap{padding:8px 14px;border-bottom:1px solid #1e1e2e}
+.tourist-card{display:flex;align-items:center;gap:6px;padding:4px 6px;margin-bottom:3px;background:#1a1a2e;border-radius:4px;cursor:pointer;font-size:11px;border:1px solid transparent;transition:border-color .2s}
+.tourist-card:hover{border-color:#4a7ab5}
+.tc-rank{font-size:16px;font-weight:900;width:24px;text-align:center}
+.tc-name{flex:1;color:#ccc}
+.tc-name-en{font-size:9px;color:#666;display:block}
+.tc-safety{font-weight:700;font-size:12px;min-width:20px;text-align:center}
+.tc-tip{font-size:9px;color:#888;margin-top:1px}
+body.light-mode .tourist-card{background:#f0f4f8;border-color:#e0e0e0}
+body.light-mode .tourist-card:hover{border-color:#5a9ad5}
+body.light-mode .tc-name{color:#333}
+body.light-mode .tc-name-en{color:#888}
+body.light-mode .tc-tip{color:#666}
 /* Tooltip for grid hover */
 .grid-hover-tooltip{background:rgba(10,10,15,.9);border:1px solid #4a7ab5;color:#7eb3f0;font-size:11px;padding:3px 6px;border-radius:3px;pointer-events:none}
 /* Smooth transitions for panel values */
@@ -140,6 +195,7 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
     <div style="display:flex;align-items:center;justify-content:space-between">
       <h1>&#x2B21; RISK SPACE MCP</h1>
       <div class="panel-header-actions">
+        <button class="panel-action-btn" id="btn-lang" onclick="toggleLang()" title="日本語/English切替" aria-label="言語切替">🌐</button>
         <button class="panel-action-btn" id="btn-a11y" onclick="toggleLargeText()" title="文字を大きく表示" aria-label="文字サイズ切替">あ</button>
         <button class="panel-action-btn" id="btn-theme" onclick="toggleTheme()" title="ダーク/ライトモード切替" aria-label="テーマ切替">🌙</button>
         <button class="panel-action-btn" id="btn-share" onclick="shareView()" title="現在のビューを共有" aria-label="共有">🔗</button>
@@ -189,6 +245,7 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
       <div class="legend-row"><span style="font-size:14px;width:20px">🚔</span><span>交番・警察署</span></div>
       <div class="legend-row"><span style="font-size:14px;width:20px">🏥</span><span>救急病院</span></div>
       <div class="legend-row"><span style="font-size:14px;width:20px">🚒</span><span>消防署</span></div>
+      <div class="legend-row"><span style="font-size:14px;width:20px">💊</span><span>24H薬局</span></div>
     </div>
   </div>
 </div>
@@ -199,11 +256,19 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
   <div id="loader"><div class="spinner"></div><div id="loader-text">データ読み込み中...</div></div>
 </div>
 <div id="right-panel">
+  <div id="safety-grade">
+    <div id="safety-grade-letter" style="color:#666">—</div>
+    <div id="safety-grade-desc" style="color:#666">—</div>
+    <div id="safety-grade-sub" data-i18n="safety_grade_sub">クリックで安全ランク表示</div>
+  </div>
   <div id="safety-badge">
     <div id="safety-label" style="color:#666">—</div>
-    <div id="safety-sublabel">この場所の安全度</div>
+    <div id="safety-sublabel" data-i18n="safety_sublabel">この場所の安全度</div>
   </div>
   <div id="nearest-haven-big">最寄り施設: クリックで確認</div>
+  <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-nearest-haven" onclick="onFindNearestHaven()">🏪 最寄りの安全な場所を探す</button></div>
+  <div id="nearest-haven-result"><div class="haven-result-name"></div><div class="haven-result-detail"></div></div>
+  <div id="fushinsha-500m-summary"><div class="summary-title">周辺500m 不審者サマリー</div><div class="summary-counts"></div></div>
   <div id="eh-meter"><div class="eh-value" id="eh-value" style="color:#666"><span class="skeleton skeleton-block" style="width:80px">&nbsp;</span></div><div class="eh-label">総合危険度 (EH値)</div><div class="eh-formula" id="eh-formula">地図上の地点をクリック</div><div style="margin-top:8px;display:flex;gap:12px;justify-content:center"><div style="text-align:center"><div id="risk-value" style="font-size:20px;font-weight:700;color:#555"><span class="skeleton skeleton-line">&nbsp;</span></div><div style="font-size:9px;color:#555">リスクスコア</div></div><div style="text-align:center"><div id="escape-value" style="font-size:20px;font-weight:700;color:#555"><span class="skeleton skeleton-line">&nbsp;</span></div><div style="font-size:9px;color:#555">逃げやすさ</div></div><div style="text-align:center"><div id="fushinsha-value" style="font-size:20px;font-weight:700;color:#555">0</div><div style="font-size:9px;color:#555">不審者(周辺)</div></div></div></div>
   <div class="section"><div class="section-title">動的リスク乗数</div>
     <div class="breakdown-row"><span class="breakdown-icon">🎯</span><span class="breakdown-label">犯罪発生確率</span><span class="breakdown-value" id="p-incident"><span class="skeleton skeleton-line">&nbsp;</span></span></div>
@@ -218,8 +283,11 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
     <div id="haven-list"><div style="color:#444;font-size:11px">クリックで確認</div></div>
     <div style="margin-top:6px;font-size:10px;color:#444">500m以内: <span id="haven-count-500m" style="color:#7eb3f0">—</span>施設</div>
   </div>
-  <div id="hourly-chart-wrap" class="section"><div class="section-title">24時間リスク変動</div><canvas id="hourly-chart"></canvas></div>
-  <div id="donut-chart-wrap" class="section"><div class="section-title">不審者種別（周辺500m）</div><canvas id="donut-chart" width="120" height="120"></canvas></div>
+  <div id="haven-table-wrap"><div class="section-title" data-i18n="haven_table_title">周辺Safe Haven一覧（500m以内）</div><table id="haven-table"><thead><tr><th data-i18n="ht_type">種別</th><th data-i18n="ht_name">名称</th><th data-i18n="ht_dist">距離</th><th>24H</th></tr></thead><tbody id="haven-table-body"><tr><td colspan="4" style="color:#444;text-align:center">クリックで表示</td></tr></tbody></table></div>
+  <div id="tourist-cards-wrap" class="section"><div class="section-title" data-i18n="tourist_title">観光地安全カード</div><div id="tourist-card-list"><div style="color:#444;font-size:11px">読み込み中...</div></div></div>
+  <div id="hourly-chart-wrap" class="section"><div class="section-title" data-i18n="hourly_title">24時間リスク変動</div><canvas id="hourly-chart"></canvas></div>
+  <div id="donut-chart-wrap" class="section"><div class="section-title" data-i18n="donut_title">不審者種別（周辺500m）</div><canvas id="donut-chart" width="120" height="120"></canvas></div>
+  <div id="fushinsha-hourly-wrap" class="section"><div class="section-title">不審者 時間帯別（周辺2km）</div><canvas id="fushinsha-hourly-chart"></canvas></div>
   <div class="section"><div class="section-title">アドバイス</div>
     <div id="advice-panel" style="font-size:11px;color:#888;line-height:1.6;min-height:40px">地図上をクリックすると詳細分析が表示されます</div>
   </div>
@@ -232,7 +300,15 @@ body.large-text #btn-export{font-size:14px!important;padding:8px 12px!important;
   </div>
 </div>
 <script>
-var D='./data',gridData=[],weatherData=null,heatLayers={},gridLayer=null,havenLayer=null,realtimeLayer=null,clickMarker=null,hourlyChart=null,donutChart=null,realtimeMarkers=[],allTileCells=[];
+var D='./data',gridData=[],weatherData=null,heatLayers={},gridLayer=null,havenLayer=null,realtimeLayer=null,clickMarker=null,hourlyChart=null,donutChart=null,fushinshaHourlyChart=null,realtimeMarkers=[],allTileCells=[];
+var pharmacyMarkers=[],pharmacyData=null,lastClickLatLng=null;
+var allLoadedHavens=[];/* collected from haven tiles for findNearestHaven */
+var touristAreas=[];var englishPolice=null;
+var currentLang='ja';
+var LANG={
+  ja:{safety:'\u5b89\u5168',caution:'\u6ce8\u610f',danger:'\u5371\u967a',safest_area:'\u6700\u5b89\u5168\u30a8\u30ea\u30a2',safe_area:'\u5b89\u5168\u30a8\u30ea\u30a2',standard_area:'\u6a19\u6e96\u30a8\u30ea\u30a2',caution_area:'\u6ce8\u610f\u30a8\u30ea\u30a2',alert_area:'\u8981\u8b66\u6212\u30a8\u30ea\u30a2',safety_grade_sub:'\u30af\u30ea\u30c3\u30af\u3067\u5b89\u5168\u30e9\u30f3\u30af\u8868\u793a',safety_sublabel:'\u3053\u306e\u5834\u6240\u306e\u5b89\u5168\u5ea6',haven_table_title:'\u5468\u8fbaSafe Haven\u4e00\u89a7\uff08500m\u4ee5\u5185\uff09',ht_type:'\u7a2e\u5225',ht_name:'\u540d\u79f0',ht_dist:'\u8ddd\u96e2',tourist_title:'\u89b3\u5149\u5730\u5b89\u5168\u30ab\u30fc\u30c9',hourly_title:'24\u6642\u9593\u30ea\u30b9\u30af\u5909\u52d5',donut_title:'\u4e0d\u5be9\u8005\u7a2e\u5225\uff08\u5468\u8fba500m\uff09',display_mode:'\u8868\u793a\u30e2\u30fc\u30c9',heatmap:'\u30d2\u30fc\u30c8\u30de\u30c3\u30d7',grid:'\u30b0\u30ea\u30c3\u30c9',safe_haven:'Safe Haven',time_sim:'\u6642\u9593\u5e2f\u30b7\u30df\u30e5\u30ec\u30fc\u30b7\u30e7\u30f3',data_layers:'\u30c7\u30fc\u30bf\u30ec\u30a4\u30e4\u30fc',crime:'\u72af\u7f6a',traffic_acc:'\u4ea4\u901a\u4e8b\u6545',disaster:'\u707d\u5bb3',weather_risk:'\u6c17\u8c61\u30ea\u30b9\u30af',suspicious:'\u4e0d\u5be9\u8005\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0',analysis_mode:'\u5206\u6790\u30e2\u30fc\u30c9',total_risk:'\u7dcf\u5408\u5371\u967a\u5ea6',crime_prob:'\u72af\u7f6a\u767a\u751f\u78ba\u7387',escapability:'\u9003\u3052\u3084\u3059\u3055',advice:'\u30a2\u30c9\u30d0\u30a4\u30b9',export_section:'\u30c7\u30fc\u30bf\u30a8\u30af\u30b9\u30dd\u30fc\u30c8',nearest_facility:'\u6700\u5bc4\u308a\u65bd\u8a2d',no_data:'\u30c7\u30fc\u30bf\u306a\u3057',click_to_check:'\u30af\u30ea\u30c3\u30af\u3067\u78ba\u8a8d',haven_none:'\u30af\u30ea\u30c3\u30af\u3067\u8868\u793a',adv_safe:'\u901a\u5e38\u306e\u6ce8\u610f\u3067\u5b89\u5168\u306b\u79fb\u52d5\u3067\u304d\u307e\u3059\u3002',adv_caution:'\u5b89\u5168\u65bd\u8a2d\u3092\u78ba\u8a8d\u3057\u3066\u304b\u3089\u79fb\u52d5\u3057\u3066\u304f\u3060\u3055\u3044\u3002',adv_warn:'\u660e\u308b\u3044\u901a\u308a\u3092\u9078\u3093\u3067\u79fb\u52d5\u3057\u3066\u304f\u3060\u3055\u3044\u3002',adv_danger:'\u6700\u5bc4\u308a\u306e\u30b3\u30f3\u30d3\u30cb\u30fb\u4ea4\u756a\u306b\u79fb\u52d5\u3057\u3066\u304f\u3060\u3055\u3044\u3002',adv_weather:'\u60aa\u5929\u5019\u3067\u30ea\u30b9\u30af\u4e0a\u6607\u4e2d\u3002',adv_escape:'\u9003\u3052\u5834\u304c\u5c11\u306a\u3044\u30a8\u30ea\u30a2\u3002',filter_all:'\u5168\u3066',hotspot:'EH \u30db\u30c3\u30c8\u30b9\u30dd\u30c3\u30c8',legend:'\u51e1\u4f8b',risk_mult:'\u52d5\u7684\u30ea\u30b9\u30af\u4e57\u6570',current_time:'\u73fe\u5728',weather:'\u5929\u6c17',transit:'\u4ea4\u901a',event:'\u30a4\u30d9\u30f3\u30c8',data_date:'\u30c7\u30fc\u30bf',search_placeholder:'\u4f4f\u6240\u3092\u691c\u7d22\uff08\u4f8b\uff1a\u6771\u4eac\u99c5\uff09',geoloc:'\u73fe\u5728\u5730',csv_export:'CSV\u51fa\u529b',json_export:'JSON\u51fa\u529b',grade_from_data:'(grid data)',no_haven_warn:'\u9003\u3052\u5834\u304c\u5c11\u306a\u3044'},
+  en:{safety:'Safe',caution:'Caution',danger:'Danger',safest_area:'Safest Area',safe_area:'Safe Area',standard_area:'Standard Area',caution_area:'Caution Area',alert_area:'High Alert Area',safety_grade_sub:'Click to show safety grade',safety_sublabel:'Safety level at this point',haven_table_title:'Nearby Safe Havens (within 500m)',ht_type:'Type',ht_name:'Name',ht_dist:'Dist',tourist_title:'Tourist Area Safety Cards',hourly_title:'24H Risk Variation',donut_title:'Suspicious Activity Types (500m)',display_mode:'Display Mode',heatmap:'Heatmap',grid:'Grid',safe_haven:'Safe Haven',time_sim:'Time Simulation',data_layers:'Data Layers',crime:'Crime',traffic_acc:'Traffic Accidents',disaster:'Disaster',weather_risk:'Weather Risk',suspicious:'Suspicious Activity Live',analysis_mode:'Analysis Mode',total_risk:'Total Risk',crime_prob:'Crime Probability',escapability:'Escapability',advice:'Advice',export_section:'Data Export',nearest_facility:'Nearest Facility',no_data:'No data',click_to_check:'Click to check',haven_none:'Click to view',adv_safe:'Safe to move around with normal caution.',adv_caution:'Confirm safety facilities before moving.',adv_warn:'Choose well-lit streets when moving.',adv_danger:'Move to nearest convenience store or police box.',adv_weather:'Risk elevated due to bad weather.',adv_escape:'Few escape options in this area.',filter_all:'All',hotspot:'EH Hotspots',legend:'Legend',risk_mult:'Dynamic Risk Multipliers',current_time:'Now',weather:'Weather',transit:'Transit',event:'Events',data_date:'Data',search_placeholder:'Search address (e.g. Tokyo Station)',geoloc:'My Location',csv_export:'CSV Export',json_export:'JSON Export',grade_from_data:'(grid data)',no_haven_warn:'Few escape options'}
+};
 var activeLayers={crime:1,traffic:1,disaster:1,weather:1,realtime:1};
 var displayMode='heat',analysisMode='eh',selectedHour=new Date().getHours();
 var currentFushinshaFilter='all';var allHotspots=[];
@@ -342,11 +418,11 @@ var debouncedLoadGT=debounce(function(){loadGT()},300);
 var debouncedLoadHT=debounce(function(){loadHT()},300);
 
 function loadGT(){if(!gridTileIdx||displayMode!=='grid'||map.getZoom()<10)return;var b=map.getBounds();for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!gridTileIdx[k]||loadedGT[k])continue;loadedGT[k]=1;showTileLoading();(function(key){fetch(D+'/tiles/grid_'+key+'.json').then(function(r){return r.json()}).then(function(cs){var tm=TM(selectedHour);cs.forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de;if(v<.01)return;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.2)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.45,weight:.3});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('EH:'+eh.toFixed(4)+'<br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>Haven:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});allTileCells=allTileCells.concat(cs);if(allTileCells.length>50000)allTileCells=allTileCells.slice(-50000);hideTileLoading()}).catch(function(){loadedGT[key]=0;hideTileLoading()})})(k)}}
-function loadHT(){if(!havenTileIdx)return;if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}if(map.getZoom()<12)return;var b=map.getBounds();var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!havenTileIdx[k]||loadedHT[k])continue;loadedHT[k]=1;(function(key){fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){hs.forEach(function(h){if(!h.lat||!h.lon)return;var i=ic[h.type]||'📍';L.marker([h.lat,h.lon],{icon:L.divIcon({html:'<div style="font-size:14px">'+i+'</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip(i+' '+(h.name||h.type)+'<br>'+(h.is_24h?'🟢 24H':'🔴 時間制限')).addTo(havenLayer)})}).catch(function(){loadedHT[key]=0})})(k)}}
+function loadHT(){if(!havenTileIdx)return;if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}if(map.getZoom()<12)return;var b=map.getBounds();var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!havenTileIdx[k]||loadedHT[k])continue;loadedHT[k]=1;(function(key){fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){hs.forEach(function(h){if(!h.lat||!h.lon)return;allLoadedHavens.push(h);var i=ic[h.type]||'📍';L.marker([h.lat,h.lon],{icon:L.divIcon({html:'<div style="font-size:14px">'+i+'</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip(i+' '+(h.name||h.type)+'<br>'+(h.is_24h?'🟢 24H':'🔴 時間制限')).addTo(havenLayer)})}).catch(function(){loadedHT[key]=0})})(k)}}
 function loadRT(data){if(!data||!data.length)return;allRTData=data;realtimeMarkers=[];var SUBTYPE_MAP={'不審者':'不審者','痴漢':'痴漢','声かけ':'声かけ','暴行':'暴行','窃盗':'窃盗','盗撮':'盗撮','のぞき':'のぞき','ひった':'ひったくり','凶器':'凶器所持','脅迫':'脅迫','迷惑行':'迷惑行為','侵入':'侵入','子供被':'子供被害','火災':'火災','災害':'災害','事故':'事故','動物':'動物','緊急':'緊急','傷病':'傷病','生活':'生活','行方不':'行方不明','詐欺':'詐欺','アポ電':'アポ電'};data.forEach(function(e){var lat,lon,severity,subtype,dateStr;if(Array.isArray(e)){lat=e[0];lon=e[1];subtype=SUBTYPE_MAP[e[2]]||e[2]||'不審者';severity=e[3]||2;dateStr=e[4]||''}else{if(e.geometry&&e.geometry.coordinates){lon=e.geometry.coordinates[0];lat=e.geometry.coordinates[1]}else if(e.lat&&e.lon){lat=e.lat;lon=e.lon}else return;subtype=e.subtype||'';severity=e.severity||2;dateStr=e.occurred_at||e.published_at||''}if(!lat||!lon)return;realtimeMarkers.push({lat:lat,lon:lon,severity:severity,subtype:subtype,date:dateStr,raw:Array.isArray(e)?{subtype:subtype,severity:severity,occurred_at:dateStr}:e})});document.getElementById('cnt-realtime').textContent=realtimeMarkers.length+'件';if(realtimeMarkers.length>0){var latest=realtimeMarkers[0];document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge">LIVE</span> '+(latest.subtype||'不審者')+' — '+(latest.date||'').slice(0,16)}renderRT();map.on('moveend',renderRT)}
 function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLayer=L.layerGroup();var z=map.getZoom();var b=map.getBounds();var visible=realtimeMarkers.filter(function(m){return b.contains([m.lat,m.lon])&&(currentFushinshaFilter==='all'||m.subtype===currentFushinshaFilter)});if(z<10){var grid={};var step=0.5;visible.forEach(function(m){var gk=Math.floor(m.lat/step)+'_'+Math.floor(m.lon/step);if(!grid[gk])grid[gk]={lat:0,lon:0,count:0,maxSev:0};grid[gk].lat+=m.lat;grid[gk].lon+=m.lon;grid[gk].count++;grid[gk].maxSev=Math.max(grid[gk].maxSev,m.severity)});Object.keys(grid).forEach(function(k){var g=grid[k];var clat=g.lat/g.count,clon=g.lon/g.count;var sz=Math.min(40,16+g.count*0.5);var c=g.maxSev>=4?'#f44336':g.maxSev>=3?'#ff9800':'#ffeb3b';L.marker([clat,clon],{icon:L.divIcon({html:'<div class="cluster-marker" style="width:'+sz+'px;height:'+sz+'px;background:rgba('+(g.maxSev>=4?'244,67,54':g.maxSev>=3?'255,152,0':'255,235,59')+',.7)">'+g.count+'</div>',className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]})}).bindPopup('不審者情報: '+g.count+'件').addTo(realtimeLayer)})}else{visible.forEach(function(m){var e=m.raw;var s=m.severity;var c=s>=4?'#f44336':s>=3?'#ff9800':'#ffeb3b';var pref=(e.admin||{}).prefecture||'';var sub=m.subtype||e.subtype||'';var dt=m.date||e.occurred_at||(e.published_at||'');L.circleMarker([m.lat,m.lon],{radius:5+s,color:c,fillColor:c,fillOpacity:.65,weight:1.5}).bindPopup('<b>'+(pref?pref+' ':'')+sub+'</b><br>severity:'+s+'/5<br>'+(dt?dt.slice(0,16):'')+'<br>'+(e.raw_text||(e.raw||{}).title||'').slice(0,60)).addTo(realtimeLayer)})}if(activeLayers.realtime)map.addLayer(realtimeLayer)}
 function updateWS(){if(!weatherData||!Array.isArray(weatherData))return;var mp=0,mw=0;weatherData.forEach(function(s){if(s.precip10m)mp=Math.max(mp,s.precip10m);if(s.wind_ms)mw=Math.max(mw,s.wind_ms)});var se=document.getElementById('weather-status'),ie=document.getElementById('weather-icon');if(mp>=20){se.textContent='豪雨 '+mp+'mm';se.className='status-value alert';ie.textContent='⛈'}else if(mp>=5){se.textContent='雨 '+mp+'mm';se.className='status-value warn';ie.textContent='🌧'}else if(mw>=15){se.textContent='強風 '+mw+'m/s';se.className='status-value warn';ie.textContent='🌬'}else{se.textContent='概ね晴れ';se.className='status-value ok';ie.textContent='☀️'}var wp=weatherData.filter(function(s){return s.incident_multiplier>1.1}).map(function(s){return[s.lat,s.lon,(s.incident_multiplier-1)/1.5]});if(wp.length>0){heatLayers.weather=L.heatLayer(wp,{radius:30,blur:20,maxZoom:10,gradient:{0:'#03a9f4',.5:'#00bcd4',1:'#0288d1'}});if(activeLayers.weather)heatLayers.weather.addTo(map);document.getElementById('cnt-weather').textContent=wp.length+'局'}}
-function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;updateRP(c);drawHC(c);updateDonutChart(c);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map)}
+function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map)}
 
 function updateRP(c){var h=selectedHour,tm=TM(h);var wI=1,wE=1;if(weatherData&&Array.isArray(weatherData)){var md=1/0,nr=null;weatherData.forEach(function(s){if(!s.lat)return;var d=Math.hypot(s.lat-c._lat,s.lon-c._lon);if(d<md){md=d;nr=s}});if(nr){wI=nr.incident_multiplier||1;wE=nr.escape_multiplier||1}}var br=c.risk_score||0,bp=c.p_escape||.5,sv=c.avg_severity||2.5;var fushCount=0;if(realtimeMarkers&&realtimeMarkers.length){realtimeMarkers.forEach(function(m){if(m.lat&&m.lon&&Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.02)fushCount++})}var dr=Math.min(1,br*wI*tm.i+fushCount*0.05),de=Math.min(1,bp*wE*tm.e),eh=dr*(sv/5)*(1-de);
 
@@ -369,7 +445,12 @@ if(nt&&c.nearest_haven_dist){
   havenBigEl.innerHTML='最寄り施設: データなし';
 }
 
-document.getElementById('risk-value').textContent=dr.toFixed(3);document.getElementById('risk-value').style.color=dr>=.5?'#f44336':dr>=.3?'#ff9800':'#4caf50';document.getElementById('escape-value').textContent=de.toFixed(3);document.getElementById('escape-value').style.color=de>=.6?'#4caf50':de>=.3?'#ff9800':'#f44336';document.getElementById('fushinsha-value').textContent=fushCount;document.getElementById('fushinsha-value').style.color=fushCount>0?'#f44336':'#555';var el=document.getElementById('eh-value');el.textContent=eh.toFixed(3);el.style.color=eh>=.5?'#f44336':eh>=.3?'#ff9800':eh>=.15?'#ffeb3b':'#4caf50';document.getElementById('eh-formula').textContent='犯罪確率 '+dr.toFixed(3)+' × 重大度 '+(sv/5).toFixed(2)+' × (1-逃げやすさ '+de.toFixed(3)+')';document.getElementById('p-incident').textContent=br.toFixed(4);function SM(id,v){var e=document.getElementById(id);e.textContent='×'+v.toFixed(2);e.style.color=v>1.1?'#f44336':v<.9?'#4caf50':'#aaa'}SM('weather-mult',wI);document.getElementById('weather-mult-label').textContent=weatherData?'気象庁':'—';SM('time-mult',tm.i);document.getElementById('time-mult-label').textContent=String(h).padStart(2,'0')+'時台';document.getElementById('p-escape').textContent=bp.toFixed(4);SM('escape-weather-mult',wE);document.getElementById('haven-count-500m').textContent=c.haven_count_500m||0;var icMap={koban:'🚔',convenience_store:'🏪',fire_station:'🚒',hospital:'🏥',station:'🚉'};document.getElementById('haven-list').innerHTML=nt?'<div class="haven-row"><span class="haven-icon">'+(icMap[nt]||'📍')+'</span><span class="haven-name">'+nt+'</span>'+(c.nearest_haven_dist?'<span class="haven-dist">'+c.nearest_haven_dist.toFixed(2)+'km</span>':'')+'</div>'+((c.haven_count_500m||0)<2?'<div style="color:#f44336;font-size:10px;margin-top:4px">⚠ 逃げ場が少ない</div>':''):'<div style="color:#444;font-size:11px">データなし</div>';var a='';if(eh>=.5)a='🔴 最寄りのコンビニ・交番に移動してください。';else if(eh>=.3)a='🟠 明るい通りを選んで移動してください。';else if(eh>=.15)a='🟡 安全施設を確認してから移動してください。';else a='🟢 通常の注意で安全に移動できます。';if(wI>1.15)a+=' 悪天候でリスク上昇中。';if((bp||0)<.3)a+=' 逃げ場が少ないエリア。';document.getElementById('advice-panel').innerHTML=a}
+document.getElementById('risk-value').textContent=dr.toFixed(3);document.getElementById('risk-value').style.color=dr>=.5?'#f44336':dr>=.3?'#ff9800':'#4caf50';document.getElementById('escape-value').textContent=de.toFixed(3);document.getElementById('escape-value').style.color=de>=.6?'#4caf50':de>=.3?'#ff9800':'#f44336';document.getElementById('fushinsha-value').textContent=fushCount;document.getElementById('fushinsha-value').style.color=fushCount>0?'#f44336':'#555';var el=document.getElementById('eh-value');el.textContent=eh.toFixed(3);el.style.color=eh>=.5?'#f44336':eh>=.3?'#ff9800':eh>=.15?'#ffeb3b':'#4caf50';document.getElementById('eh-formula').textContent='犯罪確率 '+dr.toFixed(3)+' × 重大度 '+(sv/5).toFixed(2)+' × (1-逃げやすさ '+de.toFixed(3)+')';document.getElementById('p-incident').textContent=br.toFixed(4);function SM(id,v){var e=document.getElementById(id);e.textContent='×'+v.toFixed(2);e.style.color=v>1.1?'#f44336':v<.9?'#4caf50':'#aaa'}SM('weather-mult',wI);document.getElementById('weather-mult-label').textContent=weatherData?'気象庁':'—';SM('time-mult',tm.i);document.getElementById('time-mult-label').textContent=String(h).padStart(2,'0')+'時台';document.getElementById('p-escape').textContent=bp.toFixed(4);SM('escape-weather-mult',wE);document.getElementById('haven-count-500m').textContent=c.haven_count_500m||0;var icMap={koban:'🚔',convenience_store:'🏪',fire_station:'🚒',hospital:'🏥',station:'🚉'};document.getElementById('haven-list').innerHTML=nt?'<div class="haven-row"><span class="haven-icon">'+(icMap[nt]||'📍')+'</span><span class="haven-name">'+nt+'</span>'+(c.nearest_haven_dist?'<span class="haven-dist">'+c.nearest_haven_dist.toFixed(2)+'km</span>':'')+'</div>'+((c.haven_count_500m||0)<2?'<div style="color:#f44336;font-size:10px;margin-top:4px">⚠ 逃げ場が少ない</div>':''):'<div style="color:#444;font-size:11px">データなし</div>';var LL=LANG[currentLang];var a='';if(eh>=.5)a='🔴 '+LL.adv_danger;else if(eh>=.3)a='🟠 '+LL.adv_warn;else if(eh>=.15)a='🟡 '+LL.adv_caution;else a='🟢 '+LL.adv_safe;if(wI>1.15)a+=' '+(currentLang==='en'?LANG.en.adv_weather:LANG.ja.adv_weather);if((bp||0)<.3)a+=' '+(currentLang==='en'?LANG.en.adv_escape:LANG.ja.adv_escape);document.getElementById('advice-panel').innerHTML=a;
+/* C1: Update safety grade */
+updateSafetyGrade(c,eh);
+/* C2: Update haven table */
+updateHavenTable(c._lat||c.lat,c._lon||c.lon);
+}
 
 /* #3 Donut chart for fushinsha subtypes */
 function updateDonutChart(c){
@@ -397,7 +478,7 @@ function updateDonutChart(c){
 
 function drawHC(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var hs=[];for(var i=0;i<24;i++)hs.push(i);var vs=hs.map(function(h){var t=TM(h);return+(Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e))).toFixed(4)});var ctx=document.getElementById('hourly-chart').getContext('2d');if(hourlyChart)hourlyChart.destroy();hourlyChart=new Chart(ctx,{type:'bar',data:{labels:hs.map(function(h){return h+'時'}),datasets:[{data:vs,backgroundColor:vs.map(function(v){return v>=.5?'#f44336':v>=.3?'#ff9800':v>=.15?'#ffeb3b':'#4caf50'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},max:1}}}})}
 function renderHS(hs,bounds){var src=hs||allHotspots||[];if(bounds){src=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()})}var el=document.getElementById('hotspot-list');if(!src||!src.length){el.innerHTML='<div style="color:#444;font-size:11px;text-align:center">データなし</div>';return}var t=src.slice(0,10),mx=t[0].expected_harm||1;el.innerHTML=t.map(function(c,i){return'<div class="hotspot-item" onclick="map.setView(['+c.lat+','+c.lon+'],14)"><span class="hotspot-rank">'+(i+1)+'</span><div class="hotspot-bar" style="width:'+((c.expected_harm||0)/mx*100).toFixed(0)+'%"></div><span class="hotspot-score">'+(c.expected_harm||0).toFixed(3)+'</span></div>'}).join('')}
-function setDisplayMode(m){displayMode=m;['heat','grid','haven'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT()}updateOverlayMsg()}
+function setDisplayMode(m){displayMode=m;['heat','grid','haven'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadPharmacyData().then(renderPharmacyMarkers)}if(m!=='haven'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
 function setAnalysisMode(m){analysisMode=m;['eh','incident','escape'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function toggleLayer(n){var el=document.getElementById('layer-'+n);activeLayers[n]=!activeLayers[n];el.style.opacity=activeLayers[n]?'1':'.4';
 /* #4 Lazy load heatmaps on toggle */
@@ -486,10 +567,332 @@ function exportJSON(){
   var a=document.createElement('a');a.href=url;a.download='riskspace_export_'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(url);
 }
 
+/* === Feature A1: findNearestHaven - find nearest 24H facility === */
+function findNearestHaven(lat,lon){
+  /* Collect havens from loaded haven tiles */
+  var havens=allLoadedHavens.slice();
+  /* Also include pharmacy data if loaded */
+  if(pharmacyData&&pharmacyData.features){
+    pharmacyData.features.forEach(function(p){
+      havens.push({lat:p.lat,lon:p.lon,name:p.name||'24H薬局',type:'pharmacy_24h',is_24h:true});
+    });
+  }
+  /* If no haven tiles loaded for this area, trigger a load */
+  if(havens.length===0&&havenTileIdx){
+    var tileKey=Math.floor(lat)+'_'+Math.floor(lon);
+    if(havenTileIdx[tileKey]&&!loadedHT[tileKey]){
+      /* Synchronous-ish: fetch and wait */
+      return fetch(D+'/haven_tiles/haven_'+tileKey+'.json').then(function(r){return r.json()}).then(function(hs){
+        loadedHT[tileKey]=1;
+        hs.forEach(function(h){if(h.lat&&h.lon)allLoadedHavens.push(h)});
+        return _findNearest24H(lat,lon,allLoadedHavens.concat(pharmacyData&&pharmacyData.features?pharmacyData.features.map(function(p){return{lat:p.lat,lon:p.lon,name:p.name||'24H薬局',type:'pharmacy_24h',is_24h:true}}):[]))
+      });
+    }
+  }
+  return Promise.resolve(_findNearest24H(lat,lon,havens));
+}
+function _findNearest24H(lat,lon,havens){
+  var best=null,bestDist=Infinity;
+  havens.forEach(function(h){
+    if(!h.is_24h)return;
+    if(!h.lat||!h.lon)return;
+    var dLat=(h.lat-lat)*111320;
+    var dLon=(h.lon-lon)*111320*Math.cos(lat*Math.PI/180);
+    var dist=Math.sqrt(dLat*dLat+dLon*dLon);
+    if(dist<bestDist){bestDist=dist;best=h}
+  });
+  if(!best)return null;
+  var dLat=(best.lat-lat);var dLon=(best.lon-lon);
+  var bearing=Math.atan2(dLon,dLat)*180/Math.PI;
+  var dirStr='';
+  if(bearing>=-22.5&&bearing<22.5)dirStr='北';
+  else if(bearing>=22.5&&bearing<67.5)dirStr='北東';
+  else if(bearing>=67.5&&bearing<112.5)dirStr='東';
+  else if(bearing>=112.5&&bearing<157.5)dirStr='南東';
+  else if(bearing>=157.5||bearing<-157.5)dirStr='南';
+  else if(bearing>=-157.5&&bearing<-112.5)dirStr='南西';
+  else if(bearing>=-112.5&&bearing<-67.5)dirStr='西';
+  else dirStr='北西';
+  var typeEmoji={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊',pharmacy_24h:'💊'};
+  return{name:best.name||best.type,type:best.type,emoji:typeEmoji[best.type]||'📍',distance_m:Math.round(bestDist),bearing:dirStr};
+}
+function onFindNearestHaven(){
+  var lat,lon;
+  if(lastClickLatLng){lat=lastClickLatLng.lat;lon=lastClickLatLng.lng||lastClickLatLng.lon}
+  else{
+    /* Try geolocation */
+    navigator.geolocation.getCurrentPosition(function(pos){
+      lastClickLatLng={lat:pos.coords.latitude,lng:pos.coords.longitude};
+      _doFindNearestHaven(pos.coords.latitude,pos.coords.longitude);
+    },function(){alert('位置情報がありません。地図をクリックしてください。')});
+    return;
+  }
+  _doFindNearestHaven(lat,lon);
+}
+function _doFindNearestHaven(lat,lon){
+  var resultEl=document.getElementById('nearest-haven-result');
+  resultEl.style.display='block';
+  resultEl.querySelector('.haven-result-name').textContent='検索中...';
+  resultEl.querySelector('.haven-result-detail').textContent='';
+  findNearestHaven(lat,lon).then(function(result){
+    if(!result){
+      resultEl.querySelector('.haven-result-name').textContent='24H施設が見つかりません';
+      resultEl.querySelector('.haven-result-detail').textContent='エリアを移動してお試しください';
+      return;
+    }
+    resultEl.querySelector('.haven-result-name').textContent=result.emoji+' '+result.name;
+    resultEl.querySelector('.haven-result-detail').textContent=result.distance_m+'m '+result.bearing+'方向';
+  });
+}
+
+/* === Feature A2: 24H薬局レイヤー === */
+var pharmacyLayerGroup=null;
+function loadPharmacyData(){
+  if(pharmacyData)return Promise.resolve(pharmacyData);
+  return fetch(D+'/pharmacy_24h.json').then(function(r){return r.json()}).then(function(data){
+    pharmacyData=data;return data;
+  }).catch(function(){pharmacyData={features:[]};return pharmacyData});
+}
+function renderPharmacyMarkers(){
+  if(!pharmacyData||!pharmacyData.features)return;
+  if(pharmacyLayerGroup){map.removeLayer(pharmacyLayerGroup)}
+  pharmacyLayerGroup=L.layerGroup();
+  pharmacyData.features.forEach(function(p){
+    if(!p.lat||!p.lon)return;
+    L.marker([p.lat,p.lon],{icon:L.divIcon({html:'<div style="font-size:14px">💊</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip('💊 '+(p.name||'24H薬局')+'<br>🟢 24H').addTo(pharmacyLayerGroup);
+  });
+  if(displayMode==='haven')pharmacyLayerGroup.addTo(map);
+}
+
+/* === Feature B1: 周辺500m不審者件数サマリー === */
+function updateFushinsha500mSummary(lat,lon){
+  var el=document.getElementById('fushinsha-500m-summary');
+  if(!realtimeMarkers||!realtimeMarkers.length){el.style.display='none';return}
+  var radius500m=0.0045;/* ~500m in degrees */
+  var counts={total:0,'声かけ':0,'痴漢':0,'暴行':0,'窃盗':0,'不審者':0,'その他':0};
+  realtimeMarkers.forEach(function(m){
+    if(!m.lat||!m.lon)return;
+    var dLat=(m.lat-lat)*111320;
+    var dLon=(m.lon-lon)*111320*Math.cos(lat*Math.PI/180);
+    var dist=Math.sqrt(dLat*dLat+dLon*dLon);
+    if(dist<=500){
+      counts.total++;
+      var st=m.subtype||'その他';
+      if(counts[st]!==undefined)counts[st]++;
+      else counts['その他']++;
+    }
+  });
+  if(counts.total===0){el.style.display='none';return}
+  el.style.display='block';
+  var parts=[];
+  if(counts['不審者']>0)parts.push('不審者'+counts['不審者']+'件');
+  if(counts['声かけ']>0)parts.push('声かけ'+counts['声かけ']+'件');
+  if(counts['痴漢']>0)parts.push('痴漢'+counts['痴漢']+'件');
+  if(counts['暴行']>0)parts.push('暴行'+counts['暴行']+'件');
+  if(counts['窃盗']>0)parts.push('窃盗'+counts['窃盗']+'件');
+  if(counts['その他']>0)parts.push('その他'+counts['その他']+'件');
+  el.querySelector('.summary-title').textContent='周辺500m: 不審者 '+counts.total+'件';
+  el.querySelector('.summary-counts').textContent=parts.join(' / ');
+}
+
+/* === Feature B2: 不審者時間帯別チャート === */
+function updateFushinshaHourlyChart(lat,lon){
+  var radius2km=0.018;/* ~2km in degrees */
+  var hourCounts=new Array(24).fill(0);
+  if(realtimeMarkers&&realtimeMarkers.length){
+    realtimeMarkers.forEach(function(m){
+      if(!m.lat||!m.lon)return;
+      var dLat=(m.lat-lat)*111320;
+      var dLon=(m.lon-lon)*111320*Math.cos(lat*Math.PI/180);
+      var dist=Math.sqrt(dLat*dLat+dLon*dLon);
+      if(dist<=2000){
+        var dateStr=m.date||'';
+        var hour=-1;
+        /* Try to parse hour from date string */
+        var timeMatch=dateStr.match(/(\d{1,2}):(\d{2})/);
+        if(timeMatch)hour=parseInt(timeMatch[1]);
+        else{
+          /* Try ISO format */
+          var tIdx=dateStr.indexOf('T');
+          if(tIdx>-1){var hStr=dateStr.substring(tIdx+1,tIdx+3);hour=parseInt(hStr)}
+        }
+        if(hour>=0&&hour<24)hourCounts[hour]++;
+      }
+    });
+  }
+  var ctx=document.getElementById('fushinsha-hourly-chart').getContext('2d');
+  if(fushinshaHourlyChart)fushinshaHourlyChart.destroy();
+  var total=hourCounts.reduce(function(a,b){return a+b},0);
+  if(total===0){
+    fushinshaHourlyChart=new Chart(ctx,{type:'bar',data:{labels:Array.from({length:24},function(_,i){return i+'時'}),datasets:[{data:hourCounts,backgroundColor:'#2a2a3a',borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'}}}}});
+    return;
+  }
+  var maxVal=Math.max.apply(null,hourCounts);
+  fushinshaHourlyChart=new Chart(ctx,{type:'bar',data:{labels:Array.from({length:24},function(_,i){return i+'時'}),datasets:[{data:hourCounts,backgroundColor:hourCounts.map(function(v){return v>=maxVal*0.8?'#f44336':v>=maxVal*0.5?'#ff9800':v>0?'#ffeb3b':'#2a2a3a'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'}}}}});
+}
+
+/* === Feature C1: 5段階安全ランク表示 === */
+function updateSafetyGrade(c, eh){
+  var el=document.getElementById('safety-grade-letter');
+  var descEl=document.getElementById('safety-grade-desc');
+  var gradeEl=document.getElementById('safety-grade');
+  var L=LANG[currentLang];
+  var risk=c.risk_score||0;
+  var rank=c.safety_rank||null;
+  var grade,desc,color,bg;
+  /* Determine grade from risk_score thresholds */
+  if(risk<0.05){grade='S';desc=L.safest_area;color='#4caf50';bg=isDarkMode?'#0a2010':'#e8f5e9'}
+  else if(risk<0.15){grade='A';desc=L.safe_area;color='#66bb6a';bg=isDarkMode?'#0a2010':'#e8f5e9'}
+  else if(risk<0.30){grade='B';desc=L.standard_area;color='#ffeb3b';bg=isDarkMode?'#2a2a00':'#fffde7'}
+  else if(risk<0.50){grade='C';desc=L.caution_area;color='#ff9800';bg=isDarkMode?'#2a1a00':'#fff3e0'}
+  else{grade='D';desc=L.alert_area;color='#f44336';bg=isDarkMode?'#2a0a0a':'#ffebee'}
+  /* Override with grid safety_rank if available */
+  if(rank){
+    var rankMap={S:{d:L.safest_area,c:'#4caf50',bg:isDarkMode?'#0a2010':'#e8f5e9'},A:{d:L.safe_area,c:'#66bb6a',bg:isDarkMode?'#0a2010':'#e8f5e9'},B:{d:L.standard_area,c:'#ffeb3b',bg:isDarkMode?'#2a2a00':'#fffde7'},C:{d:L.caution_area,c:'#ff9800',bg:isDarkMode?'#2a1a00':'#fff3e0'},D:{d:L.alert_area,c:'#f44336',bg:isDarkMode?'#2a0a0a':'#ffebee'}};
+    if(rankMap[rank]){grade=rank;desc=rankMap[rank].d;color=rankMap[rank].c;bg=rankMap[rank].bg}
+  }
+  el.textContent=grade;el.style.color=color;
+  descEl.textContent=desc;descEl.style.color=color;
+  gradeEl.style.background=bg;
+  document.getElementById('safety-grade-sub').textContent=rank?(L.grade_from_data+' safety_rank: '+rank):'risk: '+risk.toFixed(4);
+}
+
+/* === Feature C2: 周辺Safe Haven一覧テーブル === */
+function updateHavenTable(lat,lon){
+  var tbody=document.getElementById('haven-table-body');
+  var L=LANG[currentLang];
+  if(!allLoadedHavens||!allLoadedHavens.length){
+    /* Try to load haven tile for this area */
+    if(havenTileIdx){
+      var tileKey=Math.floor(lat)+'_'+Math.floor(lon);
+      if(havenTileIdx[tileKey]&&!loadedHT[tileKey]){
+        loadedHT[tileKey]=1;
+        fetch(D+'/haven_tiles/haven_'+tileKey+'.json').then(function(r){return r.json()}).then(function(hs){
+          hs.forEach(function(h){if(h.lat&&h.lon)allLoadedHavens.push(h)});
+          _renderHavenTable(lat,lon);
+        }).catch(function(){tbody.innerHTML='<tr><td colspan="4" style="color:#444;text-align:center">'+L.no_data+'</td></tr>'});
+        return;
+      }
+    }
+    tbody.innerHTML='<tr><td colspan="4" style="color:#444;text-align:center">'+L.no_data+'</td></tr>';
+    return;
+  }
+  _renderHavenTable(lat,lon);
+}
+function _renderHavenTable(lat,lon){
+  var tbody=document.getElementById('haven-table-body');
+  var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊',pharmacy_24h:'💊',fast_food_24h:'🍔'};
+  var nameMap={koban:'交番',police_station:'警察署',police_osm:'警察署',fire_station:'消防署',hospital:'病院',hospital_osm:'病院',convenience_store:'コンビニ',station:'駅',aed:'AED',pharmacy_24h:'24H薬局',fast_food_24h:'24Hファストフード'};
+  var nameMapEn={koban:'Koban',police_station:'Police Station',police_osm:'Police Station',fire_station:'Fire Station',hospital:'Hospital',hospital_osm:'Hospital',convenience_store:'Convenience Store',station:'Station',aed:'AED',pharmacy_24h:'24H Pharmacy',fast_food_24h:'24H Fast Food'};
+  /* Find all havens within 500m */
+  var nearby=[];
+  allLoadedHavens.forEach(function(h){
+    if(!h.lat||!h.lon)return;
+    var dLat=(h.lat-lat)*111320;
+    var dLon=(h.lon-lon)*111320*Math.cos(lat*Math.PI/180);
+    var dist=Math.sqrt(dLat*dLat+dLon*dLon);
+    if(dist<=500){nearby.push({h:h,dist:dist})}
+  });
+  /* Also include pharmacy data */
+  if(pharmacyData&&pharmacyData.features){
+    pharmacyData.features.forEach(function(p){
+      if(!p.lat||!p.lon)return;
+      var dLat=(p.lat-lat)*111320;
+      var dLon=(p.lon-lon)*111320*Math.cos(lat*Math.PI/180);
+      var dist=Math.sqrt(dLat*dLat+dLon*dLon);
+      if(dist<=500){nearby.push({h:{lat:p.lat,lon:p.lon,name:p.name||'24H薬局',type:'pharmacy_24h',is_24h:true},dist:dist})}
+    });
+  }
+  nearby.sort(function(a,b){return a.dist-b.dist});
+  if(nearby.length===0){
+    tbody.innerHTML='<tr><td colspan="4" style="color:#444;text-align:center">'+(currentLang==='en'?'No facilities within 500m':'500m以内に施設なし')+'</td></tr>';
+    return;
+  }
+  var html='';
+  nearby.forEach(function(n){
+    var emoji=ic[n.h.type]||'📍';
+    var nm=currentLang==='en'?(nameMapEn[n.h.type]||n.h.name||n.h.type):(n.h.name||(nameMap[n.h.type]||n.h.type));
+    var distStr=Math.round(n.dist)+'m';
+    var is24=n.h.is_24h;
+    html+='<tr><td>'+emoji+'</td><td>'+nm+'</td><td>'+distStr+'</td><td class="'+(is24?'ht-24h':'ht-no24h')+'">'+(is24?'✓':'—')+'</td></tr>';
+  });
+  tbody.innerHTML=html;
+}
+
+/* === Feature D1: English toggle === */
+function toggleLang(){
+  currentLang=currentLang==='ja'?'en':'ja';
+  localStorage.setItem('riskspace_lang',currentLang);
+  applyLang();
+}
+function applyLang(){
+  var L=LANG[currentLang];
+  /* Update data-i18n elements */
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key=el.getAttribute('data-i18n');
+    if(L[key])el.textContent=L[key];
+  });
+  /* Update specific UI texts */
+  document.getElementById('btn-heat').textContent=L.heatmap;
+  document.getElementById('btn-grid').textContent=L.grid;
+  document.getElementById('btn-haven').textContent=L.safe_haven;
+  document.getElementById('btn-eh').textContent=L.total_risk;
+  document.getElementById('btn-incident').textContent=L.crime_prob;
+  document.getElementById('btn-escape').textContent=L.escapability;
+  document.getElementById('address-input').placeholder=L.search_placeholder;
+  document.getElementById('btn-geoloc').textContent='📍 '+L.geoloc;
+  document.getElementById('btn-export').textContent=L.csv_export;
+  var jsonBtn=document.getElementById('btn-export-json');
+  if(jsonBtn)jsonBtn.textContent=L.json_export;
+  /* Section titles */
+  var titles=document.querySelectorAll('.section-title');
+  var titleMap={ja:['表示モード','時間帯シミュレーション','データレイヤー','分析モード','EH ホットスポット','凡例','動的リスク乗数','Safe Haven（最寄り施設）','周辺Safe Haven一覧（500m以内）','観光地安全カード','24時間リスク変動','不審者種別（周辺500m）','アドバイス','データエクスポート'],en:['Display Mode','Time Simulation','Data Layers','Analysis Mode','EH Hotspots','Legend','Dynamic Risk Multipliers','Safe Haven (Nearest)','Nearby Safe Havens (500m)','Tourist Area Safety','24H Risk Variation','Suspicious Types (500m)','Advice','Data Export']};
+  /* Update tourist cards */
+  renderTouristCards();
+  /* Update haven table if we have coordinates */
+  if(lastClickLatLng){
+    updateHavenTable(lastClickLatLng.lat,lastClickLatLng.lng||lastClickLatLng.lon);
+  }
+}
+
+/* === Feature D2: Tourist area safety cards === */
+function loadTouristAreas(){
+  return fetch(D+'/tourist_areas.json').then(function(r){return r.json()}).then(function(data){
+    touristAreas=data;renderTouristCards();return data;
+  }).catch(function(){touristAreas=[];return[]});
+}
+function renderTouristCards(){
+  var el=document.getElementById('tourist-card-list');
+  if(!touristAreas||!touristAreas.length){el.innerHTML='<div style="color:#444;font-size:11px">'+(currentLang==='en'?'No data':'データなし')+'</div>';return}
+  var gradeColors={S:'#4caf50',A:'#66bb6a',B:'#ffeb3b',C:'#ff9800',D:'#f44336'};
+  var html='';
+  touristAreas.forEach(function(a){
+    var name=currentLang==='en'?a.name_en:a.name_ja;
+    var subname=currentLang==='en'?a.name_ja:a.name_en;
+    var tip=currentLang==='en'?a.tips_en:a.tips_ja;
+    var rank=a.safety_rank||'B';
+    var color=gradeColors[rank]||'#ffeb3b';
+    html+='<div class="tourist-card" onclick="map.flyTo(['+a.lat+','+a.lon+'],14);setTimeout(function(){onMapClick({latlng:L.latLng('+a.lat+','+a.lon+')})},500)">';
+    html+='<div class="tc-rank" style="color:'+color+'">'+rank+'</div>';
+    html+='<div class="tc-name">'+name+'<span class="tc-name-en">'+subname+'</span></div>';
+    html+='<div class="tc-safety" style="color:'+color+'">'+(a.risk_score||0).toFixed(2)+'</div>';
+    html+='</div>';
+  });
+  el.innerHTML=html;
+}
+
+/* Load English police data */
+function loadEnglishPolice(){
+  return fetch(D+'/english_police.json').then(function(r){return r.json()}).then(function(data){
+    englishPolice=data;return data;
+  }).catch(function(){englishPolice=null;return null});
+}
+
 window.addEventListener('load',function(){
   restoreFromHash();
   showOnboardingIfNeeded();
   if(localStorage.getItem('riskspace_largetext')==='1'){toggleLargeText()}
+  if(localStorage.getItem('riskspace_lang')==='en'){currentLang='en'}
   var h=new Date().getHours();
   document.getElementById('time-slider').value=h;
   document.getElementById('time-label').textContent=String(h).padStart(2,'0')+':00 現在';
@@ -499,6 +902,11 @@ window.addEventListener('load',function(){
     onMapClick({latlng:center});
     updateOverlayMsg();
     updateHeaderSubtitle();
+    /* Load tourist areas and english police data */
+    loadTouristAreas();
+    loadEnglishPolice();
+    /* Apply language if stored */
+    if(currentLang==='en')applyLang();
   });
 });
 </script>
