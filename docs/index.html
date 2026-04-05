@@ -222,6 +222,15 @@ body.light-mode #report-box select{background:#f0f4f8;border-color:#ccc;color:#3
 #btn-presentation{padding:2px 6px;font-size:12px;background:transparent;border:1px solid #2a2a3a;color:#888;border-radius:3px;cursor:pointer}
 #btn-presentation:hover{background:#2a2a3a;color:#ddd}
 body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #btn-presentation:hover{background:#e0e0e0;color:#333}
+@media print {
+    #left-panel, #realtime-ticker, #loader, .btn, #time-slider-wrap { display: none !important; }
+    #map { flex: 1; height: 60vh !important; }
+    #right-panel { width: 100% !important; border: none !important; page-break-inside: avoid; }
+    body { flex-direction: column; height: auto; overflow: visible; }
+    .section { page-break-inside: avoid; }
+    #eh-meter { background: #fff !important; color: #000 !important; }
+    .eh-value, .breakdown-value { color: #000 !important; }
+}
 </style>
 </head>
 <body>
@@ -255,6 +264,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     <div class="status-row"><span class="status-icon">🎆</span><span class="status-label">イベント</span><span class="status-value" id="event-status"><span class="skeleton skeleton-line" style="width:50px">&nbsp;</span></span></div>
     <div class="status-row"><span class="status-icon">🕐</span><span class="status-label">現在</span><span class="status-value" id="current-time" style="color:#7eb3f0">—</span></div>
     <div class="status-row"><span class="status-icon">📅</span><span class="status-label">データ</span><span class="status-value" id="data-freshness"><span class="skeleton skeleton-line" style="width:70px">&nbsp;</span></span></div>
+    <div class="status-row"><span class="status-icon">🔄</span><span class="status-label">最終更新</span><span class="status-value" id="last-refresh-time" style="color:#7eb3f0">—</span></div>
   </div>
   <div class="section"><div class="section-title">表示モード</div><div class="btn-row">
     <button class="btn active" id="btn-heat" onclick="setDisplayMode('heat')">ヒートマップ</button>
@@ -269,7 +279,18 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     <button class="btn" onclick="setGridSubtype('車上荒らし')">車上荒らし</button>
     <button class="btn" onclick="setGridSubtype('部品盗')">部品盗</button>
     <button class="btn" onclick="setGridSubtype('オートバイ盗')">オートバイ盗</button>
-  </div></div></div>
+  </div></div>
+  <div id="haven-type-filter" style="display:none;margin-top:6px">
+    <div style="font-size:10px;color:#555;margin-bottom:4px">施設タイプ</div>
+    <div class="btn-row">
+    <button class="btn active" onclick="filterHavenType(null)">全て</button>
+    <button class="btn" onclick="filterHavenType('police')">🚔交番</button>
+    <button class="btn" onclick="filterHavenType('fire')">🚒消防</button>
+    <button class="btn" onclick="filterHavenType('hospital')">🏥病院</button>
+    <button class="btn" onclick="filterHavenType('convenience')">🏪コンビニ</button>
+    <button class="btn" onclick="filterHavenType('evacuation')">🏫避難所</button>
+    </div>
+  </div></div>
   <div class="section"><div class="section-title">時間帯シミュレーション</div><div id="time-slider-wrap">
     <input type="range" id="time-slider" min="0" max="23" value="0" oninput="onTimeSliderChange(this.value)" aria-label="時間帯シミュレーション">
     <div id="time-label">現在時刻</div>
@@ -359,6 +380,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     <div style="display:flex;gap:6px;flex-wrap:wrap">
       <button id="btn-export" onclick="exportCSV()" title="現在表示中のデータをCSVでダウンロード">CSV出力</button>
       <button id="btn-export-json" onclick="exportJSON()" title="現在表示中のデータをJSONでダウンロード" style="background:#1a3a5c;border:1px solid #4a7ab5;color:#7eb3f0;border-radius:3px;cursor:pointer;padding:5px 10px;font-size:11px">JSON出力</button>
+      <button id="btn-export-geojson" onclick="exportGeoJSON()" title="GeoJSON形式でダウンロード" style="background:#1a3a5c;border:1px solid #4a7ab5;color:#7eb3f0;border-radius:3px;cursor:pointer;padding:5px 10px;font-size:11px">GeoJSON</button>
     </div>
     <div style="font-size:10px;color:#444;margin-top:6px">地点クリック後に周辺データを出力</div>
   </div>
@@ -589,7 +611,7 @@ function updateDonutChart(c){
 
 function drawHC(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var hs=[];for(var i=0;i<24;i++)hs.push(i);var vs=hs.map(function(h){var t=TM(h);return+(Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e))).toFixed(4)});var ctx=document.getElementById('hourly-chart').getContext('2d');if(hourlyChart)hourlyChart.destroy();hourlyChart=new Chart(ctx,{type:'bar',data:{labels:hs.map(function(h){return h+'時'}),datasets:[{data:vs,backgroundColor:vs.map(function(v){return v>=.5?'#f44336':v>=.3?'#ff9800':v>=.15?'#ffeb3b':'#4caf50'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},max:1}}}})}
 function renderHS(hs,bounds){var src=hs||allHotspots||[];if(bounds){src=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()})}var el=document.getElementById('hotspot-list');if(!src||!src.length){el.innerHTML='<div style="color:#444;font-size:11px;text-align:center">データなし</div>';return}var t=src.slice(0,10),mx=t[0].expected_harm||1;el.innerHTML=t.map(function(c,i){return'<div class="hotspot-item" onclick="map.setView(['+c.lat+','+c.lon+'],14)"><span class="hotspot-rank">'+(i+1)+'</span><div class="hotspot-bar" style="width:'+((c.expected_harm||0)/mx*100).toFixed(0)+'%"></div><span class="hotspot-score">'+(c.expected_harm||0).toFixed(3)+'</span></div>'}).join('')}
-function setDisplayMode(m){displayMode=m;['heat','grid','haven','disaster'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});document.getElementById('grid-subtype-filter').style.display=m==='grid'?'block':'none';if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadPharmacyData().then(renderPharmacyMarkers);loadEvacuation()}if(m==='disaster'){loadSeismicData();loadEvacuation();if(heatLayers.disaster){heatLayers.disaster.addTo(map)}else if(heatLayerData.disaster){loadSingleHeatLayer('disaster')}}if(m!=='haven'&&m!=='disaster'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
+function setDisplayMode(m){displayMode=m;['heat','grid','haven','disaster'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});document.getElementById('grid-subtype-filter').style.display=m==='grid'?'block':'none';document.getElementById('haven-type-filter').style.display=m==='haven'?'block':'none';if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadSchools();loadPharmacyData().then(renderPharmacyMarkers);loadEvacuation()}if(m==='disaster'){loadSeismicData();loadEvacuation();if(heatLayers.disaster){heatLayers.disaster.addTo(map)}else if(heatLayerData.disaster){loadSingleHeatLayer('disaster')}}if(m!=='haven'&&m!=='disaster'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
 function setAnalysisMode(m){analysisMode=m;['eh','incident','escape'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function toggleLayer(n){var el=document.getElementById('layer-'+n);activeLayers[n]=!activeLayers[n];el.style.opacity=activeLayers[n]?'1':'.4';
 /* #4 Lazy load heatmaps on toggle */
@@ -681,6 +703,30 @@ function exportJSON(){
   var blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
   var url=URL.createObjectURL(blob);
   var a=document.createElement('a');a.href=url;a.download='riskspace_export_'+new Date().toISOString().slice(0,10)+'.json';a.click();URL.revokeObjectURL(url);
+}
+function exportGeoJSON() {
+    var features = (gridData||[]).slice(0,1000).map(function(c) {
+        var tm = TM(selectedHour);
+        var dr = Math.min(1, (c.risk_score||0)*tm.i);
+        var de = Math.min(1, (c.p_escape||0.5)*tm.e);
+        var eh = dr * ((c.avg_severity||2.5)/5) * (1-de);
+        return {
+            type: "Feature",
+            geometry: {type: "Point", coordinates: [c.lon, c.lat]},
+            properties: {
+                risk_score: c.risk_score, expected_harm: +eh.toFixed(4),
+                p_escape: c.p_escape, safety_rank: c.safety_rank,
+                haven_count_500m: c.haven_count_500m, count: c.count,
+                resolution: c.resolution, subtypes: c.subtypes
+            }
+        };
+    });
+    var geojson = {type:"FeatureCollection", crs:{type:"name",properties:{name:"EPSG:4326"}}, features: features};
+    var blob = new Blob([JSON.stringify(geojson,null,2)],{type:'application/geo+json'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'risk_space_'+new Date().toISOString().slice(0,10)+'.geojson';
+    a.click();
 }
 
 /* === Feature A1: findNearestHaven - find nearest 24H facility === */
@@ -1176,6 +1222,68 @@ function loadSeismicData(){
   }).catch(function(e){console.warn('seismic load error',e)});
 }
 
+/* P0-3: Haven facility type filter */
+var currentHavenTypeFilter=null;
+function filterHavenType(type){
+  currentHavenTypeFilter=type;
+  var btns=document.querySelectorAll('#haven-type-filter .btn');
+  btns.forEach(function(b){b.classList.toggle('active',(type===null&&b.textContent==='全て')||b.textContent.indexOf(type!=null?type:'')>=0)});
+  if(!havenLayer)return;
+  havenLayer.clearLayers();
+  loadedHT={};
+  loadHT_filtered();
+  if(window._schoolsLoaded&&type===null||type==='evacuation'){loadSchools_force()}
+}
+function loadHT_filtered(){
+  if(!havenTileIdx)return;
+  if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}
+  if(map.getZoom()<12)return;
+  var b=map.getBounds();
+  var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};
+  var typeMap={police:['koban','police_station','police_osm'],fire:['fire_station'],hospital:['hospital','hospital_osm'],convenience:['convenience_store'],evacuation:['evacuation_site']};
+  for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)
+    for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){
+      var k=la+'_'+lo;if(!havenTileIdx[k]||loadedHT[k])continue;loadedHT[k]=1;
+      (function(key){fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){
+        hs.forEach(function(h){
+          if(!h.lat||!h.lon)return;
+          if(currentHavenTypeFilter){
+            var allowed=typeMap[currentHavenTypeFilter]||[];
+            if(allowed.indexOf(h.type)<0)return;
+          }
+          allLoadedHavens.push(h);
+          var i=ic[h.type]||'📍';
+          L.marker([h.lat,h.lon],{icon:L.divIcon({html:'<div style="font-size:14px">'+i+'</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip(i+' '+(h.name||h.type)+'<br>'+(h.is_24h?'🟢 24H':'🔴 時間制限')).addTo(havenLayer);
+        });
+      }).catch(function(){loadedHT[key]=0})})(k);
+    }
+}
+
+/* P0-5: Schools data integration */
+function loadSchools(){
+  if(window._schoolsLoaded)return;
+  fetch(D+'/schools_tokyo.json').then(function(r){return r.json()}).then(function(schools){
+    window._schoolsLoaded=true;
+    schools.forEach(function(s){
+      if(!s.lat||!s.lon)return;
+      L.marker([s.lat,s.lon],{icon:L.divIcon({html:'🏫',className:'',iconSize:[16,16],iconAnchor:[8,8]})})
+        .bindTooltip('🏫 '+(s.name||'学校'))
+        .addTo(havenLayer);
+    });
+  }).catch(function(){});
+}
+function loadSchools_force(){
+  window._schoolsLoaded=false;
+  loadSchools();
+}
+
+/* P0-1: Update last refresh time display */
+function updateLastRefreshTime(){
+  var n=new Date();
+  var ts=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0');
+  document.getElementById('last-refresh-time').textContent=ts;
+}
+
 window.addEventListener('load',function(){
   restoreFromHash();
   showOnboardingIfNeeded();
@@ -1190,12 +1298,24 @@ window.addEventListener('load',function(){
     onMapClick({latlng:center});
     updateOverlayMsg();
     updateHeaderSubtitle();
+    updateLastRefreshTime();
     /* Load tourist areas and english police data */
     loadTouristAreas();
     loadEnglishPolice();
     /* Apply language if stored */
     if(currentLang==='en')applyLang();
   });
+  // Auto-refresh realtime data every 5 minutes
+  setInterval(function() {
+    fetch(D+'/realtime_slim.json').then(function(r){return r.json()}).then(function(data){
+        loadRT(data);
+        updateLastRefreshTime();
+        console.log('Realtime refreshed: '+data.length+' events');
+    }).catch(function(){});
+    fetch(D+'/amedas_current.json').then(function(r){return r.json()}).then(function(data){
+        weatherData=data; updateWS();
+    }).catch(function(){});
+  }, 300000); // 5 minutes
 });
 </script>
 </body>

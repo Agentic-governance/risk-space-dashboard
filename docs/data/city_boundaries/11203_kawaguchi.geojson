@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "name": "川口市",
+  "source": "geoshape.ex.nii.ac.jp/city/geojson/20240101/11/11203",
+  "note": "Centroid-based placeholder. Replace with full boundary from geoshape when server is available.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "埼玉県",
+        "N03_003": "川口市",
+        "N03_007": "11203",
+        "code": "11203",
+        "population": 594274,
+        "area_km2": 61.95
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.724,
+          35.8078
+        ]
+      }
+    }
+  ]
+}

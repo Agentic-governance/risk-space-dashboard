@@ -1,0 +1,72 @@
+[
+  {
+    "type": "声かけ",
+    "type_en": "Verbal approach",
+    "severity": 2,
+    "advice_ja": "見知らぬ人の声かけには応じない。すぐにその場を離れて人の多い場所に移動してください。",
+    "advice_en": "Do not engage with strangers who approach you. Move quickly to a crowded area or nearby shop."
+  },
+  {
+    "type": "痴漢",
+    "type_en": "Groping",
+    "severity": 4,
+    "advice_ja": "大声で「やめてください」と叫び、周囲に助けを求めてください。駅員や警察にすぐ通報を。証拠保全のため、可能であれば相手の特徴を記憶してください。",
+    "advice_en": "Shout loudly for help and alert those around you. Report immediately to station staff or police. Try to remember the perpetrator's appearance for evidence."
+  },
+  {
+    "type": "ひったくり",
+    "type_en": "Bag snatching",
+    "severity": 3,
+    "advice_ja": "カバンは車道と反対側に持ちましょう。自転車のかごにはネットをかけてください。被害に遭った場合はすぐに110番通報を。",
+    "advice_en": "Carry your bag on the side away from the road. Use a basket net on bicycles. Call 110 immediately if victimized."
+  },
+  {
+    "type": "不審者",
+    "type_en": "Suspicious person",
+    "severity": 2,
+    "advice_ja": "近づかず、安全な距離を保ってください。コンビニや交番など明るい場所に避難し、110番に通報してください。",
+    "advice_en": "Keep a safe distance. Take refuge in a convenience store, police box, or well-lit area and call 110."
+  },
+  {
+    "type": "暴行",
+    "type_en": "Assault",
+    "severity": 4,
+    "advice_ja": "身の安全を最優先にしてください。逃げられる場合はすぐに逃げ、大声で助けを呼んでください。110番・119番に通報を。",
+    "advice_en": "Prioritize your safety. Flee if possible and shout for help. Call 110 (police) or 119 (ambulance) immediately."
+  },
+  {
+    "type": "盗撮",
+    "type_en": "Voyeurism",
+    "severity": 3,
+    "advice_ja": "不審なカメラやスマートフォンに気づいたら、その場を離れて駅員や警察に通報してください。証拠として撮影者の特徴を記録してください。",
+    "advice_en": "If you notice a suspicious camera or phone, leave the area and report to station staff or police. Note the perpetrator's appearance as evidence."
+  },
+  {
+    "type": "空き巣",
+    "type_en": "Burglary",
+    "severity": 3,
+    "advice_ja": "外出時は必ず施錠し、窓の補助錠も活用してください。長期不在時はタイマー照明を使い、新聞・郵便を止めてください。",
+    "advice_en": "Always lock doors and use supplementary window locks when going out. For extended absences, use timer lights and pause newspaper/mail delivery."
+  },
+  {
+    "type": "車上荒らし",
+    "type_en": "Car break-in",
+    "severity": 2,
+    "advice_ja": "車内に貴重品を置かないでください。駐車場は明るく人目のある場所を選びましょう。被害に遭ったら警察に届け出てください。",
+    "advice_en": "Never leave valuables visible in your car. Choose well-lit, visible parking areas. Report to police if victimized."
+  },
+  {
+    "type": "特殊詐欺",
+    "type_en": "Phone scam",
+    "severity": 3,
+    "advice_ja": "「お金を振り込んで」という電話は詐欺です。一度電話を切り、家族や警察（#9110）に相談してください。ATMで指示に従わないでください。",
+    "advice_en": "Any call asking you to transfer money is a scam. Hang up and consult family or police (#9110). Never follow instructions at an ATM."
+  },
+  {
+    "type": "クマ出没",
+    "type_en": "Bear sighting",
+    "severity": 4,
+    "advice_ja": "クマに遭遇したら、慌てず静かに後退してください。走って逃げると追いかけられます。鈴やラジオで存在を知らせましょう。ゴミの放置は厳禁です。",
+    "advice_en": "If you encounter a bear, stay calm and back away slowly. Running may trigger pursuit. Use bells or a radio to announce your presence. Never leave garbage outdoors."
+  }
+]

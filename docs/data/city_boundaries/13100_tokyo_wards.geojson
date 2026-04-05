@@ -1,0 +1,376 @@
+{
+  "type": "FeatureCollection",
+  "name": "東京都特別区部",
+  "source": "geoshape.ex.nii.ac.jp/city/geojson/20240101/13/13100",
+  "note": "Centroid-based placeholder. Replace with full boundary from geoshape when server is available.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "千代田区",
+        "N03_007": "13101",
+        "code": "13101"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7536,
+          "35.6938"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "中央区",
+        "N03_007": "13102",
+        "code": "13102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7741,
+          "35.6706"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "港区",
+        "N03_007": "13103",
+        "code": "13103"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7514,
+          "35.6581"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "新宿区",
+        "N03_007": "13104",
+        "code": "13104"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7036,
+          "35.6938"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "文京区",
+        "N03_007": "13105",
+        "code": "13105"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7521,
+          "35.7081"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "台東区",
+        "N03_007": "13106",
+        "code": "13106"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7802,
+          "35.7126"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "墨田区",
+        "N03_007": "13107",
+        "code": "13107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8014,
+          "35.7107"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "江東区",
+        "N03_007": "13108",
+        "code": "13108"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8171,
+          "35.6729"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "品川区",
+        "N03_007": "13109",
+        "code": "13109"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.73,
+          "35.6092"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "目黒区",
+        "N03_007": "13110",
+        "code": "13110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6983,
+          "35.6413"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "大田区",
+        "N03_007": "13111",
+        "code": "13111"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7161,
+          "35.5613"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "世田谷区",
+        "N03_007": "13112",
+        "code": "13112"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6532,
+          "35.6461"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "渋谷区",
+        "N03_007": "13113",
+        "code": "13113"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6982,
+          "35.6636"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "中野区",
+        "N03_007": "13114",
+        "code": "13114"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6639,
+          "35.7078"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "杉並区",
+        "N03_007": "13115",
+        "code": "13115"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6367,
+          "35.6994"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "豊島区",
+        "N03_007": "13116",
+        "code": "13116"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7162,
+          "35.7263"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "北区",
+        "N03_007": "13117",
+        "code": "13117"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7508,
+          "35.7528"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "荒川区",
+        "N03_007": "13118",
+        "code": "13118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.7835,
+          "35.7360"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "板橋区",
+        "N03_007": "13119",
+        "code": "13119"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.709,
+          "35.7518"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "練馬区",
+        "N03_007": "13120",
+        "code": "13120"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.6518,
+          "35.7355"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "足立区",
+        "N03_007": "13121",
+        "code": "13121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8041,
+          "35.7748"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "葛飾区",
+        "N03_007": "13122",
+        "code": "13122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8476,
+          "35.7432"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "N03_001": "東京都",
+        "N03_003": "江戸川区",
+        "N03_007": "13123",
+        "code": "13123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.8685,
+          "35.7067"
+        ]
+      }
+    }
+  ]
+}
