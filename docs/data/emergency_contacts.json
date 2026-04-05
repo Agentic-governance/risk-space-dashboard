@@ -1,0 +1,109 @@
+{
+  "updated_at": "2026-04-05",
+  "country": "JP",
+  "disclaimer": "本データは参考情報です。緊急時は必ず公式窓口に連絡してください。番号は2026年4月時点のものです。",
+  "police": {
+    "number": "110",
+    "name_ja": "警察（110番）",
+    "name_en": "Police emergency",
+    "hours": "24H",
+    "template_ja": "110番警察です。『事件ですか、事故ですか？』と聞かれたら『事件です』または『事故です』と答える。\n次に『どこで？／何が？／いつ？／誰が？』の順で落ち着いて答える。場所は住所・目印（コンビニ名・交差点名など）を伝えると確実。",
+    "template_en": "Call 110 for police. When asked 'jiken desu ka, jiko desu ka?' (incident or accident?), answer 'jiken desu' (incident) or 'jiko desu' (accident). Then answer in order: where / what / when / who. Use a landmark (convenience store, intersection name) to describe the location.",
+    "when_to_use": "犯罪被害・暴行・ストーカー・ひったくり・不審者遭遇等の緊急事態",
+    "when_to_use_en": "Crime victimisation, assault, stalking, snatching, suspicious person encounter, and other emergencies"
+  },
+  "ambulance": {
+    "number": "119",
+    "name_ja": "救急・消防（119番）",
+    "name_en": "Ambulance / Fire emergency",
+    "hours": "24H",
+    "template_ja": "119番です。『火事ですか、救急ですか？』と聞かれたら『救急です』または『火事です』と答える。\n次に住所、症状／火災の状況、あなたの名前と電話番号の順で答える。",
+    "template_en": "Call 119. Answer 'kyuukyuu desu' (ambulance) or 'kaji desu' (fire). Then give: address, symptoms or fire status, your name and phone number.",
+    "when_to_use": "急病・大けが・意識がない・呼吸していない・大量出血・火災",
+    "when_to_use_en": "Sudden illness, severe injury, unconscious, not breathing, heavy bleeding, fire"
+  },
+  "police_consult": {
+    "number": "#9110",
+    "name_ja": "警察相談専用電話（#9110）",
+    "name_en": "Police non-emergency consultation",
+    "hours": "平日 8:30-17:15（都道府県により24H）",
+    "description": "緊急ではないが警察に相談したいこと（ストーカー・DV・悪質商法・近隣トラブル等）",
+    "description_en": "Non-emergency consultation with police (stalking, DV, scams, neighbourhood trouble, etc.)"
+  },
+  "medical_consult": {
+    "number": "#7119",
+    "name_ja": "救急安心センター（#7119）",
+    "name_en": "Emergency medical consultation",
+    "hours": "24H（対応地域のみ）",
+    "description": "救急車を呼ぶべきか迷ったとき。医師・看護師が判断を助ける。"
+  },
+  "child_consult": {
+    "number": "189",
+    "name_ja": "児童相談所虐待対応ダイヤル（いちはやく）",
+    "hours": "24H",
+    "description": "子どもの虐待の疑い・子ども自身のSOS"
+  },
+  "crisis_centers": [
+    {
+      "name": "東京都性犯罪・性暴力被害者ワンストップ支援センター（SARC東京）",
+      "tel": "#8891",
+      "hours": "24H",
+      "category": "性犯罪・性暴力",
+      "coverage": "全国（最寄りセンターへ接続）"
+    },
+    {
+      "name": "DV相談ナビ",
+      "tel": "#8008",
+      "hours": "最寄り窓口の開設時間",
+      "category": "配偶者・パートナーからの暴力",
+      "coverage": "全国"
+    },
+    {
+      "name": "DV相談＋（プラス）",
+      "tel": "0120-279-889",
+      "hours": "24H",
+      "category": "DV（電話・メール・チャット対応）",
+      "coverage": "全国"
+    },
+    {
+      "name": "いのちの電話",
+      "tel": "0570-783-556",
+      "hours": "10:00-22:00（毎日）",
+      "category": "自殺予防・こころの相談",
+      "coverage": "全国"
+    },
+    {
+      "name": "よりそいホットライン",
+      "tel": "0120-279-338",
+      "hours": "24H",
+      "category": "暮らし全般・孤立・女性・外国語対応",
+      "coverage": "全国"
+    },
+    {
+      "name": "チャイルドライン",
+      "tel": "0120-99-7777",
+      "hours": "16:00-21:00（毎日、12/29-1/3除く）",
+      "category": "18歳までの子ども専用",
+      "coverage": "全国"
+    },
+    {
+      "name": "ストーカー相談（警視庁 生活安全課）",
+      "tel": "03-3580-2222",
+      "hours": "24H",
+      "category": "ストーカー被害",
+      "coverage": "東京都"
+    }
+  ],
+  "foreign_language": {
+    "tokyo_english_lifeline_til": {
+      "tel": "03-5774-0992",
+      "hours": "9:00-23:00",
+      "languages": ["en"]
+    },
+    "ajhc_medical_info": {
+      "tel": "03-5285-8088",
+      "hours": "平日 9-20, 土日祝 9-17",
+      "languages": ["en", "zh", "ko", "es", "th", "vi"]
+    }
+  }
+}
