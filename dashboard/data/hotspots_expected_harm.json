@@ -1,1 +1,422 @@
-[{"cell_id": "4375_14392_0.01", "center": [143.925, 43.755], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0691, "expected_harm": 0.08946, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 43.755, "lon": 143.925}, {"cell_id": "4364_14194_0.01", "center": [141.945, 43.645], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0691, "expected_harm": 0.08946, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 43.645, "lon": 141.945}, {"cell_id": "893_2856_0.05", "center": [142.825, 44.675], "risk_score": 0.48, "severity_score": 1.0, "p_escape": 0.0691, "expected_harm": 0.089367, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 44.675, "lon": 142.825}, {"cell_id": "854_2808_0.05", "center": [140.425, 42.725], "risk_score": 0.48, "severity_score": 1.0, "p_escape": 0.0691, "expected_harm": 0.089367, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 42.725, "lon": 140.425}, {"cell_id": "854_2816_0.05", "center": [140.825, 42.725], "risk_score": 0.48, "severity_score": 1.0, "p_escape": 0.0691, "expected_harm": 0.089367, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 42.725, "lon": 140.825}, {"cell_id": "8133_28113_0.005", "center": [140.5675, 40.6675], "risk_score": 0.4818, "severity_score": 1.0, "p_escape": 0.0764, "expected_harm": 0.089002, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 40.6675, "lon": 140.5675}, {"cell_id": "14601_55246_0.0025", "center": [138.11625, 36.50375], "risk_score": 0.4872, "severity_score": 1.0, "p_escape": 0.0873, "expected_harm": 0.088936, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 36.50375, "lon": 138.11625}, {"cell_id": "4022_14126_0.01", "center": [141.265, 40.225], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0764, "expected_harm": 0.088761, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 40.225, "lon": 141.265}, {"cell_id": "4079_14119_0.01", "center": [141.195, 40.795], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0764, "expected_harm": 0.088761, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 40.795, "lon": 141.195}, {"cell_id": "4042_14144_0.01", "center": [141.445, 40.425], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0764, "expected_harm": 0.088761, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 40.425, "lon": 141.445}, {"cell_id": "7896_28104_0.005", "center": [140.5225, 39.4825], "risk_score": 0.4818, "severity_score": 1.0, "p_escape": 0.0818, "expected_harm": 0.088476, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 39.4825, "lon": 140.5225}, {"cell_id": "3952_14058_0.01", "center": [140.585, 39.525], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0818, "expected_harm": 0.088237, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 39.525, "lon": 140.585}, {"cell_id": "8034_28003_0.005", "center": [140.0175, 40.1725], "risk_score": 0.4818, "severity_score": 1.0, "p_escape": 0.0855, "expected_harm": 0.088126, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 40.1725, "lon": 140.0175}, {"cell_id": "3450_13318_0.01", "center": [133.185, 34.505], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0873, "expected_harm": 0.087713, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 34.505, "lon": 133.185}, {"cell_id": "3526_13263_0.01", "center": [132.635, 35.265], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0873, "expected_harm": 0.087713, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 35.265, "lon": 132.635}, {"cell_id": "3630_13797_0.01", "center": [137.975, 36.305], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0873, "expected_harm": 0.087713, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 36.305, "lon": 137.975}, {"cell_id": "14613_55639_0.0025", "center": [139.09875, 36.53375], "risk_score": 0.4872, "severity_score": 1.0, "p_escape": 0.1018, "expected_harm": 0.087519, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 36.53375, "lon": 139.09875}, {"cell_id": "3719_13898_0.01", "center": [138.985, 37.195], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0909, "expected_harm": 0.087364, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 37.195, "lon": 138.985}, {"cell_id": "3156_13096_0.01", "center": [130.965, 31.565], "risk_score": 0.4805, "severity_score": 1.0, "p_escape": 0.0909, "expected_harm": 0.087364, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 31.565, "lon": 130.965}, {"cell_id": "7407_28162_0.005", "center": [140.8125, 37.0375], "risk_score": 0.4818, "severity_score": 1.0, "p_escape": 0.0945, "expected_harm": 0.08725, "haven_count_500m": 0, "haven_count_2km": 0, "nearest_haven_dist": null, "nearest_haven_type": null, "lat": 37.0375, "lon": 140.8125}]
+[
+  {
+    "lat": 26.40625,
+    "lon": 127.84375,
+    "count": 2,
+    "risk_score": 0.4944,
+    "expected_harm": 0.2472,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 2
+    },
+    "subtypes": {
+      "collision": 2
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 35.69125,
+    "lon": 139.32125,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 35.67125,
+    "lon": 139.30625,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 35.77125,
+    "lon": 139.51125,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 35.64375,
+    "lon": 139.37375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 35.69125,
+    "lon": 139.26125,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 35.58875,
+    "lon": 139.40125,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 43.02125,
+    "lon": 141.35375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 41.81875,
+    "lon": 140.70875,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 43.16875,
+    "lon": 140.98875,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 39.62375,
+    "lon": 140.31375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 40.26375,
+    "lon": 140.57875,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 39.75375,
+    "lon": 140.08375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.43625,
+    "lon": 140.52625,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.07875,
+    "lon": 140.24375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.18125,
+    "lon": 139.72875,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.33125,
+    "lon": 140.28375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.29125,
+    "lon": 140.25375,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.05375,
+    "lon": 140.12125,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.20625,
+    "lon": 139.74625,
+    "count": 1,
+    "risk_score": 0.4872,
+    "expected_harm": 0.2436,
+    "p_escape": 0.5,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 1
+    },
+    "subtypes": {
+      "collision": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  }
+]
