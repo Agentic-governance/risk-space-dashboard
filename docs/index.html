@@ -44,6 +44,26 @@ body.light-mode #address-input{background:#e8eef4;border-color:#ccc;color:#333}
 body.light-mode #address-search{background:#f0f4f8;border-color:#ddd}
 body.light-mode .fushinsha-filter-btn{background:#e8eef4;border-color:#ccc;color:#666}
 body.light-mode .fushinsha-filter-btn.active{background:#c0d8f0;border-color:#5a9ad5;color:#2a6cb5}
+#muni-select-wrap{padding:4px 14px;border-bottom:1px solid #2a2a3a;background:#0d1117}
+#muni-select{width:100%;padding:5px 8px;font-size:11px;background:#1e1e2e;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;outline:none;cursor:pointer}
+#muni-select:focus{border-color:#4a7ab5}
+body.light-mode #muni-select-wrap{background:#f0f4f8}
+body.light-mode #muni-select{background:#e8eef4;border-color:#ccc;color:#333}
+body.large-text #muni-select{font-size:14px!important;padding:10px 12px!important;min-height:44px}
+#school-radius-filter{padding:4px 14px;border-bottom:1px solid #1e1e2e}
+.school-radius-btn{padding:2px 6px;font-size:10px;background:#1e1e2e;border:1px solid #2a2a3a;color:#aaa;border-radius:2px;cursor:pointer;margin:0 2px}
+.school-radius-btn:hover{background:#2a2a3a;color:#ddd}
+.school-radius-btn.active{background:#1a3a5c;border-color:#4a7ab5;color:#7eb3f0}
+body.light-mode .school-radius-btn{background:#e8eef4;border-color:#ccc;color:#666}
+body.light-mode .school-radius-btn.active{background:#c0d8f0;border-color:#5a9ad5;color:#2a6cb5}
+#time-compare-panel{padding:8px 14px;border-bottom:1px solid #2a2a3a;display:none;font-size:11px}
+#time-compare-panel .tc-row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;border-bottom:1px solid #1a1a2a}
+#time-compare-panel .tc-label{color:#aaa}
+#time-compare-panel .tc-eh{font-weight:700;font-size:13px}
+body.light-mode #time-compare-panel .tc-label{color:#666}
+body.light-mode #time-compare-panel{border-color:#eee}
+#data-freshness-banner{position:absolute;top:0;left:0;right:0;background:#ff9800;color:#000;font-size:13px;font-weight:600;padding:8px 16px;text-align:center;z-index:8999;display:none}
+#school-radius-count{padding:6px 14px;border-bottom:1px solid #2a2a3a;font-size:12px;display:none;color:#ff9800;font-weight:600}
 body.light-mode #time-label{color:#2a6cb5}
 body.light-mode .hotspot-score{color:#d32f2f}
 body.light-mode .hotspot-rank{color:#888}
@@ -259,6 +279,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     <div class="subtitle" id="header-subtitle">Dynamic Risk Probability Field</div>
   </div>
   <div id="address-search"><input id="address-input" type="text" placeholder="住所を検索（例：東京駅）" aria-label="住所検索" /><button id="btn-geoloc" onclick="geolocateUser()">📍 現在地</button></div>
+  <div id="muni-select-wrap"><select id="muni-select" onchange="onMuniSelect(this.value)" aria-label="自治体選択"><option value="">-- 自治体を選択 --</option><option value="35.8078,139.7242">川口市</option><option value="35.6461,139.6530">世田谷区</option><option value="35.6938,139.7035">新宿区</option><option value="35.6640,139.6982">渋谷区</option><option value="34.6937,135.5023">大阪市</option><option value="35.4437,139.6380">横浜市</option><option value="35.1815,136.9066">名古屋市</option><option value="43.0621,141.3544">札幌市</option><option value="33.5904,130.4017">福岡市</option><option value="38.2682,140.8694">仙台市</option></select></div>
   <div id="status-bar">
     <div class="status-row"><span class="status-icon" id="weather-icon">🌤</span><span class="status-label">天気</span><span class="status-value" id="weather-status"><span class="skeleton skeleton-line" style="width:50px">&nbsp;</span></span></div>
     <div class="status-row"><span class="status-icon">🚆</span><span class="status-label">交通</span><span class="status-value" id="transit-status"><span class="skeleton skeleton-line" style="width:50px">&nbsp;</span></span></div>
@@ -314,12 +335,13 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
         <span class="layer-count" id="cnt-seismic">—</span>
     </div>
     <div id="fushinsha-filter"><div style="font-size:10px;color:#555;margin-bottom:4px" id="fushinsha-filter-label">不審者フィルター</div><button class="fushinsha-filter-btn active" data-type="all" onclick="filterFushinsha('all')">全て</button><button class="fushinsha-filter-btn" data-type="不審者" onclick="filterFushinsha('不審者')">不審者</button><button class="fushinsha-filter-btn" data-type="声かけ" onclick="filterFushinsha('声かけ')">声かけ</button><button class="fushinsha-filter-btn" data-type="痴漢" onclick="filterFushinsha('痴漢')">痴漢</button><button class="fushinsha-filter-btn" data-type="暴行" onclick="filterFushinsha('暴行')">暴行</button><button class="fushinsha-filter-btn" data-type="窃盗" onclick="filterFushinsha('窃盗')">窃盗</button></div>
+    <div id="school-radius-filter"><div style="font-size:10px;color:#555;margin-bottom:4px">🏫 学校周辺フィルター</div><button class="school-radius-btn" onclick="setSchoolRadius(500)">500m</button><button class="school-radius-btn" onclick="setSchoolRadius(1000)">1km</button><button class="school-radius-btn active" onclick="setSchoolRadius(0)">OFF</button></div>
   </div>
   <div class="section"><div class="section-title">分析モード</div><div class="btn-row">
     <button class="btn active" id="btn-eh" onclick="setAnalysisMode('eh')">総合危険度</button>
     <button class="btn" id="btn-incident" onclick="setAnalysisMode('incident')">犯罪発生確率</button>
     <button class="btn" id="btn-escape" onclick="setAnalysisMode('escape')">逃げやすさ</button>
-  </div><div style="font-size:10px;color:#444;margin-top:6px">総合危険度 = 犯罪確率 × 重大度 × (1-逃げやすさ)</div></div>
+  </div><div style="font-size:10px;color:#444;margin-top:6px">総合危険度 = 犯罪確率 × 重大度 × (1-逃げやすさ)</div><div style="margin-top:6px"><button class="btn" id="btn-time-compare" onclick="toggleTimeCompare()">⏰ 時間帯比較</button></div></div>
   <div class="section"><div class="section-title">EH ホットスポット</div><div id="hotspot-list"><div style="color:#444;font-size:11px;text-align:center;padding:10px">読み込み中...</div></div></div>
   <div id="legend"><div class="section-title">凡例</div>
     <div class="legend-row"><div class="legend-color" style="background:#f44336"></div><span>0.5+ 最高危険</span></div>
@@ -335,7 +357,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     </div>
   </div>
 </div>
-<div id="map"><div id="error-banner"></div><div id="map-container"></div>
+<div id="map"><div id="error-banner"></div><div id="data-freshness-banner"></div><div id="map-container"></div>
   <div id="map-overlay-msg"></div>
   <div id="tile-loading">読み込み中...</div>
   <div id="realtime-ticker"><span class="ticker-badge">LIVE</span> 不審者情報 30分間隔更新</div>
@@ -356,6 +378,8 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
   <div style="padding:6px 14px;border-bottom:1px solid #2a2a3a"><button id="btn-nearest-haven" onclick="onFindNearestHaven()">🏪 最寄りの安全な場所を探す</button></div>
   <div id="nearest-haven-result"><div class="haven-result-name"></div><div class="haven-result-detail"></div></div>
   <div id="fushinsha-500m-summary"><div class="summary-title">周辺500m 不審者サマリー</div><div class="summary-counts"></div></div>
+  <div id="school-radius-count"></div>
+  <div id="time-compare-panel"></div>
   <div id="eh-meter"><div class="eh-value" id="eh-value" style="color:#666"><span class="skeleton skeleton-block" style="width:80px">&nbsp;</span></div><div class="eh-label">総合危険度 (EH値)</div><div class="eh-formula" id="eh-formula">地図上の地点をクリック</div><div style="margin-top:8px;display:flex;gap:12px;justify-content:center"><div style="text-align:center"><div id="risk-value" style="font-size:20px;font-weight:700;color:#555"><span class="skeleton skeleton-line">&nbsp;</span></div><div style="font-size:9px;color:#555">リスクスコア</div></div><div style="text-align:center"><div id="escape-value" style="font-size:20px;font-weight:700;color:#555"><span class="skeleton skeleton-line">&nbsp;</span></div><div style="font-size:9px;color:#555">逃げやすさ</div></div><div style="text-align:center"><div id="fushinsha-value" style="font-size:20px;font-weight:700;color:#555">0</div><div style="font-size:9px;color:#555">不審者(周辺)</div></div></div></div>
   <div class="section"><div class="section-title">動的リスク乗数</div>
     <div class="breakdown-row"><span class="breakdown-icon">🎯</span><span class="breakdown-label">犯罪発生確率</span><span class="breakdown-value" id="p-incident"><span class="skeleton skeleton-line">&nbsp;</span></span></div>
@@ -559,7 +583,7 @@ function showQR(){
 async function loadAll(){SL('グリッドデータ読み込み中...');try{
 var r=await Promise.allSettled([fetch(D+'/grid_risk.json').then(function(r){return r.json()}),fetch(D+'/hotspots_expected_harm.json').then(function(r){return r.json()}).catch(function(){return[]}),fetch(D+'/amedas_current.json').then(function(r){return r.json()}).catch(function(){return null}),fetch(D+'/tiles/index.json').then(function(r){return r.json()}).catch(function(){return null}),fetch(D+'/haven_tiles/index.json').then(function(r){return r.json()}).catch(function(){return null}),fetch(D+'/realtime_slim.json').then(function(r){return r.json()}).catch(function(){return[]}),fetch(D+'/all_events.json').then(function(r){return r.json()}).catch(function(){return{}}),fetch(D+'/transit_disruptions.json').then(function(r){return r.json()}).catch(function(){return{disruptions:[]}}),fetch(D+'/summary.json').then(function(r){return r.json()}).catch(function(){return null})]);
 gridData=r[0].status==='fulfilled'?r[0].value:[];var hs=r[1].status==='fulfilled'?r[1].value:[];weatherData=r[2].status==='fulfilled'?r[2].value:null;gridTileIdx=r[3].status==='fulfilled'?r[3].value:null;havenTileIdx=r[4].status==='fulfilled'?r[4].value:null;var rt=r[5].status==='fulfilled'?r[5].value:[];var evtData=r[6].status==='fulfilled'?r[6].value:{};var transitData=r[7].status==='fulfilled'?r[7].value:{disruptions:[]};summaryData=r[8].status==='fulfilled'?r[8].value:null;
-SL('ヒートマップ生成中...');await loadHM();allHotspots=hs;renderHS(hs);updateWS();loadRT(rt);loadEvents(evtData);loadTransit(transitData);updateDataFreshness();updateHeaderSubtitle();loadUniPresets();fetch(D+'/crime_safety_guide.json').then(function(r){return r.json()}).then(function(d){safetyGuide=d}).catch(function(){})}catch(e){console.error(e);showErrorBanner('⚠ データ読み込みエラー - リロードしてください')}document.getElementById('loader').style.display='none'}
+SL('ヒートマップ生成中...');await loadHM();allHotspots=hs;renderHS(hs);updateWS();loadRT(rt);loadEvents(evtData);loadTransit(transitData);updateDataFreshness();updateHeaderSubtitle();checkDataFreshnessBanner();loadUniPresets();fetch(D+'/crime_safety_guide.json').then(function(r){return r.json()}).then(function(d){safetyGuide=d}).catch(function(){})}catch(e){console.error(e);showErrorBanner('⚠ データ読み込みエラー - リロードしてください')}document.getElementById('loader').style.display='none'}
 
 /* #4 Lazy load heatmaps - only load the active layer at startup */
 async function loadHM(){
@@ -600,7 +624,12 @@ function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLay
 function updateWS(){if(!weatherData||!Array.isArray(weatherData))return;var mp=0,mw=0;weatherData.forEach(function(s){if(s.precip10m)mp=Math.max(mp,s.precip10m);if(s.wind_ms)mw=Math.max(mw,s.wind_ms)});var se=document.getElementById('weather-status'),ie=document.getElementById('weather-icon');if(mp>=20){se.textContent='豪雨 '+mp+'mm';se.className='status-value alert';ie.textContent='⛈'}else if(mp>=5){se.textContent='雨 '+mp+'mm';se.className='status-value warn';ie.textContent='🌧'}else if(mw>=15){se.textContent='強風 '+mw+'m/s';se.className='status-value warn';ie.textContent='🌬'}else{se.textContent='概ね晴れ';se.className='status-value ok';ie.textContent='☀️'}var wp=weatherData.filter(function(s){return s.incident_multiplier>1.1}).map(function(s){return[s.lat,s.lon,(s.incident_multiplier-1)/1.5]});if(wp.length>0){heatLayers.weather=L.heatLayer(wp,{radius:30,blur:20,maxZoom:10,gradient:{0:'#03a9f4',.5:'#00bcd4',1:'#0288d1'}});if(activeLayers.weather)heatLayers.weather.addTo(map);document.getElementById('cnt-weather').textContent=wp.length+'局'}}
 function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map);
 /* P1-5: Reverse geocode for municipality name */
-fetch('https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat='+lat+'&lon='+lng).then(function(r){return r.json()}).then(function(data){var muniName=data.results?(data.results.mupiName||'')+(data.results.lv01Nm||''):'';document.getElementById('click-location-name').textContent=muniName}).catch(function(){})}
+fetch('https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat='+lat+'&lon='+lng).then(function(r){return r.json()}).then(function(data){var muniName=data.results?(data.results.mupiName||'')+(data.results.lv01Nm||''):'';document.getElementById('click-location-name').textContent=muniName}).catch(function(){});
+/* Update time comparison panel if visible */
+if(timeCompareVisible)updateTimeCompare();
+/* Update school radius if active */
+if(schoolRadiusFilter>0&&!selectedSchoolLatLng){selectedSchoolLatLng={lat:lat,lon:lng};drawSchoolRadius()}
+else if(schoolRadiusFilter>0&&selectedSchoolLatLng){drawSchoolRadius()}}
 
 function updateRP(c){var h=selectedHour,tm=TM(h);var wI=1,wE=1;if(weatherData&&Array.isArray(weatherData)){var md=1/0,nr=null;weatherData.forEach(function(s){if(!s.lat)return;var d=Math.hypot(s.lat-c._lat,s.lon-c._lon);if(d<md){md=d;nr=s}});if(nr){wI=nr.incident_multiplier||1;wE=nr.escape_multiplier||1}}var br=c.risk_score||0,bp=c.p_escape||.5,sv=c.avg_severity||2.5;var fushCount=0;if(realtimeMarkers&&realtimeMarkers.length){realtimeMarkers.forEach(function(m){if(m.lat&&m.lon&&Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.02)fushCount++})}var dr=Math.min(1,br*wI*tm.i+fushCount*0.05),de=Math.min(1,bp*wE*tm.e),eh=dr*(sv/5)*(1-de);
 
@@ -714,21 +743,51 @@ function toggleLargeText(){
   localStorage.setItem('riskspace_largetext',isLargeText?'1':'0');
 }
 
-/* #22 CSV export for insurance/business users */
+/* #22 CSV export for municipal officials & schools (Enhanced) */
 function exportCSV(){
-  var rows=[['緯度','経度','安全レベル','リスクスコア','逃げやすさ','500m以内施設数','最寄り施設種別','犯罪件数','解像度']];
   var src=gridData.concat(allTileCells);
   if(!src.length){alert('エクスポートするデータがありません');return}
   var bounds=map.getBounds();
   var visible=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()});
   if(!visible.length){alert('表示範囲内にデータがありません');return}
+  /* Collect dynamic subtype columns */
+  var stKeys={};visible.forEach(function(c){if(c.subtypes){Object.keys(c.subtypes).forEach(function(k){stKeys[k]=1})}});
+  var subtypeCols=Object.keys(stKeys).sort();
+  var headers=['緯度','経度','町丁目名','安全ランク','総合危険度(EH)','リスクスコア','逃げやすさ','重大度','500m以内施設数','最寄り施設種別','犯罪件数'];
+  headers=headers.concat(subtypeCols.map(function(k){return '犯罪種別_'+k}));
+  headers=headers.concat(['不審者周辺件数','深夜EH(22-4時)','昼間EH(10-16時)','時間帯リスク変動','解像度']);
+  var rows=[headers];
+  var locName=document.getElementById('click-location-name').textContent||'';
   visible.forEach(function(c){
     var tm=TM(selectedHour);
-    var dr=Math.min(1,(c.risk_score||0)*tm.i);
-    var de=Math.min(1,(c.p_escape||.5)*tm.e);
-    var eh=dr*((c.avg_severity||2.5)/5)*(1-de);
-    var safetyLevel=eh<0.15?'安全':eh<0.35?'注意':'危険';
-    rows.push([c.lat,c.lon,safetyLevel,(c.risk_score||0).toFixed(6),de.toFixed(4),c.haven_count_500m||0,c.nearest_haven_type||'',c.count||0,c.resolution||'']);
+    var br=c.risk_score||0;
+    var bp=c.p_escape||.5;
+    var sv=(c.avg_severity||2.5)/5;
+    var dr=Math.min(1,br*tm.i);
+    var de=Math.min(1,bp*tm.e);
+    var eh=dr*sv*(1-de);
+    /* Safety rank */
+    var rank=c.safety_rank||(br<0.05?'S':br<0.15?'A':br<0.30?'B':br<0.50?'C':'D');
+    /* Fushinsha nearby count */
+    var fushCount=0;
+    if(realtimeMarkers&&realtimeMarkers.length){
+      realtimeMarkers.forEach(function(m){
+        if(m.lat&&m.lon&&Math.hypot(m.lat-c.lat,m.lon-c.lon)<0.005)fushCount++;
+      });
+    }
+    /* Night EH (22-4) average */
+    var nightTotal=0,nightN=0;
+    for(var h=22;h<28;h++){var hh=h%24;var t=TM(hh);nightTotal+=Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e));nightN++}
+    var nightEH=nightN>0?nightTotal/nightN:0;
+    /* Day EH (10-16) average */
+    var dayTotal=0,dayN=0;
+    for(var h2=10;h2<16;h2++){var t2=TM(h2);dayTotal+=Math.min(1,br*t2.i)*sv*(1-Math.min(1,bp*t2.e));dayN++}
+    var dayEH=dayN>0?dayTotal/dayN:0;
+    var riskDelta=nightEH>0&&dayEH>0?((nightEH/dayEH-1)*100).toFixed(1)+'%':'—';
+    var row=[c.lat,c.lon,'"'+locName+'"',rank,eh.toFixed(6),br.toFixed(6),de.toFixed(4),(c.avg_severity||2.5).toFixed(2),c.haven_count_500m||0,c.nearest_haven_type||'',c.count||0];
+    subtypeCols.forEach(function(k){row.push(c.subtypes&&c.subtypes[k]?c.subtypes[k]:0)});
+    row=row.concat([fushCount,nightEH.toFixed(4),dayEH.toFixed(4),riskDelta,c.resolution||'']);
+    rows.push(row);
   });
   var csv='\ufeff'+rows.map(function(r){return r.join(',')}).join('\n');
   var blob=new Blob([csv],{type:'text/csv;charset=utf-8'});
@@ -1333,6 +1392,160 @@ function loadSchools(){
 function loadSchools_force(){
   window._schoolsLoaded=false;
   loadSchools();
+}
+
+/* === Feature 1: Municipality selector === */
+var MUNI_COORDS={
+  '川口市':[35.8078,139.7242],'世田谷区':[35.6461,139.6530],'新宿区':[35.6938,139.7035],
+  '渋谷区':[35.6640,139.6982],'大阪市':[34.6937,135.5023],'横浜市':[35.4437,139.6380],
+  '名古屋市':[35.1815,136.9066],'札幌市':[43.0621,141.3544],'福岡市':[33.5904,130.4017],
+  '仙台市':[38.2682,140.8694]
+};
+function onMuniSelect(val){
+  if(!val)return;
+  var parts=val.split(',');
+  var lat=parseFloat(parts[0]),lon=parseFloat(parts[1]);
+  map.flyTo([lat,lon],13);
+  map.once('moveend',function(){
+    onMapClick({latlng:L.latLng(lat,lon)});
+    if(allHotspots&&allHotspots.length){renderHS(null,map.getBounds())}
+  });
+}
+
+/* === Feature 2: School radius filter === */
+var schoolRadiusFilter=0;/* 0=off, 500, 1000 */
+var schoolRadiusCircle=null;
+var selectedSchoolLatLng=null;
+function setSchoolRadius(r){
+  schoolRadiusFilter=r;
+  document.querySelectorAll('.school-radius-btn').forEach(function(b){
+    b.classList.toggle('active',(r===0&&b.textContent==='OFF')||(r===500&&b.textContent==='500m')||(r===1000&&b.textContent==='1km'));
+  });
+  if(r===0){
+    if(schoolRadiusCircle){map.removeLayer(schoolRadiusCircle);schoolRadiusCircle=null}
+    document.getElementById('school-radius-count').style.display='none';
+    selectedSchoolLatLng=null;
+    return;
+  }
+  /* If no school selected yet, use last click point or prompt */
+  if(!selectedSchoolLatLng&&lastClickLatLng){
+    selectedSchoolLatLng={lat:lastClickLatLng.lat,lon:lastClickLatLng.lng||lastClickLatLng.lon};
+  }
+  if(selectedSchoolLatLng){
+    drawSchoolRadius();
+  }
+}
+function drawSchoolRadius(){
+  if(!selectedSchoolLatLng||schoolRadiusFilter===0)return;
+  if(schoolRadiusCircle){map.removeLayer(schoolRadiusCircle)}
+  schoolRadiusCircle=L.circle([selectedSchoolLatLng.lat,selectedSchoolLatLng.lon],{
+    radius:schoolRadiusFilter,color:'#2196f3',fillColor:'#2196f3',fillOpacity:0.12,weight:2,dashArray:'6,4'
+  }).addTo(map);
+  /* Count fushinsha within radius */
+  var count=0;
+  var radiusDeg=schoolRadiusFilter/111320;
+  if(realtimeMarkers&&realtimeMarkers.length){
+    realtimeMarkers.forEach(function(m){
+      if(!m.lat||!m.lon)return;
+      var dLat=(m.lat-selectedSchoolLatLng.lat)*111320;
+      var dLon=(m.lon-selectedSchoolLatLng.lon)*111320*Math.cos(selectedSchoolLatLng.lat*Math.PI/180);
+      var dist=Math.sqrt(dLat*dLat+dLon*dLon);
+      if(dist<=schoolRadiusFilter)count++;
+    });
+  }
+  var el=document.getElementById('school-radius-count');
+  el.style.display='block';
+  el.textContent='🏫 学校周辺'+schoolRadiusFilter+'m以内: 不審者情報 '+count+'件';
+  el.style.color=count>0?'#f44336':'#4caf50';
+}
+/* Hook into school marker click to set selectedSchoolLatLng */
+var _origLoadSchools=loadSchools;
+loadSchools=function(){
+  if(window._schoolsLoaded)return;
+  fetch(D+'/schools_tokyo.json').then(function(r){return r.json()}).then(function(schools){
+    window._schoolsLoaded=true;
+    window._schoolsData=schools;
+    schools.forEach(function(s){
+      if(!s.lat||!s.lon)return;
+      var m=L.marker([s.lat,s.lon],{icon:L.divIcon({html:'🏫',className:'',iconSize:[16,16],iconAnchor:[8,8]})})
+        .bindTooltip('🏫 '+(s.name||'学校'));
+      m.on('click',function(){
+        selectedSchoolLatLng={lat:s.lat,lon:s.lon};
+        if(schoolRadiusFilter>0)drawSchoolRadius();
+      });
+      m.addTo(havenLayer);
+    });
+  }).catch(function(){});
+};
+
+/* === Feature 3: Time window comparison === */
+var timeCompareVisible=false;
+function toggleTimeCompare(){
+  timeCompareVisible=!timeCompareVisible;
+  var btn=document.getElementById('btn-time-compare');
+  btn.classList.toggle('active',timeCompareVisible);
+  var panel=document.getElementById('time-compare-panel');
+  if(!timeCompareVisible){panel.style.display='none';return}
+  panel.style.display='block';
+  updateTimeCompare();
+}
+function updateTimeCompare(){
+  if(!timeCompareVisible)return;
+  var panel=document.getElementById('time-compare-panel');
+  /* Get current cell data */
+  var c=null;
+  if(lastClickLatLng){
+    var lat=lastClickLatLng.lat,lon=lastClickLatLng.lng||lastClickLatLng.lon;
+    var md=Infinity;
+    var all=gridData.concat(allTileCells);
+    all.forEach(function(cell){var d=Math.hypot(cell.lat-lat,cell.lon-lon);if(d<md){md=d;c=cell}});
+  }
+  if(!c)c={risk_score:0,p_escape:.5,avg_severity:2.5};
+  var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;
+  function calcEH(hourStart,hourEnd){
+    var total=0,count=0;
+    for(var h=hourStart;h<hourEnd;h++){
+      var tm=TM(h);
+      var dr=Math.min(1,br*tm.i);
+      var de=Math.min(1,bp*tm.e);
+      var eh=dr*sv*(1-de);
+      total+=eh;count++;
+    }
+    return count>0?total/count:0;
+  }
+  var ehMorning=calcEH(7,9);
+  var ehAfternoon=calcEH(14,16);
+  var ehNight=calcEH(22,28);/* 22-4 wraps; handle with mod */
+  /* Recalculate night properly */
+  var nightTotal=0,nightCount=0;
+  for(var h=22;h<28;h++){
+    var hh=h%24;
+    var tm=TM(hh);
+    var dr=Math.min(1,br*tm.i);
+    var de=Math.min(1,bp*tm.e);
+    nightTotal+=dr*sv*(1-de);nightCount++;
+  }
+  ehNight=nightCount>0?nightTotal/nightCount:0;
+  function ehColor(v){return v>=0.3?'#f44336':v>=0.15?'#ff9800':'#4caf50'}
+  panel.innerHTML='<div style="font-size:10px;font-weight:700;color:#555;margin-bottom:4px">⏰ 時間帯比較</div>'+
+    '<div class="tc-row"><span class="tc-label">登校時 (7-9時)</span><span class="tc-eh" style="color:'+ehColor(ehMorning)+'">EH = '+ehMorning.toFixed(3)+'</span></div>'+
+    '<div class="tc-row"><span class="tc-label">下校時 (14-16時)</span><span class="tc-eh" style="color:'+ehColor(ehAfternoon)+'">EH = '+ehAfternoon.toFixed(3)+'</span></div>'+
+    '<div class="tc-row"><span class="tc-label">深夜 (22-4時)</span><span class="tc-eh" style="color:'+ehColor(ehNight)+'">EH = '+ehNight.toFixed(3)+'</span></div>';
+}
+
+/* === Feature 5: Data freshness warning banner === */
+function checkDataFreshnessBanner(){
+  var banner=document.getElementById('data-freshness-banner');
+  if(!summaryData||!summaryData.generated_at){banner.style.display='none';return}
+  var genTime=new Date(summaryData.generated_at).getTime();
+  var now=Date.now();
+  var daysDiff=(now-genTime)/(1000*60*60*24);
+  if(daysDiff>7){
+    banner.textContent='\u26a0 \u30c7\u30fc\u30bf\u304c7\u65e5\u4ee5\u4e0a\u524d\u306e\u3082\u306e\u3067\u3059\u3002\u6700\u65b0\u7248\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044\u3002';
+    banner.style.display='block';
+  }else{
+    banner.style.display='none';
+  }
 }
 
 /* P0-1: Update last refresh time display */

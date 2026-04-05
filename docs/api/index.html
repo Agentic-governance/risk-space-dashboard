@@ -56,6 +56,8 @@ footer{text-align:center;padding:32px;color:#555;font-size:12px;border-top:1px s
     <a href="#weather">Weather</a>
     <a href="#events">Events</a>
     <a href="#metadata">Metadata</a>
+    <a href="#embed">Embed</a>
+    <a href="#cors">CORS</a>
     <a href="openapi.yaml">OpenAPI Spec</a>
   </div>
 </nav>
@@ -429,6 +431,43 @@ import json,sys; d=json.load(sys.stdin); print(f'{len(d)} parking lots')
 /api/risk.html?lat=34.69&amp;lon=135.50&amp;radius=0.05</code></pre>
 
 <p class="desc">This loads grid_risk.json client-side and filters cells within the specified radius. The page returns JSON output directly -- useful for testing and lightweight integrations.</p>
+
+<!-- Embed -->
+<h2 id="embed">Embed & Integration</h2>
+
+<h3>Embed the Risk Map (iframe)</h3>
+<p class="desc">Embed the interactive risk dashboard in any webpage. Pass <code>lat</code>, <code>lon</code>, and <code>z</code> (zoom) as hash parameters to set the initial view.</p>
+
+<pre><code>&lt;iframe src="https://agentic-governance.github.io/risk-space-dashboard/#lat=35.68&amp;lon=139.75&amp;z=14"
+        width="100%" height="600" frameborder="0"&gt;&lt;/iframe&gt;</code></pre>
+
+<h3>JavaScript: Programmatic Risk Query</h3>
+<p class="desc">Fetch the nearest risk cell for any coordinate using client-side JavaScript:</p>
+
+<pre><code>async function getRisk(lat, lon) {
+    const grid = await fetch('https://agentic-governance.github.io/risk-space-dashboard/data/grid_risk.json').then(r=&gt;r.json());
+    const nearest = grid.reduce((best, cell) =&gt; {
+        const d = Math.hypot(cell.lat - lat, cell.lon - lon);
+        return d &lt; best.d ? {cell, d} : best;
+    }, {cell: null, d: Infinity});
+    return nearest.cell;
+}
+
+// Usage
+getRisk(35.68, 139.75).then(cell =&gt; {
+    console.log('Risk score:', cell.risk_score);
+    console.log('Safety rank:', cell.safety_rank);
+    console.log('Expected harm:', cell.expected_harm);
+});</code></pre>
+
+<!-- CORS Note -->
+<h2 id="cors">CORS & Cross-Origin Access</h2>
+
+<div class="note">
+  <strong>CORS Headers:</strong> GitHub Pages serves all static files with permissive CORS headers (<code>Access-Control-Allow-Origin: *</code>), so client-side <code>fetch()</code> from any origin works without a proxy. You can call any <code>/data/*.json</code> endpoint directly from browser JavaScript on your own domain.
+</div>
+
+<p class="desc">This means you can build third-party dashboards, mobile apps, or browser extensions that consume Risk Space data without any backend or authentication.</p>
 
 </div>
 
