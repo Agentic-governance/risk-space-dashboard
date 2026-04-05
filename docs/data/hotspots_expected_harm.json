@@ -1,145 +1,424 @@
 [
   {
-    "lat": 36.53375,
-    "lon": 139.09875,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
+    "lat": 43.075,
+    "lon": 143.475,
+    "count": 3,
+    "risk_score": 0.4267,
+    "expected_harm": 0.4054,
     "p_escape": 0.05,
     "avg_severity": 5.0,
     "max_severity": 5.0,
+    "resolution": "low",
+    "layers": {
+      "traffic": 3
+    },
+    "subtypes": {
+      "collision": 3
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.125,
+    "lon": 137.075,
+    "count": 3,
+    "risk_score": 0.4,
+    "expected_harm": 0.38,
+    "p_escape": 0.05,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "low",
+    "layers": {
+      "traffic": 3
+    },
+    "subtypes": {
+      "collision": 3
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 39.085,
+    "lon": 140.485,
+    "count": 3,
+    "risk_score": 0.3745,
+    "expected_harm": 0.3323,
+    "p_escape": 0.05,
+    "avg_severity": 4.67,
+    "max_severity": 4.67,
+    "resolution": "mid",
+    "layers": {
+      "traffic": 3
+    },
+    "subtypes": {
+      "collision": 3
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 32.525,
+    "lon": 130.475,
+    "count": 3,
+    "risk_score": 0.3734,
+    "expected_harm": 0.3313,
+    "p_escape": 0.05,
+    "avg_severity": 4.67,
+    "max_severity": 4.67,
+    "resolution": "low",
+    "layers": {
+      "traffic": 3
+    },
+    "subtypes": {
+      "collision": 3
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 36.1025,
+    "lon": 140.0025,
+    "count": 3,
+    "risk_score": 0.4045,
+    "expected_harm": 0.3253,
+    "p_escape": 0.1957,
+    "avg_severity": 5.0,
+    "max_severity": 5.0,
+    "resolution": "high",
+    "layers": {
+      "disaster": 3
+    },
+    "subtypes": {},
+    "haven_count_500m": 0,
+    "nearest_haven_type": "fire_station",
+    "nearest_haven_dist": 1.34,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 43.29875,
+    "lon": 142.49875,
+    "count": 107,
+    "risk_score": 0.76,
+    "expected_harm": 0.2888,
+    "p_escape": 0.05,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "crime_synthetic": 107
     },
     "subtypes": {
-      "collision": 1
+      "theft_bicycle": 76,
+      "theft_car_breakin": 13,
+      "theft_parts": 7,
+      "theft_motorcycle": 6,
+      "theft_vehicle": 3,
+      "theft_vending": 1
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
     "nearest_haven_dist": null,
-    "safety_rank": "C"
+    "safety_rank": "D"
   },
   {
-    "lat": 35.03625,
-    "lon": 135.90875,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
+    "lat": 43.30125,
+    "lon": 142.49625,
+    "count": 100,
+    "risk_score": 0.76,
+    "expected_harm": 0.2888,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "crime_synthetic": 100
     },
     "subtypes": {
-      "collision": 1
+      "theft_bicycle": 71,
+      "theft_car_breakin": 12,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 3,
+      "theft_vending": 1
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
     "nearest_haven_dist": null,
-    "safety_rank": "C"
+    "safety_rank": "D"
   },
   {
-    "lat": 35.04125,
-    "lon": 135.91125,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
+    "lat": 43.30625,
+    "lon": 142.50125,
+    "count": 98,
+    "risk_score": 0.748,
+    "expected_harm": 0.2842,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "crime_synthetic": 98
     },
     "subtypes": {
-      "collision": 1
+      "theft_bicycle": 70,
+      "theft_car_breakin": 12,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 3,
+      "theft_vending": 1
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
     "nearest_haven_dist": null,
-    "safety_rank": "C"
+    "safety_rank": "D"
   },
   {
-    "lat": 36.50375,
-    "lon": 138.11625,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
+    "lat": 43.29875,
+    "lon": 142.49625,
+    "count": 96,
+    "risk_score": 0.736,
+    "expected_harm": 0.2797,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "crime_synthetic": 96
     },
     "subtypes": {
-      "collision": 1
+      "theft_bicycle": 68,
+      "theft_car_breakin": 12,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 3,
+      "theft_vending": 1
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
     "nearest_haven_dist": null,
-    "safety_rank": "C"
+    "safety_rank": "D"
   },
   {
-    "lat": 35.51625,
-    "lon": 140.23375,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
+    "lat": 43.29625,
+    "lon": 142.49875,
+    "count": 95,
+    "risk_score": 0.73,
+    "expected_harm": 0.2774,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "crime_synthetic": 95
     },
     "subtypes": {
-      "collision": 1
+      "theft_bicycle": 67,
+      "theft_car_breakin": 12,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 3,
+      "theft_vending": 1
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
     "nearest_haven_dist": null,
-    "safety_rank": "C"
+    "safety_rank": "D"
   },
   {
-    "lat": 34.45875,
-    "lon": 136.68375,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
+    "lat": 43.30375,
+    "lon": 142.49625,
+    "count": 94,
+    "risk_score": 0.724,
+    "expected_harm": 0.2751,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "crime_synthetic": 94
     },
     "subtypes": {
-      "collision": 1
+      "theft_bicycle": 67,
+      "theft_car_breakin": 12,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 3,
+      "theft_vending": 1
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
     "nearest_haven_dist": null,
-    "safety_rank": "C"
+    "safety_rank": "D"
   },
   {
-    "lat": 34.95125,
-    "lon": 136.17875,
-    "count": 1,
-    "risk_score": 0.4872,
-    "expected_harm": 0.4628,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
+    "lat": 33.31625,
+    "lon": 130.32625,
+    "count": 3,
+    "risk_score": 0.3913,
+    "expected_harm": 0.2744,
+    "p_escape": 0.2493,
+    "avg_severity": 4.67,
+    "max_severity": 4.67,
     "resolution": "ultra",
     "layers": {
-      "traffic": 1
+      "traffic": 3
     },
     "subtypes": {
-      "collision": 1
+      "collision": 3
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": "police_station",
+    "nearest_haven_dist": 1.118,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 43.30375,
+    "lon": 142.49875,
+    "count": 91,
+    "risk_score": 0.706,
+    "expected_harm": 0.2683,
+    "p_escape": 0.05,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
+    "resolution": "ultra",
+    "layers": {
+      "crime_synthetic": 91
+    },
+    "subtypes": {
+      "theft_bicycle": 65,
+      "theft_car_breakin": 11,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 2,
+      "theft_vending": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "D"
+  },
+  {
+    "lat": 43.30125,
+    "lon": 142.49875,
+    "count": 91,
+    "risk_score": 0.706,
+    "expected_harm": 0.2683,
+    "p_escape": 0.05,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
+    "resolution": "ultra",
+    "layers": {
+      "crime_synthetic": 91
+    },
+    "subtypes": {
+      "theft_bicycle": 65,
+      "theft_car_breakin": 11,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 2,
+      "theft_vending": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "D"
+  },
+  {
+    "lat": 34.09125,
+    "lon": 131.76375,
+    "count": 7,
+    "risk_score": 0.4207,
+    "expected_harm": 0.2672,
+    "p_escape": 0.1772,
+    "avg_severity": 3.86,
+    "max_severity": 3.86,
+    "resolution": "ultra",
+    "layers": {
+      "traffic": 7
+    },
+    "subtypes": {
+      "collision": 7
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": "police_station",
+    "nearest_haven_dist": 1.887,
+    "safety_rank": "C"
+  },
+  {
+    "lat": 43.29625,
+    "lon": 142.50125,
+    "count": 90,
+    "risk_score": 0.7,
+    "expected_harm": 0.266,
+    "p_escape": 0.05,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
+    "resolution": "ultra",
+    "layers": {
+      "crime_synthetic": 90
+    },
+    "subtypes": {
+      "theft_bicycle": 64,
+      "theft_car_breakin": 11,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 2,
+      "theft_vending": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "D"
+  },
+  {
+    "lat": 43.30125,
+    "lon": 142.49125,
+    "count": 90,
+    "risk_score": 0.7,
+    "expected_harm": 0.266,
+    "p_escape": 0.05,
+    "avg_severity": 2.0,
+    "max_severity": 2.0,
+    "resolution": "ultra",
+    "layers": {
+      "crime_synthetic": 90
+    },
+    "subtypes": {
+      "theft_bicycle": 64,
+      "theft_car_breakin": 11,
+      "theft_parts": 6,
+      "theft_motorcycle": 5,
+      "theft_vehicle": 2,
+      "theft_vending": 1
+    },
+    "haven_count_500m": 0,
+    "nearest_haven_type": null,
+    "nearest_haven_dist": null,
+    "safety_rank": "D"
+  },
+  {
+    "lat": 34.8825,
+    "lon": 137.3975,
+    "count": 4,
+    "risk_score": 0.3423,
+    "expected_harm": 0.2601,
+    "p_escape": 0.05,
+    "avg_severity": 4.0,
+    "max_severity": 4.0,
+    "resolution": "high",
+    "layers": {
+      "traffic": 4
+    },
+    "subtypes": {
+      "collision": 4
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
@@ -147,20 +426,20 @@
     "safety_rank": "C"
   },
   {
-    "lat": 35.8025,
-    "lon": 140.2275,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
+    "lat": 35.175,
+    "lon": 134.925,
+    "count": 3,
+    "risk_score": 0.3414,
+    "expected_harm": 0.2595,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
+    "avg_severity": 4.0,
+    "max_severity": 4.0,
+    "resolution": "low",
     "layers": {
-      "traffic": 1
+      "traffic": 3
     },
     "subtypes": {
-      "collision": 1
+      "collision": 3
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
@@ -168,251 +447,20 @@
     "safety_rank": "C"
   },
   {
-    "lat": 40.6675,
-    "lon": 140.5675,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
+    "lat": 40.125,
+    "lon": 141.525,
+    "count": 3,
+    "risk_score": 0.3414,
+    "expected_harm": 0.2595,
     "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
+    "avg_severity": 4.0,
+    "max_severity": 4.0,
+    "resolution": "low",
     "layers": {
-      "traffic": 1
+      "traffic": 3
     },
     "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 40.1725,
-    "lon": 140.0175,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 39.4825,
-    "lon": 140.5225,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 37.0375,
-    "lon": 140.8125,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 35.5575,
-    "lon": 140.4325,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 34.9075,
-    "lon": 135.9375,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 34.9275,
-    "lon": 134.8975,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 34.8275,
-    "lon": 134.7825,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 34.2625,
-    "lon": 135.4875,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 34.5775,
-    "lon": 133.4825,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 33.3825,
-    "lon": 130.4025,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
-    },
-    "haven_count_500m": 0,
-    "nearest_haven_type": null,
-    "nearest_haven_dist": null,
-    "safety_rank": "C"
-  },
-  {
-    "lat": 26.4175,
-    "lon": 127.7725,
-    "count": 1,
-    "risk_score": 0.4818,
-    "expected_harm": 0.4577,
-    "p_escape": 0.05,
-    "avg_severity": 5.0,
-    "max_severity": 5.0,
-    "resolution": "high",
-    "layers": {
-      "traffic": 1
-    },
-    "subtypes": {
-      "collision": 1
+      "collision": 3
     },
     "haven_count_500m": 0,
     "nearest_haven_type": null,
