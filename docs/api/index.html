@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Risk Space MCP API Documentation - Endpoints, fields, and examples">
+<meta name="theme-color" content="#0a0a0f">
+<title>Risk Space MCP API Documentation</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Helvetica Neue',Arial,sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.6}
+a{color:#5eaaff;text-decoration:none}a:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#0d1b2a,#1b2838);padding:40px 24px;border-bottom:1px solid #1e3a5f}
+header h1{font-size:28px;color:#5eaaff;margin-bottom:6px}
+header .subtitle{color:#8899aa;font-size:14px}
+.container{max-width:960px;margin:0 auto;padding:24px}
+nav{background:#0d1117;border-bottom:1px solid #1e3a5f;padding:12px 24px;position:sticky;top:0;z-index:10}
+nav a{color:#8899aa;margin-right:18px;font-size:13px}nav a:hover{color:#5eaaff}
+h2{font-size:22px;color:#5eaaff;margin:32px 0 16px;padding-bottom:8px;border-bottom:1px solid #1e3a5f}
+h3{font-size:17px;color:#7ecfff;margin:24px 0 10px}
+.endpoint{background:#0d1117;border:1px solid #1e3a5f;border-radius:8px;padding:20px;margin:16px 0}
+.endpoint .method{display:inline-block;background:#1a6b3c;color:#3cff8a;font-weight:bold;font-size:12px;padding:3px 10px;border-radius:4px;margin-right:10px;font-family:monospace}
+.endpoint .path{font-family:'SF Mono',Monaco,Consolas,monospace;font-size:15px;color:#e0e0e0}
+.desc{color:#8899aa;margin:8px 0 12px;font-size:14px}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px}
+th{text-align:left;color:#5eaaff;padding:8px 12px;border-bottom:1px solid #1e3a5f;font-weight:600}
+td{padding:8px 12px;border-bottom:1px solid #141e2a;color:#c0c8d0}
+td code{background:#141e2a;padding:2px 6px;border-radius:3px;font-size:12px;color:#7ecfff}
+pre{background:#0d1117;border:1px solid #1e3a5f;border-radius:6px;padding:14px 18px;overflow-x:auto;font-size:13px;line-height:1.5;margin:10px 0}
+code{font-family:'SF Mono',Monaco,Consolas,monospace;color:#e0e0e0}
+.sample{margin:10px 0}
+.sample summary{cursor:pointer;color:#5eaaff;font-size:13px;padding:6px 0}
+.note{background:#1a1a2e;border-left:3px solid #5eaaff;padding:12px 16px;margin:16px 0;font-size:13px;color:#8899aa;border-radius:0 6px 6px 0}
+.badge{display:inline-block;background:#1e3a5f;color:#5eaaff;font-size:11px;padding:2px 8px;border-radius:3px;margin-left:8px}
+footer{text-align:center;padding:32px;color:#555;font-size:12px;border-top:1px solid #1e3a5f;margin-top:48px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Risk Space MCP API Documentation</h1>
+    <div class="subtitle">Crime, Disaster, Traffic & Weather risk probability space for Japan -- Static JSON endpoints served via GitHub Pages / Cloudflare R2</div>
+  </div>
+</header>
+
+<nav>
+  <div class="container">
+    <a href="#overview">Overview</a>
+    <a href="#endpoints">Endpoints</a>
+    <a href="#risk-grid">Risk Grid</a>
+    <a href="#realtime">Realtime</a>
+    <a href="#heatmaps">Heatmaps</a>
+    <a href="#haven">Safe Haven</a>
+    <a href="#tiles">Tiles</a>
+    <a href="#weather">Weather</a>
+    <a href="#events">Events</a>
+    <a href="#metadata">Metadata</a>
+    <a href="openapi.yaml">OpenAPI Spec</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- Overview -->
+<h2 id="overview">Overview</h2>
+<p>All data is served as static JSON files. No authentication required. CORS-enabled for browser use.</p>
+
+<div class="note">
+  <strong>Base URL:</strong> <code>https://&lt;your-github-pages-or-r2-domain&gt;/data/</code><br>
+  For local development: <code>http://localhost:8888/data/</code>
+</div>
+
+<div class="note">
+  <strong>OpenAPI Spec:</strong> <a href="openapi.yaml">docs/api/openapi.yaml</a> -- Full machine-readable specification for the Workers-based API.
+</div>
+
+<!-- Endpoints Summary -->
+<h2 id="endpoints">Available Data Endpoints (Static JSON)</h2>
+
+<table>
+  <tr><th>Endpoint</th><th>Description</th><th>Size</th></tr>
+  <tr><td><code>/data/grid_risk.json</code></td><td>Risk-scored grid cells</td><td>~2.8 MB</td></tr>
+  <tr><td><code>/data/realtime_slim.json</code></td><td>Suspicious persons (realtime)</td><td>~10 KB</td></tr>
+  <tr><td><code>/data/heat_crime.json</code></td><td>Crime heatmap points</td><td>~15 MB</td></tr>
+  <tr><td><code>/data/heat_traffic.json</code></td><td>Traffic heatmap points</td><td>~36 MB</td></tr>
+  <tr><td><code>/data/heat_disaster.json</code></td><td>Disaster heatmap points</td><td>~8 KB</td></tr>
+  <tr><td><code>/data/haven_tiles/index.json</code></td><td>Safe haven tile keys</td><td>~2 KB</td></tr>
+  <tr><td><code>/data/tiles/index.json</code></td><td>Grid tile keys</td><td>~2 KB</td></tr>
+  <tr><td><code>/data/amedas_current.json</code></td><td>AMEDAS weather observations</td><td>~50 KB</td></tr>
+  <tr><td><code>/data/all_events.json</code></td><td>Calendar events</td><td>~20 KB</td></tr>
+  <tr><td><code>/data/transit_disruptions.json</code></td><td>Train disruptions</td><td>~5 KB</td></tr>
+  <tr><td><code>/data/summary.json</code></td><td>Dataset summary</td><td>~4 KB</td></tr>
+  <tr><td><code>/data/manifest.json</code></td><td>File catalog</td><td>~2 KB</td></tr>
+</table>
+
+<!-- Risk Grid -->
+<h2 id="risk-grid">Risk Grid</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/grid_risk.json</span>
+  <span class="badge">~2.8 MB</span>
+</div>
+
+<p class="desc">Returns an array of risk-scored grid cells covering Japan. Each cell contains P(incident), P(escape), expected harm, and subtype breakdowns.</p>
+
+<h3>Fields</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+  <tr><td><code>lat</code></td><td>number</td><td>Latitude (WGS84)</td></tr>
+  <tr><td><code>lon</code></td><td>number</td><td>Longitude (WGS84)</td></tr>
+  <tr><td><code>risk_score</code></td><td>number</td><td>P(incident), 0.0 -- 1.0</td></tr>
+  <tr><td><code>expected_harm</code></td><td>number</td><td>Expected harm = P(incident) x severity x (1 - P(escape))</td></tr>
+  <tr><td><code>p_escape</code></td><td>number</td><td>Escape probability based on safe haven proximity</td></tr>
+  <tr><td><code>safety_rank</code></td><td>string</td><td>"S" / "A" / "B" / "C" / "D" safety grade</td></tr>
+  <tr><td><code>subtypes</code></td><td>object</td><td>Incident count by subtype, e.g. {"theft_bicycle": 45}</td></tr>
+  <tr><td><code>haven_count_500m</code></td><td>integer</td><td>Number of safe havens within 500m</td></tr>
+  <tr><td><code>resolution</code></td><td>string</td><td>"ultra" (250m) / "high" (500m) / "mid" (1km) / "low" (5km)</td></tr>
+</table>
+
+<h3>curl Example</h3>
+<pre><code>curl -s https://your-domain.com/data/grid_risk.json | python3 -m json.tool | head -30</code></pre>
+
+<details class="sample"><summary>Sample Response (first cell)</summary>
+<pre><code>[
+  {
+    "lat": 35.6895,
+    "lon": 139.6917,
+    "risk_score": 0.823,
+    "expected_harm": 0.512,
+    "p_escape": 0.582,
+    "safety_rank": "C",
+    "subtypes": {"theft_bicycle": 45, "collision_injury": 30},
+    "haven_count_500m": 23,
+    "resolution": "ultra"
+  },
+  ...
+]</code></pre>
+</details>
+
+<!-- Realtime -->
+<h2 id="realtime">Realtime Suspicious Persons</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/realtime_slim.json</span>
+  <span class="badge">~10 KB</span>
+</div>
+
+<p class="desc">Returns an array of recent suspicious person reports in compact array format.</p>
+
+<h3>Fields (array format)</h3>
+<table>
+  <tr><th>Index</th><th>Field</th><th>Type</th><th>Description</th></tr>
+  <tr><td>0</td><td><code>lat</code></td><td>number</td><td>Latitude</td></tr>
+  <tr><td>1</td><td><code>lon</code></td><td>number</td><td>Longitude</td></tr>
+  <tr><td>2</td><td><code>subtype_ja</code></td><td>string</td><td>Subtype in Japanese, e.g. "声かけ"</td></tr>
+  <tr><td>3</td><td><code>severity</code></td><td>integer</td><td>1--5 severity scale</td></tr>
+  <tr><td>4</td><td><code>date</code></td><td>string</td><td>Date string</td></tr>
+</table>
+
+<h3>curl Example</h3>
+<pre><code>curl -s https://your-domain.com/data/realtime_slim.json | python3 -c "
+import json, sys
+data = json.load(sys.stdin)
+for row in data[:3]:
+    print(f'  lat={row[0]}, lon={row[1]}, type={row[2]}, sev={row[3]}, date={row[4]}')
+"</code></pre>
+
+<details class="sample"><summary>Sample Response</summary>
+<pre><code>[
+  [35.689, 139.692, "声かけ", 2, "2026-04-05"],
+  [35.710, 139.731, "つきまとい", 3, "2026-04-04"],
+  ...
+]</code></pre>
+</details>
+
+<!-- Heatmaps -->
+<h2 id="heatmaps">Heatmap Data</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/heat_crime.json</span>
+  <span class="badge">~15 MB</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/heat_traffic.json</span>
+  <span class="badge">~36 MB</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/heat_disaster.json</span>
+  <span class="badge">~8 KB</span>
+</div>
+
+<p class="desc">Returns arrays of [lat, lon, intensity] for use with Leaflet.heat or similar heatmap libraries.</p>
+
+<h3>Fields (array format)</h3>
+<table>
+  <tr><th>Index</th><th>Field</th><th>Type</th><th>Description</th></tr>
+  <tr><td>0</td><td><code>lat</code></td><td>number</td><td>Latitude</td></tr>
+  <tr><td>1</td><td><code>lon</code></td><td>number</td><td>Longitude</td></tr>
+  <tr><td>2</td><td><code>intensity</code></td><td>number</td><td>0.0 -- 1.0 heat weight</td></tr>
+</table>
+
+<h3>curl Examples</h3>
+<pre><code># Crime heatmap (first 5 points)
+curl -s https://your-domain.com/data/heat_crime.json | python3 -c "
+import json, sys
+data = json.load(sys.stdin)
+print(f'Total points: {len(data)}')
+for p in data[:5]: print(f'  [{p[0]}, {p[1]}, {p[2]}]')
+"
+
+# Traffic heatmap
+curl -s https://your-domain.com/data/heat_traffic.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} points')
+"
+
+# Disaster heatmap
+curl -s https://your-domain.com/data/heat_disaster.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} points')
+"</code></pre>
+
+<details class="sample"><summary>Sample Response</summary>
+<pre><code>[
+  [35.689, 139.692, 0.85],
+  [35.710, 139.731, 0.62],
+  [34.693, 135.502, 0.91],
+  ...
+]</code></pre>
+</details>
+
+<!-- Safe Haven Tiles -->
+<h2 id="haven">Safe Haven Tiles</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/haven_tiles/index.json</span>
+  <span class="badge">Tile index</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/haven_tiles/haven_{lat}_{lon}.json</span>
+  <span class="badge">Per-tile facilities</span>
+</div>
+
+<p class="desc">Safe haven facilities (police, fire, hospital, convenience stores, AED, stations) are spatially tiled at 0.1-degree resolution. Load the index first, then fetch relevant tiles.</p>
+
+<h3>Index Response</h3>
+<pre><code>["35.6_139.6", "35.6_139.7", "35.7_139.6", ...]</code></pre>
+
+<h3>Tile Fields</h3>
+<table>
+  <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+  <tr><td><code>lat</code></td><td>number</td><td>Latitude</td></tr>
+  <tr><td><code>lon</code></td><td>number</td><td>Longitude</td></tr>
+  <tr><td><code>name</code></td><td>string</td><td>Facility name</td></tr>
+  <tr><td><code>type</code></td><td>string</td><td>"koban" / "fire_station" / "hospital" / "convenience_store" / "station" / "aed"</td></tr>
+  <tr><td><code>is_24h</code></td><td>boolean</td><td>Open 24 hours</td></tr>
+</table>
+
+<h3>curl Example</h3>
+<pre><code># Get tile index
+curl -s https://your-domain.com/data/haven_tiles/index.json | python3 -c "
+import json,sys; keys=json.load(sys.stdin); print(f'{len(keys)} tiles'); print(keys[:5])
+"
+
+# Fetch a specific tile (Shinjuku area)
+curl -s https://your-domain.com/data/haven_tiles/haven_35.6_139.6.json | python3 -m json.tool | head -20</code></pre>
+
+<!-- Grid Tiles -->
+<h2 id="tiles">Grid Tiles (High Resolution)</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/tiles/index.json</span>
+  <span class="badge">Tile index</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/tiles/grid_{lat}_{lon}.json</span>
+  <span class="badge">Per-tile cells</span>
+</div>
+
+<p class="desc">High-resolution grid risk data split into spatial tiles. Same schema as grid_risk.json but partitioned for efficient loading.</p>
+
+<h3>curl Example</h3>
+<pre><code># Get tile index
+curl -s https://your-domain.com/data/tiles/index.json | python3 -c "
+import json,sys; keys=json.load(sys.stdin); print(f'{len(keys)} tiles')
+"
+
+# Fetch a tile
+curl -s https://your-domain.com/data/tiles/grid_35.6_139.7.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} cells in tile')
+"</code></pre>
+
+<!-- Weather -->
+<h2 id="weather">Weather</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/amedas_current.json</span>
+  <span class="badge">~50 KB</span>
+</div>
+
+<p class="desc">Current AMEDAS (Automated Meteorological Data Acquisition System) observations from ~1,286 stations across Japan.</p>
+
+<h3>curl Example</h3>
+<pre><code>curl -s https://your-domain.com/data/amedas_current.json | python3 -c "
+import json,sys; d=json.load(sys.stdin)
+if isinstance(d, list): print(f'{len(d)} stations')
+elif isinstance(d, dict): print(f'{len(d)} entries')
+"</code></pre>
+
+<!-- Events -->
+<h2 id="events">Events</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/all_events.json</span>
+  <span class="badge">Calendar events</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/transit_disruptions.json</span>
+  <span class="badge">Train disruptions</span>
+</div>
+
+<p class="desc">Upcoming events and real-time transit disruption data.</p>
+
+<h3>curl Examples</h3>
+<pre><code># All events
+curl -s https://your-domain.com/data/all_events.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} events')
+"
+
+# Transit disruptions
+curl -s https://your-domain.com/data/transit_disruptions.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} disruptions')
+"</code></pre>
+
+<!-- Metadata -->
+<h2 id="metadata">Metadata</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/summary.json</span>
+  <span class="badge">Dataset summary</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/manifest.json</span>
+  <span class="badge">File catalog</span>
+</div>
+
+<p class="desc">Dataset summary and file manifest for programmatic discovery.</p>
+
+<h3>curl Examples</h3>
+<pre><code># Dataset summary
+curl -s https://your-domain.com/data/summary.json | python3 -m json.tool
+
+# File manifest
+curl -s https://your-domain.com/data/manifest.json | python3 -m json.tool</code></pre>
+
+<!-- Additional data files -->
+<h2 id="additional">Additional Data</h2>
+
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/evacuation_shelters.json</span>
+  <span class="badge">19,056 shelters</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/university_presets.json</span>
+  <span class="badge">15 universities</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/crime_safety_guide.json</span>
+  <span class="badge">10 types bilingual</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/schools_tokyo.json</span>
+  <span class="badge">692 schools</span>
+</div>
+<div class="endpoint">
+  <span class="method">GET</span>
+  <span class="path">/data/parking_tokyo.json</span>
+  <span class="badge">57,885 lots</span>
+</div>
+
+<h3>curl Examples</h3>
+<pre><code># Evacuation shelters
+curl -s https://your-domain.com/data/evacuation_shelters.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} shelters')
+"
+
+# University presets
+curl -s https://your-domain.com/data/university_presets.json | python3 -m json.tool
+
+# Crime safety guide (bilingual)
+curl -s https://your-domain.com/data/crime_safety_guide.json | python3 -m json.tool
+
+# Schools in Tokyo
+curl -s https://your-domain.com/data/schools_tokyo.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} schools')
+"
+
+# Parking lots in Tokyo
+curl -s https://your-domain.com/data/parking_tokyo.json | python3 -c "
+import json,sys; d=json.load(sys.stdin); print(f'{len(d)} parking lots')
+"</code></pre>
+
+<!-- Client-side API -->
+<h2 id="query-api">Client-Side Query API</h2>
+
+<p>For developers who need filtered queries without a backend, use the <a href="risk.html">Risk Query page</a>:</p>
+
+<pre><code># Query by lat/lon with radius (returns JSON)
+/api/risk.html?lat=35.68&amp;lon=139.75&amp;radius=0.01
+
+# Larger radius
+/api/risk.html?lat=34.69&amp;lon=135.50&amp;radius=0.05</code></pre>
+
+<p class="desc">This loads grid_risk.json client-side and filters cells within the specified radius. The page returns JSON output directly -- useful for testing and lightweight integrations.</p>
+
+</div>
+
+<footer>
+  Risk Space MCP -- Open data for safer communities<br>
+  <a href="openapi.yaml">OpenAPI Spec</a> | <a href="../index.html">Dashboard</a>
+</footer>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Risk Space MCP — データレイク & 処理パイプライン仕様書
 
-**最終更新**: 2026-04-04
+**最終更新**: 2026-04-05
 **総イベント**: 2,270,784件
 **Safe Haven**: 174,911施設
 **適応メッシュ**: 334,447セル (ダッシュボードは上位10,000セルを配信)
@@ -137,6 +137,17 @@ data/
 | 気象庁アメダス | 1,286観測局 | 1,286 | 気象レイヤー(未統合) |
 | 気象庁警報 | 警報・注意報 | 58 | 気象レイヤー(未統合) |
 | G空間避難場所 | 避難施設 | 20ファイル | 避難レイヤー(未統合) |
+
+### 2-4. 追加データソース (2026-04-05追加)
+
+| ソース | ファイル | 件数 | 内容 | 用途 |
+|---|---|---|---|---|
+| G空間避難場所 (統合) | evacuation_shelters.json | 19,056 | 避難所・避難場所 (座標+種別+収容人数) | 避難レイヤー・Safe Haven |
+| 大学プリセット | university_presets.json | 15 | 主要大学の座標・名称 | ダッシュボード位置プリセット |
+| 犯罪安全ガイド | crime_safety_guide.json | 10種別 | 犯罪種別ごとの対策情報 (日英バイリンガル) | ユーザー向け安全ガイド |
+| 東京都学校 | schools_tokyo.json | 692 | 小中高等学校 (座標+名称+種別) | 通学路リスク分析 |
+| 東京都駐車場 | parking_tokyo.json | 57,885 | 駐車場・駐輪場 (座標+名称+種別) | 車上荒らしリスク分析 |
+| OpenAPI仕様書 | docs/api/openapi.yaml | — | REST API仕様 (OpenAPI 3.0) | 開発者向けAPI定義 |
 
 ---
 
@@ -342,6 +353,19 @@ Expected_Harm = P(incident) × (severity / 5) × (1 − P(escape))
 | summary.json | 4KB | メタデータ | バッチ再生成時 |
 | hotspots_expected_harm.json | ~20KB | Top 20 EHセル | バッチ再生成時 |
 | escape_deficit.json | ~20KB | Top 20 低P(escape)セル | バッチ再生成時 |
+| evacuation_shelters.json | ~5MB | 19,056避難所 | 手動更新 |
+| university_presets.json | ~2KB | 15大学プリセット | 手動更新 |
+| crime_safety_guide.json | ~8KB | 10種別安全ガイド (日英) | 手動更新 |
+| schools_tokyo.json | ~200KB | 692校 (東京都) | 手動更新 |
+| parking_tokyo.json | ~12MB | 57,885駐車場 (東京都) | 手動更新 |
+
+### 6-2. API仕様・ドキュメント
+
+| ファイル | 内容 |
+|---|---|
+| docs/api/openapi.yaml | OpenAPI 3.0仕様書 (Workers API定義) |
+| docs/api/index.html | API ドキュメントページ (開発者向け) |
+| docs/api/risk.html | クライアントサイド Risk Query API |
 
 ---
 

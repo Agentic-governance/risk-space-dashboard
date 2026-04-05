@@ -1,0 +1,17 @@
+[
+  {"name_ja":"早稲田大学","name_en":"Waseda University","lat":35.7089,"lon":139.7194,"campus":"早稲田キャンパス"},
+  {"name_ja":"慶應義塾大学","name_en":"Keio University","lat":35.6484,"lon":139.7416,"campus":"三田キャンパス"},
+  {"name_ja":"東京大学","name_en":"University of Tokyo","lat":35.7126,"lon":139.7621,"campus":"本郷キャンパス"},
+  {"name_ja":"東京工業大学","name_en":"Tokyo Tech","lat":35.6046,"lon":139.6837,"campus":"大岡山キャンパス"},
+  {"name_ja":"上智大学","name_en":"Sophia University","lat":35.6834,"lon":139.7311,"campus":"四谷キャンパス"},
+  {"name_ja":"明治大学","name_en":"Meiji University","lat":35.6969,"lon":139.7626,"campus":"駿河台キャンパス"},
+  {"name_ja":"立教大学","name_en":"Rikkyo University","lat":35.7310,"lon":139.7038,"campus":"池袋キャンパス"},
+  {"name_ja":"中央大学","name_en":"Chuo University","lat":35.6925,"lon":139.4032,"campus":"多摩キャンパス"},
+  {"name_ja":"法政大学","name_en":"Hosei University","lat":35.6927,"lon":139.7443,"campus":"市ケ谷キャンパス"},
+  {"name_ja":"日本大学","name_en":"Nihon University","lat":35.6988,"lon":139.7580,"campus":"駿河台キャンパス"},
+  {"name_ja":"大阪大学","name_en":"Osaka University","lat":34.8220,"lon":135.5231,"campus":"吹田キャンパス"},
+  {"name_ja":"京都大学","name_en":"Kyoto University","lat":35.0263,"lon":135.7809,"campus":"吉田キャンパス"},
+  {"name_ja":"九州大学","name_en":"Kyushu University","lat":33.5958,"lon":130.2187,"campus":"伊都キャンパス"},
+  {"name_ja":"東北大学","name_en":"Tohoku University","lat":38.2555,"lon":140.8392,"campus":"川内キャンパス"},
+  {"name_ja":"北海道大学","name_en":"Hokkaido University","lat":43.0725,"lon":141.3407,"campus":"札幌キャンパス"}
+]

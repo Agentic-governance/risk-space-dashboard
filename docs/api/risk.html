@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risk Space MCP - Risk Query API</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'SF Mono',Monaco,Consolas,monospace;background:#0a0a0f;color:#e0e0e0;padding:20px}
+h1{font-size:18px;color:#5eaaff;margin-bottom:8px}
+.info{color:#8899aa;font-size:13px;margin-bottom:16px}
+.form{background:#0d1117;border:1px solid #1e3a5f;border-radius:8px;padding:16px;margin-bottom:16px}
+label{color:#8899aa;font-size:12px;display:block;margin-bottom:4px}
+input{background:#141e2a;border:1px solid #1e3a5f;color:#e0e0e0;padding:8px 12px;border-radius:4px;font-family:inherit;font-size:14px;width:140px;margin-right:12px;margin-bottom:8px}
+button{background:#1a6b3c;color:#3cff8a;border:1px solid #2a8b4c;padding:8px 20px;border-radius:4px;cursor:pointer;font-family:inherit;font-size:14px}
+button:hover{background:#228b4a}
+#status{color:#8899aa;font-size:12px;margin:12px 0}
+#output{background:#0d1117;border:1px solid #1e3a5f;border-radius:8px;padding:16px;white-space:pre-wrap;font-size:13px;max-height:70vh;overflow:auto;line-height:1.5}
+.highlight{color:#5eaaff}
+a{color:#5eaaff}
+</style>
+</head>
+<body>
+
+<h1>Risk Space MCP -- Risk Query API</h1>
+<p class="info">
+  Client-side JSON API. Loads <code>grid_risk.json</code> and filters by lat/lon/radius.<br>
+  URL params: <code>?lat=35.68&amp;lon=139.75&amp;radius=0.01</code><br>
+  <a href="index.html">Back to API docs</a>
+</p>
+
+<div class="form" id="interactive-form">
+  <label>Latitude</label>
+  <input type="number" id="lat" step="0.001" value="35.68" placeholder="35.68">
+  <label>Longitude</label>
+  <input type="number" id="lon" step="0.001" value="139.75" placeholder="139.75">
+  <label>Radius (degrees, ~0.01 = 1km)</label>
+  <input type="number" id="radius" step="0.001" value="0.01" placeholder="0.01">
+  <br>
+  <button onclick="runQuery()">Query</button>
+</div>
+
+<div id="status">Loading grid_risk.json...</div>
+<div id="output"></div>
+
+<script>
+let gridData = null;
+const BASE = (location.pathname.includes('/api/')) ? '../data/' : '../../data/';
+
+// Check URL params on load
+const params = new URLSearchParams(location.search);
+const pLat = parseFloat(params.get('lat'));
+const pLon = parseFloat(params.get('lon'));
+const pRadius = parseFloat(params.get('radius')) || 0.01;
+const autoQuery = !isNaN(pLat) && !isNaN(pLon);
+
+if (autoQuery) {
+  document.getElementById('lat').value = pLat;
+  document.getElementById('lon').value = pLon;
+  document.getElementById('radius').value = pRadius;
+  // Hide interactive form when used as API
+  document.getElementById('interactive-form').style.display = 'none';
+}
+
+// Load data
+fetch(BASE + 'grid_risk.json')
+  .then(r => {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  })
+  .then(data => {
+    gridData = data;
+    document.getElementById('status').textContent = `Loaded ${data.length} grid cells.`;
+    if (autoQuery) {
+      runQuery();
+      // Output raw JSON for programmatic use
+      document.body.style.padding = '0';
+      document.getElementById('status').style.display = 'none';
+      const output = document.getElementById('output');
+      output.style.border = 'none';
+      output.style.borderRadius = '0';
+      output.style.maxHeight = 'none';
+      // Set content-type hint
+      document.title = 'application/json';
+    }
+  })
+  .catch(err => {
+    document.getElementById('status').textContent = 'Error: ' + err.message;
+    if (autoQuery) {
+      document.getElementById('output').textContent = JSON.stringify({
+        error: 'Failed to load grid data',
+        message: err.message
+      }, null, 2);
+    }
+  });
+
+function runQuery() {
+  if (!gridData) {
+    document.getElementById('output').textContent = JSON.stringify({error: 'Data not loaded yet'}, null, 2);
+    return;
+  }
+
+  const lat = parseFloat(document.getElementById('lat').value);
+  const lon = parseFloat(document.getElementById('lon').value);
+  const radius = parseFloat(document.getElementById('radius').value) || 0.01;
+
+  if (isNaN(lat) || isNaN(lon)) {
+    document.getElementById('output').textContent = JSON.stringify({error: 'Invalid lat/lon'}, null, 2);
+    return;
+  }
+
+  const results = gridData.filter(cell => {
+    const dLat = cell.lat - lat;
+    const dLon = cell.lon - lon;
+    return Math.sqrt(dLat * dLat + dLon * dLon) <= radius;
+  });
+
+  // Sort by risk_score descending
+  results.sort((a, b) => (b.risk_score || 0) - (a.risk_score || 0));
+
+  const response = {
+    query: { lat, lon, radius },
+    count: results.length,
+    cells: results.map(c => ({
+      lat: c.lat,
+      lon: c.lon,
+      risk_score: c.risk_score,
+      expected_harm: c.expected_harm,
+      p_escape: c.p_escape,
+      safety_rank: c.safety_rank,
+      haven_count_500m: c.haven_count_500m,
+      resolution: c.resolution,
+      subtypes: c.subtypes
+    }))
+  };
+
+  document.getElementById('output').textContent = JSON.stringify(response, null, 2);
+  document.getElementById('status').textContent =
+    `Found ${results.length} cells within ${radius} degrees of (${lat}, ${lon})`;
+}
+</script>
+
+</body>
+</html>

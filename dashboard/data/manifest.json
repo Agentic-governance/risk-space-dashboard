@@ -1,0 +1,1842 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-05T01:16:11Z",
+    "total_files": 305,
+    "total_size_bytes": 120905045,
+    "total_size_human": "115.3MB",
+    "top_level_files": 20,
+    "tile_files": 285
+  },
+  "files": [
+    {
+      "path": "all_events.json",
+      "size_bytes": 52217,
+      "size_human": "51.0KB",
+      "description": "All risk events (original)"
+    },
+    {
+      "path": "all_events_v2.json",
+      "size_bytes": 587951,
+      "size_human": "574.2KB",
+      "description": "All risk events (v2 format)"
+    },
+    {
+      "path": "amedas_current.json",
+      "size_bytes": 549346,
+      "size_human": "536.5KB",
+      "description": "Current AMeDAS weather observation data"
+    },
+    {
+      "path": "contour_matrix.json",
+      "size_bytes": 383003,
+      "size_human": "374.0KB",
+      "description": "Risk contour matrix for visualization"
+    },
+    {
+      "path": "deep_crawl.json",
+      "size_bytes": 468056,
+      "size_human": "457.1KB",
+      "description": "Deep crawl aggregated data"
+    },
+    {
+      "path": "earthquakes_latest.json",
+      "size_bytes": 85616,
+      "size_human": "83.6KB",
+      "description": "Latest JMA earthquake data with coordinates/magnitude"
+    },
+    {
+      "path": "escape_deficit.json",
+      "size_bytes": 6473,
+      "size_human": "6.3KB",
+      "description": "Evacuation escape deficit analysis"
+    },
+    {
+      "path": "events_7days.json",
+      "size_bytes": 9902944,
+      "size_human": "9.4MB",
+      "description": "Risk events from last 7 days"
+    },
+    {
+      "path": "events_compact.json",
+      "size_bytes": 10947645,
+      "size_human": "10.4MB",
+      "description": "Compact risk events format"
+    },
+    {
+      "path": "grid_risk.json",
+      "size_bytes": 3217897,
+      "size_human": "3.1MB",
+      "description": "Grid-based risk scores"
+    },
+    {
+      "path": "heat_crime.json",
+      "size_bytes": 501628,
+      "size_human": "489.9KB",
+      "description": "Crime risk heatmap data"
+    },
+    {
+      "path": "heat_disaster.json",
+      "size_bytes": 4324,
+      "size_human": "4.2KB",
+      "description": "Disaster risk heatmap data"
+    },
+    {
+      "path": "heat_traffic.json",
+      "size_bytes": 1613632,
+      "size_human": "1.5MB",
+      "description": "Traffic accident risk heatmap data"
+    },
+    {
+      "path": "heat_weather.json",
+      "size_bytes": 56,
+      "size_human": "0.1KB",
+      "description": "Weather risk heatmap data"
+    },
+    {
+      "path": "hotspots_expected_harm.json",
+      "size_bytes": 5727,
+      "size_human": "5.6KB",
+      "description": "Expected harm hotspot analysis"
+    },
+    {
+      "path": "realtime_markers.json",
+      "size_bytes": 11859,
+      "size_human": "11.6KB",
+      "description": "Real-time event markers for map"
+    },
+    {
+      "path": "realtime_slim.json",
+      "size_bytes": 760302,
+      "size_human": "742.5KB",
+      "description": "Slim real-time event data"
+    },
+    {
+      "path": "summary.json",
+      "size_bytes": 248,
+      "size_human": "0.2KB",
+      "description": "Dashboard summary statistics"
+    },
+    {
+      "path": "transit_disruptions.json",
+      "size_bytes": 180,
+      "size_human": "0.2KB",
+      "description": "Transit disruption data"
+    },
+    {
+      "path": "weather_warnings.json",
+      "size_bytes": 185644,
+      "size_human": "181.3KB",
+      "description": "Active JMA weather warnings for all 47 prefectures"
+    },
+    {
+      "path": "haven_tiles/haven_20_136.json",
+      "size_bytes": 402,
+      "size_human": "0.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_122.json",
+      "size_bytes": 1383,
+      "size_human": "1.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_123.json",
+      "size_bytes": 26713,
+      "size_human": "26.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_124.json",
+      "size_bytes": 91397,
+      "size_human": "89.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_125.json",
+      "size_bytes": 47595,
+      "size_human": "46.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_131.json",
+      "size_bytes": 11702,
+      "size_human": "11.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_141.json",
+      "size_bytes": 36508,
+      "size_human": "35.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_24_153.json",
+      "size_bytes": 5030,
+      "size_human": "4.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_25_123.json",
+      "size_bytes": 50810,
+      "size_human": "49.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_25_124.json",
+      "size_bytes": 1410,
+      "size_human": "1.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_25_131.json",
+      "size_bytes": 714,
+      "size_human": "0.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_25_141.json",
+      "size_bytes": 7648,
+      "size_human": "7.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_26_126.json",
+      "size_bytes": 13423,
+      "size_human": "13.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_26_127.json",
+      "size_bytes": 298568,
+      "size_human": "291.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_26_128.json",
+      "size_bytes": 101495,
+      "size_human": "99.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_26_142.json",
+      "size_bytes": 146571,
+      "size_human": "143.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_27_127.json",
+      "size_bytes": 2371,
+      "size_human": "2.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_27_128.json",
+      "size_bytes": 31888,
+      "size_human": "31.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_27_129.json",
+      "size_bytes": 8637,
+      "size_human": "8.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_27_140.json",
+      "size_bytes": 5250,
+      "size_human": "5.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_27_142.json",
+      "size_bytes": 268957,
+      "size_human": "262.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_28_128.json",
+      "size_bytes": 985,
+      "size_human": "1.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_28_129.json",
+      "size_bytes": 146890,
+      "size_human": "143.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_28_130.json",
+      "size_bytes": 835,
+      "size_human": "0.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_29_129.json",
+      "size_bytes": 20119,
+      "size_human": "19.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_29_140.json",
+      "size_bytes": 202,
+      "size_human": "0.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_30_122.json",
+      "size_bytes": 125,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_30_129.json",
+      "size_bytes": 21723,
+      "size_human": "21.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_30_130.json",
+      "size_bytes": 140032,
+      "size_human": "136.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_30_131.json",
+      "size_bytes": 60025,
+      "size_human": "58.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_30_140.json",
+      "size_bytes": 17950,
+      "size_human": "17.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_31_128.json",
+      "size_bytes": 4642,
+      "size_human": "4.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_31_129.json",
+      "size_bytes": 100917,
+      "size_human": "98.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_31_130.json",
+      "size_bytes": 335441,
+      "size_human": "327.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_31_131.json",
+      "size_bytes": 91430,
+      "size_human": "89.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_31_139.json",
+      "size_bytes": 6452,
+      "size_human": "6.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_31_140.json",
+      "size_bytes": 1006,
+      "size_human": "1.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_128.json",
+      "size_bytes": 185154,
+      "size_human": "180.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_129.json",
+      "size_bytes": 192319,
+      "size_human": "187.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_130.json",
+      "size_bytes": 189658,
+      "size_human": "185.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_131.json",
+      "size_bytes": 106397,
+      "size_human": "103.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_132.json",
+      "size_bytes": 152161,
+      "size_human": "148.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_133.json",
+      "size_bytes": 46806,
+      "size_human": "45.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_32_139.json",
+      "size_bytes": 6369,
+      "size_human": "6.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_126.json",
+      "size_bytes": 55630,
+      "size_human": "54.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_128.json",
+      "size_bytes": 8200,
+      "size_human": "8.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_129.json",
+      "size_bytes": 311078,
+      "size_human": "303.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_130.json",
+      "size_bytes": 599802,
+      "size_human": "585.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_131.json",
+      "size_bytes": 365581,
+      "size_human": "357.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_132.json",
+      "size_bytes": 128489,
+      "size_human": "125.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_133.json",
+      "size_bytes": 234775,
+      "size_human": "229.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_134.json",
+      "size_bytes": 297091,
+      "size_human": "290.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_135.json",
+      "size_bytes": 466519,
+      "size_human": "455.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_136.json",
+      "size_bytes": 5940,
+      "size_human": "5.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_138.json",
+      "size_bytes": 3628,
+      "size_human": "3.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_33_139.json",
+      "size_bytes": 43349,
+      "size_human": "42.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34492183_135.json",
+      "size_bytes": 100,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_125.json",
+      "size_bytes": 2475,
+      "size_human": "2.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_126.json",
+      "size_bytes": 31481,
+      "size_human": "30.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_127.json",
+      "size_bytes": 47127,
+      "size_human": "46.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_128.json",
+      "size_bytes": 20421,
+      "size_human": "19.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_129.json",
+      "size_bytes": 51888,
+      "size_human": "50.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_130.json",
+      "size_bytes": 47452,
+      "size_human": "46.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_131.json",
+      "size_bytes": 178918,
+      "size_human": "174.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_132.json",
+      "size_bytes": 203003,
+      "size_human": "198.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_133.json",
+      "size_bytes": 212649,
+      "size_human": "207.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_134.json",
+      "size_bytes": 284397,
+      "size_human": "277.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_135.json",
+      "size_bytes": 992400,
+      "size_human": "969.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_136.json",
+      "size_bytes": 135367,
+      "size_human": "132.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_137.json",
+      "size_bytes": 161526,
+      "size_human": "157.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_138.json",
+      "size_bytes": 167192,
+      "size_human": "163.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_34_139.json",
+      "size_bytes": 132135,
+      "size_human": "129.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_126.json",
+      "size_bytes": 107234,
+      "size_human": "104.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_127.json",
+      "size_bytes": 75790,
+      "size_human": "74.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_128.json",
+      "size_bytes": 158097,
+      "size_human": "154.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_129.json",
+      "size_bytes": 131013,
+      "size_human": "127.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_132.json",
+      "size_bytes": 30583,
+      "size_human": "29.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_133.json",
+      "size_bytes": 58186,
+      "size_human": "56.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_134.json",
+      "size_bytes": 230587,
+      "size_human": "225.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_135.json",
+      "size_bytes": 469284,
+      "size_human": "458.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_136.json",
+      "size_bytes": 435519,
+      "size_human": "425.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_137.json",
+      "size_bytes": 136414,
+      "size_human": "133.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_138.json",
+      "size_bytes": 150639,
+      "size_human": "147.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_139.json",
+      "size_bytes": 1502916,
+      "size_human": "1.4MB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_35_140.json",
+      "size_bytes": 240032,
+      "size_human": "234.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_125.json",
+      "size_bytes": 154,
+      "size_human": "0.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_126.json",
+      "size_bytes": 43566,
+      "size_human": "42.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_127.json",
+      "size_bytes": 67782,
+      "size_human": "66.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_128.json",
+      "size_bytes": 59868,
+      "size_human": "58.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_129.json",
+      "size_bytes": 28366,
+      "size_human": "27.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_132.json",
+      "size_bytes": 303,
+      "size_human": "0.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_133.json",
+      "size_bytes": 4360,
+      "size_human": "4.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_135.json",
+      "size_bytes": 6040,
+      "size_human": "5.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_136.json",
+      "size_bytes": 177909,
+      "size_human": "173.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_137.json",
+      "size_bytes": 95203,
+      "size_human": "93.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_138.json",
+      "size_bytes": 86027,
+      "size_human": "84.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_139.json",
+      "size_bytes": 283076,
+      "size_human": "276.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_36_140.json",
+      "size_bytes": 105418,
+      "size_human": "102.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_122.json",
+      "size_bytes": 817,
+      "size_human": "0.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_125.json",
+      "size_bytes": 299,
+      "size_human": "0.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_126.json",
+      "size_bytes": 196837,
+      "size_human": "192.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_127.json",
+      "size_bytes": 235110,
+      "size_human": "229.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_128.json",
+      "size_bytes": 25563,
+      "size_human": "25.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_129.json",
+      "size_bytes": 7379,
+      "size_human": "7.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_130.json",
+      "size_bytes": 1818,
+      "size_human": "1.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_131.json",
+      "size_bytes": 119,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_136.json",
+      "size_bytes": 98474,
+      "size_human": "96.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_137.json",
+      "size_bytes": 74487,
+      "size_human": "72.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_138.json",
+      "size_bytes": 51632,
+      "size_human": "50.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_139.json",
+      "size_bytes": 66140,
+      "size_human": "64.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_140.json",
+      "size_bytes": 65543,
+      "size_human": "64.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_37_141.json",
+      "size_bytes": 10934,
+      "size_human": "10.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_125.json",
+      "size_bytes": 138,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_126.json",
+      "size_bytes": 584,
+      "size_human": "0.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_127.json",
+      "size_bytes": 8197,
+      "size_human": "8.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_128.json",
+      "size_bytes": 6335,
+      "size_human": "6.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_138.json",
+      "size_bytes": 2374,
+      "size_human": "2.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_139.json",
+      "size_bytes": 60145,
+      "size_human": "58.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_140.json",
+      "size_bytes": 146647,
+      "size_human": "143.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_38_141.json",
+      "size_bytes": 426532,
+      "size_human": "416.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_122.json",
+      "size_bytes": 1761,
+      "size_human": "1.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_123.json",
+      "size_bytes": 598,
+      "size_human": "0.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_125.json",
+      "size_bytes": 3679,
+      "size_human": "3.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_126.json",
+      "size_bytes": 722,
+      "size_human": "0.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_127.json",
+      "size_bytes": 681,
+      "size_human": "0.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_139.json",
+      "size_bytes": 110300,
+      "size_human": "107.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_140.json",
+      "size_bytes": 38900,
+      "size_human": "38.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_141.json",
+      "size_bytes": 188167,
+      "size_human": "183.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_39_142.json",
+      "size_bytes": 76771,
+      "size_human": "75.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_122.json",
+      "size_bytes": 227,
+      "size_human": "0.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_123.json",
+      "size_bytes": 108,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_124.json",
+      "size_bytes": 1585,
+      "size_human": "1.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_125.json",
+      "size_bytes": 420,
+      "size_human": "0.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_126.json",
+      "size_bytes": 573,
+      "size_human": "0.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_139.json",
+      "size_bytes": 162540,
+      "size_human": "158.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_140.json",
+      "size_bytes": 54269,
+      "size_human": "53.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_40_141.json",
+      "size_bytes": 94626,
+      "size_human": "92.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_122.json",
+      "size_bytes": 1728,
+      "size_human": "1.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_123.json",
+      "size_bytes": 14724,
+      "size_human": "14.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_125.json",
+      "size_bytes": 1312,
+      "size_human": "1.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_126.json",
+      "size_bytes": 1734,
+      "size_human": "1.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_127.json",
+      "size_bytes": 520,
+      "size_human": "0.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_128.json",
+      "size_bytes": 866,
+      "size_human": "0.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_129.json",
+      "size_bytes": 91,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_139.json",
+      "size_bytes": 48051,
+      "size_human": "46.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_140.json",
+      "size_bytes": 183801,
+      "size_human": "179.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_141.json",
+      "size_bytes": 44472,
+      "size_human": "43.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_41_143.json",
+      "size_bytes": 10262,
+      "size_human": "10.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_123.json",
+      "size_bytes": 950,
+      "size_human": "0.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_124.json",
+      "size_bytes": 698,
+      "size_human": "0.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_125.json",
+      "size_bytes": 1674,
+      "size_human": "1.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_126.json",
+      "size_bytes": 126,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_127.json",
+      "size_bytes": 891,
+      "size_human": "0.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_128.json",
+      "size_bytes": 2208,
+      "size_human": "2.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_129.json",
+      "size_bytes": 9234,
+      "size_human": "9.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_130.json",
+      "size_bytes": 9133,
+      "size_human": "8.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_131.json",
+      "size_bytes": 4126,
+      "size_human": "4.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_132.json",
+      "size_bytes": 10987,
+      "size_human": "10.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_133.json",
+      "size_bytes": 2191,
+      "size_human": "2.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_139.json",
+      "size_bytes": 120413,
+      "size_human": "117.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_140.json",
+      "size_bytes": 41847,
+      "size_human": "40.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_141.json",
+      "size_bytes": 35128,
+      "size_human": "34.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_142.json",
+      "size_bytes": 18105,
+      "size_human": "17.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_143.json",
+      "size_bytes": 30710,
+      "size_human": "30.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_144.json",
+      "size_bytes": 10273,
+      "size_human": "10.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_42_145.json",
+      "size_bytes": 1285,
+      "size_human": "1.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_123.json",
+      "size_bytes": 131,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_124.json",
+      "size_bytes": 3063,
+      "size_human": "3.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_125.json",
+      "size_bytes": 9869,
+      "size_human": "9.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_126.json",
+      "size_bytes": 1262,
+      "size_human": "1.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_127.json",
+      "size_bytes": 138,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_128.json",
+      "size_bytes": 1095,
+      "size_human": "1.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_129.json",
+      "size_bytes": 1891,
+      "size_human": "1.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_130.json",
+      "size_bytes": 125,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_131.json",
+      "size_bytes": 49375,
+      "size_human": "48.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_132.json",
+      "size_bytes": 19424,
+      "size_human": "19.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_133.json",
+      "size_bytes": 4631,
+      "size_human": "4.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_134.json",
+      "size_bytes": 92,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_135.json",
+      "size_bytes": 198,
+      "size_human": "0.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_140.json",
+      "size_bytes": 144882,
+      "size_human": "141.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_141.json",
+      "size_bytes": 150534,
+      "size_human": "147.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_142.json",
+      "size_bytes": 23451,
+      "size_human": "22.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_143.json",
+      "size_bytes": 12417,
+      "size_human": "12.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_144.json",
+      "size_bytes": 17889,
+      "size_human": "17.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_145.json",
+      "size_bytes": 65264,
+      "size_human": "63.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_43_146.json",
+      "size_bytes": 357,
+      "size_human": "0.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_122.json",
+      "size_bytes": 92,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_123.json",
+      "size_bytes": 274,
+      "size_human": "0.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_125.json",
+      "size_bytes": 698,
+      "size_human": "0.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_126.json",
+      "size_bytes": 1851,
+      "size_human": "1.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_128.json",
+      "size_bytes": 222,
+      "size_human": "0.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_129.json",
+      "size_bytes": 4133,
+      "size_human": "4.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_130.json",
+      "size_bytes": 1455,
+      "size_human": "1.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_131.json",
+      "size_bytes": 4669,
+      "size_human": "4.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_132.json",
+      "size_bytes": 6265,
+      "size_human": "6.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_133.json",
+      "size_bytes": 4256,
+      "size_human": "4.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_134.json",
+      "size_bytes": 134,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_135.json",
+      "size_bytes": 4070,
+      "size_human": "4.0KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_136.json",
+      "size_bytes": 394,
+      "size_human": "0.4KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_141.json",
+      "size_bytes": 12537,
+      "size_human": "12.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_142.json",
+      "size_bytes": 12057,
+      "size_human": "11.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_143.json",
+      "size_bytes": 6071,
+      "size_human": "5.9KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_144.json",
+      "size_bytes": 3773,
+      "size_human": "3.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_145.json",
+      "size_bytes": 26342,
+      "size_human": "25.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_44_147.json",
+      "size_bytes": 102,
+      "size_human": "0.1KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_122.json",
+      "size_bytes": 461,
+      "size_human": "0.5KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_125.json",
+      "size_bytes": 615,
+      "size_human": "0.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_126.json",
+      "size_bytes": 8523,
+      "size_human": "8.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_130.json",
+      "size_bytes": 11910,
+      "size_human": "11.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_131.json",
+      "size_bytes": 3355,
+      "size_human": "3.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_132.json",
+      "size_bytes": 692,
+      "size_human": "0.7KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_133.json",
+      "size_bytes": 4679,
+      "size_human": "4.6KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_136.json",
+      "size_bytes": 351,
+      "size_human": "0.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_140.json",
+      "size_bytes": 28444,
+      "size_human": "27.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_141.json",
+      "size_bytes": 42841,
+      "size_human": "41.8KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_142.json",
+      "size_bytes": 1279,
+      "size_human": "1.2KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/haven_45_147.json",
+      "size_bytes": 281,
+      "size_human": "0.3KB",
+      "description": "Safe haven tile data"
+    },
+    {
+      "path": "haven_tiles/index.json",
+      "size_bytes": 3163,
+      "size_human": "3.1KB",
+      "description": "Index for haven_tiles tiles"
+    },
+    {
+      "path": "tiles/grid_24_124.json",
+      "size_bytes": 27112,
+      "size_human": "26.5KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_24_125.json",
+      "size_bytes": 31561,
+      "size_human": "30.8KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_26_127.json",
+      "size_bytes": 939225,
+      "size_human": "917.2KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_28_129.json",
+      "size_bytes": 23741,
+      "size_human": "23.2KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_31_130.json",
+      "size_bytes": 1098152,
+      "size_human": "1.0MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_31_131.json",
+      "size_bytes": 751024,
+      "size_human": "733.4KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_32_129.json",
+      "size_bytes": 304796,
+      "size_human": "297.7KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_32_130.json",
+      "size_bytes": 1371840,
+      "size_human": "1.3MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_32_131.json",
+      "size_bytes": 498592,
+      "size_human": "486.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_32_132.json",
+      "size_bytes": 32984,
+      "size_human": "32.2KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_129.json",
+      "size_bytes": 412449,
+      "size_human": "402.8KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_130.json",
+      "size_bytes": 4380188,
+      "size_human": "4.2MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_131.json",
+      "size_bytes": 930943,
+      "size_human": "909.1KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_132.json",
+      "size_bytes": 441377,
+      "size_human": "431.0KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_133.json",
+      "size_bytes": 603455,
+      "size_human": "589.3KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_134.json",
+      "size_bytes": 112752,
+      "size_human": "110.1KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_33_135.json",
+      "size_bytes": 210409,
+      "size_human": "205.5KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_130.json",
+      "size_bytes": 67779,
+      "size_human": "66.2KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_131.json",
+      "size_bytes": 456508,
+      "size_human": "445.8KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_132.json",
+      "size_bytes": 1204555,
+      "size_human": "1.1MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_133.json",
+      "size_bytes": 2276633,
+      "size_human": "2.2MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_134.json",
+      "size_bytes": 2610351,
+      "size_human": "2.5MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_135.json",
+      "size_bytes": 6653976,
+      "size_human": "6.3MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_136.json",
+      "size_bytes": 1654717,
+      "size_human": "1.6MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_137.json",
+      "size_bytes": 2668717,
+      "size_human": "2.5MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_138.json",
+      "size_bytes": 1012080,
+      "size_human": "988.4KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_34_139.json",
+      "size_bytes": 115660,
+      "size_human": "112.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_132.json",
+      "size_bytes": 174973,
+      "size_human": "170.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_133.json",
+      "size_bytes": 460517,
+      "size_human": "449.7KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_134.json",
+      "size_bytes": 396551,
+      "size_human": "387.3KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_135.json",
+      "size_bytes": 907198,
+      "size_human": "885.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_136.json",
+      "size_bytes": 4505866,
+      "size_human": "4.3MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_137.json",
+      "size_bytes": 1477486,
+      "size_human": "1.4MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_138.json",
+      "size_bytes": 1999716,
+      "size_human": "1.9MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_139.json",
+      "size_bytes": 11328523,
+      "size_human": "10.8MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_35_140.json",
+      "size_bytes": 2719263,
+      "size_human": "2.6MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_36_136.json",
+      "size_bytes": 1229410,
+      "size_human": "1.2MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_36_137.json",
+      "size_bytes": 1019805,
+      "size_human": "995.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_36_138.json",
+      "size_bytes": 1428814,
+      "size_human": "1.4MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_36_139.json",
+      "size_bytes": 5367133,
+      "size_human": "5.1MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_36_140.json",
+      "size_bytes": 2011879,
+      "size_human": "1.9MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_37_136.json",
+      "size_bytes": 36551,
+      "size_human": "35.7KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_37_137.json",
+      "size_bytes": 22583,
+      "size_human": "22.1KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_37_138.json",
+      "size_bytes": 767565,
+      "size_human": "749.6KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_37_139.json",
+      "size_bytes": 660467,
+      "size_human": "645.0KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_37_140.json",
+      "size_bytes": 1013006,
+      "size_human": "989.3KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_38_139.json",
+      "size_bytes": 256578,
+      "size_human": "250.6KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_38_140.json",
+      "size_bytes": 1531361,
+      "size_human": "1.5MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_38_141.json",
+      "size_bytes": 394172,
+      "size_human": "384.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_39_139.json",
+      "size_bytes": 25459,
+      "size_human": "24.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_39_140.json",
+      "size_bytes": 476495,
+      "size_human": "465.3KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_39_141.json",
+      "size_bytes": 513141,
+      "size_human": "501.1KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_40_140.json",
+      "size_bytes": 526977,
+      "size_human": "514.6KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_40_141.json",
+      "size_bytes": 379471,
+      "size_human": "370.6KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_41_140.json",
+      "size_bytes": 220451,
+      "size_human": "215.3KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_41_141.json",
+      "size_bytes": 29332,
+      "size_human": "28.6KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_42_140.json",
+      "size_bytes": 72591,
+      "size_human": "70.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_42_141.json",
+      "size_bytes": 443672,
+      "size_human": "433.3KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_42_142.json",
+      "size_bytes": 24261,
+      "size_human": "23.7KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_42_143.json",
+      "size_bytes": 162174,
+      "size_human": "158.4KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_42_144.json",
+      "size_bytes": 61367,
+      "size_human": "59.9KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_43_140.json",
+      "size_bytes": 49907,
+      "size_human": "48.7KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_43_141.json",
+      "size_bytes": 1071439,
+      "size_human": "1.0MB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_43_142.json",
+      "size_bytes": 394652,
+      "size_human": "385.4KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_43_143.json",
+      "size_bytes": 85703,
+      "size_human": "83.7KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/grid_43_144.json",
+      "size_bytes": 88643,
+      "size_human": "86.6KB",
+      "description": "Risk grid tile data"
+    },
+    {
+      "path": "tiles/index.json",
+      "size_bytes": 2832,
+      "size_human": "2.8KB",
+      "description": "Index for tiles tiles"
+    }
+  ]
+}

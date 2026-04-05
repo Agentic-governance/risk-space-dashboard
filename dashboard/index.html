@@ -252,6 +252,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
         <button class="panel-action-btn" id="btn-a11y" onclick="toggleLargeText()" title="文字を大きく表示" aria-label="文字サイズ切替">あ</button>
         <button class="panel-action-btn" id="btn-theme" onclick="toggleTheme()" title="ダーク/ライトモード切替" aria-label="テーマ切替">🌙</button>
         <button class="panel-action-btn" id="btn-share" onclick="shareView()" title="現在のビューを共有" aria-label="共有">🔗</button>
+        <button class="panel-action-btn" id="btn-qr" onclick="showQR()" title="QRコードで共有" aria-label="QRコード共有">QR</button>
         <button class="panel-action-btn" id="btn-presentation" onclick="togglePresentation()" title="プレゼンテーションモード" aria-label="プレゼンモード">📺</button>
       </div>
     </div>
@@ -312,7 +313,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
         <span class="layer-name">地震リスク (30年)</span>
         <span class="layer-count" id="cnt-seismic">—</span>
     </div>
-    <div id="fushinsha-filter"><div style="font-size:10px;color:#555;margin-bottom:4px">不審者フィルター</div><button class="fushinsha-filter-btn active" onclick="filterFushinsha('all')">全て</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('不審者')">不審者</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('声かけ')">声かけ</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('痴漢')">痴漢</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('暴行')">暴行</button><button class="fushinsha-filter-btn" onclick="filterFushinsha('窃盗')">窃盗</button></div>
+    <div id="fushinsha-filter"><div style="font-size:10px;color:#555;margin-bottom:4px" id="fushinsha-filter-label">不審者フィルター</div><button class="fushinsha-filter-btn active" data-type="all" onclick="filterFushinsha('all')">全て</button><button class="fushinsha-filter-btn" data-type="不審者" onclick="filterFushinsha('不審者')">不審者</button><button class="fushinsha-filter-btn" data-type="声かけ" onclick="filterFushinsha('声かけ')">声かけ</button><button class="fushinsha-filter-btn" data-type="痴漢" onclick="filterFushinsha('痴漢')">痴漢</button><button class="fushinsha-filter-btn" data-type="暴行" onclick="filterFushinsha('暴行')">暴行</button><button class="fushinsha-filter-btn" data-type="窃盗" onclick="filterFushinsha('窃盗')">窃盗</button></div>
   </div>
   <div class="section"><div class="section-title">分析モード</div><div class="btn-row">
     <button class="btn active" id="btn-eh" onclick="setAnalysisMode('eh')">総合危険度</button>
@@ -341,6 +342,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
   <div id="loader"><div class="spinner"></div><div id="loader-text">データ読み込み中...</div></div>
 </div>
 <div id="right-panel">
+  <div id="click-location-name" style="padding:6px 14px;font-size:12px;color:#7eb3f0;text-align:center;border-bottom:1px solid #2a2a3a;min-height:20px"></div>
   <div id="safety-grade">
     <div id="safety-grade-letter" style="color:#666">—</div>
     <div id="safety-grade-desc" style="color:#666">—</div>
@@ -448,6 +450,16 @@ var currentFushinshaFilter='all';var allHotspots=[];
 var havenTileIdx=null,loadedHT={},gridTileIdx=null,loadedGT={};
 var isDarkMode=true;
 var heatLayerData={};/* store raw data for lazy loading */
+var uniPresets=null;
+var safetyGuide=null;
+var CRIME_EN={'不審者':'Suspicious','声かけ':'Verbal approach','痴漢':'Groping',
+    '暴行':'Assault','窃盗':'Theft','盗撮':'Voyeurism','侵入':'Trespassing',
+    '脅迫':'Threat','火災':'Fire','事故':'Accident','災害':'Disaster',
+    'ひった':'Snatching','のぞき':'Peeping','迷惑行':'Nuisance','その他':'Other',
+    'ひったくり':'Snatching','迷惑行為':'Nuisance','凶器所持':'Armed','子供被害':'Child victim',
+    '緊急':'Emergency','傷病':'Injury','生活':'Lifestyle','行方不明':'Missing','詐欺':'Fraud','アポ電':'Phone scam'};
+function crimeTr(ja){return currentLang==='en'?(CRIME_EN[ja]||ja):ja}
+function mostCommon(arr){var freq={};arr.forEach(function(v){freq[v]=(freq[v]||0)+1});var best=null,max=0;Object.keys(freq).forEach(function(k){if(freq[k]>max){max=freq[k];best=k}});return best}
 var baseTileLayer=null;
 var summaryData=null;
 var gridHoverTooltip=null;
@@ -513,10 +525,41 @@ function restoreFromHash(){
   }
 }
 
+/* P1-1: University preset buttons */
+async function loadUniPresets(){
+    try{
+        uniPresets=await fetch(D+'/university_presets.json').then(function(r){return r.json()});
+        if(!uniPresets||!uniPresets.length)return;
+        var html='<div class="section"><div class="section-title">🎓 大学周辺の安全度</div>';
+        uniPresets.forEach(function(u){
+            html+='<div class="layer-toggle" onclick="flyToPreset('+u.lat+','+u.lon+',\''+u.name_ja.replace(/'/g,"\\'")+'\')" style="cursor:pointer">';
+            html+='<span class="layer-name">'+u.name_ja+'</span>';
+            html+='<span class="layer-count" style="font-size:9px">'+u.campus+'</span></div>';
+        });
+        html+='</div>';
+        document.getElementById('legend').insertAdjacentHTML('beforebegin',html);
+    }catch(e){console.warn('university_presets load error',e)}
+}
+function flyToPreset(lat,lon,name){
+    map.flyTo([lat,lon],14);
+    map.once('moveend',function(){onMapClick({latlng:{lat:lat,lng:lon}})});
+}
+
+/* P1-4: QR code for sharing */
+function showQR(){
+    var url=location.href.split('#')[0]+'#lat='+map.getCenter().lat.toFixed(4)+'&lon='+map.getCenter().lng.toFixed(4)+'&z='+map.getZoom();
+    var qrUrl='https://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+encodeURIComponent(url);
+    var overlay=document.createElement('div');
+    overlay.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:9900;display:flex;align-items:center;justify-content:center;flex-direction:column;cursor:pointer';
+    overlay.innerHTML='<img src="'+qrUrl+'" style="border-radius:8px"><p style="color:#fff;margin-top:12px;font-size:13px">タップで閉じる</p>';
+    overlay.onclick=function(){document.body.removeChild(overlay)};
+    document.body.appendChild(overlay);
+}
+
 async function loadAll(){SL('グリッドデータ読み込み中...');try{
 var r=await Promise.allSettled([fetch(D+'/grid_risk.json').then(function(r){return r.json()}),fetch(D+'/hotspots_expected_harm.json').then(function(r){return r.json()}).catch(function(){return[]}),fetch(D+'/amedas_current.json').then(function(r){return r.json()}).catch(function(){return null}),fetch(D+'/tiles/index.json').then(function(r){return r.json()}).catch(function(){return null}),fetch(D+'/haven_tiles/index.json').then(function(r){return r.json()}).catch(function(){return null}),fetch(D+'/realtime_slim.json').then(function(r){return r.json()}).catch(function(){return[]}),fetch(D+'/all_events.json').then(function(r){return r.json()}).catch(function(){return{}}),fetch(D+'/transit_disruptions.json').then(function(r){return r.json()}).catch(function(){return{disruptions:[]}}),fetch(D+'/summary.json').then(function(r){return r.json()}).catch(function(){return null})]);
 gridData=r[0].status==='fulfilled'?r[0].value:[];var hs=r[1].status==='fulfilled'?r[1].value:[];weatherData=r[2].status==='fulfilled'?r[2].value:null;gridTileIdx=r[3].status==='fulfilled'?r[3].value:null;havenTileIdx=r[4].status==='fulfilled'?r[4].value:null;var rt=r[5].status==='fulfilled'?r[5].value:[];var evtData=r[6].status==='fulfilled'?r[6].value:{};var transitData=r[7].status==='fulfilled'?r[7].value:{disruptions:[]};summaryData=r[8].status==='fulfilled'?r[8].value:null;
-SL('ヒートマップ生成中...');await loadHM();allHotspots=hs;renderHS(hs);updateWS();loadRT(rt);loadEvents(evtData);loadTransit(transitData);updateDataFreshness();updateHeaderSubtitle()}catch(e){console.error(e);showErrorBanner('⚠ データ読み込みエラー - リロードしてください')}document.getElementById('loader').style.display='none'}
+SL('ヒートマップ生成中...');await loadHM();allHotspots=hs;renderHS(hs);updateWS();loadRT(rt);loadEvents(evtData);loadTransit(transitData);updateDataFreshness();updateHeaderSubtitle();loadUniPresets();fetch(D+'/crime_safety_guide.json').then(function(r){return r.json()}).then(function(d){safetyGuide=d}).catch(function(){})}catch(e){console.error(e);showErrorBanner('⚠ データ読み込みエラー - リロードしてください')}document.getElementById('loader').style.display='none'}
 
 /* #4 Lazy load heatmaps - only load the active layer at startup */
 async function loadHM(){
@@ -553,9 +596,11 @@ var debouncedLoadHT=debounce(function(){loadHT()},300);
 function loadGT(){if(!gridTileIdx||displayMode!=='grid'||map.getZoom()<10)return;var b=map.getBounds();for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!gridTileIdx[k]||loadedGT[k])continue;loadedGT[k]=1;showTileLoading();(function(key){fetch(D+'/tiles/grid_'+key+'.json').then(function(r){return r.json()}).then(function(cs){var tm=TM(selectedHour);cs.forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}if(v<.01)return;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.2)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.45,weight:.3});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('EH:'+eh.toFixed(4)+'<br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>Haven:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});allTileCells=allTileCells.concat(cs);if(allTileCells.length>50000)allTileCells=allTileCells.slice(-50000);hideTileLoading()}).catch(function(){loadedGT[key]=0;hideTileLoading()})})(k)}}
 function loadHT(){if(!havenTileIdx)return;if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}if(map.getZoom()<12)return;var b=map.getBounds();var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!havenTileIdx[k]||loadedHT[k])continue;loadedHT[k]=1;(function(key){fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){hs.forEach(function(h){if(!h.lat||!h.lon)return;allLoadedHavens.push(h);var i=ic[h.type]||'📍';L.marker([h.lat,h.lon],{icon:L.divIcon({html:'<div style="font-size:14px">'+i+'</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip(i+' '+(h.name||h.type)+'<br>'+(h.is_24h?'🟢 24H':'🔴 時間制限')).addTo(havenLayer)})}).catch(function(){loadedHT[key]=0})})(k)}}
 function loadRT(data){if(!data||!data.length)return;allRTData=data;realtimeMarkers=[];var SUBTYPE_MAP={'不審者':'不審者','痴漢':'痴漢','声かけ':'声かけ','暴行':'暴行','窃盗':'窃盗','盗撮':'盗撮','のぞき':'のぞき','ひった':'ひったくり','凶器':'凶器所持','脅迫':'脅迫','迷惑行':'迷惑行為','侵入':'侵入','子供被':'子供被害','火災':'火災','災害':'災害','事故':'事故','動物':'動物','緊急':'緊急','傷病':'傷病','生活':'生活','行方不':'行方不明','詐欺':'詐欺','アポ電':'アポ電'};data.forEach(function(e){var lat,lon,severity,subtype,dateStr;if(Array.isArray(e)){lat=e[0];lon=e[1];subtype=SUBTYPE_MAP[e[2]]||e[2]||'不審者';severity=e[3]||2;dateStr=e[4]||''}else{if(e.geometry&&e.geometry.coordinates){lon=e.geometry.coordinates[0];lat=e.geometry.coordinates[1]}else if(e.lat&&e.lon){lat=e.lat;lon=e.lon}else return;subtype=e.subtype||'';severity=e.severity||2;dateStr=e.occurred_at||e.published_at||''}if(!lat||!lon)return;realtimeMarkers.push({lat:lat,lon:lon,severity:severity,subtype:subtype,date:dateStr,raw:Array.isArray(e)?{subtype:subtype,severity:severity,occurred_at:dateStr}:e})});document.getElementById('cnt-realtime').textContent=realtimeMarkers.length+'件';if(realtimeMarkers.length>0){var latest=realtimeMarkers[0];document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge">LIVE</span> '+(latest.subtype||'不審者')+' — '+(latest.date||'').slice(0,16)}renderRT();map.on('moveend',renderRT)}
-function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLayer=L.layerGroup();var z=map.getZoom();var b=map.getBounds();var visible=realtimeMarkers.filter(function(m){return b.contains([m.lat,m.lon])&&(currentFushinshaFilter==='all'||m.subtype===currentFushinshaFilter)});if(z<10){var grid={};var step=0.5;visible.forEach(function(m){var gk=Math.floor(m.lat/step)+'_'+Math.floor(m.lon/step);if(!grid[gk])grid[gk]={lat:0,lon:0,count:0,maxSev:0};grid[gk].lat+=m.lat;grid[gk].lon+=m.lon;grid[gk].count++;grid[gk].maxSev=Math.max(grid[gk].maxSev,m.severity)});Object.keys(grid).forEach(function(k){var g=grid[k];var clat=g.lat/g.count,clon=g.lon/g.count;var sz=Math.min(40,16+g.count*0.5);var c=g.maxSev>=4?'#f44336':g.maxSev>=3?'#ff9800':'#ffeb3b';L.marker([clat,clon],{icon:L.divIcon({html:'<div class="cluster-marker" style="width:'+sz+'px;height:'+sz+'px;background:rgba('+(g.maxSev>=4?'244,67,54':g.maxSev>=3?'255,152,0':'255,235,59')+',.7)">'+g.count+'</div>',className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]})}).bindPopup('不審者情報: '+g.count+'件').addTo(realtimeLayer)})}else{visible.forEach(function(m){var e=m.raw;var s=m.severity;var c=s>=4?'#f44336':s>=3?'#ff9800':'#ffeb3b';var pref=(e.admin||{}).prefecture||'';var sub=m.subtype||e.subtype||'';var dt=m.date||e.occurred_at||(e.published_at||'');L.circleMarker([m.lat,m.lon],{radius:5+s,color:c,fillColor:c,fillOpacity:.65,weight:1.5}).bindPopup('<b>'+(pref?pref+' ':'')+sub+'</b><br>severity:'+s+'/5<br>'+(dt?dt.slice(0,16):'')+'<br>'+(e.raw_text||(e.raw||{}).title||'').slice(0,60)).addTo(realtimeLayer)})}if(activeLayers.realtime)map.addLayer(realtimeLayer)}
+function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLayer=L.layerGroup();var z=map.getZoom();var b=map.getBounds();var visible=realtimeMarkers.filter(function(m){return b.contains([m.lat,m.lon])&&(currentFushinshaFilter==='all'||m.subtype===currentFushinshaFilter)});if(z<10){var grid={};var step=0.5;visible.forEach(function(m){var gk=Math.floor(m.lat/step)+'_'+Math.floor(m.lon/step);if(!grid[gk])grid[gk]={lat:0,lon:0,count:0,maxSev:0};grid[gk].lat+=m.lat;grid[gk].lon+=m.lon;grid[gk].count++;grid[gk].maxSev=Math.max(grid[gk].maxSev,m.severity)});Object.keys(grid).forEach(function(k){var g=grid[k];var clat=g.lat/g.count,clon=g.lon/g.count;var sz=Math.min(40,16+g.count*0.5);var c=g.maxSev>=4?'#f44336':g.maxSev>=3?'#ff9800':'#ffeb3b';L.marker([clat,clon],{icon:L.divIcon({html:'<div class="cluster-marker" style="width:'+sz+'px;height:'+sz+'px;background:rgba('+(g.maxSev>=4?'244,67,54':g.maxSev>=3?'255,152,0':'255,235,59')+',.7)">'+g.count+'</div>',className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]})}).bindPopup('不審者情報: '+g.count+'件').addTo(realtimeLayer)})}else{visible.forEach(function(m){var e=m.raw;var s=m.severity;var c=s>=4?'#f44336':s>=3?'#ff9800':'#ffeb3b';var pref=(e.admin||{}).prefecture||'';var sub=m.subtype||e.subtype||'';var dt=m.date||e.occurred_at||(e.published_at||'');L.circleMarker([m.lat,m.lon],{radius:5+s,color:c,fillColor:c,fillOpacity:.65,weight:1.5}).bindPopup('<b>'+(pref?pref+' ':'')+crimeTr(sub)+'</b><br>severity:'+s+'/5<br>'+(dt?dt.slice(0,16):'')+'<br>'+(e.raw_text||(e.raw||{}).title||'').slice(0,60)).addTo(realtimeLayer)})}if(activeLayers.realtime)map.addLayer(realtimeLayer)}
 function updateWS(){if(!weatherData||!Array.isArray(weatherData))return;var mp=0,mw=0;weatherData.forEach(function(s){if(s.precip10m)mp=Math.max(mp,s.precip10m);if(s.wind_ms)mw=Math.max(mw,s.wind_ms)});var se=document.getElementById('weather-status'),ie=document.getElementById('weather-icon');if(mp>=20){se.textContent='豪雨 '+mp+'mm';se.className='status-value alert';ie.textContent='⛈'}else if(mp>=5){se.textContent='雨 '+mp+'mm';se.className='status-value warn';ie.textContent='🌧'}else if(mw>=15){se.textContent='強風 '+mw+'m/s';se.className='status-value warn';ie.textContent='🌬'}else{se.textContent='概ね晴れ';se.className='status-value ok';ie.textContent='☀️'}var wp=weatherData.filter(function(s){return s.incident_multiplier>1.1}).map(function(s){return[s.lat,s.lon,(s.incident_multiplier-1)/1.5]});if(wp.length>0){heatLayers.weather=L.heatLayer(wp,{radius:30,blur:20,maxZoom:10,gradient:{0:'#03a9f4',.5:'#00bcd4',1:'#0288d1'}});if(activeLayers.weather)heatLayers.weather.addTo(map);document.getElementById('cnt-weather').textContent=wp.length+'局'}}
-function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map)}
+function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map);
+/* P1-5: Reverse geocode for municipality name */
+fetch('https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat='+lat+'&lon='+lng).then(function(r){return r.json()}).then(function(data){var muniName=data.results?(data.results.mupiName||'')+(data.results.lv01Nm||''):'';document.getElementById('click-location-name').textContent=muniName}).catch(function(){})}
 
 function updateRP(c){var h=selectedHour,tm=TM(h);var wI=1,wE=1;if(weatherData&&Array.isArray(weatherData)){var md=1/0,nr=null;weatherData.forEach(function(s){if(!s.lat)return;var d=Math.hypot(s.lat-c._lat,s.lon-c._lon);if(d<md){md=d;nr=s}});if(nr){wI=nr.incident_multiplier||1;wE=nr.escape_multiplier||1}}var br=c.risk_score||0,bp=c.p_escape||.5,sv=c.avg_severity||2.5;var fushCount=0;if(realtimeMarkers&&realtimeMarkers.length){realtimeMarkers.forEach(function(m){if(m.lat&&m.lon&&Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.02)fushCount++})}var dr=Math.min(1,br*wI*tm.i+fushCount*0.05),de=Math.min(1,bp*wE*tm.e),eh=dr*(sv/5)*(1-de);
 
@@ -578,7 +623,10 @@ if(nt&&c.nearest_haven_dist){
   havenBigEl.innerHTML='最寄り施設: データなし';
 }
 
-document.getElementById('risk-value').textContent=dr.toFixed(3);document.getElementById('risk-value').style.color=dr>=.5?'#f44336':dr>=.3?'#ff9800':'#4caf50';document.getElementById('escape-value').textContent=de.toFixed(3);document.getElementById('escape-value').style.color=de>=.6?'#4caf50':de>=.3?'#ff9800':'#f44336';document.getElementById('fushinsha-value').textContent=fushCount;document.getElementById('fushinsha-value').style.color=fushCount>0?'#f44336':'#555';var el=document.getElementById('eh-value');el.textContent=eh.toFixed(3);el.style.color=eh>=.5?'#f44336':eh>=.3?'#ff9800':eh>=.15?'#ffeb3b':'#4caf50';document.getElementById('eh-formula').textContent='犯罪確率 '+dr.toFixed(3)+' × 重大度 '+(sv/5).toFixed(2)+' × (1-逃げやすさ '+de.toFixed(3)+')';document.getElementById('p-incident').textContent=br.toFixed(4);function SM(id,v){var e=document.getElementById(id);e.textContent='×'+v.toFixed(2);e.style.color=v>1.1?'#f44336':v<.9?'#4caf50':'#aaa'}SM('weather-mult',wI);document.getElementById('weather-mult-label').textContent=weatherData?'気象庁':'—';SM('time-mult',tm.i);document.getElementById('time-mult-label').textContent=String(h).padStart(2,'0')+'時台';document.getElementById('p-escape').textContent=bp.toFixed(4);SM('escape-weather-mult',wE);document.getElementById('haven-count-500m').textContent=c.haven_count_500m||0;var icMap={koban:'🚔',convenience_store:'🏪',fire_station:'🚒',hospital:'🏥',station:'🚉'};document.getElementById('haven-list').innerHTML=nt?'<div class="haven-row"><span class="haven-icon">'+(icMap[nt]||'📍')+'</span><span class="haven-name">'+nt+'</span>'+(c.nearest_haven_dist?'<span class="haven-dist">'+c.nearest_haven_dist.toFixed(2)+'km</span>':'')+'</div>'+((c.haven_count_500m||0)<2?'<div style="color:#f44336;font-size:10px;margin-top:4px">⚠ 逃げ場が少ない</div>':''):'<div style="color:#444;font-size:11px">データなし</div>';var LL=LANG[currentLang];var a='';if(eh>=.5)a='🔴 '+LL.adv_danger;else if(eh>=.3)a='🟠 '+LL.adv_warn;else if(eh>=.15)a='🟡 '+LL.adv_caution;else a='🟢 '+LL.adv_safe;if(wI>1.15)a+=' '+(currentLang==='en'?LANG.en.adv_weather:LANG.ja.adv_weather);if((bp||0)<.3)a+=' '+(currentLang==='en'?LANG.en.adv_escape:LANG.ja.adv_escape);document.getElementById('advice-panel').innerHTML=a;
+document.getElementById('risk-value').textContent=dr.toFixed(3);document.getElementById('risk-value').style.color=dr>=.5?'#f44336':dr>=.3?'#ff9800':'#4caf50';document.getElementById('escape-value').textContent=de.toFixed(3);document.getElementById('escape-value').style.color=de>=.6?'#4caf50':de>=.3?'#ff9800':'#f44336';document.getElementById('fushinsha-value').textContent=fushCount;document.getElementById('fushinsha-value').style.color=fushCount>0?'#f44336':'#555';var el=document.getElementById('eh-value');el.textContent=eh.toFixed(3);el.style.color=eh>=.5?'#f44336':eh>=.3?'#ff9800':eh>=.15?'#ffeb3b':'#4caf50';document.getElementById('eh-formula').textContent='犯罪確率 '+dr.toFixed(3)+' × 重大度 '+(sv/5).toFixed(2)+' × (1-逃げやすさ '+de.toFixed(3)+')';document.getElementById('p-incident').textContent=br.toFixed(4);function SM(id,v){var e=document.getElementById(id);e.textContent='×'+v.toFixed(2);e.style.color=v>1.1?'#f44336':v<.9?'#4caf50':'#aaa'}SM('weather-mult',wI);document.getElementById('weather-mult-label').textContent=weatherData?'気象庁':'—';SM('time-mult',tm.i);document.getElementById('time-mult-label').textContent=String(h).padStart(2,'0')+'時台';document.getElementById('p-escape').textContent=bp.toFixed(4);SM('escape-weather-mult',wE);document.getElementById('haven-count-500m').textContent=c.haven_count_500m||0;var icMap={koban:'🚔',convenience_store:'🏪',fire_station:'🚒',hospital:'🏥',station:'🚉'};document.getElementById('haven-list').innerHTML=nt?'<div class="haven-row"><span class="haven-icon">'+(icMap[nt]||'📍')+'</span><span class="haven-name">'+nt+'</span>'+(c.nearest_haven_dist?'<span class="haven-dist">'+c.nearest_haven_dist.toFixed(2)+'km</span>':'')+'</div>'+((c.haven_count_500m||0)<2?'<div style="color:#f44336;font-size:10px;margin-top:4px">⚠ 逃げ場が少ない</div>':''):'<div style="color:#444;font-size:11px">データなし</div>';var LL=LANG[currentLang];var a='';if(eh>=.5)a='🔴 '+LL.adv_danger;else if(eh>=.3)a='🟠 '+LL.adv_warn;else if(eh>=.15)a='🟡 '+LL.adv_caution;else a='🟢 '+LL.adv_safe;if(wI>1.15)a+=' '+(currentLang==='en'?LANG.en.adv_weather:LANG.ja.adv_weather);if((bp||0)<.3)a+=' '+(currentLang==='en'?LANG.en.adv_escape:LANG.ja.adv_escape);
+/* P1-2: Crime-type-specific advice */
+if(safetyGuide&&realtimeMarkers.length>0){var nearby=realtimeMarkers.filter(function(m){return Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.005});if(nearby.length>0){var topType=mostCommon(nearby.map(function(m){return m.subtype}));var guide=safetyGuide.find(function(g){return g.type===topType});if(guide)a+='<br><br>⚠ '+(currentLang==='en'?guide.advice_en:guide.advice_ja)}}
+document.getElementById('advice-panel').innerHTML=a;
 /* C1: Update safety grade */
 updateSafetyGrade(c,eh);
 /* C2: Update haven table */
@@ -598,12 +646,12 @@ function updateDonutChart(c){
       }
     });
   }
-  var labels=Object.keys(counts),vals=Object.values(counts);
+  var labels=Object.keys(counts).map(crimeTr),vals=Object.values(counts);
   var total=vals.reduce(function(a,b){return a+b},0);
   var ctx=document.getElementById('donut-chart').getContext('2d');
   if(donutChart)donutChart.destroy();
   if(total===0){
-    donutChart=new Chart(ctx,{type:'doughnut',data:{labels:['データなし'],datasets:[{data:[1],backgroundColor:['#2a2a3a'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false}}}});
+    donutChart=new Chart(ctx,{type:'doughnut',data:{labels:[currentLang==='en'?'No data':'データなし'],datasets:[{data:[1],backgroundColor:['#2a2a3a'],borderWidth:0}]},options:{responsive:true,maintainAspectRatio:true,plugins:{legend:{display:false}}}});
     return;
   }
   donutChart=new Chart(ctx,{type:'doughnut',data:{labels:labels,datasets:[{data:vals,backgroundColor:['#42a5f5','#ef5350','#ff7043','#66bb6a','#ab47bc','#ffa726','#26c6da','#78909c'],borderWidth:1,borderColor:isDarkMode?'#12121a':'#fff'}]},options:{responsive:true,maintainAspectRatio:true,cutout:'55%',plugins:{legend:{position:'right',labels:{color:isDarkMode?'#aaa':'#555',font:{size:10},padding:6,boxWidth:10}}}}});
@@ -625,7 +673,7 @@ function onTimeSliderChange(v){selectedHour=parseInt(v);document.getElementById(
 function loadEvents(data){var evEl=document.getElementById('event-status');var all=[];if(data.scraped)all=all.concat(data.scraped);if(data.calendar)all=all.concat(data.calendar);var today=new Date().toISOString().slice(0,10);var active=all.filter(function(e){return e.date===today||e.date<=today&&e.duration_days&&new Date(e.date).getTime()+e.duration_days*86400000>Date.now()});if(active.length>0){evEl.textContent=active[0].name.slice(0,12)+(active.length>1?'+'+( active.length-1):'');evEl.className='status-value warn'}else{evEl.textContent='なし';evEl.className='status-value ok'}}
 function loadTransit(data){var sEl=document.getElementById('transit-status');var ds=data.disruptions||[];var susp=ds.filter(function(d){return d.severity==='suspension'});var delay=ds.filter(function(d){return d.severity==='delay'});if(susp.length>0){sEl.textContent=susp.length+'路線運休';sEl.className='status-value alert'}else if(delay.length>0){sEl.textContent=delay.length+'路線遅延';sEl.className='status-value warn'}else{sEl.textContent='平常運転';sEl.className='status-value ok'}}
 /* geolocateUser moved to Feature H section below with instant safety check */
-function filterFushinsha(type){currentFushinshaFilter=type;document.querySelectorAll('.fushinsha-filter-btn').forEach(function(b){b.classList.toggle('active',b.textContent===type||(type==='all'&&b.textContent==='全て'))});renderRT()}
+function filterFushinsha(type){currentFushinshaFilter=type;document.querySelectorAll('.fushinsha-filter-btn').forEach(function(b){var txt=b.getAttribute('data-type')||b.textContent;b.classList.toggle('active',txt===type||(type==='all'&&(txt==='all'||txt==='全て'||txt==='All')))});renderRT()}
 function setGridSubtype(st){gridSubtype=st;var btns=document.querySelectorAll('#grid-subtype-filter .btn');btns.forEach(function(b){b.classList.toggle('active',(st===null&&b.textContent==='全犯罪')||b.textContent===st)});if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
 function showErrorBanner(msg){var el=document.getElementById('error-banner');el.textContent=msg;el.style.display='block';setTimeout(function(){el.style.display='none'},10000)}
 function dismissOnboarding(){document.getElementById('onboarding-overlay').style.display='none';localStorage.setItem('riskspace_onboarded','1')}
@@ -1032,8 +1080,18 @@ function applyLang(){
   titles.forEach(function(el,i){
     if(titleMap[lang]&&titleMap[lang][i]){el.textContent=titleMap[lang][i]}
   });
+  /* Update fushinsha filter button labels */
+  document.querySelectorAll('.fushinsha-filter-btn').forEach(function(b){
+    var dt=b.getAttribute('data-type');
+    if(dt==='all')b.textContent=currentLang==='en'?'All':'全て';
+    else b.textContent=crimeTr(dt);
+  });
+  var fLabel=document.getElementById('fushinsha-filter-label');
+  if(fLabel)fLabel.textContent=currentLang==='en'?'Suspicious filter':'不審者フィルター';
   /* Update tourist cards */
   renderTouristCards();
+  /* Re-render donut chart with translated labels */
+  if(lastClickLatLng){var _cc={_lat:lastClickLatLng.lat,_lon:lastClickLatLng.lng||lastClickLatLng.lon};updateDonutChart(_cc)}
   /* Update haven table if we have coordinates */
   if(lastClickLatLng){
     updateHavenTable(lastClickLatLng.lat,lastClickLatLng.lng||lastClickLatLng.lon);
