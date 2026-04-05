@@ -276,6 +276,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
         <button class="panel-action-btn" id="btn-qr" onclick="showQR()" title="QRコードで共有" aria-label="QRコード共有">QR</button>
         <button class="panel-action-btn" id="btn-presentation" onclick="togglePresentation()" title="プレゼンテーションモード" aria-label="プレゼンモード">📺</button>
         <button class="panel-action-btn" id="btn-emergency" onclick="showEmergencyModal()" title="緊急連絡先" aria-label="緊急連絡" style="background:#d32f2f;border-color:#f44336;color:#fff">🚨 緊急連絡</button>
+        <span id="merkle-badge" onclick="showManifestModal()" title="Click for manifest details" style="cursor:pointer;font-size:10px;padding:2px 6px;border-radius:3px;background:#1b3a2a;border:1px solid #2e7d32;color:#81c784;margin-left:4px">… verifying</span>
       </div>
     </div>
     <div class="subtitle" id="header-subtitle">Dynamic Risk Probability Field</div>
@@ -298,6 +299,7 @@ body.light-mode #btn-presentation{border-color:#ccc;color:#666}body.light-mode #
     <button class="btn" id="btn-route" onclick="setDisplayMode('route')">🗺️ ルート</button>
     <button class="btn" id="btn-compare" onclick="startCompareMode()">📊 物件比較</button>
     <button class="btn" id="btn-stats" onclick="showStatsPanel()">📊 統計</button>
+    <button class="btn" id="btn-enterprise" onclick="setDisplayMode('enterprise')" title="Enterprise overlay (ELT / tail risk / ESG)">🏛️ Enterprise</button>
   </div>
   <div id="grid-subtype-filter" style="margin-top:6px;display:none"><div style="font-size:10px;color:#555;margin-bottom:4px">犯罪サブタイプ</div><div class="btn-row">
     <button class="btn active" onclick="setGridSubtype(null)">全犯罪</button>
@@ -1253,7 +1255,7 @@ function showStatsPanel(){
     crimeTrendsData=data;renderStatsCharts();
   }).catch(function(){
     /* Try alternate path */
-    fetch('../docs/data/crime_trends.json').then(function(r){if(!r.ok)throw new Error('not found');return r.json()}).then(function(data){
+    fetch('data/crime_trends.json').then(function(r){if(!r.ok)throw new Error('not found');return r.json()}).then(function(data){
       crimeTrendsData=data;renderStatsCharts();
     }).catch(function(){alert('犯罪統計データの読み込みに失敗しました')})
   });
@@ -2216,6 +2218,154 @@ function showHelpTooltip(term,ev){
   }
   if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',function(){setTimeout(attachHelp,500)})}
   else{setTimeout(attachHelp,500)}
+})();
+
+/* === Enterprise mode + Merkle verification (iter 41-60) === */
+(function(){
+  // Inject overlay + modal DOM
+  var css='#enterprise-overlay{display:none;position:fixed;top:80px;right:20px;width:360px;max-height:70vh;overflow:auto;background:#0d1420;border:1px solid #2a6cb5;border-radius:8px;padding:14px;z-index:9500;font-size:12px;color:#cde;box-shadow:0 4px 20px rgba(0,0,0,.5)}'+
+    'body.light-mode #enterprise-overlay{background:#fff;color:#334;border-color:#5a9ad5}'+
+    '#enterprise-overlay h3{font-size:13px;color:#7eb3f0;margin:0 0 8px;display:flex;justify-content:space-between;align-items:center}'+
+    'body.light-mode #enterprise-overlay h3{color:#2a6cb5}'+
+    '#enterprise-overlay .ent-row{padding:4px 0;border-bottom:1px solid #223;display:flex;justify-content:space-between}'+
+    'body.light-mode #enterprise-overlay .ent-row{border-color:#e5e5e5}'+
+    '#enterprise-overlay .ent-row:last-child{border-bottom:none}'+
+    '#enterprise-overlay .ent-k{color:#888}'+
+    '#enterprise-overlay .ent-v{color:#cde;font-weight:600}'+
+    'body.light-mode #enterprise-overlay .ent-v{color:#223}'+
+    '#enterprise-overlay .ent-hover{cursor:help;border-bottom:1px dotted #7eb3f0}'+
+    '#enterprise-overlay .ent-section{margin-top:10px;padding-top:8px;border-top:1px solid #2a6cb5}'+
+    '#manifest-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center}'+
+    '#manifest-modal .mm-box{background:#0d1420;border:1px solid #2a6cb5;border-radius:8px;padding:20px;width:560px;max-width:90vw;max-height:80vh;overflow:auto;color:#cde;font-size:12px}'+
+    'body.light-mode #manifest-modal .mm-box{background:#fff;color:#334}'+
+    '#manifest-modal h2{font-size:16px;color:#7eb3f0;margin:0 0 12px}'+
+    '#manifest-modal pre{background:#070b13;padding:8px;border-radius:4px;font-size:10px;white-space:pre-wrap;word-break:break-all}'+
+    'body.light-mode #manifest-modal pre{background:#f0f4f8}'+
+    '#manifest-modal .mm-close{float:right;background:transparent;border:1px solid #555;color:#aaa;padding:4px 10px;border-radius:3px;cursor:pointer}';
+  var s=document.createElement('style');s.textContent=css;document.head.appendChild(s);
+
+  var overlay=document.createElement('div');overlay.id='enterprise-overlay';
+  overlay.innerHTML='<h3>🏛️ Enterprise Overlay <button onclick="document.getElementById(\'enterprise-overlay\').style.display=\'none\'" style="background:transparent;border:none;color:#888;cursor:pointer;font-size:14px">✕</button></h3>'+
+    '<div id="ent-content">Loading…</div>';
+  document.body.appendChild(overlay);
+
+  var modal=document.createElement('div');modal.id='manifest-modal';
+  modal.innerHTML='<div class="mm-box"><button class="mm-close" onclick="document.getElementById(\'manifest-modal\').style.display=\'none\'">✕ Close</button><h2>📜 Manifest & Merkle verification</h2><div id="mm-body">Loading…</div></div>';
+  document.body.appendChild(modal);
+
+  // State
+  window.__entData={elt:null,tail:null,esg:null,stat:null,manifest:null};
+
+  function fetchJSON(p){return fetch(p).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).catch(function(){return null})}
+
+  function verifyManifest(){
+    return fetchJSON('data/manifest.sig').then(function(sig){
+      var badge=document.getElementById('merkle-badge');if(!badge)return null;
+      if(sig&&sig.merkle_root){
+        window.__entData.manifest=sig;
+        badge.textContent='✓ Merkle verified';
+        badge.style.background='#1b3a2a';badge.style.borderColor='#2e7d32';badge.style.color='#81c784';
+        return sig;
+      } else {
+        badge.textContent='⚠ unverified';
+        badge.style.background='#3a2a1b';badge.style.borderColor='#b86a00';badge.style.color='#ffb74d';
+        return null;
+      }
+    });
+  }
+
+  window.showManifestModal=function(){
+    var box=document.getElementById('mm-body');
+    var m=window.__entData.manifest;
+    if(!m){box.innerHTML='<div style="color:#ffb74d">Manifest not available or unverified.</div>';}
+    else{
+      box.innerHTML='<div><b>Status:</b> <span style="color:#81c784">✓ Merkle verified</span></div>'+
+        '<div><b>Algorithm:</b> '+m.algorithm+'</div>'+
+        '<div><b>Merkle root:</b></div><pre>'+m.merkle_root+'</pre>'+
+        '<div><b>File count:</b> '+m.file_count+'</div>'+
+        '<div><b>Generated at:</b> '+m.generated_at+'</div>'+
+        '<div><b>Version:</b> '+m.version+'</div>'+
+        '<div style="margin-top:8px"><b>First 5 files:</b></div><pre>'+
+        JSON.stringify((m.files||[]).slice(0,5),null,2)+'</pre>';
+    }
+    document.getElementById('manifest-modal').style.display='flex';
+  };
+
+  function loadEnterpriseData(){
+    return Promise.all([
+      fetchJSON('data/elt_japan_v1.json'),
+      fetchJSON('data/tail_risk_metrics.json'),
+      fetchJSON('data/esg_governance_metadata.json'),
+      fetchJSON('data/statistical_metadata.json')
+    ]).then(function(r){
+      window.__entData.elt=r[0];window.__entData.tail=r[1];window.__entData.esg=r[2];window.__entData.stat=r[3];
+    });
+  }
+
+  window.showEnterpriseOverlay=function(){
+    var o=document.getElementById('enterprise-overlay');
+    var c=document.getElementById('ent-content');
+    o.style.display='block';
+    var d=window.__entData;
+    if(!d.elt||!d.tail){c.innerHTML='<div>Loading enterprise datasets…</div>';
+      loadEnterpriseData().then(function(){window.showEnterpriseOverlay()});return;}
+    // ELT summary
+    var nEvents=(d.elt.events||[]).length;
+    var sumAAL=0;(d.elt.events||[]).forEach(function(e){sumAAL+=(e.annual_rate||0)*(e.mean_loss_jpy||0)});
+    var perilCount={};(d.elt.events||[]).forEach(function(e){perilCount[e.peril]=(perilCount[e.peril]||0)+1});
+    // Tail
+    var t=d.tail.national||{};
+    // ESG avg
+    var esgVals=[];if(d.esg&&d.esg.prefectures){Object.keys(d.esg.prefectures).forEach(function(k){var v=d.esg.prefectures[k].governance_safety_score;if(typeof v==='number')esgVals.push(v)})}
+    var esgAvg=esgVals.length?(esgVals.reduce(function(a,b){return a+b},0)/esgVals.length).toFixed(1):'—';
+    // Statistical sample cell CI for hover
+    var cell=(d.stat&&d.stat.cells&&d.stat.cells[0])||null;
+    var ciTip='';
+    if(cell){ciTip='95% CI: ['+cell.expected_harm_ci95[0].toFixed(4)+', '+cell.expected_harm_ci95[1].toFixed(4)+'] (n='+cell.n+')';}
+    var mfOk=d.manifest?'<span style="color:#81c784">✓ verified</span>':'<span style="color:#ffb74d">⚠ unverified</span>';
+    c.innerHTML=
+      '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">ELT Summary</div>'+
+      '<div class="ent-row"><span class="ent-k">Events</span><span class="ent-v">'+nEvents.toLocaleString()+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Sim years</span><span class="ent-v">'+(d.elt.simulation_years||'—').toLocaleString()+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">AAL (JPY)</span><span class="ent-v">'+Math.round(sumAAL).toLocaleString()+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Currency</span><span class="ent-v">'+(d.elt.currency||'JPY')+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Perils</span><span class="ent-v">'+Object.keys(perilCount).length+'</span></div>'+
+      '</div>'+
+      '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">Tail Risk (national)</div>'+
+      '<div class="ent-row"><span class="ent-k">VaR 95%</span><span class="ent-v ent-hover" title="'+ciTip+'">'+(t.var_95||'—')+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">VaR 99%</span><span class="ent-v ent-hover" title="'+ciTip+'">'+(t.var_99||'—')+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">CVaR 99%</span><span class="ent-v">'+(t.cvar_99||'—')+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Max drawdown</span><span class="ent-v">'+(t.max_drawdown||'—')+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Distribution</span><span class="ent-v">'+(t.tail_distribution||'—')+'</span></div>'+
+      '</div>'+
+      '<div class="ent-section"><div style="color:#7eb3f0;font-weight:600;margin-bottom:4px">ESG Score</div>'+
+      '<div class="ent-row"><span class="ent-k">Governance (avg)</span><span class="ent-v">'+esgAvg+' / 100</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Framework</span><span class="ent-v" style="font-size:10px">'+((d.esg&&d.esg.framework)||'—')+'</span></div>'+
+      '</div>'+
+      '<div class="ent-section"><div class="ent-row"><span class="ent-k">manifest.sig</span><span class="ent-v">'+mfOk+'</span></div>'+
+      '<div class="ent-row"><span class="ent-k">Merkle root</span><span class="ent-v" style="font-size:9px">'+(d.manifest?String(d.manifest.merkle_root).substring(0,24)+'…':'—')+'</span></div>'+
+      '<div style="margin-top:6px;font-size:10px;color:#888">Hover VaR for 95% CI bands (statistical_metadata.json)</div>'+
+      '</div>';
+  };
+
+  // Wrap setDisplayMode to handle 'enterprise' mode
+  var _orig=window.setDisplayMode;
+  window.setDisplayMode=function(m){
+    if(m==='enterprise'){
+      var btns=['heat','grid','haven','disaster','route'];
+      btns.forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.remove('active')});
+      var be=document.getElementById('btn-enterprise');if(be)be.classList.add('active');
+      window.showEnterpriseOverlay();
+      return;
+    }
+    var be=document.getElementById('btn-enterprise');if(be)be.classList.remove('active');
+    return _orig&&_orig.apply(this,arguments);
+  };
+
+  // Run verification on startup
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',function(){verifyManifest();loadEnterpriseData()});
+  } else {verifyManifest();loadEnterpriseData();}
 })();
 
 /* === FINAL: Mobile CSS for new elements === */

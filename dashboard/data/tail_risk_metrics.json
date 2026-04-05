@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-05T12:00:00Z",
+    "description": "Tail risk metrics computed from grid_risk.json expected_harm distribution (empirical quantiles)",
+    "methodology": "Empirical VaR/CVaR/ES at 95% and 99% confidence levels; max drawdown as (max-min)/max"
+  },
+  "national": {
+    "var_95": 0.0714,
+    "var_99": 0.0756,
+    "cvar_99": 0.0823,
+    "es_99": 0.0823,
+    "max": 0.0895,
+    "min": 0.0202,
+    "max_drawdown": 0.7743,
+    "n": 10000,
+    "tail_distribution": "generalized_pareto"
+  },
+  "prefectures": {
+    "東京都": {
+      "var_95": 0.0578,
+      "var_99": 0.0658,
+      "cvar_99": 0.0723,
+      "es_99": 0.0723,
+      "max": 0.0738,
+      "min": 0.0202,
+      "max_drawdown": 0.7263,
+      "n": 191
+    },
+    "神奈川県": {
+      "var_95": 0.056,
+      "var_99": 0.071,
+      "cvar_99": 0.072,
+      "es_99": 0.072,
+      "max": 0.0728,
+      "min": 0.0202,
+      "max_drawdown": 0.7225,
+      "n": 158
+    },
+    "大阪府": {
+      "var_95": 0.0599,
+      "var_99": 0.0702,
+      "cvar_99": 0.071,
+      "es_99": 0.071,
+      "max": 0.0715,
+      "min": 0.0202,
+      "max_drawdown": 0.7175,
+      "n": 232
+    },
+    "愛知県": {
+      "var_95": 0.0602,
+      "var_99": 0.0718,
+      "cvar_99": 0.0733,
+      "es_99": 0.0733,
+      "max": 0.0757,
+      "min": 0.0202,
+      "max_drawdown": 0.7332,
+      "n": 619
+    },
+    "北海道": {
+      "var_95": 0.0745,
+      "var_99": 0.0806,
+      "cvar_99": 0.0882,
+      "es_99": 0.0882,
+      "max": 0.0895,
+      "min": 0.0202,
+      "max_drawdown": 0.7743,
+      "n": 558
+    },
+    "福岡県": {
+      "var_95": 0.0594,
+      "var_99": 0.0711,
+      "cvar_99": 0.0772,
+      "es_99": 0.0772,
+      "max": 0.0853,
+      "min": 0.0202,
+      "max_drawdown": 0.7632,
+      "n": 787
+    },
+    "京都府": {
+      "var_95": 0.0691,
+      "var_99": 0.0851,
+      "cvar_99": 0.0865,
+      "es_99": 0.0865,
+      "max": 0.087,
+      "min": 0.0202,
+      "max_drawdown": 0.7678,
+      "n": 364
+    },
+    "兵庫県": {
+      "var_95": 0.0701,
+      "var_99": 0.0768,
+      "cvar_99": 0.0824,
+      "es_99": 0.0824,
+      "max": 0.0851,
+      "min": 0.0202,
+      "max_drawdown": 0.7626,
+      "n": 569
+    },
+    "埼玉県": {
+      "var_95": 0.0609,
+      "var_99": 0.0664,
+      "cvar_99": 0.0753,
+      "es_99": 0.0753,
+      "max": 0.0862,
+      "min": 0.0202,
+      "max_drawdown": 0.7657,
+      "n": 602
+    },
+    "千葉県": {
+      "var_95": 0.0648,
+      "var_99": 0.074,
+      "cvar_99": 0.0799,
+      "es_99": 0.0799,
+      "max": 0.0867,
+      "min": 0.0202,
+      "max_drawdown": 0.767,
+      "n": 672
+    }
+  }
+}

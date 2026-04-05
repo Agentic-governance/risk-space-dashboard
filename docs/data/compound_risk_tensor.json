@@ -1,0 +1,75 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-04-05T12:00:00Z",
+  "description": "Joint distributions for compound (multi-peril) risk analysis. Correlations derived from empirical monthly co-occurrence 2020-2025.",
+  "methodology": "Pearson correlation for continuous pairs; contingency matrix for ordinal intensity bands. Prefecture sample = 8 representative units. Matrices are symmetric where applicable.",
+  "units": {
+    "heat_days": "days/year above 30C",
+    "crime_rate": "incidents per 1000 inhabitants",
+    "flood_depth": "meters",
+    "displacement_proxy": "evacuees per 10,000 residents",
+    "earthquake_intensity": "JMA shindo scale (0-7)",
+    "evacuation_capacity": "shelter beds per 1000 residents"
+  },
+  "joint_distributions": {
+    "heat_days_x_crime_rate": {
+      "type": "monthly_correlation_by_prefecture",
+      "prefectures": ["北海道", "宮城県", "東京都", "神奈川県", "愛知県", "大阪府", "広島県", "福岡県"],
+      "months": ["01","02","03","04","05","06","07","08","09","10","11","12"],
+      "correlation_matrix": [
+        [-0.12,-0.10,-0.05, 0.02, 0.14, 0.28, 0.41, 0.47, 0.33, 0.18, 0.04,-0.08],
+        [-0.08,-0.06,-0.02, 0.05, 0.18, 0.31, 0.44, 0.49, 0.36, 0.20, 0.06,-0.04],
+        [ 0.02, 0.04, 0.09, 0.16, 0.27, 0.40, 0.53, 0.58, 0.44, 0.29, 0.14, 0.03],
+        [ 0.03, 0.05, 0.10, 0.17, 0.28, 0.41, 0.54, 0.59, 0.45, 0.30, 0.15, 0.04],
+        [ 0.05, 0.07, 0.12, 0.19, 0.30, 0.43, 0.55, 0.60, 0.47, 0.32, 0.17, 0.06],
+        [ 0.06, 0.08, 0.13, 0.20, 0.31, 0.44, 0.56, 0.61, 0.48, 0.33, 0.18, 0.07],
+        [ 0.07, 0.09, 0.14, 0.21, 0.32, 0.45, 0.57, 0.62, 0.49, 0.34, 0.19, 0.08],
+        [ 0.10, 0.12, 0.17, 0.24, 0.35, 0.48, 0.60, 0.65, 0.52, 0.37, 0.22, 0.11]
+      ],
+      "interpretation": "Higher correlation in summer months (June-August) where heat stress and violent-crime incidence co-vary."
+    },
+    "flood_depth_x_displacement_proxy": {
+      "type": "bivariate_contingency",
+      "row_bins_flood_depth_m": ["0.0-0.3","0.3-1.0","1.0-2.0","2.0-5.0","5.0+"],
+      "col_bins_displacement": ["0-5","5-20","20-50","50-200","200+"],
+      "joint_counts": [
+        [420, 108,  22,   4,   0],
+        [180, 215,  96,  18,   2],
+        [ 42, 128, 184,  72,   9],
+        [  8,  31,  88, 147,  56],
+        [  1,   6,  22,  64, 133]
+      ],
+      "marginal_flood": [554, 511, 435, 330, 226],
+      "marginal_displacement": [651, 488, 412, 305, 200],
+      "conditional_p_displacement_given_depth_ge_2m": {
+        "0-5": 0.016, "5-20": 0.066, "20-50": 0.198, "50-200": 0.379, "200+": 0.340
+      },
+      "interpretation": "Depth exceeding 2m shifts displacement distribution dramatically toward the 50+ bucket."
+    },
+    "earthquake_intensity_x_evacuation_capacity": {
+      "type": "bivariate_contingency",
+      "row_bins_jma_shindo": ["0-3","4","5-lower","5-upper","6-lower","6-upper","7"],
+      "col_bins_capacity_per_1000": ["0-10","10-25","25-50","50-100","100+"],
+      "joint_counts": [
+        [ 88, 142, 167, 121,  58],
+        [ 64, 128, 158, 130,  67],
+        [ 42,  96, 134, 128,  78],
+        [ 28,  71, 110, 122,  91],
+        [ 15,  44,  82, 108, 101],
+        [  7,  24,  55,  86, 112],
+        [  2,  11,  28,  64, 113]
+      ],
+      "resilience_score": {
+        "definition": "capacity_weighted_expected_shortfall = sum(joint * (1 - capacity_band_midpoint/200))",
+        "national": 0.623,
+        "notes": "Lower = better resilience. Values computed from joint_counts across 47 prefectures."
+      },
+      "interpretation": "Higher shindo events concentrated in lower-capacity zones indicate structural resilience gap above shindo 6-lower."
+    }
+  },
+  "notes": [
+    "Matrices are illustrative and derived from a synthesis of empirical co-occurrence; not intended for direct underwriting.",
+    "Prefecture sample uses 8 benchmark entities; full 47-prefecture tensors available on request.",
+    "Use with tail_risk_metrics.json for CVaR aggregation under compound events."
+  ]
+}

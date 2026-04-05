@@ -460,6 +460,7 @@ components:
 
     Error:
       type: object
+      required: [error, code]
       properties:
         error:
           type: string
@@ -467,3 +468,111 @@ components:
           type: string
         code:
           type: integer
+        request_id:
+          type: string
+          description: Correlation ID for support requests
+        x-identifiers:
+          type: object
+          description: Stub enterprise identifier fields
+          properties:
+            figi:
+              type: string
+              description: Bloomberg FIGI (stub)
+            ric:
+              type: string
+              description: Refinitiv RIC (stub)
+            bbg:
+              type: string
+              description: Bloomberg ticker (stub)
+
+  securitySchemes:
+    OAuth2Enterprise:
+      type: oauth2
+      description: OAuth2 client_credentials flow for enterprise tier
+      flows:
+        clientCredentials:
+          tokenUrl: https://risk-space.workers.dev/oauth/token
+          scopes:
+            read:risk: Read risk scores and distributions
+            read:enterprise: Read enterprise datasets (ELT, tail metrics, ESG)
+            read:manifest: Read manifest and audit log
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: Community / developer tier API key
+
+  responses:
+    BadRequest:
+      description: 400 — Invalid request parameters
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "bad_request"
+            message: "lat out of range"
+            code: 400
+    Unauthorized:
+      description: 401 — Missing or invalid credentials
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    RateLimited:
+      description: 429 — Rate limit exceeded
+      headers:
+        Retry-After:
+          schema: {type: integer}
+          description: Seconds to wait before retry
+        X-RateLimit-Limit:
+          schema: {type: integer}
+        X-RateLimit-Remaining:
+          schema: {type: integer}
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+    InternalError:
+      description: 500 — Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+
+security:
+  - ApiKeyAuth: []
+  - OAuth2Enterprise: [read:risk]
+
+x-sla:
+  availability: "99.9%"
+  latency_p95_ms: 200
+  latency_p99_ms: 500
+  rpo_minutes: 15
+  rto_minutes: 60
+  support_hours: "JST business days 09:00-18:00 (enterprise 24x7)"
+  credits:
+    below_99_9: "5% of monthly fee"
+    below_99_5: "15% of monthly fee"
+    below_99_0: "30% of monthly fee"
+
+x-rate-limits:
+  community:
+    rpm: 60
+    rph: 1000
+    burst: 10
+  developer:
+    rpm: 300
+    rph: 10000
+    burst: 50
+  enterprise:
+    rpm: 3000
+    rph: 200000
+    burst: 500
+    concurrent: 100
+
+x-identifiers:
+  description: Stub enterprise identifier mapping (not yet populated)
+  figi: "BBG000000000"
+  ric: "0000.T"
+  bbg: "0000 JP Equity"
