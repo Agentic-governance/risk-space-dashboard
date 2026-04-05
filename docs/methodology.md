@@ -148,18 +148,33 @@ hotspot resolution. The algorithm follows Samet (1984).
 
 ## 4. Validation
 
-We validate against a held-out 2024Q4 event set (not used for KDE
-fitting):
+> **Disclosure**: As of v1.0, formal hold-out validation has NOT been
+> conducted. The metrics below are targets, not measured values.
+> A validation pipeline using 2024Q4 hold-out is planned but not yet
+> implemented. The current scores should be treated as indicative only.
 
-| Metric | Value | Notes |
+| Metric | Target | Status |
 |---|---|---|
-| PAI (Predictive Accuracy Index) | 4.21 | Chainey et al. (2008); >2 is good |
-| PEI (Predictive Efficiency Index) | 0.38 | Hunt (2016); max=1 |
-| Top-decile hit rate | 62.3 % | % of held-out events in top 10 % of cells |
-| Brier score (calibration) | 0.087 | Lower is better |
+| PAI (Predictive Accuracy Index) | >2.0 | **Not yet measured** |
+| PEI (Predictive Efficiency Index) | >0.3 | **Not yet measured** |
+| Top-decile hit rate | >50% | **Not yet measured** |
+| Brier score (calibration) | <0.15 | **Not yet measured** |
 
-Validation is cross-checked per prefecture. Performance degrades in rural
-prefectures where event counts are low (see §5).
+### 4.1 Model Characterization (Honest Assessment)
+
+- `risk_score` is a **composite index** (0–1), NOT a calibrated probability.
+  It combines density and severity via weighted sum, not logistic regression.
+- `P(escape)` uses **expert-estimated weights** (distance 0.35, density 0.25,
+  proximity 0.20, arrival 0.20). These have NOT been derived from outcome data.
+- `Expected Harm` is therefore a **risk index**, not an expected value in the
+  actuarial sense. Users should interpret it as relative ranking, not as
+  absolute probability of harm.
+- The KDE bandwidth in `methodology.md` states 250m (Silverman), but
+  the implementation (`kde_risk.py`) uses 0.01° (~1km). This discrepancy
+  is noted and will be resolved in v2.0.
+- Time multipliers (TM function) are based on criminological literature
+  patterns, not derived from the specific dataset. They represent
+  general temporal risk patterns for Japan.
 
 ---
 
