@@ -4,6 +4,32 @@ All notable changes to the Risk Space MCP dashboard.
 
 ---
 
+## v12.0 - Final Persona Validation & Test Report (iter 21-30 final, 2026-04-09)
+
+### Persona Verification (15/15 PASS)
+- **B1 (Secom)**: OpenAPI spec confirmed at `docs/api/openapi.yaml`
+- **B2 (ALSOK)**: Coverage matrix loads via `coverage_matrix.json` with prefecture detail
+- **B3 (SoftBank)**: Embed widget available at `docs/data/embed_widget.html`
+- **B4 (Sompo)**: Loss triangle 2018-2024 confirmed for IBNR development
+- **B5 (Benesse)**: `getAgeMultiplier()` provides age-stratified risk (1.5x for <=7, 1.3x for <=12, 0.85x for >=16)
+- **R1 (ISO 31000)**: Residual risk statement at `docs/residual_risk.md`, linked from modals
+- **R2 (COSO ERM)**: KRI tab in enterprise overlay with 5 key risk indicators
+- **R3 (FSA)**: Data lineage JSON + model risk disclosure modal implemented
+- **R4 (MoD)**: Merkle manifest (`manifest.sig`) with verification badge + modal
+- **R5 (Tokyo Metro)**: Legal disclaimer in right panel + full `LEGAL.md`
+- **P1-P10 (Parents)**: `toggleMimamoriMode()` with age slider and child-specific risk multipliers
+
+### Data Quality Updates
+- Updated `summary.json` (both copies): grid_cells=7,347, fushinsha=6,350, evacuation=19,056
+- Data quality flags: formula_verified, p_escape_recalculated, severity_validated, duplicates_removed
+- Dashboard version bumped to v12.0, personas_validated=33
+
+### Documentation
+- Created `docs/TEST_REPORT.md`: comprehensive test report with 15 persona results, data quality summary, known issues, v2.0 recommendations
+- Updated CHANGELOG with full enterprise iteration campaign history
+
+---
+
 ## v12 - Institutional / Enterprise Campaign (iter 41-100, 2026-04-05)
 
 ### 15 new institutional datasets
