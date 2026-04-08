@@ -498,6 +498,17 @@ body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800
       <div id="mima-route-msg" style="font-size:10px;color:#888;margin-top:4px;display:none"></div>
     </div>
     <div class="mima-section">
+      <div class="mima-title">&#x1F476; 子供の年齢</div>
+      <select id="mima-child-age" onchange="updateAgeRisk(this.value)" style="width:100%;padding:5px 8px;font-size:11px;background:#1e1e2e;border:1px solid #2a2a3a;color:#e0e0e0;border-radius:3px;outline:none;cursor:pointer;margin-bottom:4px">
+        <option value="6">小学1-2年 (6-7歳)</option>
+        <option value="9">小学3-4年 (8-9歳)</option>
+        <option value="11">小学5-6年 (10-11歳)</option>
+        <option value="13" selected>中学生 (12-14歳)</option>
+        <option value="16">高校生 (15-17歳)</option>
+      </select>
+      <div id="mima-age-mult-display" style="font-size:10px;color:#66bb6a;margin-bottom:4px">年齢乗数: x1.0 (基準)</div>
+    </div>
+    <div class="mima-section">
       <div class="mima-title">&#x2699;&#xFE0F; 設定</div>
       <label style="display:flex;align-items:center;gap:6px;font-size:11px;color:#aaa;cursor:pointer;margin-bottom:6px">
         <input type="checkbox" id="mima-simplified-toggle" onchange="toggleSimplifiedMode(this.checked)"> 簡易モード（祖母向け）
@@ -591,6 +602,14 @@ body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800
       <button id="btn-export-pdf" onclick="generatePDF()" title="PDFレポートを生成" style="background:#2a1a3a;border:1px solid #9c27b0;color:#ce93d8;border-radius:3px;cursor:pointer;padding:5px 10px;font-size:11px">📄 PDF</button>
     </div>
     <div style="font-size:10px;color:#444;margin-top:6px">地点クリック後に周辺データを出力</div>
+  </div>
+  <div class="section" id="data-lineage-section">
+    <button id="btn-data-lineage" onclick="showDataLineageModal()" style="width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#1a2a3c;border:1px solid #4a7ab5;color:#7eb3f0;border-radius:4px;cursor:pointer;transition:all .2s">&#x1F4C4; データリネージ</button>
+    <div style="font-size:9px;color:#555;margin-top:4px;text-align:center">FSA R3 / ISO 31000 data provenance disclosure</div>
+  </div>
+  <div class="section" id="model-risk-section">
+    <button id="btn-model-risk" onclick="showModelRiskModal()" style="width:100%;padding:8px 12px;font-size:12px;font-weight:700;background:#2a1a2a;border:1px solid #9c27b0;color:#ce93d8;border-radius:4px;cursor:pointer;transition:all .2s">&#x26A0;&#xFE0F; モデルリスク開示</button>
+    <div style="font-size:9px;color:#555;margin-top:4px;text-align:center">Model limitations, biases &amp; confidence levels</div>
   </div>
   <div class="section" id="attribution">
     <div class="section-title" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'" style="cursor:pointer">&#x1F4CA; データ出典 &#x25BC;</div>
@@ -912,7 +931,7 @@ async function loadSingleHeatLayer(k){
   }catch(e){console.warn(k,e)}
 }
 
-function drawGrid(data){if(gridLayer){map.removeLayer(gridLayer);gridLayer=null}if(displayMode!=='grid')return;gridLayer=L.layerGroup();var tm=TM(selectedHour);(data||gridData).slice(0,5000).forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.3)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.5,weight:.5});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('<b>EH:'+eh.toFixed(4)+'</b><br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>件数:'+(c.count||0)+'<br>Haven500m:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});map.addLayer(gridLayer)}
+function drawGrid(data){if(gridLayer){map.removeLayer(gridLayer);gridLayer=null}if(displayMode!=='grid')return;gridLayer=L.layerGroup();var tm=TM(selectedHour);var _ageMult=(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function')?getAgeMultiplier(mimaChildAge):1;(data||gridData).slice(0,5000).forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de)*_ageMult;var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.3)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.5,weight:.5});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('<b>EH:'+eh.toFixed(4)+'</b><br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>件数:'+(c.count||0)+'<br>Haven500m:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});map.addLayer(gridLayer)}
 
 /* #5 Debounced moveend handlers */
 var debouncedLoadGT=debounce(function(){loadGT()},300);
@@ -933,6 +952,8 @@ if(schoolRadiusFilter>0&&!selectedSchoolLatLng){selectedSchoolLatLng={lat:lat,lo
 else if(schoolRadiusFilter>0&&selectedSchoolLatLng){drawSchoolRadius()}}
 
 function updateRP(c){var h=selectedHour,tm=TM(h);var wI=1,wE=1;if(weatherData&&Array.isArray(weatherData)){var md=1/0,nr=null;weatherData.forEach(function(s){if(!s.lat)return;var d=Math.hypot(s.lat-c._lat,s.lon-c._lon);if(d<md){md=d;nr=s}});if(nr){wI=nr.incident_multiplier||1;wE=nr.escape_multiplier||1}}var br=c.risk_score||0,bp=c.p_escape||.5,sv=c.avg_severity||2.5;var fushCount=0;if(realtimeMarkers&&realtimeMarkers.length){realtimeMarkers.forEach(function(m){if(m.lat&&m.lon&&Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.02)fushCount++})}var dr=Math.min(1,br*wI*tm.i+fushCount*0.05),de=Math.min(1,bp*wE*tm.e),eh=dr*(sv/5)*(1-de);
+/* Age-stratified risk multiplier (mimamori mode) */
+if(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function'){eh=eh*getAgeMultiplier(mimaChildAge)}
 
 /* #1 Safety badge - 3 levels */
 var safetyEl=document.getElementById('safety-label');
@@ -3871,6 +3892,139 @@ var _origToggleLayer=window.toggleLayer||toggleLayer;
     'body.light-mode #help-float-btn{background:#e3edf7;border-color:#5a9ad5;color:#2a6cb5}';
   var s2=document.createElement('style');s2.textContent=lm;document.head.appendChild(s2);
 })();
+
+/* === Improvement 1: Age-stratified Risk (B5, B2) === */
+var mimaChildAge=13;
+function getAgeMultiplier(age){
+  age=parseInt(age)||13;
+  if(age<=7)return 1.5;
+  if(age<=9)return 1.3;
+  if(age<=11)return 1.15;
+  if(age<=14)return 1.0;
+  return 0.9;
+}
+function updateAgeRisk(val){
+  mimaChildAge=parseInt(val)||13;
+  var mult=getAgeMultiplier(mimaChildAge);
+  var label=mult===1.0?'x'+mult.toFixed(1)+' (基準)':'x'+mult.toFixed(2)+' ('+(mult>1?'脆弱性高':'脆弱性低')+')';
+  document.getElementById('mima-age-mult-display').textContent='年齢乗数: '+label;
+  document.getElementById('mima-age-mult-display').style.color=mult>1.15?'#ff9800':mult>1?'#ffeb3b':'#66bb6a';
+  /* Re-render if we have a selected cell */
+  if(typeof selectedCell!=='undefined'&&selectedCell&&typeof updateRP==='function'){
+    updateRP(selectedCell);
+  }
+  /* Re-render mimamori dashboard */
+  if(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof renderMimamoriDashboard==='function'){
+    renderMimamoriDashboard();
+  }
+  /* Redraw grid if in grid mode */
+  if(typeof displayMode!=='undefined'&&displayMode==='grid'&&typeof drawGrid==='function'){
+    if(typeof loadedGT!=='undefined')loadedGT={};
+    if(typeof gridLayer!=='undefined'&&gridLayer&&typeof map!=='undefined'){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}
+    drawGrid();
+    if(typeof loadGT==='function')loadGT();
+  }
+}
+
+/* === Improvement 2: Data Lineage Modal (FSA R3) === */
+function showDataLineageModal(){
+  var overlay=document.createElement('div');
+  overlay.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px';
+  var modal=document.createElement('div');
+  modal.style.cssText='background:'+(typeof isDarkMode!=='undefined'&&isDarkMode?'#12121a':'#fff')+';border:1px solid #2a2a3a;border-radius:8px;max-width:720px;width:100%;max-height:85vh;overflow-y:auto;padding:24px;color:'+(typeof isDarkMode!=='undefined'&&isDarkMode?'#e0e0e0':'#333');
+  modal.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h2 style="font-size:18px;color:#7eb3f0;margin:0">&#x1F4C4; データリネージ (Data Lineage)</h2><button onclick="this.closest(\'div[style*=fixed]\').remove()" style="background:none;border:1px solid #555;color:#aaa;font-size:16px;cursor:pointer;border-radius:4px;padding:4px 10px">&times;</button></div>'+
+    '<p style="font-size:11px;color:#888;margin-bottom:16px">FSA (金融庁) R3 compliance: Each data field, its source, transformation pipeline, update frequency, and confidence level.</p>'+
+    '<div id="lineage-content" style="font-size:12px"><div style="color:#666;text-align:center;padding:20px">読み込み中...</div></div>'+
+    '<div style="margin-top:16px;padding-top:12px;border-top:1px solid #2a2a3a;font-size:10px;color:#666">'+
+    '<a href="data/data_lineage.json" target="_blank" style="color:#5eaaff">Machine-readable JSON</a> | '+
+    '<a href="methodology.md" target="_blank" style="color:#5eaaff">Methodology</a> | '+
+    '<a href="residual_risk.md" target="_blank" style="color:#5eaaff">Residual Risk Statement</a>'+
+    '</div>';
+  overlay.appendChild(modal);
+  overlay.onclick=function(e){if(e.target===overlay)overlay.remove()};
+  document.body.appendChild(overlay);
+
+  /* Load lineage data */
+  var D2=typeof D!=='undefined'?D.replace('/data',''):'';
+  fetch(D2+'/data/data_lineage.json').then(function(r){return r.json()}).then(function(data){
+    var html='';
+    var fields=data.fields||data;
+    Object.keys(fields).forEach(function(key){
+      var f=fields[key];
+      var confColor=f.confidence==='high'?'#4caf50':f.confidence==='medium'?'#ff9800':'#f44336';
+      html+='<div style="margin-bottom:16px;padding:12px;background:'+(typeof isDarkMode!=='undefined'&&isDarkMode?'#0d1117':'#f5f5f5')+';border-radius:6px;border-left:3px solid '+confColor+'">'+
+        '<div style="font-weight:700;font-size:13px;color:#7eb3f0;margin-bottom:6px">'+key+' <span style="font-size:10px;color:#888;font-weight:400">'+(f.display_name||'')+'</span></div>'+
+        '<table style="width:100%;font-size:11px;border-collapse:collapse">'+
+        '<tr><td style="color:#888;width:100px;padding:3px 0;vertical-align:top">Sources</td><td style="padding:3px 0">'+(Array.isArray(f.sources)?f.sources.join('<br>'):(f.sources||'N/A'))+'</td></tr>'+
+        '<tr><td style="color:#888;padding:3px 0;vertical-align:top">Transform</td><td style="padding:3px 0;font-family:monospace;font-size:10px">'+(f.transformation||'N/A')+'</td></tr>'+
+        '<tr><td style="color:#888;padding:3px 0">Update</td><td style="padding:3px 0">'+(f.update_frequency||f.update||'N/A')+'</td></tr>'+
+        '<tr><td style="color:#888;padding:3px 0">Confidence</td><td style="padding:3px 0"><span style="color:'+confColor+';font-weight:700">'+(f.confidence||'unknown').toUpperCase()+'</span></td></tr>'+
+        (f.known_issues&&f.known_issues.length?'<tr><td style="color:#888;padding:3px 0;vertical-align:top">Issues</td><td style="padding:3px 0;color:#ff9800;font-size:10px">'+f.known_issues.join('<br>')+'</td></tr>':'')+
+        '</table></div>';
+    });
+    document.getElementById('lineage-content').innerHTML=html;
+  }).catch(function(e){
+    document.getElementById('lineage-content').innerHTML='<div style="color:#f44336">Failed to load lineage data: '+e.message+'</div>';
+  });
+}
+
+/* === Improvement 3: Model Risk Disclosure Modal (FSA R3, ISO R1) === */
+function showModelRiskModal(){
+  var overlay=document.createElement('div');
+  overlay.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:10000;display:flex;align-items:center;justify-content:center;padding:20px';
+  var dark=typeof isDarkMode!=='undefined'&&isDarkMode;
+  var modal=document.createElement('div');
+  modal.style.cssText='background:'+(dark?'#12121a':'#fff')+';border:1px solid #2a2a3a;border-radius:8px;max-width:720px;width:100%;max-height:85vh;overflow-y:auto;padding:24px;color:'+(dark?'#e0e0e0':'#333');
+
+  var verInfo='Model v1.0 | Data v'+(typeof summaryData!=='undefined'&&summaryData&&summaryData.version?summaryData.version:'1.0')+' | Generated: '+(typeof summaryData!=='undefined'&&summaryData&&summaryData.generated_at?summaryData.generated_at:'unknown');
+
+  modal.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h2 style="font-size:18px;color:#ce93d8;margin:0">&#x26A0;&#xFE0F; モデルリスク開示 (Model Risk Disclosure)</h2><button onclick="this.closest(\'div[style*=fixed]\').remove()" style="background:none;border:1px solid #555;color:#aaa;font-size:16px;cursor:pointer;border-radius:4px;padding:4px 10px">&times;</button></div>'+
+    '<div style="font-size:10px;color:#888;margin-bottom:12px;padding:6px 10px;background:'+(dark?'#1a1a2e':'#f0f0ff')+';border-radius:4px">'+verInfo+'</div>'+
+
+    '<h3 style="font-size:14px;color:#ff9800;margin:16px 0 8px">Known Limitations</h3>'+
+    '<ul style="font-size:12px;color:#ccc;padding-left:20px;line-height:1.8">'+
+    '<li><strong>Not calibrated probability</strong> — risk_score is a composite index (0-1), not a logistic regression output</li>'+
+    '<li><strong>Expert-estimated weights</strong> — P(escape) uses expert weights, not empirically derived from outcome data</li>'+
+    '<li><strong>KDE bandwidth mismatch</strong> — Documented 250m (Silverman) vs implemented 0.01deg (~1km)</li>'+
+    '<li><strong>No hold-out validation</strong> — PAI, PEI, hit rate, Brier score are targets, not measured (v1.0)</li>'+
+    '<li><strong>Geographic coverage</strong> — Japan only; 25/47 prefectures use synthetic point events</li>'+
+    '<li><strong>Temporal range</strong> — 2018-2024 (crime), 2019-2024 (traffic); no pre-2018 data</li>'+
+    '</ul>'+
+
+    '<h3 style="font-size:14px;color:#ff9800;margin:16px 0 8px">Known Biases</h3>'+
+    '<table style="width:100%;font-size:11px;border-collapse:collapse;margin:8px 0">'+
+    '<tr style="border-bottom:1px solid #2a2a3a"><th style="text-align:left;color:#888;padding:6px">Bias Type</th><th style="text-align:left;color:#888;padding:6px">Description</th><th style="text-align:left;color:#888;padding:6px">Severity</th></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px;color:#e0e0e0">Selection bias</td><td style="padding:6px;color:#aaa">Only reported incidents; chikan has ~14% reporting rate</td><td style="padding:6px;color:#f44336;font-weight:700">HIGH</td></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px;color:#e0e0e0">Geographic bias</td><td style="padding:6px;color:#aaa">25 prefectures use municipality-centroid synthetic points</td><td style="padding:6px;color:#f44336;font-weight:700">HIGH</td></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px;color:#e0e0e0">Temporal bias</td><td style="padding:6px;color:#aaa">Night-time under-reporting; seasonal patterns from literature not data</td><td style="padding:6px;color:#ff9800;font-weight:700">MEDIUM</td></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px;color:#e0e0e0">Geocoding error</td><td style="padding:6px;color:#aaa">Chome-centroid geocoding has ~150m median error</td><td style="padding:6px;color:#ff9800;font-weight:700">MEDIUM</td></tr>'+
+    '<tr><td style="padding:6px;color:#e0e0e0">Survivorship bias</td><td style="padding:6px;color:#aaa">Only incidents with outcomes are recorded; near-misses excluded</td><td style="padding:6px;color:#ffeb3b;font-weight:700">LOW</td></tr>'+
+    '</table>'+
+
+    '<h3 style="font-size:14px;color:#ff9800;margin:16px 0 8px">Confidence Levels per Metric</h3>'+
+    '<table style="width:100%;font-size:11px;border-collapse:collapse;margin:8px 0">'+
+    '<tr style="border-bottom:1px solid #2a2a3a"><th style="text-align:left;color:#888;padding:6px">Metric</th><th style="text-align:left;color:#888;padding:6px">Confidence</th><th style="text-align:left;color:#888;padding:6px">Basis</th></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px">P(incident)</td><td style="padding:6px;color:#ff9800;font-weight:700">MEDIUM</td><td style="padding:6px;color:#aaa">KDE from observed events; affected by reporting bias</td></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px">P(escape)</td><td style="padding:6px;color:#4caf50;font-weight:700">HIGH</td><td style="padding:6px;color:#aaa">Based on verified physical infrastructure locations</td></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px">severity</td><td style="padding:6px;color:#4caf50;font-weight:700">HIGH</td><td style="padding:6px;color:#aaa">Directly from police/ITARDA classification codes</td></tr>'+
+    '<tr style="border-bottom:1px solid #1a1a2a"><td style="padding:6px">Expected Harm</td><td style="padding:6px;color:#ff9800;font-weight:700">MEDIUM</td><td style="padding:6px;color:#aaa">Composite of above; validation pending</td></tr>'+
+    '<tr><td style="padding:6px">dynamic_multipliers</td><td style="padding:6px;color:#ff9800;font-weight:700">MEDIUM</td><td style="padding:6px;color:#aaa">Weather from JMA (high); temporal from literature (medium)</td></tr>'+
+    '</table>'+
+
+    '<div style="margin-top:16px;padding:12px;background:'+(dark?'#1a0a0a':'#fff5f5')+';border:1px solid #f44336;border-radius:6px;font-size:11px;color:#f44336">'+
+    '<strong>Residual Risk:</strong> This system identifies relative risk, not absolute safety. Areas showing low EH values may still experience incidents. See the <a href="residual_risk.md" target="_blank" style="color:#5eaaff">full residual risk statement</a>.'+
+    '</div>'+
+
+    '<div style="margin-top:16px;padding-top:12px;border-top:1px solid #2a2a3a;font-size:10px;color:#666">'+
+    '<a href="methodology.md" target="_blank" style="color:#5eaaff">Methodology Whitepaper</a> | '+
+    '<a href="data/data_lineage.json" target="_blank" style="color:#5eaaff">Data Lineage JSON</a> | '+
+    '<a href="residual_risk.md" target="_blank" style="color:#5eaaff">Residual Risk Statement</a>'+
+    '</div>';
+
+  overlay.appendChild(modal);
+  overlay.onclick=function(e){if(e.target===overlay)overlay.remove()};
+  document.body.appendChild(overlay);
+}
 </script>
 </body>
 </html>

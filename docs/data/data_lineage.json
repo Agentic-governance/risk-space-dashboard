@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated": "2026-04-09",
+    "description": "Data lineage disclosure for Risk Space MCP (FSA R3 compliance)"
+  },
+  "fields": {
+    "risk_score": {
+      "display_name": "P(incident) - 犯罪発生確率",
+      "sources": [
+        "NPA prefectural crime CSV (22 prefectures, 492 files)",
+        "e-Stat synthetic events (25 prefectures, 189,821 events)",
+        "ITARDA traffic accident micro-data (2019-2024, 1.59M events)"
+      ],
+      "transformation": "KDE (Gaussian kernel, h=250m Silverman) + severity weighting + exponential temporal decay (tau=180d crime, 30d traffic)",
+      "normalization": "Min-max to [0, 1] per grid cell",
+      "update_frequency": "batch (manual, ~weekly target)",
+      "confidence": "medium",
+      "known_issues": [
+        "25 prefectures use municipality-centroid synthetic points (inflated local uncertainty)",
+        "Implementation uses 0.01deg (~1km) bandwidth vs documented 250m"
+      ]
+    },
+    "p_escape": {
+      "display_name": "P(escape) - 逃げやすさ",
+      "sources": [
+        "KSJ P17 (police stations/koban)",
+        "KSJ P18 (fire stations)",
+        "OSM Overpass API (convenience stores, hospitals, pharmacies)",
+        "MLIT designated evacuation shelters (P20)"
+      ],
+      "transformation": "Distance-weighted haven proximity: P(escape) = 1 - exp(-sum(alpha_k / d_k))",
+      "normalization": "Bounded [0, 1) by survival function form",
+      "update_frequency": "batch (manual, ~monthly)",
+      "confidence": "high",
+      "known_issues": [
+        "Expert-estimated weights (not derived from outcome data)",
+        "Walking-network distance approximated by Euclidean in some areas"
+      ]
+    },
+    "expected_harm": {
+      "display_name": "Expected Harm (EH) - 総合危険度",
+      "sources": ["Derived: risk_score, avg_severity, p_escape, dynamic_multipliers"],
+      "transformation": "EH = P(incident) * (severity/5) * (1 - P(escape)) * dynamic_multipliers(t)",
+      "normalization": "Open scale (dimensionless, higher = worse)",
+      "update_frequency": "computed client-side in real-time",
+      "confidence": "medium",
+      "known_issues": [
+        "Composite risk index, NOT calibrated probability",
+        "Formal hold-out validation not yet conducted (v1.0)"
+      ]
+    },
+    "avg_severity": {
+      "display_name": "平均重大度",
+      "sources": [
+        "NPA crime classification (1-5 scale)",
+        "ITARDA injury codes (property-only to multi-fatal)"
+      ],
+      "transformation": "Weighted mean of event severities within grid cell",
+      "normalization": "Integer 1-5 scale",
+      "update_frequency": "batch (manual)",
+      "confidence": "high",
+      "known_issues": []
+    },
+    "dynamic_multipliers": {
+      "display_name": "動的リスク乗数",
+      "sources": [
+        "JMA AMeDAS (weather: precip, wind, warnings)",
+        "Calendar events (fireworks, matsuri, sports)",
+        "NPA 2018-2024 hour-of-day/day-of-week patterns"
+      ],
+      "transformation": "m_weather [1.0-1.8] * m_event [1.0-1.5] * m_temporal [0.7-1.4]",
+      "normalization": "Multiplicative factors",
+      "update_frequency": "weather: ~30min, events: daily, temporal: static model",
+      "confidence": "medium",
+      "known_issues": [
+        "Temporal multipliers based on literature patterns, not dataset-specific"
+      ]
+    },
+    "haven_count_500m": {
+      "display_name": "500m以内Safe Haven数",
+      "sources": ["KSJ P17/P18", "OSM Overpass", "MLIT P20"],
+      "transformation": "Count of safe haven features within 500m Euclidean radius",
+      "normalization": "Integer count",
+      "update_frequency": "batch (manual)",
+      "confidence": "high",
+      "known_issues": []
+    },
+    "safety_rank": {
+      "display_name": "安全ランク (S/A/B/C/D)",
+      "sources": ["Derived from expected_harm"],
+      "transformation": "Percentile-based grading: S(top 10%), A(10-30%), B(30-55%), C(55-80%), D(bottom 20%)",
+      "normalization": "Categorical S/A/B/C/D",
+      "update_frequency": "computed per data refresh",
+      "confidence": "medium",
+      "known_issues": [
+        "Thresholds are relative (change with each data refresh)"
+      ]
+    },
+    "realtime_slim": {
+      "display_name": "リアルタイム不審者情報",
+      "sources": [
+        "Gaccom Safety Navi (ガッコム安全ナビ)",
+        "Prefectural police HP bulletins (47 prefectures)",
+        "Keishicho Mail (警視庁メールけいしちょう)"
+      ],
+      "transformation": "Geocoded + subtype classified + severity mapped (1-5)",
+      "normalization": "Compact array format [lat, lon, subtype, severity, date]",
+      "update_frequency": "~30 minutes (scrape cycle)",
+      "confidence": "medium",
+      "known_issues": [
+        "Geocoding accuracy ~150m median error",
+        "Reporting bias: ~14% reporting rate for chikan (NPA 2023)"
+      ]
+    }
+  }
+}

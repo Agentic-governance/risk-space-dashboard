@@ -515,13 +515,54 @@ print('Files indexed:', sig['file_count'])
 <!-- Embed -->
 <h2 id="embed">Embed & Integration</h2>
 
-<h3>Embed the Risk Map (iframe)</h3>
+<h3>Option 1: Self-Contained Widget (Recommended for Enterprise)</h3>
+<p class="desc">Drop-in risk widget for enterprise customers. A single HTML file that fetches data client-side from the static CDN. No backend required. Customize via <code>data-*</code> attributes.</p>
+
+<div class="note">
+  <strong>Widget file:</strong> <a href="../data/embed_widget.html"><code>/data/embed_widget.html</code></a> -- view source for the full implementation (~100 lines).
+</div>
+
+<h4>Quick Embed (iframe)</h4>
+<pre><code>&lt;!-- Self-contained widget via iframe --&gt;
+&lt;iframe src="https://agentic-governance.github.io/risk-space-dashboard/data/embed_widget.html"
+        width="380" height="480" frameborder="0"
+        style="border-radius:8px;border:1px solid #2a2a3a"&gt;&lt;/iframe&gt;</code></pre>
+
+<h4>Inline Embed (script tag)</h4>
+<pre><code>&lt;!-- Inline widget: customize lat/lon/theme --&gt;
+&lt;div id="riskspace-widget"
+     data-lat="35.68"
+     data-lon="139.75"
+     data-theme="dark"&gt;
+  &lt;script src="https://agentic-governance.github.io/risk-space-dashboard/data/embed_widget.html"&gt;&lt;/script&gt;
+&lt;/div&gt;</code></pre>
+
+<h4>Widget Configuration</h4>
+<table>
+  <tr><th>Attribute</th><th>Type</th><th>Default</th><th>Description</th></tr>
+  <tr><td><code>data-lat</code></td><td>number</td><td>35.68</td><td>Latitude (WGS84)</td></tr>
+  <tr><td><code>data-lon</code></td><td>number</td><td>139.75</td><td>Longitude (WGS84)</td></tr>
+  <tr><td><code>data-theme</code></td><td>string</td><td>"dark"</td><td>"dark" or "light"</td></tr>
+</table>
+
+<h4>Widget Features</h4>
+<ul>
+  <li>Safety badge (safe / caution / danger) with color coding</li>
+  <li>Expected Harm (EH) score</li>
+  <li>Risk score, P(escape), haven count metrics</li>
+  <li>Nearest safe haven with distance</li>
+  <li>Data freshness indicator</li>
+  <li>Links to dashboard, API docs, residual risk statement</li>
+  <li>Dark/light theme support</li>
+</ul>
+
+<h3>Option 2: Full Dashboard (iframe)</h3>
 <p class="desc">Embed the interactive risk dashboard in any webpage. Pass <code>lat</code>, <code>lon</code>, and <code>z</code> (zoom) as hash parameters to set the initial view.</p>
 
 <pre><code>&lt;iframe src="https://agentic-governance.github.io/risk-space-dashboard/#lat=35.68&amp;lon=139.75&amp;z=14"
         width="100%" height="600" frameborder="0"&gt;&lt;/iframe&gt;</code></pre>
 
-<h3>JavaScript: Programmatic Risk Query</h3>
+<h3>Option 3: JavaScript Programmatic Query</h3>
 <p class="desc">Fetch the nearest risk cell for any coordinate using client-side JavaScript:</p>
 
 <pre><code>async function getRisk(lat, lon) {
@@ -539,6 +580,45 @@ getRisk(35.68, 139.75).then(cell =&gt; {
     console.log('Safety rank:', cell.safety_rank);
     console.log('Expected harm:', cell.expected_harm);
 });</code></pre>
+
+<h3>Data Freshness Disclaimer</h3>
+<div class="note">
+  <strong>Important:</strong> All data is served from static files on GitHub Pages / Cloudflare R2. Data is <strong>not real-time</strong>. Typical update cycles:
+  <ul style="margin-top:8px">
+    <li><strong>Suspicious persons (realtime_slim.json)</strong>: ~30 minute scrape cycle</li>
+    <li><strong>Risk grid (grid_risk.json)</strong>: Manual batch update (~weekly target)</li>
+    <li><strong>Weather (amedas_current.json)</strong>: ~30 minute update via JMA</li>
+    <li><strong>Enterprise datasets</strong>: Quarterly or as-needed basis</li>
+  </ul>
+  <p style="margin-top:8px">Check <code>/data/_version.json</code> for the exact data generation timestamp. The dashboard displays a warning banner when data exceeds 7 days old.</p>
+</div>
+
+<h3>Rate Limits for Static CDN</h3>
+<div class="note">
+  <strong>GitHub Pages:</strong> No formal rate limit, but GitHub recommends &lt;10 requests/second per repository. For high-traffic applications, consider mirroring to your own CDN.
+  <br><br>
+  <strong>Cloudflare R2 (Enterprise tier):</strong> Subject to Cloudflare free-tier limits (100,000 Class B operations/day). Enterprise customers receive dedicated bucket with higher limits.
+</div>
+
+<h3>Suggested Polling Intervals</h3>
+<table>
+  <tr><th>Endpoint</th><th>Recommended Interval</th><th>Rationale</th></tr>
+  <tr><td><code>realtime_slim.json</code></td><td>5 minutes</td><td>Data updates ~every 30 min; 5-min poll gives good freshness without waste</td></tr>
+  <tr><td><code>grid_risk.json</code></td><td>1 hour</td><td>Large file (~2.8 MB); batch updated weekly</td></tr>
+  <tr><td><code>amedas_current.json</code></td><td>15 minutes</td><td>Weather updates ~every 30 min from JMA</td></tr>
+  <tr><td><code>_version.json</code></td><td>24 hours</td><td>Tiny file; check for new data releases daily</td></tr>
+  <tr><td><code>manifest.json</code></td><td>24 hours</td><td>File catalog; check for new datasets</td></tr>
+</table>
+
+<div class="note">
+  <strong>Best practices:</strong>
+  <ul>
+    <li>Use <code>If-Modified-Since</code> or <code>ETag</code> headers for conditional requests</li>
+    <li>Cache responses locally (localStorage / IndexedDB for browsers, disk cache for servers)</li>
+    <li>Never poll more than once per minute for any endpoint</li>
+    <li>For <code>grid_risk.json</code> (2.8 MB), consider downloading once and caching for 24 hours</li>
+  </ul>
+</div>
 
 <!-- Webhook Simulation -->
 <h2 id="webhook">Webhook Simulation (Polling Pattern)</h2>

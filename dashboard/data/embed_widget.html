@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risk Space Widget</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.riskspace-widget{font-family:'Helvetica Neue',Arial,sans-serif;background:#12121a;color:#e0e0e0;border:1px solid #2a2a3a;border-radius:8px;padding:16px;max-width:360px;min-width:280px}
+.riskspace-widget.light{background:#fff;color:#333;border-color:#ddd}
+.rsw-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #2a2a3a}
+.light .rsw-header{border-color:#eee}
+.rsw-logo{font-size:13px;font-weight:700;color:#7eb3f0;letter-spacing:1px}
+.light .rsw-logo{color:#2a6cb5}
+.rsw-badge{font-size:10px;color:#888;background:#1e1e2e;padding:2px 6px;border-radius:3px}
+.light .rsw-badge{background:#f0f4f8;color:#666}
+.rsw-safety{text-align:center;padding:12px 0;margin-bottom:12px}
+.rsw-safety-label{font-size:28px;font-weight:900;letter-spacing:2px}
+.rsw-safety-sub{font-size:11px;color:#666;margin-top:4px}
+.rsw-eh{text-align:center;margin-bottom:12px}
+.rsw-eh-value{font-size:32px;font-weight:900;font-family:monospace}
+.rsw-eh-label{font-size:10px;color:#666;margin-top:2px}
+.rsw-metrics{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px}
+.rsw-metric{text-align:center;padding:8px 4px;background:#1e1e2e;border-radius:4px}
+.light .rsw-metric{background:#f5f5f5}
+.rsw-metric-value{font-size:16px;font-weight:700}
+.rsw-metric-label{font-size:9px;color:#888;margin-top:2px}
+.rsw-haven{display:flex;align-items:center;gap:8px;padding:8px;background:#0d1117;border-radius:4px;margin-bottom:12px;font-size:12px}
+.light .rsw-haven{background:#f0f4f8}
+.rsw-haven-icon{font-size:18px}
+.rsw-haven-text{flex:1;color:#ccc}
+.light .rsw-haven-text{color:#555}
+.rsw-haven-dist{font-weight:700;color:#7eb3f0;font-size:14px}
+.light .rsw-haven-dist{color:#2a6cb5}
+.rsw-footer{display:flex;justify-content:space-between;align-items:center;padding-top:8px;border-top:1px solid #2a2a3a;font-size:10px;color:#555}
+.light .rsw-footer{border-color:#eee}
+.rsw-footer a{color:#5eaaff;text-decoration:none}
+.rsw-footer a:hover{text-decoration:underline}
+.rsw-freshness{font-size:9px;color:#888;text-align:center;margin-bottom:8px}
+.rsw-disclaimer{font-size:8px;color:#555;text-align:center;line-height:1.4;margin-top:8px;padding-top:8px;border-top:1px solid #1e1e2e}
+.light .rsw-disclaimer{border-color:#eee;color:#999}
+.rsw-loading{text-align:center;padding:40px 0;color:#666;font-size:12px}
+.rsw-error{text-align:center;padding:20px 0;color:#f44336;font-size:12px}
+</style>
+</head>
+<body>
+
+<!-- Self-contained Risk Space Widget -->
+<!-- Usage: Include this HTML or embed via iframe -->
+<!-- Configure: data-lat, data-lon, data-theme (dark/light) -->
+
+<div class="riskspace-widget" id="riskspace-widget" data-lat="35.68" data-lon="139.75" data-theme="dark">
+  <div class="rsw-loading" id="rsw-loading">Risk Space MCP 読み込み中...</div>
+  <div id="rsw-content" style="display:none">
+    <div class="rsw-header">
+      <span class="rsw-logo">Risk Space MCP</span>
+      <span class="rsw-badge" id="rsw-version">v1.0</span>
+    </div>
+    <div class="rsw-safety">
+      <div class="rsw-safety-label" id="rsw-safety">--</div>
+      <div class="rsw-safety-sub" id="rsw-location">--</div>
+    </div>
+    <div class="rsw-eh">
+      <div class="rsw-eh-value" id="rsw-eh">0.000</div>
+      <div class="rsw-eh-label">Expected Harm (EH)</div>
+    </div>
+    <div class="rsw-metrics">
+      <div class="rsw-metric">
+        <div class="rsw-metric-value" id="rsw-risk">--</div>
+        <div class="rsw-metric-label">Risk Score</div>
+      </div>
+      <div class="rsw-metric">
+        <div class="rsw-metric-value" id="rsw-escape">--</div>
+        <div class="rsw-metric-label">P(escape)</div>
+      </div>
+      <div class="rsw-metric">
+        <div class="rsw-metric-value" id="rsw-havens">--</div>
+        <div class="rsw-metric-label">Haven 500m</div>
+      </div>
+    </div>
+    <div class="rsw-haven" id="rsw-haven-info">
+      <span class="rsw-haven-icon" id="rsw-haven-icon">--</span>
+      <span class="rsw-haven-text" id="rsw-haven-text">最寄り施設</span>
+      <span class="rsw-haven-dist" id="rsw-haven-dist">--</span>
+    </div>
+    <div class="rsw-freshness" id="rsw-freshness">--</div>
+    <div class="rsw-footer">
+      <a href="https://agentic-governance.github.io/risk-space-dashboard/" target="_blank">Dashboard</a>
+      <a href="https://agentic-governance.github.io/risk-space-dashboard/api/" target="_blank">API Docs</a>
+      <span>Open Data</span>
+    </div>
+    <div class="rsw-disclaimer">
+      This is a relative risk index, not an absolute safety guarantee.
+      Data may be delayed. See <a href="https://agentic-governance.github.io/risk-space-dashboard/residual_risk.md" target="_blank" style="color:#5eaaff">residual risk statement</a>.
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var BASE='https://agentic-governance.github.io/risk-space-dashboard/data';
+  var widget=document.getElementById('riskspace-widget');
+  var lat=parseFloat(widget.getAttribute('data-lat'))||35.68;
+  var lon=parseFloat(widget.getAttribute('data-lon'))||139.75;
+  var theme=widget.getAttribute('data-theme')||'dark';
+  if(theme==='light')widget.classList.add('light');
+
+  var havenIcons={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};
+
+  function findNearest(grid,lat,lon){
+    var best=null,md=Infinity;
+    for(var i=0;i<grid.length;i++){
+      var c=grid[i];
+      var d=Math.hypot(c.lat-lat,c.lon-lon);
+      if(d<md){md=d;best=c}
+    }
+    return best;
+  }
+
+  function ehColor(eh){
+    if(eh>=0.5)return'#f44336';
+    if(eh>=0.3)return'#ff9800';
+    if(eh>=0.15)return'#ffeb3b';
+    return'#4caf50';
+  }
+
+  function safetyText(eh){
+    if(eh>=0.3)return{text:'🔴 危険',color:'#f44336'};
+    if(eh>=0.15)return{text:'🟡 注意',color:'#ff9800'};
+    return{text:'🟢 安全',color:'#4caf50'};
+  }
+
+  Promise.all([
+    fetch(BASE+'/grid_risk.json').then(function(r){return r.json()}),
+    fetch(BASE+'/_version.json').then(function(r){return r.json()}).catch(function(){return{}})
+  ]).then(function(results){
+    var grid=results[0];
+    var version=results[1];
+    var cell=findNearest(grid,lat,lon);
+    if(!cell){
+      document.getElementById('rsw-loading').innerHTML='<div class="rsw-error">No data available for this location</div>';
+      return;
+    }
+
+    var eh=cell.expected_harm||0;
+    var safety=safetyText(eh);
+
+    document.getElementById('rsw-loading').style.display='none';
+    document.getElementById('rsw-content').style.display='block';
+
+    document.getElementById('rsw-safety').textContent=safety.text;
+    document.getElementById('rsw-safety').style.color=safety.color;
+    document.getElementById('rsw-location').textContent=lat.toFixed(4)+', '+lon.toFixed(4);
+    document.getElementById('rsw-eh').textContent=eh.toFixed(4);
+    document.getElementById('rsw-eh').style.color=ehColor(eh);
+    document.getElementById('rsw-risk').textContent=(cell.risk_score||0).toFixed(3);
+    document.getElementById('rsw-risk').style.color=ehColor(cell.risk_score||0);
+    document.getElementById('rsw-escape').textContent=(cell.p_escape||0).toFixed(3);
+    document.getElementById('rsw-escape').style.color=(cell.p_escape||0)>=0.5?'#4caf50':'#f44336';
+    document.getElementById('rsw-havens').textContent=cell.haven_count_500m||0;
+
+    if(cell.nearest_haven_type){
+      var distM=Math.round((cell.nearest_haven_dist||0)*1000);
+      var distStr=distM>=1000?((cell.nearest_haven_dist||0).toFixed(1)+'km'):(distM+'m');
+      document.getElementById('rsw-haven-icon').textContent=havenIcons[cell.nearest_haven_type]||'📍';
+      document.getElementById('rsw-haven-text').textContent=cell.nearest_haven_type;
+      document.getElementById('rsw-haven-dist').textContent=distStr;
+    }
+
+    if(version&&version.version){
+      document.getElementById('rsw-version').textContent='v'+version.version;
+    }
+    if(version&&version.generated_at){
+      document.getElementById('rsw-freshness').textContent='Data: '+version.generated_at;
+    }
+  }).catch(function(e){
+    document.getElementById('rsw-loading').innerHTML='<div class="rsw-error">Failed to load risk data. Check network/CORS.</div>';
+    console.error('RiskSpace Widget error:',e);
+  });
+})();
+</script>
+
+</body>
+</html>

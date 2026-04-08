@@ -224,6 +224,67 @@ BibTeX:
 
 ---
 
+## 6. Model Risk Disclosure (FSA R3 / ISO 31000)
+
+This section provides a formal model risk disclosure per Financial Services
+Agency (Japan) Risk Management Guidelines and ISO 31000:2018.
+
+### 6.1 Model Limitations
+
+| # | Limitation | Impact | Mitigation |
+|---|-----------|--------|------------|
+| L1 | `risk_score` is a composite index, NOT a calibrated probability | Users may overinterpret as "percent chance" | Documented prominently; labelled as "index" |
+| L2 | P(escape) weights are expert-estimated | Haven effectiveness unvalidated | Planned empirical calibration in v2.0 |
+| L3 | KDE bandwidth: 250m documented vs ~1km implemented | Hotspot resolution coarser than stated | Will align in v2.0 |
+| L4 | No formal hold-out validation (v1.0) | Predictive accuracy unknown | 2024Q4 hold-out pipeline planned |
+| L5 | Japan-only coverage | Not transferable to other jurisdictions | Documented in scope statement |
+| L6 | Temporal multipliers from literature, not dataset | May not reflect local patterns | Data-driven refit planned |
+
+### 6.2 Known Biases
+
+| Bias | Type | Severity | Description |
+|------|------|----------|-------------|
+| Reporting bias | Selection | **HIGH** | Unreported crimes (chikan ~14% reporting rate per NPA 2023) systematically underestimate true risk |
+| Geographic bias | Selection | **HIGH** | 25 prefectures use synthetic municipality-centroid points; local variation within municipalities is lost |
+| Temporal bias | Measurement | **MEDIUM** | Night-time events under-reported; seasonal patterns from literature not specific dataset |
+| Geocoding error | Measurement | **MEDIUM** | Chome-centroid geocoding has ~150m median error (GSI, 2022) |
+| Survivorship bias | Selection | **LOW** | Only incidents with recorded outcomes; near-misses excluded |
+
+### 6.3 Confidence Levels
+
+| Field | Confidence | Basis |
+|-------|-----------|-------|
+| `risk_score` (P(incident)) | Medium | KDE from observed events; affected by reporting bias |
+| `p_escape` | High | Based on verified physical infrastructure locations (KSJ, OSM) |
+| `avg_severity` | High | Directly from police classification / ITARDA injury codes |
+| `expected_harm` | Medium | Composite of above; formal validation pending |
+| `dynamic_multipliers` | Medium | Weather (high, JMA source); temporal (medium, literature-based) |
+| `haven_count_500m` | High | Count from verified point data |
+
+### 6.4 Version Control
+
+| Component | Version | Last Updated | Next Review |
+|-----------|---------|-------------|-------------|
+| Expected Harm Model | v1.0 | 2026-04-05 | 2026-07-05 |
+| Data Pipeline | v3.0 (deep_crawl_v3) | 2026-04-05 | Continuous |
+| Severity Mapping | v1.0 | 2026-04-01 | 2026-10-01 |
+| Haven Weights (alpha_k) | v1.0 (expert) | 2026-04-01 | v2.0 (empirical) |
+| Dashboard | See CHANGELOG.md | Rolling | Rolling |
+
+Data version is tracked in `_version.json`. All changes are logged in
+`CHANGELOG.md`. Signed manifests (`manifest.sig`) provide integrity
+verification.
+
+---
+
+## 7. Residual Risk Statement
+
+See [residual_risk.md](residual_risk.md) for the full ISO 31000 residual risk
+statement, including risk appetite, residual risk inventory, and acceptance
+criteria.
+
+---
+
 ## References
 
 - Chainey, S., & Ratcliffe, J. (2005). *GIS and Crime Mapping*. Wiley.
