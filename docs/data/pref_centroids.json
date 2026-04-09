@@ -1,0 +1,284 @@
+[
+  {
+    "prefecture": "北海道",
+    "prefecture_code": "01",
+    "lat": 43.0642,
+    "lon": 141.3469
+  },
+  {
+    "prefecture": "青森県",
+    "prefecture_code": "02",
+    "lat": 40.8244,
+    "lon": 140.74
+  },
+  {
+    "prefecture": "岩手県",
+    "prefecture_code": "03",
+    "lat": 39.7036,
+    "lon": 141.1527
+  },
+  {
+    "prefecture": "宮城県",
+    "prefecture_code": "04",
+    "lat": 38.2688,
+    "lon": 140.8721
+  },
+  {
+    "prefecture": "秋田県",
+    "prefecture_code": "05",
+    "lat": 39.7186,
+    "lon": 140.1024
+  },
+  {
+    "prefecture": "山形県",
+    "prefecture_code": "06",
+    "lat": 38.2405,
+    "lon": 140.3633
+  },
+  {
+    "prefecture": "福島県",
+    "prefecture_code": "07",
+    "lat": 37.7503,
+    "lon": 140.4676
+  },
+  {
+    "prefecture": "茨城県",
+    "prefecture_code": "08",
+    "lat": 36.3418,
+    "lon": 140.4468
+  },
+  {
+    "prefecture": "栃木県",
+    "prefecture_code": "09",
+    "lat": 36.5657,
+    "lon": 139.8836
+  },
+  {
+    "prefecture": "群馬県",
+    "prefecture_code": "10",
+    "lat": 36.3911,
+    "lon": 139.0608
+  },
+  {
+    "prefecture": "埼玉県",
+    "prefecture_code": "11",
+    "lat": 35.857,
+    "lon": 139.6489
+  },
+  {
+    "prefecture": "千葉県",
+    "prefecture_code": "12",
+    "lat": 35.6047,
+    "lon": 140.1233
+  },
+  {
+    "prefecture": "東京都",
+    "prefecture_code": "13",
+    "lat": 35.6895,
+    "lon": 139.6917
+  },
+  {
+    "prefecture": "神奈川県",
+    "prefecture_code": "14",
+    "lat": 35.4478,
+    "lon": 139.6425
+  },
+  {
+    "prefecture": "新潟県",
+    "prefecture_code": "15",
+    "lat": 37.9026,
+    "lon": 139.0236
+  },
+  {
+    "prefecture": "富山県",
+    "prefecture_code": "16",
+    "lat": 36.6953,
+    "lon": 137.2114
+  },
+  {
+    "prefecture": "石川県",
+    "prefecture_code": "17",
+    "lat": 36.5946,
+    "lon": 136.6256
+  },
+  {
+    "prefecture": "福井県",
+    "prefecture_code": "18",
+    "lat": 36.0652,
+    "lon": 136.2219
+  },
+  {
+    "prefecture": "山梨県",
+    "prefecture_code": "19",
+    "lat": 35.6642,
+    "lon": 138.5684
+  },
+  {
+    "prefecture": "長野県",
+    "prefecture_code": "20",
+    "lat": 36.2325,
+    "lon": 138.1813
+  },
+  {
+    "prefecture": "岐阜県",
+    "prefecture_code": "21",
+    "lat": 35.3912,
+    "lon": 136.7223
+  },
+  {
+    "prefecture": "静岡県",
+    "prefecture_code": "22",
+    "lat": 34.9769,
+    "lon": 138.3831
+  },
+  {
+    "prefecture": "愛知県",
+    "prefecture_code": "23",
+    "lat": 35.1802,
+    "lon": 136.9066
+  },
+  {
+    "prefecture": "三重県",
+    "prefecture_code": "24",
+    "lat": 34.7303,
+    "lon": 136.5086
+  },
+  {
+    "prefecture": "滋賀県",
+    "prefecture_code": "25",
+    "lat": 35.0045,
+    "lon": 135.8686
+  },
+  {
+    "prefecture": "京都府",
+    "prefecture_code": "26",
+    "lat": 35.0214,
+    "lon": 135.7556
+  },
+  {
+    "prefecture": "大阪府",
+    "prefecture_code": "27",
+    "lat": 34.6864,
+    "lon": 135.52
+  },
+  {
+    "prefecture": "兵庫県",
+    "prefecture_code": "28",
+    "lat": 34.6913,
+    "lon": 135.183
+  },
+  {
+    "prefecture": "奈良県",
+    "prefecture_code": "29",
+    "lat": 34.6851,
+    "lon": 135.8329
+  },
+  {
+    "prefecture": "和歌山県",
+    "prefecture_code": "30",
+    "lat": 34.226,
+    "lon": 135.1675
+  },
+  {
+    "prefecture": "鳥取県",
+    "prefecture_code": "31",
+    "lat": 35.5036,
+    "lon": 134.2383
+  },
+  {
+    "prefecture": "島根県",
+    "prefecture_code": "32",
+    "lat": 35.4723,
+    "lon": 133.0505
+  },
+  {
+    "prefecture": "岡山県",
+    "prefecture_code": "33",
+    "lat": 34.6618,
+    "lon": 133.9344
+  },
+  {
+    "prefecture": "広島県",
+    "prefecture_code": "34",
+    "lat": 34.3963,
+    "lon": 132.4596
+  },
+  {
+    "prefecture": "山口県",
+    "prefecture_code": "35",
+    "lat": 34.1861,
+    "lon": 131.4705
+  },
+  {
+    "prefecture": "徳島県",
+    "prefecture_code": "36",
+    "lat": 34.0658,
+    "lon": 134.5593
+  },
+  {
+    "prefecture": "香川県",
+    "prefecture_code": "37",
+    "lat": 34.3401,
+    "lon": 134.0434
+  },
+  {
+    "prefecture": "愛媛県",
+    "prefecture_code": "38",
+    "lat": 33.8416,
+    "lon": 132.7657
+  },
+  {
+    "prefecture": "高知県",
+    "prefecture_code": "39",
+    "lat": 33.5597,
+    "lon": 133.5311
+  },
+  {
+    "prefecture": "福岡県",
+    "prefecture_code": "40",
+    "lat": 33.6064,
+    "lon": 130.4183
+  },
+  {
+    "prefecture": "佐賀県",
+    "prefecture_code": "41",
+    "lat": 33.2494,
+    "lon": 130.2988
+  },
+  {
+    "prefecture": "長崎県",
+    "prefecture_code": "42",
+    "lat": 32.7448,
+    "lon": 129.8737
+  },
+  {
+    "prefecture": "熊本県",
+    "prefecture_code": "43",
+    "lat": 32.7898,
+    "lon": 130.7417
+  },
+  {
+    "prefecture": "大分県",
+    "prefecture_code": "44",
+    "lat": 33.2382,
+    "lon": 131.6126
+  },
+  {
+    "prefecture": "宮崎県",
+    "prefecture_code": "45",
+    "lat": 31.9111,
+    "lon": 131.4239
+  },
+  {
+    "prefecture": "鹿児島県",
+    "prefecture_code": "46",
+    "lat": 31.5602,
+    "lon": 130.5581
+  },
+  {
+    "prefecture": "沖縄県",
+    "prefecture_code": "47",
+    "lat": 26.3344,
+    "lon": 127.8056
+  }
+]
