@@ -98,8 +98,12 @@ def calc_multipliers(precip10m, wind_ms, temp_c, snow_cm):
 
 
 def main():
-    latest_time = fetch_text(LATEST_TIME_URL)
-    print(f"[INFO] latest_time={latest_time}")
+    latest_time_raw = fetch_text(LATEST_TIME_URL)
+    print(f"[INFO] latest_time_raw={latest_time_raw}")
+    # Convert ISO format "2026-04-09T10:20:00+09:00" to "20260409102000"
+    import re as _re
+    latest_time = _re.sub(r'[^0-9]', '', latest_time_raw)[:14]
+    print(f"[INFO] latest_time_url={latest_time}")
 
     station_table = fetch_json(STATION_TABLE_URL)
     obs_map = fetch_json(MAP_URL_TMPL.format(time=latest_time))

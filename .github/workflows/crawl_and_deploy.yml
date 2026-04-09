@@ -30,6 +30,7 @@ jobs:
 
       - name: Fetch latest AMeDAS
         run: python scripts/cron_weather.py
+        continue-on-error: true
 
       - name: Commit and push if changed
         run: |
