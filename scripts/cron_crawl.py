@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 import requests
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 import json
 import hashlib
 import time
@@ -64,21 +66,27 @@ def load_json(path, default):
 
 def save_json(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False)
-
-
-def fetch_html(url):
     try:
-        res = requests.get(url, headers=HEADERS, timeout=30)
-        res.raise_for_status()
-        enc = chardet.detect(res.content).get("encoding")
-        if enc:
-            res.encoding = enc
-        return res.text
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(obj, f, ensure_ascii=False)
     except Exception as e:
-        print(f"[ERROR] fetch failed: {url} -> {e}")
-        return ""
+        print(f"[ERROR] failed to save {path}: {e}")
+
+
+def fetch_html(url, retries=2):
+    for attempt in range(retries + 1):
+        try:
+            res = requests.get(url, headers=HEADERS, timeout=(5, 20), verify=False)
+            res.raise_for_status()
+            enc = chardet.detect(res.content).get("encoding")
+            if enc:
+                res.encoding = enc
+            return res.text
+        except Exception as e:
+            print(f"[ERROR] fetch failed (attempt {attempt+1}/{retries+1}): {url} -> {e}")
+            if attempt < retries:
+                time.sleep(2 ** attempt)
+    return ""
 
 
 def normalize_space(s):
@@ -239,54 +247,75 @@ def main():
     seen_hashes = set(load_json(SEEN_HASHES_PATH, []))
     existing_rows = load_json(REALTIME_PATH, [])
 
+    # Guard: don't overwrite non-empty data with empty
+    if not existing_rows and os.path.exists(REALTIME_PATH) and os.path.getsize(REALTIME_PATH) > 10:
+        print("[WARN] existing data loaded as empty but file is non-empty - aborting to prevent data loss")
+        return
+
     print(f"[INFO] loaded existing rows: {len(existing_rows)}")
     print(f"[INFO] loaded seen hashes: {len(seen_hashes)}")
     print(f"[INFO] city centroids: {len(city_centroids)}, pref centroids: {len(pref_centroids)}")
 
     new_rows = []
     kind_counter = Counter()
+    skipped_no_geo = 0
 
     for pref_id in range(1, 48):
         pref_name = PREFECTURES[pref_id]
-        url = f"https://www.gaccom.jp/safety/search?prefecture_id={pref_id}&page=1"
-        print(f"[CRAWL] {pref_id:02d}/47 {pref_name}: {url}")
-
-        html = fetch_html(url)
-        if not html:
-            time.sleep(1.5)
-            continue
-
-        incidents = extract_incidents(pref_name, html)
-        print(f"[PARSE] {pref_name}: incidents={len(incidents)}")
-
         added_this_pref = 0
-        for inc in incidents:
-            digest = make_hash(inc)
-            if digest in seen_hashes:
-                continue
 
-            row = to_event_row(inc, city_centroids, pref_centroids)
-            if row is None:
-                continue
+        for page in range(1, 4):  # pages 1-3
+            url = f"https://www.gaccom.jp/safety/search?prefecture_id={pref_id}&page={page}&k=8191"
+            if page == 1:
+                print(f"[CRAWL] {pref_id:02d}/47 {pref_name}: {url}")
 
-            seen_hashes.add(digest)
-            new_rows.append(row)
-            kind_counter[row[2]] += 1
-            added_this_pref += 1
+            html = fetch_html(url)
+            if not html:
+                break
+
+            incidents = extract_incidents(pref_name, html)
+            if not incidents:
+                break  # No more results
+
+            for inc in incidents:
+                digest = make_hash(inc)
+                if digest in seen_hashes:
+                    continue
+
+                row = to_event_row(inc, city_centroids, pref_centroids)
+                if row is None:
+                    skipped_no_geo += 1
+                    continue
+
+                seen_hashes.add(digest)
+                new_rows.append(row)
+                kind_counter[row[2]] += 1
+                added_this_pref += 1
+
+            time.sleep(1.5)
 
         print(f"[MERGE] {pref_name}: new_rows={added_this_pref}")
-        time.sleep(1.5)
 
     merged = list(existing_rows) + new_rows
     save_json(REALTIME_PATH, merged)
+    # Cap seen_hashes to prevent unbounded growth
+    if len(seen_hashes) > 50000:
+        seen_hashes = set(sorted(seen_hashes)[-50000:])
+        print(f"[WARN] trimmed seen_hashes to 50000 entries")
     save_json(SEEN_HASHES_PATH, sorted(seen_hashes))
 
     summary = load_json(SUMMARY_PATH, {})
     summary["generated_at"] = datetime.now().isoformat(timespec="seconds")
+    summary["total_rows"] = len(merged)
+    summary["new_rows_this_run"] = len(new_rows)
+    summary["seen_hashes_count"] = len(seen_hashes)
+    summary["by_subtype"] = dict(kind_counter)
+    summary["skipped_no_geo"] = skipped_no_geo
     save_json(SUMMARY_PATH, summary)
 
     print(f"[DONE] appended rows: {len(new_rows)}")
     print(f"[DONE] merged rows: {len(merged)}")
+    print(f"[DONE] skipped (no geo): {skipped_no_geo}")
     print(f"[DONE] by subtype: {dict(kind_counter)}")
 
 

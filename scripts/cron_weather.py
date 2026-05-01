@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import json
 import os
+import re
+import sys
 from datetime import datetime
 
 import requests
@@ -15,16 +17,32 @@ MAP_URL_TMPL = "https://www.jma.go.jp/bosai/amedas/data/map/{time}.json"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; RiskSpaceMCP/1.0)"}
 
 
-def fetch_json(url):
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    return r.json()
+def fetch_json(url, retries=2):
+    for attempt in range(retries + 1):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=(5, 20))
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            print(f"[ERROR] fetch_json failed (attempt {attempt+1}): {url} -> {e}")
+            if attempt < retries:
+                import time
+                time.sleep(2 ** attempt)
+    raise RuntimeError(f"Failed to fetch {url} after {retries+1} attempts")
 
 
-def fetch_text(url):
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    return r.text.strip()
+def fetch_text(url, retries=2):
+    for attempt in range(retries + 1):
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=(5, 20))
+            r.raise_for_status()
+            return r.text.strip()
+        except Exception as e:
+            print(f"[ERROR] fetch_text failed (attempt {attempt+1}): {url} -> {e}")
+            if attempt < retries:
+                import time
+                time.sleep(2 ** attempt)
+    raise RuntimeError(f"Failed to fetch {url} after {retries+1} attempts")
 
 
 def deg_min_to_deg(v):
@@ -98,12 +116,19 @@ def calc_multipliers(precip10m, wind_ms, temp_c, snow_cm):
 
 
 def main():
+  try:
     latest_time_raw = fetch_text(LATEST_TIME_URL)
     print(f"[INFO] latest_time_raw={latest_time_raw}")
     # Convert ISO format "2026-04-09T10:20:00+09:00" to "20260409102000"
-    import re as _re
-    latest_time = _re.sub(r'[^0-9]', '', latest_time_raw)[:14]
+    try:
+        from datetime import datetime as _dt
+        parsed = _dt.fromisoformat(latest_time_raw)
+        latest_time = parsed.strftime("%Y%m%d%H%M%S")
+    except (ValueError, TypeError):
+        latest_time = re.sub(r'[^0-9]', '', latest_time_raw)[:14]
+        print(f"[WARN] Could not parse ISO time, falling back to regex: {latest_time}")
     print(f"[INFO] latest_time_url={latest_time}")
+    observation_iso = parsed.isoformat() if 'parsed' in dir() else latest_time_raw
 
     station_table = fetch_json(STATION_TABLE_URL)
     obs_map = fetch_json(MAP_URL_TMPL.format(time=latest_time))
@@ -139,7 +164,7 @@ def main():
 
     out = {
         "source": "JMA AMEDAS",
-        "observation_time": latest_time,
+        "observation_time": observation_iso,
         "fetched_at": datetime.now().isoformat(timespec="seconds"),
         "station_count": len(stations),
         "stations": stations,
@@ -150,6 +175,9 @@ def main():
         json.dump(out, f, ensure_ascii=False)
 
     print(f"[DONE] wrote {OUT_PATH}, stations={len(stations)}")
+  except Exception as e:
+    print(f"[FATAL] cron_weather failed: {e}")
+    sys.exit(1)
 
 
 if __name__ == "__main__":
