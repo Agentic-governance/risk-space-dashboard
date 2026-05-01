@@ -1,0 +1,1124 @@
+{
+  "generated_at": "2026-04-03T08:35:00.345062",
+  "summary": {
+    "total_prefectures": 47,
+    "police_sites_reachable": 46,
+    "gaccom_reachable": 47,
+    "any_source_available": 47,
+    "universal_aggregators": [
+      "JASPIC (nordot/news.jp)",
+      "ガッコム安全ナビ"
+    ]
+  },
+  "prefectures": {
+    "01": {
+      "prefecture": "北海道",
+      "code": "01",
+      "sources": [
+        {
+          "url": "https://www.police.pref.hokkaido.lg.jp/",
+          "status": 200,
+          "latency_ms": 165,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p1",
+          "status": 200,
+          "latency_ms": 1572,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "02": {
+      "prefecture": "青森県",
+      "code": "02",
+      "sources": [
+        {
+          "url": "https://www.police.pref.aomori.jp/",
+          "status": 200,
+          "latency_ms": 2199,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p2",
+          "status": 200,
+          "latency_ms": 1279,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "03": {
+      "prefecture": "岩手県",
+      "code": "03",
+      "sources": [
+        {
+          "url": "https://www.pref.iwate.jp/kenkei/",
+          "status": 200,
+          "latency_ms": 111,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p3",
+          "status": 200,
+          "latency_ms": 1033,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "04": {
+      "prefecture": "宮城県",
+      "code": "04",
+      "sources": [
+        {
+          "url": "https://www.police.pref.miyagi.jp/",
+          "status": 200,
+          "latency_ms": 394,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p4",
+          "status": 200,
+          "latency_ms": 958,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "05": {
+      "prefecture": "秋田県",
+      "code": "05",
+      "sources": [
+        {
+          "url": "https://www.police.pref.akita.lg.jp/kenkei",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p5",
+          "status": 200,
+          "latency_ms": 1104,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "06": {
+      "prefecture": "山形県",
+      "code": "06",
+      "sources": [
+        {
+          "url": "https://www.pref.yamagata.jp/police/",
+          "status": 200,
+          "latency_ms": 109,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p6",
+          "status": 200,
+          "latency_ms": 864,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "07": {
+      "prefecture": "福島県",
+      "code": "07",
+      "sources": [
+        {
+          "url": "https://www.police.pref.fukushima.jp/",
+          "status": 200,
+          "latency_ms": 181,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p7",
+          "status": 200,
+          "latency_ms": 1162,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "08": {
+      "prefecture": "茨城県",
+      "code": "08",
+      "sources": [
+        {
+          "url": "https://www.pref.ibaraki.jp/kenkei/",
+          "status": 200,
+          "latency_ms": 78,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p8",
+          "status": 200,
+          "latency_ms": 1364,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "09": {
+      "prefecture": "栃木県",
+      "code": "09",
+      "sources": [
+        {
+          "url": "https://www.pref.tochigi.lg.jp/keisatu/",
+          "status": 200,
+          "latency_ms": 116,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p9",
+          "status": 200,
+          "latency_ms": 1219,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "10": {
+      "prefecture": "群馬県",
+      "code": "10",
+      "sources": [
+        {
+          "url": "https://www.police.pref.gunma.jp/",
+          "status": 200,
+          "latency_ms": 624,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p10",
+          "status": 200,
+          "latency_ms": 1365,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "11": {
+      "prefecture": "埼玉県",
+      "code": "11",
+      "sources": [
+        {
+          "url": "https://www.police.pref.saitama.lg.jp/",
+          "status": 200,
+          "latency_ms": 141,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p11",
+          "status": 200,
+          "latency_ms": 1002,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "12": {
+      "prefecture": "千葉県",
+      "code": "12",
+      "sources": [
+        {
+          "url": "https://www.police.pref.chiba.jp/",
+          "status": 200,
+          "latency_ms": 148,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p12",
+          "status": 200,
+          "latency_ms": 995,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "13": {
+      "prefecture": "東京都",
+      "code": "13",
+      "sources": [
+        {
+          "url": "https://www.keishicho.metro.tokyo.lg.jp/",
+          "status": 200,
+          "latency_ms": 137,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p13",
+          "status": 200,
+          "latency_ms": 1182,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "14": {
+      "prefecture": "神奈川県",
+      "code": "14",
+      "sources": [
+        {
+          "url": "https://www.police.pref.kanagawa.jp/",
+          "status": 200,
+          "latency_ms": 163,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p14",
+          "status": 200,
+          "latency_ms": 1307,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "15": {
+      "prefecture": "新潟県",
+      "code": "15",
+      "sources": [
+        {
+          "url": "https://www.pref.niigata.lg.jp/site/kenkei/",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p15",
+          "status": 200,
+          "latency_ms": 1223,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "16": {
+      "prefecture": "富山県",
+      "code": "16",
+      "sources": [
+        {
+          "url": "https://police.pref.toyama.jp/",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p16",
+          "status": 200,
+          "latency_ms": 1243,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "17": {
+      "prefecture": "石川県",
+      "code": "17",
+      "sources": [
+        {
+          "url": "https://www2.police.pref.ishikawa.lg.jp/",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p17",
+          "status": 200,
+          "latency_ms": 1067,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "18": {
+      "prefecture": "福井県",
+      "code": "18",
+      "sources": [
+        {
+          "url": "https://www.pref.fukui.lg.jp/kenkei/",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p18",
+          "status": 200,
+          "latency_ms": 1152,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "19": {
+      "prefecture": "山梨県",
+      "code": "19",
+      "sources": [
+        {
+          "url": "https://www.pref.yamanashi.jp/police/",
+          "status": 200,
+          "latency_ms": 147,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p19",
+          "status": 200,
+          "latency_ms": 1305,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "20": {
+      "prefecture": "長野県",
+      "code": "20",
+      "sources": [
+        {
+          "url": "https://www.pref.nagano.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 111,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p20",
+          "status": 200,
+          "latency_ms": 1048,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "21": {
+      "prefecture": "岐阜県",
+      "code": "21",
+      "sources": [
+        {
+          "url": "https://www.pref.gifu.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 253,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p21",
+          "status": 200,
+          "latency_ms": 957,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "22": {
+      "prefecture": "静岡県",
+      "code": "22",
+      "sources": [
+        {
+          "url": "https://www.pref.shizuoka.jp/police/",
+          "status": 200,
+          "latency_ms": 352,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p22",
+          "status": 200,
+          "latency_ms": 1321,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "23": {
+      "prefecture": "愛知県",
+      "code": "23",
+      "sources": [
+        {
+          "url": "https://www.pref.aichi.jp/police/",
+          "status": 200,
+          "latency_ms": 2125,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p23",
+          "status": 200,
+          "latency_ms": 864,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "24": {
+      "prefecture": "三重県",
+      "code": "24",
+      "sources": [
+        {
+          "url": "https://www.police.pref.mie.jp/",
+          "status": 200,
+          "latency_ms": 188,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p24",
+          "status": 200,
+          "latency_ms": 952,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "25": {
+      "prefecture": "滋賀県",
+      "code": "25",
+      "sources": [
+        {
+          "url": "https://www.pref.shiga.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 129,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p25",
+          "status": 200,
+          "latency_ms": 1054,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "26": {
+      "prefecture": "京都府",
+      "code": "26",
+      "sources": [
+        {
+          "url": "https://www.pref.kyoto.jp/fukei/",
+          "status": 200,
+          "latency_ms": 1112,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p26",
+          "status": 200,
+          "latency_ms": 1349,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "27": {
+      "prefecture": "大阪府",
+      "code": "27",
+      "sources": [
+        {
+          "url": "https://www.police.pref.osaka.lg.jp/",
+          "status": 200,
+          "latency_ms": 146,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p27",
+          "status": 200,
+          "latency_ms": 939,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "28": {
+      "prefecture": "兵庫県",
+      "code": "28",
+      "sources": [
+        {
+          "url": "https://www.police.pref.hyogo.lg.jp/",
+          "status": 200,
+          "latency_ms": 69,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p28",
+          "status": 200,
+          "latency_ms": 787,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "29": {
+      "prefecture": "奈良県",
+      "code": "29",
+      "sources": [
+        {
+          "url": "https://www.police.pref.nara.jp/",
+          "status": 200,
+          "latency_ms": 105,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p29",
+          "status": 200,
+          "latency_ms": 1122,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "30": {
+      "prefecture": "和歌山県",
+      "code": "30",
+      "sources": [
+        {
+          "url": "https://www.police.pref.wakayama.lg.jp/",
+          "status": 200,
+          "latency_ms": 214,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p30",
+          "status": 200,
+          "latency_ms": 1151,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "31": {
+      "prefecture": "鳥取県",
+      "code": "31",
+      "sources": [
+        {
+          "url": "https://www.pref.tottori.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 171,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p31",
+          "status": 200,
+          "latency_ms": 1081,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "32": {
+      "prefecture": "島根県",
+      "code": "32",
+      "sources": [
+        {
+          "url": "https://www.pref.shimane.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 191,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p32",
+          "status": 200,
+          "latency_ms": 943,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "33": {
+      "prefecture": "岡山県",
+      "code": "33",
+      "sources": [
+        {
+          "url": "https://www.pref.okayama.jp/site/kenkei/",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p33",
+          "status": 200,
+          "latency_ms": 1111,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "34": {
+      "prefecture": "広島県",
+      "code": "34",
+      "sources": [
+        {
+          "url": "https://www.pref.hiroshima.lg.jp/site/police/",
+          "status": 200,
+          "latency_ms": 426,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p34",
+          "status": 200,
+          "latency_ms": 1033,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "35": {
+      "prefecture": "山口県",
+      "code": "35",
+      "sources": [
+        {
+          "url": "https://www.pref.yamaguchi.lg.jp/site/police/",
+          "status": 200,
+          "latency_ms": -1,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p35",
+          "status": 200,
+          "latency_ms": 1083,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "36": {
+      "prefecture": "徳島県",
+      "code": "36",
+      "sources": [
+        {
+          "url": "https://www.police.pref.tokushima.jp/",
+          "status": 200,
+          "latency_ms": 204,
+          "reachable": true,
+          "type": "police",
+          "note": "Requires User-Agent header; returns 403 for bare requests"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p36",
+          "status": 200,
+          "latency_ms": 1368,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "37": {
+      "prefecture": "香川県",
+      "code": "37",
+      "sources": [
+        {
+          "url": "https://www.pref.kagawa.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 188,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p37",
+          "status": 200,
+          "latency_ms": 852,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "38": {
+      "prefecture": "愛媛県",
+      "code": "38",
+      "sources": [
+        {
+          "url": "https://www.police.pref.ehime.jp/",
+          "status": 200,
+          "latency_ms": 321,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p38",
+          "status": 200,
+          "latency_ms": 1051,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "39": {
+      "prefecture": "高知県",
+      "code": "39",
+      "sources": [
+        {
+          "url": "https://www.police.pref.kochi.lg.jp/",
+          "status": 200,
+          "latency_ms": 197,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p39",
+          "status": 200,
+          "latency_ms": 1133,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "40": {
+      "prefecture": "福岡県",
+      "code": "40",
+      "sources": [
+        {
+          "url": "https://www.police.pref.fukuoka.jp/",
+          "status": 200,
+          "latency_ms": 208,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p40",
+          "status": 200,
+          "latency_ms": 953,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "41": {
+      "prefecture": "佐賀県",
+      "code": "41",
+      "sources": [
+        {
+          "url": "https://www.police.pref.saga.jp/",
+          "status": 200,
+          "latency_ms": 606,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p41",
+          "status": 200,
+          "latency_ms": 909,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "42": {
+      "prefecture": "長崎県",
+      "code": "42",
+      "sources": [
+        {
+          "url": "https://www.police.pref.nagasaki.jp/",
+          "status": 200,
+          "latency_ms": 359,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p42",
+          "status": 200,
+          "latency_ms": 968,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "43": {
+      "prefecture": "熊本県",
+      "code": "43",
+      "sources": [
+        {
+          "url": "https://www.police.pref.kumamoto.jp/",
+          "status": "HTTPSConnectionPool(host='www.police.pref.kumamoto.jp', port=443): Max retries e",
+          "latency_ms": -1,
+          "reachable": false,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p43",
+          "status": 200,
+          "latency_ms": 1169,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": false,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "44": {
+      "prefecture": "大分県",
+      "code": "44",
+      "sources": [
+        {
+          "url": "https://www.pref.oita.jp/site/keisatu/",
+          "status": 200,
+          "latency_ms": 101,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p44",
+          "status": 200,
+          "latency_ms": 1220,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "45": {
+      "prefecture": "宮崎県",
+      "code": "45",
+      "sources": [
+        {
+          "url": "https://www.pref.miyazaki.lg.jp/police/",
+          "status": 200,
+          "latency_ms": 94,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p45",
+          "status": 200,
+          "latency_ms": 1586,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "46": {
+      "prefecture": "鹿児島県",
+      "code": "46",
+      "sources": [
+        {
+          "url": "https://www.pref.kagoshima.jp/police/",
+          "status": 200,
+          "latency_ms": 237,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p46",
+          "status": 200,
+          "latency_ms": 1175,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "47": {
+      "prefecture": "沖縄県",
+      "code": "47",
+      "sources": [
+        {
+          "url": "https://www.police.pref.okinawa.jp/",
+          "status": 200,
+          "latency_ms": 529,
+          "reachable": true,
+          "type": "police"
+        },
+        {
+          "url": "https://www.gaccom.jp/safety/area/p47",
+          "status": 200,
+          "latency_ms": 1114,
+          "reachable": true,
+          "type": "gaccom"
+        }
+      ],
+      "police_reachable": true,
+      "gaccom_reachable": true,
+      "has_any_source": true
+    },
+    "jaspic": {
+      "name": "日本不審者情報センター (JASPIC)",
+      "type": "aggregator",
+      "feeds": [
+        {
+          "url": "https://news.jp/i/-/units/133089874031904245",
+          "category": "不審者情報"
+        },
+        {
+          "url": "https://news.jp/i/-/units/402299803402830945",
+          "category": "危険動物情報"
+        },
+        {
+          "url": "https://news.jp/i/-/units/468644598573220961",
+          "category": "財産ねらい情報"
+        }
+      ],
+      "coverage": "全国",
+      "reachable": true
+    },
+    "gaccom": {
+      "name": "ガッコム安全ナビ",
+      "type": "aggregator",
+      "base_url": "https://www.gaccom.jp/safety/",
+      "coverage": "全国",
+      "reachable": true
+    }
+  }
+}

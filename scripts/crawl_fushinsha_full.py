@@ -160,6 +160,207 @@ def extract_time(text: str) -> str | None:
     return None
 
 
+# Column header patterns that indicate an incident table
+_TABLE_DATE_HDRS  = re.compile(r'日時?|発生日|年月日')
+_TABLE_PLACE_HDRS = re.compile(r'場所|住所|発生場所|地区')
+_TABLE_TYPE_HDRS  = re.compile(r'概要|種別|内容|事案')
+
+
+def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
+    """
+    Extract events from structured content that keyword-context windows miss:
+      1. RSS feeds declared in <link rel="alternate" type="application/rss+xml">
+      2. HTML tables whose column headers look like incident lists
+      3. Links to .csv / .pdf download files (noted for future processing)
+
+    Returns a list of event dicts using the same schema as the keyword extraction.
+    """
+    events: list[dict] = []
+    scraped_at = datetime.now().isoformat()
+
+    # ------------------------------------------------------------------
+    # 1. RSS feed detection
+    # ------------------------------------------------------------------
+    rss_links = soup.find_all(
+        "link",
+        rel=lambda r: isinstance(r, list) and "alternate" in r,
+        type="application/rss+xml",
+    )
+    for rss_link in rss_links:
+        rss_url = rss_link.get("href", "").strip()
+        if not rss_url:
+            continue
+        try:
+            time.sleep(1.0)
+            rss_resp = session.get(rss_url, timeout=10, allow_redirects=True)
+            rss_resp.encoding = rss_resp.apparent_encoding or "utf-8"
+            rss_soup = BeautifulSoup(rss_resp.text, "xml")
+
+            for item in rss_soup.find_all("item"):
+                title_tag = item.find("title")
+                desc_tag  = item.find("description")
+                link_tag  = item.find("link")
+                pub_tag   = item.find("pubDate")
+
+                title = title_tag.get_text(strip=True) if title_tag else ""
+                desc  = desc_tag.get_text(strip=True)  if desc_tag  else ""
+                link  = link_tag.get_text(strip=True)  if link_tag  else rss_url
+                combined = f"{title}\n{desc}"
+
+                # Check relevance
+                matched_kw = next(
+                    (kw for kw in KEYWORDS if kw in combined), None
+                )
+                if matched_kw is None:
+                    continue
+
+                # Date: prefer pubDate, then extract from text
+                date_str = None
+                if pub_tag:
+                    pub_text = pub_tag.get_text(strip=True)
+                    # RFC-822 format: "Thu, 01 May 2026 12:00:00 +0900"
+                    m_rfc = re.search(r'(\d{1,2})\s+(\w{3})\s+(\d{4})', pub_text)
+                    MONTHS = {"Jan":1,"Feb":2,"Mar":3,"Apr":4,"May":5,"Jun":6,
+                              "Jul":7,"Aug":8,"Sep":9,"Oct":10,"Nov":11,"Dec":12}
+                    if m_rfc:
+                        mon = MONTHS.get(m_rfc.group(2), 0)
+                        if mon:
+                            date_str = f"{m_rfc.group(3)}-{mon:02d}-{int(m_rfc.group(1)):02d}"
+                if not date_str:
+                    date_str = extract_date(combined)
+
+                # Skip items older than 7 days
+                if date_str:
+                    try:
+                        if datetime.strptime(date_str, "%Y-%m-%d") < WEEK_AGO:
+                            continue
+                    except ValueError:
+                        pass
+
+                h = make_hash(combined[:400])
+                if h in seen_hashes:
+                    continue
+
+                events.append({
+                    "source": f"rss_{pref_name}",
+                    "source_url": link,
+                    "prefecture": pref_name,
+                    "prefecture_code": None,
+                    "date": date_str,
+                    "time": extract_time(combined),
+                    "address_raw": extract_address(combined, pref_name),
+                    "layer": "crime",
+                    "subtype": KEYWORD_TO_SUBTYPE.get(matched_kw, "other"),
+                    "keyword_matched": matched_kw,
+                    "text_snippet": combined[:300],
+                    "hash": h,
+                    "scraped_at": scraped_at,
+                    "lat": None,
+                    "lon": None,
+                    "geocode_method": None,
+                    "extraction_method": "rss",
+                })
+                seen_hashes.add(h)
+
+        except Exception as e:
+            print(f"    [RSS] Error fetching {rss_url}: {e}")
+
+    # ------------------------------------------------------------------
+    # 2. HTML table extraction
+    # ------------------------------------------------------------------
+    for table in soup.find_all("table"):
+        headers = []
+        header_row = table.find("tr")
+        if not header_row:
+            continue
+        for th in header_row.find_all(["th", "td"]):
+            headers.append(th.get_text(strip=True))
+
+        if not headers:
+            continue
+
+        # Detect which columns map to date / place / description
+        date_col = place_col = desc_col = None
+        for idx, h in enumerate(headers):
+            if date_col  is None and _TABLE_DATE_HDRS.search(h):
+                date_col = idx
+            if place_col is None and _TABLE_PLACE_HDRS.search(h):
+                place_col = idx
+            if desc_col  is None and _TABLE_TYPE_HDRS.search(h):
+                desc_col = idx
+
+        # Need at least a date or description column that hints at incidents
+        if date_col is None and desc_col is None:
+            continue
+
+        for row in table.find_all("tr")[1:]:  # skip header row
+            cells = [td.get_text(strip=True) for td in row.find_all(["td", "th"])]
+            if not cells:
+                continue
+
+            date_text  = cells[date_col]  if date_col  is not None and date_col  < len(cells) else ""
+            place_text = cells[place_col] if place_col is not None and place_col < len(cells) else ""
+            desc_text  = cells[desc_col]  if desc_col  is not None and desc_col  < len(cells) else ""
+            row_text   = " ".join(cells)
+
+            matched_kw = next(
+                (kw for kw in KEYWORDS if kw in row_text), None
+            )
+            if matched_kw is None:
+                continue
+
+            date_str = extract_date(date_text) or extract_date(row_text)
+            if date_str:
+                try:
+                    if datetime.strptime(date_str, "%Y-%m-%d") < WEEK_AGO:
+                        continue
+                except ValueError:
+                    pass
+
+            addr = place_text or extract_address(row_text, pref_name)
+            h = make_hash(row_text[:300])
+            if h in seen_hashes:
+                continue
+
+            events.append({
+                "source": f"table_{pref_name}",
+                "source_url": "",
+                "prefecture": pref_name,
+                "prefecture_code": None,
+                "date": date_str,
+                "time": extract_time(date_text + " " + row_text),
+                "address_raw": addr if addr else None,
+                "layer": "crime",
+                "subtype": KEYWORD_TO_SUBTYPE.get(matched_kw, "other"),
+                "keyword_matched": matched_kw,
+                "text_snippet": row_text[:300],
+                "hash": h,
+                "scraped_at": scraped_at,
+                "lat": None,
+                "lon": None,
+                "geocode_method": None,
+                "extraction_method": "table",
+            })
+            seen_hashes.add(h)
+
+    # ------------------------------------------------------------------
+    # 3. CSV / PDF download link detection
+    # ------------------------------------------------------------------
+    _DOWNLOAD_PAT = re.compile(
+        r'\.(csv|pdf)$|download|dl=|file=|attachment', re.IGNORECASE
+    )
+    for a_tag in soup.find_all("a", href=True):
+        href = a_tag["href"]
+        if _DOWNLOAD_PAT.search(href):
+            link_text = a_tag.get_text(strip=True)
+            # Only note links that sound crime-related
+            if any(kw in link_text or kw in href for kw in
+                   ["不審者", "声かけ", "犯罪", "防犯", "事件", "安全"]):
+                print(f"    [DOWNLOAD] {pref_name}: {href!r} ({link_text!r})")
+
+    return events
+
+
 session = requests.Session()
 session.headers.update(HEADERS)
 
@@ -240,7 +441,8 @@ for code in sorted(prefectures.keys()):
         # Extract events from all pages
         for page_url, page_soup in pages_to_check:
             page_text = page_soup.get_text(separator="\n")
-            # Split into chunks around keywords
+
+            # --- Method 1: keyword context windows (original approach) ---
             for keyword in KEYWORDS:
                 if keyword not in page_text:
                     continue
@@ -285,6 +487,7 @@ for code in sorted(prefectures.keys()):
                         "lat": None,
                         "lon": None,
                         "geocode_method": None,
+                        "extraction_method": "keyword",
                     }
                     all_events.append(event)
                     seen_hashes.add(h)
@@ -294,6 +497,21 @@ for code in sorted(prefectures.keys()):
                             json.dump(sorted(list(seen_hashes)), _f)
                     stats["police_events"] += 1
                     pref_counts[pref_name] += 1
+
+            # --- Method 2: structured data (RSS / tables / download links) ---
+            structured_events = extract_structured_data(page_soup, pref_name)
+            for ev in structured_events:
+                # Back-fill fields that extract_structured_data leaves blank
+                if not ev.get("source_url"):
+                    ev["source_url"] = page_url
+                if not ev.get("prefecture_code"):
+                    ev["prefecture_code"] = f"{int(code):02d}"
+                all_events.append(ev)
+                stats["police_events"] += 1
+                pref_counts[pref_name] += 1
+                if len(seen_hashes) % 100 == 0:
+                    with open(SEEN_HASHES, "w", encoding="utf-8") as _f:
+                        json.dump(sorted(list(seen_hashes)), _f)
 
     except Exception as e:
         print(f"    ERROR: {e}")

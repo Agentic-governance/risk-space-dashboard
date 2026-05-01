@@ -6,7 +6,7 @@ realtime_slim format: [[lat, lon, subtype_ja, severity, date], ...]
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EVENTS_PATH = os.path.join(BASE_DIR, "docs", "data", "events_7days.json")
@@ -53,10 +53,12 @@ def main():
         data = json.load(f)
 
     events = data.get("events", [])
-    print(f"[INFO] Converting {len(events)} events to slim format")
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).date()
+    print(f"[INFO] Loaded {len(events)} events; filtering to >= {cutoff}")
 
     slim_rows = []
     skipped = 0
+    filtered_old = 0
 
     for evt in events:
         lat = evt.get("lat")
@@ -65,17 +67,27 @@ def main():
             skipped += 1
             continue
 
+        date_str = evt.get("date") or datetime.now().strftime("%Y-%m-%d")
+
+        # Filter out events older than 7 days
+        try:
+            evt_date = datetime.strptime(date_str[:10], "%Y-%m-%d").date()
+            if evt_date < cutoff:
+                filtered_old += 1
+                continue
+        except ValueError:
+            pass  # Keep events with unparseable dates
+
         subtype_en = evt.get("subtype", "other")
         subtype_ja = SUBTYPE_JA.get(subtype_en, subtype_en)
         severity = SEVERITY_MAP.get(subtype_ja, 2)
-        date = evt.get("date") or datetime.now().strftime("%Y-%m-%d")
 
         slim_rows.append([
             round(float(lat), 4),
             round(float(lon), 4),
             subtype_ja,
             severity,
-            date,
+            date_str,
         ])
 
     # Write slim
@@ -97,7 +109,7 @@ def main():
     with open(SUMMARY_PATH, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False)
 
-    print(f"[DONE] realtime_slim.json: {len(slim_rows)} rows (skipped {skipped} without coords)")
+    print(f"[DONE] realtime_slim.json: {len(slim_rows)} rows (skipped {skipped} no-geo, {filtered_old} older than 7d)")
 
 
 if __name__ == "__main__":

@@ -38,6 +38,14 @@ jobs:
         run: python scripts/cron_weather.py
         continue-on-error: true
 
+      - name: Fetch earthquake data (JMA)
+        run: python scripts/cron_earthquake.py
+        continue-on-error: true
+
+      - name: Fetch traffic incidents
+        run: python scripts/cron_traffic.py
+        continue-on-error: true
+
       - name: Deep Crawl (4x daily at 00/06/12/18 UTC)
         run: |
           HOUR=$(date -u +%H)
@@ -58,7 +66,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/deep_crawl.json docs/data/all_events_v2.json
+          git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/deep_crawl.json docs/data/all_events_v2.json docs/data/earthquakes_latest.json docs/data/traffic_incidents.json
           git add -f data/realtime/fushinsha_7days/week_events_geocoded.json data/realtime/seen_hashes.json
           git diff --cached --quiet || (git commit -m 'auto: police-crawl + weather update' && git push)
 
