@@ -12,6 +12,7 @@ BASE_DIR = SCRIPT_DIR.parent
 SEARCH_DIRS = [
     BASE_DIR / "docs" / "data",
     BASE_DIR / "data" / "realtime",
+    BASE_DIR / "data" / "historical",
 ]
 
 CRITICAL_FILES = {
@@ -22,6 +23,7 @@ CRITICAL_FILES = {
 }
 
 MAX_AGE_HOURS = 2
+HIST_WARN_DAYS = 7
 
 
 def check_files():
@@ -60,6 +62,8 @@ def check_files():
                 any_problem = True
         else:
             status = "OK"
+            if "data/historical" in str(path) and age_hours > HIST_WARN_DAYS * 24:
+                status = "WARN"
 
         rows.append((name, mtime.strftime("%Y-%m-%d %H:%M UTC"), f"{age_hours:.2f}", status, is_critical))
 
@@ -80,6 +84,7 @@ def check_files():
     print()
     print(f"* = critical file (must be updated within {MAX_AGE_HOURS}h)")
     print(f"Checked at: {now.strftime('%Y-%m-%d %H:%M UTC')}")
+    print(f"HISTORICAL WARN threshold: {HIST_WARN_DAYS} days")
 
     return any_problem
 

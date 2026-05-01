@@ -20,6 +20,7 @@ import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from typing import Optional
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -85,7 +86,7 @@ def parse_iso6709(code: str):
 
 # ── Multiplier calculation ────────────────────────────────────────────────
 
-def calc_earthquake_multiplier(magnitude: float, depth_km: float | None, max_shindo: float | None) -> float:
+def calc_earthquake_multiplier(magnitude: float, depth_km: Optional[float], max_shindo: Optional[float]) -> float:
     """
     Compute earthquake_multiplier for the risk model.
 
@@ -141,7 +142,7 @@ _SHINDO_MAP = {
     "7": 7,
 }
 
-def parse_shindo(raw: str | None) -> float | None:
+def parse_shindo(raw: Optional[str]) -> Optional[float]:
     """Convert JMA shindo string to a numeric value for calculations."""
     if raw is None:
         return None
@@ -155,7 +156,7 @@ def parse_shindo(raw: str | None) -> float | None:
 
 # ── Time parsing ───────────────────────────────────────────────────────────
 
-def parse_jma_time(raw: str | None) -> datetime | None:
+def parse_jma_time(raw: Optional[str]) -> Optional[datetime]:
     """Parse JMA time string. Handles ISO-8601 and compact 'YYYYMMDDHHmmss' formats."""
     if not raw:
         return None

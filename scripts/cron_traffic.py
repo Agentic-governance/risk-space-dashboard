@@ -31,6 +31,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
+from typing import List, Optional
 
 # ── Paths ──────────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -95,7 +96,7 @@ SEVERITY_MAP = {
 
 # ── HTTP helpers ───────────────────────────────────────────────────────────
 
-def fetch_url(url: str, retries: int = 3, timeout: int = 20) -> str | None:
+def fetch_url(url: str, retries: int = 3, timeout: int = 20) -> Optional[str]:
     """Fetch raw text from URL with exponential-backoff retry."""
     for attempt in range(retries):
         try:
@@ -118,7 +119,7 @@ def fetch_url(url: str, retries: int = 3, timeout: int = 20) -> str | None:
     return None
 
 
-def fetch_json_url(url: str, retries: int = 3) -> dict | list | None:
+def fetch_json_url(url: str, retries: int = 3) -> Optional[object]:
     """Fetch and parse JSON from URL with retry."""
     for attempt in range(retries):
         try:
@@ -171,8 +172,8 @@ class TableRowParser(HTMLParser):
         super().__init__()
         self.in_td = False
         self.in_li = False
-        self.rows: list[str] = []
-        self._buf: list[str] = []
+        self.rows: List[str] = []
+        self._buf: List[str] = []
 
     def handle_starttag(self, tag, attrs):
         if tag in ("td", "th", "li", "p", "span", "div"):
@@ -191,7 +192,7 @@ class TableRowParser(HTMLParser):
             self._buf.append(data)
 
 
-def extract_text_blocks(html: str) -> list[str]:
+def extract_text_blocks(html: str) -> List[str]:
     """Extract non-trivial text blocks from HTML for incident scanning."""
     # Quick regex approach (avoids full parse overhead for large pages)
     # Strip scripts and styles first
@@ -212,7 +213,7 @@ def extract_text_blocks(html: str) -> list[str]:
 
 JARTIC_URL = "https://www.jartic.or.jp/d/general/gj_road.html"
 
-def fetch_jartic() -> list[dict]:
+def fetch_jartic() -> List[dict]:
     """
     Scrape JARTIC general road information page.
     JARTIC does not have a public REST API; this scrapes the HTML fallback.
@@ -255,7 +256,7 @@ def fetch_jartic() -> list[dict]:
 
 YAHOO_ROAD_URL = "https://transit.yahoo.co.jp/traininfo/area/4/"  # Kanto as probe
 
-def fetch_yahoo_road() -> list[dict]:
+def fetch_yahoo_road() -> List[dict]:
     """
     Fetch Yahoo! transit/road disruption information.
     This page lists rail+road disruptions; we filter to road-related.
@@ -310,7 +311,7 @@ TRAFFIC_KEYWORDS = {
     "緊急工事", "不通", "交通", "道路", "高速",
 }
 
-def fetch_nhk_rss() -> list[dict]:
+def fetch_nhk_rss() -> List[dict]:
     """
     Fetch NHK News RSS and filter for traffic/road-related items.
     Parses minimal RSS XML without external libraries.
@@ -376,7 +377,7 @@ MLIT_TRAFFIC_URL = (
     "https://www.mlit.go.jp/road/road/data/rjd/rjd_open.xml"
 )
 
-def fetch_mlit_traffic() -> list[dict]:
+def fetch_mlit_traffic() -> List[dict]:
     """
     Probe MLIT road junction data for closure markers.
     This endpoint may or may not be available; treated as best-effort.
@@ -423,7 +424,7 @@ def main():
     print(f"  fetched_at: {now_utc.isoformat(timespec='seconds')}")
     print("=" * 60)
 
-    all_incidents: list[dict] = []
+    all_incidents: List[dict] = []
 
     # Collect from all sources (sequential to be polite)
     all_incidents.extend(fetch_jartic())

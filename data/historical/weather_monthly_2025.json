@@ -1,0 +1,2357 @@
+{
+  "generated_at": "2026-05-01T22:07:36Z",
+  "source": "https://www.data.jma.go.jp/obd/stats/etrn/",
+  "year": 2025,
+  "records": {
+    "01": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "02": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "03": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "04": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "05": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "06": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "07": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "08": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "09": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "10": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "11": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "12": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "13": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "14": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "15": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "16": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "17": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "18": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "19": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "20": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "21": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "22": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "23": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "24": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "25": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "26": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "27": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "28": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "29": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "30": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "31": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "32": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "33": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "34": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "35": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "36": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "37": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "38": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "39": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "40": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "41": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "42": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "43": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "44": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "45": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "46": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    },
+    "47": {
+      "2025-01": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-02": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-03": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-04": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-05": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-06": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-07": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-08": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-09": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-10": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-11": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      },
+      "2025-12": {
+        "avg_temp_c": null,
+        "precip_mm": null
+      }
+    }
+  }
+}

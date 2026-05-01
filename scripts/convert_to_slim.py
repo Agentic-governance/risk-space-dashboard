@@ -12,6 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EVENTS_PATH = os.path.join(BASE_DIR, "docs", "data", "events_7days.json")
 SLIM_PATH = os.path.join(BASE_DIR, "docs", "data", "realtime_slim.json")
 SUMMARY_PATH = os.path.join(BASE_DIR, "docs", "data", "summary.json")
+HIST_BASELINE_PATH = os.path.join(BASE_DIR, "docs", "data", "historical_crime_baseline.json")
 
 # Map English subtypes back to Japanese for dashboard compatibility
 SUBTYPE_JA = {
@@ -89,6 +90,34 @@ def main():
             severity,
             date_str,
         ])
+
+    # Optional historical layer from baseline hotspots (top 50 by incident count).
+    if os.path.exists(HIST_BASELINE_PATH):
+        try:
+            with open(HIST_BASELINE_PATH, "r", encoding="utf-8") as f:
+                baseline = json.load(f)
+            pref_map = baseline.get("prefectures", {}) if isinstance(baseline, dict) else {}
+            hotspots = []
+            for pref, item in pref_map.items():
+                lat = item.get("lat")
+                lon = item.get("lon")
+                total = int(item.get("total_incidents", 0) or 0)
+                if lat is None or lon is None:
+                    continue
+                hotspots.append((total, lat, lon, pref))
+            hotspots.sort(key=lambda x: x[0], reverse=True)
+            today = datetime.now().strftime("%Y-%m-%d")
+            for total, lat, lon, pref in hotspots[:50]:
+                slim_rows.append([
+                    round(float(lat), 4),
+                    round(float(lon), 4),
+                    f"履歴ホットスポット:{pref}",
+                    2,
+                    today,
+                    "historical",
+                ])
+        except Exception as e:
+            print(f"[WARN] Could not append historical hotspots: {e}")
 
     # Write slim
     os.makedirs(os.path.dirname(SLIM_PATH), exist_ok=True)

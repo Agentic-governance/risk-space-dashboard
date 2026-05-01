@@ -2,6 +2,7 @@ name: 'Risk Space - Auto Crawl & Deploy'
 
 on:
   schedule:
+    - cron: '0 0 * * 1'
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
@@ -10,6 +11,31 @@ permissions:
   issues: write
 
 jobs:
+  historical-update:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run historical updates
+        run: |
+          python scripts/fetch_historical_earthquakes.py || true
+          python scripts/fetch_historical_traffic.py || true
+          python scripts/build_historical_baseline.py
+          python scripts/integrate_historical.py
+      - name: Commit historical outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -f data/historical/*.json docs/data/historical_crime_baseline.json docs/data/integrated_risk_profile.json
+          git diff --cached --quiet || (git commit -m 'auto: weekly historical backfill' && git push)
+
   crawl:
     runs-on: ubuntu-latest
     timeout-minutes: 25
