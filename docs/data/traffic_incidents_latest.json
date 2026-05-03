@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-02T23:51:34+00:00",
-    "fetched_at_jst": "2026-05-03T08:51:34+09:00",
+    "fetched_at": "2026-05-03T02:55:48+00:00",
+    "fetched_at_jst": "2026-05-03T11:55:48+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
@@ -23,7 +23,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260502_0000",
+      "event_id": "traffic_20260503_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-02T23:51:34+00:00",
+      "occurred_at": "2026-05-03T02:55:48+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260502_0001",
+      "event_id": "traffic_20260503_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +46,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-02T23:51:34+00:00",
+      "occurred_at": "2026-05-03T02:55:48+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260502_0002",
+      "event_id": "traffic_20260503_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +60,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-02T23:51:34+00:00",
+      "occurred_at": "2026-05-03T02:55:48+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260502_0003",
+      "event_id": "traffic_20260503_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,21 +74,21 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-02T23:51:34+00:00",
+      "occurred_at": "2026-05-03T02:55:48+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260502_0004",
+      "event_id": "traffic_20260503_0004",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "滋賀 彦根 国道で車2台衝突する事故 子ども含む10人以上搬送 — 2日夜、滋賀県彦根市の国道でワンボックスカーなど車2台が正面衝突する事故がありました。警察によりますと、子どもを含む10人以上が病院に搬送され、搬送時にいずれも意識はあったということです。",
+      "description": "滋賀 彦根の国道で車2台が正面衝突 中学生10人含む13人けが — 2日夜、滋賀県彦根市の国道でハンドボールチームの中学生たちが乗るワンボックスカーなど車2台が正面衝突する事故があり、中学生10人を含む13人がけがをしました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-02T21:07:46+00:00",
+      "occurred_at": "2026-05-03T02:38:12+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260503/k10015113761000.html",
       "traffic_multiplier": 1.6
     }
