@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-03T22:49:36+00:00",
-    "fetched_at_jst": "2026-05-04T07:49:36+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-05-03T23:52:54+00:00",
+    "fetched_at_jst": "2026-05-04T08:52:54+09:00",
+    "total_count": 9,
     "source_counts": {
-      "yahoo_transit": 5,
+      "yahoo_transit": 6,
       "nhk_rss": 3
     },
     "type_counts": {
-      "fallen_tree": 1,
+      "fallen_tree": 2,
       "accident": 4,
       "disaster": 1,
       "congestion": 1,
@@ -31,15 +31,29 @@
       "incident_type": "fallen_tree",
       "severity": 2,
       "road_name": "",
-      "description": "新木〜布佐駅間で発生した倒木の影...",
+      "description": "成田線内で発生した倒木の影響で、...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T22:49:36+00:00",
+      "occurred_at": "2026-05-03T23:52:54+00:00",
       "url": "",
       "traffic_multiplier": 1.3
     },
     {
       "event_id": "traffic_20260503_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "fallen_tree",
+      "severity": 2,
+      "road_name": "",
+      "description": "新木〜布佐駅間で発生した倒木の影...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-03T23:52:54+00:00",
+      "url": "",
+      "traffic_multiplier": 1.3
+    },
+    {
+      "event_id": "traffic_20260503_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -48,12 +62,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T22:49:36+00:00",
+      "occurred_at": "2026-05-03T23:52:54+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260503_0002",
+      "event_id": "traffic_20260503_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -62,12 +76,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T22:49:36+00:00",
+      "occurred_at": "2026-05-03T23:52:54+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260503_0003",
+      "event_id": "traffic_20260503_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -76,12 +90,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T22:49:36+00:00",
+      "occurred_at": "2026-05-03T23:52:54+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260503_0004",
+      "event_id": "traffic_20260503_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -90,12 +104,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T22:49:36+00:00",
+      "occurred_at": "2026-05-03T23:52:54+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260503_0005",
+      "event_id": "traffic_20260503_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "unknown",
@@ -104,12 +118,12 @@
       "description": "低気圧の影響で東北では夕方から暴風のおそれ 警戒を — 発達する低気圧の影響で東日本を中心に雨や風が強まっています。東北では夕方から暴風のおそれがあり、交通機関への影響などに注意・警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T22:07:37+00:00",
+      "occurred_at": "2026-05-03T23:00:07+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114191000.html",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260503_0006",
+      "event_id": "traffic_20260503_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -123,7 +137,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260503_0007",
+      "event_id": "traffic_20260503_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
