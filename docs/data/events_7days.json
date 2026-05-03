@@ -1,19 +1,58 @@
 {
-  "generated_at": "2026-05-03T16:18:30.217530",
+  "generated_at": "2026-05-03T17:33:15.562233",
   "period": {
     "from": "2026-04-26",
     "to": "2026-05-03"
   },
   "stats": {
-    "total_events": 0,
-    "geocoded": 0,
+    "total_events": 2,
+    "geocoded": 2,
     "geocoded_gsi": 0,
     "geocoded_city": 0,
-    "geocoded_pref": 0,
-    "police_events": 0,
+    "geocoded_pref": 2,
+    "police_events": 2,
     "nordot_events": 0,
-    "skipped_duplicates": 453,
-    "errors": 1
+    "skipped_duplicates": 450,
+    "errors": 2
   },
-  "events": []
+  "events": [
+    {
+      "source": "police_46",
+      "source_url": "https://www.pref.kagoshima.jp/police/jiko/index.html",
+      "prefecture": "鹿児島県",
+      "prefecture_code": "46",
+      "date": "2026-04-29",
+      "time": null,
+      "address_raw": null,
+      "layer": "crime",
+      "subtype": "stalking",
+      "keyword_matched": "つきまとい",
+      "text_snippet": "事件・事故等発生状況\n\n\n交通事故発生状況等\n\n\n\n\n交通事故分析資料\n\n\n犯罪・交通事故情報マップ\n\n\n交通事故発生状況\n\n\n交通事故日報\n\n\n交通事故月報\n\n\n\n\n最近発生した主な事件\n\n\n\n\n4月29日発表分\n\n\n4月28日発表分\n\n\n4月27日発表分\n\n\n\n\n犯罪・交通等統計\n\n\n\n\n犯罪統計\n\n\n交通統計（初心運転者事故率）\n\n\n少年白書\n\n\n自殺者の年齢・原因別統計\n\n\n\n\n声掛け・つきまとい事案等の発生状況\n\n\n\n\n声掛け・つきまとい事案等発生状況\n\n\n\n\n\n\n\n\n\n\nより良いウェブサイトにするためにみなさまのご意見をお聞かせください\n\n\n\n\n\n\n\n\n \n \n \n\n\n \nこのペー",
+      "hash": "5dbe489e6e4bfbfb0d62ad749f2f5d1c",
+      "scraped_at": "2026-05-03T17:32:18.776378",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "geocode_method": "pref_centroid",
+      "extraction_method": "keyword"
+    },
+    {
+      "source": "police_46",
+      "source_url": "https://www.pref.kagoshima.jp/police/jiko/index.html",
+      "prefecture": "鹿児島県",
+      "prefecture_code": "46",
+      "date": "2026-04-29",
+      "time": null,
+      "address_raw": null,
+      "layer": "crime",
+      "subtype": "stalking",
+      "keyword_matched": "つきまとい",
+      "text_snippet": "等\n\n\n\n\n交通事故分析資料\n\n\n犯罪・交通事故情報マップ\n\n\n交通事故発生状況\n\n\n交通事故日報\n\n\n交通事故月報\n\n\n\n\n最近発生した主な事件\n\n\n\n\n4月29日発表分\n\n\n4月28日発表分\n\n\n4月27日発表分\n\n\n\n\n犯罪・交通等統計\n\n\n\n\n犯罪統計\n\n\n交通統計（初心運転者事故率）\n\n\n少年白書\n\n\n自殺者の年齢・原因別統計\n\n\n\n\n声掛け・つきまとい事案等の発生状況\n\n\n\n\n声掛け・つきまとい事案等発生状況\n\n\n\n\n\n\n\n\n\n\nより良いウェブサイトにするためにみなさまのご意見をお聞かせください\n\n\n\n\n\n\n\n\n \n \n \n\n\n \nこのページの情報は役に立ちましたか？\n\n\n \n1：",
+      "hash": "d6aa5adda388bddba66647a8b5aa8a51",
+      "scraped_at": "2026-05-03T17:32:18.776516",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "geocode_method": "pref_centroid",
+      "extraction_method": "keyword"
+    }
+  ]
 }
