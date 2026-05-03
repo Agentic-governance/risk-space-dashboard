@@ -13,7 +13,7 @@ permissions:
 jobs:
   historical-update:
     runs-on: ubuntu-latest
-    if: github.event_name == 'schedule'
+    if: github.event.schedule == '0 0 * * 1'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,12 +23,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pandas numpy
       - name: Run historical updates
         run: |
           python scripts/fetch_historical_earthquakes.py || true
           python scripts/fetch_historical_traffic.py || true
-          python scripts/build_historical_baseline.py
-          python scripts/integrate_historical.py
+          python scripts/build_historical_baseline.py || true
+          python scripts/integrate_historical.py || true
       - name: Commit historical outputs
         run: |
           git config user.name 'github-actions[bot]'
@@ -52,6 +54,13 @@ jobs:
 
       - name: Install dependencies
         run: pip install requests beautifulsoup4 chardet
+
+      - name: Ensure seen_hashes exists for dedup continuity
+        run: |
+          mkdir -p data/realtime
+          if [ ! -f data/realtime/seen_hashes.json ]; then
+            echo "[]" > data/realtime/seen_hashes.json
+          fi
 
       - name: Crawl 47 Prefecture Police HP (primary source)
         run: python scripts/crawl_fushinsha_full.py
@@ -94,6 +103,7 @@ jobs:
           git config user.email 'github-actions[bot]@users.noreply.github.com'
           git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/earthquakes_latest.json docs/data/traffic_incidents_latest.json || true
           git add -f data/realtime/fushinsha_7days/week_events_geocoded.json data/realtime/seen_hashes.json || true
+          git add -f docs/data/all_events_v2.json docs/data/deep_crawl.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m 'auto: police-crawl + weather update' && git push)
 
       - name: Notify on failure

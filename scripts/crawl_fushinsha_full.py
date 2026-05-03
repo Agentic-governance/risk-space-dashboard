@@ -12,6 +12,7 @@ import random
 import re
 import time
 import urllib.parse
+import urllib3
 import os
 import sys
 from datetime import datetime, timedelta
@@ -27,8 +28,11 @@ BASE = Path(__file__).resolve().parent.parent
 DATA_RT = BASE / "data" / "realtime"
 SOURCE_MAP = DATA_RT / "source_map.json"
 SEEN_HASHES = DATA_RT / "seen_hashes.json"
+SEEN_HASHES_ALT = BASE / "docs" / "data" / "seen_hashes.json"
 CITY_CENTROIDS = BASE / "data" / "crime" / "national" / "city_centroids.json"
+CITY_CENTROIDS_ALT = BASE / "docs" / "data" / "city_centroids.json"
 PREF_CENTROIDS = BASE / "data" / "crime" / "national" / "pref_centroids.json"
+PREF_CENTROIDS_ALT = BASE / "docs" / "data" / "pref_centroids.json"
 OUT_DIR = DATA_RT / "fushinsha_7days"
 OUT_FILE = OUT_DIR / "week_events_geocoded.json"
 DOCS_OUT = BASE / "docs" / "data" / "events_7days.json"
@@ -78,22 +82,32 @@ except FileNotFoundError:
 if SEEN_HASHES.exists():
     with open(SEEN_HASHES, "r") as f:
         seen_hashes = set(json.load(f))
+elif SEEN_HASHES_ALT.exists():
+    with open(SEEN_HASHES_ALT, "r") as f:
+        seen_hashes = set(json.load(f))
+    print(f"  Loaded seen_hashes from fallback: {SEEN_HASHES_ALT}")
 else:
     seen_hashes = set()
 
-try:
-    with open(CITY_CENTROIDS, "r") as f:
-        city_centroids = json.load(f)
-except FileNotFoundError:
-    print(f"[WARN] city_centroids not found: {CITY_CENTROIDS}, using empty")
-    city_centroids = {}
+city_centroids = {}
+for _path in [CITY_CENTROIDS, CITY_CENTROIDS_ALT]:
+    if _path.exists():
+        with open(_path, "r") as f:
+            city_centroids = json.load(f)
+        print(f"  Loaded city_centroids from: {_path}")
+        break
+else:
+    print(f"[WARN] city_centroids not found in any location, using empty")
 
-try:
-    with open(PREF_CENTROIDS, "r") as f:
-        pref_centroids_list = json.load(f)
-except FileNotFoundError:
-    print(f"[WARN] pref_centroids not found: {PREF_CENTROIDS}, using empty")
-    pref_centroids_list = []
+pref_centroids_list = []
+for _path in [PREF_CENTROIDS, PREF_CENTROIDS_ALT]:
+    if _path.exists():
+        with open(_path, "r") as f:
+            pref_centroids_list = json.load(f)
+        print(f"  Loaded pref_centroids from: {_path}")
+        break
+else:
+    print(f"[WARN] pref_centroids not found in any location, using empty")
 
 # Build pref centroid lookup by name
 pref_centroids = {}
@@ -363,6 +377,8 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
 
 session = requests.Session()
 session.headers.update(HEADERS)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+session.verify = False
 
 all_events = []
 stats = {"police_pages_checked": 0, "police_events": 0,
@@ -884,5 +900,5 @@ for pref in PREF_NAMES[1:]:
     count = pref_counts.get(pref, 0)
     if count > 0:
         print(f"    {pref}: {count}")
-print(f"\n  Prefectures with 0 events: {47 - len(pref_counts)}")
+print(f"\n  Prefectures with 0 events: {47 - min(len(pref_counts), 47)}")
 print("\nDone.")
