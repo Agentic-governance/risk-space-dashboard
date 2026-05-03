@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-03T08:18:11+00:00",
+    "fetched_at": "2026-05-03T09:57:49+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -63,62 +63,6 @@
       "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260502184219_20260502183939_VXSE5k_1",
-      "time": "2026-05-02T09:39:00+00:00",
-      "time_jst": "2026-05-02T18:39:00+09:00",
-      "lat": 36.5,
-      "lon": 137.9,
-      "magnitude": 2.0,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Nagano Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260502183353_20260502182850_VXSE5k_1",
-      "time": "2026-05-02T09:28:00+00:00",
-      "time_jst": "2026-05-02T18:28:00+09:00",
-      "lat": 34.1,
-      "lon": 135.6,
-      "magnitude": 5.7,
-      "depth_km": 70.0,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "Nara Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.4
-    },
-    {
-      "event_id": "20260502183215_20260502182850_VXSE52_0",
-      "time": "2026-05-02T09:28:00+00:00",
-      "time_jst": "2026-05-02T18:28:00+09:00",
-      "lat": 34.1,
-      "lon": 135.6,
-      "magnitude": 5.7,
-      "depth_km": 70.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Nara Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.2
-    },
-    {
-      "event_id": "20260502183034_20260502182850_VXSE51_0",
-      "time": "2026-05-02T09:28:00+00:00",
-      "time_jst": "2026-05-02T18:28:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
     }
   ]
 }
