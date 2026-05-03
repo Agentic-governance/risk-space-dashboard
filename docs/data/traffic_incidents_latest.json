@@ -6,15 +6,14 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-03T14:38:53+00:00",
-    "fetched_at_jst": "2026-05-03T23:38:53+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-03T15:21:34+00:00",
+    "fetched_at_jst": "2026-05-04T00:21:34+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "disaster": 1,
       "congestion": 1
     },
@@ -32,7 +31,7 @@
       "description": "四ツ谷駅で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T14:38:53+00:00",
+      "occurred_at": "2026-05-03T15:21:34+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +45,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T14:38:53+00:00",
+      "occurred_at": "2026-05-03T15:21:34+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +59,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T14:38:53+00:00",
+      "occurred_at": "2026-05-03T15:21:34+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +73,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T14:38:53+00:00",
+      "occurred_at": "2026-05-03T15:21:34+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,23 +87,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-03T14:38:53+00:00",
+      "occurred_at": "2026-05-03T15:21:34+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260503_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "猪苗代湖で水上バイク転覆 2人が意識不明で搬送 福島 — 福島県の猪苗代湖で男性3人が乗っていた水上バイクが転覆する事故があり、このうち2人が意識のない状態で病院に搬送されました。警察が事故の詳しい状況を調べています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-03T11:53:17+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260503/k10015114091000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }
