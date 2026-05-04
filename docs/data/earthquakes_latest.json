@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-04T02:53:02+00:00",
+    "fetched_at": "2026-05-04T09:12:54+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260504164117_20260504163721_VXSE5k_1",
+      "time": "2026-05-04T07:37:00+00:00",
+      "time_jst": "2026-05-04T16:37:00+09:00",
+      "lat": 42.8,
+      "lon": 142.7,
+      "magnitude": 3.8,
+      "depth_km": 90.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Western Hidaka Region, Hokkaido",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
+    {
+      "event_id": "20260504135414_20260504135140_VXSE5k_1",
+      "time": "2026-05-04T04:51:00+00:00",
+      "time_jst": "2026-05-04T13:51:00+09:00",
+      "lat": 39.9,
+      "lon": 142.4,
+      "magnitude": 3.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260504051711_20260504051428_VXSE5k_1",
       "time": "2026-05-03T20:14:00+00:00",
