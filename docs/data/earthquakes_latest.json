@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-04T15:39:29+00:00",
+    "fetched_at": "2026-05-04T17:24:11+00:00",
     "filter_window_hours": 24,
-    "total_count": 5,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -61,20 +61,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Northern Inland of Akita Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260504012227_20260504011913_VXSE5k_1",
-      "time": "2026-05-03T16:19:00+00:00",
-      "time_jst": "2026-05-04T01:19:00+09:00",
-      "lat": 24.9,
-      "lon": 123.2,
-      "magnitude": 4.8,
-      "depth_km": 120.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of Yonagunijima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
