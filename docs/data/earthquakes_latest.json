@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-04T19:13:33+00:00",
+    "fetched_at": "2026-05-04T20:57:00+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 2,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -35,34 +35,6 @@
       "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260504051711_20260504051428_VXSE5k_1",
-      "time": "2026-05-03T20:14:00+00:00",
-      "time_jst": "2026-05-04T05:14:00+09:00",
-      "lat": 41.3,
-      "lon": 140.6,
-      "magnitude": 3.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Tsugaru Strait",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260504041742_20260504041453_VXSE5k_1",
-      "time": "2026-05-03T19:14:00+00:00",
-      "time_jst": "2026-05-04T04:14:00+09:00",
-      "lat": 39.9,
-      "lon": 140.4,
-      "magnitude": 2.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Inland of Akita Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
