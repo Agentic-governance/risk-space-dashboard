@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T20:56:59.775385",
+  "generated_at": "2026-05-04T22:08:58.270164",
   "period": {
     "from": "2026-04-27",
     "to": "2026-05-04"
@@ -12,8 +12,8 @@
     "geocoded_pref": 0,
     "police_events": 0,
     "nordot_events": 0,
-    "skipped_duplicates": 437,
-    "errors": 2
+    "skipped_duplicates": 454,
+    "errors": 0
   },
   "events": []
 }

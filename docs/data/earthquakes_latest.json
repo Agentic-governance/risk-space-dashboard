@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-04T20:57:00+00:00",
+    "fetched_at": "2026-05-04T22:09:00+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260505064645_20260505064205_VXSE5k_1",
+      "time": "2026-05-04T21:42:00+00:00",
+      "time_jst": "2026-05-05T06:42:00+09:00",
+      "lat": 39.8,
+      "lon": 143.3,
+      "magnitude": 4.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Sanriku",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.0
+    },
     {
       "event_id": "20260504164117_20260504163721_VXSE5k_1",
       "time": "2026-05-04T07:37:00+00:00",
