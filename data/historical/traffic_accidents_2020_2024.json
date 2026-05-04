@@ -1,7 +1,3935 @@
 {
-  "generated_at": "2026-05-01T22:08:15Z",
-  "period": "2020-2024",
-  "source": "NPA open data",
-  "fetch_status": "failed_offline_dns",
-  "prefectures": {}
+  "metadata": {
+    "description": "Historical traffic accident statistics for Japan (2020-2024). Primary source: National Police Agency (警察庁) Open Data. Aggregated by prefecture and month.",
+    "primary_source": "https://www.npa.go.jp/publications/statistics/koutsuu/opendata/",
+    "alternative_source": "https://api.e-stat.go.jp/rest/3.0/app/json/getStatsData",
+    "fetched_at": "2026-05-04T01:52:42+00:00",
+    "years_requested": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "years_failed": [],
+    "total_records": 1514038,
+    "source_breakdown": {
+      "npa_2020": {
+        "records": 309178,
+        "fatalities": 2839,
+        "injuries": 369476
+      },
+      "npa_2021": {
+        "records": 305196,
+        "fatalities": 2636,
+        "injuries": 362131
+      },
+      "npa_2022": {
+        "records": 300839,
+        "fatalities": 2611,
+        "injuries": 356602
+      },
+      "npa_2023": {
+        "records": 307930,
+        "fatalities": 2678,
+        "injuries": 365595
+      },
+      "npa_2024": {
+        "records": 290895,
+        "fatalities": 2663,
+        "injuries": 344395
+      }
+    },
+    "notes": [
+      "本票 (honhyo) = main accident record CSV from NPA open data.",
+      "URL pattern: https://www.npa.go.jp/publications/statistics/koutsuu/opendata/{year}/honhyo_{year}.csv",
+      "Encoding: Shift-JIS (cp932). Lat/lon available in 2022+ data.",
+      "Fatality count = 死者数 (deaths within 24h of accident).",
+      "e-Stat API requires ESTAT_APP_ID environment variable.",
+      "Cache stored in data/historical/cache/ to avoid re-downloading."
+    ]
+  },
+  "summary": {
+    "accidents": 1514038,
+    "fatalities": 13427,
+    "injuries": 1798199
+  },
+  "by_year": {
+    "2020": {
+      "accidents": 309178,
+      "fatalities": 2839,
+      "injuries": 369476
+    },
+    "2021": {
+      "accidents": 305196,
+      "fatalities": 2636,
+      "injuries": 362131
+    },
+    "2022": {
+      "accidents": 300839,
+      "fatalities": 2611,
+      "injuries": 356602
+    },
+    "2023": {
+      "accidents": 307930,
+      "fatalities": 2678,
+      "injuries": 365595
+    },
+    "2024": {
+      "accidents": 290895,
+      "fatalities": 2663,
+      "injuries": 344395
+    }
+  },
+  "by_prefecture_year": [
+    {
+      "prefecture": "48",
+      "year": 2020,
+      "accidents": 4802,
+      "fatalities": 46,
+      "injuries": 5756
+    },
+    {
+      "prefecture": "48",
+      "year": 2021,
+      "accidents": 4772,
+      "fatalities": 45,
+      "injuries": 5696
+    },
+    {
+      "prefecture": "48",
+      "year": 2022,
+      "accidents": 4752,
+      "fatalities": 46,
+      "injuries": 5611
+    },
+    {
+      "prefecture": "48",
+      "year": 2023,
+      "accidents": 5006,
+      "fatalities": 42,
+      "injuries": 5951
+    },
+    {
+      "prefecture": "48",
+      "year": 2024,
+      "accidents": 4970,
+      "fatalities": 57,
+      "injuries": 6005
+    },
+    {
+      "prefecture": "49",
+      "year": 2020,
+      "accidents": 20667,
+      "fatalities": 108,
+      "injuries": 26360
+    },
+    {
+      "prefecture": "49",
+      "year": 2021,
+      "accidents": 19382,
+      "fatalities": 89,
+      "injuries": 24408
+    },
+    {
+      "prefecture": "49",
+      "year": 2022,
+      "accidents": 18678,
+      "fatalities": 83,
+      "injuries": 23662
+    },
+    {
+      "prefecture": "49",
+      "year": 2023,
+      "accidents": 18662,
+      "fatalities": 70,
+      "injuries": 23573
+    },
+    {
+      "prefecture": "49",
+      "year": 2024,
+      "accidents": 17441,
+      "fatalities": 88,
+      "injuries": 21880
+    },
+    {
+      "prefecture": "50",
+      "year": 2020,
+      "accidents": 1992,
+      "fatalities": 26,
+      "injuries": 2309
+    },
+    {
+      "prefecture": "50",
+      "year": 2021,
+      "accidents": 1971,
+      "fatalities": 29,
+      "injuries": 2269
+    },
+    {
+      "prefecture": "50",
+      "year": 2022,
+      "accidents": 1953,
+      "fatalities": 34,
+      "injuries": 2202
+    },
+    {
+      "prefecture": "50",
+      "year": 2023,
+      "accidents": 1878,
+      "fatalities": 31,
+      "injuries": 2108
+    },
+    {
+      "prefecture": "50",
+      "year": 2024,
+      "accidents": 1858,
+      "fatalities": 22,
+      "injuries": 2130
+    },
+    {
+      "prefecture": "51",
+      "year": 2020,
+      "accidents": 2025,
+      "fatalities": 40,
+      "injuries": 2325
+    },
+    {
+      "prefecture": "51",
+      "year": 2021,
+      "accidents": 1946,
+      "fatalities": 26,
+      "injuries": 2225
+    },
+    {
+      "prefecture": "51",
+      "year": 2022,
+      "accidents": 1987,
+      "fatalities": 22,
+      "injuries": 2248
+    },
+    {
+      "prefecture": "51",
+      "year": 2023,
+      "accidents": 2059,
+      "fatalities": 28,
+      "injuries": 2356
+    },
+    {
+      "prefecture": "51",
+      "year": 2024,
+      "accidents": 1792,
+      "fatalities": 30,
+      "injuries": 2037
+    },
+    {
+      "prefecture": "52",
+      "year": 2020,
+      "accidents": 868,
+      "fatalities": 41,
+      "injuries": 940
+    },
+    {
+      "prefecture": "52",
+      "year": 2021,
+      "accidents": 912,
+      "fatalities": 26,
+      "injuries": 1029
+    },
+    {
+      "prefecture": "52",
+      "year": 2022,
+      "accidents": 939,
+      "fatalities": 27,
+      "injuries": 1063
+    },
+    {
+      "prefecture": "52",
+      "year": 2023,
+      "accidents": 986,
+      "fatalities": 20,
+      "injuries": 1133
+    },
+    {
+      "prefecture": "52",
+      "year": 2024,
+      "accidents": 964,
+      "fatalities": 23,
+      "injuries": 1100
+    },
+    {
+      "prefecture": "53",
+      "year": 2020,
+      "accidents": 3052,
+      "fatalities": 43,
+      "injuries": 3851
+    },
+    {
+      "prefecture": "53",
+      "year": 2021,
+      "accidents": 2911,
+      "fatalities": 61,
+      "injuries": 3648
+    },
+    {
+      "prefecture": "53",
+      "year": 2022,
+      "accidents": 2895,
+      "fatalities": 75,
+      "injuries": 3500
+    },
+    {
+      "prefecture": "53",
+      "year": 2023,
+      "accidents": 3077,
+      "fatalities": 50,
+      "injuries": 3806
+    },
+    {
+      "prefecture": "53",
+      "year": 2024,
+      "accidents": 2835,
+      "fatalities": 70,
+      "injuries": 3483
+    },
+    {
+      "prefecture": "54",
+      "year": 2020,
+      "accidents": 24879,
+      "fatalities": 154,
+      "injuries": 29559
+    },
+    {
+      "prefecture": "54",
+      "year": 2021,
+      "accidents": 24185,
+      "fatalities": 117,
+      "injuries": 28631
+    },
+    {
+      "prefecture": "54",
+      "year": 2022,
+      "accidents": 23825,
+      "fatalities": 137,
+      "injuries": 28072
+    },
+    {
+      "prefecture": "54",
+      "year": 2023,
+      "accidents": 24547,
+      "fatalities": 145,
+      "injuries": 28990
+    },
+    {
+      "prefecture": "54",
+      "year": 2024,
+      "accidents": 24506,
+      "fatalities": 141,
+      "injuries": 28822
+    },
+    {
+      "prefecture": "55",
+      "year": 2020,
+      "accidents": 2966,
+      "fatalities": 73,
+      "injuries": 3732
+    },
+    {
+      "prefecture": "55",
+      "year": 2021,
+      "accidents": 2722,
+      "fatalities": 62,
+      "injuries": 3338
+    },
+    {
+      "prefecture": "55",
+      "year": 2022,
+      "accidents": 2917,
+      "fatalities": 60,
+      "injuries": 3638
+    },
+    {
+      "prefecture": "55",
+      "year": 2023,
+      "accidents": 2976,
+      "fatalities": 66,
+      "injuries": 3767
+    },
+    {
+      "prefecture": "55",
+      "year": 2024,
+      "accidents": 2724,
+      "fatalities": 46,
+      "injuries": 3334
+    },
+    {
+      "prefecture": "60",
+      "year": 2020,
+      "accidents": 2893,
+      "fatalities": 49,
+      "injuries": 3555
+    },
+    {
+      "prefecture": "60",
+      "year": 2021,
+      "accidents": 2850,
+      "fatalities": 37,
+      "injuries": 3530
+    },
+    {
+      "prefecture": "60",
+      "year": 2022,
+      "accidents": 2862,
+      "fatalities": 38,
+      "injuries": 3599
+    },
+    {
+      "prefecture": "60",
+      "year": 2023,
+      "accidents": 2767,
+      "fatalities": 43,
+      "injuries": 3375
+    },
+    {
+      "prefecture": "60",
+      "year": 2024,
+      "accidents": 2803,
+      "fatalities": 28,
+      "injuries": 3431
+    },
+    {
+      "prefecture": "61",
+      "year": 2020,
+      "accidents": 4118,
+      "fatalities": 49,
+      "injuries": 4699
+    },
+    {
+      "prefecture": "61",
+      "year": 2021,
+      "accidents": 3859,
+      "fatalities": 51,
+      "injuries": 4408
+    },
+    {
+      "prefecture": "61",
+      "year": 2022,
+      "accidents": 3810,
+      "fatalities": 45,
+      "injuries": 4413
+    },
+    {
+      "prefecture": "61",
+      "year": 2023,
+      "accidents": 4067,
+      "fatalities": 59,
+      "injuries": 4668
+    },
+    {
+      "prefecture": "61",
+      "year": 2024,
+      "accidents": 3745,
+      "fatalities": 52,
+      "injuries": 4233
+    },
+    {
+      "prefecture": "62",
+      "year": 2020,
+      "accidents": 25543,
+      "fatalities": 124,
+      "injuries": 29888
+    },
+    {
+      "prefecture": "62",
+      "year": 2021,
+      "accidents": 25388,
+      "fatalities": 140,
+      "injuries": 29560
+    },
+    {
+      "prefecture": "62",
+      "year": 2022,
+      "accidents": 25509,
+      "fatalities": 141,
+      "injuries": 29760
+    },
+    {
+      "prefecture": "62",
+      "year": 2023,
+      "accidents": 25951,
+      "fatalities": 148,
+      "injuries": 30097
+    },
+    {
+      "prefecture": "62",
+      "year": 2024,
+      "accidents": 24780,
+      "fatalities": 127,
+      "injuries": 28690
+    },
+    {
+      "prefecture": "63",
+      "year": 2020,
+      "accidents": 17352,
+      "fatalities": 110,
+      "injuries": 20489
+    },
+    {
+      "prefecture": "63",
+      "year": 2021,
+      "accidents": 16929,
+      "fatalities": 114,
+      "injuries": 20043
+    },
+    {
+      "prefecture": "63",
+      "year": 2022,
+      "accidents": 16372,
+      "fatalities": 120,
+      "injuries": 19425
+    },
+    {
+      "prefecture": "63",
+      "year": 2023,
+      "accidents": 16281,
+      "fatalities": 103,
+      "injuries": 19113
+    },
+    {
+      "prefecture": "63",
+      "year": 2024,
+      "accidents": 15551,
+      "fatalities": 109,
+      "injuries": 18353
+    },
+    {
+      "prefecture": "64",
+      "year": 2020,
+      "accidents": 2790,
+      "fatalities": 25,
+      "injuries": 3441
+    },
+    {
+      "prefecture": "64",
+      "year": 2021,
+      "accidents": 2937,
+      "fatalities": 39,
+      "injuries": 3556
+    },
+    {
+      "prefecture": "64",
+      "year": 2022,
+      "accidents": 2603,
+      "fatalities": 29,
+      "injuries": 3092
+    },
+    {
+      "prefecture": "64",
+      "year": 2023,
+      "accidents": 2600,
+      "fatalities": 26,
+      "injuries": 3165
+    },
+    {
+      "prefecture": "64",
+      "year": 2024,
+      "accidents": 2450,
+      "fatalities": 23,
+      "injuries": 2947
+    },
+    {
+      "prefecture": "65",
+      "year": 2020,
+      "accidents": 1585,
+      "fatalities": 18,
+      "injuries": 1851
+    },
+    {
+      "prefecture": "65",
+      "year": 2021,
+      "accidents": 1419,
+      "fatalities": 31,
+      "injuries": 1651
+    },
+    {
+      "prefecture": "65",
+      "year": 2022,
+      "accidents": 1389,
+      "fatalities": 24,
+      "injuries": 1649
+    },
+    {
+      "prefecture": "65",
+      "year": 2023,
+      "accidents": 1355,
+      "fatalities": 31,
+      "injuries": 1588
+    },
+    {
+      "prefecture": "65",
+      "year": 2024,
+      "accidents": 1289,
+      "fatalities": 34,
+      "injuries": 1465
+    },
+    {
+      "prefecture": "70",
+      "year": 2020,
+      "accidents": 628,
+      "fatalities": 17,
+      "injuries": 749
+    },
+    {
+      "prefecture": "70",
+      "year": 2021,
+      "accidents": 618,
+      "fatalities": 19,
+      "injuries": 694
+    },
+    {
+      "prefecture": "70",
+      "year": 2022,
+      "accidents": 598,
+      "fatalities": 14,
+      "injuries": 691
+    },
+    {
+      "prefecture": "70",
+      "year": 2023,
+      "accidents": 656,
+      "fatalities": 14,
+      "injuries": 762
+    },
+    {
+      "prefecture": "70",
+      "year": 2024,
+      "accidents": 622,
+      "fatalities": 15,
+      "injuries": 702
+    },
+    {
+      "prefecture": "71",
+      "year": 2020,
+      "accidents": 737,
+      "fatalities": 18,
+      "injuries": 832
+    },
+    {
+      "prefecture": "71",
+      "year": 2021,
+      "accidents": 774,
+      "fatalities": 10,
+      "injuries": 868
+    },
+    {
+      "prefecture": "71",
+      "year": 2022,
+      "accidents": 766,
+      "fatalities": 16,
+      "injuries": 836
+    },
+    {
+      "prefecture": "71",
+      "year": 2023,
+      "accidents": 756,
+      "fatalities": 22,
+      "injuries": 847
+    },
+    {
+      "prefecture": "71",
+      "year": 2024,
+      "accidents": 692,
+      "fatalities": 9,
+      "injuries": 781
+    },
+    {
+      "prefecture": "72",
+      "year": 2020,
+      "accidents": 4288,
+      "fatalities": 62,
+      "injuries": 4840
+    },
+    {
+      "prefecture": "72",
+      "year": 2021,
+      "accidents": 4683,
+      "fatalities": 57,
+      "injuries": 5239
+    },
+    {
+      "prefecture": "72",
+      "year": 2022,
+      "accidents": 4348,
+      "fatalities": 74,
+      "injuries": 4855
+    },
+    {
+      "prefecture": "72",
+      "year": 2023,
+      "accidents": 5161,
+      "fatalities": 49,
+      "injuries": 5816
+    },
+    {
+      "prefecture": "72",
+      "year": 2024,
+      "accidents": 4869,
+      "fatalities": 60,
+      "injuries": 5489
+    },
+    {
+      "prefecture": "73",
+      "year": 2020,
+      "accidents": 4779,
+      "fatalities": 71,
+      "injuries": 5648
+    },
+    {
+      "prefecture": "73",
+      "year": 2021,
+      "accidents": 4655,
+      "fatalities": 70,
+      "injuries": 5495
+    },
+    {
+      "prefecture": "73",
+      "year": 2022,
+      "accidents": 4315,
+      "fatalities": 74,
+      "injuries": 5088
+    },
+    {
+      "prefecture": "73",
+      "year": 2023,
+      "accidents": 4766,
+      "fatalities": 78,
+      "injuries": 5602
+    },
+    {
+      "prefecture": "73",
+      "year": 2024,
+      "accidents": 4403,
+      "fatalities": 68,
+      "injuries": 5236
+    },
+    {
+      "prefecture": "74",
+      "year": 2020,
+      "accidents": 2641,
+      "fatalities": 42,
+      "injuries": 3161
+    },
+    {
+      "prefecture": "74",
+      "year": 2021,
+      "accidents": 2458,
+      "fatalities": 34,
+      "injuries": 2948
+    },
+    {
+      "prefecture": "74",
+      "year": 2022,
+      "accidents": 2261,
+      "fatalities": 31,
+      "injuries": 2633
+    },
+    {
+      "prefecture": "74",
+      "year": 2023,
+      "accidents": 2269,
+      "fatalities": 35,
+      "injuries": 2699
+    },
+    {
+      "prefecture": "74",
+      "year": 2024,
+      "accidents": 2152,
+      "fatalities": 51,
+      "injuries": 2535
+    },
+    {
+      "prefecture": "80",
+      "year": 2020,
+      "accidents": 2165,
+      "fatalities": 20,
+      "injuries": 2567
+    },
+    {
+      "prefecture": "80",
+      "year": 2021,
+      "accidents": 2121,
+      "fatalities": 32,
+      "injuries": 2478
+    },
+    {
+      "prefecture": "80",
+      "year": 2022,
+      "accidents": 1960,
+      "fatalities": 23,
+      "injuries": 2333
+    },
+    {
+      "prefecture": "80",
+      "year": 2023,
+      "accidents": 1987,
+      "fatalities": 28,
+      "injuries": 2352
+    },
+    {
+      "prefecture": "80",
+      "year": 2024,
+      "accidents": 1817,
+      "fatalities": 33,
+      "injuries": 2145
+    },
+    {
+      "prefecture": "81",
+      "year": 2020,
+      "accidents": 3722,
+      "fatalities": 59,
+      "injuries": 4514
+    },
+    {
+      "prefecture": "81",
+      "year": 2021,
+      "accidents": 3287,
+      "fatalities": 37,
+      "injuries": 3957
+    },
+    {
+      "prefecture": "81",
+      "year": 2022,
+      "accidents": 3144,
+      "fatalities": 35,
+      "injuries": 3730
+    },
+    {
+      "prefecture": "81",
+      "year": 2023,
+      "accidents": 3041,
+      "fatalities": 33,
+      "injuries": 3712
+    },
+    {
+      "prefecture": "81",
+      "year": 2024,
+      "accidents": 2943,
+      "fatalities": 31,
+      "injuries": 3579
+    },
+    {
+      "prefecture": "82",
+      "year": 2020,
+      "accidents": 2404,
+      "fatalities": 48,
+      "injuries": 2671
+    },
+    {
+      "prefecture": "82",
+      "year": 2021,
+      "accidents": 2260,
+      "fatalities": 50,
+      "injuries": 2465
+    },
+    {
+      "prefecture": "82",
+      "year": 2022,
+      "accidents": 2132,
+      "fatalities": 44,
+      "injuries": 2355
+    },
+    {
+      "prefecture": "82",
+      "year": 2023,
+      "accidents": 2115,
+      "fatalities": 43,
+      "injuries": 2315
+    },
+    {
+      "prefecture": "82",
+      "year": 2024,
+      "accidents": 2074,
+      "fatalities": 52,
+      "injuries": 2271
+    },
+    {
+      "prefecture": "83",
+      "year": 2020,
+      "accidents": 1263,
+      "fatalities": 34,
+      "injuries": 1382
+    },
+    {
+      "prefecture": "83",
+      "year": 2021,
+      "accidents": 1046,
+      "fatalities": 25,
+      "injuries": 1142
+    },
+    {
+      "prefecture": "83",
+      "year": 2022,
+      "accidents": 943,
+      "fatalities": 26,
+      "injuries": 1010
+    },
+    {
+      "prefecture": "83",
+      "year": 2023,
+      "accidents": 975,
+      "fatalities": 23,
+      "injuries": 1049
+    },
+    {
+      "prefecture": "83",
+      "year": 2024,
+      "accidents": 898,
+      "fatalities": 21,
+      "injuries": 984
+    },
+    {
+      "prefecture": "90",
+      "year": 2020,
+      "accidents": 21495,
+      "fatalities": 91,
+      "injuries": 27575
+    },
+    {
+      "prefecture": "90",
+      "year": 2021,
+      "accidents": 20066,
+      "fatalities": 101,
+      "injuries": 25587
+    },
+    {
+      "prefecture": "90",
+      "year": 2022,
+      "accidents": 19868,
+      "fatalities": 75,
+      "injuries": 25285
+    },
+    {
+      "prefecture": "90",
+      "year": 2023,
+      "accidents": 20173,
+      "fatalities": 103,
+      "injuries": 25699
+    },
+    {
+      "prefecture": "90",
+      "year": 2024,
+      "accidents": 18473,
+      "fatalities": 91,
+      "injuries": 23606
+    },
+    {
+      "prefecture": "91",
+      "year": 2020,
+      "accidents": 3758,
+      "fatalities": 33,
+      "injuries": 4839
+    },
+    {
+      "prefecture": "91",
+      "year": 2021,
+      "accidents": 3506,
+      "fatalities": 23,
+      "injuries": 4539
+    },
+    {
+      "prefecture": "91",
+      "year": 2022,
+      "accidents": 3238,
+      "fatalities": 23,
+      "injuries": 4219
+    },
+    {
+      "prefecture": "91",
+      "year": 2023,
+      "accidents": 3144,
+      "fatalities": 13,
+      "injuries": 4037
+    },
+    {
+      "prefecture": "91",
+      "year": 2024,
+      "accidents": 2623,
+      "fatalities": 24,
+      "injuries": 3423
+    },
+    {
+      "prefecture": "92",
+      "year": 2020,
+      "accidents": 2987,
+      "fatalities": 34,
+      "injuries": 3731
+    },
+    {
+      "prefecture": "92",
+      "year": 2021,
+      "accidents": 2804,
+      "fatalities": 27,
+      "injuries": 3505
+    },
+    {
+      "prefecture": "92",
+      "year": 2022,
+      "accidents": 2611,
+      "fatalities": 28,
+      "injuries": 3316
+    },
+    {
+      "prefecture": "92",
+      "year": 2023,
+      "accidents": 2639,
+      "fatalities": 36,
+      "injuries": 3317
+    },
+    {
+      "prefecture": "92",
+      "year": 2024,
+      "accidents": 2416,
+      "fatalities": 26,
+      "injuries": 2983
+    },
+    {
+      "prefecture": "93",
+      "year": 2020,
+      "accidents": 3152,
+      "fatalities": 46,
+      "injuries": 3987
+    },
+    {
+      "prefecture": "93",
+      "year": 2021,
+      "accidents": 3188,
+      "fatalities": 39,
+      "injuries": 3936
+    },
+    {
+      "prefecture": "93",
+      "year": 2022,
+      "accidents": 3175,
+      "fatalities": 53,
+      "injuries": 3924
+    },
+    {
+      "prefecture": "93",
+      "year": 2023,
+      "accidents": 3312,
+      "fatalities": 37,
+      "injuries": 4140
+    },
+    {
+      "prefecture": "93",
+      "year": 2024,
+      "accidents": 2945,
+      "fatalities": 55,
+      "injuries": 3628
+    },
+    {
+      "prefecture": "94",
+      "year": 2020,
+      "accidents": 2437,
+      "fatalities": 43,
+      "injuries": 3020
+    },
+    {
+      "prefecture": "94",
+      "year": 2021,
+      "accidents": 2360,
+      "fatalities": 36,
+      "injuries": 2832
+    },
+    {
+      "prefecture": "94",
+      "year": 2022,
+      "accidents": 2271,
+      "fatalities": 32,
+      "injuries": 2804
+    },
+    {
+      "prefecture": "94",
+      "year": 2023,
+      "accidents": 2233,
+      "fatalities": 32,
+      "injuries": 2767
+    },
+    {
+      "prefecture": "94",
+      "year": 2024,
+      "accidents": 2125,
+      "fatalities": 28,
+      "injuries": 2619
+    },
+    {
+      "prefecture": "95",
+      "year": 2020,
+      "accidents": 5126,
+      "fatalities": 36,
+      "injuries": 5741
+    },
+    {
+      "prefecture": "95",
+      "year": 2021,
+      "accidents": 4461,
+      "fatalities": 30,
+      "injuries": 5059
+    },
+    {
+      "prefecture": "95",
+      "year": 2022,
+      "accidents": 3798,
+      "fatalities": 32,
+      "injuries": 4245
+    },
+    {
+      "prefecture": "95",
+      "year": 2023,
+      "accidents": 3488,
+      "fatalities": 30,
+      "injuries": 3908
+    },
+    {
+      "prefecture": "95",
+      "year": 2024,
+      "accidents": 2703,
+      "fatalities": 39,
+      "injuries": 3007
+    },
+    {
+      "prefecture": "96",
+      "year": 2020,
+      "accidents": 4070,
+      "fatalities": 53,
+      "injuries": 4678
+    },
+    {
+      "prefecture": "96",
+      "year": 2021,
+      "accidents": 3532,
+      "fatalities": 47,
+      "injuries": 3970
+    },
+    {
+      "prefecture": "96",
+      "year": 2022,
+      "accidents": 3088,
+      "fatalities": 42,
+      "injuries": 3421
+    },
+    {
+      "prefecture": "96",
+      "year": 2023,
+      "accidents": 2965,
+      "fatalities": 40,
+      "injuries": 3348
+    },
+    {
+      "prefecture": "96",
+      "year": 2024,
+      "accidents": 2871,
+      "fatalities": 53,
+      "injuries": 3180
+    },
+    {
+      "prefecture": "97",
+      "year": 2020,
+      "accidents": 2808,
+      "fatalities": 22,
+      "injuries": 3290
+    },
+    {
+      "prefecture": "97",
+      "year": 2021,
+      "accidents": 2783,
+      "fatalities": 26,
+      "injuries": 3319
+    },
+    {
+      "prefecture": "97",
+      "year": 2022,
+      "accidents": 2778,
+      "fatalities": 34,
+      "injuries": 3311
+    },
+    {
+      "prefecture": "97",
+      "year": 2023,
+      "accidents": 2964,
+      "fatalities": 38,
+      "injuries": 3573
+    },
+    {
+      "prefecture": "97",
+      "year": 2024,
+      "accidents": 2875,
+      "fatalities": 44,
+      "injuries": 3387
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2020,
+      "accidents": 3328,
+      "fatalities": 30,
+      "injuries": 3975
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2021,
+      "accidents": 3184,
+      "fatalities": 24,
+      "injuries": 3760
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2022,
+      "accidents": 2970,
+      "fatalities": 26,
+      "injuries": 3469
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2023,
+      "accidents": 2780,
+      "fatalities": 34,
+      "injuries": 3295
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2024,
+      "accidents": 2457,
+      "fatalities": 24,
+      "injuries": 2927
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2020,
+      "accidents": 3939,
+      "fatalities": 60,
+      "injuries": 4665
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2021,
+      "accidents": 3939,
+      "fatalities": 56,
+      "injuries": 4666
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2022,
+      "accidents": 3877,
+      "fatalities": 50,
+      "injuries": 4641
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2023,
+      "accidents": 3808,
+      "fatalities": 59,
+      "injuries": 4550
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2024,
+      "accidents": 3946,
+      "fatalities": 60,
+      "injuries": 4683
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2020,
+      "accidents": 717,
+      "fatalities": 16,
+      "injuries": 854
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2021,
+      "accidents": 704,
+      "fatalities": 17,
+      "injuries": 852
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2022,
+      "accidents": 679,
+      "fatalities": 23,
+      "injuries": 809
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2023,
+      "accidents": 725,
+      "fatalities": 17,
+      "injuries": 861
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2024,
+      "accidents": 763,
+      "fatalities": 16,
+      "injuries": 900
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2020,
+      "accidents": 25642,
+      "fatalities": 155,
+      "injuries": 28888
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2021,
+      "accidents": 27598,
+      "fatalities": 133,
+      "injuries": 30836
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2022,
+      "accidents": 30170,
+      "fatalities": 133,
+      "injuries": 33430
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2023,
+      "accidents": 31385,
+      "fatalities": 136,
+      "injuries": 34870
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2024,
+      "accidents": 30103,
+      "fatalities": 146,
+      "injuries": 33251
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2020,
+      "accidents": 511,
+      "fatalities": 12,
+      "injuries": 605
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2021,
+      "accidents": 628,
+      "fatalities": 18,
+      "injuries": 740
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2022,
+      "accidents": 577,
+      "fatalities": 7,
+      "injuries": 684
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2023,
+      "accidents": 561,
+      "fatalities": 12,
+      "injuries": 670
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2024,
+      "accidents": 550,
+      "fatalities": 5,
+      "injuries": 664
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2020,
+      "accidents": 12873,
+      "fatalities": 128,
+      "injuries": 15415
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2021,
+      "accidents": 13534,
+      "fatalities": 121,
+      "injuries": 16107
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2022,
+      "accidents": 13223,
+      "fatalities": 124,
+      "injuries": 15839
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2023,
+      "accidents": 13564,
+      "fatalities": 127,
+      "injuries": 16259
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2024,
+      "accidents": 12587,
+      "fatalities": 131,
+      "injuries": 14963
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2020,
+      "accidents": 20630,
+      "fatalities": 140,
+      "injuries": 23904
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2021,
+      "accidents": 21660,
+      "fatalities": 142,
+      "injuries": 25062
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2022,
+      "accidents": 21098,
+      "fatalities": 113,
+      "injuries": 24382
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2023,
+      "accidents": 21870,
+      "fatalities": 115,
+      "injuries": 25644
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2024,
+      "accidents": 20750,
+      "fatalities": 109,
+      "injuries": 24123
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2020,
+      "accidents": 1658,
+      "fatalities": 46,
+      "injuries": 1953
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2021,
+      "accidents": 1566,
+      "fatalities": 35,
+      "injuries": 1830
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2022,
+      "accidents": 1511,
+      "fatalities": 37,
+      "injuries": 1812
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2023,
+      "accidents": 1503,
+      "fatalities": 35,
+      "injuries": 1796
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2024,
+      "accidents": 1391,
+      "fatalities": 28,
+      "injuries": 1700
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2020,
+      "accidents": 1377,
+      "fatalities": 37,
+      "injuries": 1655
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2021,
+      "accidents": 1301,
+      "fatalities": 28,
+      "injuries": 1514
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2022,
+      "accidents": 1157,
+      "fatalities": 33,
+      "injuries": 1351
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2023,
+      "accidents": 1155,
+      "fatalities": 32,
+      "injuries": 1339
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2024,
+      "accidents": 981,
+      "fatalities": 31,
+      "injuries": 1141
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2020,
+      "accidents": 680,
+      "fatalities": 21,
+      "injuries": 766
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2021,
+      "accidents": 686,
+      "fatalities": 20,
+      "injuries": 769
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2022,
+      "accidents": 652,
+      "fatalities": 18,
+      "injuries": 731
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2023,
+      "accidents": 873,
+      "fatalities": 22,
+      "injuries": 994
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2024,
+      "accidents": 771,
+      "fatalities": 24,
+      "injuries": 849
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2020,
+      "accidents": 2146,
+      "fatalities": 21,
+      "injuries": 2650
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2021,
+      "accidents": 2093,
+      "fatalities": 32,
+      "injuries": 2555
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2022,
+      "accidents": 2019,
+      "fatalities": 25,
+      "injuries": 2516
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2023,
+      "accidents": 2112,
+      "fatalities": 29,
+      "injuries": 2595
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2024,
+      "accidents": 2013,
+      "fatalities": 28,
+      "injuries": 2439
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2020,
+      "accidents": 3266,
+      "fatalities": 57,
+      "injuries": 3857
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2021,
+      "accidents": 2997,
+      "fatalities": 49,
+      "injuries": 3446
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2022,
+      "accidents": 2702,
+      "fatalities": 47,
+      "injuries": 3132
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2023,
+      "accidents": 2913,
+      "fatalities": 55,
+      "injuries": 3403
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2024,
+      "accidents": 3086,
+      "fatalities": 51,
+      "injuries": 3738
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2020,
+      "accidents": 17115,
+      "fatalities": 121,
+      "injuries": 20443
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2021,
+      "accidents": 16707,
+      "fatalities": 118,
+      "injuries": 19877
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2022,
+      "accidents": 16576,
+      "fatalities": 104,
+      "injuries": 19596
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2023,
+      "accidents": 17002,
+      "fatalities": 122,
+      "injuries": 20221
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2024,
+      "accidents": 15831,
+      "fatalities": 113,
+      "injuries": 18673
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2020,
+      "accidents": 203,
+      "fatalities": 11,
+      "injuries": 236
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2021,
+      "accidents": 235,
+      "fatalities": 7,
+      "injuries": 270
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2022,
+      "accidents": 206,
+      "fatalities": 6,
+      "injuries": 248
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2023,
+      "accidents": 244,
+      "fatalities": 10,
+      "injuries": 297
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2024,
+      "accidents": 219,
+      "fatalities": 8,
+      "injuries": 266
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2020,
+      "accidents": 6049,
+      "fatalities": 84,
+      "injuries": 7455
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2021,
+      "accidents": 5929,
+      "fatalities": 80,
+      "injuries": 7243
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2022,
+      "accidents": 6271,
+      "fatalities": 91,
+      "injuries": 7699
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2023,
+      "accidents": 6489,
+      "fatalities": 93,
+      "injuries": 7885
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2024,
+      "accidents": 6005,
+      "fatalities": 94,
+      "injuries": 7456
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2020,
+      "accidents": 5787,
+      "fatalities": 84,
+      "injuries": 6582
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2021,
+      "accidents": 6051,
+      "fatalities": 58,
+      "injuries": 6967
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2022,
+      "accidents": 6343,
+      "fatalities": 61,
+      "injuries": 7313
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2023,
+      "accidents": 6679,
+      "fatalities": 70,
+      "injuries": 7779
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2024,
+      "accidents": 6440,
+      "fatalities": 51,
+      "injuries": 7618
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2020,
+      "accidents": 9266,
+      "fatalities": 45,
+      "injuries": 11624
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2021,
+      "accidents": 10007,
+      "fatalities": 50,
+      "injuries": 12308
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2022,
+      "accidents": 9803,
+      "fatalities": 47,
+      "injuries": 12072
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2023,
+      "accidents": 10038,
+      "fatalities": 47,
+      "injuries": 12377
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2024,
+      "accidents": 9059,
+      "fatalities": 49,
+      "injuries": 11195
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2020,
+      "accidents": 2436,
+      "fatalities": 28,
+      "injuries": 2939
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2021,
+      "accidents": 2458,
+      "fatalities": 29,
+      "injuries": 2919
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2022,
+      "accidents": 2375,
+      "fatalities": 31,
+      "injuries": 2853
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2023,
+      "accidents": 2619,
+      "fatalities": 45,
+      "injuries": 3099
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2024,
+      "accidents": 2278,
+      "fatalities": 43,
+      "injuries": 2734
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2020,
+      "accidents": 4487,
+      "fatalities": 44,
+      "injuries": 5483
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2021,
+      "accidents": 4286,
+      "fatalities": 42,
+      "injuries": 5182
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2022,
+      "accidents": 4117,
+      "fatalities": 37,
+      "injuries": 4912
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2023,
+      "accidents": 4033,
+      "fatalities": 47,
+      "injuries": 4932
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2024,
+      "accidents": 3785,
+      "fatalities": 47,
+      "injuries": 4565
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2020,
+      "accidents": 3076,
+      "fatalities": 64,
+      "injuries": 3547
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2021,
+      "accidents": 2848,
+      "fatalities": 47,
+      "injuries": 3203
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2022,
+      "accidents": 2728,
+      "fatalities": 61,
+      "injuries": 3123
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2023,
+      "accidents": 2721,
+      "fatalities": 55,
+      "injuries": 3096
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2024,
+      "accidents": 2671,
+      "fatalities": 55,
+      "injuries": 3045
+    }
+  ],
+  "by_prefecture_month": [
+    {
+      "prefecture": "48",
+      "year": 2020,
+      "month": 0,
+      "accidents": 4802,
+      "fatalities": 46,
+      "injuries": 5756
+    },
+    {
+      "prefecture": "48",
+      "year": 2021,
+      "month": 0,
+      "accidents": 4772,
+      "fatalities": 45,
+      "injuries": 5696
+    },
+    {
+      "prefecture": "48",
+      "year": 2022,
+      "month": 0,
+      "accidents": 4752,
+      "fatalities": 46,
+      "injuries": 5611
+    },
+    {
+      "prefecture": "48",
+      "year": 2023,
+      "month": 0,
+      "accidents": 5006,
+      "fatalities": 42,
+      "injuries": 5951
+    },
+    {
+      "prefecture": "48",
+      "year": 2024,
+      "month": 0,
+      "accidents": 4970,
+      "fatalities": 57,
+      "injuries": 6005
+    },
+    {
+      "prefecture": "49",
+      "year": 2020,
+      "month": 0,
+      "accidents": 20667,
+      "fatalities": 108,
+      "injuries": 26360
+    },
+    {
+      "prefecture": "49",
+      "year": 2021,
+      "month": 0,
+      "accidents": 19382,
+      "fatalities": 89,
+      "injuries": 24408
+    },
+    {
+      "prefecture": "49",
+      "year": 2022,
+      "month": 0,
+      "accidents": 18678,
+      "fatalities": 83,
+      "injuries": 23662
+    },
+    {
+      "prefecture": "49",
+      "year": 2023,
+      "month": 0,
+      "accidents": 18662,
+      "fatalities": 70,
+      "injuries": 23573
+    },
+    {
+      "prefecture": "49",
+      "year": 2024,
+      "month": 0,
+      "accidents": 17441,
+      "fatalities": 88,
+      "injuries": 21880
+    },
+    {
+      "prefecture": "50",
+      "year": 2020,
+      "month": 0,
+      "accidents": 1992,
+      "fatalities": 26,
+      "injuries": 2309
+    },
+    {
+      "prefecture": "50",
+      "year": 2021,
+      "month": 0,
+      "accidents": 1971,
+      "fatalities": 29,
+      "injuries": 2269
+    },
+    {
+      "prefecture": "50",
+      "year": 2022,
+      "month": 0,
+      "accidents": 1953,
+      "fatalities": 34,
+      "injuries": 2202
+    },
+    {
+      "prefecture": "50",
+      "year": 2023,
+      "month": 0,
+      "accidents": 1878,
+      "fatalities": 31,
+      "injuries": 2108
+    },
+    {
+      "prefecture": "50",
+      "year": 2024,
+      "month": 0,
+      "accidents": 1858,
+      "fatalities": 22,
+      "injuries": 2130
+    },
+    {
+      "prefecture": "51",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2025,
+      "fatalities": 40,
+      "injuries": 2325
+    },
+    {
+      "prefecture": "51",
+      "year": 2021,
+      "month": 0,
+      "accidents": 1946,
+      "fatalities": 26,
+      "injuries": 2225
+    },
+    {
+      "prefecture": "51",
+      "year": 2022,
+      "month": 0,
+      "accidents": 1987,
+      "fatalities": 22,
+      "injuries": 2248
+    },
+    {
+      "prefecture": "51",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2059,
+      "fatalities": 28,
+      "injuries": 2356
+    },
+    {
+      "prefecture": "51",
+      "year": 2024,
+      "month": 0,
+      "accidents": 1792,
+      "fatalities": 30,
+      "injuries": 2037
+    },
+    {
+      "prefecture": "52",
+      "year": 2020,
+      "month": 0,
+      "accidents": 868,
+      "fatalities": 41,
+      "injuries": 940
+    },
+    {
+      "prefecture": "52",
+      "year": 2021,
+      "month": 0,
+      "accidents": 912,
+      "fatalities": 26,
+      "injuries": 1029
+    },
+    {
+      "prefecture": "52",
+      "year": 2022,
+      "month": 0,
+      "accidents": 939,
+      "fatalities": 27,
+      "injuries": 1063
+    },
+    {
+      "prefecture": "52",
+      "year": 2023,
+      "month": 0,
+      "accidents": 986,
+      "fatalities": 20,
+      "injuries": 1133
+    },
+    {
+      "prefecture": "52",
+      "year": 2024,
+      "month": 0,
+      "accidents": 964,
+      "fatalities": 23,
+      "injuries": 1100
+    },
+    {
+      "prefecture": "53",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3052,
+      "fatalities": 43,
+      "injuries": 3851
+    },
+    {
+      "prefecture": "53",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2911,
+      "fatalities": 61,
+      "injuries": 3648
+    },
+    {
+      "prefecture": "53",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2895,
+      "fatalities": 75,
+      "injuries": 3500
+    },
+    {
+      "prefecture": "53",
+      "year": 2023,
+      "month": 0,
+      "accidents": 3077,
+      "fatalities": 50,
+      "injuries": 3806
+    },
+    {
+      "prefecture": "53",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2835,
+      "fatalities": 70,
+      "injuries": 3483
+    },
+    {
+      "prefecture": "54",
+      "year": 2020,
+      "month": 0,
+      "accidents": 24879,
+      "fatalities": 154,
+      "injuries": 29559
+    },
+    {
+      "prefecture": "54",
+      "year": 2021,
+      "month": 0,
+      "accidents": 24185,
+      "fatalities": 117,
+      "injuries": 28631
+    },
+    {
+      "prefecture": "54",
+      "year": 2022,
+      "month": 0,
+      "accidents": 23825,
+      "fatalities": 137,
+      "injuries": 28072
+    },
+    {
+      "prefecture": "54",
+      "year": 2023,
+      "month": 0,
+      "accidents": 24547,
+      "fatalities": 145,
+      "injuries": 28990
+    },
+    {
+      "prefecture": "54",
+      "year": 2024,
+      "month": 0,
+      "accidents": 24506,
+      "fatalities": 141,
+      "injuries": 28822
+    },
+    {
+      "prefecture": "55",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2966,
+      "fatalities": 73,
+      "injuries": 3732
+    },
+    {
+      "prefecture": "55",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2722,
+      "fatalities": 62,
+      "injuries": 3338
+    },
+    {
+      "prefecture": "55",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2917,
+      "fatalities": 60,
+      "injuries": 3638
+    },
+    {
+      "prefecture": "55",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2976,
+      "fatalities": 66,
+      "injuries": 3767
+    },
+    {
+      "prefecture": "55",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2724,
+      "fatalities": 46,
+      "injuries": 3334
+    },
+    {
+      "prefecture": "60",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2893,
+      "fatalities": 49,
+      "injuries": 3555
+    },
+    {
+      "prefecture": "60",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2850,
+      "fatalities": 37,
+      "injuries": 3530
+    },
+    {
+      "prefecture": "60",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2862,
+      "fatalities": 38,
+      "injuries": 3599
+    },
+    {
+      "prefecture": "60",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2767,
+      "fatalities": 43,
+      "injuries": 3375
+    },
+    {
+      "prefecture": "60",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2803,
+      "fatalities": 28,
+      "injuries": 3431
+    },
+    {
+      "prefecture": "61",
+      "year": 2020,
+      "month": 0,
+      "accidents": 4118,
+      "fatalities": 49,
+      "injuries": 4699
+    },
+    {
+      "prefecture": "61",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3859,
+      "fatalities": 51,
+      "injuries": 4408
+    },
+    {
+      "prefecture": "61",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3810,
+      "fatalities": 45,
+      "injuries": 4413
+    },
+    {
+      "prefecture": "61",
+      "year": 2023,
+      "month": 0,
+      "accidents": 4067,
+      "fatalities": 59,
+      "injuries": 4668
+    },
+    {
+      "prefecture": "61",
+      "year": 2024,
+      "month": 0,
+      "accidents": 3745,
+      "fatalities": 52,
+      "injuries": 4233
+    },
+    {
+      "prefecture": "62",
+      "year": 2020,
+      "month": 0,
+      "accidents": 25543,
+      "fatalities": 124,
+      "injuries": 29888
+    },
+    {
+      "prefecture": "62",
+      "year": 2021,
+      "month": 0,
+      "accidents": 25388,
+      "fatalities": 140,
+      "injuries": 29560
+    },
+    {
+      "prefecture": "62",
+      "year": 2022,
+      "month": 0,
+      "accidents": 25509,
+      "fatalities": 141,
+      "injuries": 29760
+    },
+    {
+      "prefecture": "62",
+      "year": 2023,
+      "month": 0,
+      "accidents": 25951,
+      "fatalities": 148,
+      "injuries": 30097
+    },
+    {
+      "prefecture": "62",
+      "year": 2024,
+      "month": 0,
+      "accidents": 24780,
+      "fatalities": 127,
+      "injuries": 28690
+    },
+    {
+      "prefecture": "63",
+      "year": 2020,
+      "month": 0,
+      "accidents": 17352,
+      "fatalities": 110,
+      "injuries": 20489
+    },
+    {
+      "prefecture": "63",
+      "year": 2021,
+      "month": 0,
+      "accidents": 16929,
+      "fatalities": 114,
+      "injuries": 20043
+    },
+    {
+      "prefecture": "63",
+      "year": 2022,
+      "month": 0,
+      "accidents": 16372,
+      "fatalities": 120,
+      "injuries": 19425
+    },
+    {
+      "prefecture": "63",
+      "year": 2023,
+      "month": 0,
+      "accidents": 16281,
+      "fatalities": 103,
+      "injuries": 19113
+    },
+    {
+      "prefecture": "63",
+      "year": 2024,
+      "month": 0,
+      "accidents": 15551,
+      "fatalities": 109,
+      "injuries": 18353
+    },
+    {
+      "prefecture": "64",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2790,
+      "fatalities": 25,
+      "injuries": 3441
+    },
+    {
+      "prefecture": "64",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2937,
+      "fatalities": 39,
+      "injuries": 3556
+    },
+    {
+      "prefecture": "64",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2603,
+      "fatalities": 29,
+      "injuries": 3092
+    },
+    {
+      "prefecture": "64",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2600,
+      "fatalities": 26,
+      "injuries": 3165
+    },
+    {
+      "prefecture": "64",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2450,
+      "fatalities": 23,
+      "injuries": 2947
+    },
+    {
+      "prefecture": "65",
+      "year": 2020,
+      "month": 0,
+      "accidents": 1585,
+      "fatalities": 18,
+      "injuries": 1851
+    },
+    {
+      "prefecture": "65",
+      "year": 2021,
+      "month": 0,
+      "accidents": 1419,
+      "fatalities": 31,
+      "injuries": 1651
+    },
+    {
+      "prefecture": "65",
+      "year": 2022,
+      "month": 0,
+      "accidents": 1389,
+      "fatalities": 24,
+      "injuries": 1649
+    },
+    {
+      "prefecture": "65",
+      "year": 2023,
+      "month": 0,
+      "accidents": 1355,
+      "fatalities": 31,
+      "injuries": 1588
+    },
+    {
+      "prefecture": "65",
+      "year": 2024,
+      "month": 0,
+      "accidents": 1289,
+      "fatalities": 34,
+      "injuries": 1465
+    },
+    {
+      "prefecture": "70",
+      "year": 2020,
+      "month": 0,
+      "accidents": 628,
+      "fatalities": 17,
+      "injuries": 749
+    },
+    {
+      "prefecture": "70",
+      "year": 2021,
+      "month": 0,
+      "accidents": 618,
+      "fatalities": 19,
+      "injuries": 694
+    },
+    {
+      "prefecture": "70",
+      "year": 2022,
+      "month": 0,
+      "accidents": 598,
+      "fatalities": 14,
+      "injuries": 691
+    },
+    {
+      "prefecture": "70",
+      "year": 2023,
+      "month": 0,
+      "accidents": 656,
+      "fatalities": 14,
+      "injuries": 762
+    },
+    {
+      "prefecture": "70",
+      "year": 2024,
+      "month": 0,
+      "accidents": 622,
+      "fatalities": 15,
+      "injuries": 702
+    },
+    {
+      "prefecture": "71",
+      "year": 2020,
+      "month": 0,
+      "accidents": 737,
+      "fatalities": 18,
+      "injuries": 832
+    },
+    {
+      "prefecture": "71",
+      "year": 2021,
+      "month": 0,
+      "accidents": 774,
+      "fatalities": 10,
+      "injuries": 868
+    },
+    {
+      "prefecture": "71",
+      "year": 2022,
+      "month": 0,
+      "accidents": 766,
+      "fatalities": 16,
+      "injuries": 836
+    },
+    {
+      "prefecture": "71",
+      "year": 2023,
+      "month": 0,
+      "accidents": 756,
+      "fatalities": 22,
+      "injuries": 847
+    },
+    {
+      "prefecture": "71",
+      "year": 2024,
+      "month": 0,
+      "accidents": 692,
+      "fatalities": 9,
+      "injuries": 781
+    },
+    {
+      "prefecture": "72",
+      "year": 2020,
+      "month": 0,
+      "accidents": 4288,
+      "fatalities": 62,
+      "injuries": 4840
+    },
+    {
+      "prefecture": "72",
+      "year": 2021,
+      "month": 0,
+      "accidents": 4683,
+      "fatalities": 57,
+      "injuries": 5239
+    },
+    {
+      "prefecture": "72",
+      "year": 2022,
+      "month": 0,
+      "accidents": 4348,
+      "fatalities": 74,
+      "injuries": 4855
+    },
+    {
+      "prefecture": "72",
+      "year": 2023,
+      "month": 0,
+      "accidents": 5161,
+      "fatalities": 49,
+      "injuries": 5816
+    },
+    {
+      "prefecture": "72",
+      "year": 2024,
+      "month": 0,
+      "accidents": 4869,
+      "fatalities": 60,
+      "injuries": 5489
+    },
+    {
+      "prefecture": "73",
+      "year": 2020,
+      "month": 0,
+      "accidents": 4779,
+      "fatalities": 71,
+      "injuries": 5648
+    },
+    {
+      "prefecture": "73",
+      "year": 2021,
+      "month": 0,
+      "accidents": 4655,
+      "fatalities": 70,
+      "injuries": 5495
+    },
+    {
+      "prefecture": "73",
+      "year": 2022,
+      "month": 0,
+      "accidents": 4315,
+      "fatalities": 74,
+      "injuries": 5088
+    },
+    {
+      "prefecture": "73",
+      "year": 2023,
+      "month": 0,
+      "accidents": 4766,
+      "fatalities": 78,
+      "injuries": 5602
+    },
+    {
+      "prefecture": "73",
+      "year": 2024,
+      "month": 0,
+      "accidents": 4403,
+      "fatalities": 68,
+      "injuries": 5236
+    },
+    {
+      "prefecture": "74",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2641,
+      "fatalities": 42,
+      "injuries": 3161
+    },
+    {
+      "prefecture": "74",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2458,
+      "fatalities": 34,
+      "injuries": 2948
+    },
+    {
+      "prefecture": "74",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2261,
+      "fatalities": 31,
+      "injuries": 2633
+    },
+    {
+      "prefecture": "74",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2269,
+      "fatalities": 35,
+      "injuries": 2699
+    },
+    {
+      "prefecture": "74",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2152,
+      "fatalities": 51,
+      "injuries": 2535
+    },
+    {
+      "prefecture": "80",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2165,
+      "fatalities": 20,
+      "injuries": 2567
+    },
+    {
+      "prefecture": "80",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2121,
+      "fatalities": 32,
+      "injuries": 2478
+    },
+    {
+      "prefecture": "80",
+      "year": 2022,
+      "month": 0,
+      "accidents": 1960,
+      "fatalities": 23,
+      "injuries": 2333
+    },
+    {
+      "prefecture": "80",
+      "year": 2023,
+      "month": 0,
+      "accidents": 1987,
+      "fatalities": 28,
+      "injuries": 2352
+    },
+    {
+      "prefecture": "80",
+      "year": 2024,
+      "month": 0,
+      "accidents": 1817,
+      "fatalities": 33,
+      "injuries": 2145
+    },
+    {
+      "prefecture": "81",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3722,
+      "fatalities": 59,
+      "injuries": 4514
+    },
+    {
+      "prefecture": "81",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3287,
+      "fatalities": 37,
+      "injuries": 3957
+    },
+    {
+      "prefecture": "81",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3144,
+      "fatalities": 35,
+      "injuries": 3730
+    },
+    {
+      "prefecture": "81",
+      "year": 2023,
+      "month": 0,
+      "accidents": 3041,
+      "fatalities": 33,
+      "injuries": 3712
+    },
+    {
+      "prefecture": "81",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2943,
+      "fatalities": 31,
+      "injuries": 3579
+    },
+    {
+      "prefecture": "82",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2404,
+      "fatalities": 48,
+      "injuries": 2671
+    },
+    {
+      "prefecture": "82",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2260,
+      "fatalities": 50,
+      "injuries": 2465
+    },
+    {
+      "prefecture": "82",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2132,
+      "fatalities": 44,
+      "injuries": 2355
+    },
+    {
+      "prefecture": "82",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2115,
+      "fatalities": 43,
+      "injuries": 2315
+    },
+    {
+      "prefecture": "82",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2074,
+      "fatalities": 52,
+      "injuries": 2271
+    },
+    {
+      "prefecture": "83",
+      "year": 2020,
+      "month": 0,
+      "accidents": 1263,
+      "fatalities": 34,
+      "injuries": 1382
+    },
+    {
+      "prefecture": "83",
+      "year": 2021,
+      "month": 0,
+      "accidents": 1046,
+      "fatalities": 25,
+      "injuries": 1142
+    },
+    {
+      "prefecture": "83",
+      "year": 2022,
+      "month": 0,
+      "accidents": 943,
+      "fatalities": 26,
+      "injuries": 1010
+    },
+    {
+      "prefecture": "83",
+      "year": 2023,
+      "month": 0,
+      "accidents": 975,
+      "fatalities": 23,
+      "injuries": 1049
+    },
+    {
+      "prefecture": "83",
+      "year": 2024,
+      "month": 0,
+      "accidents": 898,
+      "fatalities": 21,
+      "injuries": 984
+    },
+    {
+      "prefecture": "90",
+      "year": 2020,
+      "month": 0,
+      "accidents": 21495,
+      "fatalities": 91,
+      "injuries": 27575
+    },
+    {
+      "prefecture": "90",
+      "year": 2021,
+      "month": 0,
+      "accidents": 20066,
+      "fatalities": 101,
+      "injuries": 25587
+    },
+    {
+      "prefecture": "90",
+      "year": 2022,
+      "month": 0,
+      "accidents": 19868,
+      "fatalities": 75,
+      "injuries": 25285
+    },
+    {
+      "prefecture": "90",
+      "year": 2023,
+      "month": 0,
+      "accidents": 20173,
+      "fatalities": 103,
+      "injuries": 25699
+    },
+    {
+      "prefecture": "90",
+      "year": 2024,
+      "month": 0,
+      "accidents": 18473,
+      "fatalities": 91,
+      "injuries": 23606
+    },
+    {
+      "prefecture": "91",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3758,
+      "fatalities": 33,
+      "injuries": 4839
+    },
+    {
+      "prefecture": "91",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3506,
+      "fatalities": 23,
+      "injuries": 4539
+    },
+    {
+      "prefecture": "91",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3238,
+      "fatalities": 23,
+      "injuries": 4219
+    },
+    {
+      "prefecture": "91",
+      "year": 2023,
+      "month": 0,
+      "accidents": 3144,
+      "fatalities": 13,
+      "injuries": 4037
+    },
+    {
+      "prefecture": "91",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2623,
+      "fatalities": 24,
+      "injuries": 3423
+    },
+    {
+      "prefecture": "92",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2987,
+      "fatalities": 34,
+      "injuries": 3731
+    },
+    {
+      "prefecture": "92",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2804,
+      "fatalities": 27,
+      "injuries": 3505
+    },
+    {
+      "prefecture": "92",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2611,
+      "fatalities": 28,
+      "injuries": 3316
+    },
+    {
+      "prefecture": "92",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2639,
+      "fatalities": 36,
+      "injuries": 3317
+    },
+    {
+      "prefecture": "92",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2416,
+      "fatalities": 26,
+      "injuries": 2983
+    },
+    {
+      "prefecture": "93",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3152,
+      "fatalities": 46,
+      "injuries": 3987
+    },
+    {
+      "prefecture": "93",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3188,
+      "fatalities": 39,
+      "injuries": 3936
+    },
+    {
+      "prefecture": "93",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3175,
+      "fatalities": 53,
+      "injuries": 3924
+    },
+    {
+      "prefecture": "93",
+      "year": 2023,
+      "month": 0,
+      "accidents": 3312,
+      "fatalities": 37,
+      "injuries": 4140
+    },
+    {
+      "prefecture": "93",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2945,
+      "fatalities": 55,
+      "injuries": 3628
+    },
+    {
+      "prefecture": "94",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2437,
+      "fatalities": 43,
+      "injuries": 3020
+    },
+    {
+      "prefecture": "94",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2360,
+      "fatalities": 36,
+      "injuries": 2832
+    },
+    {
+      "prefecture": "94",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2271,
+      "fatalities": 32,
+      "injuries": 2804
+    },
+    {
+      "prefecture": "94",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2233,
+      "fatalities": 32,
+      "injuries": 2767
+    },
+    {
+      "prefecture": "94",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2125,
+      "fatalities": 28,
+      "injuries": 2619
+    },
+    {
+      "prefecture": "95",
+      "year": 2020,
+      "month": 0,
+      "accidents": 5126,
+      "fatalities": 36,
+      "injuries": 5741
+    },
+    {
+      "prefecture": "95",
+      "year": 2021,
+      "month": 0,
+      "accidents": 4461,
+      "fatalities": 30,
+      "injuries": 5059
+    },
+    {
+      "prefecture": "95",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3798,
+      "fatalities": 32,
+      "injuries": 4245
+    },
+    {
+      "prefecture": "95",
+      "year": 2023,
+      "month": 0,
+      "accidents": 3488,
+      "fatalities": 30,
+      "injuries": 3908
+    },
+    {
+      "prefecture": "95",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2703,
+      "fatalities": 39,
+      "injuries": 3007
+    },
+    {
+      "prefecture": "96",
+      "year": 2020,
+      "month": 0,
+      "accidents": 4070,
+      "fatalities": 53,
+      "injuries": 4678
+    },
+    {
+      "prefecture": "96",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3532,
+      "fatalities": 47,
+      "injuries": 3970
+    },
+    {
+      "prefecture": "96",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3088,
+      "fatalities": 42,
+      "injuries": 3421
+    },
+    {
+      "prefecture": "96",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2965,
+      "fatalities": 40,
+      "injuries": 3348
+    },
+    {
+      "prefecture": "96",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2871,
+      "fatalities": 53,
+      "injuries": 3180
+    },
+    {
+      "prefecture": "97",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2808,
+      "fatalities": 22,
+      "injuries": 3290
+    },
+    {
+      "prefecture": "97",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2783,
+      "fatalities": 26,
+      "injuries": 3319
+    },
+    {
+      "prefecture": "97",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2778,
+      "fatalities": 34,
+      "injuries": 3311
+    },
+    {
+      "prefecture": "97",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2964,
+      "fatalities": 38,
+      "injuries": 3573
+    },
+    {
+      "prefecture": "97",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2875,
+      "fatalities": 44,
+      "injuries": 3387
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3328,
+      "fatalities": 30,
+      "injuries": 3975
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3184,
+      "fatalities": 24,
+      "injuries": 3760
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2970,
+      "fatalities": 26,
+      "injuries": 3469
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2780,
+      "fatalities": 34,
+      "injuries": 3295
+    },
+    {
+      "prefecture": "三重県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2457,
+      "fatalities": 24,
+      "injuries": 2927
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3939,
+      "fatalities": 60,
+      "injuries": 4665
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 3939,
+      "fatalities": 56,
+      "injuries": 4666
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 3877,
+      "fatalities": 50,
+      "injuries": 4641
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 3808,
+      "fatalities": 59,
+      "injuries": 4550
+    },
+    {
+      "prefecture": "佐賀県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 3946,
+      "fatalities": 60,
+      "injuries": 4683
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 717,
+      "fatalities": 16,
+      "injuries": 854
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 704,
+      "fatalities": 17,
+      "injuries": 852
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 679,
+      "fatalities": 23,
+      "injuries": 809
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 725,
+      "fatalities": 17,
+      "injuries": 861
+    },
+    {
+      "prefecture": "千葉県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 763,
+      "fatalities": 16,
+      "injuries": 900
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 25642,
+      "fatalities": 155,
+      "injuries": 28888
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 27598,
+      "fatalities": 133,
+      "injuries": 30836
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 30170,
+      "fatalities": 133,
+      "injuries": 33430
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 31385,
+      "fatalities": 136,
+      "injuries": 34870
+    },
+    {
+      "prefecture": "和歌山県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 30103,
+      "fatalities": 146,
+      "injuries": 33251
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 511,
+      "fatalities": 12,
+      "injuries": 605
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 628,
+      "fatalities": 18,
+      "injuries": 740
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 577,
+      "fatalities": 7,
+      "injuries": 684
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 561,
+      "fatalities": 12,
+      "injuries": 670
+    },
+    {
+      "prefecture": "埼玉県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 550,
+      "fatalities": 5,
+      "injuries": 664
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 12873,
+      "fatalities": 128,
+      "injuries": 15415
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 13534,
+      "fatalities": 121,
+      "injuries": 16107
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 13223,
+      "fatalities": 124,
+      "injuries": 15839
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 13564,
+      "fatalities": 127,
+      "injuries": 16259
+    },
+    {
+      "prefecture": "大分県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 12587,
+      "fatalities": 131,
+      "injuries": 14963
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 20630,
+      "fatalities": 140,
+      "injuries": 23904
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 21660,
+      "fatalities": 142,
+      "injuries": 25062
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 21098,
+      "fatalities": 113,
+      "injuries": 24382
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 21870,
+      "fatalities": 115,
+      "injuries": 25644
+    },
+    {
+      "prefecture": "宮崎県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 20750,
+      "fatalities": 109,
+      "injuries": 24123
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 1658,
+      "fatalities": 46,
+      "injuries": 1953
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 1566,
+      "fatalities": 35,
+      "injuries": 1830
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 1511,
+      "fatalities": 37,
+      "injuries": 1812
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 1503,
+      "fatalities": 35,
+      "injuries": 1796
+    },
+    {
+      "prefecture": "岐阜県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 1391,
+      "fatalities": 28,
+      "injuries": 1700
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 1377,
+      "fatalities": 37,
+      "injuries": 1655
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 1301,
+      "fatalities": 28,
+      "injuries": 1514
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 1157,
+      "fatalities": 33,
+      "injuries": 1351
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 1155,
+      "fatalities": 32,
+      "injuries": 1339
+    },
+    {
+      "prefecture": "愛知県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 981,
+      "fatalities": 31,
+      "injuries": 1141
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2020,
+      "month": 0,
+      "accidents": 680,
+      "fatalities": 21,
+      "injuries": 766
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2021,
+      "month": 0,
+      "accidents": 686,
+      "fatalities": 20,
+      "injuries": 769
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2022,
+      "month": 0,
+      "accidents": 652,
+      "fatalities": 18,
+      "injuries": 731
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2023,
+      "month": 0,
+      "accidents": 873,
+      "fatalities": 22,
+      "injuries": 994
+    },
+    {
+      "prefecture": "東京都",
+      "year": 2024,
+      "month": 0,
+      "accidents": 771,
+      "fatalities": 24,
+      "injuries": 849
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2146,
+      "fatalities": 21,
+      "injuries": 2650
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2093,
+      "fatalities": 32,
+      "injuries": 2555
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2019,
+      "fatalities": 25,
+      "injuries": 2516
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2112,
+      "fatalities": 29,
+      "injuries": 2595
+    },
+    {
+      "prefecture": "沖縄県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2013,
+      "fatalities": 28,
+      "injuries": 2439
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3266,
+      "fatalities": 57,
+      "injuries": 3857
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2997,
+      "fatalities": 49,
+      "injuries": 3446
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2702,
+      "fatalities": 47,
+      "injuries": 3132
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2913,
+      "fatalities": 55,
+      "injuries": 3403
+    },
+    {
+      "prefecture": "滋賀県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 3086,
+      "fatalities": 51,
+      "injuries": 3738
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 17115,
+      "fatalities": 121,
+      "injuries": 20443
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 16707,
+      "fatalities": 118,
+      "injuries": 19877
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 16576,
+      "fatalities": 104,
+      "injuries": 19596
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 17002,
+      "fatalities": 122,
+      "injuries": 20221
+    },
+    {
+      "prefecture": "熊本県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 15831,
+      "fatalities": 113,
+      "injuries": 18673
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 203,
+      "fatalities": 11,
+      "injuries": 236
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 235,
+      "fatalities": 7,
+      "injuries": 270
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 206,
+      "fatalities": 6,
+      "injuries": 248
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 244,
+      "fatalities": 10,
+      "injuries": 297
+    },
+    {
+      "prefecture": "神奈川県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 219,
+      "fatalities": 8,
+      "injuries": 266
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 6049,
+      "fatalities": 84,
+      "injuries": 7455
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 5929,
+      "fatalities": 80,
+      "injuries": 7243
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 6271,
+      "fatalities": 91,
+      "injuries": 7699
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 6489,
+      "fatalities": 93,
+      "injuries": 7885
+    },
+    {
+      "prefecture": "福岡県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 6005,
+      "fatalities": 94,
+      "injuries": 7456
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 5787,
+      "fatalities": 84,
+      "injuries": 6582
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 6051,
+      "fatalities": 58,
+      "injuries": 6967
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 6343,
+      "fatalities": 61,
+      "injuries": 7313
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 6679,
+      "fatalities": 70,
+      "injuries": 7779
+    },
+    {
+      "prefecture": "群馬県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 6440,
+      "fatalities": 51,
+      "injuries": 7618
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 9266,
+      "fatalities": 45,
+      "injuries": 11624
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 10007,
+      "fatalities": 50,
+      "injuries": 12308
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 9803,
+      "fatalities": 47,
+      "injuries": 12072
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 10038,
+      "fatalities": 47,
+      "injuries": 12377
+    },
+    {
+      "prefecture": "長崎県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 9059,
+      "fatalities": 49,
+      "injuries": 11195
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 2436,
+      "fatalities": 28,
+      "injuries": 2939
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2458,
+      "fatalities": 29,
+      "injuries": 2919
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2375,
+      "fatalities": 31,
+      "injuries": 2853
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2619,
+      "fatalities": 45,
+      "injuries": 3099
+    },
+    {
+      "prefecture": "長野県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2278,
+      "fatalities": 43,
+      "injuries": 2734
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 4487,
+      "fatalities": 44,
+      "injuries": 5483
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 4286,
+      "fatalities": 42,
+      "injuries": 5182
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 4117,
+      "fatalities": 37,
+      "injuries": 4912
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 4033,
+      "fatalities": 47,
+      "injuries": 4932
+    },
+    {
+      "prefecture": "静岡県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 3785,
+      "fatalities": 47,
+      "injuries": 4565
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2020,
+      "month": 0,
+      "accidents": 3076,
+      "fatalities": 64,
+      "injuries": 3547
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2021,
+      "month": 0,
+      "accidents": 2848,
+      "fatalities": 47,
+      "injuries": 3203
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2022,
+      "month": 0,
+      "accidents": 2728,
+      "fatalities": 61,
+      "injuries": 3123
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2023,
+      "month": 0,
+      "accidents": 2721,
+      "fatalities": 55,
+      "injuries": 3096
+    },
+    {
+      "prefecture": "鹿児島県",
+      "year": 2024,
+      "month": 0,
+      "accidents": 2671,
+      "fatalities": 55,
+      "injuries": 3045
+    }
+  ],
+  "by_accident_type": {
+    "追突": {
+      "accidents": 1266310,
+      "fatalities": 4829,
+      "injuries": 1547868
+    },
+    "01": {
+      "accidents": 189793,
+      "fatalities": 4594,
+      "injuries": 189753
+    },
+    "41": {
+      "accidents": 57639,
+      "fatalities": 3801,
+      "injuries": 60465
+    },
+    "61": {
+      "accidents": 296,
+      "fatalities": 203,
+      "injuries": 113
+    }
+  }
 }
