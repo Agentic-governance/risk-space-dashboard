@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-04T22:09:01+00:00",
-    "fetched_at_jst": "2026-05-05T07:09:01+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-05-04T23:12:00+00:00",
+    "fetched_at_jst": "2026-05-05T08:12:00+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 3,
       "disaster": 1,
-      "congestion": 1
+      "congestion": 2
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from JARTIC, Yahoo!道路情報, NHK RSS, and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC does not expose a documented public REST API. Lat/lon is available only when the source provides coordinates directly. NHK RSS items are national; road_name extraction is best-effort."
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T22:09:01+00:00",
+      "occurred_at": "2026-05-04T23:12:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T22:09:01+00:00",
+      "occurred_at": "2026-05-04T23:12:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T22:09:01+00:00",
+      "occurred_at": "2026-05-04T23:12:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,12 +74,26 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T22:09:01+00:00",
+      "occurred_at": "2026-05-04T23:12:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260504_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "congestion",
+      "severity": 1,
+      "road_name": "",
+      "description": "大型連休後半 Uターンラッシュがピークの見込み — 大型連休をふるさとや行楽地などで過ごした人たちのUターンラッシュは、5日がピークとなる見込みで、各地の高速道路では午後にかけて30キロを超える渋滞が予想されています。JR各社や航空各社によりますと、新幹線の上りと海外から日本に向かう空の便は5日が混雑のピークとなる見込みです。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-04T22:09:37+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015114731000.html",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260504_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
