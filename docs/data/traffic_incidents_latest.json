@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-04T09:12:57+00:00",
-    "fetched_at_jst": "2026-05-04T18:12:57+09:00",
+    "fetched_at": "2026-05-04T11:31:52+00:00",
+    "fetched_at_jst": "2026-05-04T20:31:52+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T09:12:57+00:00",
+      "occurred_at": "2026-05-04T11:31:52+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T09:12:57+00:00",
+      "occurred_at": "2026-05-04T11:31:52+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T09:12:57+00:00",
+      "occurred_at": "2026-05-04T11:31:52+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T09:12:57+00:00",
+      "occurred_at": "2026-05-04T11:31:52+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -89,7 +89,7 @@
       "description": "倒木がベッドに落下 数センチで直撃免れる 和歌山 白浜町 — 3日夜遅く、和歌山県白浜町の住宅で、裏山から倒れてきた木が屋根を突き破り、寝ていた男性のベッドに落下しました。男性はわずか数センチのところで直撃を免れたということで、けがはありませんでした。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T08:42:16+00:00",
+      "occurred_at": "2026-05-04T09:52:39+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114371000.html",
       "traffic_multiplier": 1.3
     },
