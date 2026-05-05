@@ -6,18 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-05T19:03:18+00:00",
-    "fetched_at_jst": "2026-05-06T04:03:18+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-05T20:16:58+00:00",
+    "fetched_at_jst": "2026-05-06T05:16:58+09:00",
+    "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 3,
       "disaster": 1,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from JARTIC, Yahoo!道路情報, NHK RSS, and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC does not expose a documented public REST API. Lat/lon is available only when the source provides coordinates directly. NHK RSS items are national; road_name extraction is best-effort."
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-05T19:03:18+00:00",
+      "occurred_at": "2026-05-05T20:16:58+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-05T19:03:18+00:00",
+      "occurred_at": "2026-05-05T20:16:58+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-05T19:03:18+00:00",
+      "occurred_at": "2026-05-05T20:16:58+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,26 +74,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-05T19:03:18+00:00",
+      "occurred_at": "2026-05-05T20:16:58+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260505_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "子どものSNS利用 日本とEUで共同声明 情報共有強化へ — 子どものSNS利用のあり方が議論となる中、日本とEU＝ヨーロッパ連合のデジタル分野を担当する閣僚級会合がベルギーで開かれ、規制などの取り組みについて情報共有を強化することを盛り込んだ共同声明をとりまとめました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-05T13:25:42+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015115121000.html",
-      "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260505_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
