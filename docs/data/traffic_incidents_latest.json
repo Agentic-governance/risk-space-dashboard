@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-04T23:12:00+00:00",
-    "fetched_at_jst": "2026-05-05T08:12:00+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-05T01:21:00+00:00",
+    "fetched_at_jst": "2026-05-05T10:21:00+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "disaster": 1,
       "congestion": 2
     },
@@ -23,7 +23,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260504_0000",
+      "event_id": "traffic_20260505_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T23:12:00+00:00",
+      "occurred_at": "2026-05-05T01:21:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260504_0001",
+      "event_id": "traffic_20260505_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +46,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T23:12:00+00:00",
+      "occurred_at": "2026-05-05T01:21:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260504_0002",
+      "event_id": "traffic_20260505_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +60,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T23:12:00+00:00",
+      "occurred_at": "2026-05-05T01:21:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260504_0003",
+      "event_id": "traffic_20260505_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,12 +74,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-04T23:12:00+00:00",
+      "occurred_at": "2026-05-05T01:21:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260504_0004",
+      "event_id": "traffic_20260505_0004",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "congestion",
@@ -93,7 +93,21 @@
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260504_0005",
+      "event_id": "traffic_20260505_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "山口 美祢 車どうしが衝突 8歳の男の子と20代男性の2人死亡 — 4日夜、山口県美祢市の国道で乗用車どうしが衝突する事故があり、それぞれの車に乗っていた8歳の小学生の男の子と20代の男性のあわせて2人が死亡しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-04T23:50:32+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015114701000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260505_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
