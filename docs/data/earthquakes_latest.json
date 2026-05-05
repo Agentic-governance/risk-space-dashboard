@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-05T04:49:28+00:00",
+    "fetched_at": "2026-05-05T07:25:50+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260505160145_20260505155854_VXSE5k_1",
+      "time": "2026-05-05T06:58:00+00:00",
+      "time_jst": "2026-05-05T15:58:00+09:00",
+      "lat": 24.5,
+      "lon": 123.9,
+      "magnitude": 4.2,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Adjacent Sea of Iriomotejima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.0
+    },
+    {
+      "event_id": "20260505145128_20260505144838_VXSE5k_1",
+      "time": "2026-05-05T05:48:00+00:00",
+      "time_jst": "2026-05-05T14:48:00+09:00",
+      "lat": 41.1,
+      "lon": 141.9,
+      "magnitude": 3.4,
+      "depth_km": 60.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the east Coast of Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260505122615_20260505122330_VXSE5k_1",
       "time": "2026-05-05T03:23:00+00:00",
@@ -105,20 +133,6 @@
       "location_name": "Western Hidaka Region, Hokkaido",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.15
-    },
-    {
-      "event_id": "20260504135414_20260504135140_VXSE5k_1",
-      "time": "2026-05-04T04:51:00+00:00",
-      "time_jst": "2026-05-04T13:51:00+09:00",
-      "lat": 39.9,
-      "lon": 142.4,
-      "magnitude": 3.6,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
