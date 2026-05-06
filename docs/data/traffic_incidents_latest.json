@@ -6,18 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-06T21:24:03+00:00",
-    "fetched_at_jst": "2026-05-07T06:24:03+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-05-06T22:35:35+00:00",
+    "fetched_at_jst": "2026-05-07T07:35:35+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 3
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 4,
       "disaster": 1,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from JARTIC, Yahoo!道路情報, NHK RSS, and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC does not expose a documented public REST API. Lat/lon is available only when the source provides coordinates directly. NHK RSS items are national; road_name extraction is best-effort."
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T21:24:03+00:00",
+      "occurred_at": "2026-05-06T22:35:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T21:24:03+00:00",
+      "occurred_at": "2026-05-06T22:35:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T21:24:03+00:00",
+      "occurred_at": "2026-05-06T22:35:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T21:24:03+00:00",
+      "occurred_at": "2026-05-06T22:35:35+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -95,20 +94,6 @@
     },
     {
       "event_id": "traffic_20260506_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "G7貿易相会合 重要鉱物の供給網多角化に向けた連携を確認 — G7＝主要7か国の貿易相会合が6日、フランスで開かれ、レアアースなどの重要鉱物について、各国が連携して供給網の多角化を進めていくことを確認しました。会合後に発表された閣僚声明では、中国による輸出規制を念頭に「経済的威圧に対し、必要に応じて行動する用意がある」としています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-06T21:12:09+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115491000.html",
-      "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260506_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
