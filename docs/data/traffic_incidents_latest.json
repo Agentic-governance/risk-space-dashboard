@@ -1,29 +1,43 @@
 {
   "metadata": {
     "sources": [
-      "jartic",
+      "yahoo_road",
       "yahoo_transit",
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-06T22:35:35+00:00",
-    "fetched_at_jst": "2026-05-07T07:35:35+09:00",
+    "fetched_at": "2026-05-07T08:46:00+00:00",
+    "fetched_at_jst": "2026-05-07T17:46:00+09:00",
     "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 2
+      "yahoo_transit": 5,
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 4,
       "disaster": 1,
       "congestion": 1
     },
-    "description": "Real-time road traffic incidents in Japan. Aggregated from JARTIC, Yahoo!道路情報, NHK RSS, and MLIT. traffic_multiplier reflects incident impact on local risk model.",
-    "notes": "JARTIC does not expose a documented public REST API. Lat/lon is available only when the source provides coordinates directly. NHK RSS items are national; road_name extraction is best-effort."
+    "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
+    "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260506_0000",
+      "event_id": "traffic_20260507_0000",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "西八王子駅で発生した人身事故の影...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-07T08:46:00+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260507_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +46,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T22:35:35+00:00",
+      "occurred_at": "2026-05-07T08:46:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260506_0001",
+      "event_id": "traffic_20260507_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +60,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T22:35:35+00:00",
+      "occurred_at": "2026-05-07T08:46:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260506_0002",
+      "event_id": "traffic_20260507_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +74,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T22:35:35+00:00",
+      "occurred_at": "2026-05-07T08:46:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260506_0003",
+      "event_id": "traffic_20260507_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,36 +88,22 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T22:35:35+00:00",
+      "occurred_at": "2026-05-07T08:46:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260506_0004",
+      "event_id": "traffic_20260507_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "福島 磐越道 高校生死亡の事故 現場に目立ったブレーキ痕なし — 6日、福島県の磐越自動車道で、新潟県の高校生が乗ったマイクロバスがガードレールに突っ込むなどして、1人が死亡し、20人が重軽傷を負いました。この事故で現場には目立ったブレーキ痕がなかったことが、捜査関係者への取材でわかりました。警察は、速度を落とさずに突っ込んだとみて、詳しい状況を調べています。",
+      "description": "磐越道 高校生死亡の事故 生徒は後部座席から投げ出されたか — 6日に福島県の磐越自動車道で、部活動で移動中の新潟県の高校生たちが乗ったマイクロバスがガードレールに突っ込むなどして生徒1人が死亡し20人が重軽傷を負った事故で、亡くなった生徒は後方の席に座っていたことが警察への取材で分かりました。警察は、生徒が壊れたバスの後部から外に投げ出されたとみて調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-06T20:30:26+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115551000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260506_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "電子レンジ 誤使用での発火事故に注意 国民生活センター — 加熱のしすぎや誤った使用で、電子レンジから火や煙が出る事故が相次いでいるとして、国民生活センターが注意を呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-03T21:12:57+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114141000.html",
+      "occurred_at": "2026-05-07T07:15:09+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115761000.html",
       "traffic_multiplier": 1.6
     }
   ]

@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "sources": [
+      "nhk_crime",
+      "nhk_society",
+      "mainichi_flash"
+    ],
+    "fetched_at": "2026-05-07T08:46:11+00:00",
+    "total_count": 34,
+    "source_counts": {
+      "nhk_crime": 34
+    },
+    "type_counts": {
+      "crime_news": 21,
+      "murder": 9,
+      "kidnapping": 1,
+      "theft": 1,
+      "fraud": 1,
+      "drug": 1
+    },
+    "top_prefectures": {
+      "北海道": 9,
+      "岩手": 6,
+      "京都": 3,
+      "千葉": 3,
+      "東京": 2,
+      "宮城": 1,
+      "熊本": 1,
+      "埼玉": 1,
+      "長野": 1,
+      "福岡": 1
+    },
+    "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
+  },
+  "incidents": [
+    {
+      "title": "仙台 東北電力の変電所火災は鎮火 停電の発生なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115911000.html",
+      "date": "2026-05-07",
+      "prefecture": "宮城",
+      "subtype": "crime_news",
+      "lat": 38.2688,
+      "lon": 140.8721,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "熊本 八代市新庁舎工事めぐり 市議ら あっせん収賄容疑で逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115941000.html",
+      "date": "2026-05-07",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町の新たな山林火災 ほぼ消し止められる",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115561000.html",
+      "date": "2026-05-07",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "川崎で女性死亡 トラック運転手をひき逃げなどの疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115661000.html",
+      "date": "2026-05-06",
+      "prefecture": "埼玉",
+      "subtype": "crime_news",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 男児殺害事件 父親 車内のやりとり機に衝動的に襲ったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115541000.html",
+      "date": "2026-05-06",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町 山林火災2週間 別の場所で新たに火災が発生",
+      "url": "http://www3.nhk.or.jp/news/html/20260506/k10015115341000.html",
+      "date": "2026-05-06",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 南丹 小学生男児の遺体遺棄事件 父親を殺人容疑で再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260506/k10015115361000.html",
+      "date": "2026-05-06",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 男児遺体遺棄事件 父親を殺人容疑で再逮捕へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260506/k10015115061000.html",
+      "date": "2026-05-05",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "長野 阿智村の住宅で親子3人の遺体見つかる 無理心中か",
+      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015115051000.html",
+      "date": "2026-05-05",
+      "prefecture": "長野",
+      "subtype": "crime_news",
+      "lat": 36.6513,
+      "lon": 138.181,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "福岡 久留米 7歳女児を車で連れ回した疑い 27歳容疑者を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015115071000.html",
+      "date": "2026-05-05",
+      "prefecture": "福岡",
+      "subtype": "kidnapping",
+      "lat": 33.6064,
+      "lon": 130.4183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "札幌 小学生の息子を殺害疑いで46歳母親を逮捕 容疑を否認",
+      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015114821000.html",
+      "date": "2026-05-05",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "愛知 豊橋 男が一時部屋から出ず 警察が逮捕 公務執行妨害疑い",
+      "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114531000.html",
+      "date": "2026-05-04",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園 逮捕の職員 “妻との生活に不満”趣旨の供述",
+      "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114511000.html",
+      "date": "2026-05-04",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町 山林火災「鎮圧」で町ににぎわい戻る",
+      "url": "http://www3.nhk.or.jp/news/html/20260503/k10015113991000.html",
+      "date": "2026-05-03",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園 焼却炉から複数の人骨のようなもの 遺体の一部か",
+      "url": "http://www3.nhk.or.jp/news/html/20260503/k10015113961000.html",
+      "date": "2026-05-03",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "愛媛 今治で住宅火災 2人が遺体で見つかる 母と次男か",
+      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113521000.html",
+      "date": "2026-05-02",
+      "prefecture": "愛媛",
+      "subtype": "crime_news",
+      "lat": 33.8417,
+      "lon": 132.7657,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 福生 高校生殴打事件 車で逃走中に周囲を頻繁に警戒か",
+      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113331000.html",
+      "date": "2026-05-02",
+      "prefecture": "千葉",
+      "subtype": "crime_news",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園 逮捕の職員 当日は通常勤務 退勤後の行動調べる",
+      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113181000.html",
+      "date": "2026-05-02",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町山林火災 町が「鎮圧」宣言 火災は沈静化",
+      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113391000.html",
+      "date": "2026-05-02",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "群馬 河川敷に男性遺体 窃盗疑いで逮捕の容疑者事情知るか捜査",
+      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113421000.html",
+      "date": "2026-05-02",
+      "prefecture": "群馬",
+      "subtype": "theft",
+      "lat": 36.3911,
+      "lon": 139.0608,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 福生 ハンマー殴打事件 おととい千葉で逃走車両発見か",
+      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113131000.html",
+      "date": "2026-05-01",
+      "prefecture": "千葉",
+      "subtype": "crime_news",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園 遺体損壊事件 園内で妻のものとみられるスマホ発見",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112801000.html",
+      "date": "2026-05-01",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 福生 “ハンマー”で殴り逃走 44歳容疑者を逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112451000.html",
+      "date": "2026-05-01",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大阪 母娘殺害事件 娘殺害疑いで51歳容疑者逮捕 元交際相手か",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015113021000.html",
+      "date": "2026-05-01",
+      "prefecture": "大阪",
+      "subtype": "murder",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "IT関連会社「はてな」11億円流出 警察官かたる詐欺被害か",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112951000.html",
+      "date": "2026-05-01",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 三原 見つかった遺体は死後1～2か月経過か 死因は不詳",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112911000.html",
+      "date": "2026-05-01",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 福生 “ハンマー”で殴り逃走 JR福生駅方向に向かったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112461000.html",
+      "date": "2026-05-01",
+      "prefecture": "東京",
+      "subtype": "murder",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町 山林火災影響で臨時休校続いた学校 授業を再開",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112571000.html",
+      "date": "2026-05-01",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園 遺体損壊事件 事件前に妻から警察に相談なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112471000.html",
+      "date": "2026-05-01",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "海上自衛隊の1等海尉を逮捕 覚醒剤所持した疑い 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112511000.html",
+      "date": "2026-05-01",
+      "prefecture": "東京",
+      "subtype": "drug",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 稚内で住宅火災 焼け跡から2人の遺体 親子と連絡取れず",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112341000.html",
+      "date": "2026-04-30",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園職員 逮捕前の調べに妻の殺害ほのめかす話か",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112211000.html",
+      "date": "2026-04-30",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町山林火災 夕方から激しい雨か 状況見極め消火活動",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112111000.html",
+      "date": "2026-04-30",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 北見 住宅1棟が焼ける火事 焼け跡から2人の遺体",
+      "url": "http://www3.nhk.or.jp/news/html/20260501/k10015112251000.html",
+      "date": "2026-04-30",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    }
+  ]
+}
