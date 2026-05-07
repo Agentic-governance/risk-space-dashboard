@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-07T08:45:55+00:00",
+    "fetched_at": "2026-05-07T11:03:22+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -105,48 +105,6 @@
       "location_name": "Eastern Kochi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260506191133_20260506190641_VXSE5k_1",
-      "time": "2026-05-06T10:06:00+00:00",
-      "time_jst": "2026-05-06T19:06:00+09:00",
-      "lat": 35.4,
-      "lon": 139.5,
-      "magnitude": 4.2,
-      "depth_km": 100.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Eastern Kanagawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.55
-    },
-    {
-      "event_id": "20260506190910_20260506190641_VXSE52_0",
-      "time": "2026-05-06T10:06:00+00:00",
-      "time_jst": "2026-05-06T19:06:00+09:00",
-      "lat": 35.4,
-      "lon": 139.5,
-      "magnitude": 4.2,
-      "depth_km": 100.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Eastern Kanagawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260506190825_20260506190641_VXSE51_0",
-      "time": "2026-05-06T10:06:00+00:00",
-      "time_jst": "2026-05-06T19:06:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }

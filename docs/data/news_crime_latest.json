@@ -5,13 +5,13 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-07T08:46:11+00:00",
-    "total_count": 34,
+    "fetched_at": "2026-05-07T11:03:34+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 34
+      "nhk_crime": 37
     },
     "type_counts": {
-      "crime_news": 21,
+      "crime_news": 24,
       "murder": 9,
       "kidnapping": 1,
       "theft": 1,
@@ -21,26 +21,46 @@
     "top_prefectures": {
       "北海道": 9,
       "岩手": 6,
-      "京都": 3,
+      "京都": 4,
       "千葉": 3,
       "東京": 2,
-      "宮城": 1,
+      "山形": 1,
+      "福島": 1,
       "熊本": 1,
-      "埼玉": 1,
-      "長野": 1,
-      "福岡": 1
+      "宮城": 1,
+      "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "仙台 東北電力の変電所火災は鎮火 停電の発生なし",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115911000.html",
+      "title": "山形 酒田 山林で男性の遺体 クマに襲われたか 各地で被害",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116021000.html",
       "date": "2026-05-07",
-      "prefecture": "宮城",
+      "prefecture": "山形",
       "subtype": "crime_news",
-      "lat": 38.2688,
-      "lon": 140.8721,
+      "lat": 38.2404,
+      "lon": 140.3636,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "磐越道 高校生死亡の事故 運転手の逮捕状請求【詳しく】",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116041000.html",
+      "date": "2026-05-07",
+      "prefecture": "福島",
+      "subtype": "crime_news",
+      "lat": 37.7502,
+      "lon": 140.4675,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 男児殺害事件「本当の父親じゃないと言われ」趣旨の供述",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116131000.html",
+      "date": "2026-05-07",
+      "prefecture": "京都",
+      "subtype": "crime_news",
+      "lat": 35.0116,
+      "lon": 135.7681,
       "source": "nhk_crime"
     },
     {
@@ -51,6 +71,16 @@
       "subtype": "crime_news",
       "lat": 32.7898,
       "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "仙台 東北電力の変電所火災は鎮火 停電の発生なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115911000.html",
+      "date": "2026-05-07",
+      "prefecture": "宮城",
+      "subtype": "crime_news",
+      "lat": 38.2688,
+      "lon": 140.8721,
       "source": "nhk_crime"
     },
     {
