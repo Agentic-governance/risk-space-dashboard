@@ -69,6 +69,9 @@ jobs:
       - name: Convert police data to realtime_slim format
         run: python scripts/convert_to_slim.py
 
+      - name: Build dynamic risk timeseries
+        run: python scripts/build_risk_timeseries.py
+
       - name: Fetch latest AMeDAS weather
         run: python scripts/cron_weather.py
         continue-on-error: true
@@ -115,7 +118,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/earthquakes_latest.json docs/data/traffic_incidents_latest.json docs/data/news_crime_latest.json || true
+          git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/earthquakes_latest.json docs/data/traffic_incidents_latest.json docs/data/news_crime_latest.json docs/data/risk_timeseries.json || true
           git add -f data/realtime/fushinsha_7days/week_events_geocoded.json data/realtime/seen_hashes.json || true
           git add -f docs/data/all_events_v2.json docs/data/deep_crawl.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m 'auto: police-crawl + weather update' && git push)

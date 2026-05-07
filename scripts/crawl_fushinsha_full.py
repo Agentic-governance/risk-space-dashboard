@@ -237,6 +237,15 @@ def is_valid_event(event: dict) -> bool:
     snippet_l = snippet.lower()
     if any(term.lower() in snippet_l for term in PROMO_BLACKLIST):
         return False
+    if not event.get("date"):
+        scraped_at = (event.get("scraped_at") or "").strip()
+        if scraped_at:
+            try:
+                event["date"] = datetime.fromisoformat(scraped_at.replace("Z", "+00:00")).strftime("%Y-%m-%d")
+            except ValueError:
+                event["date"] = TODAY.strftime("%Y-%m-%d")
+        else:
+            event["date"] = TODAY.strftime("%Y-%m-%d")
     if not event.get("date") and not event.get("address_raw"):
         return False
     return True
@@ -557,7 +566,7 @@ for code in sorted(prefectures.keys()):
             if url not in seen_urls:
                 seen_urls.add(url)
                 unique_links.append((url, text))
-        unique_links = unique_links[:5]  # Max 5 sub-pages per prefecture
+        unique_links = unique_links[:15]  # Max 15 sub-pages per prefecture
 
         # Also check main page text
         pages_to_check = [(base_url, soup)]
@@ -577,7 +586,7 @@ for code in sorted(prefectures.keys()):
                     (curr_lm and prev_lm and curr_lm == prev_lm) or
                     (curr_etag and prev_etag and curr_etag == prev_etag)
                 )
-                if unchanged:
+                if unchanged and TODAY.weekday() != 0:
                     continue
 
                 r2 = safe_get(link_url, timeout=10, allow_redirects=True)
@@ -765,6 +774,7 @@ for unit_name, unit_url in NORDOT_UNITS.items():
     articles = crawl_nordot_unit(unit_name, unit_url)
     print(f"  Found {len(articles)} article links")
 
+    url_dedup: set[str] = set()
     for i, article in enumerate(articles[:300]):
         if stats["nordot_articles"] >= 300:
             break
@@ -785,10 +795,14 @@ for unit_name, unit_url in NORDOT_UNITS.items():
             body_elem = soup.find("article") or soup.find("div", class_=re.compile(r"article|body|content"))
             body_text = body_elem.get_text(separator="\n") if body_elem else soup.get_text(separator="\n")
 
+            article_url = article["url"]
+            if article_url in url_dedup:
+                stats["skipped_dup"] += 1
+                continue
             full_text = title + "\n" + body_text
-            h = make_hash(full_text[:500])
+            h = make_hash(article_url)
 
-            if h in run_seen_hashes or h in seen_hashes:
+            if h in run_seen_hashes:
                 stats["skipped_dup"] += 1
                 continue
 
@@ -862,6 +876,7 @@ for unit_name, unit_url in NORDOT_UNITS.items():
                 continue
             all_events.append(event)
             mark_seen_hash(h)
+            url_dedup.add(article_url)
             # Periodic flush of seen_hashes
             if len(seen_hashes) % 100 == 0:
                 with open(SEEN_HASHES, "w", encoding="utf-8") as _f:
