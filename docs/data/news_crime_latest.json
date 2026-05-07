@@ -5,13 +5,13 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-07T17:20:38+00:00",
-    "total_count": 25,
+    "fetched_at": "2026-05-07T23:49:32+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 25
+      "nhk_crime": 27
     },
     "type_counts": {
-      "crime_news": 19,
+      "crime_news": 21,
       "murder": 4,
       "kidnapping": 1,
       "theft": 1
@@ -20,10 +20,10 @@
       "京都": 4,
       "岩手": 4,
       "北海道": 4,
+      "熊本": 2,
+      "福島": 2,
       "千葉": 2,
       "東京": 1,
-      "福島": 1,
-      "熊本": 1,
       "山形": 1,
       "宮城": 1,
       "埼玉": 1
@@ -31,6 +31,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "熊本 八代市新庁舎めぐる汚職事件 市議らが業者に賄賂要求か",
+      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116321000.html",
+      "date": "2026-05-07",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "磐越道バス事故 運転手“時速90～100キロで走行”と供述",
+      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116411000.html",
+      "date": "2026-05-07",
+      "prefecture": "福島",
+      "subtype": "crime_news",
+      "lat": 37.7502,
+      "lon": 140.4675,
+      "source": "nhk_crime"
+    },
     {
       "title": "東京 中央区 男性死亡ひき逃げ事件 乗用車ドライバーを逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116401000.html",
