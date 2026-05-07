@@ -5,7 +5,7 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-07T11:03:34+00:00",
+    "fetched_at": "2026-05-07T13:02:41+00:00",
     "total_count": 37,
     "source_counts": {
       "nhk_crime": 37
@@ -24,15 +24,35 @@
       "京都": 4,
       "千葉": 3,
       "東京": 2,
-      "山形": 1,
-      "福島": 1,
       "熊本": 1,
+      "福島": 1,
+      "山形": 1,
       "宮城": 1,
       "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "熊本 八代市新庁舎工事めぐり 市議ら あっせん収賄容疑で逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115941000.html",
+      "date": "2026-05-07",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "福島 磐越道で高校生ら21人死傷の事故 バス運転手を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116041000.html",
+      "date": "2026-05-07",
+      "prefecture": "福島",
+      "subtype": "crime_news",
+      "lat": 37.7502,
+      "lon": 140.4675,
+      "source": "nhk_crime"
+    },
     {
       "title": "山形 酒田 山林で男性の遺体 クマに襲われたか 各地で被害",
       "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116021000.html",
@@ -44,16 +64,6 @@
       "source": "nhk_crime"
     },
     {
-      "title": "磐越道 高校生死亡の事故 運転手の逮捕状請求【詳しく】",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116041000.html",
-      "date": "2026-05-07",
-      "prefecture": "福島",
-      "subtype": "crime_news",
-      "lat": 37.7502,
-      "lon": 140.4675,
-      "source": "nhk_crime"
-    },
-    {
       "title": "京都 男児殺害事件「本当の父親じゃないと言われ」趣旨の供述",
       "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116131000.html",
       "date": "2026-05-07",
@@ -61,16 +71,6 @@
       "subtype": "crime_news",
       "lat": 35.0116,
       "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "熊本 八代市新庁舎工事めぐり 市議ら あっせん収賄容疑で逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115941000.html",
-      "date": "2026-05-07",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
       "source": "nhk_crime"
     },
     {
