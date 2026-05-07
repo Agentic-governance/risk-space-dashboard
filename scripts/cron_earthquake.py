@@ -33,6 +33,14 @@ os.makedirs(NORM_DIR, exist_ok=True)
 # ── Constants ──────────────────────────────────────────────────────────────
 JMA_LIST_URL = "https://www.jma.go.jp/bosai/quake/data/list.json"
 JMA_DETAIL_URL = "https://www.jma.go.jp/bosai/quake/data/{event_id}.json"
+USGS_API_URL = (
+    "https://earthquake.usgs.gov/fdsnws/event/1/query"
+    "?format=geojson"
+    "&starttime={yesterday}"
+    "&minlatitude=24&maxlatitude=46"
+    "&minlongitude=122&maxlongitude=146"
+    "&minmagnitude=2"
+)
 HEADERS = {"User-Agent": "RiskSpaceMCP/1.0 (cron_earthquake)"}
 JST = timezone(timedelta(hours=9))
 
@@ -215,6 +223,72 @@ def enrich_from_detail(event_id: str, base: dict) -> dict:
 
     return base
 
+# ── USGS fallback ─────────────────────────────────────────────────────────
+
+def fetch_usgs_fallback(cutoff: datetime) -> list:
+    """
+    Fetch Japan-region earthquakes from USGS FDSN API as a fallback when JMA
+    is unavailable. Returns a list of normalized earthquake records.
+    """
+    yesterday = cutoff.strftime("%Y-%m-%d")
+    url = USGS_API_URL.format(yesterday=yesterday)
+    print(f"\n[FALLBACK] Trying USGS API: {url}")
+    data = fetch_json(url)
+    if not data:
+        print("  [WARN] USGS fallback also failed.", file=sys.stderr)
+        return []
+
+    features = data.get("features", [])
+    print(f"  USGS returned {len(features)} features")
+
+    earthquakes = []
+    for feat in features:
+        props = feat.get("properties", {})
+        geom = feat.get("geometry", {})
+        coords = geom.get("coordinates", [])  # [lon, lat, depth_km]
+
+        lon = round(coords[0], 4) if len(coords) > 0 else None
+        lat = round(coords[1], 4) if len(coords) > 1 else None
+        depth_km = round(coords[2], 1) if len(coords) > 2 and coords[2] is not None else None
+
+        magnitude = props.get("mag")
+        try:
+            magnitude = float(magnitude) if magnitude is not None else None
+        except (ValueError, TypeError):
+            magnitude = None
+
+        time_ms = props.get("time")
+        if time_ms:
+            dt_utc = datetime.fromtimestamp(time_ms / 1000, tz=timezone.utc)
+        else:
+            dt_utc = cutoff
+
+        record = {
+            "event_id": feat.get("id", ""),
+            "time": dt_utc.isoformat(timespec="seconds"),
+            "time_jst": dt_utc.astimezone(JST).isoformat(timespec="seconds"),
+            "lat": lat,
+            "lon": lon,
+            "magnitude": magnitude,
+            "depth_km": depth_km,
+            "max_shindo_raw": None,
+            "max_shindo": None,
+            "location_name": props.get("place", ""),
+            "source": "usgs_fdsn",
+        }
+        record["earthquake_multiplier"] = calc_earthquake_multiplier(
+            magnitude or 0.0,
+            depth_km,
+            None,
+        )
+        earthquakes.append(record)
+        mag_str = f"M{magnitude}" if magnitude else "M?"
+        print(f"  {mag_str:6s} {record['location_name'][:40]:<40s} "
+              f"mult={record['earthquake_multiplier']:.2f}")
+
+    return earthquakes
+
+
 # ── Main pipeline ──────────────────────────────────────────────────────────
 
 def main():
@@ -222,121 +296,131 @@ def main():
     cutoff = now_utc - timedelta(hours=24)
 
     print("=" * 60)
-    print("cron_earthquake.py — JMA Earthquake Fetcher")
+    print("cron_earthquake.py — JMA Earthquake Fetcher (+ USGS fallback)")
     print(f"  now_utc  : {now_utc.isoformat(timespec='seconds')}")
     print(f"  cutoff   : {cutoff.isoformat(timespec='seconds')} (last 24h)")
     print("=" * 60)
 
-    # 1. Fetch list
+    # 1. Fetch list from JMA
     print(f"\n[1] Fetching earthquake list: {JMA_LIST_URL}")
     raw_list = fetch_json(JMA_LIST_URL)
-    if not raw_list:
-        print("[FATAL] Could not fetch JMA earthquake list.", file=sys.stderr)
-        sys.exit(1)
-    print(f"  Total entries in list: {len(raw_list)}")
+    jma_ok = bool(raw_list)
+    if not jma_ok:
+        print("[WARN] Could not fetch JMA earthquake list — will try USGS fallback.",
+              file=sys.stderr)
+    else:
+        print(f"  Total entries in list: {len(raw_list)}")
 
-    # 2. Filter to last 24 hours
-    recent = []
-    for entry in raw_list:
-        # JMA list has "at" (announce time) and "en_anm" fields;
-        # use "at" (発生時刻) if available, else "areaNameEn"
-        time_raw = entry.get("at") or entry.get("anm") or ""
-        dt = parse_jma_time(time_raw)
-        if dt is None:
-            continue
-        # Ensure timezone-aware for comparison
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=JST)
-        dt_utc = dt.astimezone(timezone.utc)
-        if dt_utc >= cutoff:
-            recent.append((dt_utc, entry))
+    # If JMA failed, use USGS fallback immediately
+    if not jma_ok:
+        earthquakes = fetch_usgs_fallback(cutoff)
+        data_source = "USGS FDSN (JMA unavailable)"
+        data_url = USGS_API_URL.format(yesterday=cutoff.strftime("%Y-%m-%d"))
+    else:
+        # 2. Filter JMA list to last 24 hours
+        recent = []
+        for entry in raw_list:
+            # JMA list has "at" (announce time) and "en_anm" fields;
+            # use "at" (発生時刻) if available, else "areaNameEn"
+            time_raw = entry.get("at") or entry.get("anm") or ""
+            dt = parse_jma_time(time_raw)
+            if dt is None:
+                continue
+            # Ensure timezone-aware for comparison
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=JST)
+            dt_utc = dt.astimezone(timezone.utc)
+            if dt_utc >= cutoff:
+                recent.append((dt_utc, entry))
 
-    print(f"  Entries within last 24h: {len(recent)}")
+        print(f"  Entries within last 24h: {len(recent)}")
 
-    if not recent:
-        print("  No recent earthquakes. Writing empty result.")
+        if not recent:
+            print("  No recent earthquakes from JMA. Writing empty result.")
 
-    # 3. Process each entry
-    earthquakes = []
-    for idx, (dt_utc, entry) in enumerate(recent):
-        event_id = entry.get("json", "").replace(".json", "").strip("/") or \
-                   entry.get("id", "")
+        # 3. Process each JMA entry
+        earthquakes = []
+        data_source = "Japan Meteorological Agency (JMA)"
+        data_url = JMA_LIST_URL
+        for idx, (dt_utc, entry) in enumerate(recent):
+            event_id = entry.get("json", "").replace(".json", "").strip("/") or \
+                       entry.get("id", "")
 
-        # Parse list-level fields
-        code = entry.get("cod", "") or entry.get("code", "")
-        lat, lon, depth_km = parse_iso6709(code)
+            # Parse list-level fields
+            code = entry.get("cod", "") or entry.get("code", "")
+            lat, lon, depth_km = parse_iso6709(code)
 
-        # If list gave us lat/lon directly (some versions do)
-        if lat is None:
-            lat_raw = entry.get("lat", "")
-            lon_raw = entry.get("lon", "")
+            # If list gave us lat/lon directly (some versions do)
+            if lat is None:
+                lat_raw = entry.get("lat", "")
+                lon_raw = entry.get("lon", "")
+                try:
+                    lat = float(lat_raw) if lat_raw not in ("", None) else None
+                    lon = float(lon_raw) if lon_raw not in ("", None) else None
+                except (ValueError, TypeError):
+                    lat = lon = None
+
+            mag_raw = entry.get("mag", "") or entry.get("magnitude", "")
             try:
-                lat = float(lat_raw) if lat_raw not in ("", None) else None
-                lon = float(lon_raw) if lon_raw not in ("", None) else None
+                magnitude = float(mag_raw)
             except (ValueError, TypeError):
-                lat = lon = None
+                magnitude = None
 
-        mag_raw = entry.get("mag", "") or entry.get("magnitude", "")
-        try:
-            magnitude = float(mag_raw)
-        except (ValueError, TypeError):
-            magnitude = None
+            max_int_raw = entry.get("maxi", "") or entry.get("max_intensity", "")
+            max_shindo = parse_shindo(max_int_raw if max_int_raw not in ("", None) else None)
 
-        max_int_raw = entry.get("maxi", "") or entry.get("max_intensity", "")
-        max_shindo = parse_shindo(max_int_raw if max_int_raw not in ("", None) else None)
+            location_name = (
+                entry.get("en_anm") or entry.get("anm") or
+                entry.get("epicenter") or entry.get("location", "")
+            )
 
-        location_name = (
-            entry.get("en_anm") or entry.get("anm") or
-            entry.get("epicenter") or entry.get("location", "")
-        )
+            depth_raw = entry.get("dep", "") or entry.get("depth", "")
+            if depth_km is None and depth_raw not in ("", None):
+                try:
+                    # JMA sometimes gives depth in km directly
+                    depth_km = float(str(depth_raw).replace("km", "").strip())
+                except (ValueError, TypeError):
+                    pass
 
-        depth_raw = entry.get("dep", "") or entry.get("depth", "")
-        if depth_km is None and depth_raw not in ("", None):
-            try:
-                # JMA sometimes gives depth in km directly
-                depth_km = float(str(depth_raw).replace("km", "").strip())
-            except (ValueError, TypeError):
-                pass
+            record = {
+                "event_id": event_id,
+                "time": dt_utc.isoformat(timespec="seconds"),
+                "time_jst": dt_utc.astimezone(JST).isoformat(timespec="seconds"),
+                "lat": round(lat, 4) if lat is not None else None,
+                "lon": round(lon, 4) if lon is not None else None,
+                "magnitude": magnitude,
+                "depth_km": round(depth_km, 1) if depth_km is not None else None,
+                "max_shindo_raw": max_int_raw if max_int_raw not in ("", None) else None,
+                "max_shindo": max_shindo,
+                "location_name": location_name,
+                "source": "jma_quake_list",
+            }
 
-        record = {
-            "event_id": event_id,
-            "time": dt_utc.isoformat(timespec="seconds"),
-            "time_jst": dt_utc.astimezone(JST).isoformat(timespec="seconds"),
-            "lat": round(lat, 4) if lat is not None else None,
-            "lon": round(lon, 4) if lon is not None else None,
-            "magnitude": magnitude,
-            "depth_km": round(depth_km, 1) if depth_km is not None else None,
-            "max_shindo_raw": max_int_raw if max_int_raw not in ("", None) else None,
-            "max_shindo": max_shindo,
-            "location_name": location_name,
-            "source": "jma_quake_list",
-        }
+            # 4. Enrich from per-event detail (best-effort, skip if no event_id)
+            if event_id:
+                record = enrich_from_detail(event_id, record)
+                # Polite rate-limiting to JMA servers
+                if idx < len(recent) - 1:
+                    time.sleep(0.3)
 
-        # 4. Enrich from per-event detail (best-effort, skip if no event_id)
-        if event_id:
-            record = enrich_from_detail(event_id, record)
-            # Polite rate-limiting to JMA servers
-            if idx < len(recent) - 1:
-                time.sleep(0.3)
+            # 5. Compute earthquake_multiplier
+            record["earthquake_multiplier"] = calc_earthquake_multiplier(
+                magnitude or 0.0,
+                record.get("depth_km"),
+                record.get("max_shindo"),
+            )
 
-        # 5. Compute earthquake_multiplier
-        record["earthquake_multiplier"] = calc_earthquake_multiplier(
-            magnitude or 0.0,
-            record.get("depth_km"),
-            record.get("max_shindo"),
-        )
-
-        earthquakes.append(record)
-        mag_str = f"M{magnitude}" if magnitude else "M?"
-        shindo_str = f"shindo={max_int_raw}" if max_int_raw not in ("", None) else "shindo=?"
-        print(f"  [{idx + 1:3d}] {mag_str:6s} {shindo_str:12s} {location_name[:30]:<30s} "
-              f"mult={record['earthquake_multiplier']:.2f}")
+            earthquakes.append(record)
+            mag_str = f"M{magnitude}" if magnitude else "M?"
+            shindo_str = f"shindo={max_int_raw}" if max_int_raw not in ("", None) else "shindo=?"
+            print(f"  [{idx + 1:3d}] {mag_str:6s} {shindo_str:12s} {location_name[:30]:<30s} "
+                  f"mult={record['earthquake_multiplier']:.2f}")
 
     # 6. Save output
     output = {
         "metadata": {
-            "source": "Japan Meteorological Agency (JMA)",
-            "url": JMA_LIST_URL,
+            "source": data_source,
+            "url": data_url,
             "fetched_at": now_utc.isoformat(timespec="seconds"),
             "filter_window_hours": 24,
             "total_count": len(earthquakes),

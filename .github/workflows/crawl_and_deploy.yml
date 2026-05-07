@@ -53,7 +53,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests beautifulsoup4 chardet
+        run: pip install requests beautifulsoup4 chardet lxml
 
       - name: Ensure seen_hashes exists for dedup continuity
         run: |
@@ -81,6 +81,10 @@ jobs:
         run: python scripts/cron_traffic.py
         continue-on-error: true
 
+      - name: Fetch crime news (RSS)
+        run: python scripts/cron_news_crime.py
+        continue-on-error: true
+
       - name: Deep Crawl (4x daily at 00/06/12/18 UTC)
         run: |
           HOUR=$(date -u +%H)
@@ -97,14 +101,32 @@ jobs:
         run: python scripts/check_freshness.py
         continue-on-error: true
 
+      - name: Pipeline health report
+        run: python scripts/pipeline_health_report.py
+        continue-on-error: true
+
+      - name: SLO Quality Gate (data must meet thresholds to commit)
+        run: python scripts/pipeline_slo_gate.py
+        id: slo_gate
+        continue-on-error: true
+
       - name: Commit and push if changed
+        if: steps.slo_gate.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/earthquakes_latest.json docs/data/traffic_incidents_latest.json || true
+          git add -f docs/data/realtime_slim.json docs/data/amedas_current.json docs/data/summary.json docs/data/events_7days.json docs/data/earthquakes_latest.json docs/data/traffic_incidents_latest.json docs/data/news_crime_latest.json || true
           git add -f data/realtime/fushinsha_7days/week_events_geocoded.json data/realtime/seen_hashes.json || true
           git add -f docs/data/all_events_v2.json docs/data/deep_crawl.json 2>/dev/null || true
           git diff --cached --quiet || (git commit -m 'auto: police-crawl + weather update' && git push)
+
+      - name: Preserve seen_hashes even on SLO failure
+        if: steps.slo_gate.outcome == 'failure'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -f data/realtime/seen_hashes.json || true
+          git diff --cached --quiet || (git commit -m 'auto: seen_hashes only (SLO gate failed)' && git push)
 
       - name: Notify on failure
         if: failure()

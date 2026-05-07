@@ -13,14 +13,16 @@ import re
 import time
 import urllib.parse
 import urllib3
+import urllib.robotparser
 import os
 import sys
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from collections import defaultdict
 from typing import Optional, Tuple
 
 import requests
+from requests.exceptions import SSLError
 from bs4 import BeautifulSoup
 
 # === Paths ===
@@ -29,6 +31,7 @@ DATA_RT = BASE / "data" / "realtime"
 SOURCE_MAP = DATA_RT / "source_map.json"
 SEEN_HASHES = DATA_RT / "seen_hashes.json"
 SEEN_HASHES_ALT = BASE / "docs" / "data" / "seen_hashes.json"
+PAGE_STATE = DATA_RT / "page_last_modified.json"
 CITY_CENTROIDS = BASE / "data" / "crime" / "national" / "city_centroids.json"
 CITY_CENTROIDS_ALT = BASE / "docs" / "data" / "city_centroids.json"
 PREF_CENTROIDS = BASE / "data" / "crime" / "national" / "pref_centroids.json"
@@ -61,14 +64,27 @@ PREF_NAMES = [
     "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
 ]
 
+UA_LIST = [
+    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
+    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
+    'Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15',
+    'Mozilla/5.0 (iPad; CPU OS 16_0 like Mac OS X) AppleWebKit/605.1.15',
+]
+
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+    "User-Agent": random.choice(UA_LIST),
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
 }
 
-TODAY = datetime.now()
+TODAY = datetime.now(timezone.utc)
 WEEK_AGO = TODAY - timedelta(days=7)
+WEEK_AGO_DATE = WEEK_AGO.date()
+PROMO_BLACKLIST = [
+    "実現", "採用", "募集", "試験", "更新", "掲載", "お知らせ一覧", "サイトマップ",
+    "リンク集", "組織案内", "沿革", "プライバシー", "copyright",
+]
 
 # === Load reference data ===
 print("Loading reference data...")
@@ -79,15 +95,40 @@ except FileNotFoundError:
     print(f"[FATAL] source_map not found: {SOURCE_MAP}")
     sys.exit(1)
 
-if SEEN_HASHES.exists():
-    with open(SEEN_HASHES, "r") as f:
-        seen_hashes = set(json.load(f))
-elif SEEN_HASHES_ALT.exists():
-    with open(SEEN_HASHES_ALT, "r") as f:
-        seen_hashes = set(json.load(f))
-    print(f"  Loaded seen_hashes from fallback: {SEEN_HASHES_ALT}")
-else:
-    seen_hashes = set()
+# seen_hashes: dict {hash: ISO date} with 7-day TTL
+_raw_hashes = {}
+for _hp in [SEEN_HASHES, SEEN_HASHES_ALT]:
+    if _hp.exists():
+        with open(_hp, "r") as f:
+            _loaded = json.load(f)
+        # Support both old format (list) and new format (dict with dates)
+        if isinstance(_loaded, list):
+            _raw_hashes = {h: TODAY.strftime("%Y-%m-%d") for h in _loaded}
+        elif isinstance(_loaded, dict):
+            _raw_hashes = _loaded
+        break
+
+# Purge hashes older than 7 days (rolling window dedup)
+seen_hashes_dict = {}
+for h, d in _raw_hashes.items():
+    try:
+        if datetime.strptime(d, "%Y-%m-%d").date() >= WEEK_AGO_DATE:
+            seen_hashes_dict[h] = d
+    except Exception:
+        continue
+seen_hashes = set(seen_hashes_dict.keys())
+run_seen_hashes: set[str] = set()
+print(f"  seen_hashes: loaded {len(_raw_hashes)}, after 7d TTL purge: {len(seen_hashes)}")
+
+page_state = {}
+if PAGE_STATE.exists():
+    try:
+        with open(PAGE_STATE, "r", encoding="utf-8") as f:
+            loaded_state = json.load(f)
+        if isinstance(loaded_state, dict):
+            page_state = loaded_state
+    except Exception:
+        page_state = {}
 
 city_centroids = {}
 for _path in [CITY_CENTROIDS, CITY_CENTROIDS_ALT]:
@@ -122,6 +163,17 @@ def make_hash(text: str) -> str:
     return hashlib.md5(text.encode("utf-8")).hexdigest()
 
 
+def now_iso_utc() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def mark_seen_hash(h: str) -> None:
+    """Track dedup hashes in-run and with rolling TTL persistence."""
+    run_seen_hashes.add(h)
+    seen_hashes.add(h)
+    seen_hashes_dict[h] = TODAY.strftime("%Y-%m-%d")
+
+
 def extract_date(text: str) -> str | None:
     """Try to extract a date from Japanese text."""
     # 令和X年Y月Z日
@@ -146,6 +198,10 @@ def extract_address(text: str, pref_name: str) -> str | None:
     patterns = [
         # Full address with prefecture
         r'(' + re.escape(pref_name) + r'[^\s、。，]{3,30})',
+        # Police report format: 〇〇区〇〇町〇丁目
+        r'(\S{1,6}区\S{1,8}町\d{1,2}丁目)',
+        # Police report format: 〇〇市〇〇 (city + neighborhood)
+        r'(\S{1,6}市\S{1,10}(?:丁目|番地?|号|町)?)',
         # City/ward patterns
         r'(\S{1,5}(?:市|区|町|村)\S{0,20}(?:丁目|番地?|号)?)',
         # 〜付近, 〜において, 〜で
@@ -174,6 +230,18 @@ def extract_time(text: str) -> str | None:
     return None
 
 
+def is_valid_event(event: dict) -> bool:
+    snippet = (event.get("text_snippet") or "").strip()
+    if len(snippet) < 20:
+        return False
+    snippet_l = snippet.lower()
+    if any(term.lower() in snippet_l for term in PROMO_BLACKLIST):
+        return False
+    if not event.get("date") and not event.get("address_raw"):
+        return False
+    return True
+
+
 # Column header patterns that indicate an incident table
 _TABLE_DATE_HDRS  = re.compile(r'日時?|発生日|年月日')
 _TABLE_PLACE_HDRS = re.compile(r'場所|住所|発生場所|地区')
@@ -190,7 +258,7 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
     Returns a list of event dicts using the same schema as the keyword extraction.
     """
     events: list[dict] = []
-    scraped_at = datetime.now().isoformat()
+    scraped_at = now_iso_utc()
 
     # ------------------------------------------------------------------
     # 1. RSS feed detection
@@ -206,7 +274,7 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
             continue
         try:
             time.sleep(1.0)
-            rss_resp = session.get(rss_url, timeout=10, allow_redirects=True)
+            rss_resp = safe_get(rss_url, timeout=10, allow_redirects=True)
             rss_resp.encoding = rss_resp.apparent_encoding or "utf-8"
             rss_soup = BeautifulSoup(rss_resp.text, "xml")
 
@@ -246,13 +314,13 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
                 # Skip items older than 7 days
                 if date_str:
                     try:
-                        if datetime.strptime(date_str, "%Y-%m-%d") < WEEK_AGO:
+                        if datetime.strptime(date_str, "%Y-%m-%d").date() < WEEK_AGO_DATE:
                             continue
                     except ValueError:
                         pass
 
                 h = make_hash(combined[:400])
-                if h in seen_hashes:
+                if h in run_seen_hashes or h in seen_hashes:
                     continue
 
                 events.append({
@@ -274,7 +342,7 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
                     "geocode_method": None,
                     "extraction_method": "rss",
                 })
-                seen_hashes.add(h)
+                mark_seen_hash(h)
 
         except Exception as e:
             print(f"    [RSS] Error fetching {rss_url}: {e}")
@@ -326,14 +394,14 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
             date_str = extract_date(date_text) or extract_date(row_text)
             if date_str:
                 try:
-                    if datetime.strptime(date_str, "%Y-%m-%d") < WEEK_AGO:
+                    if datetime.strptime(date_str, "%Y-%m-%d").date() < WEEK_AGO_DATE:
                         continue
                 except ValueError:
                     pass
 
             addr = place_text or extract_address(row_text, pref_name)
             h = make_hash(row_text[:300])
-            if h in seen_hashes:
+            if h in run_seen_hashes or h in seen_hashes:
                 continue
 
             events.append({
@@ -355,7 +423,7 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
                 "geocode_method": None,
                 "extraction_method": "table",
             })
-            seen_hashes.add(h)
+            mark_seen_hash(h)
 
     # ------------------------------------------------------------------
     # 3. CSV / PDF download link detection
@@ -378,14 +446,59 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
 session = requests.Session()
 session.headers.update(HEADERS)
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-session.verify = False
+session.verify = True
+robots_cache: dict[str, urllib.robotparser.RobotFileParser] = {}
+
+
+def check_robots(url: str, user_agent: str | None = None) -> bool:
+    parsed = urllib.parse.urlparse(url)
+    if not parsed.scheme or not parsed.netloc:
+        return True
+    robots_url = f"{parsed.scheme}://{parsed.netloc}/robots.txt"
+    rp = robots_cache.get(robots_url)
+    try:
+        if rp is None:
+            rp = urllib.robotparser.RobotFileParser()
+            robots_resp = requests.get(
+                robots_url,
+                timeout=2,
+                headers={"User-Agent": user_agent or session.headers.get("User-Agent", "*")},
+            )
+            if robots_resp.status_code >= 400:
+                robots_cache[robots_url] = rp
+                return True
+            rp.parse(robots_resp.text.splitlines())
+            robots_cache[robots_url] = rp
+        return rp.can_fetch(user_agent or session.headers.get("User-Agent", "*"), url)
+    except Exception:
+        return True
+
+
+def safe_get(url: str, **kwargs):
+    try:
+        return session.get(url, **kwargs)
+    except SSLError:
+        kwargs["verify"] = False
+        return session.get(url, **kwargs)
+
+
+def safe_head(url: str, **kwargs):
+    try:
+        return session.head(url, **kwargs)
+    except SSLError:
+        kwargs["verify"] = False
+        return session.head(url, **kwargs)
 
 all_events = []
 stats = {"police_pages_checked": 0, "police_events": 0,
          "nordot_articles": 0, "nordot_events": 0,
          "geocoded_gsi": 0, "geocoded_city": 0, "geocoded_pref": 0,
-         "skipped_dup": 0, "errors": 0}
+         "skipped_dup": 0, "errors": 0, "date_missing_rate": 0.0,
+         "address_missing_rate": 0.0, "rejected_by_quality_gate": 0}
 pref_counts = defaultdict(int)
+quality_total = 0
+quality_date_missing = 0
+quality_address_missing = 0
 
 
 # ================================================================
@@ -414,8 +527,14 @@ for code in sorted(prefectures.keys()):
     base_url = police_sources[0]["url"]
     print(f"  [{code}] {pref_name}: {base_url}")
 
+    # Rotate user-agent per prefecture to reduce block risk
+    session.headers.update({"User-Agent": random.choice(UA_LIST)})
+
     try:
-        resp = session.get(base_url, timeout=10, allow_redirects=True)
+        if not check_robots(base_url, session.headers.get("User-Agent")):
+            print(f"    robots.txt disallow: {base_url}")
+            continue
+        resp = safe_get(base_url, timeout=10, allow_redirects=True)
         resp.encoding = resp.apparent_encoding or "utf-8"
         soup = BeautifulSoup(resp.text, "html.parser")
 
@@ -444,18 +563,39 @@ for code in sorted(prefectures.keys()):
         pages_to_check = [(base_url, soup)]
 
         for link_url, link_text in unique_links:
-            time.sleep(1.5)
             try:
-                r2 = session.get(link_url, timeout=10, allow_redirects=True)
+                state = page_state.get(link_url, {})
+                prev_lm = state.get("last_modified")
+                prev_etag = state.get("etag")
+
+                if not check_robots(link_url, session.headers.get("User-Agent")):
+                    continue
+                hresp = safe_head(link_url, timeout=6, allow_redirects=True)
+                curr_lm = hresp.headers.get("Last-Modified")
+                curr_etag = hresp.headers.get("ETag")
+                unchanged = (
+                    (curr_lm and prev_lm and curr_lm == prev_lm) or
+                    (curr_etag and prev_etag and curr_etag == prev_etag)
+                )
+                if unchanged:
+                    continue
+
+                r2 = safe_get(link_url, timeout=10, allow_redirects=True)
                 r2.encoding = r2.apparent_encoding or "utf-8"
-                pages_to_check.append((link_url, BeautifulSoup(r2.text, "html.parser")))
+                page_state[link_url] = {
+                    "last_modified": r2.headers.get("Last-Modified") or curr_lm,
+                    "etag": r2.headers.get("ETag") or curr_etag,
+                    "checked_at": now_iso_utc(),
+                }
+                pages_to_check.append((link_url, BeautifulSoup(r2.text, "html.parser"), True))
                 stats["police_pages_checked"] += 1
             except Exception as e:
                 print(f"    Sub-page error: {link_url} -> {e}")
                 stats["errors"] += 1
 
         # Extract events from all pages
-        for page_url, page_soup in pages_to_check:
+        pages_to_check = [(base_url, soup, True)] + [p for p in pages_to_check if len(p) == 3]
+        for page_url, page_soup, treat_all_new in pages_to_check:
             page_text = page_soup.get_text(separator="\n")
 
             # --- Method 1: keyword context windows (original approach) ---
@@ -470,7 +610,7 @@ for code in sorted(prefectures.keys()):
                     context = page_text[start:end].strip()
 
                     h = make_hash(context)
-                    if h in seen_hashes:
+                    if h in run_seen_hashes or ((h in seen_hashes) and not treat_all_new):
                         stats["skipped_dup"] += 1
                         continue
 
@@ -478,7 +618,7 @@ for code in sorted(prefectures.keys()):
                     if date_str:
                         try:
                             evt_date = datetime.strptime(date_str, "%Y-%m-%d")
-                            if evt_date < WEEK_AGO:
+                            if evt_date.date() < WEEK_AGO_DATE:
                                 continue
                         except ValueError:
                             pass
@@ -499,18 +639,26 @@ for code in sorted(prefectures.keys()):
                         "keyword_matched": keyword,
                         "text_snippet": context[:300],
                         "hash": h,
-                        "scraped_at": datetime.now().isoformat(),
+                        "scraped_at": now_iso_utc(),
                         "lat": None,
                         "lon": None,
                         "geocode_method": None,
                         "extraction_method": "keyword",
                     }
+                    quality_total += 1
+                    if not event.get("date"):
+                        quality_date_missing += 1
+                    if not event.get("address_raw"):
+                        quality_address_missing += 1
+                    if not is_valid_event(event):
+                        stats["rejected_by_quality_gate"] += 1
+                        continue
                     all_events.append(event)
-                    seen_hashes.add(h)
+                    mark_seen_hash(h)
                     # Periodic flush of seen_hashes
                     if len(seen_hashes) % 100 == 0:
                         with open(SEEN_HASHES, "w", encoding="utf-8") as _f:
-                            json.dump(sorted(list(seen_hashes)), _f)
+                            json.dump(seen_hashes_dict, _f)
                     stats["police_events"] += 1
                     pref_counts[pref_name] += 1
 
@@ -522,18 +670,26 @@ for code in sorted(prefectures.keys()):
                     ev["source_url"] = page_url
                 if not ev.get("prefecture_code"):
                     ev["prefecture_code"] = f"{int(code):02d}"
+                quality_total += 1
+                if not ev.get("date"):
+                    quality_date_missing += 1
+                if not ev.get("address_raw"):
+                    quality_address_missing += 1
+                if not is_valid_event(ev):
+                    stats["rejected_by_quality_gate"] += 1
+                    continue
                 all_events.append(ev)
                 stats["police_events"] += 1
                 pref_counts[pref_name] += 1
                 if len(seen_hashes) % 100 == 0:
                     with open(SEEN_HASHES, "w", encoding="utf-8") as _f:
-                        json.dump(sorted(list(seen_hashes)), _f)
+                        json.dump(seen_hashes_dict, _f)
 
     except Exception as e:
         print(f"    ERROR: {e}")
         stats["errors"] += 1
 
-    time.sleep(2.0)
+    time.sleep(0.1)
 
 print(f"\n  Part A complete: {stats['police_events']} events from {stats['police_pages_checked']} pages")
 
@@ -553,7 +709,7 @@ NORDOT_UNITS = {
 # nordot/news.jp uses dynamic loading - try API patterns
 # The units page lists articles. We'll try multiple page patterns.
 
-def crawl_nordot_unit(unit_name: str, unit_url: str, max_pages: int = 10, max_articles: int = 150):
+def crawl_nordot_unit(unit_name: str, unit_url: str, max_pages: int = 30, max_articles: int = 300):
     """Crawl a nordot/news.jp unit for articles."""
     articles = []
     article_urls = set()
@@ -570,7 +726,7 @@ def crawl_nordot_unit(unit_name: str, unit_url: str, max_pages: int = 10, max_ar
 
         try:
             time.sleep(1.5)
-            resp = session.get(url, timeout=15, allow_redirects=True)
+            resp = safe_get(url, timeout=15, allow_redirects=True)
             resp.encoding = "utf-8"
 
             if resp.status_code != 200:
@@ -609,13 +765,13 @@ for unit_name, unit_url in NORDOT_UNITS.items():
     articles = crawl_nordot_unit(unit_name, unit_url)
     print(f"  Found {len(articles)} article links")
 
-    for i, article in enumerate(articles[:150]):
+    for i, article in enumerate(articles[:300]):
         if stats["nordot_articles"] >= 300:
             break
 
         time.sleep(1.5)
         try:
-            resp = session.get(article["url"], timeout=15, allow_redirects=True)
+            resp = safe_get(article["url"], timeout=15, allow_redirects=True)
             resp.encoding = "utf-8"
             stats["nordot_articles"] += 1
 
@@ -632,7 +788,7 @@ for unit_name, unit_url in NORDOT_UNITS.items():
             full_text = title + "\n" + body_text
             h = make_hash(full_text[:500])
 
-            if h in seen_hashes:
+            if h in run_seen_hashes or h in seen_hashes:
                 stats["skipped_dup"] += 1
                 continue
 
@@ -691,17 +847,25 @@ for unit_name, unit_url in NORDOT_UNITS.items():
                 "keyword_matched": matched_kw,
                 "text_snippet": (title + " " + body_text[:200]).strip()[:300],
                 "hash": h,
-                "scraped_at": datetime.now().isoformat(),
+                "scraped_at": now_iso_utc(),
                 "lat": None,
                 "lon": None,
                 "geocode_method": None,
             }
+            quality_total += 1
+            if not event.get("date"):
+                quality_date_missing += 1
+            if not event.get("address_raw"):
+                quality_address_missing += 1
+            if not is_valid_event(event):
+                stats["rejected_by_quality_gate"] += 1
+                continue
             all_events.append(event)
-            seen_hashes.add(h)
+            mark_seen_hash(h)
             # Periodic flush of seen_hashes
             if len(seen_hashes) % 100 == 0:
                 with open(SEEN_HASHES, "w", encoding="utf-8") as _f:
-                    json.dump(sorted(list(seen_hashes)), _f)
+                    json.dump(seen_hashes_dict, _f)
             stats["nordot_events"] += 1
             if detected_pref:
                 pref_counts[detected_pref] += 1
@@ -734,7 +898,7 @@ def geocode_gsi(address: str) -> tuple | None:
 
     try:
         time.sleep(random.uniform(0.2, 0.5))
-        resp = session.get(GSI_URL, params={"q": address}, timeout=10)
+        resp = safe_get(GSI_URL, params={"q": address}, timeout=10)
         if resp.status_code == 200:
             results = resp.json()
             if results and len(results) > 0:
@@ -846,8 +1010,12 @@ print("\n" + "=" * 60)
 print("PART D: Saving Outputs")
 print("=" * 60)
 
+if quality_total > 0:
+    stats["date_missing_rate"] = quality_date_missing / quality_total
+    stats["address_missing_rate"] = quality_address_missing / quality_total
+
 output = {
-    "generated_at": datetime.now().isoformat(),
+    "generated_at": now_iso_utc(),
     "period": {
         "from": WEEK_AGO.strftime("%Y-%m-%d"),
         "to": TODAY.strftime("%Y-%m-%d"),
@@ -862,6 +1030,9 @@ output = {
         "nordot_events": stats["nordot_events"],
         "skipped_duplicates": stats["skipped_dup"],
         "errors": stats["errors"],
+        "date_missing_rate": stats["date_missing_rate"],
+        "address_missing_rate": stats["address_missing_rate"],
+        "rejected_by_quality_gate": stats["rejected_by_quality_gate"],
     },
     "events": all_events,
 }
@@ -877,10 +1048,19 @@ with open(DOCS_OUT, "w", encoding="utf-8") as f:
     json.dump(output, f, ensure_ascii=False, indent=2)
 print(f"  Saved: {DOCS_OUT}")
 
-# Update seen_hashes
+# Update seen_hashes (dict format with date for TTL)
+# Add today's date to any new hashes
+_today_str = TODAY.strftime("%Y-%m-%d")
+for h in seen_hashes:
+    if h not in seen_hashes_dict:
+        seen_hashes_dict[h] = _today_str
 with open(SEEN_HASHES, "w", encoding="utf-8") as f:
-    json.dump(sorted(list(seen_hashes)), f)
-print(f"  Updated seen_hashes: {len(seen_hashes)} entries")
+    json.dump(seen_hashes_dict, f)
+with open(SEEN_HASHES_ALT, "w", encoding="utf-8") as f:
+    json.dump(seen_hashes_dict, f)
+with open(PAGE_STATE, "w", encoding="utf-8") as f:
+    json.dump(page_state, f, ensure_ascii=False, indent=2)
+print(f"  Updated seen_hashes: {len(seen_hashes_dict)} entries (dict format with TTL)")
 
 # === Summary ===
 print("\n" + "=" * 60)

@@ -209,38 +209,42 @@ def extract_text_blocks(html: str) -> List[str]:
             blocks.append(t)
     return blocks
 
-# ── Source A: JARTIC road incidents page ──────────────────────────────────
+# ── Source A: Yahoo!道路交通情報 (disruption list) ───────────────────────
+# JARTIC (jartic.or.jp) returns 404 for its public HTML page; replaced with
+# Yahoo!道路交通情報 which provides equivalent disruption data.
 
-JARTIC_URL = "https://www.jartic.or.jp/d/general/gj_road.html"
+YAHOO_DISRUPTION_URL = "https://road.yahoo.co.jp/"
 
-def fetch_jartic() -> List[dict]:
+def fetch_yahoo_disruption() -> List[dict]:
     """
-    Scrape JARTIC general road information page.
-    JARTIC does not have a public REST API; this scrapes the HTML fallback.
-    Returns a list of normalized incident records (may be empty if site is JS-only).
+    Scrape Yahoo!道路交通情報 disruption list.
+    Returns normalized incident records.
     """
-    print(f"\n[A] Fetching JARTIC: {JARTIC_URL}")
-    html = fetch_url(JARTIC_URL)
+    print(f"\n[A] Fetching Yahoo!道路交通情報: {YAHOO_DISRUPTION_URL}")
+    html = fetch_url(YAHOO_DISRUPTION_URL)
     if not html:
-        print("  [SKIP] JARTIC not reachable or returned no content.")
+        print("  [SKIP] Yahoo!道路交通情報 not reachable.")
         return []
 
     incidents = []
     blocks = extract_text_blocks(html)
+    seen: set = set()
 
-    # Look for blocks containing incident keywords
     for block in blocks:
         itype, severity = classify_incident(block)
         if itype == "unknown":
             continue
-        # Try to extract a road name (e.g. "国道1号" or "東名高速")
+        key = block[:80]
+        if key in seen:
+            continue
+        seen.add(key)
         road_match = re.search(
-            r"(国道\d+号|都道\d+号|道道\d+号|府道\d+号|[東西南北中].*?(?:道|線|路|街道))",
+            r"(国道\d+号|都道\d+号|道道\d+号|府道\d+号|[東西南北中関].*?(?:道|線|路|街道|高速))",
             block,
         )
         road_name = road_match.group(0) if road_match else ""
         incidents.append({
-            "source": "jartic",
+            "source": "yahoo_road",
             "incident_type": itype,
             "severity": severity,
             "road_name": road_name,
@@ -302,8 +306,8 @@ def fetch_yahoo_road() -> List[dict]:
 # ── Source C: NHK News RSS (traffic-tagged items) ─────────────────────────
 
 NHK_RSS_URLS = [
-    "https://www3.nhk.or.jp/rss/news/cat0.xml",   # top news
-    "https://www3.nhk.or.jp/rss/news/cat3.xml",   # society
+    "https://www3.nhk.or.jp/rss/news/cat7.xml",   # society/traffic (事故/渋滞/通行止め)
+    "https://www3.nhk.or.jp/rss/news/cat0.xml",   # top news (fallback)
 ]
 
 TRAFFIC_KEYWORDS = {
@@ -343,6 +347,8 @@ def fetch_nhk_rss() -> List[dict]:
                 continue
 
             itype, severity = classify_incident(combined)
+            if itype == "unknown":
+                itype, severity = "restriction", 1
 
             # Parse pubDate: "Fri, 05 Apr 2026 03:00:00 +0900"
             incident_time = None
@@ -427,7 +433,7 @@ def main():
     all_incidents: List[dict] = []
 
     # Collect from all sources (sequential to be polite)
-    all_incidents.extend(fetch_jartic())
+    all_incidents.extend(fetch_yahoo_disruption())
     time.sleep(1)
     all_incidents.extend(fetch_yahoo_road())
     time.sleep(1)
@@ -470,7 +476,7 @@ def main():
     # Build output
     output = {
         "metadata": {
-            "sources": ["jartic", "yahoo_transit", "nhk_rss", "mlit_road"],
+            "sources": ["yahoo_road", "yahoo_transit", "nhk_rss", "mlit_road"],
             "fetched_at": now_utc.isoformat(timespec="seconds"),
             "fetched_at_jst": now_jst.isoformat(timespec="seconds"),
             "total_count": len(enriched),
@@ -478,13 +484,14 @@ def main():
             "type_counts": dict(type_counts),
             "description": (
                 "Real-time road traffic incidents in Japan. "
-                "Aggregated from JARTIC, Yahoo!道路情報, NHK RSS, and MLIT. "
+                "Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. "
                 "traffic_multiplier reflects incident impact on local risk model."
             ),
             "notes": (
-                "JARTIC does not expose a documented public REST API. "
-                "Lat/lon is available only when the source provides coordinates directly. "
-                "NHK RSS items are national; road_name extraction is best-effort."
+                "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) "
+                "due to 404 errors on the JARTIC public page. "
+                "NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). "
+                "Lat/lon is available only when the source provides coordinates directly."
             ),
         },
         "incidents": enriched,

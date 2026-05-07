@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Check freshness of critical JSON data files."""
 
+import json
 import os
 import sys
 from datetime import datetime, timezone
@@ -24,6 +25,10 @@ CRITICAL_FILES = {
 
 MAX_AGE_HOURS = 2
 HIST_WARN_DAYS = 7
+
+# Minimum row/event counts
+MIN_SLIM_ROWS = 50
+MIN_EVENTS = 20
 
 
 def check_files():
@@ -89,9 +94,62 @@ def check_files():
     return any_problem
 
 
+def check_data_volume(found: dict[str, Path]) -> bool:
+    """Check minimum row/event counts. Returns True if any volume check fails."""
+    low_volume = False
+
+    # Check realtime_slim.json row count
+    slim_path = found.get("realtime_slim.json")
+    if slim_path and slim_path.exists():
+        try:
+            with open(slim_path, "r", encoding="utf-8") as f:
+                slim_data = json.load(f)
+            n = len(slim_data) if isinstance(slim_data, list) else 0
+            if n < MIN_SLIM_ROWS:
+                print(f"[WARN] LOW DATA: realtime_slim has only {n} rows (minimum {MIN_SLIM_ROWS} expected)")
+                low_volume = True
+        except Exception as e:
+            print(f"[WARN] Could not read realtime_slim.json for volume check: {e}")
+
+    # Check events_7days.json event count
+    events_path = found.get("events_7days.json")
+    if events_path and events_path.exists():
+        try:
+            with open(events_path, "r", encoding="utf-8") as f:
+                events_data = json.load(f)
+            if isinstance(events_data, dict):
+                n = len(events_data.get("events", []))
+            elif isinstance(events_data, list):
+                n = len(events_data)
+            else:
+                n = 0
+            if n < MIN_EVENTS:
+                print(f"[WARN] LOW DATA: events_7days has only {n} events (minimum {MIN_EVENTS} expected)")
+                low_volume = True
+        except Exception as e:
+            print(f"[WARN] Could not read events_7days.json for volume check: {e}")
+
+    return low_volume
+
+
 def main():
+    # Build found map once for reuse
+    found: dict[str, Path] = {}
+    for d in SEARCH_DIRS:
+        if d.exists():
+            for p in d.glob("*.json"):
+                found[p.name] = p
+
     any_problem = check_files()
-    sys.exit(1 if any_problem else 0)
+    low_volume = check_data_volume(found)
+
+    if low_volume and not any_problem:
+        # Files are fresh but data volume is low -> exit code 2 (warning)
+        sys.exit(2)
+    elif any_problem:
+        sys.exit(1)
+    else:
+        sys.exit(0)
 
 
 if __name__ == "__main__":
