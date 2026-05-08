@@ -5,24 +5,24 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-08T08:13:17+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-05-08T10:06:48+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 31
+      "nhk_crime": 33
     },
     "type_counts": {
+      "crime_news": 26,
       "assault": 1,
-      "crime_news": 24,
       "murder": 4,
       "kidnapping": 1,
       "theft": 1
     },
     "top_prefectures": {
       "岩手": 6,
+      "熊本": 4,
       "京都": 4,
       "北海道": 4,
-      "熊本": 3,
-      "福島": 2,
+      "福島": 3,
       "千葉": 2,
       "富山": 1,
       "東京": 1,
@@ -32,6 +32,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "磐越道 部活バス21人死傷事故 運転手“居眠り運転していない”",
+      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116521000.html",
+      "date": "2026-05-08",
+      "prefecture": "福島",
+      "subtype": "crime_news",
+      "lat": 37.7502,
+      "lon": 140.4675,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "熊本 八代新庁舎汚職事件 別のゼネコンに不利な評価案提示か",
+      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116911000.html",
+      "date": "2026-05-08",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
     {
       "title": "娘への性的暴行の罪に問われた父親 上告せず懲役8年の刑が確定",
       "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116771000.html",
