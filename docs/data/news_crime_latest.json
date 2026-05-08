@@ -5,12 +5,13 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-08T04:58:58+00:00",
-    "total_count": 30,
+    "fetched_at": "2026-05-08T08:13:17+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 30
+      "nhk_crime": 31
     },
     "type_counts": {
+      "assault": 1,
       "crime_news": 24,
       "murder": 4,
       "kidnapping": 1,
@@ -23,14 +24,24 @@
       "熊本": 3,
       "福島": 2,
       "千葉": 2,
+      "富山": 1,
       "東京": 1,
       "山形": 1,
-      "宮城": 1,
-      "埼玉": 1
+      "宮城": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "娘への性的暴行の罪に問われた父親 上告せず懲役8年の刑が確定",
+      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116771000.html",
+      "date": "2026-05-08",
+      "prefecture": "富山",
+      "subtype": "assault",
+      "lat": 36.6959,
+      "lon": 137.2137,
+      "source": "nhk_crime"
+    },
     {
       "title": "岩手 大槌町 山林火災で取りやめ続いたウニ漁を開始",
       "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116691000.html",
