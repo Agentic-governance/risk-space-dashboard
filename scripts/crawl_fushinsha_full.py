@@ -64,6 +64,22 @@ PREF_NAMES = [
     "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
 ]
 
+def normalize_pref_name(name):
+    if not name:
+        return name
+    name = name.strip()
+    if name == "北海道":
+        return name
+    if name in ("東京", "東京都"):
+        return "東京都"
+    if name in ("京都", "京都府"):
+        return "京都府"
+    if name in ("大阪", "大阪府"):
+        return "大阪府"
+    if not name.endswith(("都", "府", "県")):
+        name += "県"
+    return name
+
 UA_LIST = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
@@ -266,6 +282,7 @@ def extract_structured_data(soup: BeautifulSoup, pref_name: str) -> list[dict]:
 
     Returns a list of event dicts using the same schema as the keyword extraction.
     """
+    pref_name = normalize_pref_name(pref_name)
     events: list[dict] = []
     scraped_at = now_iso_utc()
 
@@ -525,6 +542,7 @@ for code in sorted(prefectures.keys()):
         continue
     info = prefectures[code]
     pref_name = info.get("prefecture", "")
+    pref_name = normalize_pref_name(pref_name)
     if not pref_name:
         continue
 
@@ -816,6 +834,7 @@ for unit_name, unit_url in NORDOT_UNITS.items():
                     if pn in full_text[:200]:
                         detected_pref = pn
                         break
+            detected_pref = normalize_pref_name(detected_pref)
 
             date_str = extract_date(full_text)
             addr = None
