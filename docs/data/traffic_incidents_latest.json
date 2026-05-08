@@ -6,25 +6,24 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-07T23:49:21+00:00",
-    "fetched_at_jst": "2026-05-08T08:49:21+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-08T02:04:41+00:00",
+    "fetched_at_jst": "2026-05-08T11:04:41+09:00",
+    "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 3,
       "disaster": 1,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260507_0000",
+      "event_id": "traffic_20260508_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-07T23:49:21+00:00",
+      "occurred_at": "2026-05-08T02:04:41+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260507_0001",
+      "event_id": "traffic_20260508_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -47,12 +46,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-07T23:49:21+00:00",
+      "occurred_at": "2026-05-08T02:04:41+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260507_0002",
+      "event_id": "traffic_20260508_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -61,12 +60,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-07T23:49:21+00:00",
+      "occurred_at": "2026-05-08T02:04:41+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260507_0003",
+      "event_id": "traffic_20260508_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -75,36 +74,22 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-07T23:49:21+00:00",
+      "occurred_at": "2026-05-08T02:04:41+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260507_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "関西電力 美浜原発3号機 蒸気漏れで運転停止 外部への影響なし — 原子力規制庁によりますと、8日午前4時すぎ、福井県美浜町にある関西電力の美浜原発3号機で、発電用のタービン周辺から蒸気が漏れているのを運転員が確認し、午前4時20分ごろ、原子炉を手動で停止させたということです。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-07T23:15:21+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116501000.html",
-      "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260507_0005",
+      "event_id": "traffic_20260508_0004",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "磐越道バス事故 運転手“時速90～100キロで走行”と供述 — 福島県郡山市の磐越自動車道で部活動で遠征中の新潟県の高校生などが死傷したマイクロバス事故で、過失運転致死傷の疑いで逮捕された68歳の運転手が調べに対して「時速90キロから100キロで走行していた」などと供述していることが警察への取材で分かりました。現場付近の制限速度は時速80キロで、警察が事故の原因などを調べています。",
+      "description": "磐越道 高校生など21人死傷事故 バス運行会社を捜索 福島県警 — 6日、福島県の磐越自動車道で、部活動で遠征中の新潟県の高校生たちが乗ったマイクロバスがガードレールに突っ込むなどして21人が死傷した事故で、福島県警察本部は8日午前、車や運転手の手配などに関わった新潟県五泉市にあるバス運行会社に捜索に入りました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-07T20:01:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116411000.html",
+      "occurred_at": "2026-05-08T01:09:41+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116521000.html",
       "traffic_multiplier": 1.6
     }
   ]
