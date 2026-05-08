@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-08T22:49:38+00:00",
+    "fetched_at": "2026-05-08T23:39:44+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260509080726_20260509080446_VXSE5k_1",
+      "time": "2026-05-08T23:04:00+00:00",
+      "time_jst": "2026-05-09T08:04:00+09:00",
+      "lat": 36.6,
+      "lon": 137.9,
+      "magnitude": 2.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Northern Nagano Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260509021409_20260509021022_VXSE5k_1",
       "time": "2026-05-08T17:10:00+00:00",
@@ -91,48 +105,6 @@
       "location_name": "Adjacent Sea of Tokara Islands",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260508083606_20260508083122_VXSE5k_1",
-      "time": "2026-05-07T23:31:00+00:00",
-      "time_jst": "2026-05-08T08:31:00+09:00",
-      "lat": 37.5,
-      "lon": 141.6,
-      "magnitude": 4.6,
-      "depth_km": 50.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260508083409_20260508083122_VXSE52_0",
-      "time": "2026-05-07T23:31:00+00:00",
-      "time_jst": "2026-05-08T08:31:00+09:00",
-      "lat": 37.5,
-      "lon": 141.6,
-      "magnitude": 4.6,
-      "depth_km": 50.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260508083255_20260508083122_VXSE51_0",
-      "time": "2026-05-07T23:31:00+00:00",
-      "time_jst": "2026-05-08T08:31:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }

@@ -3,9 +3,14 @@
     "sources": [
       "nhk_crime",
       "nhk_society",
-      "mainichi_flash"
+      "mainichi_flash",
+      "hokkaido_np_incident",
+      "nishinippon_incident",
+      "chunichi_incident",
+      "kahoku_incident",
+      "sankei_flash"
     ],
-    "fetched_at": "2026-05-08T22:49:52+00:00",
+    "fetched_at": "2026-05-08T23:39:58+00:00",
     "total_count": 28,
     "source_counts": {
       "nhk_crime": 28
