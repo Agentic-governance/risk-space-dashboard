@@ -5,20 +5,20 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-08T19:55:51+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-05-08T20:49:54+00:00",
+    "total_count": 28,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 28
     },
     "type_counts": {
-      "crime_news": 21,
+      "crime_news": 22,
       "assault": 1,
       "murder": 4,
       "kidnapping": 1
     },
     "top_prefectures": {
+      "熊本": 5,
       "岩手": 5,
-      "熊本": 4,
       "京都": 4,
       "福島": 3,
       "北海道": 3,
@@ -31,6 +31,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "八代市新庁舎めぐる汚職事件 地元土木会社代表通じやりとりか",
+      "url": "http://www3.nhk.or.jp/news/html/20260509/k10015117081000.html",
+      "date": "2026-05-08",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
     {
       "title": "磐越道 部活バス21人死傷事故 運転手“居眠り運転していない”",
       "url": "http://www3.nhk.or.jp/news/html/20260508/k10015116521000.html",
