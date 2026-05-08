@@ -61,6 +61,31 @@ RSS_FEEDS = [
         "url": "https://mainichi.jp/rss/etc/mainichi-flash.rss",
         "description": "毎日新聞フラッシュ",
     },
+    {
+        "name": "hokkaido_np_incident",
+        "url": "https://www.hokkaido-np.co.jp/rss/news/incident.rdf",
+        "description": "北海道新聞事件",
+    },
+    {
+        "name": "nishinippon_incident",
+        "url": "https://www.nishinippon.co.jp/rss/incident.xml",
+        "description": "西日本新聞事件",
+    },
+    {
+        "name": "chunichi_incident",
+        "url": "https://www.chunichi.co.jp/rss/incident.xml",
+        "description": "中日新聞事件",
+    },
+    {
+        "name": "kahoku_incident",
+        "url": "https://kahoku.news/rss/incident.xml",
+        "description": "河北新報事件",
+    },
+    {
+        "name": "sankei_flash",
+        "url": "https://www.sankei.com/rss/flash/flash-n-flash.xml",
+        "description": "産経新聞事件",
+    },
 ]
 
 # Crime keywords for filtering

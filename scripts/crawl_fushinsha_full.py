@@ -789,7 +789,7 @@ for unit_name, unit_url in NORDOT_UNITS.items():
     print(f"\n  Crawling unit: {unit_name}")
     print(f"  URL: {unit_url}")
 
-    articles = crawl_nordot_unit(unit_name, unit_url)
+    articles = crawl_nordot_unit(unit_name, unit_url, max_pages=30)
     print(f"  Found {len(articles)} article links")
 
     url_dedup: set[str] = set()
@@ -1047,6 +1047,9 @@ print("=" * 60)
 if quality_total > 0:
     stats["date_missing_rate"] = quality_date_missing / quality_total
     stats["address_missing_rate"] = quality_address_missing / quality_total
+stats["zero_event_prefectures"] = [
+    pref for pref in PREF_NAMES[1:] if pref_counts.get(pref, 0) == 0
+]
 
 output = {
     "generated_at": now_iso_utc(),
@@ -1067,6 +1070,7 @@ output = {
         "date_missing_rate": stats["date_missing_rate"],
         "address_missing_rate": stats["address_missing_rate"],
         "rejected_by_quality_gate": stats["rejected_by_quality_gate"],
+        "zero_event_prefectures": stats["zero_event_prefectures"],
     },
     "events": all_events,
 }
@@ -1114,5 +1118,9 @@ for pref in PREF_NAMES[1:]:
     count = pref_counts.get(pref, 0)
     if count > 0:
         print(f"    {pref}: {count}")
-print(f"\n  Prefectures with 0 events: {47 - min(len(pref_counts), 47)}")
+print(f"\n  Prefectures with 0 events: {len(stats['zero_event_prefectures'])}")
+if stats["zero_event_prefectures"]:
+    print("  zero_event_prefectures:")
+    for pref in stats["zero_event_prefectures"]:
+        print(f"    {pref}")
 print("\nDone.")
