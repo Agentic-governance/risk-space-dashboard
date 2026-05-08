@@ -5,29 +5,28 @@
       "nhk_society",
       "mainichi_flash"
     ],
-    "fetched_at": "2026-05-08T15:12:03+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-05-08T16:53:21+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 27
     },
     "type_counts": {
-      "crime_news": 26,
+      "crime_news": 21,
       "assault": 1,
       "murder": 4,
-      "kidnapping": 1,
-      "theft": 1
+      "kidnapping": 1
     },
     "top_prefectures": {
-      "岩手": 6,
+      "岩手": 5,
       "熊本": 4,
       "京都": 4,
-      "北海道": 4,
       "福島": 3,
-      "千葉": 2,
+      "北海道": 3,
       "富山": 1,
       "東京": 1,
       "山形": 1,
-      "宮城": 1
+      "宮城": 1,
+      "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -300,66 +299,6 @@
       "subtype": "crime_news",
       "lat": 43.0642,
       "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "愛媛 今治で住宅火災 2人が遺体で見つかる 母と次男か",
-      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113521000.html",
-      "date": "2026-05-02",
-      "prefecture": "愛媛",
-      "subtype": "crime_news",
-      "lat": 33.8417,
-      "lon": 132.7657,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 福生 高校生殴打事件 車で逃走中に周囲を頻繁に警戒か",
-      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113331000.html",
-      "date": "2026-05-02",
-      "prefecture": "千葉",
-      "subtype": "crime_news",
-      "lat": 35.6073,
-      "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "旭山動物園 逮捕の職員 当日は通常勤務 退勤後の行動調べる",
-      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113181000.html",
-      "date": "2026-05-02",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町山林火災 町が「鎮圧」宣言 火災は沈静化",
-      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113391000.html",
-      "date": "2026-05-02",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "群馬 河川敷に男性遺体 窃盗疑いで逮捕の容疑者事情知るか捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113421000.html",
-      "date": "2026-05-02",
-      "prefecture": "群馬",
-      "subtype": "theft",
-      "lat": 36.3911,
-      "lon": 139.0608,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 福生 ハンマー殴打事件 おととい千葉で逃走車両発見か",
-      "url": "http://www3.nhk.or.jp/news/html/20260502/k10015113131000.html",
-      "date": "2026-05-01",
-      "prefecture": "千葉",
-      "subtype": "crime_news",
-      "lat": 35.6073,
-      "lon": 140.1063,
       "source": "nhk_crime"
     }
   ]
