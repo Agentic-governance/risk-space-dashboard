@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-08T23:51:46+00:00",
-    "fetched_at_jst": "2026-05-09T08:51:46+09:00",
+    "fetched_at": "2026-05-09T01:56:17+00:00",
+    "fetched_at_jst": "2026-05-09T10:56:17+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
@@ -23,7 +23,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260508_0000",
+      "event_id": "traffic_20260509_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-08T23:51:46+00:00",
+      "occurred_at": "2026-05-09T01:56:17+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260508_0001",
+      "event_id": "traffic_20260509_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +46,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-08T23:51:46+00:00",
+      "occurred_at": "2026-05-09T01:56:17+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260508_0002",
+      "event_id": "traffic_20260509_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +60,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-08T23:51:46+00:00",
+      "occurred_at": "2026-05-09T01:56:17+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260508_0003",
+      "event_id": "traffic_20260509_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,12 +74,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-08T23:51:46+00:00",
+      "occurred_at": "2026-05-09T01:56:17+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260508_0004",
+      "event_id": "traffic_20260509_0004",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -88,7 +88,7 @@
       "description": "磐越道 部活バス事故 運行会社“以前もレンタカーのバス手配” — 福島県の磐越自動車道で、部活動の遠征でマイクロバスに乗っていた新潟県の高校生など21人が死傷した事故で、バス運行会社が以前にも高校側の依頼で、レンタカーのバスを複数回手配したと説明していることが捜査関係者への取材でわかりました。事故をめぐって高校は、レンタカーを依頼した事実はないと否定しています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-08T20:56:52+00:00",
+      "occurred_at": "2026-05-09T01:44:02+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260509/k10015117091000.html",
       "traffic_multiplier": 1.6
     }
