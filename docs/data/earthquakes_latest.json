@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-09T01:56:14+00:00",
+    "fetched_at": "2026-05-09T03:35:26+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260509114553_20260509114305_VXSE5k_1",
+      "time": "2026-05-09T02:43:00+00:00",
+      "time_jst": "2026-05-09T11:43:00+09:00",
+      "lat": 38.7,
+      "lon": 141.4,
+      "magnitude": 3.5,
+      "depth_km": 80.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Northern Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
     {
       "event_id": "20260509103019_20260509102706_VXSE5k_1",
       "time": "2026-05-09T01:27:00+00:00",
