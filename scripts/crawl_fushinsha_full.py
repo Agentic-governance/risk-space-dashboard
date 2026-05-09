@@ -508,13 +508,6 @@ def safe_get(url: str, **kwargs):
         return session.get(url, **kwargs)
 
 
-def safe_head(url: str, **kwargs):
-    try:
-        return session.head(url, **kwargs)
-    except SSLError:
-        kwargs["verify"] = False
-        return session.head(url, **kwargs)
-
 all_events = []
 stats = {"police_pages_checked": 0, "police_events": 0,
          "nordot_articles": 0, "nordot_events": 0,
@@ -591,27 +584,14 @@ for code in sorted(prefectures.keys()):
 
         for link_url, link_text in unique_links:
             try:
-                state = page_state.get(link_url, {})
-                prev_lm = state.get("last_modified")
-                prev_etag = state.get("etag")
-
                 if not check_robots(link_url, session.headers.get("User-Agent")):
-                    continue
-                hresp = safe_head(link_url, timeout=6, allow_redirects=True)
-                curr_lm = hresp.headers.get("Last-Modified")
-                curr_etag = hresp.headers.get("ETag")
-                unchanged = (
-                    (curr_lm and prev_lm and curr_lm == prev_lm) or
-                    (curr_etag and prev_etag and curr_etag == prev_etag)
-                )
-                if unchanged and TODAY.weekday() != 0:
                     continue
 
                 r2 = safe_get(link_url, timeout=10, allow_redirects=True)
                 r2.encoding = r2.apparent_encoding or "utf-8"
                 page_state[link_url] = {
-                    "last_modified": r2.headers.get("Last-Modified") or curr_lm,
-                    "etag": r2.headers.get("ETag") or curr_etag,
+                    "last_modified": r2.headers.get("Last-Modified"),
+                    "etag": r2.headers.get("ETag"),
                     "checked_at": now_iso_utc(),
                 }
                 pages_to_check.append((link_url, BeautifulSoup(r2.text, "html.parser"), True))
