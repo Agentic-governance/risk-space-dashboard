@@ -45,13 +45,25 @@ DOCS_OUT.parent.mkdir(parents=True, exist_ok=True)
 
 # === Constants ===
 KEYWORDS = ["不審者", "声かけ", "つきまとい", "痴漢", "盗撮", "わいせつ", "露出",
-            "ひったくり", "強盗", "暴行", "刃物", "クマ", "特殊詐欺"]
+            "ひったくり", "強盗", "暴行", "刃物", "クマ", "特殊詐欺",
+            "窃盗", "侵入", "車上狙い", "自転車盗", "万引き", "空き巣",
+            "詐欺", "還付金", "架空請求", "恐喝", "脅迫", "殺人", "傷害",
+            "放火", "器物損壊", "交通事故", "死亡事故", "ひき逃げ",
+            "行方不明", "迷子", "徘徊", "水難", "遭難"]
 
 KEYWORD_TO_SUBTYPE = {
     "不審者": "suspicious_person", "声かけ": "solicitation", "つきまとい": "stalking",
     "痴漢": "groping", "盗撮": "voyeurism", "わいせつ": "indecent_act",
     "露出": "exposure", "ひったくり": "purse_snatching", "強盗": "robbery",
     "暴行": "assault", "刃物": "weapon", "クマ": "bear", "特殊詐欺": "fraud",
+    "窃盗": "theft", "侵入": "burglary", "車上狙い": "car_breakin",
+    "自転車盗": "bicycle_theft", "万引き": "shoplifting", "空き巣": "burglary",
+    "詐欺": "fraud", "還付金": "fraud", "架空請求": "fraud",
+    "恐喝": "extortion", "脅迫": "threat", "殺人": "murder", "傷害": "injury",
+    "放火": "arson", "器物損壊": "vandalism",
+    "交通事故": "traffic_accident", "死亡事故": "fatal_accident", "ひき逃げ": "hit_and_run",
+    "行方不明": "missing_person", "迷子": "lost_child", "徘徊": "wandering",
+    "水難": "drowning", "遭難": "distress",
 }
 
 PREF_NAMES = [
