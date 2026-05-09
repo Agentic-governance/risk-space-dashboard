@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-09T09:02:27+00:00",
+    "fetched_at": "2026-05-09T10:07:23+00:00",
     "filter_window_hours": 24,
     "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260509182253_20260509181958_VXSE5k_1",
+      "time": "2026-05-09T09:19:00+00:00",
+      "time_jst": "2026-05-09T18:19:00+09:00",
+      "lat": 39.3,
+      "lon": 142.1,
+      "magnitude": 4.0,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20260509114553_20260509114305_VXSE5k_1",
       "time": "2026-05-09T02:43:00+00:00",
@@ -63,20 +77,6 @@
       "location_name": "Off the Coast of Sanriku",
       "source": "jma_quake_list",
       "earthquake_multiplier": 2.0
-    },
-    {
-      "event_id": "20260508190441_20260508190138_VXSE5k_1",
-      "time": "2026-05-08T10:01:00+00:00",
-      "time_jst": "2026-05-08T19:01:00+09:00",
-      "lat": 32.7,
-      "lon": 130.6,
-      "magnitude": 3.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
