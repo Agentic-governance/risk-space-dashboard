@@ -3,7 +3,7 @@
     "description": "Historical traffic accident statistics for Japan (2020-2024). Primary source: National Police Agency (警察庁) Open Data. Aggregated by prefecture and month.",
     "primary_source": "https://www.npa.go.jp/publications/statistics/koutsuu/opendata/",
     "alternative_source": "https://api.e-stat.go.jp/rest/3.0/app/json/getStatsData",
-    "fetched_at": "2026-05-04T01:52:42+00:00",
+    "fetched_at": "2026-05-11T02:59:37+00:00",
     "years_requested": [
       2020,
       2021,
