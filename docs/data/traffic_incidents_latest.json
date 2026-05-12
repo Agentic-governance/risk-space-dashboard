@@ -6,15 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-09T11:30:17+00:00",
-    "fetched_at_jst": "2026-05-09T20:30:17+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-12T13:07:43+00:00",
+    "fetched_at_jst": "2026-05-12T22:07:43+09:00",
+    "total_count": 8,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 2
+      "yahoo_transit": 5,
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 5,
+      "construction": 1,
       "disaster": 1,
       "congestion": 1
     },
@@ -23,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260509_0000",
+      "event_id": "traffic_20260512_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +33,26 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-09T11:30:17+00:00",
+      "occurred_at": "2026-05-12T13:07:43+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260509_0001",
+      "event_id": "traffic_20260512_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "construction",
+      "severity": 1,
+      "road_name": "",
+      "description": "保守工事の影響で、14日までの各...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-12T13:07:43+00:00",
+      "url": "",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260512_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-09T11:30:17+00:00",
+      "occurred_at": "2026-05-12T13:07:43+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260509_0002",
+      "event_id": "traffic_20260512_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-09T11:30:17+00:00",
+      "occurred_at": "2026-05-12T13:07:43+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260509_0003",
+      "event_id": "traffic_20260512_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,12 +89,26 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-09T11:30:17+00:00",
+      "occurred_at": "2026-05-12T13:07:43+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260509_0004",
+      "event_id": "traffic_20260512_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "プロ野球 「危険スイング」のバッターに退場などの新ルール — 先月、プロ野球の試合でバッターの手から離れたバットが球審の頭部を直撃した事故を受け、NPB＝日本野球機構が危険なスイングをしたバッターに対して警告や退場のペナルティーを適用するルールを新たに導入することになりました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-11T12:25:29+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118781000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260512_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -93,17 +122,17 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260509_0005",
+      "event_id": "traffic_20260512_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "磐越道 部活バス事故 運転手は数か月で複数回事故起こしたか — 福島県の磐越自動車道で、部活動の遠征でマイクロバスに乗っていた新潟県の高校生など21人が死傷した事故で、バスを運転していた68歳の容疑者が、この数か月で複数回、事故を起こしていたとみられることが捜査関係者への取材でわかりました。警察はこれまでの運転状況や今回の事故の原因について詳しく調べています。",
+      "description": "磐越道 部活バス事故 生徒が事故直前に動画撮影 “死ぬかも” — 福島県の磐越自動車道で新潟県の高校生など21人が死傷したバス事故で、乗っていた生徒が事故直前の様子を動画で撮影していたことが捜査関係者への取材でわかりました。生徒は「死ぬかもしれない」という趣旨のメッセージとともに動画を保護者に送っていたということで、警察がバスの走行状況を詳しく調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-09T09:52:53+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260509/k10015117091000.html",
+      "occurred_at": "2026-05-12T10:28:18+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260512/k10015119151000.html",
       "traffic_multiplier": 1.6
     }
   ]

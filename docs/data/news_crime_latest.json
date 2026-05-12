@@ -10,32 +10,81 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-09T11:30:27+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-05-12T13:07:56+00:00",
+    "total_count": 26,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 26
     },
     "type_counts": {
       "crime_news": 22,
       "assault": 1,
-      "murder": 4,
-      "kidnapping": 1
+      "murder": 3
     },
     "top_prefectures": {
-      "熊本": 5,
       "岩手": 5,
+      "熊本": 5,
       "京都": 4,
+      "東京": 3,
       "福島": 3,
-      "北海道": 3,
+      "神奈川": 1,
+      "広島": 1,
       "富山": 1,
-      "東京": 1,
       "山形": 1,
-      "宮城": 1,
-      "埼玉": 1
+      "宮城": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "JR東海道線の電車内でスプレー噴射か 16歳少年を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260512/k10015119111000.html",
+      "date": "2026-05-12",
+      "prefecture": "神奈川",
+      "subtype": "crime_news",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町山林火災 総務省消防庁が現地調査を開始",
+      "url": "http://www3.nhk.or.jp/news/html/20260512/k10015119321000.html",
+      "date": "2026-05-12",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 老人ホームでけがの入所者を放置か 職員逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118831000.html",
+      "date": "2026-05-11",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "建物火災 男女3人搬送 “リチウムイオン電池”から出火か 東京",
+      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118811000.html",
+      "date": "2026-05-11",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "ATMから現金1億3500万円盗んだ疑い 銀行の元警備員逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118581000.html",
+      "date": "2026-05-11",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "八代市新庁舎めぐる汚職事件 地元土木会社代表通じやりとりか",
       "url": "http://www3.nhk.or.jp/news/html/20260509/k10015117081000.html",
@@ -244,76 +293,6 @@
       "subtype": "murder",
       "lat": 35.0116,
       "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "長野 阿智村の住宅で親子3人の遺体見つかる 無理心中か",
-      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015115051000.html",
-      "date": "2026-05-05",
-      "prefecture": "長野",
-      "subtype": "crime_news",
-      "lat": 36.6513,
-      "lon": 138.181,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "福岡 久留米 7歳女児を車で連れ回した疑い 27歳容疑者を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015115071000.html",
-      "date": "2026-05-05",
-      "prefecture": "福岡",
-      "subtype": "kidnapping",
-      "lat": 33.6064,
-      "lon": 130.4183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "札幌 小学生の息子を殺害疑いで46歳母親を逮捕 容疑を否認",
-      "url": "http://www3.nhk.or.jp/news/html/20260505/k10015114821000.html",
-      "date": "2026-05-05",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "愛知 豊橋 男が一時部屋から出ず 警察が逮捕 公務執行妨害疑い",
-      "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114531000.html",
-      "date": "2026-05-04",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "旭山動物園 逮捕の職員 “妻との生活に不満”趣旨の供述",
-      "url": "http://www3.nhk.or.jp/news/html/20260504/k10015114511000.html",
-      "date": "2026-05-04",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町 山林火災「鎮圧」で町ににぎわい戻る",
-      "url": "http://www3.nhk.or.jp/news/html/20260503/k10015113991000.html",
-      "date": "2026-05-03",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "旭山動物園 焼却炉から複数の人骨のようなもの 遺体の一部か",
-      "url": "http://www3.nhk.or.jp/news/html/20260503/k10015113961000.html",
-      "date": "2026-05-03",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
       "source": "nhk_crime"
     }
   ]
