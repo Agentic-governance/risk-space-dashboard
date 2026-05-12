@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-12T22:17:19+00:00",
+    "fetched_at": "2026-05-12T23:40:18+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -105,20 +105,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260512073918_20260512073625_VXSE5k_1",
-      "time": "2026-05-11T22:36:00+00:00",
-      "time_jst": "2026-05-12T07:36:00+09:00",
-      "lat": 38.5,
-      "lon": 141.7,
-      "magnitude": 3.5,
-      "depth_km": 60.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Miyagi Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
