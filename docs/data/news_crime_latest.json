@@ -10,22 +10,23 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-12T16:03:24+00:00",
-    "total_count": 26,
+    "fetched_at": "2026-05-12T19:34:43+00:00",
+    "total_count": 24,
     "source_counts": {
-      "nhk_crime": 26
+      "nhk_crime": 24
     },
     "type_counts": {
-      "crime_news": 22,
+      "confinement": 1,
+      "crime_news": 21,
       "assault": 1,
-      "murder": 3
+      "murder": 1
     },
     "top_prefectures": {
-      "岩手": 5,
       "熊本": 5,
-      "京都": 4,
-      "東京": 3,
+      "東京": 4,
+      "岩手": 4,
       "福島": 3,
+      "京都": 2,
       "神奈川": 1,
       "広島": 1,
       "富山": 1,
@@ -35,6 +36,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "10代少女を押し入れに監禁か 両親ときょうだいを逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120021000.html",
+      "date": "2026-05-12",
+      "prefecture": "東京",
+      "subtype": "confinement",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "JR東海道線の電車内でスプレー噴射か 16歳少年を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260512/k10015119111000.html",
@@ -259,36 +270,6 @@
       "title": "京都 男児殺害事件 父親 車内のやりとり機に衝動的に襲ったか",
       "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115541000.html",
       "date": "2026-05-06",
-      "prefecture": "京都",
-      "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町 山林火災2週間 別の場所で新たに火災が発生",
-      "url": "http://www3.nhk.or.jp/news/html/20260506/k10015115341000.html",
-      "date": "2026-05-06",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京都 南丹 小学生男児の遺体遺棄事件 父親を殺人容疑で再逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260506/k10015115361000.html",
-      "date": "2026-05-06",
-      "prefecture": "京都",
-      "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京都 男児遺体遺棄事件 父親を殺人容疑で再逮捕へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260506/k10015115061000.html",
-      "date": "2026-05-05",
       "prefecture": "京都",
       "subtype": "murder",
       "lat": 35.0116,

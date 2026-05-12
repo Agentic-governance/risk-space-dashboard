@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-12T16:03:11+00:00",
+    "fetched_at": "2026-05-12T19:34:28+00:00",
     "filter_window_hours": 24,
     "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260513031731_20260513031438_VXSE5k_1",
+      "time": "2026-05-12T18:14:00+00:00",
+      "time_jst": "2026-05-13T03:14:00+09:00",
+      "lat": 35.8,
+      "lon": 136.3,
+      "magnitude": 2.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Reihoku,  Fukui Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260513030603_20260513030308_VXSE5k_1",
+      "time": "2026-05-12T18:03:00+00:00",
+      "time_jst": "2026-05-13T03:03:00+09:00",
+      "lat": 38.9,
+      "lon": 142.0,
+      "magnitude": 3.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260512193543_20260512193226_VXSE5k_1",
       "time": "2026-05-12T10:32:00+00:00",
@@ -91,34 +119,6 @@
       "location_name": "Off the Coast of Miyagi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260512033346_20260512033044_VXSE5k_1",
-      "time": "2026-05-11T18:30:00+00:00",
-      "time_jst": "2026-05-12T03:30:00+09:00",
-      "lat": 34.3,
-      "lon": 131.2,
-      "magnitude": 3.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Yamaguchi Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260512014927_20260512014634_VXSE5k_1",
-      "time": "2026-05-11T16:46:00+00:00",
-      "time_jst": "2026-05-12T01:46:00+09:00",
-      "lat": 35.5,
-      "lon": 137.7,
-      "magnitude": 2.9,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Nagano Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.3
     }
   ]
 }
