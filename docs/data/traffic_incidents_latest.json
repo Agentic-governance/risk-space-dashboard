@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-13T02:08:32+00:00",
-    "fetched_at_jst": "2026-05-13T11:08:32+09:00",
+    "fetched_at": "2026-05-13T13:41:02+00:00",
+    "fetched_at_jst": "2026-05-13T22:41:02+09:00",
     "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-13T02:08:32+00:00",
+      "occurred_at": "2026-05-13T13:41:02+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、14日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-13T02:08:32+00:00",
+      "occurred_at": "2026-05-13T13:41:02+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-13T02:08:32+00:00",
+      "occurred_at": "2026-05-13T13:41:02+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-13T02:08:32+00:00",
+      "occurred_at": "2026-05-13T13:41:02+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-13T02:08:32+00:00",
+      "occurred_at": "2026-05-13T13:41:02+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -128,11 +128,11 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "磐越道部活バス事故 4月から約1か月で少なくとも5件の物損事故 — 今月6日、福島県の磐越自動車道で、部活動の遠征でマイクロバスに乗っていた新潟県の高校生など21人が死傷した事故で、バスを運転していた68歳の容疑者は、先月から1か月ほどの間に少なくとも5件の物損事故を起こしていたことが捜査関係者への取材で分かりました。警察が運転の状況などを詳しく調べています。",
+      "description": "磐越道部活バス事故 警察が先月2回 容疑者に免許返納を促す — 福島県の磐越自動車道で、高校生など21人が死傷したマイクロバスの事故で、過失運転致死傷の疑いで逮捕された容疑者が先月、2回にわたって警察から免許証の返納を促されていたことが捜査関係者への取材で分かりました。警察が今回の運転に至ったいきさつなどを詳しく調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-12T20:09:25+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015119991000.html",
+      "occurred_at": "2026-05-13T10:30:42+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120161000.html",
       "traffic_multiplier": 1.6
     }
   ]

@@ -10,32 +10,115 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-13T02:08:42+00:00",
-    "total_count": 24,
+    "fetched_at": "2026-05-13T13:41:12+00:00",
+    "total_count": 32,
     "source_counts": {
-      "nhk_crime": 24
+      "nhk_crime": 32
     },
     "type_counts": {
-      "confinement": 1,
-      "crime_news": 21,
-      "assault": 1,
+      "crime_news": 23,
+      "fraud": 2,
+      "solicitation": 1,
+      "confinement": 2,
+      "assault": 2,
+      "voyeurism": 1,
       "murder": 1
     },
     "top_prefectures": {
+      "東京": 8,
       "熊本": 5,
-      "東京": 4,
+      "福島": 4,
       "岩手": 4,
-      "福島": 3,
       "京都": 2,
+      "福岡": 1,
       "神奈川": 1,
       "広島": 1,
       "富山": 1,
-      "山形": 1,
-      "宮城": 1
+      "山形": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "福岡 母子生活支援施設で娘を殺害の疑い 母親を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120851000.html",
+      "date": "2026-05-13",
+      "prefecture": "福岡",
+      "subtype": "crime_news",
+      "lat": 33.6064,
+      "lon": 130.4183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "会社買収めぐる詐欺事件 民放番組の出演映像見せ信用させたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120721000.html",
+      "date": "2026-05-13",
+      "prefecture": "東京",
+      "subtype": "fraud",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "エアコン使用でも熱中症で死亡 周囲が高齢者などに声かけを",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120461000.html",
+      "date": "2026-05-13",
+      "prefecture": "東京",
+      "subtype": "solicitation",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "磐越道部活バス事故 警察が先月2回 容疑者に免許返納を促す",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120161000.html",
+      "date": "2026-05-13",
+      "prefecture": "福島",
+      "subtype": "crime_news",
+      "lat": 37.7502,
+      "lon": 140.4675,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 10代少女監禁事件 室内のカメラに監禁される様子が写る",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120631000.html",
+      "date": "2026-05-13",
+      "prefecture": "東京",
+      "subtype": "confinement",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「しんぶん赤旗」記者をSNSで脅迫か 50代の会社員 書類送検",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120191000.html",
+      "date": "2026-05-13",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "投資ファンドから16億円余詐取か 医療関連会社の元社長逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120181000.html",
+      "date": "2026-05-13",
+      "prefecture": "東京",
+      "subtype": "fraud",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "女子児童の水筒に下半身こすりつけたか 小学校教諭を再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120241000.html",
+      "date": "2026-05-13",
+      "prefecture": "",
+      "subtype": "voyeurism",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "10代少女を押し入れに監禁か 両親ときょうだいを逮捕 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120021000.html",
