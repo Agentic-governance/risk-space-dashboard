@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-14T19:26:39+00:00",
-    "total_count": 21,
+    "fetched_at": "2026-05-14T20:57:58+00:00",
+    "total_count": 22,
     "source_counts": {
-      "nhk_crime": 21
+      "nhk_crime": 22
     },
     "type_counts": {
-      "murder": 1,
+      "murder": 2,
       "crime_news": 11,
       "indecent_act": 1,
       "theft": 1,
@@ -28,8 +28,8 @@
     },
     "top_prefectures": {
       "東京": 9,
+      "栃木": 2,
       "広島": 2,
-      "栃木": 1,
       "千葉": 1,
       "茨城": 1,
       "福岡": 1,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木 住宅強盗3人死傷 不審車両目撃で警察が警戒強化中に事件",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122081000.html",
+      "date": "2026-05-14",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "住宅強盗 親子3人死傷 自称16歳男子高校生逮捕 栃木 上三川町",
       "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121381000.html",
