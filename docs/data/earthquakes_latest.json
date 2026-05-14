@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-14T11:15:23+00:00",
+    "fetched_at": "2026-05-14T13:18:45+00:00",
     "filter_window_hours": 24,
-    "total_count": 19,
+    "total_count": 15,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -217,62 +217,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260513213528_20260513213237_VXSE5k_1",
-      "time": "2026-05-13T12:32:00+00:00",
-      "time_jst": "2026-05-13T21:32:00+09:00",
-      "lat": 24.5,
-      "lon": 123.9,
-      "magnitude": 3.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Iriomotejima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260513212249_20260513211943_VXSE5k_1",
-      "time": "2026-05-13T12:19:00+00:00",
-      "time_jst": "2026-05-13T21:19:00+09:00",
-      "lat": 24.5,
-      "lon": 123.9,
-      "magnitude": 3.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of Iriomotejima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260513211526_20260513211242_VXSE5k_1",
-      "time": "2026-05-13T12:12:00+00:00",
-      "time_jst": "2026-05-13T21:12:00+09:00",
-      "lat": 24.5,
-      "lon": 123.9,
-      "magnitude": 3.6,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of Iriomotejima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260513202030_20260513201740_VXSE5k_1",
-      "time": "2026-05-13T11:17:00+00:00",
-      "time_jst": "2026-05-13T20:17:00+09:00",
-      "lat": 36.6,
-      "lon": 139.2,
-      "magnitude": 2.6,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Gunma Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }

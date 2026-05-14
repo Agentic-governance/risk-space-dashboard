@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-14T11:15:42+00:00",
+    "fetched_at": "2026-05-14T13:19:01+00:00",
     "total_count": 30,
     "source_counts": {
       "nhk_crime": 30
     },
     "type_counts": {
+      "murder": 1,
       "crime_news": 19,
       "indecent_act": 1,
-      "robbery": 1,
       "theft": 1,
       "fraud": 2,
       "solicitation": 1,
@@ -32,8 +32,8 @@
       "福島": 3,
       "岩手": 3,
       "広島": 2,
-      "千葉": 1,
       "栃木": 1,
+      "千葉": 1,
       "茨城": 1,
       "福岡": 1,
       "神奈川": 1
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "強盗 69歳女性死亡 自称16歳 強盗殺人疑い逮捕 栃木 上三川町",
+      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121381000.html",
+      "date": "2026-05-14",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "広島 呉の船解体現場で火災 船や廃材が焼ける 避難指示も",
       "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121651000.html",
@@ -59,16 +69,6 @@
       "subtype": "indecent_act",
       "lat": 35.6073,
       "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "住宅強盗 69歳女性死亡 関与か自称16歳少年確保 栃木 上三川町",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121381000.html",
-      "date": "2026-05-14",
-      "prefecture": "栃木",
-      "subtype": "robbery",
-      "lat": 36.5658,
-      "lon": 139.8836,
       "source": "nhk_crime"
     },
     {
