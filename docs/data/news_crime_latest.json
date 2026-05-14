@@ -10,35 +10,86 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-13T13:41:12+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-05-14T08:49:10+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 29
     },
     "type_counts": {
-      "crime_news": 23,
+      "robbery": 1,
+      "crime_news": 19,
+      "theft": 1,
       "fraud": 2,
       "solicitation": 1,
       "confinement": 2,
       "assault": 2,
-      "voyeurism": 1,
-      "murder": 1
+      "voyeurism": 1
     },
     "top_prefectures": {
-      "東京": 8,
-      "熊本": 5,
-      "福島": 4,
-      "岩手": 4,
-      "京都": 2,
+      "東京": 10,
+      "熊本": 4,
+      "福島": 3,
+      "岩手": 3,
+      "広島": 2,
+      "栃木": 1,
+      "茨城": 1,
       "福岡": 1,
       "神奈川": 1,
-      "広島": 1,
-      "富山": 1,
-      "山形": 1
+      "富山": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "強盗に3人殴られ1人死亡 関与か男1人を確保 栃木 上三川町",
+      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121381000.html",
+      "date": "2026-05-14",
+      "prefecture": "栃木",
+      "subtype": "robbery",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "高配当うたい約870億円違法に集金か 秘密保持契約で出資拡大か",
+      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121321000.html",
+      "date": "2026-05-14",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 呉 船の解体工事現場で火災 これまでけが人の情報なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121651000.html",
+      "date": "2026-05-14",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "国の天然記念物「リュウキュウヤマガメ」捕獲疑いで2人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121601000.html",
+      "date": "2026-05-14",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "世田谷一家殺害事件の現場住宅に侵入か ベトナム人2人を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121411000.html",
+      "date": "2026-05-14",
+      "prefecture": "東京",
+      "subtype": "theft",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "福岡 母子生活支援施設で娘を殺害の疑い 母親を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260513/k10015120851000.html",
@@ -277,86 +328,6 @@
       "subtype": "crime_news",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "磐越道 高校生ら21人死傷事故 過失運転致死傷容疑で運転手逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116041000.html",
-      "date": "2026-05-07",
-      "prefecture": "福島",
-      "subtype": "crime_news",
-      "lat": 37.7502,
-      "lon": 140.4675,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "熊本 八代市新庁舎工事めぐり 市議ら あっせん収賄容疑で逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115941000.html",
-      "date": "2026-05-07",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "山形 酒田 山林で男性の遺体 クマに襲われたか 各地で被害",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116021000.html",
-      "date": "2026-05-07",
-      "prefecture": "山形",
-      "subtype": "crime_news",
-      "lat": 38.2404,
-      "lon": 140.3636,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京都 男児殺害事件「本当の父親じゃないと言われ」趣旨の供述",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015116131000.html",
-      "date": "2026-05-07",
-      "prefecture": "京都",
-      "subtype": "crime_news",
-      "lat": 35.0116,
-      "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "仙台 東北電力の変電所火災は鎮火 停電の発生なし",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115911000.html",
-      "date": "2026-05-07",
-      "prefecture": "宮城",
-      "subtype": "crime_news",
-      "lat": 38.2688,
-      "lon": 140.8721,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町の新たな山林火災 ほぼ消し止められる",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115561000.html",
-      "date": "2026-05-07",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "川崎で女性死亡 トラック運転手をひき逃げなどの疑いで逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115661000.html",
-      "date": "2026-05-06",
-      "prefecture": "埼玉",
-      "subtype": "crime_news",
-      "lat": 35.8573,
-      "lon": 139.6489,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京都 男児殺害事件 父親 車内のやりとり機に衝動的に襲ったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260507/k10015115541000.html",
-      "date": "2026-05-06",
-      "prefecture": "京都",
-      "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
       "source": "nhk_crime"
     }
   ]
