@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-14T13:19:01+00:00",
+    "fetched_at": "2026-05-14T15:46:17+00:00",
     "total_count": 30,
     "source_counts": {
       "nhk_crime": 30
@@ -42,7 +42,7 @@
   },
   "incidents": [
     {
-      "title": "強盗 69歳女性死亡 自称16歳 強盗殺人疑い逮捕 栃木 上三川町",
+      "title": "住宅強盗 親子3人死傷 自称16歳男子高校生逮捕 栃木 上三川町",
       "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121381000.html",
       "date": "2026-05-14",
       "prefecture": "栃木",
