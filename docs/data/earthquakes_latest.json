@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-14T15:45:58+00:00",
+    "fetched_at": "2026-05-14T17:37:21+00:00",
     "filter_window_hours": 24,
-    "total_count": 19,
+    "total_count": 16,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -231,48 +231,6 @@
       "location_name": "Off the Coast of Miyagi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260514023617_20260514023243_VXSE5k_1",
-      "time": "2026-05-13T17:32:00+00:00",
-      "time_jst": "2026-05-14T02:32:00+09:00",
-      "lat": 40.6,
-      "lon": 140.4,
-      "magnitude": 3.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Southern Tsugaru, Aomori Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.7
-    },
-    {
-      "event_id": "20260514023528_20260514023243_VXSE52_0",
-      "time": "2026-05-13T17:32:00+00:00",
-      "time_jst": "2026-05-14T02:32:00+09:00",
-      "lat": 40.6,
-      "lon": 140.4,
-      "magnitude": 3.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Southern Tsugaru, Aomori Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260514023414_20260514023243_VXSE51_0",
-      "time": "2026-05-13T17:32:00+00:00",
-      "time_jst": "2026-05-14T02:32:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }
