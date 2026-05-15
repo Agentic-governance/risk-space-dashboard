@@ -10,15 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-15T07:53:29+00:00",
-    "total_count": 25,
+    "fetched_at": "2026-05-15T10:18:39+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 24,
-      "nhk_society": 1
+      "nhk_crime": 27
     },
     "type_counts": {
-      "crime_news": 12,
-      "robbery": 1,
+      "crime_news": 13,
+      "robbery": 2,
       "drug": 1,
       "murder": 2,
       "indecent_act": 1,
@@ -31,32 +30,32 @@
     },
     "top_prefectures": {
       "東京": 9,
+      "栃木": 4,
       "広島": 4,
-      "栃木": 3,
+      "京都": 1,
       "千葉": 1,
       "茨城": 1,
       "福岡": 1,
       "福島": 1,
       "神奈川": 1,
-      "岩手": 1,
-      "熊本": 1
+      "岩手": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "広島 呉 船解体現場の火災で消火活動続く 避難指示や断水も",
-      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122461000.html",
+      "title": "京都 右京区で山林火災 消火活動続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122891000.html",
       "date": "2026-05-15",
-      "prefecture": "広島",
+      "prefecture": "京都",
       "subtype": "crime_news",
-      "lat": 34.3963,
-      "lon": 132.4596,
+      "lat": 35.0116,
+      "lon": 135.7681,
       "source": "nhk_crime"
     },
     {
-      "title": "住宅強盗3人死傷 “車で逃走”供述も 無登録ナンバーか 栃木",
-      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122391000.html",
+      "title": "住宅強盗3人死傷事件 当日のうちに埼玉県に車で逃走か 栃木",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122831000.html",
       "date": "2026-05-15",
       "prefecture": "栃木",
       "subtype": "robbery",
@@ -72,7 +71,27 @@
       "subtype": "drug",
       "lat": 34.3963,
       "lon": 132.4596,
-      "source": "nhk_society"
+      "source": "nhk_crime"
+    },
+    {
+      "title": "住宅強盗3人死傷 “車で逃走”供述も 無登録ナンバーか 栃木",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122391000.html",
+      "date": "2026-05-15",
+      "prefecture": "栃木",
+      "subtype": "robbery",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 呉 船解体現場の火災で消火活動続く 避難指示や断水も",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122461000.html",
+      "date": "2026-05-15",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
     },
     {
       "title": "栃木 住宅強盗3人死傷 不審車両目撃で警察が警戒強化中に事件",
