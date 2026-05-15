@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-15T04:39:06+00:00",
-    "fetched_at_jst": "2026-05-15T13:39:06+09:00",
+    "fetched_at": "2026-05-15T07:53:19+00:00",
+    "fetched_at_jst": "2026-05-15T16:53:19+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T04:39:06+00:00",
+      "occurred_at": "2026-05-15T07:53:19+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T04:39:06+00:00",
+      "occurred_at": "2026-05-15T07:53:19+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T04:39:06+00:00",
+      "occurred_at": "2026-05-15T07:53:19+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T04:39:06+00:00",
+      "occurred_at": "2026-05-15T07:53:19+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -113,11 +113,11 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "観光バス衝突事故の運転手「よく覚えていない」警視庁が捜索 — 14日、東京 江戸川区で観光バスが歩道に乗り上げて電柱に衝突した事故で、63歳の運転手が「よく覚えていない」などと話していることが捜査関係者への取材でわかりました。およそ400メートル手前から街路樹などに衝突しながら走っていたとみられ、警視庁はバス会社の捜索を行うなどして事故の原因を詳しく調べています。",
+      "description": "磐越道バス事故 事故回避の操作なくガードレールが車体貫通か — 福島県の磐越自動車道で部活動で遠征中の高校生などが死傷したバス事故で容疑者がハンドルを切るなど、事故を回避する操作をしていなかったとみられることが、捜査関係者への取材でわかりました。警察は、バスが道路脇に突っ込み、ガードレールが車体を貫通したことによって、被害が大きくなったとみて、詳しく調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T04:24:57+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122531000.html",
+      "occurred_at": "2026-05-15T07:08:50+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122651000.html",
       "traffic_multiplier": 1.6
     }
   ]
