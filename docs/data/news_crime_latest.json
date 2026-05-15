@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-15T14:49:07+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-05-15T16:53:13+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 27
     },
     "type_counts": {
       "murder": 3,
-      "crime_news": 13,
+      "crime_news": 12,
       "robbery": 2,
       "drug": 1,
       "indecent_act": 1,
@@ -311,16 +311,6 @@
       "subtype": "crime_news",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "八代市新庁舎めぐる汚職事件 地元土木会社代表通じやりとりか",
-      "url": "http://www3.nhk.or.jp/news/html/20260509/k10015117081000.html",
-      "date": "2026-05-08",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
       "source": "nhk_crime"
     }
   ]
