@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-15T10:18:39+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-05-15T14:49:07+00:00",
+    "total_count": 28,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 28
     },
     "type_counts": {
+      "murder": 3,
       "crime_news": 13,
       "robbery": 2,
       "drug": 1,
-      "murder": 2,
       "indecent_act": 1,
       "theft": 1,
       "fraud": 2,
@@ -30,7 +30,7 @@
     },
     "top_prefectures": {
       "東京": 9,
-      "栃木": 4,
+      "栃木": 5,
       "広島": 4,
       "京都": 1,
       "千葉": 1,
@@ -44,7 +44,17 @@
   },
   "incidents": [
     {
-      "title": "京都 右京区で山林火災 消火活動続く",
+      "title": "栃木 住宅強盗3人死傷 新たに少年1人を強盗殺人容疑で逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015123081000.html",
+      "date": "2026-05-15",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 右京区の山林火災は鎮圧 1ヘクタール以上焼ける",
       "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122891000.html",
       "date": "2026-05-15",
       "prefecture": "京都",
