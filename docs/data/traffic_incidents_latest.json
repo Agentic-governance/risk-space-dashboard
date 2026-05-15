@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-14T23:21:48+00:00",
-    "fetched_at_jst": "2026-05-15T08:21:48+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-15T04:39:06+00:00",
+    "fetched_at_jst": "2026-05-15T13:39:06+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 5,
       "disaster": 1,
       "congestion": 1
     },
@@ -23,7 +23,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260514_0000",
+      "event_id": "traffic_20260515_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-14T23:21:48+00:00",
+      "occurred_at": "2026-05-15T04:39:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260514_0001",
+      "event_id": "traffic_20260515_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +46,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-14T23:21:48+00:00",
+      "occurred_at": "2026-05-15T04:39:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260514_0002",
+      "event_id": "traffic_20260515_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +60,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-14T23:21:48+00:00",
+      "occurred_at": "2026-05-15T04:39:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260514_0003",
+      "event_id": "traffic_20260515_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,12 +74,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-14T23:21:48+00:00",
+      "occurred_at": "2026-05-15T04:39:06+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260514_0004",
+      "event_id": "traffic_20260515_0004",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -93,7 +93,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260514_0005",
+      "event_id": "traffic_20260515_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -104,6 +104,20 @@
       "lon": null,
       "occurred_at": "2026-05-09T09:45:56+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260509/k10015117511000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260515_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "観光バス衝突事故の運転手「よく覚えていない」警視庁が捜索 — 14日、東京 江戸川区で観光バスが歩道に乗り上げて電柱に衝突した事故で、63歳の運転手が「よく覚えていない」などと話していることが捜査関係者への取材でわかりました。およそ400メートル手前から街路樹などに衝突しながら走っていたとみられ、警視庁はバス会社の捜索を行うなどして事故の原因を詳しく調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-15T04:24:57+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122531000.html",
       "traffic_multiplier": 1.6
     }
   ]

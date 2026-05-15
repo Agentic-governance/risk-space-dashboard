@@ -2,12 +2,68 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-14T23:21:44+00:00",
+    "fetched_at": "2026-05-15T04:39:00+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260515121321_20260515120958_VXSE5k_1",
+      "time": "2026-05-15T03:09:00+00:00",
+      "time_jst": "2026-05-15T12:09:00+09:00",
+      "lat": 40.6,
+      "lon": 140.4,
+      "magnitude": 3.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Southern Tsugaru, Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.7
+    },
+    {
+      "event_id": "20260515121232_20260515120958_VXSE52_0",
+      "time": "2026-05-15T03:09:00+00:00",
+      "time_jst": "2026-05-15T12:09:00+09:00",
+      "lat": 40.6,
+      "lon": 140.4,
+      "magnitude": 3.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Southern Tsugaru, Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260515121128_20260515120958_VXSE51_0",
+      "time": "2026-05-15T03:09:00+00:00",
+      "time_jst": "2026-05-15T12:09:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.05
+    },
+    {
+      "event_id": "20260515082559_20260515082313_VXSE5k_1",
+      "time": "2026-05-14T23:23:00+00:00",
+      "time_jst": "2026-05-15T08:23:00+09:00",
+      "lat": 36.3,
+      "lon": 140.9,
+      "magnitude": 3.3,
+      "depth_km": 30.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20260515003922_20260515003429_VXSE5k_1",
       "time": "2026-05-14T15:34:00+00:00",
@@ -75,20 +131,6 @@
       "max_shindo_raw": "2",
       "max_shindo": 2,
       "location_name": "Southern Tsugaru, Aomori Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260514105805_20260514105543_VXSE5k_1",
-      "time": "2026-05-14T01:55:00+00:00",
-      "time_jst": "2026-05-14T10:55:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }

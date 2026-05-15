@@ -10,14 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-14T23:21:58+00:00",
-    "total_count": 22,
+    "fetched_at": "2026-05-15T04:39:17+00:00",
+    "total_count": 25,
     "source_counts": {
-      "nhk_crime": 22
+      "nhk_crime": 24,
+      "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 12,
+      "robbery": 1,
+      "drug": 1,
       "murder": 2,
-      "crime_news": 11,
       "indecent_act": 1,
       "theft": 1,
       "fraud": 2,
@@ -28,8 +31,8 @@
     },
     "top_prefectures": {
       "東京": 9,
-      "栃木": 2,
-      "広島": 2,
+      "広島": 4,
+      "栃木": 3,
       "千葉": 1,
       "茨城": 1,
       "福岡": 1,
@@ -41,6 +44,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "広島 呉 船解体現場の火災で消火活動続く 避難指示や断水も",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122461000.html",
+      "date": "2026-05-15",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "住宅強盗3人死傷 “車で逃走”供述も 無登録ナンバーか 栃木",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122391000.html",
+      "date": "2026-05-15",
+      "prefecture": "栃木",
+      "subtype": "robbery",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "元広島 羽月隆太郎被告 初公判「周囲にも薬物使用の選手いた」",
+      "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122431000.html",
+      "date": "2026-05-15",
+      "prefecture": "広島",
+      "subtype": "drug",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_society"
+    },
     {
       "title": "栃木 住宅強盗3人死傷 不審車両目撃で警察が警戒強化中に事件",
       "url": "http://www3.nhk.or.jp/news/html/20260515/k10015122081000.html",
