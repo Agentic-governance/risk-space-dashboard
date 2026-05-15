@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-15T16:52:57+00:00",
+    "fetched_at": "2026-05-15T20:04:25+00:00",
     "filter_window_hours": 24,
-    "total_count": 11,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260516040204_20260516035544_VXSE5k_1",
+      "time": "2026-05-15T18:55:00+00:00",
+      "time_jst": "2026-05-16T03:55:00+09:00",
+      "lat": 35.0,
+      "lon": 135.4,
+      "magnitude": 2.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Osaka Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260515222012_20260515202209_VXSE61_0",
       "time": "2026-05-15T11:22:00+00:00",
