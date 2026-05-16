@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-16T21:44:07+00:00",
+    "fetched_at": "2026-05-16T22:42:22+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -77,20 +77,6 @@
       "location_name": "Kiisuido Strait",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260516073112_20260516072735_VXSE5k_1",
-      "time": "2026-05-15T22:27:00+00:00",
-      "time_jst": "2026-05-16T07:27:00+09:00",
-      "lat": 36.0,
-      "lon": 137.4,
-      "magnitude": 3.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Hida, Gifu Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
