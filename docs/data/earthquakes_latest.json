@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-16T02:02:06+00:00",
+    "fetched_at": "2026-05-16T05:27:20+00:00",
     "filter_window_hours": 24,
-    "total_count": 12,
+    "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260516123157_20260516122924_VXSE5k_1",
+      "time": "2026-05-16T03:29:00+00:00",
+      "time_jst": "2026-05-16T12:29:00+09:00",
+      "lat": 34.2,
+      "lon": 135.1,
+      "magnitude": 2.8,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Kiisuido Strait",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260516073112_20260516072735_VXSE5k_1",
       "time": "2026-05-15T22:27:00+00:00",
@@ -133,48 +147,6 @@
       "location_name": "Eastern Shimane Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260515121321_20260515120958_VXSE5k_1",
-      "time": "2026-05-15T03:09:00+00:00",
-      "time_jst": "2026-05-15T12:09:00+09:00",
-      "lat": 40.6,
-      "lon": 140.4,
-      "magnitude": 3.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Southern Tsugaru, Aomori Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.7
-    },
-    {
-      "event_id": "20260515121232_20260515120958_VXSE52_0",
-      "time": "2026-05-15T03:09:00+00:00",
-      "time_jst": "2026-05-15T12:09:00+09:00",
-      "lat": 40.6,
-      "lon": 140.4,
-      "magnitude": 3.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Southern Tsugaru, Aomori Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260515121128_20260515120958_VXSE51_0",
-      "time": "2026-05-15T03:09:00+00:00",
-      "time_jst": "2026-05-15T12:09:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }

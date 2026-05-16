@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-16T02:02:27+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-05-16T05:27:36+00:00",
+    "total_count": 30,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 30
     },
     "type_counts": {
       "murder": 4,
-      "robbery": 3,
+      "robbery": 4,
       "crime_news": 12,
       "drug": 1,
       "indecent_act": 1,
@@ -29,7 +29,7 @@
       "voyeurism": 1
     },
     "top_prefectures": {
-      "東京": 9,
+      "東京": 10,
       "栃木": 7,
       "広島": 4,
       "京都": 1,
@@ -44,13 +44,23 @@
   },
   "incidents": [
     {
-      "title": "栃木 3人死傷強盗 16歳の少年を新たに逮捕 強盗殺人の疑い",
+      "title": "栃木 住宅強盗3人死傷 新たに少年1人を強盗殺人容疑で逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123381000.html",
       "date": "2026-05-16",
       "prefecture": "栃木",
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 上野 強盗予備事件 新たに22歳容疑者逮捕 リクルート役か",
+      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123421000.html",
+      "date": "2026-05-16",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
