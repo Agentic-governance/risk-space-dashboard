@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-16T09:18:09+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-05-16T10:49:31+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 33
     },
     "type_counts": {
+      "murder": 5,
       "crime_news": 14,
-      "murder": 4,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -30,7 +30,7 @@
     },
     "top_prefectures": {
       "東京": 10,
-      "栃木": 7,
+      "栃木": 8,
       "広島": 5,
       "岩手": 2,
       "京都": 1,
@@ -44,13 +44,23 @@
   },
   "incidents": [
     {
-      "title": "大槌町の山林火災現場を視察 防災相“局地激甚災害指定急ぐ”",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123571000.html",
+      "title": "栃木 3人死傷強盗事件 4人目逮捕 16歳男子高校生 強盗殺人容疑",
+      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123691000.html",
       "date": "2026-05-16",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木 住宅強盗3人死傷 新たに少年1人を強盗殺人容疑で逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123381000.html",
+      "date": "2026-05-16",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
       "source": "nhk_crime"
     },
     {
@@ -64,13 +74,13 @@
       "source": "nhk_crime"
     },
     {
-      "title": "栃木 住宅強盗3人死傷 新たに少年1人を強盗殺人容疑で逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123381000.html",
+      "title": "大槌町の山林火災現場を視察 防災相“局地激甚災害指定急ぐ”",
+      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123571000.html",
       "date": "2026-05-16",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
       "source": "nhk_crime"
     },
     {
