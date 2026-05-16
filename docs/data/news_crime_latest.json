@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-15T23:49:48+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-05-16T02:02:27+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 29
     },
     "type_counts": {
+      "murder": 4,
       "robbery": 3,
-      "murder": 3,
       "crime_news": 12,
       "drug": 1,
       "indecent_act": 1,
@@ -30,7 +30,7 @@
     },
     "top_prefectures": {
       "東京": 9,
-      "栃木": 6,
+      "栃木": 7,
       "広島": 4,
       "京都": 1,
       "千葉": 1,
@@ -43,6 +43,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木 3人死傷強盗 16歳の少年を新たに逮捕 強盗殺人の疑い",
+      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123381000.html",
+      "date": "2026-05-16",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木 住宅強盗3人死傷 逮捕の2人は高校の同級生か",
       "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123301000.html",

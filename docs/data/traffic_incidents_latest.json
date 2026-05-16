@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-15T23:49:38+00:00",
-    "fetched_at_jst": "2026-05-16T08:49:38+09:00",
+    "fetched_at": "2026-05-16T02:02:16+00:00",
+    "fetched_at_jst": "2026-05-16T11:02:16+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
@@ -24,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260515_0000",
+      "event_id": "traffic_20260516_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T23:49:38+00:00",
+      "occurred_at": "2026-05-16T02:02:16+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260515_0001",
+      "event_id": "traffic_20260516_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -47,12 +47,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T23:49:38+00:00",
+      "occurred_at": "2026-05-16T02:02:16+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260515_0002",
+      "event_id": "traffic_20260516_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -61,12 +61,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T23:49:38+00:00",
+      "occurred_at": "2026-05-16T02:02:16+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260515_0003",
+      "event_id": "traffic_20260516_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -75,12 +75,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-15T23:49:38+00:00",
+      "occurred_at": "2026-05-16T02:02:16+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260515_0004",
+      "event_id": "traffic_20260516_0004",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -94,7 +94,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260515_0005",
+      "event_id": "traffic_20260516_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "construction",
