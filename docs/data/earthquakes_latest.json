@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-16T17:52:44+00:00",
+    "fetched_at": "2026-05-16T20:02:36+00:00",
     "filter_window_hours": 24,
     "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260517042826_20260517042540_VXSE5k_1",
+      "time": "2026-05-16T19:25:00+00:00",
+      "time_jst": "2026-05-17T04:25:00+09:00",
+      "lat": 35.3,
+      "lon": 133.2,
+      "magnitude": 2.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Eastern Shimane Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260517011153_20260517010908_VXSE5k_1",
       "time": "2026-05-16T16:09:00+00:00",
@@ -49,20 +63,6 @@
       "location_name": "Hida, Gifu Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260516040204_20260516035544_VXSE5k_1",
-      "time": "2026-05-15T18:55:00+00:00",
-      "time_jst": "2026-05-16T03:55:00+09:00",
-      "lat": 35.0,
-      "lon": 135.4,
-      "magnitude": 2.1,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Osaka Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
