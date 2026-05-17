@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-17T08:14:44+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-05-17T10:09:50+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 36
+      "nhk_crime": 37
     },
     "type_counts": {
+      "crime_news": 16,
       "murder": 7,
-      "crime_news": 15,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -31,7 +31,7 @@
     "top_prefectures": {
       "東京": 11,
       "栃木": 10,
-      "広島": 5,
+      "広島": 6,
       "岩手": 2,
       "京都": 1,
       "千葉": 1,
@@ -44,7 +44,17 @@
   },
   "incidents": [
     {
-      "title": "栃木3人死傷強盗事件 25歳の女の身柄確保 指示役の1人か",
+      "title": "広島 福山 山林火災が発生 鎮火の見通し立たず",
+      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015124071000.html",
+      "date": "2026-05-17",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木 強盗殺人事件 25歳の女の身柄確保 指示役の1人か",
       "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
       "date": "2026-05-17",
       "prefecture": "栃木",
@@ -64,7 +74,7 @@
       "source": "nhk_crime"
     },
     {
-      "title": "栃木3人死傷強盗事件 逮捕の高校生ら4人実行役か 指示役捜査へ",
+      "title": "栃木 強盗殺人事件 逮捕の高校生ら4人実行役か 指示役捜査へ",
       "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123761000.html",
       "date": "2026-05-16",
       "prefecture": "栃木",
@@ -74,7 +84,7 @@
       "source": "nhk_crime"
     },
     {
-      "title": "栃木 3人死傷強盗事件 4人目逮捕 16歳男子高校生 強盗殺人容疑",
+      "title": "栃木 強盗殺人事件 4人目逮捕 16歳男子高校生 強盗殺人容疑",
       "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123691000.html",
       "date": "2026-05-16",
       "prefecture": "栃木",
