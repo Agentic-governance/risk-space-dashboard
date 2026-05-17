@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-17T05:54:51+00:00",
+    "fetched_at": "2026-05-17T08:14:44+00:00",
     "total_count": 36,
     "source_counts": {
       "nhk_crime": 36
     },
     "type_counts": {
-      "crime_news": 15,
       "murder": 7,
+      "crime_news": 15,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -44,6 +44,16 @@
   },
   "incidents": [
     {
+      "title": "栃木3人死傷強盗事件 25歳の女の身柄確保 指示役の1人か",
+      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
+      "date": "2026-05-17",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
       "title": "東京消防庁 船舶火災に備え水上訓練 東京 晴海ふ頭",
       "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123941000.html",
       "date": "2026-05-17",
@@ -51,16 +61,6 @@
       "subtype": "crime_news",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木3人死傷強盗事件 28歳の男 強盗殺人疑いで逮捕 指示役か",
-      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
-      "date": "2026-05-17",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
       "source": "nhk_crime"
     },
     {
