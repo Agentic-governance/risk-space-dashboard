@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-17T02:05:05+00:00",
+    "fetched_at": "2026-05-17T05:54:37+00:00",
     "filter_window_hours": 24,
     "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260517114521_20260517114219_VXSE5k_1",
+      "time": "2026-05-17T02:42:00+00:00",
+      "time_jst": "2026-05-17T11:42:00+09:00",
+      "lat": 38.8,
+      "lon": 142.3,
+      "magnitude": 4.2,
+      "depth_km": 40.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20260517091128_20260517090731_VXSE5k_1",
       "time": "2026-05-17T00:07:00+00:00",
@@ -77,20 +91,6 @@
       "location_name": "Adjacent Sea of Iriomotejima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260516123157_20260516122924_VXSE5k_1",
-      "time": "2026-05-16T03:29:00+00:00",
-      "time_jst": "2026-05-16T12:29:00+09:00",
-      "lat": 34.2,
-      "lon": 135.1,
-      "magnitude": 2.8,
-      "depth_km": 0.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Kiisuido Strait",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
