@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-17T10:09:50+00:00",
+    "fetched_at": "2026-05-17T11:43:00+00:00",
     "total_count": 37,
     "source_counts": {
       "nhk_crime": 37
     },
     "type_counts": {
-      "crime_news": 16,
       "murder": 7,
+      "crime_news": 16,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -44,6 +44,16 @@
   },
   "incidents": [
     {
+      "title": "栃木 強盗殺人事件 横浜市の20代夫婦を逮捕 指示役か",
+      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
+      "date": "2026-05-17",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
       "title": "広島 福山 山林火災が発生 鎮火の見通し立たず",
       "url": "http://www3.nhk.or.jp/news/html/20260517/k10015124071000.html",
       "date": "2026-05-17",
@@ -51,16 +61,6 @@
       "subtype": "crime_news",
       "lat": 34.3963,
       "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人事件 25歳の女の身柄確保 指示役の1人か",
-      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
-      "date": "2026-05-17",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
       "source": "nhk_crime"
     },
     {
