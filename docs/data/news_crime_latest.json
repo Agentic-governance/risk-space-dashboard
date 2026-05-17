@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-17T17:54:44+00:00",
-    "total_count": 34,
+    "fetched_at": "2026-05-17T20:05:24+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 34
+      "nhk_crime": 35
     },
     "type_counts": {
-      "murder": 7,
+      "murder": 8,
       "crime_news": 13,
       "robbery": 4,
       "drug": 1,
@@ -29,7 +29,7 @@
       "voyeurism": 1
     },
     "top_prefectures": {
-      "栃木": 10,
+      "栃木": 11,
       "東京": 9,
       "広島": 5,
       "岩手": 2,
@@ -43,6 +43,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木 強盗殺人事件 逮捕の6人は被害者と面識なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124231000.html",
+      "date": "2026-05-17",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木 強盗殺人事件 横浜市の20代夫婦を逮捕 指示役か",
       "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
