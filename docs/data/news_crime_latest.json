@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-17T15:39:41+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-05-17T16:51:36+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 34
     },
     "type_counts": {
       "murder": 7,
-      "crime_news": 16,
+      "crime_news": 13,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -29,9 +29,9 @@
       "voyeurism": 1
     },
     "top_prefectures": {
-      "東京": 11,
       "栃木": 10,
-      "広島": 6,
+      "東京": 9,
+      "広島": 5,
       "岩手": 2,
       "京都": 1,
       "千葉": 1,
@@ -381,36 +381,6 @@
       "subtype": "crime_news",
       "lat": 39.7036,
       "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 老人ホームでけがの入所者を放置か 職員逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118831000.html",
-      "date": "2026-05-11",
-      "prefecture": "広島",
-      "subtype": "crime_news",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "建物火災 男女3人搬送 “リチウムイオン電池”から出火か 東京",
-      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118811000.html",
-      "date": "2026-05-11",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ATMから現金1億3500万円盗んだ疑い 銀行の元警備員逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118581000.html",
-      "date": "2026-05-11",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     }
   ]

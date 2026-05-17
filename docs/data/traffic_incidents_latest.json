@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-17T15:39:32+00:00",
-    "fetched_at_jst": "2026-05-18T00:39:32+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-17T16:51:25+00:00",
+    "fetched_at_jst": "2026-05-18T01:51:25+09:00",
+    "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "disaster": 2,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-17T15:39:32+00:00",
+      "occurred_at": "2026-05-17T16:51:25+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-17T15:39:32+00:00",
+      "occurred_at": "2026-05-17T16:51:25+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-17T15:39:32+00:00",
+      "occurred_at": "2026-05-17T16:51:25+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,26 +74,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-17T15:39:32+00:00",
+      "occurred_at": "2026-05-17T16:51:25+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260517_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "プロ野球 「危険スイング」のバッターに退場などの新ルール — 先月、プロ野球の試合でバッターの手から離れたバットが球審の頭部を直撃した事故を受け、NPB＝日本野球機構が危険なスイングをしたバッターに対して警告や退場のペナルティーを適用するルールを新たに導入することになりました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-11T12:25:29+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260511/k10015118781000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260517_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
