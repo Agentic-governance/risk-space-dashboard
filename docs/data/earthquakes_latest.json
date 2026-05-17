@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-17T16:51:22+00:00",
+    "fetched_at": "2026-05-17T17:54:30+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260518023022_20260518022720_VXSE5k_1",
+      "time": "2026-05-17T17:27:00+00:00",
+      "time_jst": "2026-05-18T02:27:00+09:00",
+      "lat": 36.6,
+      "lon": 141.0,
+      "magnitude": 2.9,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.1
+    },
     {
       "event_id": "20260517180446_20260517180201_VXSE5k_1",
       "time": "2026-05-17T09:02:00+00:00",
