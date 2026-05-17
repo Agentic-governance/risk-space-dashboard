@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-17T20:05:12+00:00",
+    "fetched_at": "2026-05-17T21:00:21+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -63,34 +63,6 @@
       "location_name": "Off the Coast of Sanriku",
       "source": "jma_quake_list",
       "earthquake_multiplier": 2.0
-    },
-    {
-      "event_id": "20260517055806_20260517055544_VXSE5k_1",
-      "time": "2026-05-16T20:55:00+00:00",
-      "time_jst": "2026-05-17T05:55:00+09:00",
-      "lat": 32.0,
-      "lon": 130.4,
-      "magnitude": 2.8,
-      "depth_km": 0.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Satsuma Region, Kagoshima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260517052511_20260517052249_VXSE5k_1",
-      "time": "2026-05-16T20:22:00+00:00",
-      "time_jst": "2026-05-17T05:22:00+09:00",
-      "lat": 32.0,
-      "lon": 130.5,
-      "magnitude": 2.6,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Satsuma Region, Kagoshima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
