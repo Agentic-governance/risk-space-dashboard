@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-17T22:49:03+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-05-17T23:53:38+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 36
+      "nhk_crime": 37
     },
     "type_counts": {
-      "crime_news": 14,
+      "crime_news": 15,
       "murder": 8,
       "robbery": 4,
       "drug": 1,
@@ -33,24 +33,34 @@
       "東京": 9,
       "広島": 6,
       "岩手": 2,
+      "大阪": 1,
       "京都": 1,
       "千葉": 1,
       "茨城": 1,
       "福岡": 1,
-      "福島": 1,
-      "神奈川": 1
+      "福島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "広島 福山 山林火災 鎮火の見通し立たず 消火活動続く",
+      "title": "広島 福山 山林火災 一夜明けるも消火活動続く",
       "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124221000.html",
       "date": "2026-05-17",
       "prefecture": "広島",
       "subtype": "crime_news",
       "lat": 34.3963,
       "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大阪 中央区 西心斎橋で火災 飲食店入る建物から延焼中",
+      "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124321000.html",
+      "date": "2026-05-17",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
       "source": "nhk_crime"
     },
     {
