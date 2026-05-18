@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-18T02:17:30+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-05-18T11:03:08+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 41
     },
     "type_counts": {
-      "crime_news": 15,
-      "murder": 8,
+      "murder": 10,
+      "crime_news": 17,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -29,28 +29,68 @@
       "voyeurism": 1
     },
     "top_prefectures": {
-      "栃木": 11,
+      "栃木": 13,
       "東京": 9,
       "広島": 6,
       "岩手": 2,
+      "佐賀": 1,
+      "三重": 1,
       "大阪": 1,
       "京都": 1,
       "千葉": 1,
-      "茨城": 1,
-      "福岡": 1,
-      "福島": 1
+      "茨城": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "広島 福山 山林火災 一夜明けるも消火活動続く",
+      "title": "栃木 強盗殺人事件「家族や友達殺す」逮捕の高校生脅されたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124771000.html",
+      "date": "2026-05-18",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大分 佐賀関大規模火災 延焼拡大の要因は【3D映像で現場再現】",
+      "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124401000.html",
+      "date": "2026-05-18",
+      "prefecture": "佐賀",
+      "subtype": "crime_news",
+      "lat": 33.2635,
+      "lon": 130.3008,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 福山 17日発生の山林火災が鎮圧 けが人の情報なし",
       "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124221000.html",
-      "date": "2026-05-17",
+      "date": "2026-05-18",
       "prefecture": "広島",
       "subtype": "crime_news",
       "lat": 34.3963,
       "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木 強盗殺人事件 高校生1人の闇バイトへのSNS応募きっかけか",
+      "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124411000.html",
+      "date": "2026-05-18",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "津 住宅で火事 2人死亡 住人2人と連絡取れず 警察が確認進める",
+      "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124441000.html",
+      "date": "2026-05-18",
+      "prefecture": "三重",
+      "subtype": "crime_news",
+      "lat": 34.7303,
+      "lon": 136.5086,
       "source": "nhk_crime"
     },
     {
