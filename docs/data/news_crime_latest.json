@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-18T14:32:26+00:00",
-    "total_count": 41,
+    "fetched_at": "2026-05-18T17:22:23+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 41
+      "nhk_crime": 39
     },
     "type_counts": {
       "murder": 10,
-      "crime_news": 17,
+      "crime_news": 15,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -32,10 +32,10 @@
       "栃木": 13,
       "東京": 9,
       "広島": 6,
-      "岩手": 2,
       "佐賀": 1,
       "三重": 1,
       "大阪": 1,
+      "岩手": 1,
       "京都": 1,
       "千葉": 1,
       "茨城": 1
@@ -431,26 +431,6 @@
       "subtype": "confinement",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "JR東海道線の電車内でスプレー噴射か 16歳少年を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260512/k10015119111000.html",
-      "date": "2026-05-12",
-      "prefecture": "神奈川",
-      "subtype": "crime_news",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町山林火災 総務省消防庁が現地調査を開始",
-      "url": "http://www3.nhk.or.jp/news/html/20260512/k10015119321000.html",
-      "date": "2026-05-12",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
       "source": "nhk_crime"
     }
   ]
