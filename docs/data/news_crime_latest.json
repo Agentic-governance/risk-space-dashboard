@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-19T19:48:41+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-05-19T21:16:52+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 40
     },
     "type_counts": {
+      "crime_news": 18,
       "assault": 2,
-      "crime_news": 17,
       "murder": 13,
       "robbery": 4,
       "drug": 1,
@@ -28,8 +28,8 @@
       "栃木": 16,
       "東京": 7,
       "広島": 6,
+      "兵庫": 2,
       "三重": 2,
-      "兵庫": 1,
       "福岡": 1,
       "佐賀": 1,
       "大阪": 1,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "兵庫 たつの 母娘死亡 2人の上半身に複数の傷 殺害されたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126061000.html",
+      "date": "2026-05-19",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "兵庫 たつの 住宅で親子の女性2人血を流し死亡 殺害か",
       "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125711000.html",
