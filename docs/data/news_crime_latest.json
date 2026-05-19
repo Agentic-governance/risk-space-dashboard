@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-19T04:45:40+00:00",
-    "total_count": 41,
+    "fetched_at": "2026-05-19T08:27:06+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 41
+      "nhk_crime": 42
     },
     "type_counts": {
+      "crime_news": 16,
       "murder": 12,
-      "crime_news": 15,
       "robbery": 4,
       "drug": 1,
       "indecent_act": 1,
@@ -30,7 +30,7 @@
     },
     "top_prefectures": {
       "栃木": 15,
-      "東京": 9,
+      "東京": 10,
       "広島": 6,
       "佐賀": 1,
       "三重": 1,
@@ -43,6 +43,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "リチウムイオン電池製品火災 都内は過去最多 夏場の発火注意を",
+      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125311000.html",
+      "date": "2026-05-19",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 高校生ら計画どおり進まず ちりぢりに逃走か",
       "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125371000.html",
