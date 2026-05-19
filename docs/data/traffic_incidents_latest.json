@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-18T23:05:39+00:00",
-    "fetched_at_jst": "2026-05-19T08:05:39+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-05-19T04:45:29+00:00",
+    "fetched_at_jst": "2026-05-19T13:45:29+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "construction": 1,
       "disaster": 1,
       "congestion": 1
@@ -24,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260518_0000",
+      "event_id": "traffic_20260519_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-18T23:05:39+00:00",
+      "occurred_at": "2026-05-19T04:45:29+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260518_0001",
+      "event_id": "traffic_20260519_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +47,12 @@
       "description": "保守工事の影響で、21日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-18T23:05:39+00:00",
+      "occurred_at": "2026-05-19T04:45:29+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260518_0002",
+      "event_id": "traffic_20260519_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -61,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-18T23:05:39+00:00",
+      "occurred_at": "2026-05-19T04:45:29+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260518_0003",
+      "event_id": "traffic_20260519_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-18T23:05:39+00:00",
+      "occurred_at": "2026-05-19T04:45:29+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260518_0004",
+      "event_id": "traffic_20260519_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -89,36 +89,22 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-18T23:05:39+00:00",
+      "occurred_at": "2026-05-19T04:45:29+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260518_0005",
+      "event_id": "traffic_20260519_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "部活動の遠征移動など 事業者と適切に契約を 文科省が通知へ — 福島県の磐越自動車道で部活動で遠征中の高校生などが死傷したバス事故を受けて、文部科学省は近く全国の教育委員会などに通知を出すことを調整しています。部活動の遠征などで事業者に貸し切りバスやタクシーによる運送を依頼する場合、依頼内容を明確に伝えたうえで国から許可を受けた事業者と適切に契約を行うことなどを求める方向です。",
+      "description": "部活バス事故 生徒“出発直後から不安定な運転”警察に証言 — 福島県の磐越自動車道で部活動で遠征中の高校生などが死傷したバス事故で、乗っていた生徒が警察の聞き取りに対し、出発直後から急な加速や減速を繰り返すなど不安定な運転だったと説明していることが捜査関係者への取材でわかりました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-18T20:34:36+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015124951000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260518_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "西武新宿線と西武拝島線 運転再開 — 西武鉄道によりますと、西武新宿線と西武拝島線は東大和市駅で午前6時半ごろに起きた人身事故の影響で、全線で運転を見合わせていましたが、午前7時20分ごろ運転を再開しました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-18T22:25:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125131000.html",
+      "occurred_at": "2026-05-19T03:37:06+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125361000.html",
       "traffic_multiplier": 1.6
     }
   ]

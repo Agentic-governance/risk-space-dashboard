@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-18T23:05:50+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-05-19T04:45:40+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 41
     },
     "type_counts": {
-      "murder": 11,
+      "murder": 12,
       "crime_news": 15,
       "robbery": 4,
       "drug": 1,
@@ -29,7 +29,7 @@
       "voyeurism": 1
     },
     "top_prefectures": {
-      "栃木": 14,
+      "栃木": 15,
       "東京": 9,
       "広島": 6,
       "佐賀": 1,
@@ -43,6 +43,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 高校生ら計画どおり進まず ちりぢりに逃走か",
+      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125371000.html",
+      "date": "2026-05-19",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 逮捕の高校生4人全員が顔合わせたのは当日か",
       "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125091000.html",
