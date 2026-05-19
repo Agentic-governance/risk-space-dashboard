@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-19T11:42:14+00:00",
+    "fetched_at": "2026-05-19T14:41:47+00:00",
     "total_count": 48,
     "source_counts": {
       "nhk_crime": 48
     },
     "type_counts": {
-      "crime_news": 19,
       "assault": 3,
+      "crime_news": 19,
       "murder": 13,
       "robbery": 4,
       "drug": 1,
@@ -32,8 +32,8 @@
       "栃木": 16,
       "東京": 12,
       "広島": 6,
-      "福岡": 2,
       "三重": 2,
+      "福岡": 2,
       "兵庫": 1,
       "佐賀": 1,
       "大阪": 1,
@@ -44,17 +44,17 @@
   },
   "incidents": [
     {
-      "title": "福岡 久留米で山林火災 県が自衛隊に災害派遣要請",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125891000.html",
+      "title": "兵庫 たつの 住宅で親子の女性2人血を流し死亡 殺害か",
+      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125711000.html",
       "date": "2026-05-19",
-      "prefecture": "福岡",
-      "subtype": "crime_news",
-      "lat": 33.6064,
-      "lon": 130.4183,
+      "prefecture": "兵庫",
+      "subtype": "assault",
+      "lat": 34.6913,
+      "lon": 135.183,
       "source": "nhk_crime"
     },
     {
-      "title": "津で山林火災 延焼中で消火活動続く",
+      "title": "津で山林火災 消火活動続く 三重県が自衛隊に災害派遣要請",
       "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125841000.html",
       "date": "2026-05-19",
       "prefecture": "三重",
@@ -64,13 +64,13 @@
       "source": "nhk_crime"
     },
     {
-      "title": "兵庫 たつの 住宅で親子の女性2人血を流し死亡 殺害か",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125711000.html",
+      "title": "福岡 久留米で山林火災 県が自衛隊に災害派遣要請",
+      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125891000.html",
       "date": "2026-05-19",
-      "prefecture": "兵庫",
-      "subtype": "assault",
-      "lat": 34.6913,
-      "lon": 135.183,
+      "prefecture": "福岡",
+      "subtype": "crime_news",
+      "lat": 33.6064,
+      "lon": 130.4183,
       "source": "nhk_crime"
     },
     {

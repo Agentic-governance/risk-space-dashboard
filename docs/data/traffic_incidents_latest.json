@@ -6,14 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-19T11:42:04+00:00",
-    "fetched_at_jst": "2026-05-19T20:42:04+09:00",
-    "total_count": 4,
+    "fetched_at": "2026-05-19T14:41:37+00:00",
+    "fetched_at_jst": "2026-05-19T23:41:37+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 4
+      "yahoo_transit": 5,
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 2,
+      "construction": 2,
       "disaster": 1,
       "congestion": 1
     },
@@ -31,12 +33,26 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-19T11:42:04+00:00",
+      "occurred_at": "2026-05-19T14:41:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260519_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "construction",
+      "severity": 1,
+      "road_name": "",
+      "description": "保守工事の影響で、21日までの各...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-19T14:41:37+00:00",
+      "url": "",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260519_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -45,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-19T11:42:04+00:00",
+      "occurred_at": "2026-05-19T14:41:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260519_0002",
+      "event_id": "traffic_20260519_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -59,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-19T11:42:04+00:00",
+      "occurred_at": "2026-05-19T14:41:37+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260519_0003",
+      "event_id": "traffic_20260519_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -73,8 +89,22 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-19T11:42:04+00:00",
+      "occurred_at": "2026-05-19T14:41:37+00:00",
       "url": "",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260519_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "construction",
+      "severity": 1,
+      "road_name": "",
+      "description": "辺野古沖転覆事故 死亡した船長を国が刑事告発へ — アメリカ軍普天間基地の移設工事が進む沖縄県名護市辺野古の沖合で船が転覆し、研修旅行中の高校生と船長が死亡した事故で、法律で義務づけられた登録を行わないまま船を運航したとして、国が近く、死亡した船長を海上保安庁に刑事告発する方針を固めたことが、関係者への取材でわかりました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-19T12:08:33+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125941000.html",
       "traffic_multiplier": 1.0
     }
   ]
