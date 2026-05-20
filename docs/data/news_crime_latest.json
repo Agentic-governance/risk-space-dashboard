@@ -10,14 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-20T02:16:20+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-05-20T10:25:36+00:00",
+    "total_count": 48,
     "source_counts": {
-      "nhk_crime": 42
+      "nhk_crime": 48
     },
     "type_counts": {
-      "crime_news": 19,
-      "murder": 14,
+      "crime_news": 21,
+      "fraud": 1,
+      "murder": 16,
+      "stalking": 1,
       "assault": 2,
       "robbery": 4,
       "drug": 1,
@@ -25,20 +27,90 @@
       "theft": 1
     },
     "top_prefectures": {
-      "栃木": 17,
-      "東京": 7,
+      "栃木": 19,
+      "東京": 9,
       "広島": 6,
       "三重": 3,
-      "兵庫": 2,
+      "岩手": 2,
+      "愛知": 1,
+      "兵庫": 1,
       "福岡": 1,
       "佐賀": 1,
-      "大阪": 1,
-      "岩手": 1,
-      "京都": 1
+      "大阪": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "岩手 西和賀町 川近くに男性遺体 山菜取りでクマに襲われたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015127031000.html",
+      "date": "2026-05-20",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "愛知 SNS型投資詐欺で約8億7000万円被害か",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126931000.html",
+      "date": "2026-05-20",
+      "prefecture": "愛知",
+      "subtype": "fraud",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 高校生 通話で指示受けながら押し入ったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126881000.html",
+      "date": "2026-05-20",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "元社員逮捕の日本郵便 前任者も同様の不正で懲戒解雇 明らかに",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126831000.html",
+      "date": "2026-05-20",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "犯罪被害者の裁判参加拡充などを法制審に諮問へ 法務省",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126531000.html",
+      "date": "2026-05-20",
+      "prefecture": "",
+      "subtype": "stalking",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 逮捕の夫婦 実行役に高速SAで役割分担指示か",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126361000.html",
+      "date": "2026-05-20",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "郵便回収業務の入札で収賄か 日本郵便の元社員逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126291000.html",
+      "date": "2026-05-20",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "津市の山林火災 鎮火めどたたず自衛隊ヘリからも放水開始",
       "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126071000.html",
@@ -57,16 +129,6 @@
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "兵庫 たつの 母娘死亡 2人の上半身に複数の傷 殺害されたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126061000.html",
-      "date": "2026-05-19",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
-      "lat": 34.6913,
-      "lon": 135.183,
       "source": "nhk_crime"
     },
     {
