@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-20T21:03:00+00:00",
+    "fetched_at": "2026-05-20T22:28:07+00:00",
     "filter_window_hours": 24,
     "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260521063001_20260521062737_VXSE5k_1",
+      "time": "2026-05-20T21:27:00+00:00",
+      "time_jst": "2026-05-21T06:27:00+09:00",
+      "lat": 36.5,
+      "lon": 141.1,
+      "magnitude": 3.7,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260521011147_20260521010824_VXSE5k_1",
       "time": "2026-05-20T16:08:00+00:00",
@@ -119,20 +133,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260520071102_20260520070805_VXSE5k_1",
-      "time": "2026-05-19T22:08:00+00:00",
-      "time_jst": "2026-05-20T07:08:00+09:00",
-      "lat": 34.0,
-      "lon": 135.6,
-      "magnitude": 3.2,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Wakayama Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
