@@ -6,16 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-20T16:27:16+00:00",
-    "fetched_at_jst": "2026-05-21T01:27:16+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-20T21:03:06+00:00",
+    "fetched_at_jst": "2026-05-21T06:03:06+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
       "accident": 2,
-      "construction": 2,
+      "construction": 1,
       "disaster": 1,
       "congestion": 1
     },
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T16:27:16+00:00",
+      "occurred_at": "2026-05-20T21:03:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "保守工事の影響で、21日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T16:27:16+00:00",
+      "occurred_at": "2026-05-20T21:03:06+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T16:27:16+00:00",
+      "occurred_at": "2026-05-20T21:03:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T16:27:16+00:00",
+      "occurred_at": "2026-05-20T21:03:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,22 +88,8 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T16:27:16+00:00",
+      "occurred_at": "2026-05-20T21:03:06+00:00",
       "url": "",
-      "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260520_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "construction",
-      "severity": 1,
-      "road_name": "",
-      "description": "辺野古沖転覆事故 船長「ハンドル押さえ生徒に操縦させた」 — アメリカ軍普天間基地の移設工事が進む沖縄県名護市辺野古の沖合で、研修旅行中の京都府の高校生など2人が死亡した船の転覆事故で、救助された船長が「航行の途中、自分が船のハンドルを押さえた上で、生徒に操縦させた」という趣旨の話をしていることが関係者への取材で分かりました。海上保安本部が当時の状況を調べています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-20T12:34:42+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015127211000.html",
       "traffic_multiplier": 1.0
     }
   ]

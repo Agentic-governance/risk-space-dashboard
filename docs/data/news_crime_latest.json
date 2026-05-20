@@ -10,28 +10,28 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-20T16:27:27+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-05-20T21:03:16+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 42
+      "nhk_crime": 45
     },
     "type_counts": {
-      "crime_news": 18,
+      "crime_news": 20,
+      "murder": 16,
       "fraud": 1,
-      "murder": 15,
       "stalking": 1,
       "assault": 2,
       "robbery": 4,
       "drug": 1
     },
     "top_prefectures": {
-      "栃木": 18,
-      "東京": 7,
+      "栃木": 19,
+      "東京": 8,
       "広島": 5,
       "三重": 3,
+      "兵庫": 2,
       "岩手": 2,
       "愛知": 1,
-      "兵庫": 1,
       "福岡": 1,
       "佐賀": 1,
       "大阪": 1
@@ -39,6 +39,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "郵便回収入札めぐる贈収賄事件 携帯で応札額を具体的に指示か",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127141000.html",
+      "date": "2026-05-20",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 容疑者 周到に準備も想定外の状況に陥ったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127301000.html",
+      "date": "2026-05-20",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "兵庫 母娘死亡 2人の遺体の首に刺し傷 死因など捜査へ 警察",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127241000.html",
+      "date": "2026-05-20",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "郵便物回収業務めぐる贈収賄事件 飲食店などで繰り返し接待か",
       "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126291000.html",
