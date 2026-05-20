@@ -10,26 +10,24 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-20T10:25:36+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-05-20T16:27:27+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 48
+      "nhk_crime": 42
     },
     "type_counts": {
-      "crime_news": 21,
+      "crime_news": 18,
       "fraud": 1,
-      "murder": 16,
+      "murder": 15,
       "stalking": 1,
       "assault": 2,
       "robbery": 4,
-      "drug": 1,
-      "indecent_act": 1,
-      "theft": 1
+      "drug": 1
     },
     "top_prefectures": {
-      "栃木": 19,
-      "東京": 9,
-      "広島": 6,
+      "栃木": 18,
+      "東京": 7,
+      "広島": 5,
       "三重": 3,
       "岩手": 2,
       "愛知": 1,
@@ -41,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "郵便物回収業務めぐる贈収賄事件 飲食店などで繰り返し接待か",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126291000.html",
+      "date": "2026-05-20",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "岩手 西和賀町 川近くに男性遺体 山菜取りでクマに襲われたか",
       "url": "http://www3.nhk.or.jp/news/html/20260520/k10015127031000.html",
@@ -99,16 +107,6 @@
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "郵便回収業務の入札で収賄か 日本郵便の元社員逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126291000.html",
-      "date": "2026-05-20",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
@@ -459,66 +457,6 @@
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "住宅強盗 親子3人死傷 自称16歳男子高校生逮捕 栃木 上三川町",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121381000.html",
-      "date": "2026-05-14",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 呉の船解体現場で火災 船や廃材が焼ける 避難指示も",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121651000.html",
-      "date": "2026-05-14",
-      "prefecture": "広島",
-      "subtype": "crime_news",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "施設に通う6歳女児にわいせつか 元職員を再逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121781000.html",
-      "date": "2026-05-14",
-      "prefecture": "千葉",
-      "subtype": "indecent_act",
-      "lat": 35.6073,
-      "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "高配当うたい約870億円違法に集金か 秘密保持契約で出資拡大か",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121321000.html",
-      "date": "2026-05-14",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "国の天然記念物「リュウキュウヤマガメ」捕獲疑いで2人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121601000.html",
-      "date": "2026-05-14",
-      "prefecture": "茨城",
-      "subtype": "crime_news",
-      "lat": 36.3418,
-      "lon": 140.4468,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "世田谷一家殺害事件の現場住宅に侵入か ベトナム人2人を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260514/k10015121411000.html",
-      "date": "2026-05-14",
-      "prefecture": "東京",
-      "subtype": "theft",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     }
   ]

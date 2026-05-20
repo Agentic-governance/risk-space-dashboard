@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-20T10:25:20+00:00",
+    "fetched_at": "2026-05-20T16:27:12+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260521011147_20260521010824_VXSE5k_1",
+      "time": "2026-05-20T16:08:00+00:00",
+      "time_jst": "2026-05-21T01:08:00+09:00",
+      "lat": 35.0,
+      "lon": 135.5,
+      "magnitude": 2.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southern Kyoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260521002638_20260521002318_VXSE5k_1",
+      "time": "2026-05-20T15:23:00+00:00",
+      "time_jst": "2026-05-21T00:23:00+09:00",
+      "lat": 35.7,
+      "lon": 141.0,
+      "magnitude": 3.5,
+      "depth_km": 30.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the east Coast of Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20260520151555_20260520151359_VXSE5k_1",
       "time": "2026-05-20T06:12:00+00:00",
@@ -119,20 +147,6 @@
       "location_name": "Adjacent Sea of Amami-Oshima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260519193851_20260519193523_VXSE5k_1",
-      "time": "2026-05-19T10:35:00+00:00",
-      "time_jst": "2026-05-19T19:35:00+09:00",
-      "lat": 30.0,
-      "lon": 130.0,
-      "magnitude": 2.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of Tokara Islands",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
