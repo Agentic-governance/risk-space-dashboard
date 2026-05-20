@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-19T22:48:52+00:00",
-    "total_count": 41,
+    "fetched_at": "2026-05-20T02:16:20+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 41
+      "nhk_crime": 42
     },
     "type_counts": {
+      "crime_news": 19,
       "murder": 14,
-      "crime_news": 18,
       "assault": 2,
       "robbery": 4,
       "drug": 1,
@@ -28,8 +28,8 @@
       "栃木": 17,
       "東京": 7,
       "広島": 6,
+      "三重": 3,
       "兵庫": 2,
-      "三重": 2,
       "福岡": 1,
       "佐賀": 1,
       "大阪": 1,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "津市の山林火災 鎮火めどたたず自衛隊ヘリからも放水開始",
+      "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126071000.html",
+      "date": "2026-05-19",
+      "prefecture": "三重",
+      "subtype": "crime_news",
+      "lat": 34.7303,
+      "lon": 136.5086,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 住宅に人がいる前提で準備進め襲撃か",
       "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126091000.html",
