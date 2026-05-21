@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-21T02:14:56+00:00",
+    "fetched_at": "2026-05-21T10:37:52+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260521171029_20260521170728_VXSE5k_1",
+      "time": "2026-05-21T08:07:00+00:00",
+      "time_jst": "2026-05-21T17:07:00+09:00",
+      "lat": 37.0,
+      "lon": 139.4,
+      "magnitude": 1.5,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Aizu,  Fukushima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260521132343_20260521132048_VXSE5k_1",
+      "time": "2026-05-21T04:20:00+00:00",
+      "time_jst": "2026-05-21T13:20:00+09:00",
+      "lat": 38.9,
+      "lon": 142.0,
+      "magnitude": 3.9,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260521101505_20260521101138_VXSE5k_1",
       "time": "2026-05-21T01:11:00+00:00",
@@ -63,90 +91,6 @@
       "location_name": "Off the east Coast of Chiba Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260520151555_20260520151359_VXSE5k_1",
-      "time": "2026-05-20T06:12:00+00:00",
-      "time_jst": "2026-05-20T15:12:00+09:00",
-      "lat": 37.7,
-      "lon": 141.6,
-      "magnitude": 3.8,
-      "depth_km": 70.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.15
-    },
-    {
-      "event_id": "20260520133007_20260520114633_VXSE61_0",
-      "time": "2026-05-20T02:46:00+00:00",
-      "time_jst": "2026-05-20T11:46:00+09:00",
-      "lat": 2726.6,
-      "lon": 12834.5,
-      "magnitude": 5.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Adjacent Sea of Okinawa Main Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.3
-    },
-    {
-      "event_id": "20260520115111_20260520114633_VXSE5k_1",
-      "time": "2026-05-20T02:46:00+00:00",
-      "time_jst": "2026-05-20T11:46:00+09:00",
-      "lat": 27.5,
-      "lon": 128.6,
-      "magnitude": 5.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": "5+",
-      "max_shindo": 5.5,
-      "location_name": "Adjacent Sea of Okinawa Main Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.8
-    },
-    {
-      "event_id": "20260520115003_20260520114633_VXSE52_0",
-      "time": "2026-05-20T02:46:00+00:00",
-      "time_jst": "2026-05-20T11:46:00+09:00",
-      "lat": 27.5,
-      "lon": 128.6,
-      "magnitude": 5.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Adjacent Sea of Okinawa Main Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.3
-    },
-    {
-      "event_id": "20260520114903_20260520114633_VXSE51_0",
-      "time": "2026-05-20T02:46:00+00:00",
-      "time_jst": "2026-05-20T11:46:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "5+",
-      "max_shindo": 5.5,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260520114803_20260520114633_VXSE51_0",
-      "time": "2026-05-20T02:46:00+00:00",
-      "time_jst": "2026-05-20T11:46:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "5+",
-      "max_shindo": 5.5,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }

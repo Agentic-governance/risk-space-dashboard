@@ -10,35 +10,115 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-21T02:15:11+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-05-21T10:38:05+00:00",
+    "total_count": 53,
     "source_counts": {
-      "nhk_crime": 45
+      "nhk_crime": 53
     },
     "type_counts": {
-      "crime_news": 20,
-      "murder": 16,
+      "murder": 20,
+      "crime_news": 23,
+      "assault": 3,
       "fraud": 1,
       "stalking": 1,
-      "assault": 2,
       "robbery": 4,
       "drug": 1
     },
     "top_prefectures": {
-      "栃木": 19,
-      "東京": 8,
+      "栃木": 21,
+      "東京": 12,
       "広島": 5,
       "三重": 3,
       "兵庫": 2,
       "岩手": 2,
+      "北海道": 1,
       "愛知": 1,
       "福岡": 1,
-      "佐賀": 1,
-      "大阪": 1
+      "佐賀": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 面識あった高校生1人に実行役集めさせたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127861000.html",
+      "date": "2026-05-21",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園 遺体焼却したとして職員を起訴 殺人容疑で再逮捕へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015128031000.html",
+      "date": "2026-05-21",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "リチウムイオン電池火災の消火薬剤 東京消防庁と企業が開発へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127701000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 14人死傷暴走事故 殺人罪などで38歳被告を起訴 東京地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127961000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "murder",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 練馬区 改造した偽パトカーで飲酒・暴走事故か 2人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127621000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "都内の大学で不正受験か 中国籍の塾講師を逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127781000.html",
+      "date": "2026-05-21",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 警察が指示役として逮捕した夫婦の自宅捜索",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127481000.html",
+      "date": "2026-05-21",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "郵便回収入札めぐる贈収賄事件 接待で予算上限近い額示したか",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127661000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "郵便回収入札めぐる贈収賄事件 携帯で応札額を具体的に指示か",
       "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127141000.html",
