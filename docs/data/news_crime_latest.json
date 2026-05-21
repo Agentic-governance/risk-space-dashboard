@@ -10,23 +10,23 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-21T10:38:05+00:00",
-    "total_count": 53,
+    "fetched_at": "2026-05-21T14:02:43+00:00",
+    "total_count": 55,
     "source_counts": {
-      "nhk_crime": 53
+      "nhk_crime": 55
     },
     "type_counts": {
+      "robbery": 6,
+      "assault": 3,
       "murder": 20,
       "crime_news": 23,
-      "assault": 3,
       "fraud": 1,
       "stalking": 1,
-      "robbery": 4,
       "drug": 1
     },
     "top_prefectures": {
       "栃木": 21,
-      "東京": 12,
+      "東京": 14,
       "広島": 5,
       "三重": 3,
       "兵庫": 2,
@@ -39,6 +39,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "東京 新宿で強盗準備か 2人逮捕 同じ現場で2月にも事件",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015128141000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「トクリュウ」とみられる強盗などの事件相次ぐ 背景は",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127491000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 練馬区 改造した偽パトカーで飲酒・暴走事故か 2人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127621000.html",
+      "date": "2026-05-21",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 面識あった高校生1人に実行役集めさせたか",
       "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127861000.html",
@@ -75,16 +105,6 @@
       "date": "2026-05-21",
       "prefecture": "東京",
       "subtype": "murder",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 練馬区 改造した偽パトカーで飲酒・暴走事故か 2人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127621000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "assault",
       "lat": 35.6762,
       "lon": 139.6503,
       "source": "nhk_crime"

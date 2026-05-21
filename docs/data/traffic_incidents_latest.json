@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-21T10:37:54+00:00",
-    "fetched_at_jst": "2026-05-21T19:37:54+09:00",
+    "fetched_at": "2026-05-21T14:02:32+00:00",
+    "fetched_at_jst": "2026-05-21T23:02:32+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
       "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "disaster": 1,
-      "congestion": 2
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-21T10:37:54+00:00",
+      "occurred_at": "2026-05-21T14:02:32+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-21T10:37:54+00:00",
+      "occurred_at": "2026-05-21T14:02:32+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-21T10:37:54+00:00",
+      "occurred_at": "2026-05-21T14:02:32+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-21T10:37:54+00:00",
+      "occurred_at": "2026-05-21T14:02:32+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -82,15 +82,15 @@
       "event_id": "traffic_20260521_0004",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "congestion",
-      "severity": 1,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "横浜 車8台関係の事故 5人搬送 ドライバー逃走 — 21日正午すぎ、横浜市旭区の県道で乗用車が渋滞の列に突っ込むなど車合わせて8台が関係する事故があり、男女5人が病院に運ばれました。事故を起こしたとみられるドライバーは車を乗り捨ててその場から走って逃げ、警察はひき逃げなどの疑いで行方を捜査しています。",
+      "description": "東京 練馬区 改造した偽パトカーで飲酒・暴走事故か 2人逮捕 — 乗用車を改造した偽の「覆面パトカー」で赤色灯をつけてサイレンを鳴らしながら飲酒運転をして事故を起こしたなどとして23歳の男の容疑者が危険運転傷害などの疑いで警視庁に逮捕されました。車を改造した友人の会社員も逮捕され、警視庁が詳しいいきさつを調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-21T09:26:48+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127981000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-05-21T10:38:40+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127621000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
