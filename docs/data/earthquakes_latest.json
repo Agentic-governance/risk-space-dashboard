@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-21T14:02:30+00:00",
+    "fetched_at": "2026-05-21T16:41:25+00:00",
     "filter_window_hours": 24,
     "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260522013611_20260522013324_VXSE5k_1",
+      "time": "2026-05-21T16:33:00+00:00",
+      "time_jst": "2026-05-22T01:33:00+09:00",
+      "lat": 34.9,
+      "lon": 136.7,
+      "magnitude": 3.2,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Ise Bay",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260522002704_20260522002356_VXSE5k_1",
+      "time": "2026-05-21T15:23:00+00:00",
+      "time_jst": "2026-05-22T00:23:00+09:00",
+      "lat": 33.3,
+      "lon": 132.4,
+      "magnitude": 3.5,
+      "depth_km": 40.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Bungosuido Strait",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260521171029_20260521170728_VXSE5k_1",
       "time": "2026-05-21T08:07:00+00:00",
@@ -63,34 +91,6 @@
       "location_name": "Off the Coast of Ibaraki Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260521011147_20260521010824_VXSE5k_1",
-      "time": "2026-05-20T16:08:00+00:00",
-      "time_jst": "2026-05-21T01:08:00+09:00",
-      "lat": 35.0,
-      "lon": 135.5,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Kyoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260521002638_20260521002318_VXSE5k_1",
-      "time": "2026-05-20T15:23:00+00:00",
-      "time_jst": "2026-05-21T00:23:00+09:00",
-      "lat": 35.7,
-      "lon": 141.0,
-      "magnitude": 3.5,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the east Coast of Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
