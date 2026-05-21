@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-21T16:41:38+00:00",
-    "total_count": 49,
+    "fetched_at": "2026-05-21T20:36:05+00:00",
+    "total_count": 51,
     "source_counts": {
-      "nhk_crime": 49
+      "nhk_crime": 51
     },
     "type_counts": {
-      "murder": 19,
+      "murder": 21,
       "robbery": 4,
       "assault": 3,
       "crime_news": 21,
@@ -24,13 +24,13 @@
       "stalking": 1
     },
     "top_prefectures": {
-      "栃木": 17,
+      "栃木": 18,
       "東京": 14,
       "兵庫": 3,
       "三重": 3,
       "広島": 3,
+      "北海道": 2,
       "岩手": 2,
-      "北海道": 1,
       "愛知": 1,
       "福岡": 1,
       "佐賀": 1
@@ -38,6 +38,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 高校生の数人が「後悔している」供述か",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128271000.html",
+      "date": "2026-05-21",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "旭山動物園職員 殺人容疑できょう再逮捕へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128241000.html",
+      "date": "2026-05-21",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "兵庫 たつの 親子死亡 警察 殺人事件と断定 捜査本部を設置",
       "url": "http://www3.nhk.or.jp/news/html/20260521/k10015128251000.html",
