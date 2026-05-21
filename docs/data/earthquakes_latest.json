@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-20T23:51:32+00:00",
+    "fetched_at": "2026-05-21T02:14:56+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260521101505_20260521101138_VXSE5k_1",
+      "time": "2026-05-21T01:11:00+00:00",
+      "time_jst": "2026-05-21T10:11:00+09:00",
+      "lat": 29.4,
+      "lon": 129.5,
+      "magnitude": 3.7,
+      "depth_km": 20.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260521063001_20260521062737_VXSE5k_1",
       "time": "2026-05-20T21:27:00+00:00",

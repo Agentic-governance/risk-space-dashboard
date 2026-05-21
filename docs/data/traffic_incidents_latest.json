@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-20T23:51:35+00:00",
-    "fetched_at_jst": "2026-05-21T08:51:35+09:00",
+    "fetched_at": "2026-05-21T02:15:00+00:00",
+    "fetched_at_jst": "2026-05-21T11:15:00+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 5
@@ -23,7 +23,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260520_0000",
+      "event_id": "traffic_20260521_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T23:51:35+00:00",
+      "occurred_at": "2026-05-21T02:15:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260520_0001",
+      "event_id": "traffic_20260521_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -46,12 +46,12 @@
       "description": "保守工事の影響で、21日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T23:51:35+00:00",
+      "occurred_at": "2026-05-21T02:15:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260520_0002",
+      "event_id": "traffic_20260521_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -60,12 +60,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T23:51:35+00:00",
+      "occurred_at": "2026-05-21T02:15:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260520_0003",
+      "event_id": "traffic_20260521_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -74,12 +74,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T23:51:35+00:00",
+      "occurred_at": "2026-05-21T02:15:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260520_0004",
+      "event_id": "traffic_20260521_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-20T23:51:35+00:00",
+      "occurred_at": "2026-05-21T02:15:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     }
