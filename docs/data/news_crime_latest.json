@@ -10,36 +10,77 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-22T08:55:33+00:00",
-    "total_count": 63,
+    "fetched_at": "2026-05-22T11:46:26+00:00",
+    "total_count": 66,
     "source_counts": {
-      "nhk_crime": 63
+      "nhk_crime": 66
     },
     "type_counts": {
-      "robbery": 6,
+      "weapon": 1,
+      "drug": 2,
+      "murder": 23,
       "crime_news": 27,
-      "drug": 1,
+      "robbery": 6,
       "confinement": 1,
       "assault": 4,
-      "murder": 22,
       "fraud": 1,
       "stalking": 1
     },
     "top_prefectures": {
+      "栃木": 19,
       "東京": 19,
-      "栃木": 18,
-      "北海道": 4,
       "岩手": 4,
+      "北海道": 4,
       "兵庫": 3,
       "三重": 3,
       "広島": 3,
+      "大阪": 2,
       "佐賀": 2,
-      "福岡": 2,
-      "愛知": 1
+      "福岡": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大阪 和泉 母娘殺害事件 娘の元交際相手 母殺害容疑で再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129101000.html",
+      "date": "2026-05-22",
+      "prefecture": "大阪",
+      "subtype": "weapon",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "フェンタニルなど違法薬物の密輸 日米で捜査情報連携強化",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129071000.html",
+      "date": "2026-05-22",
+      "prefecture": "",
+      "subtype": "drug",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 高校生ら別々の場所から敷地内に侵入か",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129091000.html",
+      "date": "2026-05-22",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 花巻 住宅火災2人死亡 住人と連絡取れず",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128401000.html",
+      "date": "2026-05-22",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
     {
       "title": "強盗予備疑いなどで逮捕の5人のうち4人を不起訴 鹿児島地検",
       "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129051000.html",
@@ -148,16 +189,6 @@
       "subtype": "crime_news",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 花巻 住宅火災2人死亡 住人と連絡取れず",
-      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128401000.html",
-      "date": "2026-05-22",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
       "source": "nhk_crime"
     },
     {

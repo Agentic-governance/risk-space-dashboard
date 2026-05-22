@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-22T08:55:22+00:00",
-    "fetched_at_jst": "2026-05-22T17:55:22+09:00",
+    "fetched_at": "2026-05-22T11:46:15+00:00",
+    "fetched_at_jst": "2026-05-22T20:46:15+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T08:55:22+00:00",
+      "occurred_at": "2026-05-22T11:46:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T08:55:22+00:00",
+      "occurred_at": "2026-05-22T11:46:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T08:55:22+00:00",
+      "occurred_at": "2026-05-22T11:46:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,26 +75,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T08:55:22+00:00",
+      "occurred_at": "2026-05-22T11:46:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260522_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "辺野古沖転覆事故 死亡の船長を海上運送法違反疑いで国が告発 — 沖縄県名護市辺野古の沖合で船が転覆し、研修旅行中の高校生と船長が死亡した事故で、内閣府沖縄総合事務局は、法律で義務づけられた登録を行わないまま船を運航したとして、死亡した船長を海上運送法違反の疑いで海上保安庁に刑事告発しました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-22T08:36:03+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128381000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260522_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "construction",
@@ -103,9 +89,23 @@
       "description": "辺野古沖転覆 “高校の教育内容は政治的中立性に違反” 文科省 — 研修旅行中の京都の高校生が乗った船が、アメリカ軍普天間基地の移設工事が進む沖縄県名護市辺野古の沖合で転覆し、高校生と船長が死亡した事故で、文部科学省は「基地反対の抗議船に乗せたことは不適切だ」などとして、教育内容が政治的中立性を定めた教育基本法に違反すると判断し、学校側に改善を求める指導通知を行いました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T08:50:35+00:00",
+      "occurred_at": "2026-05-22T10:34:42+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128371000.html",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260522_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "磐越道部活動バス事故 容疑者の鑑定留置始まる — 福島県の磐越自動車道で、部活動で遠征中の高校生などが死傷したバス事故で、検察は、バスを運転していた68歳の容疑者について、刑事責任能力を調べるための「鑑定留置」を22日から始めました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-22T10:44:50+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129121000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
