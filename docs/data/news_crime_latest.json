@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-22T21:47:49+00:00",
-    "total_count": 61,
+    "fetched_at": "2026-05-22T22:57:35+00:00",
+    "total_count": 63,
     "source_counts": {
-      "nhk_crime": 61
+      "nhk_crime": 63
     },
     "type_counts": {
-      "crime_news": 26,
+      "crime_news": 27,
+      "drug": 3,
       "weapon": 1,
-      "drug": 2,
       "murder": 21,
       "robbery": 4,
       "confinement": 1,
@@ -41,6 +41,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "横浜 車8台関係する事故 高校生をひき逃げなどの疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129531000.html",
+      "date": "2026-05-22",
+      "prefecture": "神奈川",
+      "subtype": "crime_news",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大麻由来成分「CBN」6月から所持や販売など禁止 適切に廃棄を",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129251000.html",
+      "date": "2026-05-22",
+      "prefecture": "",
+      "subtype": "drug",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "旭山動物園職員 妻殺害容疑で再逮捕 園内から複数のロープ押収",
       "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129331000.html",
