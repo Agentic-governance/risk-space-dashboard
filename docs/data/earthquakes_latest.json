@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-22T14:21:05+00:00",
+    "fetched_at": "2026-05-22T16:47:09+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 2,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -35,34 +35,6 @@
       "location_name": "Central and northern Rumoi Region, Hokkaido",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260522013611_20260522013324_VXSE5k_1",
-      "time": "2026-05-21T16:33:00+00:00",
-      "time_jst": "2026-05-22T01:33:00+09:00",
-      "lat": 34.9,
-      "lon": 136.7,
-      "magnitude": 3.2,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Ise Bay",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260522002704_20260522002356_VXSE5k_1",
-      "time": "2026-05-21T15:23:00+00:00",
-      "time_jst": "2026-05-22T00:23:00+09:00",
-      "lat": 33.3,
-      "lon": 132.4,
-      "magnitude": 3.5,
-      "depth_km": 40.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Bungosuido Strait",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }

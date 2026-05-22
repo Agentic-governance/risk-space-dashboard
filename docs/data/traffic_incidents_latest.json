@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-22T14:21:06+00:00",
-    "fetched_at_jst": "2026-05-22T23:21:06+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-05-22T16:47:09+00:00",
+    "fetched_at_jst": "2026-05-23T01:47:09+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "disaster": 1,
       "congestion": 1,
       "construction": 1
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T14:21:06+00:00",
+      "occurred_at": "2026-05-22T16:47:09+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T14:21:06+00:00",
+      "occurred_at": "2026-05-22T16:47:09+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T14:21:06+00:00",
+      "occurred_at": "2026-05-22T16:47:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T14:21:06+00:00",
+      "occurred_at": "2026-05-22T16:47:09+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -92,6 +92,20 @@
       "occurred_at": "2026-05-22T10:34:42+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128371000.html",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260522_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "軽井沢スキーツアーバス事故裁判 2審も実刑判決 — 10年前、長野県軽井沢町で15人が死亡したスキーツアーのバス事故で、業務上過失致死傷の罪に問われたバス会社の社長と元社員に対し、2審の東京高等裁判所は、「運転手が死傷事故を起こすことは予測できた」として、1審に続いて、社長に禁錮3年、元社員に禁錮4年の実刑判決を言い渡しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-22T15:24:44+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128731000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }

@@ -10,33 +10,33 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-22T14:21:17+00:00",
-    "total_count": 66,
+    "fetched_at": "2026-05-22T16:47:21+00:00",
+    "total_count": 60,
     "source_counts": {
-      "nhk_crime": 66
+      "nhk_crime": 60
     },
     "type_counts": {
       "weapon": 1,
       "drug": 2,
-      "murder": 23,
-      "crime_news": 27,
-      "robbery": 6,
+      "murder": 21,
+      "crime_news": 25,
+      "robbery": 4,
       "confinement": 1,
       "assault": 4,
       "fraud": 1,
       "stalking": 1
     },
     "top_prefectures": {
-      "栃木": 19,
-      "東京": 19,
-      "岩手": 4,
+      "東京": 18,
+      "栃木": 16,
       "北海道": 4,
+      "岩手": 3,
       "兵庫": 3,
       "三重": 3,
-      "広島": 3,
       "大阪": 2,
       "佐賀": 2,
-      "福岡": 2
+      "福岡": 2,
+      "広島": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -637,66 +637,6 @@
       "date": "2026-05-16",
       "prefecture": "栃木",
       "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人事件 4人目逮捕 16歳男子高校生 強盗殺人容疑",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123691000.html",
-      "date": "2026-05-16",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 住宅強盗3人死傷 新たに少年1人を強盗殺人容疑で逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123381000.html",
-      "date": "2026-05-16",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 呉 船解体現場の火災 ほぼ消し止められる 避難指示解除",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123611000.html",
-      "date": "2026-05-16",
-      "prefecture": "広島",
-      "subtype": "crime_news",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大槌町の山林火災現場を視察 防災相“局地激甚災害指定急ぐ”",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123571000.html",
-      "date": "2026-05-16",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 上野 強盗予備事件 新たに22歳容疑者逮捕 リクルート役か",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123421000.html",
-      "date": "2026-05-16",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 住宅強盗3人死傷 逮捕の2人は高校の同級生か",
-      "url": "http://www3.nhk.or.jp/news/html/20260516/k10015123301000.html",
-      "date": "2026-05-15",
-      "prefecture": "栃木",
-      "subtype": "robbery",
       "lat": 36.5658,
       "lon": 139.8836,
       "source": "nhk_crime"
