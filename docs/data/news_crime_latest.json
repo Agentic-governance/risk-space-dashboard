@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-22T16:47:21+00:00",
-    "total_count": 60,
+    "fetched_at": "2026-05-22T20:25:57+00:00",
+    "total_count": 61,
     "source_counts": {
-      "nhk_crime": 60
+      "nhk_crime": 61
     },
     "type_counts": {
+      "crime_news": 26,
       "weapon": 1,
       "drug": 2,
       "murder": 21,
-      "crime_news": 25,
       "robbery": 4,
       "confinement": 1,
       "assault": 4,
@@ -29,7 +29,7 @@
     "top_prefectures": {
       "東京": 18,
       "栃木": 16,
-      "北海道": 4,
+      "北海道": 5,
       "岩手": 3,
       "兵庫": 3,
       "三重": 3,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "旭山動物園職員 妻殺害容疑で再逮捕 園内から複数のロープ押収",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129331000.html",
+      "date": "2026-05-22",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪 和泉 母娘殺害事件 娘の元交際相手 母殺害容疑で再逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129101000.html",
