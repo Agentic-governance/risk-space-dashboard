@@ -10,35 +10,76 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-22T05:43:01+00:00",
-    "total_count": 59,
+    "fetched_at": "2026-05-22T08:55:33+00:00",
+    "total_count": 63,
     "source_counts": {
-      "nhk_crime": 59
+      "nhk_crime": 63
     },
     "type_counts": {
+      "robbery": 6,
+      "crime_news": 27,
+      "drug": 1,
       "confinement": 1,
       "assault": 4,
-      "crime_news": 26,
       "murder": 22,
-      "robbery": 4,
       "fraud": 1,
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 18,
+      "東京": 19,
       "栃木": 18,
+      "北海道": 4,
       "岩手": 4,
-      "北海道": 3,
       "兵庫": 3,
       "三重": 3,
       "広島": 3,
-      "愛知": 1,
-      "福岡": 1,
-      "佐賀": 1
+      "佐賀": 2,
+      "福岡": 2,
+      "愛知": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "強盗予備疑いなどで逮捕の5人のうち4人を不起訴 鹿児島地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129051000.html",
+      "date": "2026-05-22",
+      "prefecture": "佐賀",
+      "subtype": "robbery",
+      "lat": 33.2635,
+      "lon": 130.3008,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "妻殺害の疑いで再逮捕の旭山動物園職員“妻からの要求に不満”",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129021000.html",
+      "date": "2026-05-22",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 新宿 強盗予備事件で新たに少年ら4人逮捕 SNSで応募も",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015129011000.html",
+      "date": "2026-05-22",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "サントリーホールディングス 新浪剛史元会長を不起訴 福岡地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128851000.html",
+      "date": "2026-05-22",
+      "prefecture": "福岡",
+      "subtype": "drug",
+      "lat": 33.6064,
+      "lon": 130.4183,
+      "source": "nhk_crime"
+    },
     {
       "title": "監禁事件受け 48時間以内の安全確認徹底を児童相談所に通知",
       "url": "http://www3.nhk.or.jp/news/html/20260522/k10015128651000.html",
