@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-23T13:05:24+00:00",
+    "fetched_at": "2026-05-23T14:34:54+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260523232249_20260523231959_VXSE5k_1",
+      "time": "2026-05-23T14:19:00+00:00",
+      "time_jst": "2026-05-23T23:19:00+09:00",
+      "lat": 42.6,
+      "lon": 145.1,
+      "magnitude": 3.5,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Kushiro",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260523223500_20260523223149_VXSE5k_1",
+      "time": "2026-05-23T13:31:00+00:00",
+      "time_jst": "2026-05-23T22:31:00+09:00",
+      "lat": 35.2,
+      "lon": 132.8,
+      "magnitude": 2.2,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Eastern Shimane Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260523152322_20260523152037_VXSE5k_1",
       "time": "2026-05-23T06:20:00+00:00",
