@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-23T15:46:03+00:00",
-    "total_count": 66,
+    "fetched_at": "2026-05-23T16:55:53+00:00",
+    "total_count": 62,
     "source_counts": {
-      "nhk_crime": 66
+      "nhk_crime": 62
     },
     "type_counts": {
-      "murder": 22,
-      "crime_news": 28,
+      "murder": 20,
+      "crime_news": 26,
       "assault": 5,
       "drug": 3,
       "weapon": 1,
@@ -27,8 +27,8 @@
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 18,
-      "栃木": 17,
+      "東京": 17,
+      "栃木": 15,
       "北海道": 6,
       "岩手": 3,
       "兵庫": 3,
@@ -36,7 +36,7 @@
       "大阪": 2,
       "佐賀": 2,
       "福岡": 2,
-      "広島": 2
+      "沖縄": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -655,46 +655,6 @@
       "title": "栃木 強盗殺人事件 逮捕の6人は被害者と面識なし",
       "url": "http://www3.nhk.or.jp/news/html/20260518/k10015124231000.html",
       "date": "2026-05-17",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人事件 横浜市の20代夫婦を逮捕 指示役か",
-      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123891000.html",
-      "date": "2026-05-17",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 福山 山林火災が発生 鎮火の見通し立たず",
-      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015124071000.html",
-      "date": "2026-05-17",
-      "prefecture": "広島",
-      "subtype": "crime_news",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京消防庁 船舶火災に備え水上訓練 東京 晴海ふ頭",
-      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123941000.html",
-      "date": "2026-05-17",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人事件 逮捕の高校生ら4人実行役か 指示役捜査へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260517/k10015123761000.html",
-      "date": "2026-05-16",
       "prefecture": "栃木",
       "subtype": "murder",
       "lat": 36.5658,
