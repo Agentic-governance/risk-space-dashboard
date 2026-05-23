@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-23T02:36:52+00:00",
+    "fetched_at": "2026-05-23T08:12:15+00:00",
     "filter_window_hours": 24,
     "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260523152322_20260523152037_VXSE5k_1",
+      "time": "2026-05-23T06:20:00+00:00",
+      "time_jst": "2026-05-23T15:20:00+09:00",
+      "lat": 35.4,
+      "lon": 140.5,
+      "magnitude": 3.5,
+      "depth_km": 60.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the east Coast of Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260523015707_20260523015403_VXSE5k_1",
       "time": "2026-05-22T16:54:00+00:00",
@@ -35,20 +49,6 @@
       "location_name": "Southern Tochigi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.15
-    },
-    {
-      "event_id": "20260522152513_20260522152219_VXSE5k_1",
-      "time": "2026-05-22T06:22:00+00:00",
-      "time_jst": "2026-05-22T15:22:00+09:00",
-      "lat": 44.1,
-      "lon": 141.8,
-      "magnitude": 3.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Central and northern Rumoi Region, Hokkaido",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }

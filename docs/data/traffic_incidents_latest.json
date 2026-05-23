@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-23T02:36:53+00:00",
-    "fetched_at_jst": "2026-05-23T11:36:53+09:00",
+    "fetched_at": "2026-05-23T08:12:16+00:00",
+    "fetched_at_jst": "2026-05-23T17:12:16+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
       "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "disaster": 1,
-      "congestion": 2
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T02:36:53+00:00",
+      "occurred_at": "2026-05-23T08:12:16+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T02:36:53+00:00",
+      "occurred_at": "2026-05-23T08:12:16+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T02:36:53+00:00",
+      "occurred_at": "2026-05-23T08:12:16+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T02:36:53+00:00",
+      "occurred_at": "2026-05-23T08:12:16+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,26 +85,26 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "辺野古沖転覆事故 “救助の船長は通報番号わからず” 生徒証言 — 沖縄県名護市辺野古の沖合で船が転覆し、研修旅行中の高校生など2人が死亡した事故で、船に乗っていた生徒が海上保安本部の聞き取りに対し、「救助された船長は海上保安庁の緊急通報の電話番号をわかっておらず、自分たちで調べて通報した」という趣旨の説明をしていたことが捜査関係者への取材でわかりました。",
+      "description": "中国山西省の炭鉱で爆発事故 82人死亡 国営メディア — 中国内陸部の山西省にある炭鉱で22日夜に爆発事故があり、国営メディアはこれまでに82人が死亡したと伝えました。現場では救助活動が続けられています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T20:41:03+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129481000.html",
+      "occurred_at": "2026-05-23T07:51:29+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129731000.html",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260523_0005",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "congestion",
-      "severity": 1,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "横浜 車8台関係する事故 高校生をひき逃げなどの疑いで逮捕 — 横浜市旭区の県道で起きた合わせて8台の車が関係する事故で、無免許で乗用車を運転して渋滞の列に突っ込み、5人にけがをさせ現場から逃げたとして、17歳の男子高校生がひき逃げなどの疑いで逮捕されました。",
+      "description": "沖縄 駐留米兵が女性に性的暴行などの疑いで書類送検 — 沖縄に駐留するアメリカ陸軍の20代の兵士が先月、沖縄で女性に性的暴行をしたうえ、暴力をふるってけがをさせたとして書類送検されたことが捜査関係者への取材で分かりました。この兵士は車で逃げて物損事故を起こし、警察に届け出ていなかった疑いも持たれています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-22T21:58:30+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129531000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-05-23T03:01:58+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129631000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }

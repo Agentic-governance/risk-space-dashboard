@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-23T02:37:04+00:00",
-    "total_count": 63,
+    "fetched_at": "2026-05-23T08:12:26+00:00",
+    "total_count": 64,
     "source_counts": {
-      "nhk_crime": 63
+      "nhk_crime": 64
     },
     "type_counts": {
+      "assault": 5,
       "crime_news": 27,
       "drug": 3,
       "weapon": 1,
       "murder": 21,
       "robbery": 4,
       "confinement": 1,
-      "assault": 4,
       "fraud": 1,
       "stalking": 1
     },
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "沖縄 駐留米兵が女性に性的暴行などの疑いで書類送検",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129631000.html",
+      "date": "2026-05-23",
+      "prefecture": "沖縄",
+      "subtype": "assault",
+      "lat": 26.2124,
+      "lon": 127.6809,
+      "source": "nhk_crime"
+    },
     {
       "title": "横浜 車8台関係する事故 高校生をひき逃げなどの疑いで逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129531000.html",
