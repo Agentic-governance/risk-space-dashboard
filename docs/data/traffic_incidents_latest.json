@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-23T10:16:21+00:00",
-    "fetched_at_jst": "2026-05-23T19:16:21+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-05-23T11:46:51+00:00",
+    "fetched_at_jst": "2026-05-23T20:46:51+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 1,
+      "disaster": 2,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T10:16:21+00:00",
+      "occurred_at": "2026-05-23T11:46:51+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T10:16:21+00:00",
+      "occurred_at": "2026-05-23T11:46:51+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T10:16:21+00:00",
+      "occurred_at": "2026-05-23T11:46:51+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,12 +74,26 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T10:16:21+00:00",
+      "occurred_at": "2026-05-23T11:46:51+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260523_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "沖縄本島中南部で線状降水帯が発生 災害危険度高まる — 気象庁は23日午後7時58分、沖縄本島中南部で線状降水帯が発生し、非常に激しい雨が同じ場所に降り続いているとして「顕著な大雨に関する情報」を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-23T11:22:49+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129891000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260523_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
