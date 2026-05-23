@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-23T08:12:16+00:00",
-    "fetched_at_jst": "2026-05-23T17:12:16+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-23T10:16:21+00:00",
+    "fetched_at_jst": "2026-05-23T19:16:21+09:00",
+    "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "disaster": 1,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T08:12:16+00:00",
+      "occurred_at": "2026-05-23T10:16:21+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T08:12:16+00:00",
+      "occurred_at": "2026-05-23T10:16:21+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T08:12:16+00:00",
+      "occurred_at": "2026-05-23T10:16:21+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-23T08:12:16+00:00",
+      "occurred_at": "2026-05-23T10:16:21+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -90,20 +90,6 @@
       "lon": null,
       "occurred_at": "2026-05-23T07:51:29+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129731000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260523_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "沖縄 駐留米兵が女性に性的暴行などの疑いで書類送検 — 沖縄に駐留するアメリカ陸軍の20代の兵士が先月、沖縄で女性に性的暴行をしたうえ、暴力をふるってけがをさせたとして書類送検されたことが捜査関係者への取材で分かりました。この兵士は車で逃げて物損事故を起こし、警察に届け出ていなかった疑いも持たれています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-23T03:01:58+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129631000.html",
       "traffic_multiplier": 1.6
     }
   ]
