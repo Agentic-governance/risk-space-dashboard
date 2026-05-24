@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-24T11:53:48+00:00",
+    "fetched_at": "2026-05-24T13:04:28+00:00",
     "total_count": 66,
     "source_counts": {
       "nhk_crime": 66
@@ -42,7 +42,7 @@
   },
   "incidents": [
     {
-      "title": "兵庫母娘殺害事件 殺人の疑いで40代男に逮捕状 全国に指名手配",
+      "title": "兵庫 たつの 母娘殺害事件 42歳容疑者を公開手配 娘殺害容疑",
       "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130271000.html",
       "date": "2026-05-24",
       "prefecture": "兵庫",
