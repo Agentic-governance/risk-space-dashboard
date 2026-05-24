@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-24T21:34:06+00:00",
+    "fetched_at": "2026-05-24T22:35:50+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -77,34 +77,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260524072227_20260524071950_VXSE5k_1",
-      "time": "2026-05-23T22:19:00+00:00",
-      "time_jst": "2026-05-24T07:19:00+09:00",
-      "lat": 35.9,
-      "lon": 137.3,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Hida, Gifu Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260524070945_20260524070640_VXSE5k_1",
-      "time": "2026-05-23T22:06:00+00:00",
-      "time_jst": "2026-05-24T07:06:00+09:00",
-      "lat": 35.9,
-      "lon": 137.3,
-      "magnitude": 4.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Hida, Gifu Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.0
     }
   ]
 }
