@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-24T05:38:49+00:00",
-    "total_count": 63,
+    "fetched_at": "2026-05-24T08:22:27+00:00",
+    "total_count": 64,
     "source_counts": {
-      "nhk_crime": 63
+      "nhk_crime": 64
     },
     "type_counts": {
+      "murder": 21,
       "crime_news": 27,
-      "murder": 20,
       "assault": 5,
       "drug": 3,
       "weapon": 1,
@@ -28,7 +28,7 @@
     },
     "top_prefectures": {
       "東京": 17,
-      "栃木": 15,
+      "栃木": 16,
       "北海道": 7,
       "岩手": 3,
       "兵庫": 3,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 事件8日前に不審車 トクリュウ指示で下見か",
+      "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130251000.html",
+      "date": "2026-05-24",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "妻殺害容疑の旭山動物園職員 事件数か月前から殺害行為検索か",
       "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130101000.html",
