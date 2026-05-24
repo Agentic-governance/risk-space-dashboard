@@ -10,28 +10,28 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-24T08:22:27+00:00",
-    "total_count": 64,
+    "fetched_at": "2026-05-24T10:23:28+00:00",
+    "total_count": 66,
     "source_counts": {
-      "nhk_crime": 64
+      "nhk_crime": 66
     },
     "type_counts": {
-      "murder": 21,
+      "murder": 22,
+      "robbery": 5,
       "crime_news": 27,
       "assault": 5,
       "drug": 3,
       "weapon": 1,
-      "robbery": 4,
       "confinement": 1,
       "fraud": 1,
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 17,
+      "東京": 18,
       "栃木": 16,
       "北海道": 7,
+      "兵庫": 4,
       "岩手": 3,
-      "兵庫": 3,
       "三重": 3,
       "大阪": 2,
       "佐賀": 2,
@@ -41,6 +41,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "兵庫母娘殺害事件 殺人の疑いで40代男に逮捕状 全国に指名手配",
+      "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130271000.html",
+      "date": "2026-05-24",
+      "prefecture": "兵庫",
+      "subtype": "murder",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 小金井 強盗目的でドライバーなど所持か 2人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130331000.html",
+      "date": "2026-05-24",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 事件8日前に不審車 トクリュウ指示で下見か",
       "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130251000.html",
