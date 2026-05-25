@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-25T14:26:37+00:00",
-    "total_count": 70,
+    "fetched_at": "2026-05-25T16:42:46+00:00",
+    "total_count": 61,
     "source_counts": {
-      "nhk_crime": 70
+      "nhk_crime": 61
     },
     "type_counts": {
-      "assault": 9,
-      "crime_news": 25,
+      "assault": 7,
+      "crime_news": 21,
       "robbery": 8,
-      "murder": 21,
+      "murder": 18,
       "drug": 3,
       "weapon": 1,
       "confinement": 1,
@@ -27,22 +27,22 @@
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 23,
-      "栃木": 14,
+      "東京": 20,
+      "栃木": 11,
       "北海道": 8,
-      "兵庫": 4,
+      "兵庫": 3,
       "岩手": 3,
-      "福岡": 2,
-      "三重": 2,
       "山形": 1,
       "新潟": 1,
-      "沖縄": 1
+      "沖縄": 1,
+      "神奈川": 1,
+      "大阪": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "プロ野球 巨人の阿部慎之助監督逮捕 18歳の娘に暴行した疑い",
+      "title": "巨人の阿部慎之助監督を逮捕 18歳長女に暴行か その後釈放",
       "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131291000.html",
       "date": "2026-05-25",
       "prefecture": "",
@@ -645,96 +645,6 @@
       "title": "栃木強盗殺人事件 住宅に人がいる前提で準備進め襲撃か",
       "url": "http://www3.nhk.or.jp/news/html/20260520/k10015126091000.html",
       "date": "2026-05-19",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "兵庫 たつの 住宅で親子の女性2人血を流し死亡 殺害か",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125711000.html",
-      "date": "2026-05-19",
-      "prefecture": "兵庫",
-      "subtype": "assault",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "津で山林火災 消火活動続く 三重県が自衛隊に災害派遣要請",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125841000.html",
-      "date": "2026-05-19",
-      "prefecture": "三重",
-      "subtype": "crime_news",
-      "lat": 34.7303,
-      "lon": 136.5086,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "福岡 久留米で山林火災 県が自衛隊に災害派遣要請",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125891000.html",
-      "date": "2026-05-19",
-      "prefecture": "福岡",
-      "subtype": "crime_news",
-      "lat": 33.6064,
-      "lon": 130.4183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 奥多摩町 山中に遺体 クマに襲われた可能性含め調べ",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125791000.html",
-      "date": "2026-05-19",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人事件 夫婦が事前に凶器準備し高校生に渡したか",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125741000.html",
-      "date": "2026-05-19",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "会議中に部下を刃物で切りつけたか 50代上司を逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125721000.html",
-      "date": "2026-05-19",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "リチウムイオン電池製品火災 都内は過去最多 夏場の発火注意を",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125311000.html",
-      "date": "2026-05-19",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 高校生ら計画どおり進まず ちりぢりに逃走か",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125371000.html",
-      "date": "2026-05-19",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 逮捕の高校生4人全員が顔合わせたのは当日か",
-      "url": "http://www3.nhk.or.jp/news/html/20260519/k10015125091000.html",
-      "date": "2026-05-18",
       "prefecture": "栃木",
       "subtype": "murder",
       "lat": 36.5658,
