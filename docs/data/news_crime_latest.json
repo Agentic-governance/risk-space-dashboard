@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-25T02:22:12+00:00",
-    "total_count": 59,
+    "fetched_at": "2026-05-25T11:11:09+00:00",
+    "total_count": 67,
     "source_counts": {
-      "nhk_crime": 59
+      "nhk_crime": 67
     },
     "type_counts": {
-      "murder": 19,
-      "robbery": 5,
+      "robbery": 8,
+      "assault": 8,
+      "murder": 21,
       "crime_news": 23,
-      "assault": 5,
       "drug": 3,
       "weapon": 1,
       "confinement": 1,
@@ -27,20 +27,100 @@
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 18,
-      "栃木": 13,
-      "北海道": 7,
+      "東京": 22,
+      "栃木": 14,
+      "北海道": 8,
       "兵庫": 4,
       "岩手": 3,
       "福岡": 2,
       "三重": 2,
+      "新潟": 1,
       "沖縄": 1,
-      "神奈川": 1,
-      "大阪": 1
+      "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "東京 小金井 強盗予備などの疑い 新たに男の容疑者逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131041000.html",
+      "date": "2026-05-25",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "新潟 同居男性の傷害致死事件 差し戻し審で懲役6年確定へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131071000.html",
+      "date": "2026-05-25",
+      "prefecture": "新潟",
+      "subtype": "assault",
+      "lat": 37.9026,
+      "lon": 139.0232,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 銀座の複合施設内で刺激臭 25人が体調不良訴える",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130791000.html",
+      "date": "2026-05-25",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "警察庁長官「トクリュウ」実態解明と取締り強化を改めて指示",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131081000.html",
+      "date": "2026-05-25",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 旭川 高校生殺害事件 被告は初公判で殺人など争う姿勢",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130681000.html",
+      "date": "2026-05-25",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "性的暴行疑いで逮捕の東京消防庁署員2人を釈放 任意で捜査へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130921000.html",
+      "date": "2026-05-25",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 葛飾 金塊入ったリュックサック強奪か 2人逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130751000.html",
+      "date": "2026-05-25",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 新宿 酒買い取り販売店で強盗未遂か 6人逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130741000.html",
+      "date": "2026-05-25",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "兵庫 たつの 母娘殺害事件 42歳容疑者を公開手配 娘殺害容疑",
       "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130271000.html",
