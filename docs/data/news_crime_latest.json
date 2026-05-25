@@ -10,18 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-25T16:42:46+00:00",
-    "total_count": 61,
+    "fetched_at": "2026-05-25T20:12:39+00:00",
+    "total_count": 62,
     "source_counts": {
-      "nhk_crime": 61
+      "nhk_crime": 62
     },
     "type_counts": {
+      "weapon": 2,
       "assault": 7,
       "crime_news": 21,
       "robbery": 8,
       "murder": 18,
       "drug": 3,
-      "weapon": 1,
       "confinement": 1,
       "fraud": 1,
       "stalking": 1
@@ -30,7 +30,7 @@
       "東京": 20,
       "栃木": 11,
       "北海道": 8,
-      "兵庫": 3,
+      "兵庫": 4,
       "岩手": 3,
       "山形": 1,
       "新潟": 1,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "兵庫 母娘殺害事件 容疑者は事件後に着替えて逃走か",
+      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131271000.html",
+      "date": "2026-05-25",
+      "prefecture": "兵庫",
+      "subtype": "weapon",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "巨人の阿部慎之助監督を逮捕 18歳長女に暴行か その後釈放",
       "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131291000.html",

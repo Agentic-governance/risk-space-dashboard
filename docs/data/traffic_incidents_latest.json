@@ -6,17 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-25T16:42:36+00:00",
-    "fetched_at_jst": "2026-05-26T01:42:36+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-25T20:12:30+00:00",
+    "fetched_at_jst": "2026-05-26T05:12:30+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
       "accident": 2,
       "construction": 1,
-      "disaster": 2,
+      "disaster": 1,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T16:42:36+00:00",
+      "occurred_at": "2026-05-25T20:12:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T16:42:36+00:00",
+      "occurred_at": "2026-05-25T20:12:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +60,7 @@
       "description": "保守工事の影響で、29日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T16:42:36+00:00",
+      "occurred_at": "2026-05-25T20:12:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T16:42:36+00:00",
+      "occurred_at": "2026-05-25T20:12:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,23 +88,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T16:42:36+00:00",
+      "occurred_at": "2026-05-25T20:12:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260525_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "鹿児島 奄美地方で線状降水帯発生のおそれ 26日未明～昼前 — 停滞する梅雨前線の影響で、沖縄・奄美では大気の状態が非常に不安定になり、特に鹿児島県の奄美地方では26日未明から昼前にかけて、線状降水帯が発生して災害の危険度が急激に高まるおそれがあります。気象庁は土砂災害や低い土地の浸水などに警戒するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-25T10:16:32+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131131000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
