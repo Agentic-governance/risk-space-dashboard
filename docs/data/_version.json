@@ -1,5 +1,8 @@
 {
   "api_version": "1.0.0",
-  "data_version": "2026.04.05",
-  "changelog": "https://github.com/Agentic-governance/risk-space-dashboard/blob/main/docs/CHANGELOG.md"
+  "data_version": "2026.05.25",
+  "model_version": "v23",
+  "updated_at": "2026-05-25T23:04:23.679057+00:00",
+  "regenerated": true,
+  "note": "Regenerated from available source data (normalized event data not available)"
 }

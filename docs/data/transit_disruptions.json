@@ -1,10 +1,77 @@
 {
-  "generated_at": "2026-04-05T05:48:24.661852",
+  "generated_at": "2026-05-25T23:04:13.212428+00:00",
   "stats": {
-    "yahoo_transit": 0,
-    "nhk_rss": 0
+    "yahoo_transit": 3,
+    "nhk_rss": 1
   },
-  "total_disruptions": 0,
-  "affected_lines": [],
-  "disruptions": []
+  "total_disruptions": 4,
+  "affected_lines": [
+    "JR九州",
+    "東北新幹線 運転再開",
+    "JR東海",
+    "東北新幹線"
+  ],
+  "disruptions": [
+    {
+      "source": "yahoo_transit",
+      "line_name": "東北新幹線",
+      "detail_url": "https://transit.yahoo.co.jp/diainfo/1/0",
+      "severity": "suspension",
+      "description": "とうほくしんかんせん 東北新幹線 5月26日 8時2分 更新 路線を登録 運転再開 作業遅延の影響で、郡山〜福島駅間の上り線(郡山方面行)の運転を見合わせていましたが、07:49頃、運転を再開しました。なお、一部列車に遅れが出ています。 （5月26日 7時49分掲載） 迂回ルート検索 路線を登録すると、登録した路線の運行情報を路線トップに表示したり、メールで受け取ることができます。 東北新幹線",
+      "timestamp": "2026-05-25T23:04:13.212428+00:00",
+      "risk_multiplier": 1.4,
+      "risk_category": [
+        "transit",
+        "crowd",
+        "delay"
+      ]
+    },
+    {
+      "source": "yahoo_transit",
+      "line_name": "JR東海",
+      "detail_url": "https://transit.yahoo.co.jp/diainfo/rapid#c7",
+      "severity": "delay",
+      "description": "運行情報 有料特急 5月26日 8時3分 更新 路線を登録 現在運行情報のある 有料特急 路線 状況 詳細 ひだ号 運転情報 ひだ号は、橋梁支障の影響で、高山... きりしま号 運転情報 きりしま号は、保守工事の影響で、... 主な有料特急 事業者一覧 JR東日本 JR西日本 JR四国 JR九州 JR北海道 JR東海 近畿日本鉄道 南海電鉄 西武鉄道 東武鉄道 京成電鉄 小田急電鉄 名古屋鉄道 智",
+      "timestamp": "2026-05-25T23:04:13.212428+00:00",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "transit",
+        "crowd",
+        "delay"
+      ]
+    },
+    {
+      "source": "yahoo_transit",
+      "line_name": "JR九州",
+      "detail_url": "https://transit.yahoo.co.jp/diainfo/rapid#c386",
+      "severity": "delay",
+      "description": "運行情報 有料特急 5月26日 8時3分 更新 路線を登録 現在運行情報のある 有料特急 路線 状況 詳細 ひだ号 運転情報 ひだ号は、橋梁支障の影響で、高山... きりしま号 運転情報 きりしま号は、保守工事の影響で、... 主な有料特急 事業者一覧 JR東日本 JR西日本 JR四国 JR九州 JR北海道 JR東海 近畿日本鉄道 南海電鉄 西武鉄道 東武鉄道 京成電鉄 小田急電鉄 名古屋鉄道 智",
+      "timestamp": "2026-05-25T23:04:13.212428+00:00",
+      "risk_multiplier": 1.15,
+      "risk_category": [
+        "transit",
+        "crowd",
+        "delay"
+      ]
+    },
+    {
+      "source": "nhk_rss",
+      "title": "東北新幹線 運転再開",
+      "summary": "JR東日本によりますと、東北新幹線は夜間作業の遅れの影響で仙台駅と郡山駅の間の上り線で運転を見合わせていましたが、午前7時49分に運転を再開しました。",
+      "link": "https://news.web.nhk/newsweb/na/na-k10015131371000",
+      "published": "Tue, 26 May 2026 08:02:21 +0900",
+      "matched_keywords": [
+        "見合わせ",
+        "運転再開",
+        "新幹線"
+      ],
+      "severity": "suspension",
+      "timestamp": "2026-05-25T23:04:13.212428+00:00",
+      "risk_multiplier": 1.4,
+      "risk_category": [
+        "transit",
+        "crowd"
+      ]
+    }
+  ]
 }

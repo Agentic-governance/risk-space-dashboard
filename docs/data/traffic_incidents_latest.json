@@ -6,21 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-25T22:56:33+00:00",
-    "fetched_at_jst": "2026-05-26T07:56:33+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-25T23:04:13+00:00",
+    "fetched_at_jst": "2026-05-26T08:04:13+09:00",
+    "total_count": 2,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 2
     },
     "type_counts": {
-      "accident": 2,
-      "construction": 1,
-      "disaster": 2,
-      "congestion": 1
+      "accident": 1,
+      "construction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
-    "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
+    "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め); secondary filters: ROAD_KEYWORDS (road incidents) OR railway_keywords (脱線/衝突/踏切/鉄道/列車/電車/新幹線) — sports/industrial false positives removed. iter4: truncated RSS descriptions (ending '...' or '…') trigger article fetch from NHK article URL to recover location text cut off by RSS truncation. Boilerplate blocks (nav chrome, empty-state messages <15 chars) are filtered. geocode_method priority: railway_centroid > highway_name > route_centroid > pref_centroid > city_centroid > none. railway_centroid: matched RAILWAY_COORDS dict (60+ JR/private/shinkansen lines). highway_name: matched HIGHWAY_COORDS dict (60+ expressways). route_centroid: 国道X号 mapped via ROUTE_COORDS. pref_centroid: prefecture name matched in text. city_centroid: city→prefecture centroid fallback."
   },
   "incidents": [
     {
@@ -30,29 +27,16 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-25T22:56:33+00:00",
+      "description": "国吉〜上総中川駅間での脱線事故の...",
+      "lat": 35.35,
+      "lon": 140.15,
+      "geocode_method": "railway_centroid",
+      "occurred_at": "2026-05-25T23:04:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260525_0001",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "中川駅間での脱線",
-      "description": "国吉〜上総中川駅間での脱線事故の...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-25T22:56:33+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260525_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -61,51 +45,10 @@
       "description": "保守工事の影響で、29日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T22:56:33+00:00",
+      "geocode_method": "none",
+      "occurred_at": "2026-05-25T23:04:13+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260525_0003",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "天気アプリの決定版 Yahoo!天気・災害",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-25T22:56:33+00:00",
-      "url": "",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260525_0004",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "congestion",
-      "severity": 1,
-      "road_name": "",
-      "description": "渋滞をチェック Yahoo!道路交通情報",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-25T22:56:33+00:00",
-      "url": "",
-      "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260525_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "鹿児島奄美地方で昼前にかけ線状降水帯発生のおそれ — 停滞する梅雨前線の影響で、鹿児島県の奄美地方では大気の状態が非常に不安定になり局地的に非常に激しい雨が降っています。奄美地方では26日昼前にかけて線状降水帯が発生して災害の危険度が急激に高まるおそれがあり、気象庁は土砂災害に警戒するとともに、低い土地の浸水などに注意するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-25T22:47:58+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131131000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }

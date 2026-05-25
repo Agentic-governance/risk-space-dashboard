@@ -1,75 +1,484 @@
 {
-  "version": "1.0.0",
-  "generated_at": "2026-04-05T12:00:00Z",
-  "description": "Joint distributions for compound (multi-peril) risk analysis. Correlations derived from empirical monthly co-occurrence 2020-2025.",
-  "methodology": "Pearson correlation for continuous pairs; contingency matrix for ordinal intensity bands. Prefecture sample = 8 representative units. Matrices are symmetric where applicable.",
-  "units": {
-    "heat_days": "days/year above 30C",
-    "crime_rate": "incidents per 1000 inhabitants",
-    "flood_depth": "meters",
-    "displacement_proxy": "evacuees per 10,000 residents",
-    "earthquake_intensity": "JMA shindo scale (0-7)",
-    "evacuation_capacity": "shelter beds per 1000 residents"
-  },
-  "joint_distributions": {
-    "heat_days_x_crime_rate": {
-      "type": "monthly_correlation_by_prefecture",
-      "prefectures": ["北海道", "宮城県", "東京都", "神奈川県", "愛知県", "大阪府", "広島県", "福岡県"],
-      "months": ["01","02","03","04","05","06","07","08","09","10","11","12"],
-      "correlation_matrix": [
-        [-0.12,-0.10,-0.05, 0.02, 0.14, 0.28, 0.41, 0.47, 0.33, 0.18, 0.04,-0.08],
-        [-0.08,-0.06,-0.02, 0.05, 0.18, 0.31, 0.44, 0.49, 0.36, 0.20, 0.06,-0.04],
-        [ 0.02, 0.04, 0.09, 0.16, 0.27, 0.40, 0.53, 0.58, 0.44, 0.29, 0.14, 0.03],
-        [ 0.03, 0.05, 0.10, 0.17, 0.28, 0.41, 0.54, 0.59, 0.45, 0.30, 0.15, 0.04],
-        [ 0.05, 0.07, 0.12, 0.19, 0.30, 0.43, 0.55, 0.60, 0.47, 0.32, 0.17, 0.06],
-        [ 0.06, 0.08, 0.13, 0.20, 0.31, 0.44, 0.56, 0.61, 0.48, 0.33, 0.18, 0.07],
-        [ 0.07, 0.09, 0.14, 0.21, 0.32, 0.45, 0.57, 0.62, 0.49, 0.34, 0.19, 0.08],
-        [ 0.10, 0.12, 0.17, 0.24, 0.35, 0.48, 0.60, 0.65, 0.52, 0.37, 0.22, 0.11]
-      ],
-      "interpretation": "Higher correlation in summer months (June-August) where heat stress and violent-crime incidence co-vary."
+  "generated_at": "2026-05-25T23:04:23.679057+00:00",
+  "data_version": "2026.05.25",
+  "description": "Compound risk tensor: crime x economic_stress x demographic_vulnerability x disaster_exposure",
+  "dimensions": [
+    "crime_risk",
+    "economic_stress",
+    "demographic_vulnerability",
+    "disaster_exposure"
+  ],
+  "methodology": "Each dimension normalized 0-1. Compound score = geometric mean of 4 dimensions.",
+  "prefectures": [
+    {
+      "prefecture_code": "23",
+      "prefecture": "愛知県",
+      "crime_risk": 0.612,
+      "economic_stress": 0.4853,
+      "demographic_vulnerability": 0.4176,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.5523,
+      "risk_tier": "HIGH"
     },
-    "flood_depth_x_displacement_proxy": {
-      "type": "bivariate_contingency",
-      "row_bins_flood_depth_m": ["0.0-0.3","0.3-1.0","1.0-2.0","2.0-5.0","5.0+"],
-      "col_bins_displacement": ["0-5","5-20","20-50","50-200","200+"],
-      "joint_counts": [
-        [420, 108,  22,   4,   0],
-        [180, 215,  96,  18,   2],
-        [ 42, 128, 184,  72,   9],
-        [  8,  31,  88, 147,  56],
-        [  1,   6,  22,  64, 133]
-      ],
-      "marginal_flood": [554, 511, 435, 330, 226],
-      "marginal_displacement": [651, 488, 412, 305, 200],
-      "conditional_p_displacement_given_depth_ge_2m": {
-        "0-5": 0.016, "5-20": 0.066, "20-50": 0.198, "50-200": 0.379, "200+": 0.340
-      },
-      "interpretation": "Depth exceeding 2m shifts displacement distribution dramatically toward the 50+ bucket."
+    {
+      "prefecture_code": "12",
+      "prefecture": "千葉県",
+      "crime_risk": 0.502,
+      "economic_stress": 0.5373,
+      "demographic_vulnerability": 0.4546,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.5507,
+      "risk_tier": "HIGH"
     },
-    "earthquake_intensity_x_evacuation_capacity": {
-      "type": "bivariate_contingency",
-      "row_bins_jma_shindo": ["0-3","4","5-lower","5-upper","6-lower","6-upper","7"],
-      "col_bins_capacity_per_1000": ["0-10","10-25","25-50","50-100","100+"],
-      "joint_counts": [
-        [ 88, 142, 167, 121,  58],
-        [ 64, 128, 158, 130,  67],
-        [ 42,  96, 134, 128,  78],
-        [ 28,  71, 110, 122,  91],
-        [ 15,  44,  82, 108, 101],
-        [  7,  24,  55,  86, 112],
-        [  2,  11,  28,  64, 113]
-      ],
-      "resilience_score": {
-        "definition": "capacity_weighted_expected_shortfall = sum(joint * (1 - capacity_band_midpoint/200))",
-        "national": 0.623,
-        "notes": "Lower = better resilience. Values computed from joint_counts across 47 prefectures."
-      },
-      "interpretation": "Higher shindo events concentrated in lower-capacity zones indicate structural resilience gap above shindo 6-lower."
+    {
+      "prefecture_code": "39",
+      "prefecture": "高知県",
+      "crime_risk": 0.276,
+      "economic_stress": 0.708,
+      "demographic_vulnerability": 0.602,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.545,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "40",
+      "prefecture": "福岡県",
+      "crime_risk": 0.624,
+      "economic_stress": 0.636,
+      "demographic_vulnerability": 0.4362,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.5424,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "27",
+      "prefecture": "大阪府",
+      "crime_risk": 0.897,
+      "economic_stress": 0.848,
+      "demographic_vulnerability": 0.371,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.5394,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "01",
+      "prefecture": "北海道",
+      "crime_risk": 0.389,
+      "economic_stress": 0.7173,
+      "demographic_vulnerability": 0.5949,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.5367,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "13",
+      "prefecture": "東京都",
+      "crime_risk": 0.893,
+      "economic_stress": 0.644,
+      "demographic_vulnerability": 0.282,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.5336,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "14",
+      "prefecture": "神奈川県",
+      "crime_risk": 0.481,
+      "economic_stress": 0.5853,
+      "demographic_vulnerability": 0.3733,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.5298,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "47",
+      "prefecture": "沖縄県",
+      "crime_risk": 0.389,
+      "economic_stress": 0.8,
+      "demographic_vulnerability": 0.2996,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.5142,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "04",
+      "prefecture": "宮城県",
+      "crime_risk": 0.312,
+      "economic_stress": 0.5493,
+      "demographic_vulnerability": 0.5162,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.5075,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "22",
+      "prefecture": "静岡県",
+      "crime_risk": 0.357,
+      "economic_stress": 0.448,
+      "demographic_vulnerability": 0.5384,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.5041,
+      "risk_tier": "HIGH"
+    },
+    {
+      "prefecture_code": "28",
+      "prefecture": "兵庫県",
+      "crime_risk": 0.436,
+      "economic_stress": 0.5773,
+      "demographic_vulnerability": 0.4905,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4985,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "30",
+      "prefecture": "和歌山県",
+      "crime_risk": 0.312,
+      "economic_stress": 0.436,
+      "demographic_vulnerability": 0.5939,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.4961,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "46",
+      "prefecture": "鹿児島県",
+      "crime_risk": 0.258,
+      "economic_stress": 0.576,
+      "demographic_vulnerability": 0.5281,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.4926,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "11",
+      "prefecture": "埼玉県",
+      "crime_risk": 0.441,
+      "economic_stress": 0.5293,
+      "demographic_vulnerability": 0.4589,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4811,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "08",
+      "prefecture": "茨城県",
+      "crime_risk": 0.398,
+      "economic_stress": 0.5,
+      "demographic_vulnerability": 0.5376,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4809,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "07",
+      "prefecture": "福島県",
+      "crime_risk": 0.215,
+      "economic_stress": 0.4907,
+      "demographic_vulnerability": 0.5951,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.4658,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "09",
+      "prefecture": "栃木県",
+      "crime_risk": 0.374,
+      "economic_stress": 0.4547,
+      "demographic_vulnerability": 0.5459,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4641,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "10",
+      "prefecture": "群馬県",
+      "crime_risk": 0.367,
+      "economic_stress": 0.4453,
+      "demographic_vulnerability": 0.543,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.459,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "34",
+      "prefecture": "広島県",
+      "crime_risk": 0.362,
+      "economic_stress": 0.5093,
+      "demographic_vulnerability": 0.4799,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4586,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "24",
+      "prefecture": "三重県",
+      "crime_risk": 0.261,
+      "economic_stress": 0.4,
+      "demographic_vulnerability": 0.5586,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.4573,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "26",
+      "prefecture": "京都府",
+      "crime_risk": 0.547,
+      "economic_stress": 0.596,
+      "demographic_vulnerability": 0.4369,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.4547,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "03",
+      "prefecture": "岩手県",
+      "crime_risk": 0.178,
+      "economic_stress": 0.5053,
+      "demographic_vulnerability": 0.6253,
+      "disaster_exposure": 0.75,
+      "compound_score": 0.4532,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "33",
+      "prefecture": "岡山県",
+      "crime_risk": 0.321,
+      "economic_stress": 0.4827,
+      "demographic_vulnerability": 0.5076,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4453,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "43",
+      "prefecture": "熊本県",
+      "crime_risk": 0.272,
+      "economic_stress": 0.4747,
+      "demographic_vulnerability": 0.5166,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4273,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "44",
+      "prefecture": "大分県",
+      "crime_risk": 0.247,
+      "economic_stress": 0.4413,
+      "demographic_vulnerability": 0.5627,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.4185,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "02",
+      "prefecture": "青森県",
+      "crime_risk": 0.241,
+      "economic_stress": 0.624,
+      "demographic_vulnerability": 0.6289,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.4104,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "42",
+      "prefecture": "長崎県",
+      "crime_risk": 0.248,
+      "economic_stress": 0.592,
+      "demographic_vulnerability": 0.5917,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.4018,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "15",
+      "prefecture": "新潟県",
+      "crime_risk": 0.183,
+      "economic_stress": 0.44,
+      "demographic_vulnerability": 0.5931,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.3931,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "35",
+      "prefecture": "山口県",
+      "crime_risk": 0.264,
+      "economic_stress": 0.4933,
+      "demographic_vulnerability": 0.5771,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3875,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "38",
+      "prefecture": "愛媛県",
+      "crime_risk": 0.248,
+      "economic_stress": 0.4973,
+      "demographic_vulnerability": 0.5614,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3796,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "36",
+      "prefecture": "徳島県",
+      "crime_risk": 0.234,
+      "economic_stress": 0.468,
+      "demographic_vulnerability": 0.5844,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3722,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "29",
+      "prefecture": "奈良県",
+      "crime_risk": 0.243,
+      "economic_stress": 0.4707,
+      "demographic_vulnerability": 0.5393,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3688,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "16",
+      "prefecture": "富山県",
+      "crime_risk": 0.201,
+      "economic_stress": 0.3267,
+      "demographic_vulnerability": 0.563,
+      "disaster_exposure": 0.5,
+      "compound_score": 0.3687,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "45",
+      "prefecture": "宮崎県",
+      "crime_risk": 0.236,
+      "economic_stress": 0.4973,
+      "demographic_vulnerability": 0.5231,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3684,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "37",
+      "prefecture": "香川県",
+      "crime_risk": 0.271,
+      "economic_stress": 0.4147,
+      "demographic_vulnerability": 0.5433,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3679,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "05",
+      "prefecture": "秋田県",
+      "crime_risk": 0.168,
+      "economic_stress": 0.5253,
+      "demographic_vulnerability": 0.6911,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3678,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "25",
+      "prefecture": "滋賀県",
+      "crime_risk": 0.302,
+      "economic_stress": 0.4333,
+      "demographic_vulnerability": 0.4521,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.365,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "21",
+      "prefecture": "岐阜県",
+      "crime_risk": 0.228,
+      "economic_stress": 0.452,
+      "demographic_vulnerability": 0.5675,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3639,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "19",
+      "prefecture": "山梨県",
+      "crime_risk": 0.241,
+      "economic_stress": 0.4053,
+      "demographic_vulnerability": 0.5551,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3571,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "17",
+      "prefecture": "石川県",
+      "crime_risk": 0.287,
+      "economic_stress": 0.3787,
+      "demographic_vulnerability": 0.4821,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3541,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "41",
+      "prefecture": "佐賀県",
+      "crime_risk": 0.231,
+      "economic_stress": 0.4267,
+      "demographic_vulnerability": 0.5088,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3502,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "prefecture_code": "31",
+      "prefecture": "鳥取県",
+      "crime_risk": 0.198,
+      "economic_stress": 0.4053,
+      "demographic_vulnerability": 0.5906,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3453,
+      "risk_tier": "LOW"
+    },
+    {
+      "prefecture_code": "06",
+      "prefecture": "山形県",
+      "crime_risk": 0.172,
+      "economic_stress": 0.4267,
+      "demographic_vulnerability": 0.613,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3408,
+      "risk_tier": "LOW"
+    },
+    {
+      "prefecture_code": "32",
+      "prefecture": "島根県",
+      "crime_risk": 0.182,
+      "economic_stress": 0.3853,
+      "demographic_vulnerability": 0.591,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3339,
+      "risk_tier": "LOW"
+    },
+    {
+      "prefecture_code": "20",
+      "prefecture": "長野県",
+      "crime_risk": 0.193,
+      "economic_stress": 0.3547,
+      "demographic_vulnerability": 0.5845,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.331,
+      "risk_tier": "LOW"
+    },
+    {
+      "prefecture_code": "18",
+      "prefecture": "福井県",
+      "crime_risk": 0.198,
+      "economic_stress": 0.3227,
+      "demographic_vulnerability": 0.5441,
+      "disaster_exposure": 0.3,
+      "compound_score": 0.3196,
+      "risk_tier": "LOW"
     }
-  },
-  "notes": [
-    "Matrices are illustrative and derived from a synthesis of empirical co-occurrence; not intended for direct underwriting.",
-    "Prefecture sample uses 8 benchmark entities; full 47-prefecture tensors available on request.",
-    "Use with tail_risk_metrics.json for CVaR aggregation under compound events."
   ]
 }
