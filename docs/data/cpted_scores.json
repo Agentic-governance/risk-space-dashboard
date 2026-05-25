@@ -1,0 +1,686 @@
+{
+  "generated_at": "2026-05-25T09:26:21.874597+00:00",
+  "layer_id": "cpted",
+  "layer_name": "環境安全スコア (CPTED)",
+  "layer_name_en": "CPTED Environmental Safety Score",
+  "description": "Crime Prevention Through Environmental Design scores for Japan prefectures",
+  "methodology": "Proxy-based scoring using publicly available statistics",
+  "dimensions": [
+    "natural_surveillance (自然監視性)",
+    "access_control (自然アクセス制御)",
+    "territoriality (領域性)",
+    "activity_support (活動支援)"
+  ],
+  "score_range": "0-100",
+  "color_scale": {
+    "low": "#f44336",
+    "mid": "#ff9800",
+    "high": "#4caf50",
+    "thresholds": [
+      40,
+      55,
+      70
+    ],
+    "note": "Higher CPTED score = better environmental safety (green)"
+  },
+  "prefectures": [
+    {
+      "prefecture_code": "13",
+      "prefecture": "東京都",
+      "lat": 35.68,
+      "lon": 139.69,
+      "cpted_composite": 74.2,
+      "dimension_scores": {
+        "natural_surveillance": 100.0,
+        "access_control": 50.0,
+        "territoriality": 46.8,
+        "activity_support": 100.0
+      },
+      "risk_tier": "高安全"
+    },
+    {
+      "prefecture_code": "23",
+      "prefecture": "愛知県",
+      "lat": 35.18,
+      "lon": 136.91,
+      "cpted_composite": 61.6,
+      "dimension_scores": {
+        "natural_surveillance": 65.0,
+        "access_control": 67.6,
+        "territoriality": 64.9,
+        "activity_support": 48.8
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "26",
+      "prefecture": "京都府",
+      "lat": 35.02,
+      "lon": 135.76,
+      "cpted_composite": 61.2,
+      "dimension_scores": {
+        "natural_surveillance": 47.7,
+        "access_control": 66.5,
+        "territoriality": 59.0,
+        "activity_support": 71.7
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "17",
+      "prefecture": "石川県",
+      "lat": 36.59,
+      "lon": 136.63,
+      "cpted_composite": 58.0,
+      "dimension_scores": {
+        "natural_surveillance": 24.1,
+        "access_control": 63.3,
+        "territoriality": 73.9,
+        "activity_support": 70.8
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "18",
+      "prefecture": "福井県",
+      "lat": 36.07,
+      "lon": 136.22,
+      "cpted_composite": 57.5,
+      "dimension_scores": {
+        "natural_surveillance": 14.0,
+        "access_control": 61.5,
+        "territoriality": 83.8,
+        "activity_support": 70.5
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "16",
+      "prefecture": "富山県",
+      "lat": 36.7,
+      "lon": 137.21,
+      "cpted_composite": 57.2,
+      "dimension_scores": {
+        "natural_surveillance": 21.5,
+        "access_control": 64.1,
+        "territoriality": 81.3,
+        "activity_support": 62.1
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "27",
+      "prefecture": "大阪府",
+      "lat": 34.69,
+      "lon": 135.52,
+      "cpted_composite": 57.0,
+      "dimension_scores": {
+        "natural_surveillance": 82.3,
+        "access_control": 49.2,
+        "territoriality": 35.6,
+        "activity_support": 61.1
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "40",
+      "prefecture": "福岡県",
+      "lat": 33.59,
+      "lon": 130.42,
+      "cpted_composite": 56.6,
+      "dimension_scores": {
+        "natural_surveillance": 48.4,
+        "access_control": 65.8,
+        "territoriality": 54.8,
+        "activity_support": 57.5
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "47",
+      "prefecture": "沖縄県",
+      "lat": 26.34,
+      "lon": 127.68,
+      "cpted_composite": 55.2,
+      "dimension_scores": {
+        "natural_surveillance": 31.2,
+        "access_control": 65.2,
+        "territoriality": 55.0,
+        "activity_support": 69.2
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "28",
+      "prefecture": "兵庫県",
+      "lat": 34.69,
+      "lon": 135.18,
+      "cpted_composite": 54.0,
+      "dimension_scores": {
+        "natural_surveillance": 52.1,
+        "access_control": 65.5,
+        "territoriality": 61.0,
+        "activity_support": 37.4
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "21",
+      "prefecture": "岐阜県",
+      "lat": 35.39,
+      "lon": 136.72,
+      "cpted_composite": 53.5,
+      "dimension_scores": {
+        "natural_surveillance": 20.8,
+        "access_control": 63.2,
+        "territoriality": 72.2,
+        "activity_support": 57.9
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "11",
+      "prefecture": "埼玉県",
+      "lat": 35.86,
+      "lon": 139.65,
+      "cpted_composite": 53.2,
+      "dimension_scores": {
+        "natural_surveillance": 64.5,
+        "access_control": 64.4,
+        "territoriality": 77.7,
+        "activity_support": 6.3
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "34",
+      "prefecture": "広島県",
+      "lat": 34.4,
+      "lon": 132.46,
+      "cpted_composite": 52.6,
+      "dimension_scores": {
+        "natural_surveillance": 35.1,
+        "access_control": 64.6,
+        "territoriality": 56.1,
+        "activity_support": 54.8
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "14",
+      "prefecture": "神奈川県",
+      "lat": 35.45,
+      "lon": 139.64,
+      "cpted_composite": 52.5,
+      "dimension_scores": {
+        "natural_surveillance": 79.2,
+        "access_control": 62.1,
+        "territoriality": 64.7,
+        "activity_support": 3.9
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "22",
+      "prefecture": "静岡県",
+      "lat": 34.98,
+      "lon": 138.38,
+      "cpted_composite": 52.2,
+      "dimension_scores": {
+        "natural_surveillance": 34.0,
+        "access_control": 63.9,
+        "territoriality": 58.0,
+        "activity_support": 52.8
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "25",
+      "prefecture": "滋賀県",
+      "lat": 35.0,
+      "lon": 135.87,
+      "cpted_composite": 52.2,
+      "dimension_scores": {
+        "natural_surveillance": 31.1,
+        "access_control": 62.3,
+        "territoriality": 73.0,
+        "activity_support": 42.6
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "01",
+      "prefecture": "北海道",
+      "lat": 43.06,
+      "lon": 141.35,
+      "cpted_composite": 51.8,
+      "dimension_scores": {
+        "natural_surveillance": 38.1,
+        "access_control": 50.0,
+        "territoriality": 58.5,
+        "activity_support": 60.5
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "24",
+      "prefecture": "三重県",
+      "lat": 34.73,
+      "lon": 136.51,
+      "cpted_composite": 51.5,
+      "dimension_scores": {
+        "natural_surveillance": 24.3,
+        "access_control": 61.2,
+        "territoriality": 69.7,
+        "activity_support": 51.0
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "04",
+      "prefecture": "宮城県",
+      "lat": 38.27,
+      "lon": 140.87,
+      "cpted_composite": 50.6,
+      "dimension_scores": {
+        "natural_surveillance": 35.1,
+        "access_control": 51.9,
+        "territoriality": 58.6,
+        "activity_support": 57.0
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "12",
+      "prefecture": "千葉県",
+      "lat": 35.61,
+      "lon": 140.12,
+      "cpted_composite": 50.4,
+      "dimension_scores": {
+        "natural_surveillance": 57.8,
+        "access_control": 64.8,
+        "territoriality": 67.9,
+        "activity_support": 11.0
+      },
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "33",
+      "prefecture": "岡山県",
+      "lat": 34.66,
+      "lon": 133.93,
+      "cpted_composite": 48.7,
+      "dimension_scores": {
+        "natural_surveillance": 26.1,
+        "access_control": 61.0,
+        "territoriality": 59.7,
+        "activity_support": 47.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "37",
+      "prefecture": "香川県",
+      "lat": 34.34,
+      "lon": 134.04,
+      "cpted_composite": 48.6,
+      "dimension_scores": {
+        "natural_surveillance": 21.8,
+        "access_control": 63.7,
+        "territoriality": 46.2,
+        "activity_support": 62.9
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "15",
+      "prefecture": "新潟県",
+      "lat": 37.9,
+      "lon": 139.02,
+      "cpted_composite": 48.3,
+      "dimension_scores": {
+        "natural_surveillance": 15.7,
+        "access_control": 56.4,
+        "territoriality": 69.0,
+        "activity_support": 52.0
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "06",
+      "prefecture": "山形県",
+      "lat": 38.24,
+      "lon": 140.33,
+      "cpted_composite": 47.6,
+      "dimension_scores": {
+        "natural_surveillance": 8.2,
+        "access_control": 61.8,
+        "territoriality": 80.2,
+        "activity_support": 40.1
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "08",
+      "prefecture": "茨城県",
+      "lat": 36.34,
+      "lon": 140.45,
+      "cpted_composite": 47.6,
+      "dimension_scores": {
+        "natural_surveillance": 23.3,
+        "access_control": 62.9,
+        "territoriality": 62.3,
+        "activity_support": 41.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "10",
+      "prefecture": "群馬県",
+      "lat": 36.39,
+      "lon": 139.06,
+      "cpted_composite": 47.4,
+      "dimension_scores": {
+        "natural_surveillance": 17.4,
+        "access_control": 59.6,
+        "territoriality": 65.9,
+        "activity_support": 46.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "09",
+      "prefecture": "栃木県",
+      "lat": 36.57,
+      "lon": 139.88,
+      "cpted_composite": 47.3,
+      "dimension_scores": {
+        "natural_surveillance": 19.6,
+        "access_control": 60.8,
+        "territoriality": 66.7,
+        "activity_support": 42.0
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "43",
+      "prefecture": "熊本県",
+      "lat": 32.79,
+      "lon": 130.74,
+      "cpted_composite": 47.2,
+      "dimension_scores": {
+        "natural_surveillance": 20.9,
+        "access_control": 59.6,
+        "territoriality": 60.4,
+        "activity_support": 47.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "20",
+      "prefecture": "長野県",
+      "lat": 36.23,
+      "lon": 138.18,
+      "cpted_composite": 46.5,
+      "dimension_scores": {
+        "natural_surveillance": 7.6,
+        "access_control": 56.1,
+        "territoriality": 63.2,
+        "activity_support": 58.9
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "41",
+      "prefecture": "佐賀県",
+      "lat": 33.25,
+      "lon": 130.3,
+      "cpted_composite": 46.3,
+      "dimension_scores": {
+        "natural_surveillance": 12.0,
+        "access_control": 59.7,
+        "territoriality": 62.3,
+        "activity_support": 51.1
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "29",
+      "prefecture": "奈良県",
+      "lat": 34.69,
+      "lon": 135.83,
+      "cpted_composite": 45.5,
+      "dimension_scores": {
+        "natural_surveillance": 27.4,
+        "access_control": 65.8,
+        "territoriality": 65.0,
+        "activity_support": 23.9
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "31",
+      "prefecture": "鳥取県",
+      "lat": 35.5,
+      "lon": 134.24,
+      "cpted_composite": 44.9,
+      "dimension_scores": {
+        "natural_surveillance": 2.8,
+        "access_control": 55.5,
+        "territoriality": 66.8,
+        "activity_support": 54.5
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "35",
+      "prefecture": "山口県",
+      "lat": 34.19,
+      "lon": 131.47,
+      "cpted_composite": 44.8,
+      "dimension_scores": {
+        "natural_surveillance": 17.3,
+        "access_control": 60.0,
+        "territoriality": 54.8,
+        "activity_support": 47.3
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "38",
+      "prefecture": "愛媛県",
+      "lat": 33.84,
+      "lon": 132.77,
+      "cpted_composite": 44.2,
+      "dimension_scores": {
+        "natural_surveillance": 16.5,
+        "access_control": 60.8,
+        "territoriality": 46.8,
+        "activity_support": 52.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "42",
+      "prefecture": "長崎県",
+      "lat": 32.74,
+      "lon": 129.87,
+      "cpted_composite": 43.7,
+      "dimension_scores": {
+        "natural_surveillance": 17.4,
+        "access_control": 59.0,
+        "territoriality": 52.3,
+        "activity_support": 46.0
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "03",
+      "prefecture": "岩手県",
+      "lat": 39.7,
+      "lon": 141.15,
+      "cpted_composite": 43.6,
+      "dimension_scores": {
+        "natural_surveillance": 6.4,
+        "access_control": 64.2,
+        "territoriality": 68.5,
+        "activity_support": 35.2
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "44",
+      "prefecture": "大分県",
+      "lat": 33.24,
+      "lon": 131.61,
+      "cpted_composite": 43.4,
+      "dimension_scores": {
+        "natural_surveillance": 15.5,
+        "access_control": 58.1,
+        "territoriality": 54.3,
+        "activity_support": 45.7
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "02",
+      "prefecture": "青森県",
+      "lat": 40.82,
+      "lon": 140.74,
+      "cpted_composite": 42.9,
+      "dimension_scores": {
+        "natural_surveillance": 10.4,
+        "access_control": 59.0,
+        "territoriality": 62.8,
+        "activity_support": 39.3
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "07",
+      "prefecture": "福島県",
+      "lat": 37.75,
+      "lon": 140.47,
+      "cpted_composite": 42.8,
+      "dimension_scores": {
+        "natural_surveillance": 13.1,
+        "access_control": 57.6,
+        "territoriality": 63.4,
+        "activity_support": 37.1
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "30",
+      "prefecture": "和歌山県",
+      "lat": 34.23,
+      "lon": 135.17,
+      "cpted_composite": 42.6,
+      "dimension_scores": {
+        "natural_surveillance": 11.0,
+        "access_control": 58.1,
+        "territoriality": 48.7,
+        "activity_support": 52.5
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "32",
+      "prefecture": "島根県",
+      "lat": 35.47,
+      "lon": 133.05,
+      "cpted_composite": 41.9,
+      "dimension_scores": {
+        "natural_surveillance": 0.0,
+        "access_control": 55.2,
+        "territoriality": 64.8,
+        "activity_support": 47.6
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "05",
+      "prefecture": "秋田県",
+      "lat": 39.72,
+      "lon": 140.1,
+      "cpted_composite": 41.7,
+      "dimension_scores": {
+        "natural_surveillance": 6.8,
+        "access_control": 61.8,
+        "territoriality": 68.3,
+        "activity_support": 29.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "19",
+      "prefecture": "山梨県",
+      "lat": 35.66,
+      "lon": 138.57,
+      "cpted_composite": 40.9,
+      "dimension_scores": {
+        "natural_surveillance": 11.3,
+        "access_control": 58.6,
+        "territoriality": 44.0,
+        "activity_support": 49.5
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "36",
+      "prefecture": "徳島県",
+      "lat": 34.07,
+      "lon": 134.56,
+      "cpted_composite": 39.9,
+      "dimension_scores": {
+        "natural_surveillance": 9.3,
+        "access_control": 58.2,
+        "territoriality": 40.3,
+        "activity_support": 51.6
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "45",
+      "prefecture": "宮崎県",
+      "lat": 31.91,
+      "lon": 131.42,
+      "cpted_composite": 39.9,
+      "dimension_scores": {
+        "natural_surveillance": 11.2,
+        "access_control": 55.9,
+        "territoriality": 52.8,
+        "activity_support": 39.8
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "46",
+      "prefecture": "鹿児島県",
+      "lat": 31.56,
+      "lon": 130.56,
+      "cpted_composite": 39.0,
+      "dimension_scores": {
+        "natural_surveillance": 13.7,
+        "access_control": 57.4,
+        "territoriality": 43.5,
+        "activity_support": 41.4
+      },
+      "risk_tier": "要改善"
+    },
+    {
+      "prefecture_code": "39",
+      "prefecture": "高知県",
+      "lat": 33.56,
+      "lon": 133.53,
+      "cpted_composite": 37.0,
+      "dimension_scores": {
+        "natural_surveillance": 4.3,
+        "access_control": 55.8,
+        "territoriality": 36.5,
+        "activity_support": 51.6
+      },
+      "risk_tier": "要改善"
+    }
+  ]
+}

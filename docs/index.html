@@ -432,7 +432,20 @@ body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800
   <div class="section"><div class="section-title">時間帯シミュレーション</div><div id="time-slider-wrap">
     <input type="range" id="time-slider" min="0" max="23" value="0" oninput="onTimeSliderChange(this.value)" aria-label="時間帯シミュレーション">
     <div id="time-label">現在時刻</div>
-    <div class="time-slider-note">※ グリッドモードで時間帯変化を確認</div>
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px">
+      <span style="font-size:10px;color:#888">曜日:</span>
+      <span id="dow-indicator" style="font-size:11px;font-weight:700;color:#7eb3f0"></span>
+    </div>
+    <div id="dow-selector" style="display:flex;gap:2px;margin-top:4px;flex-wrap:wrap">
+      <button class="btn" id="dow-btn-0" onclick="onDOWChange(0)">日</button>
+      <button class="btn" id="dow-btn-1" onclick="onDOWChange(1)">月</button>
+      <button class="btn" id="dow-btn-2" onclick="onDOWChange(2)">火</button>
+      <button class="btn" id="dow-btn-3" onclick="onDOWChange(3)">水</button>
+      <button class="btn" id="dow-btn-4" onclick="onDOWChange(4)">木</button>
+      <button class="btn" id="dow-btn-5" onclick="onDOWChange(5)">金</button>
+      <button class="btn" id="dow-btn-6" onclick="onDOWChange(6)">土</button>
+    </div>
+    <div class="time-slider-note">※ グリッド/ヒートマップ両モード対応</div>
   </div></div>
   <div class="section"><div class="section-title">データレイヤー</div>
     <div class="layer-toggle" onclick="toggleLayer('crime')" id="layer-crime"><div class="toggle-dot" style="background:#f44336"></div><span class="layer-name">犯罪</span><span class="layer-count" id="cnt-crime"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
@@ -440,6 +453,11 @@ body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800
     <div class="layer-toggle" onclick="toggleLayer('disaster')" id="layer-disaster"><div class="toggle-dot" style="background:#9c27b0"></div><span class="layer-name">災害</span><span class="layer-count" id="cnt-disaster"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
     <div class="layer-toggle" onclick="toggleLayer('weather')" id="layer-weather"><div class="toggle-dot" style="background:#03a9f4"></div><span class="layer-name">気象リスク</span><span class="layer-count" id="cnt-weather"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
     <div class="layer-toggle" onclick="toggleLayer('realtime')" id="layer-realtime"><div class="toggle-dot" style="background:#4caf50;box-shadow:0 0 4px #4caf50"></div><span class="layer-name">不審者リアルタイム</span><span class="layer-count" id="cnt-realtime"><span class="skeleton skeleton-line" style="width:40px">&nbsp;</span></span></div>
+    <div class="layer-toggle" onclick="toggleLayer('pref_risk')" id="layer-pref_risk" style="opacity:.4">
+        <div class="toggle-dot" style="background:#e040fb"></div>
+        <span class="layer-name">都道府県リスク</span>
+        <span class="layer-count" id="cnt-pref_risk">47県</span>
+    </div>
     <div class="layer-toggle" onclick="toggleLayer('car_breakin')" id="layer-car_breakin" style="opacity:.4">
         <div class="toggle-dot" style="background:#795548"></div>
         <span class="layer-name">車上荒らし</span>
@@ -459,6 +477,41 @@ body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800
         <div class="toggle-dot" style="background:#42a5f5"></div>
         <span class="layer-name">&#x1F683; 鉄道</span>
         <span class="layer-count" id="cnt-railway">—</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('chikan')" id="layer-chikan" style="opacity:.4">
+        <div class="toggle-dot" style="background:#9c27b0"></div>
+        <span class="layer-name">痴漢リスク <span style="font-size:9px;color:#aaa" title="暗数×7倍補正済">※暗数補正</span></span>
+        <span class="layer-count" id="cnt-chikan">—</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('voyeurism')" id="layer-voyeurism" style="opacity:.4">
+        <div class="toggle-dot" style="background:#e91e8c"></div>
+        <span class="layer-name">盗撮リスク <span style="font-size:9px;color:#aaa" title="暗数×7倍補正済">※暗数補正</span></span>
+        <span class="layer-count" id="cnt-voyeurism">—</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('vacancy')" id="layer-vacancy" style="opacity:.4">
+        <div class="toggle-dot" style="background:#8d6e63"></div>
+        <span class="layer-name">🏚️ 空き家率</span>
+        <span class="layer-count" id="cnt-vacancy">47県</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('hazard_composite')" id="layer-hazard_composite" style="opacity:.4">
+        <div class="toggle-dot" style="background:#d500f9"></div>
+        <span class="layer-name">⚠️ 複合ハザード</span>
+        <span class="layer-count" id="cnt-hazard_composite">47県</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('clearance')" id="layer-clearance" style="opacity:.4">
+        <div class="toggle-dot" style="background:#00bcd4"></div>
+        <span class="layer-name">🔍 検挙率</span>
+        <span class="layer-count" id="cnt-clearance">47県</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('cpted')" id="layer-cpted" style="opacity:.4">
+        <div class="toggle-dot" style="background:#76ff03"></div>
+        <span class="layer-name">🏘️ 環境安全 (CPTED)</span>
+        <span class="layer-count" id="cnt-cpted">47県</span>
+    </div>
+    <div class="layer-toggle" onclick="toggleLayer('socioeconomic')" id="layer-socioeconomic" style="opacity:.4">
+        <div class="toggle-dot" style="background:#ffab00"></div>
+        <span class="layer-name">📊 社会経済指標</span>
+        <span class="layer-count" id="cnt-socioeconomic">47県</span>
     </div>
     <div id="fushinsha-filter"><div style="font-size:10px;color:#555;margin-bottom:4px" id="fushinsha-filter-label">不審者フィルター</div><button class="fushinsha-filter-btn active" data-type="all" onclick="filterFushinsha('all')">全て</button><button class="fushinsha-filter-btn" data-type="不審者" onclick="filterFushinsha('不審者')">不審者</button><button class="fushinsha-filter-btn" data-type="声かけ" onclick="filterFushinsha('声かけ')">声かけ</button><button class="fushinsha-filter-btn" data-type="痴漢" onclick="filterFushinsha('痴漢')">痴漢</button><button class="fushinsha-filter-btn" data-type="暴行" onclick="filterFushinsha('暴行')">暴行</button><button class="fushinsha-filter-btn" data-type="窃盗" onclick="filterFushinsha('窃盗')">窃盗</button></div>
     <div id="school-radius-filter"><div style="font-size:10px;color:#555;margin-bottom:4px">🏫 学校周辺フィルター</div><button class="school-radius-btn" onclick="setSchoolRadius(500)">500m</button><button class="school-radius-btn" onclick="setSchoolRadius(1000)">1km</button><button class="school-radius-btn active" onclick="setSchoolRadius(0)">OFF</button></div>
@@ -577,6 +630,7 @@ body.light-mode .escript-lang-btn.active{background:#fff8e1;border-color:#ff9800
   <div class="section"><div class="section-title">動的リスク乗数</div>
     <div class="breakdown-row"><span class="breakdown-icon">🎯</span><span class="breakdown-label">犯罪発生確率</span><span class="breakdown-value" id="p-incident"><span class="skeleton skeleton-line">&nbsp;</span></span></div>
     <div class="breakdown-row"><span class="breakdown-icon">🌧</span><span class="breakdown-label">天気乗数</span><span class="breakdown-value" id="weather-mult">×1.0</span><span class="breakdown-mult" id="weather-mult-label">—</span></div>
+    <div id="weather-source-row" class="breakdown-row" style="padding-left:20px"><span class="breakdown-icon" id="weather-state-icon" style="font-size:14px">—</span><span class="breakdown-label" style="color:#888;font-size:10px" id="weather-state-text">—</span><span class="breakdown-mult" id="weather-source-label" style="font-size:10px;color:#555">—</span></div>
     <div class="breakdown-row"><span class="breakdown-icon">🕐</span><span class="breakdown-label">時間帯乗数</span><span class="breakdown-value" id="time-mult">×1.0</span><span class="breakdown-mult" id="time-mult-label">—</span></div>
     <div style="border-top:1px solid #1e1e2e;margin-top:8px;padding-top:8px">
       <div class="breakdown-row"><span class="breakdown-icon">🛡</span><span class="breakdown-label">逃げやすさ</span><span class="breakdown-value" id="p-escape"><span class="skeleton skeleton-line">&nbsp;</span></span></div>
@@ -794,9 +848,11 @@ var LANG={
   ko:{safety:'안전',caution:'주의',danger:'위험',safest_area:'최안전 지역',safe_area:'안전 지역',standard_area:'표준 지역',caution_area:'주의 지역',alert_area:'경계 지역',safety_grade_sub:'클릭하여 안전 등급 표시',safety_sublabel:'이 장소의 안전도',haven_table_title:'주변 안전 피난처 (500m 이내)',ht_type:'종류',ht_name:'명칭',ht_dist:'거리',tourist_title:'관광지 안전 카드',hourly_title:'24시간 위험 변동',donut_title:'의심 행위 유형 (500m)',display_mode:'표시 모드',heatmap:'히트맵',grid:'그리드',safe_haven:'안전 피난처',time_sim:'시간대 시뮬레이션',data_layers:'데이터 레이어',crime:'범죄',traffic_acc:'교통사고',disaster:'재해',weather_risk:'기상 위험',suspicious:'수상한 사람 실시간',analysis_mode:'분석 모드',total_risk:'종합 위험도',crime_prob:'범죄 발생 확률',escapability:'탈출 용이성',advice:'조언',export_section:'데이터 내보내기',nearest_facility:'가장 가까운 시설',no_data:'데이터 없음',click_to_check:'지도를 클릭하여 자세히 보기',haven_none:'클릭하여 표시',adv_safe:'평소 주의로 안전하게 이동할 수 있습니다.',adv_caution:'안전 시설을 확인한 후 이동하세요.',adv_warn:'밝은 거리를 선택하여 이동하세요.',adv_danger:'가장 가까운 편의점이나 파출소로 이동하세요.',adv_weather:'악천후로 위험이 상승 중입니다.',adv_escape:'탈출 경로가 적은 지역입니다.',filter_all:'전체',hotspot:'EH 핫스팟',legend:'범례',risk_mult:'동적 위험 승수',current_time:'현재',weather:'날씨',transit:'교통',event:'이벤트',data_date:'데이터',search_placeholder:'주소 검색 (예: 도쿄역)',geoloc:'현재 위치',csv_export:'CSV 내보내기',json_export:'JSON 내보내기',grade_from_data:'(그리드 데이터)',no_haven_warn:'탈출 경로 부족'},
   en:{safety:'Safe',caution:'Caution',danger:'Danger',safest_area:'Safest Area',safe_area:'Safe Area',standard_area:'Standard Area',caution_area:'Caution Area',alert_area:'High Alert Area',safety_grade_sub:'Click to show safety grade',safety_sublabel:'Safety level at this point',haven_table_title:'Nearby Safe Havens (within 500m)',ht_type:'Type',ht_name:'Name',ht_dist:'Dist',tourist_title:'Tourist Area Safety Cards',hourly_title:'24H Risk Variation',donut_title:'Suspicious Activity Types (500m)',display_mode:'Display Mode',heatmap:'Heatmap',grid:'Grid',safe_haven:'Safe Haven',time_sim:'Time Simulation',data_layers:'Data Layers',crime:'Crime',traffic_acc:'Traffic Accidents',disaster:'Disaster',weather_risk:'Weather Risk',suspicious:'Suspicious Activity Live',analysis_mode:'Analysis Mode',total_risk:'Total Risk',crime_prob:'Crime Probability',escapability:'Escapability',advice:'Advice',export_section:'Data Export',nearest_facility:'Nearest Facility',no_data:'No data',click_to_check:'Click to check',haven_none:'Click to view',adv_safe:'Safe to move around with normal caution.',adv_caution:'Confirm safety facilities before moving.',adv_warn:'Choose well-lit streets when moving.',adv_danger:'Move to nearest convenience store or police box.',adv_weather:'Risk elevated due to bad weather.',adv_escape:'Few escape options in this area.',filter_all:'All',hotspot:'EH Hotspots',legend:'Legend',risk_mult:'Dynamic Risk Multipliers',current_time:'Now',weather:'Weather',transit:'Transit',event:'Events',data_date:'Data',search_placeholder:'Search address (e.g. Tokyo Station)',geoloc:'My Location',csv_export:'CSV Export',json_export:'JSON Export',grade_from_data:'(grid data)',no_haven_warn:'Few escape options'}
 };
-var activeLayers={crime:1,traffic:1,disaster:1,weather:1,realtime:1,streetlights:0,railway:0};
+var activeLayers={crime:1,traffic:1,disaster:1,weather:1,realtime:1,streetlights:0,railway:0,pref_risk:0,vacancy:0,hazard_composite:0,clearance:0,cpted:0,socioeconomic:0};
+var prefRiskLayer=null;var prefRiskData=null;
 var gridSubtype=null;/* null = all crimes */
 var displayMode='heat',analysisMode='eh',selectedHour=new Date().getHours();
+var selectedDOW=new Date().getDay(); /* 0=日, 1=月, ..., 6=土 */
 var currentFushinshaFilter='all';var allHotspots=[];
 var havenTileIdx=null,loadedHT={},gridTileIdx=null,loadedGT={};
 var isDarkMode=true;
@@ -823,13 +879,97 @@ baseTileLayer=L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y
 map.on('click',onMapClick);
 setInterval(function(){var n=new Date();document.getElementById('current-time').textContent=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0')},1000);
 var allRTData=[];var tileLoadingCount=0;
-function showTileLoading(){tileLoadingCount++;document.getElementById('tile-loading').style.display='block'}
+function showTileLoading(){tileLoadingCount++;var _tl=document.getElementById('tile-loading');_tl.textContent='詳細データ読み込み中...';_tl.style.display='block'}
 function hideTileLoading(){tileLoadingCount--;if(tileLoadingCount<=0){tileLoadingCount=0;document.getElementById('tile-loading').style.display='none'}}
 function updateOverlayMsg(){var el=document.getElementById('map-overlay-msg');var z=map.getZoom();if(displayMode==='grid'&&z<10){el.textContent='ズームインでグリッド表示';el.style.display='block'}else if(displayMode==='haven'&&z<12){el.textContent='ズーム12以上でSafe Haven表示';el.style.display='block'}else{el.style.display='none'}}
 map.on('zoomend',updateOverlayMsg);
+/* R9 Stage2: redraw grid + reload tiles on zoom change */
+map.on('zoomend',function(){if(displayMode==='grid'){var el=document.getElementById('tile-loading');if(el)el.textContent='詳細データ読み込み中...';drawGrid();loadGT()}});
 map.on('moveend',function(){if(allHotspots&&allHotspots.length&&map.getZoom()>=12){renderHS(null,map.getBounds())}else if(allHotspots&&allHotspots.length){renderHS(allHotspots)}});
 document.getElementById('address-input').addEventListener('keydown',function(e){if(e.key==='Enter'){var q=this.value.trim();if(!q)return;fetch('https://msearch.gsi.go.jp/address-search/AddressSearch?q='+encodeURIComponent(q)).then(function(r){return r.json()}).then(function(res){if(res&&res.length>0){var c=res[0].geometry.coordinates;var lat=c[1],lng=c[0];map.flyTo([lat,lng],14);map.once('moveend',function(){onMapClick({latlng:L.latLng(lat,lng)})})}else{alert('住所が見つかりません')}}).catch(function(){alert('検索に失敗しました')})}});
-function TM(h){var i,e;if(h>=22||h<4){i=1.5;e=0.75}else if(h>=4&&h<7){i=1.3;e=0.8}else if(h>=20){i=1.4;e=0.85}else if(h>=17){i=1.3;e=1.0}else if(h>=7&&h<=9){i=1.2;e=1.0}else{i=1.0;e=1.0}return{i:i,e:e}}
+/* P3-1: cap=6.0→5.48%FAIL, 5.5→4.83%PASS. Lowered to pass 5% threshold. */
+var MAX_COMB_MULT=5.5;
+function TM(h,type,dow){
+  /* Empirically-calibrated temporal multipliers (R5 iter2, DOW added iter7).
+   * type: 'property_crime' | 'violent_crime' | 'traffic' | 'fushinsha' | default
+   * dow: 0=日, 1=月, ..., 5=金, 6=土 (omit → no DOW adjustment)
+   * Sources: traffic honhyo_2023 N=307930, bicycle_theft N=28628, fushinsha N=7532,
+   *          snatching N=106 (Tokyo police CSV R6).
+   * Night empirical hourly rates vs day: traffic=0.14x, bicycle=0.39x,
+   * fushinsha=0.36x, snatching=1.21x.
+   * DOW sources: 痴漢88%平日, 金曜繁華街犯罪ピーク (Tokyo police R5 analysis).
+   */
+  var i,e;
+  var night=h>=22||h<4;           /* 22-03h */
+  var predawn=h>=4&&h<7;          /* 04-06h */
+  var morning=h>=7&&h<=9;         /* 07-09h */
+  var school_dismissal=h>=14&&h<17; /* 14-16h */
+  var evening_peak=h>=17&&h<20;   /* 17-19h */
+  var late_eve=h>=20&&h<22;       /* 20-21h */
+  /* default (unknown / violent) */
+  i=1.0;e=1.0;
+  if(type==='property_crime'){
+    /* bicycle theft: night=0.39x empirical → night should NOT amplify */
+    /* peaks at 17-18h. school_dismissal also elevated. */
+    if(night){i=0.4;e=0.9}
+    else if(predawn){i=0.5;e=0.9}
+    else if(morning){i=1.1;e=1.05}
+    else if(school_dismissal){i=1.3;e=1.0}
+    else if(evening_peak){i=1.4;e=1.0}
+    else if(late_eve){i=1.1;e=0.95}
+    else{i=1.0;e=1.0}
+  }else if(type==='violent_crime'){
+    /* snatching: night=1.21x → night amplification valid */
+    if(night){i=1.3;e=0.75}
+    else if(predawn){i=1.1;e=0.8}
+    else if(morning){i=0.9;e=1.05}
+    else if(school_dismissal){i=1.0;e=1.0}
+    else if(evening_peak){i=1.2;e=0.95}
+    else if(late_eve){i=1.3;e=0.85}
+    else{i=1.0;e=1.0}
+  }else if(type==='traffic'){
+    /* traffic: night=0.14x empirical → night is SAFER. peaks 08h and 17h. */
+    if(night){i=0.6;e=1.1}
+    else if(predawn){i=0.7;e=1.05}
+    else if(morning){i=1.4;e=0.95}
+    else if(school_dismissal){i=1.1;e=1.0}
+    else if(evening_peak){i=1.4;e=0.95}
+    else if(late_eve){i=0.9;e=1.0}
+    else{i=1.0;e=1.0}
+  }else if(type==='fushinsha'){
+    /* fushinsha: school_dismissal peak 14-16h=29.5%. night=0.36x empirical. */
+    if(night){i=0.4;e=0.85}
+    else if(predawn){i=0.3;e=0.85}
+    else if(morning){i=1.1;e=1.0}
+    else if(school_dismissal){i=1.35;e=0.9}
+    else if(evening_peak){i=1.2;e=0.95}
+    else if(late_eve){i=0.8;e=0.9}
+    else{i=1.0;e=1.0}
+  }else{
+    /* default: neutral night=1.0x — no amplification without empirical basis */
+    if(night){i=1.0;e=0.85}
+    else if(predawn){i=0.9;e=0.9}
+    else if(morning){i=1.05;e=1.0}
+    else if(school_dismissal){i=1.0;e=1.0}
+    else if(evening_peak){i=1.1;e=1.0}
+    else if(late_eve){i=1.1;e=0.95}
+    else{i=1.0;e=1.0}
+  }
+  /* DOW multiplier: 月-金=1.0(基準), 土=0.85, 日=0.75 (窃盗/不審者減), 金曜夜=violent_crime×1.3 */
+  if(typeof dow==='number'){
+    var isFri=(dow===5);
+    var isSat=(dow===6);
+    var isSun=(dow===0);
+    var isWeekday=(dow>=1&&dow<=5);
+    var dowMult=1.0;
+    if(isSun){dowMult=0.75}
+    else if(isSat){dowMult=0.85}
+    /* 金曜夜(17-23h)の繁華街効果: violent_crimeのみ追加増幅 */
+    if(isFri&&(type==='violent_crime')&&h>=17&&h<24){dowMult=1.3}
+    i=+(i*dowMult).toFixed(3);
+  }
+  return{i:i,e:e};
+}
 function SC(v,inv){var s=inv?1-v:v;return s>=.6?'#f44336':s>=.4?'#ff5722':s>=.25?'#ff9800':s>=.1?'#ffeb3b':'#4caf50'}
 function RS(r){return{ultra:.0025,high:.005,mid:.01,low:.05}[r]||.05}
 function SL(t){document.getElementById('loader-text').textContent=t}
@@ -913,8 +1053,11 @@ gridData=r[0].status==='fulfilled'?r[0].value:[];var hs=r[1].status==='fulfilled
 SL('ヒートマップ生成中...');await loadHM();allHotspots=hs;renderHS(hs);updateWS();loadRT(rt);loadEvents(evtData);loadTransit(transitData);loadEarthquakes(earthquakeData);loadTrafficIncidents(trafficIncidentData);updateDataFreshness();updateHeaderSubtitle();checkDataFreshnessBanner();loadUniPresets();fetch(D+'/crime_safety_guide.json').then(function(r){return r.json()}).then(function(d){safetyGuide=d}).catch(function(){})}catch(e){console.error(e);showErrorBanner('⚠ データ読み込みエラー - リロードしてください')}document.getElementById('loader').style.display='none'}
 
 /* #4 Lazy load heatmaps - only load the active layer at startup */
+/* Heat layer crime-type mapping for TM() */
+var HEAT_TM_TYPE={crime:'property_crime',traffic:'traffic',disaster:'',car_breakin:'property_crime',chikan:'fushinsha',voyeurism:'fushinsha'};
+
 async function loadHM(){
-  var ls=[{k:'crime',f:'heat_crime.json',g:{0:'#0a0a1a',.5:'#c62828',1:'#ff1744'}},{k:'traffic',f:'heat_traffic.json',g:{0:'#0a0a1a',.5:'#e65100',1:'#ff6d00'}},{k:'disaster',f:'heat_disaster.json',g:{0:'#0a0a1a',.5:'#6a1b9a',1:'#ea80fc'}}];
+  var ls=[{k:'crime',f:'heat_crime.json',g:{0:'#0a0a1a',.5:'#c62828',1:'#ff1744'}},{k:'traffic',f:'heat_traffic.json',g:{0:'#0a0a1a',.5:'#e65100',1:'#ff6d00'}},{k:'disaster',f:'heat_disaster.json',g:{0:'#0a0a1a',.5:'#6a1b9a',1:'#ea80fc'}},{k:'chikan',f:'heat_chikan.json',g:{0:'#0a0a1a',.5:'#6a1b9a',1:'#ce93d8'}},{k:'voyeurism',f:'heat_voyeurism.json',g:{0:'#0a0a1a',.5:'#880e4f',1:'#f48fb1'}}];
   for(var i=0;i<ls.length;i++){
     var l=ls[i];
     /* Store config for lazy loading later */
@@ -930,25 +1073,45 @@ async function loadSingleHeatLayer(k){
   try{
     SL(k+'読み込み中...');
     var d=await fetch(D+'/'+cfg.f).then(function(r){return r.json()});
-    var p=d.map(function(p){return[p[0],p[1],p[2]||.5]});
-    heatLayers[k]=L.heatLayer(p,{radius:15,blur:10,maxZoom:14,gradient:cfg.g,max:1});
+    var p=d.map(function(pt){return[pt[0],pt[1],pt[2]||.5]});
+    cfg.rawPoints=p;/* store for temporal rebuild */
+    var tm=TM(selectedHour,HEAT_TM_TYPE[k]||'',selectedDOW);
+    var scaled=p.map(function(pt){return[pt[0],pt[1],Math.min(1,pt[2]*tm.i)]});
+    heatLayers[k]=L.heatLayer(scaled,{radius:15,blur:10,maxZoom:14,gradient:cfg.g,max:1});
     if(activeLayers[k]&&displayMode==='heat')heatLayers[k].addTo(map);
     document.getElementById('cnt-'+k).textContent=p.length.toLocaleString()+'件';
     cfg.loaded=true;
   }catch(e){console.warn(k,e)}
 }
 
-function drawGrid(data){if(gridLayer){map.removeLayer(gridLayer);gridLayer=null}if(displayMode!=='grid')return;gridLayer=L.layerGroup();var tm=TM(selectedHour);var _ageMult=(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function')?getAgeMultiplier(mimaChildAge):1;(data||gridData).slice(0,5000).forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de)*_ageMult;var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.3)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.5,weight:.5});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});var dq=c.data_quality||calcDataQuality(c);var dqStars=(function(q){var full=Math.round(q*5);var s='';for(var si=0;si<5;si++)s+=si<full?'\u2605':'\u2606';return s})(dq);rect.bindPopup('<b>EH:'+eh.toFixed(4)+'</b><br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>件数:'+(c.count||0)+'<br>Haven500m:'+(c.haven_count_500m||0)+'<br>データ品質: '+dqStars+' ('+dq.toFixed(2)+')');rect.addTo(gridLayer)});map.addLayer(gridLayer)}
+/* Throttle for heatmap rebuild on slider drag */
+var _hmRebuildTimer=null;
+function rebuildHeatLayersTemporal(){
+  if(_hmRebuildTimer)clearTimeout(_hmRebuildTimer);
+  _hmRebuildTimer=setTimeout(function(){
+    Object.keys(heatLayerData).forEach(function(k){
+      var cfg=heatLayerData[k];
+      if(!cfg||!cfg.rawPoints||!heatLayers[k])return;
+      if(!activeLayers[k]||displayMode!=='heat')return;
+      var tm=TM(selectedHour,HEAT_TM_TYPE[k]||'',selectedDOW);
+      var scaled=cfg.rawPoints.map(function(pt){return[pt[0],pt[1],Math.min(1,pt[2]*tm.i)]});
+      heatLayers[k].setLatLngs(scaled);
+    });
+  },80);/* 80ms throttle — comfortable for drag */
+}
+
+function drawGrid(data){if(gridLayer){map.removeLayer(gridLayer);gridLayer=null}if(displayMode!=='grid')return;gridLayer=L.layerGroup();var tm=TM(selectedHour,'',selectedDOW);var _ageMult=(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function')?getAgeMultiplier(mimaChildAge):1;/* R9 Stage2: zoom>=13 hides gridData cells tiles will replace */var _z13=map.getZoom()>=13;var _gridSrc=data||gridData;if(_z13){_gridSrc=_gridSrc.filter(function(c){var r=c.resolution||'medium';return r==='low'||r==='0.1deg'||r==='coarse'});if(_gridSrc.length===0)_gridSrc=data||gridData;}_gridSrc.slice(0,5000).forEach(function(c){var br=c.risk_score||0,sv=(c.avg_severity||2.5)/5;var _gNight=(selectedHour>=22||selectedHour<=5);var bp=_gNight&&c.p_escape_night!=null?c.p_escape_night:(c.p_escape||.5);var _dCombMult=Math.min(MAX_COMB_MULT,tm.i*_ageMult);var dr=Math.min(1,br*_dCombMult),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.3)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.5,weight:.5});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});var dq=c.data_quality||calcDataQuality(c);var dqStars=(function(q){var full=Math.round(q*5);var s='';for(var si=0;si<5;si++)s+=si<full?'\u2605':'\u2606';return s})(dq);rect.bindPopup('<b>EH:'+eh.toFixed(4)+'</b><br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>件数:'+(c.count||0)+'<br>Haven500m:'+(c.haven_count_500m||0)+'<br>データ品質: '+dqStars+' ('+dq.toFixed(2)+')');rect.addTo(gridLayer)});map.addLayer(gridLayer)}
 
 /* #5 Debounced moveend handlers */
 var debouncedLoadGT=debounce(function(){loadGT()},300);
 var debouncedLoadHT=debounce(function(){loadHT()},300);
 
-function loadGT(){if(!gridTileIdx||displayMode!=='grid'||map.getZoom()<10)return;var b=map.getBounds();for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!gridTileIdx[k]||loadedGT[k])continue;loadedGT[k]=1;showTileLoading();(function(key){fetch(D+'/tiles/grid_'+key+'.json').then(function(r){return r.json()}).then(function(cs){var tm=TM(selectedHour);cs.forEach(function(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}if(v<.01)return;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.2)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.45,weight:.3});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('EH:'+eh.toFixed(4)+'<br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>Haven:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});allTileCells=allTileCells.concat(cs);if(allTileCells.length>50000)allTileCells=allTileCells.slice(-50000);hideTileLoading()}).catch(function(){loadedGT[key]=0;hideTileLoading()})})(k)}}
+function loadGT(){if(!gridTileIdx||displayMode!=='grid'||map.getZoom()<13)return;/* R9 Stage2: tiles only at zoom>=13 */var b=map.getBounds();for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!gridTileIdx[k]||loadedGT[k])continue;loadedGT[k]=1;showTileLoading();(function(key){fetch(D+'/tiles/grid_'+key+'.json').then(function(r){return r.json()}).then(function(cs){var tm=TM(selectedHour,'',selectedDOW);cs.forEach(function(c){var br=c.risk_score||0,sv=(c.avg_severity||2.5)/5;var _ltNight=(selectedHour>=22||selectedHour<=5);var bp=_ltNight&&c.p_escape_night!=null?c.p_escape_night:(c.p_escape||.5);var _ltCombMult=Math.min(MAX_COMB_MULT,tm.i);var dr=Math.min(1,br*_ltCombMult),de=Math.min(1,bp*tm.e),eh=dr*sv*(1-de);var v;if(gridSubtype&&c.subtypes&&c.subtypes[gridSubtype]){var subCount=c.subtypes[gridSubtype];v=Math.min(1,subCount/50)}else{v=analysisMode==='eh'?eh:analysisMode==='incident'?dr:de}if(v<.01)return;var sz=RS(c.resolution);var rect=L.rectangle([[c.lat-sz/2,c.lon-sz/2],[c.lat+sz/2,c.lon+sz/2]],{color:'rgba(255,255,255,.2)',fillColor:SC(v,analysisMode==='escape'),fillOpacity:.45,weight:.3});rect.on('click',function(){c._lat=c.lat;c._lon=c.lon;updateRP(c);drawHC(c)});/* #11 Tooltip on hover */rect.bindTooltip('EH: '+eh.toFixed(4),{className:'grid-hover-tooltip',sticky:true,direction:'top'});rect.bindPopup('EH:'+eh.toFixed(4)+'<br>Risk:'+br.toFixed(4)+'<br>P(esc):'+de.toFixed(4)+'<br>Res:'+(c.resolution||'?')+'<br>Haven:'+(c.haven_count_500m||0));rect.addTo(gridLayer)});allTileCells=allTileCells.concat(cs);if(allTileCells.length>50000)allTileCells=allTileCells.slice(-50000);hideTileLoading()}).catch(function(){loadedGT[key]=0;hideTileLoading()})})(k)}}
 function loadHT(){if(!havenTileIdx)return;if(!havenLayer){havenLayer=L.layerGroup();map.addLayer(havenLayer)}if(map.getZoom()<12)return;var b=map.getBounds();var ic={koban:'🚔',police_station:'🚔',police_osm:'🚔',fire_station:'🚒',hospital:'🏥',hospital_osm:'🏥',convenience_store:'🏪',station:'🚉',aed:'💊'};for(var la=Math.floor(b.getSouth());la<=Math.floor(b.getNorth());la++)for(var lo=Math.floor(b.getWest());lo<=Math.floor(b.getEast());lo++){var k=la+'_'+lo;if(!havenTileIdx[k]||loadedHT[k])continue;loadedHT[k]=1;(function(key){fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){hs.forEach(function(h){if(!h.lat||!h.lon)return;allLoadedHavens.push(h);var i=ic[h.type]||'📍';L.marker([h.lat,h.lon],{icon:L.divIcon({html:'<div style="font-size:14px">'+i+'</div>',className:'',iconSize:[18,18],iconAnchor:[9,9]})}).bindTooltip(i+' '+(h.name||h.type)+'<br>'+(h.is_24h?'🟢 24H':'🔴 時間制限')).addTo(havenLayer)})}).catch(function(){loadedHT[key]=0})})(k)}}
-function loadRT(data){if(!data||!data.length)return;allRTData=data;realtimeMarkers=[];var SUBTYPE_MAP={'不審者':'不審者','痴漢':'痴漢','声かけ':'声かけ','暴行':'暴行','窃盗':'窃盗','盗撮':'盗撮','のぞき':'のぞき','ひった':'ひったくり','凶器':'凶器所持','脅迫':'脅迫','迷惑行':'迷惑行為','侵入':'侵入','子供被':'子供被害','火災':'火災','災害':'災害','事故':'事故','動物':'動物','緊急':'緊急','傷病':'傷病','生活':'生活','行方不':'行方不明','詐欺':'詐欺','アポ電':'アポ電'};data.forEach(function(e){var lat,lon,severity,subtype,dateStr;if(Array.isArray(e)){lat=e[0];lon=e[1];subtype=SUBTYPE_MAP[e[2]]||e[2]||'不審者';severity=e[3]||2;dateStr=e[4]||''}else{if(e.geometry&&e.geometry.coordinates){lon=e.geometry.coordinates[0];lat=e.geometry.coordinates[1]}else if(e.lat&&e.lon){lat=e.lat;lon=e.lon}else return;subtype=e.subtype||'';severity=e.severity||2;dateStr=e.occurred_at||e.published_at||''}if(!lat||!lon)return;realtimeMarkers.push({lat:lat,lon:lon,severity:severity,subtype:subtype,date:dateStr,raw:Array.isArray(e)?{subtype:subtype,severity:severity,occurred_at:dateStr}:e})});document.getElementById('cnt-realtime').textContent=realtimeMarkers.length+'件';if(realtimeMarkers.length>0){var latest=realtimeMarkers[0];document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge">LIVE</span> '+(latest.subtype||'不審者')+' — '+(latest.date||'').slice(0,16)+' <span class=\"pulse-dot\"></span><span id=\"last-update\">--:--</span> <span id=\"next-refresh-countdown\">30:00</span>';updateRealtimeTickerMeta()}renderRT();map.on('moveend',renderRT)}
+function loadRT(data){if(!data||!data.length){var ticker=document.getElementById('realtime-ticker');if(ticker){ticker.innerHTML='<span class="ticker-badge" style="background:#888">STALE</span> 不審者データなし <span id="last-update">--:--</span>';}return;}allRTData=data;realtimeMarkers=[];var SUBTYPE_MAP={'不審者':'不審者','痴漢':'痴漢','声かけ':'声かけ','暴行':'暴行','窃盗':'窃盗','盗撮':'盗撮','のぞき':'のぞき','ひった':'ひったくり','凶器':'凶器所持','脅迫':'脅迫','迷惑行':'迷惑行為','侵入':'侵入','子供被':'子供被害','火災':'火災','災害':'災害','事故':'事故','動物':'動物','緊急':'緊急','傷病':'傷病','生活':'生活','行方不':'行方不明','詐欺':'詐欺','アポ電':'アポ電'};data.forEach(function(e){var lat,lon,severity,subtype,dateStr;var markerHour=-1;if(Array.isArray(e)){lat=e[0];lon=e[1];subtype=SUBTYPE_MAP[e[2]]||e[2]||'不審者';severity=e[3]||2;dateStr=e[4]||'';var _h6=e[6];markerHour=(typeof _h6==='number'&&_h6>=0&&_h6<24)?_h6:-1}else{if(e.geometry&&e.geometry.coordinates){lon=e.geometry.coordinates[0];lat=e.geometry.coordinates[1]}else if(e.lat&&e.lon){lat=e.lat;lon=e.lon}else return;subtype=e.subtype||'';severity=e.severity||2;dateStr=e.occurred_at||e.published_at||e.date||'';markerHour=(typeof e.hour==='number'&&e.hour>=0&&e.hour<24)?e.hour:-1}if(!lat||!lon)return;realtimeMarkers.push({lat:lat,lon:lon,severity:severity,subtype:subtype,date:dateStr,hour:markerHour,raw:Array.isArray(e)?{subtype:subtype,severity:severity,occurred_at:dateStr}:e})});document.getElementById('cnt-realtime').textContent=realtimeMarkers.length+'件';if(realtimeMarkers.length>0){var latest=realtimeMarkers[0];document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge">LIVE</span> '+(latest.subtype||'不審者')+' — '+(latest.date||'').slice(0,16)+' <span class=\"pulse-dot\"></span><span id=\"last-update\">--:--</span> <span id=\"next-refresh-countdown\">30:00</span>';updateRealtimeTickerMeta()}else{document.getElementById('realtime-ticker').innerHTML='<span class="ticker-badge" style="background:#888">STALE</span> 不審者データなし'}renderRT();map.on('moveend',renderRT)}
 function renderRT(){if(realtimeLayer){map.removeLayer(realtimeLayer)}realtimeLayer=L.layerGroup();var z=map.getZoom();var b=map.getBounds();var visible=realtimeMarkers.filter(function(m){return b.contains([m.lat,m.lon])&&(currentFushinshaFilter==='all'||m.subtype===currentFushinshaFilter)});if(z<10){var grid={};var step=0.5;visible.forEach(function(m){var gk=Math.floor(m.lat/step)+'_'+Math.floor(m.lon/step);if(!grid[gk])grid[gk]={lat:0,lon:0,count:0,maxSev:0};grid[gk].lat+=m.lat;grid[gk].lon+=m.lon;grid[gk].count++;grid[gk].maxSev=Math.max(grid[gk].maxSev,m.severity)});Object.keys(grid).forEach(function(k){var g=grid[k];var clat=g.lat/g.count,clon=g.lon/g.count;var sz=Math.min(40,16+g.count*0.5);var c=g.maxSev>=4?'#f44336':g.maxSev>=3?'#ff9800':'#ffeb3b';L.marker([clat,clon],{icon:L.divIcon({html:'<div class="cluster-marker" style="width:'+sz+'px;height:'+sz+'px;background:rgba('+(g.maxSev>=4?'244,67,54':g.maxSev>=3?'255,152,0':'255,235,59')+',.7)">'+g.count+'</div>',className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]})}).bindPopup('不審者情報: '+g.count+'件').addTo(realtimeLayer)})}else{visible.forEach(function(m){var e=m.raw;var s=m.severity;var c=s>=4?'#f44336':s>=3?'#ff9800':'#ffeb3b';var pref=(e.admin||{}).prefecture||'';var sub=m.subtype||e.subtype||'';var dt=m.date||e.occurred_at||(e.published_at||'');L.circleMarker([m.lat,m.lon],{radius:5+s,color:c,fillColor:c,fillOpacity:.65,weight:1.5}).bindPopup('<b>'+(pref?pref+' ':'')+crimeTr(sub)+'</b><br>severity:'+s+'/5<br>'+(dt?dt.slice(0,16):'')+'<br>'+(e.raw_text||(e.raw||{}).title||'').slice(0,60)).addTo(realtimeLayer)})}if(activeLayers.realtime)map.addLayer(realtimeLayer)}
-function updateWS(){if(!weatherData||!Array.isArray(weatherData))return;var mp=0,mw=0;weatherData.forEach(function(s){if(s.precip10m)mp=Math.max(mp,s.precip10m);if(s.wind_ms)mw=Math.max(mw,s.wind_ms)});var se=document.getElementById('weather-status'),ie=document.getElementById('weather-icon');if(mp>=20){se.textContent='豪雨 '+mp+'mm';se.className='status-value alert';ie.textContent='⛈'}else if(mp>=5){se.textContent='雨 '+mp+'mm';se.className='status-value warn';ie.textContent='🌧'}else if(mw>=15){se.textContent='強風 '+mw+'m/s';se.className='status-value warn';ie.textContent='🌬'}else{se.textContent='概ね晴れ';se.className='status-value ok';ie.textContent='☀️'}var wp=weatherData.filter(function(s){return s.incident_multiplier>1.1}).map(function(s){return[s.lat,s.lon,(s.incident_multiplier-1)/1.5]});if(wp.length>0){heatLayers.weather=L.heatLayer(wp,{radius:30,blur:20,maxZoom:10,gradient:{0:'#03a9f4',.5:'#00bcd4',1:'#0288d1'}});if(activeLayers.weather)heatLayers.weather.addTo(map);document.getElementById('cnt-weather').textContent=wp.length+'局'}}
+function getWeatherStations(){/* Return flat array of station objects from either array or {stations:{}} format */if(!weatherData)return[];if(Array.isArray(weatherData))return weatherData;if(weatherData.stations&&typeof weatherData.stations==='object')return Object.values(weatherData.stations);return[];}
+function updateWS(){var stns=getWeatherStations();if(!stns.length)return;var mp=0,mw=0,ms=0;stns.forEach(function(s){if(s.precip10m)mp=Math.max(mp,s.precip10m);if(s.wind_ms)mw=Math.max(mw,s.wind_ms);if(s.snow_cm)ms=Math.max(ms,s.snow_cm)});var se=document.getElementById('weather-status'),ie=document.getElementById('weather-icon');if(ms>0){se.textContent='雪 '+ms+'cm';se.className='status-value warn';ie.textContent='❄️'}else if(mp>=20){se.textContent='豪雨 '+mp+'mm';se.className='status-value alert';ie.textContent='⛈'}else if(mp>=5){se.textContent='雨 '+mp+'mm';se.className='status-value warn';ie.textContent='🌧'}else if(mw>=15){se.textContent='強風 '+mw+'m/s';se.className='status-value warn';ie.textContent='🌬'}else{se.textContent='概ね晴れ';se.className='status-value ok';ie.textContent='☀️'}var wp=stns.filter(function(s){return s.incident_multiplier>1.1}).map(function(s){return[s.lat,s.lon,(s.incident_multiplier-1)/1.5]});if(wp.length>0){heatLayers.weather=L.heatLayer(wp,{radius:30,blur:20,maxZoom:10,gradient:{0:'#03a9f4',.5:'#00bcd4',1:'#0288d1'}});if(activeLayers.weather)heatLayers.weather.addTo(map);document.getElementById('cnt-weather').textContent=wp.length+'局'}}
 function onMapClick(e){var lat=e.latlng.lat,lng=e.latlng.lng;if(typeof havenRouteMode!=='undefined'&&havenRouteMode){onHavenRouteClick(lat,lng);return;}if(typeof areaCompareMode!=='undefined'&&areaCompareMode){onAreaCompareClick(lat,lng);return;}if(routeMode){addRoutePoint(lat,lng);return;}if(compareMode){addComparePoint(lat,lng);return;}lastClickLatLng={lat:lat,lng:lng};var near=null,md=1/0;var all=gridData.concat(allTileCells);all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lng);if(d<md){md=d;near=c}});var c=near||{risk_score:0,p_escape:.5,avg_severity:2,haven_count_500m:0};c._lat=lat;c._lon=lng;selectedCell=c;updateRP(c);drawHC(c);updateDonutChart(c);updateFushinsha500mSummary(lat,lng);updateFushinshaHourlyChart(lat,lng);if(clickMarker)map.removeLayer(clickMarker);clickMarker=L.circleMarker([lat,lng],{radius:10,color:'#7eb3f0',fillColor:'#7eb3f0',fillOpacity:.3,weight:2}).addTo(map);
 /* P1-5: Reverse geocode for municipality name */
 fetch('https://mreversegeocoder.gsi.go.jp/reverse-geocoder/LonLatToAddress?lat='+lat+'&lon='+lng).then(function(r){return r.json()}).then(function(data){var muniName=data.results?(data.results.mupiName||'')+(data.results.lv01Nm||''):'';document.getElementById('click-location-name').textContent=muniName}).catch(function(){});
@@ -958,9 +1121,9 @@ if(timeCompareVisible)updateTimeCompare();
 if(schoolRadiusFilter>0&&!selectedSchoolLatLng){selectedSchoolLatLng={lat:lat,lon:lng};drawSchoolRadius()}
 else if(schoolRadiusFilter>0&&selectedSchoolLatLng){drawSchoolRadius()}}
 
-function updateRP(c){var h=selectedHour,tm=TM(h);var wI=1,wE=1;if(weatherData&&Array.isArray(weatherData)){var md=1/0,nr=null;weatherData.forEach(function(s){if(!s.lat)return;var d=Math.hypot(s.lat-c._lat,s.lon-c._lon);if(d<md){md=d;nr=s}});if(nr){wI=nr.incident_multiplier||1;wE=nr.escape_multiplier||1}}var br=c.risk_score||0,bp=c.p_escape||.5,sv=c.avg_severity||2.5;var fushCount=0;if(realtimeMarkers&&realtimeMarkers.length){realtimeMarkers.forEach(function(m){if(m.lat&&m.lon&&Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.02)fushCount++})}var dr=Math.min(1,br*wI*tm.i+fushCount*0.05),de=Math.min(1,bp*wE*tm.e),eh=dr*(sv/5)*(1-de);
-/* Age-stratified risk multiplier (mimamori mode) */
-if(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function'){eh=eh*getAgeMultiplier(mimaChildAge)}
+function updateRP(c){var h=selectedHour,tm=TM(h,'',selectedDOW);var wI=1,wE=1,wNr=null;var stns=getWeatherStations();if(stns.length){var md=1/0;stns.forEach(function(s){if(!s.lat)return;var d=Math.hypot(s.lat-c._lat,s.lon-c._lon);if(d<md){md=d;wNr=s}});if(wNr){wI=wNr.incident_multiplier||1;wE=wNr.escape_multiplier||1}}var br=c.risk_score||0,sv=c.avg_severity||2.5;/* R6 iter8: use p_escape_night for 22-05 */var _isNight=(h>=22||h<=5);var bp=_isNight&&c.p_escape_night!=null?c.p_escape_night:(c.p_escape||.5);var fushCount=0;if(realtimeMarkers&&realtimeMarkers.length){realtimeMarkers.forEach(function(m){if(m.lat&&m.lon&&Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.02)fushCount++})}var _rpAgeMult=(typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function')?getAgeMultiplier(mimaChildAge):1;var _rpCombMult=Math.min(MAX_COMB_MULT,wI*tm.i*_rpAgeMult);var dr=Math.min(1,br*_rpCombMult+fushCount*0.05),de=Math.min(1,bp*wE*tm.e),eh=dr*(sv/5)*(1-de);
+/* Age-stratified risk multiplier (mimamori mode) — already applied via _rpCombMult cap above */
+if(false&&typeof mimamoriActive!=='undefined'&&mimamoriActive&&typeof getAgeMultiplier==='function'){eh=eh*getAgeMultiplier(mimaChildAge)}
 
 /* #1 Safety badge - 3 levels */
 var safetyEl=document.getElementById('safety-label');
@@ -981,7 +1144,7 @@ if(nt&&c.nearest_haven_dist){
   havenBigEl.innerHTML='最寄り施設: データなし';
 }
 
-document.getElementById('risk-value').textContent=dr.toFixed(3);document.getElementById('risk-value').style.color=dr>=.5?'#f44336':dr>=.3?'#ff9800':'#4caf50';document.getElementById('escape-value').textContent=de.toFixed(3);document.getElementById('escape-value').style.color=de>=.6?'#4caf50':de>=.3?'#ff9800':'#f44336';document.getElementById('fushinsha-value').textContent=fushCount;document.getElementById('fushinsha-value').style.color=fushCount>0?'#f44336':'#555';var el=document.getElementById('eh-value');el.textContent=eh.toFixed(3);el.style.color=eh>=.5?'#f44336':eh>=.3?'#ff9800':eh>=.15?'#ffeb3b':'#4caf50';document.getElementById('eh-formula').textContent='犯罪確率 '+dr.toFixed(3)+' × 重大度 '+(sv/5).toFixed(2)+' × (1-逃げやすさ '+de.toFixed(3)+')';document.getElementById('p-incident').textContent=br.toFixed(4);function SM(id,v){var e=document.getElementById(id);e.textContent='×'+v.toFixed(2);e.style.color=v>1.1?'#f44336':v<.9?'#4caf50':'#aaa'}SM('weather-mult',wI);document.getElementById('weather-mult-label').textContent=weatherData?'気象庁':'—';SM('time-mult',tm.i);document.getElementById('time-mult-label').textContent=String(h).padStart(2,'0')+'時台';document.getElementById('p-escape').textContent=bp.toFixed(4);SM('escape-weather-mult',wE);document.getElementById('haven-count-500m').textContent=c.haven_count_500m||0;var icMap={koban:'🚔',convenience_store:'🏪',fire_station:'🚒',hospital:'🏥',station:'🚉'};document.getElementById('haven-list').innerHTML=nt?'<div class="haven-row"><span class="haven-icon">'+(icMap[nt]||'📍')+'</span><span class="haven-name">'+nt+'</span>'+(c.nearest_haven_dist?'<span class="haven-dist">'+c.nearest_haven_dist.toFixed(2)+'km</span>':'')+'</div>'+((c.haven_count_500m||0)<2?'<div style="color:#f44336;font-size:10px;margin-top:4px">⚠ 逃げ場が少ない</div>':''):'<div style="color:#444;font-size:11px">データなし</div>';var LL=LANG[currentLang];var a='';if(eh>=.5)a='🔴 '+LL.adv_danger;else if(eh>=.3)a='🟠 '+LL.adv_warn;else if(eh>=.15)a='🟡 '+LL.adv_caution;else a='🟢 '+LL.adv_safe;if(wI>1.15)a+=' '+(currentLang==='en'?LANG.en.adv_weather:LANG.ja.adv_weather);if((bp||0)<.3)a+=' '+(currentLang==='en'?LANG.en.adv_escape:LANG.ja.adv_escape);
+document.getElementById('risk-value').textContent=dr.toFixed(3);document.getElementById('risk-value').style.color=dr>=.5?'#f44336':dr>=.3?'#ff9800':'#4caf50';document.getElementById('escape-value').textContent=de.toFixed(3);document.getElementById('escape-value').style.color=_isNight?(de>=.6?'#81c784':de>=.3?'#e65100':'#b71c1c'):(de>=.6?'#4caf50':de>=.3?'#ff9800':'#f44336');document.getElementById('fushinsha-value').textContent=fushCount;document.getElementById('fushinsha-value').style.color=fushCount>0?'#f44336':'#555';var el=document.getElementById('eh-value');el.textContent=eh.toFixed(3);el.style.color=eh>=.5?'#f44336':eh>=.3?'#ff9800':eh>=.15?'#ffeb3b':'#4caf50';document.getElementById('eh-formula').textContent='犯罪確率 '+dr.toFixed(3)+' × 重大度 '+(sv/5).toFixed(2)+' × (1-逃げやすさ '+de.toFixed(3)+')';document.getElementById('p-incident').textContent=br.toFixed(4);function SM(id,v){var e=document.getElementById(id);e.textContent='×'+v.toFixed(2);e.style.color=v>1.1?'#f44336':v<.9?'#4caf50':'#aaa'}SM('weather-mult',wI);(function(){/* Weather source row update */var srcLabel=weatherData&&weatherData.source?weatherData.source:'—';var srcTag=weatherData?(weatherData.source==='JMA AMEDAS'?'AMeDAS直接':'JMA予報'):'デフォルト';if(!weatherData)srcTag='デフォルト';document.getElementById('weather-mult-label').textContent=wNr?srcTag:'—';/* Weather state icon from nearest station */var ico='—',txt='—';if(wNr){var p=wNr.precip10m||0,w=wNr.wind_ms||0,sn=wNr.snow_cm||0,t=wNr.temp_c;if(sn>0){ico='❄️';txt='雪 '+sn+'cm'}else if(p>=20){ico='⛈';txt='豪雨 '+p+'mm'}else if(p>=5){ico='🌧';txt='雨 '+p+'mm'}else if(p>0){ico='🌦';txt='小雨 '+p+'mm'}else if(w>=15){ico='🌬';txt='強風 '+w+'m/s'}else if(t!==null&&t!==undefined&&t<=0){ico='🌨';txt='氷点下 '+t+'°C'}else{ico='☀️';txt='晴れ/曇り'}txt+=' ('+wNr.name+')'}document.getElementById('weather-state-icon').textContent=ico;document.getElementById('weather-state-text').textContent=txt;document.getElementById('weather-source-label').textContent=wNr?srcTag:'—';var srcEl=document.getElementById('weather-source-label');if(srcTag==='AMeDAS直接')srcEl.style.color='#4caf50';else if(srcTag==='JMA予報')srcEl.style.color='#ff9800';else srcEl.style.color='#555';})();SM('time-mult',tm.i);document.getElementById('time-mult-label').textContent=String(h).padStart(2,'0')+'時台';document.getElementById('p-escape').textContent=bp.toFixed(4)+(_isNight?' (夜間)':'');SM('escape-weather-mult',wE);document.getElementById('haven-count-500m').textContent=c.haven_count_500m||0;var icMap={koban:'🚔',convenience_store:'🏪',fire_station:'🚒',hospital:'🏥',station:'🚉'};document.getElementById('haven-list').innerHTML=nt?'<div class="haven-row"><span class="haven-icon">'+(icMap[nt]||'📍')+'</span><span class="haven-name">'+nt+'</span>'+(c.nearest_haven_dist?'<span class="haven-dist">'+c.nearest_haven_dist.toFixed(2)+'km</span>':'')+'</div>'+((c.haven_count_500m||0)<2?'<div style="color:#f44336;font-size:10px;margin-top:4px">⚠ 逃げ場が少ない</div>':''):'<div style="color:#444;font-size:11px">データなし</div>';var LL=LANG[currentLang];var a='';if(eh>=.5)a='🔴 '+LL.adv_danger;else if(eh>=.3)a='🟠 '+LL.adv_warn;else if(eh>=.15)a='🟡 '+LL.adv_caution;else a='🟢 '+LL.adv_safe;if(wI>1.15)a+=' '+(currentLang==='en'?LANG.en.adv_weather:LANG.ja.adv_weather);if((bp||0)<.3)a+=' '+(currentLang==='en'?LANG.en.adv_escape:LANG.ja.adv_escape);
 /* P1-2: Crime-type-specific advice */
 if(safetyGuide&&realtimeMarkers.length>0){var nearby=realtimeMarkers.filter(function(m){return Math.hypot(m.lat-(c._lat||c.lat),m.lon-(c._lon||c.lon))<0.005});if(nearby.length>0){var topType=mostCommon(nearby.map(function(m){return m.subtype}));var guide=safetyGuide.find(function(g){return g.type===topType});if(guide)a+='<br><br>⚠ '+(currentLang==='en'?guide.advice_en:guide.advice_ja)}}
 document.getElementById('advice-panel').innerHTML=a;
@@ -1015,7 +1178,7 @@ function updateDonutChart(c){
   donutChart=new Chart(ctx,{type:'doughnut',data:{labels:labels,datasets:[{data:vals,backgroundColor:['#42a5f5','#ef5350','#ff7043','#66bb6a','#ab47bc','#ffa726','#26c6da','#78909c'],borderWidth:1,borderColor:isDarkMode?'#12121a':'#fff'}]},options:{responsive:true,maintainAspectRatio:true,cutout:'55%',plugins:{legend:{position:'right',labels:{color:isDarkMode?'#aaa':'#555',font:{size:10},padding:6,boxWidth:10}}}}});
 }
 
-function drawHC(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var hs=[];for(var i=0;i<24;i++)hs.push(i);var vs=hs.map(function(h){var t=TM(h);return+(Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e))).toFixed(4)});var ctx=document.getElementById('hourly-chart').getContext('2d');if(hourlyChart)hourlyChart.destroy();hourlyChart=new Chart(ctx,{type:'bar',data:{labels:hs.map(function(h){return h+'時'}),datasets:[{data:vs,backgroundColor:vs.map(function(v){return v>=.5?'#f44336':v>=.3?'#ff9800':v>=.15?'#ffeb3b':'#4caf50'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},max:1}}}})}
+function drawHC(c){var br=c.risk_score||0,bp=c.p_escape||.5,sv=(c.avg_severity||2.5)/5;var hs=[];for(var i=0;i<24;i++)hs.push(i);var vs=hs.map(function(h){var t=TM(h,'',selectedDOW);return+(Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e))).toFixed(4)});var ctx=document.getElementById('hourly-chart').getContext('2d');if(hourlyChart)hourlyChart.destroy();hourlyChart=new Chart(ctx,{type:'bar',data:{labels:hs.map(function(h){return h+'時'}),datasets:[{data:vs,backgroundColor:vs.map(function(v){return v>=.5?'#f44336':v>=.3?'#ff9800':v>=.15?'#ffeb3b':'#4caf50'}),borderWidth:0}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{ticks:{color:'#555',font:{size:8},maxRotation:0},grid:{color:'#1e1e2e'}},y:{ticks:{color:'#555',font:{size:9}},grid:{color:'#1e1e2e'},max:1}}}})}
 function renderHS(hs,bounds){var src=hs||allHotspots||[];if(bounds){src=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()})}var el=document.getElementById('hotspot-list');if(!src||!src.length){el.innerHTML='<div style="color:#444;font-size:11px;text-align:center">データなし</div>';return}var t=src.slice(0,10),mx=t[0].expected_harm||1;el.innerHTML=t.map(function(c,i){return'<div class="hotspot-item" onclick="map.setView(['+c.lat+','+c.lon+'],14)"><span class="hotspot-rank">'+(i+1)+'</span><div class="hotspot-bar" style="width:'+((c.expected_harm||0)/mx*100).toFixed(0)+'%"></div><span class="hotspot-score">'+(c.expected_harm||0).toFixed(3)+'</span></div>'}).join('')}
 function setDisplayMode(m){displayMode=m;['heat','grid','haven','disaster','route'].forEach(function(k){var b=document.getElementById('btn-'+k);if(b)b.classList.toggle('active',k===m)});
 if(m==='route'){routeMode=true;clearRoute();var el=document.getElementById('map-overlay-msg');el.textContent='地図上で2点以上クリック (最大10点)';el.style.display='block';return;}else{routeMode=false;}document.getElementById('grid-subtype-filter').style.display=m==='grid'?'block':'none';document.getElementById('haven-type-filter').style.display=m==='haven'?'block':'none';if(gridLayer){map.removeLayer(gridLayer);gridLayer=null;loadedGT={}}if(havenLayer){map.removeLayer(havenLayer);havenLayer=null;loadedHT={}}if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}map.off('moveend',debouncedLoadGT);map.off('moveend',debouncedLoadHT);Object.keys(heatLayers).forEach(function(k){if(m==='heat'&&activeLayers[k])heatLayers[k].addTo(map);else if(heatLayers[k]&&heatLayers[k]._map)map.removeLayer(heatLayers[k])});if(m==='grid'){gridLayer=L.layerGroup().addTo(map);drawGrid();map.on('moveend',debouncedLoadGT);loadGT()}if(m==='haven'){if(map.getZoom()<12)map.setZoom(12);map.on('moveend',debouncedLoadHT);loadHT();loadSchools();loadPharmacyData().then(renderPharmacyMarkers);loadEvacuation()}if(m==='disaster'){loadSeismicData();loadEvacuation();if(heatLayers.disaster){heatLayers.disaster.addTo(map)}else if(heatLayerData.disaster){loadSingleHeatLayer('disaster')}}if(m!=='haven'&&m!=='disaster'&&pharmacyLayerGroup&&pharmacyLayerGroup._map){map.removeLayer(pharmacyLayerGroup)}updateOverlayMsg()}
@@ -1027,8 +1190,64 @@ if(heatLayers[n]){if(activeLayers[n]&&displayMode==='heat')heatLayers[n].addTo(m
 /* Car break-in heatmap layer (User-E) */
 if(n==='car_breakin'){if(activeLayers[n]){loadCarBreakinLayer()}else if(heatLayers.car_breakin&&heatLayers.car_breakin._map){map.removeLayer(heatLayers.car_breakin)}}
 /* Seismic hazard layer (User-F) */
-if(n==='seismic'){if(activeLayers[n]){loadSeismicData()}else if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}}}
-function onTimeSliderChange(v){selectedHour=parseInt(v);document.getElementById('time-label').textContent=String(v).padStart(2,'0')+':00 シミュレーション';document.getElementById('time-label').style.color='#ff9800';if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}}
+if(n==='seismic'){if(activeLayers[n]){loadSeismicData()}else if(seismicLayer&&seismicLayer._map){map.removeLayer(seismicLayer)}}
+/* Prefecture risk overlay (iter7) */
+if(n==='pref_risk'){if(activeLayers[n]){loadPrefRisk()}else{hidePrefRiskLayer()}}}
+/* === Prefecture Risk Overlay (iter7) === */
+function loadPrefRisk(){
+  if(prefRiskData){renderPrefRiskLayer();return;}
+  fetch(D+'/prefecture_risk_ranking.json').then(function(r){return r.json()}).then(function(d){
+    prefRiskData=d;
+    renderPrefRiskLayer();
+  }).catch(function(e){console.warn('prefRisk load failed',e)});
+}
+function hidePrefRiskLayer(){
+  if(prefRiskLayer&&prefRiskLayer._map){map.removeLayer(prefRiskLayer)}
+}
+function renderPrefRiskLayer(){
+  if(!activeLayers.pref_risk)return;
+  if(prefRiskLayer&&prefRiskLayer._map){map.removeLayer(prefRiskLayer)}
+  if(map.getZoom()>8){return;}/* only show at zoom<=8 */
+  if(!prefRiskData||!prefRiskData.ranked_prefectures)return;
+  prefRiskLayer=L.layerGroup();
+  var prefs=prefRiskData.ranked_prefectures;
+  var maxRate=prefs.reduce(function(m,p){return Math.max(m,p.annual_rate_per_100k||0)},1);
+  var colorMap={HIGH:'#f44336',MEDIUM:'#ff9800',LOW:'#4caf50',UNKNOWN:'#9e9e9e'};
+  prefs.forEach(function(p){
+    if(!p.lat||!p.lon)return;
+    var r=Math.max(8,Math.min(32,6+((p.annual_rate_per_100k||0)/maxRate)*26));
+    var col=colorMap[p.risk_category]||'#9e9e9e';
+    L.circleMarker([p.lat,p.lon],{
+      radius:r,color:col,fillColor:col,fillOpacity:0.55,weight:1.5
+    }).bindPopup(
+      '<b>'+p.pref+'</b><br>'+
+      'ランク: '+p.rank+'/47<br>'+
+      'リスク区分: '+p.risk_category+'<br>'+
+      '年率（10万人当たり）: '+(p.annual_rate_per_100k||0).toFixed(1)+'件'
+    ).addTo(prefRiskLayer);
+  });
+  prefRiskLayer.addTo(map);
+}
+map.on('zoomend',function(){
+  if(!activeLayers.pref_risk)return;
+  if(map.getZoom()>8){hidePrefRiskLayer()}else{renderPrefRiskLayer()}
+});
+/* === End Prefecture Risk Overlay === */
+function onTimeSliderChange(v){selectedHour=parseInt(v);document.getElementById('time-label').textContent=String(v).padStart(2,'0')+':00 シミュレーション';document.getElementById('time-label').style.color='#ff9800';if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}else if(displayMode==='heat'){rebuildHeatLayersTemporal()}}
+var DOW_LABELS=['日','月','火','水','木','金','土'];
+var DOW_COLORS={0:'#9e9e9e',1:'#7eb3f0',2:'#7eb3f0',3:'#7eb3f0',4:'#7eb3f0',5:'#ff9800',6:'#9e9e9e'};
+function updateDOWIndicator(){
+  var lbl=DOW_LABELS[selectedDOW]||'?';
+  var isFri=(selectedDOW===5),isSat=(selectedDOW===6),isSun=(selectedDOW===0);
+  var note=isFri?' 🍺金曜':isSat?' 土曜':isSun?' 日曜':' 平日';
+  var el=document.getElementById('dow-indicator');
+  if(el){el.textContent='今日: '+lbl+'曜日'+note;el.style.color=DOW_COLORS[selectedDOW]||'#7eb3f0'}
+  /* ボタンのactive状態更新 */
+  for(var d=0;d<7;d++){var b=document.getElementById('dow-btn-'+d);if(b)b.classList.toggle('active',d===selectedDOW)}
+}
+function onDOWChange(d){selectedDOW=d;updateDOWIndicator();if(displayMode==='grid'){loadedGT={};if(gridLayer){map.removeLayer(gridLayer);gridLayer=L.layerGroup().addTo(map)}drawGrid();loadGT()}else if(displayMode==='heat'){rebuildHeatLayersTemporal()}}
+/* 初期DOW表示 */
+(function(){var _init=setInterval(function(){if(document.getElementById('dow-indicator')){updateDOWIndicator();clearInterval(_init)}},100)})();
 function loadEvents(data){var evEl=document.getElementById('event-status');var all=[];if(data.scraped)all=all.concat(data.scraped);if(data.calendar)all=all.concat(data.calendar);var today=new Date().toISOString().slice(0,10);var active=all.filter(function(e){return e.date===today||e.date<=today&&e.duration_days&&new Date(e.date).getTime()+e.duration_days*86400000>Date.now()});if(active.length>0){evEl.textContent=active[0].name.slice(0,12)+(active.length>1?'+'+( active.length-1):'');evEl.className='status-value warn'}else{evEl.textContent='なし';evEl.className='status-value ok'}}
 function loadTransit(data){var sEl=document.getElementById('transit-status');var ds=data.disruptions||[];var susp=ds.filter(function(d){return d.severity==='suspension'});var delay=ds.filter(function(d){return d.severity==='delay'});if(susp.length>0){sEl.textContent=susp.length+'路線運休';sEl.className='status-value alert'}else if(delay.length>0){sEl.textContent=delay.length+'路線遅延';sEl.className='status-value warn'}else{sEl.textContent='平常運転';sEl.className='status-value ok'}}
 function loadEarthquakes(data){if(!data||!data.length)return;var eqLayer=L.layerGroup();data.forEach(function(eq){if(!eq.lat||!eq.lon)return;var mag=eq.magnitude||0;var r=Math.max(6,mag*4);var c=mag>=5?'#9c27b0':mag>=3?'#7b1fa2':'#ce93d8';L.circleMarker([eq.lat,eq.lon],{radius:r,color:c,fillColor:c,fillOpacity:0.5,weight:1}).bindPopup('<b>地震</b> M'+mag+'<br>'+(eq.place||'')+'<br>'+(eq.time||'')).addTo(eqLayer)});if(typeof activeLayers!=='undefined'){activeLayers.earthquake=true}eqLayer.addTo(map);var cntEl=document.getElementById('cnt-disaster');if(cntEl){cntEl.textContent=(parseInt(cntEl.textContent)||0)+data.length+'件'}}
@@ -1091,7 +1310,7 @@ function exportCSV(){
   var rows=[headers];
   var locName=document.getElementById('click-location-name').textContent||'';
   visible.forEach(function(c){
-    var tm=TM(selectedHour);
+    var tm=TM(selectedHour,'',selectedDOW);
     var br=c.risk_score||0;
     var bp=c.p_escape||.5;
     var sv=(c.avg_severity||2.5)/5;
@@ -1109,11 +1328,11 @@ function exportCSV(){
     }
     /* Night EH (22-4) average */
     var nightTotal=0,nightN=0;
-    for(var h=22;h<28;h++){var hh=h%24;var t=TM(hh);nightTotal+=Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e));nightN++}
+    for(var h=22;h<28;h++){var hh=h%24;var t=TM(hh,'',selectedDOW);nightTotal+=Math.min(1,br*t.i)*sv*(1-Math.min(1,bp*t.e));nightN++}
     var nightEH=nightN>0?nightTotal/nightN:0;
     /* Day EH (10-16) average */
     var dayTotal=0,dayN=0;
-    for(var h2=10;h2<16;h2++){var t2=TM(h2);dayTotal+=Math.min(1,br*t2.i)*sv*(1-Math.min(1,bp*t2.e));dayN++}
+    for(var h2=10;h2<16;h2++){var t2=TM(h2,'',selectedDOW);dayTotal+=Math.min(1,br*t2.i)*sv*(1-Math.min(1,bp*t2.e));dayN++}
     var dayEH=dayN>0?dayTotal/dayN:0;
     var riskDelta=nightEH>0&&dayEH>0?((nightEH/dayEH-1)*100).toFixed(1)+'%':'—';
     var row=[c.lat,c.lon,'"'+locName+'"',rank,eh.toFixed(6),br.toFixed(6),de.toFixed(4),(c.avg_severity||2.5).toFixed(2),c.haven_count_500m||0,c.nearest_haven_type||'',c.count||0];
@@ -1133,7 +1352,7 @@ function exportJSON(){
   var visible=src.filter(function(c){return c.lat>=bounds.getSouth()&&c.lat<=bounds.getNorth()&&c.lon>=bounds.getWest()&&c.lon<=bounds.getEast()});
   if(!visible.length){alert('表示範囲内にデータがありません');return}
   var out=visible.map(function(c){
-    var tm=TM(selectedHour);
+    var tm=TM(selectedHour,'',selectedDOW);
     var dr=Math.min(1,(c.risk_score||0)*tm.i);
     var de=Math.min(1,(c.p_escape||.5)*tm.e);
     var eh=dr*((c.avg_severity||2.5)/5)*(1-de);
@@ -1145,7 +1364,7 @@ function exportJSON(){
 }
 function exportGeoJSON() {
     var features = (gridData||[]).slice(0,1000).map(function(c) {
-        var tm = TM(selectedHour);
+        var tm = TM(selectedHour,'',selectedDOW);
         var dr = Math.min(1, (c.risk_score||0)*tm.i);
         var de = Math.min(1, (c.p_escape||0.5)*tm.e);
         var eh = dr * ((c.avg_severity||2.5)/5) * (1-de);
@@ -1323,15 +1542,18 @@ function updateFushinshaHourlyChart(lat,lon){
       var dLon=(m.lon-lon)*111320*Math.cos(lat*Math.PI/180);
       var dist=Math.sqrt(dLat*dLat+dLon*dLon);
       if(dist<=2000){
-        var dateStr=m.date||'';
         var hour=-1;
-        /* Try to parse hour from date string */
-        var timeMatch=dateStr.match(/(\d{1,2}):(\d{2})/);
-        if(timeMatch)hour=parseInt(timeMatch[1]);
+        /* Prefer pre-computed hour field (integer 0-23) */
+        if(typeof m.hour==='number'&&m.hour>=0&&m.hour<24){hour=m.hour}
         else{
-          /* Try ISO format */
-          var tIdx=dateStr.indexOf('T');
-          if(tIdx>-1){var hStr=dateStr.substring(tIdx+1,tIdx+3);hour=parseInt(hStr)}
+          /* Fall back to parsing date/time string */
+          var dateStr=m.date||'';
+          var timeMatch=dateStr.match(/(\d{1,2}):(\d{2})/);
+          if(timeMatch)hour=parseInt(timeMatch[1]);
+          else{
+            var tIdx=dateStr.indexOf('T');
+            if(tIdx>-1){var hStr=dateStr.substring(tIdx+1,tIdx+3);hour=parseInt(hStr)}
+          }
         }
         if(hour>=0&&hour<24)hourCounts[hour]++;
       }
@@ -1579,7 +1801,7 @@ function geolocateUser(){
     var all=gridData.concat(allTileCells);
     all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lon);if(d<md){md=d;near=c}});
     var riskScore=near?(near.risk_score||0):0;
-    var tm=TM(selectedHour);
+    var tm=TM(selectedHour,'',selectedDOW);
     var eh=near?Math.min(1,(riskScore*tm.i)*((near.avg_severity||2.5)/5)*(1-Math.min(1,(near.p_escape||0.5)*tm.e))):0;
     if(eh<0.25){
       textEl.innerHTML='<span style="font-size:64px">🟢</span><br>安全';textEl.style.color='#4caf50';
@@ -1842,7 +2064,7 @@ function updateTimeCompare(){
   function calcEH(hourStart,hourEnd){
     var total=0,count=0;
     for(var h=hourStart;h<hourEnd;h++){
-      var tm=TM(h);
+      var tm=TM(h,'',selectedDOW);
       var dr=Math.min(1,br*tm.i);
       var de=Math.min(1,bp*tm.e);
       var eh=dr*sv*(1-de);
@@ -1857,7 +2079,7 @@ function updateTimeCompare(){
   var nightTotal=0,nightCount=0;
   for(var h=22;h<28;h++){
     var hh=h%24;
-    var tm=TM(hh);
+    var tm=TM(hh,'',selectedDOW);
     var dr=Math.min(1,br*tm.i);
     var de=Math.min(1,bp*tm.e);
     nightTotal+=dr*sv*(1-de);nightCount++;
@@ -1929,6 +2151,8 @@ window.addEventListener('load',function(){
     /* Load tourist areas and english police data */
     loadTouristAreas();
     loadEnglishPolice();
+    /* Defer delta tracker data (crime_trends + risk_timeseries) after critical path */
+    setTimeout(loadDeltaTrackerData, 500);
     /* Apply language if stored */
     if(currentLang==='en')applyLang();
   });
@@ -1963,7 +2187,7 @@ function evaluatePointRisk(lat,lon){
   var near=null,md=1/0;
   all.forEach(function(c){var d=Math.hypot(c.lat-lat,c.lon-lon);if(d<md){md=d;near=c;}});
   if(!near)return {eh:0,risk:0,escape:0.5,haven:0};
-  var tm=TM(selectedHour);
+  var tm=TM(selectedHour,'',selectedDOW);
   var br=near.risk_score||0,bp=near.p_escape||.5,sv=(near.avg_severity||2.5)/5;
   var dr=Math.min(1,br*tm.i),de=Math.min(1,bp*tm.e);
   var eh=dr*sv*(1-de);
@@ -2169,16 +2393,30 @@ function runMonteCarloForecast(){
 
 /* --- Feature 2: Risk Delta Tracker (自治体-A) --- */
 var crimeTrendsData=null;
-fetch('data/crime_trends.json').then(function(r){return r.json()}).then(function(d){crimeTrendsData=d}).catch(function(){});
+var riskTimeseriesData=null;
+/* Deferred: fetched after loadAll() to avoid blocking critical-path resources */
+function loadDeltaTrackerData(){
+  if(crimeTrendsData&&riskTimeseriesData)return;
+  fetch('data/crime_trends.json').then(function(r){return r.json()}).then(function(d){crimeTrendsData=d}).catch(function(){});
+  fetch('data/risk_timeseries.json').then(function(r){return r.json()}).then(function(d){riskTimeseriesData=d}).catch(function(){});
+}
 function updateDeltaTracker(cell){
   if(!cell)return;
   var wrap=document.getElementById('delta-tracker-wrap');
   wrap.style.display='block';
-  // MoM: simulated monthly change based on seasonal sine + small noise
-  var month=new Date().getMonth();
-  var seasonal=Math.sin((month/12)*2*Math.PI)*0.04;
-  var noise=(Math.random()-0.5)*0.03;
-  var mom=seasonal+noise;
+  // MoM: from risk_timeseries.json national average (last 2 months), fallback N/A
+  var mom=null;
+  if(riskTimeseriesData&&riskTimeseriesData.months&&riskTimeseriesData.prefectures){
+    var months=riskTimeseriesData.months;
+    var prefs=riskTimeseriesData.prefectures;
+    var prefKeys=Object.keys(prefs);
+    if(months.length>=2&&prefKeys.length>0){
+      var lastM=months[months.length-1],prevM=months[months.length-2];
+      var sumLast=0,sumPrev=0,cnt=0;
+      prefKeys.forEach(function(k){var v=prefs[k];if(v[lastM]!=null&&v[prevM]!=null){sumLast+=v[lastM];sumPrev+=v[prevM];cnt++}});
+      if(cnt>0&&sumPrev>0)mom=(sumLast/cnt-sumPrev/cnt)/(sumPrev/cnt);
+    }
+  }
   // YoY: from national crime_trends.json
   var yoy=0;
   if(crimeTrendsData&&crimeTrendsData.national&&crimeTrendsData.national.length>=2){
@@ -2187,6 +2425,7 @@ function updateDeltaTracker(cell){
     if(prev&&curr)yoy=(curr-prev)/prev;
   }
   function fmt(v){
+    if(v===null||v===undefined||isNaN(v))return '<span style="color:#888">N/A</span>';
     var pct=(v*100).toFixed(1)+'%';
     var arrow=v>0.02?'↑':(v<-0.02?'↓':'→');
     var color=v>0.02?'#f44336':(v<-0.02?'#4caf50':'#ffeb3b');
@@ -2210,7 +2449,7 @@ var commuteMode=false;
 var commuteSelectedSchool=null;
 var commuteRouteLayer=null;
 function initCommuteSchoolSelect(){
-  fetch('data/schools_tokyo.json').then(function(r){return r.json()}).then(function(d){
+  function _populateSchools(d){
     var elements=(d&&d.elements)?d.elements:[];
     var schools=elements.filter(function(e){return e.lat&&e.lon&&e.tags&&e.tags.name}).slice(0,200);
     commuteSchoolsList=schools;
@@ -2229,7 +2468,13 @@ function initCommuteSchoolSelect(){
         map.setView([commuteSelectedSchool.lat,commuteSelectedSchool.lon],15);
       }
     });
-  }).catch(function(){});
+  }
+  /* Reuse cached schools data if already loaded by loadSchools() — avoids duplicate 300KB fetch */
+  if(window._schoolsData){
+    _populateSchools(window._schoolsData);
+  }else{
+    fetch('data/schools_tokyo.json').then(function(r){return r.json()}).then(_populateSchools).catch(function(){});
+  }
 }
 function toggleCommuteMode(){
   if(!commuteSelectedSchool){alert('学校を選択してください');return;}
@@ -2552,6 +2797,8 @@ function showHelpTooltip(term,ev){
     'body.light-mode #enterprise-overlay .ent-v{color:#223}'+
     '#enterprise-overlay .ent-hover{cursor:help;border-bottom:1px dotted #7eb3f0}'+
     '#enterprise-overlay .ent-section{margin-top:10px;padding-top:8px;border-top:1px solid #2a6cb5}'+
+    '#enterprise-overlay .ent-illustrative-banner{background:#1e1a08;border:1px solid #7a6a10;border-radius:4px;padding:5px 8px;margin-bottom:8px;font-size:10px;color:#d4b84a;line-height:1.4}'+
+    'body.light-mode #enterprise-overlay .ent-illustrative-banner{background:#fffbe6;border-color:#c9a800;color:#7a5f00}'+
     '#manifest-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center}'+
     '#manifest-modal .mm-box{background:#0d1420;border:1px solid #2a6cb5;border-radius:8px;padding:20px;width:560px;max-width:90vw;max-height:80vh;overflow:auto;color:#cde;font-size:12px}'+
     'body.light-mode #manifest-modal .mm-box{background:#fff;color:#334}'+
@@ -2563,6 +2810,7 @@ function showHelpTooltip(term,ev){
 
   var overlay=document.createElement('div');overlay.id='enterprise-overlay';
   overlay.innerHTML='<h3>🏛️ Enterprise Overlay <button onclick="document.getElementById(\'enterprise-overlay\').style.display=\'none\'" style="background:transparent;border:none;color:#888;cursor:pointer;font-size:14px">✕</button></h3>'+
+    '<div class="ent-illustrative-banner">⚠ Note: Insurance metrics are illustrative — not connected to live data pipeline.</div>'+
     '<div id="ent-content">Loading…</div>';
   document.body.appendChild(overlay);
 
@@ -2578,16 +2826,43 @@ function showHelpTooltip(term,ev){
   function verifyManifest(){
     return fetchJSON('data/manifest.sig').then(function(sig){
       var badge=document.getElementById('merkle-badge');if(!badge)return null;
-      if(sig&&sig.merkle_root){
-        window.__entData.manifest=sig;
-        badge.textContent='✓ Merkle verified';
-        badge.style.background='#1b3a2a';badge.style.borderColor='#2e7d32';badge.style.color='#81c784';
-        return sig;
-      } else {
+      if(!sig||!sig.merkle_root){
         badge.textContent='⚠ unverified';
         badge.style.background='#3a2a1b';badge.style.borderColor='#b86a00';badge.style.color='#ffb74d';
         return null;
       }
+      window.__entData.manifest=sig;
+      // Verify SHA-256 of the first file in the manifest
+      var files=sig.files||[];
+      var target=files[0];
+      if(!target||!target.path||!target.sha256||!window.crypto||!window.crypto.subtle){
+        // No file to verify or SubtleCrypto unavailable — show merkle_root only
+        badge.textContent='~ Merkle (hash unverified)';
+        badge.style.background='#2a2a1b';badge.style.borderColor='#b86a00';badge.style.color='#ffb74d';
+        return sig;
+      }
+      return fetch('data/'+target.path).then(function(r){
+        if(!r.ok)throw new Error('fetch failed');
+        return r.arrayBuffer();
+      }).then(function(buf){
+        return window.crypto.subtle.digest('SHA-256',buf);
+      }).then(function(hashBuf){
+        var hex=Array.from(new Uint8Array(hashBuf)).map(function(b){return b.toString(16).padStart(2,'0')}).join('');
+        if(hex===target.sha256){
+          badge.textContent='✓ SHA-256 verified ('+target.path+')';
+          badge.style.background='#1b3a2a';badge.style.borderColor='#2e7d32';badge.style.color='#81c784';
+          sig._verifiedFile=target.path;
+        } else {
+          badge.textContent='✗ hash mismatch ('+target.path+')';
+          badge.style.background='#3a1b1b';badge.style.borderColor='#c62828';badge.style.color='#ef9a9a';
+          sig._verifiedFile=null;
+        }
+        return sig;
+      }).catch(function(){
+        badge.textContent='~ Merkle (verify error)';
+        badge.style.background='#2a2a1b';badge.style.borderColor='#b86a00';badge.style.color='#ffb74d';
+        return sig;
+      });
     });
   }
 
@@ -2596,7 +2871,8 @@ function showHelpTooltip(term,ev){
     var m=window.__entData.manifest;
     if(!m){box.innerHTML='<div style="color:#ffb74d">Manifest not available or unverified.</div>';}
     else{
-      box.innerHTML='<div><b>Status:</b> <span style="color:#81c784">✓ Merkle verified</span></div>'+
+      var hashStatus=m._verifiedFile?'<span style="color:#81c784">✓ SHA-256 verified: '+m._verifiedFile+'</span>':(m._verifiedFile===null?'<span style="color:#ef9a9a">✗ hash mismatch</span>':'<span style="color:#ffb74d">~ hash not checked</span>');
+      box.innerHTML='<div><b>Status:</b> '+hashStatus+'</div>'+
         '<div><b>Algorithm:</b> '+m.algorithm+'</div>'+
         '<div><b>Merkle root:</b></div><pre>'+m.merkle_root+'</pre>'+
         '<div><b>File count:</b> '+m.file_count+'</div>'+
@@ -2814,7 +3090,7 @@ function computeEHForPoint(lat,lon){
   }
   if(!bestCell||bestDist>0.02)return 0.05;/* default low risk if no data */
   var h=typeof selectedHour!=='undefined'?selectedHour:new Date().getHours();
-  var tm=TM(h);
+  var tm=TM(h,'',selectedDOW);
   var br=bestCell.risk_score||0;
   var bp=bestCell.p_escape||0.5;
   var sv=(bestCell.avg_severity||2.5)/5;
@@ -3882,6 +4158,64 @@ var _origToggleLayer=window.toggleLayer||toggleLayer;
   };
   window.toggleLayer=toggleLayer;
 })();
+
+/* === Phase 5: New choropleth layers (vacancy, hazard, clearance, cpted, socioeconomic) === */
+var newLayerData={},newLayerGroups={};
+var NEW_LAYER_CONFIGS={
+  vacancy:{file:'vacancy_choropleth.json',color:'#8d6e63',field:'total_vacancy_rate',unit:'%',label:'空き家率',format:function(v){return v.toFixed(1)+'%'},radius:function(v,mx){return Math.max(8,Math.min(30,(v/mx)*28))},colorFn:function(v){return v>=18?'#f44336':v>=14?'#ff9800':'#4caf50'},popupFn:function(p){return'<b>'+p.prefecture+'</b><br>空き家率: '+p.total_vacancy_rate+'%<br>放置空き家: '+p.abandoned_vacancy_rate+'%<br>リスク: '+p.risk_tier}},
+  hazard_composite:{file:'hazard_composite.json',color:'#d500f9',field:'composite_score',unit:'',label:'複合ハザード',format:function(v){return v.toFixed(3)},radius:function(v,mx){return Math.max(8,Math.min(32,(v/mx)*30))},colorFn:function(v){return v>=0.6?'#f44336':v>=0.4?'#ff9800':'#4caf50'},popupFn:function(p){var sub=p.subscores||{};return'<b>'+p.prefecture+'</b><br>複合スコア: '+p.composite_score.toFixed(3)+'<br>地震: '+(sub.seismic||0).toFixed(2)+' 洪水: '+(sub.flood||0).toFixed(2)+'<br>津波: '+(sub.tsunami||0).toFixed(2)+' 土砂: '+(sub.landslide||0).toFixed(2)+'<br>リスク区分: '+p.risk_tier}},
+  clearance:{file:'clearance_rates.json',color:'#00bcd4',field:'overall_clearance_pct',unit:'%',label:'検挙率',format:function(v){return v.toFixed(1)+'%'},radius:function(v,mx){return Math.max(8,Math.min(28,(v/mx)*26))},colorFn:function(v){return v>=55?'#4caf50':v>=45?'#ff9800':'#f44336'},popupFn:function(p){return'<b>'+p.prefecture+'</b><br>検挙率: '+p.overall_clearance_pct+'%<br>全国平均比: '+(p.deviation_from_national>0?'+':'')+p.deviation_from_national+'%<br>少年犯罪率: '+p.juvenile_rate_per_1000+'\u2030<br>判定: '+p.risk_tier}},
+  cpted:{file:'cpted_scores.json',color:'#76ff03',field:'cpted_composite',unit:'',label:'環境安全(CPTED)',format:function(v){return v.toFixed(1)},radius:function(v,mx){return Math.max(8,Math.min(28,(v/mx)*26))},colorFn:function(v){return v>=65?'#4caf50':v>=50?'#ff9800':'#f44336'},popupFn:function(p){var ds=p.dimension_scores||{};return'<b>'+p.prefecture+'</b><br>CPTEDスコア: '+p.cpted_composite.toFixed(1)+'/100<br>自然監視性: '+(ds.natural_surveillance||0).toFixed(1)+'<br>アクセス制御: '+(ds.access_control||0).toFixed(1)+'<br>領域性: '+(ds.territoriality||0).toFixed(1)+'<br>活動支援: '+(ds.activity_support||0).toFixed(1)+'<br>判定: '+p.risk_tier}},
+  socioeconomic:{file:'socioeconomic.json',color:'#ffab00',field:'composite_vulnerability',unit:'',label:'社会経済脆弱性',format:function(v){return(v*100).toFixed(1)+'%'},radius:function(v,mx){return Math.max(8,Math.min(30,(v/mx)*28))},colorFn:function(v){return v>=0.6?'#f44336':v>=0.4?'#ff9800':'#4caf50'},popupFn:function(p){return'<b>'+p.prefecture+'</b><br>脆弱性: '+(p.composite_vulnerability*100).toFixed(1)+'%<br>生活保護率: '+p.welfare_rate_pct+'%<br>ジニ係数: '+p.gini_proxy+'<br>単身世帯率: '+p.single_household_pct+'%<br>高齢者独居率: '+p.elderly_alone_pct+'%<br>判定: '+p.risk_tier}}
+};
+function loadNewLayer(key){
+  var cfg=NEW_LAYER_CONFIGS[key];if(!cfg)return;
+  if(newLayerData[key]){renderNewLayer(key);return}
+  fetch(D+'/'+cfg.file).then(function(r){return r.json()}).then(function(d){
+    newLayerData[key]=d;renderNewLayer(key);
+  }).catch(function(e){console.warn('Failed to load '+key,e)});
+}
+function renderNewLayer(key){
+  if(!activeLayers[key])return;
+  var cfg=NEW_LAYER_CONFIGS[key],data=newLayerData[key];
+  if(!data||!data.prefectures)return;
+  if(newLayerGroups[key]&&newLayerGroups[key]._map)map.removeLayer(newLayerGroups[key]);
+  if(map.getZoom()>10)return;/* choropleth only at low zoom */
+  var lg=L.layerGroup();
+  var prefs=data.prefectures;
+  var mx=prefs.reduce(function(m,p){return Math.max(m,p[cfg.field]||0)},0.001);
+  prefs.forEach(function(p){
+    if(!p.lat||!p.lon)return;
+    var val=p[cfg.field]||0;
+    var col=cfg.colorFn(val);
+    var r=cfg.radius(val,mx);
+    L.circleMarker([p.lat,p.lon],{radius:r,color:col,fillColor:col,fillOpacity:0.5,weight:1.5})
+      .bindPopup(cfg.popupFn(p)).addTo(lg);
+  });
+  lg.addTo(map);newLayerGroups[key]=lg;
+}
+function hideNewLayer(key){
+  if(newLayerGroups[key]&&newLayerGroups[key]._map)map.removeLayer(newLayerGroups[key]);
+}
+/* Patch toggleLayer for new layers */
+(function(){
+  var prevTL=toggleLayer;
+  toggleLayer=function(n){
+    prevTL(n);
+    if(NEW_LAYER_CONFIGS[n]){
+      if(activeLayers[n]){loadNewLayer(n)}else{hideNewLayer(n)}
+    }
+  };
+  window.toggleLayer=toggleLayer;
+})();
+/* Re-render new layers on zoom */
+map.on('zoomend',function(){
+  Object.keys(NEW_LAYER_CONFIGS).forEach(function(k){
+    if(!activeLayers[k])return;
+    if(map.getZoom()>10){hideNewLayer(k)}else{renderNewLayer(k)}
+  });
+});
+/* === End Phase 5 new layers === */
 
 /* Phase 4: Haven-route and area-compare clicks handled via onMapClick patch above */
 

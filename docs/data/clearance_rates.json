@@ -1,0 +1,867 @@
+{
+  "generated_at": "2026-05-25T09:26:21.874597+00:00",
+  "layer_id": "clearance",
+  "layer_name": "検挙率",
+  "layer_name_en": "Crime Clearance Rate",
+  "description": "都道府県別 刑法犯検挙率・少年犯罪率",
+  "national_average_pct": 46.0,
+  "color_scale": {
+    "low": "#f44336",
+    "mid": "#ff9800",
+    "high": "#4caf50",
+    "thresholds": [
+      40,
+      50,
+      60
+    ],
+    "note": "Higher clearance = safer (green)"
+  },
+  "prefectures": [
+    {
+      "prefecture_code": "27",
+      "prefecture": "大阪府",
+      "lat": 34.69,
+      "lon": 135.52,
+      "overall_clearance_pct": 37.5,
+      "by_type": {
+        "murder": 93.8,
+        "robbery": 73.5,
+        "assault": 67.2,
+        "theft": 24.8,
+        "fraud": 36.0,
+        "intellectual_crime": 52.0
+      },
+      "juvenile_rate_per_1000": 4.2,
+      "deviation_from_national": -8.5,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "13",
+      "prefecture": "東京都",
+      "lat": 35.68,
+      "lon": 139.69,
+      "overall_clearance_pct": 38.5,
+      "by_type": {
+        "murder": 95.8,
+        "robbery": 76.2,
+        "assault": 68.5,
+        "theft": 25.3,
+        "fraud": 42.8,
+        "intellectual_crime": 58.5
+      },
+      "juvenile_rate_per_1000": 2.9,
+      "deviation_from_national": -7.5,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "14",
+      "prefecture": "神奈川県",
+      "lat": 35.45,
+      "lon": 139.64,
+      "overall_clearance_pct": 39.2,
+      "by_type": {
+        "murder": 94.0,
+        "robbery": 74.5,
+        "assault": 69.0,
+        "theft": 27.2,
+        "fraud": 38.0,
+        "intellectual_crime": 54.8
+      },
+      "juvenile_rate_per_1000": 3.6,
+      "deviation_from_national": -6.8,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "12",
+      "prefecture": "千葉県",
+      "lat": 35.61,
+      "lon": 140.12,
+      "overall_clearance_pct": 39.8,
+      "by_type": {
+        "murder": 93.2,
+        "robbery": 75.0,
+        "assault": 69.8,
+        "theft": 27.9,
+        "fraud": 37.5,
+        "intellectual_crime": 53.5
+      },
+      "juvenile_rate_per_1000": 3.9,
+      "deviation_from_national": -6.2,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "11",
+      "prefecture": "埼玉県",
+      "lat": 35.86,
+      "lon": 139.65,
+      "overall_clearance_pct": 40.3,
+      "by_type": {
+        "murder": 93.5,
+        "robbery": 75.8,
+        "assault": 70.2,
+        "theft": 28.5,
+        "fraud": 38.2,
+        "intellectual_crime": 54.0
+      },
+      "juvenile_rate_per_1000": 3.8,
+      "deviation_from_national": -5.7,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "40",
+      "prefecture": "福岡県",
+      "lat": 33.59,
+      "lon": 130.42,
+      "overall_clearance_pct": 40.8,
+      "by_type": {
+        "murder": 94.0,
+        "robbery": 76.0,
+        "assault": 70.5,
+        "theft": 28.8,
+        "fraud": 38.5,
+        "intellectual_crime": 54.5
+      },
+      "juvenile_rate_per_1000": 4.0,
+      "deviation_from_national": -5.2,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "23",
+      "prefecture": "愛知県",
+      "lat": 35.18,
+      "lon": 136.91,
+      "overall_clearance_pct": 41.5,
+      "by_type": {
+        "murder": 94.2,
+        "robbery": 76.5,
+        "assault": 70.8,
+        "theft": 29.5,
+        "fraud": 39.5,
+        "intellectual_crime": 55.2
+      },
+      "juvenile_rate_per_1000": 3.7,
+      "deviation_from_national": -4.5,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "28",
+      "prefecture": "兵庫県",
+      "lat": 34.69,
+      "lon": 135.18,
+      "overall_clearance_pct": 42.0,
+      "by_type": {
+        "murder": 94.5,
+        "robbery": 77.0,
+        "assault": 71.5,
+        "theft": 30.0,
+        "fraud": 40.0,
+        "intellectual_crime": 56.0
+      },
+      "juvenile_rate_per_1000": 3.5,
+      "deviation_from_national": -4.0,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "01",
+      "prefecture": "北海道",
+      "lat": 43.06,
+      "lon": 141.35,
+      "overall_clearance_pct": 42.1,
+      "by_type": {
+        "murder": 94.1,
+        "robbery": 78.5,
+        "assault": 72.0,
+        "theft": 30.2,
+        "fraud": 40.5,
+        "intellectual_crime": 55.8
+      },
+      "juvenile_rate_per_1000": 3.5,
+      "deviation_from_national": -3.9,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "34",
+      "prefecture": "広島県",
+      "lat": 34.4,
+      "lon": 132.46,
+      "overall_clearance_pct": 43.2,
+      "by_type": {
+        "murder": 94.5,
+        "robbery": 77.8,
+        "assault": 72.2,
+        "theft": 31.2,
+        "fraud": 40.8,
+        "intellectual_crime": 56.5
+      },
+      "juvenile_rate_per_1000": 3.4,
+      "deviation_from_national": -2.8,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "08",
+      "prefecture": "茨城県",
+      "lat": 36.34,
+      "lon": 140.45,
+      "overall_clearance_pct": 43.5,
+      "by_type": {
+        "murder": 94.5,
+        "robbery": 77.2,
+        "assault": 71.8,
+        "theft": 31.5,
+        "fraud": 41.0,
+        "intellectual_crime": 56.5
+      },
+      "juvenile_rate_per_1000": 3.6,
+      "deviation_from_national": -2.5,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "26",
+      "prefecture": "京都府",
+      "lat": 35.02,
+      "lon": 135.76,
+      "overall_clearance_pct": 43.8,
+      "by_type": {
+        "murder": 95.0,
+        "robbery": 78.8,
+        "assault": 73.0,
+        "theft": 31.8,
+        "fraud": 41.8,
+        "intellectual_crime": 57.5
+      },
+      "juvenile_rate_per_1000": 3.3,
+      "deviation_from_national": -2.2,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "33",
+      "prefecture": "岡山県",
+      "lat": 34.66,
+      "lon": 133.93,
+      "overall_clearance_pct": 44.0,
+      "by_type": {
+        "murder": 94.8,
+        "robbery": 78.2,
+        "assault": 72.8,
+        "theft": 32.2,
+        "fraud": 41.8,
+        "intellectual_crime": 57.0
+      },
+      "juvenile_rate_per_1000": 3.4,
+      "deviation_from_national": -2.0,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "10",
+      "prefecture": "群馬県",
+      "lat": 36.39,
+      "lon": 139.06,
+      "overall_clearance_pct": 44.2,
+      "by_type": {
+        "murder": 94.8,
+        "robbery": 78.0,
+        "assault": 72.5,
+        "theft": 32.0,
+        "fraud": 41.5,
+        "intellectual_crime": 57.2
+      },
+      "juvenile_rate_per_1000": 3.5,
+      "deviation_from_national": -1.8,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "04",
+      "prefecture": "宮城県",
+      "lat": 38.27,
+      "lon": 140.87,
+      "overall_clearance_pct": 44.7,
+      "by_type": {
+        "murder": 95.0,
+        "robbery": 79.8,
+        "assault": 73.5,
+        "theft": 32.8,
+        "fraud": 42.1,
+        "intellectual_crime": 58.3
+      },
+      "juvenile_rate_per_1000": 3.4,
+      "deviation_from_national": -1.3,
+      "risk_tier": "要注意"
+    },
+    {
+      "prefecture_code": "47",
+      "prefecture": "沖縄県",
+      "lat": 26.34,
+      "lon": 127.68,
+      "overall_clearance_pct": 45.0,
+      "by_type": {
+        "murder": 94.8,
+        "robbery": 79.0,
+        "assault": 73.5,
+        "theft": 33.0,
+        "fraud": 42.5,
+        "intellectual_crime": 57.8
+      },
+      "juvenile_rate_per_1000": 3.8,
+      "deviation_from_national": -1.0,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "09",
+      "prefecture": "栃木県",
+      "lat": 36.57,
+      "lon": 139.88,
+      "overall_clearance_pct": 45.8,
+      "by_type": {
+        "murder": 95.2,
+        "robbery": 79.5,
+        "assault": 74.2,
+        "theft": 33.5,
+        "fraud": 43.0,
+        "intellectual_crime": 58.0
+      },
+      "juvenile_rate_per_1000": 3.3,
+      "deviation_from_national": -0.2,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "29",
+      "prefecture": "奈良県",
+      "lat": 34.69,
+      "lon": 135.83,
+      "overall_clearance_pct": 47.0,
+      "by_type": {
+        "murder": 95.5,
+        "robbery": 81.5,
+        "assault": 75.5,
+        "theft": 34.8,
+        "fraud": 44.5,
+        "intellectual_crime": 59.5
+      },
+      "juvenile_rate_per_1000": 3.1,
+      "deviation_from_national": 1.0,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "22",
+      "prefecture": "静岡県",
+      "lat": 34.98,
+      "lon": 138.38,
+      "overall_clearance_pct": 47.8,
+      "by_type": {
+        "murder": 95.5,
+        "robbery": 82.0,
+        "assault": 76.0,
+        "theft": 35.5,
+        "fraud": 45.5,
+        "intellectual_crime": 60.0
+      },
+      "juvenile_rate_per_1000": 3.2,
+      "deviation_from_national": 1.8,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "24",
+      "prefecture": "三重県",
+      "lat": 34.73,
+      "lon": 136.51,
+      "overall_clearance_pct": 48.5,
+      "by_type": {
+        "murder": 95.8,
+        "robbery": 83.0,
+        "assault": 76.5,
+        "theft": 36.2,
+        "fraud": 46.0,
+        "intellectual_crime": 60.8
+      },
+      "juvenile_rate_per_1000": 3.1,
+      "deviation_from_national": 2.5,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "25",
+      "prefecture": "滋賀県",
+      "lat": 35.0,
+      "lon": 135.87,
+      "overall_clearance_pct": 49.2,
+      "by_type": {
+        "murder": 96.0,
+        "robbery": 83.5,
+        "assault": 77.0,
+        "theft": 37.0,
+        "fraud": 46.8,
+        "intellectual_crime": 61.2
+      },
+      "juvenile_rate_per_1000": 3.0,
+      "deviation_from_national": 3.2,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "43",
+      "prefecture": "熊本県",
+      "lat": 32.79,
+      "lon": 130.74,
+      "overall_clearance_pct": 50.0,
+      "by_type": {
+        "murder": 96.0,
+        "robbery": 84.0,
+        "assault": 77.5,
+        "theft": 37.8,
+        "fraud": 47.5,
+        "intellectual_crime": 61.8
+      },
+      "juvenile_rate_per_1000": 3.1,
+      "deviation_from_national": 4.0,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "21",
+      "prefecture": "岐阜県",
+      "lat": 35.39,
+      "lon": 136.72,
+      "overall_clearance_pct": 50.5,
+      "by_type": {
+        "murder": 96.0,
+        "robbery": 84.5,
+        "assault": 77.8,
+        "theft": 38.2,
+        "fraud": 48.0,
+        "intellectual_crime": 62.0
+      },
+      "juvenile_rate_per_1000": 3.0,
+      "deviation_from_national": 4.5,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "46",
+      "prefecture": "鹿児島県",
+      "lat": 31.56,
+      "lon": 130.56,
+      "overall_clearance_pct": 51.5,
+      "by_type": {
+        "murder": 96.2,
+        "robbery": 85.0,
+        "assault": 78.8,
+        "theft": 39.2,
+        "fraud": 49.0,
+        "intellectual_crime": 62.8
+      },
+      "juvenile_rate_per_1000": 2.9,
+      "deviation_from_national": 5.5,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "37",
+      "prefecture": "香川県",
+      "lat": 34.34,
+      "lon": 134.04,
+      "overall_clearance_pct": 51.8,
+      "by_type": {
+        "murder": 96.2,
+        "robbery": 85.5,
+        "assault": 78.5,
+        "theft": 39.5,
+        "fraud": 49.0,
+        "intellectual_crime": 63.0
+      },
+      "juvenile_rate_per_1000": 2.9,
+      "deviation_from_national": 5.8,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "38",
+      "prefecture": "愛媛県",
+      "lat": 33.84,
+      "lon": 132.77,
+      "overall_clearance_pct": 52.0,
+      "by_type": {
+        "murder": 96.5,
+        "robbery": 85.8,
+        "assault": 79.0,
+        "theft": 39.8,
+        "fraud": 49.5,
+        "intellectual_crime": 63.2
+      },
+      "juvenile_rate_per_1000": 2.8,
+      "deviation_from_national": 6.0,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "07",
+      "prefecture": "福島県",
+      "lat": 37.75,
+      "lon": 140.47,
+      "overall_clearance_pct": 52.1,
+      "by_type": {
+        "murder": 96.5,
+        "robbery": 85.3,
+        "assault": 78.9,
+        "theft": 39.8,
+        "fraud": 49.2,
+        "intellectual_crime": 63.1
+      },
+      "juvenile_rate_per_1000": 2.9,
+      "deviation_from_national": 6.1,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "30",
+      "prefecture": "和歌山県",
+      "lat": 34.23,
+      "lon": 135.17,
+      "overall_clearance_pct": 52.5,
+      "by_type": {
+        "murder": 96.5,
+        "robbery": 85.8,
+        "assault": 79.5,
+        "theft": 40.2,
+        "fraud": 50.0,
+        "intellectual_crime": 63.8
+      },
+      "juvenile_rate_per_1000": 2.8,
+      "deviation_from_national": 6.5,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "44",
+      "prefecture": "大分県",
+      "lat": 33.24,
+      "lon": 131.61,
+      "overall_clearance_pct": 52.8,
+      "by_type": {
+        "murder": 96.5,
+        "robbery": 86.0,
+        "assault": 79.2,
+        "theft": 40.5,
+        "fraud": 50.2,
+        "intellectual_crime": 63.8
+      },
+      "juvenile_rate_per_1000": 2.7,
+      "deviation_from_national": 6.8,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "19",
+      "prefecture": "山梨県",
+      "lat": 35.66,
+      "lon": 138.57,
+      "overall_clearance_pct": 53.0,
+      "by_type": {
+        "murder": 96.5,
+        "robbery": 86.0,
+        "assault": 79.2,
+        "theft": 40.8,
+        "fraud": 50.0,
+        "intellectual_crime": 63.5
+      },
+      "juvenile_rate_per_1000": 2.8,
+      "deviation_from_national": 7.0,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "45",
+      "prefecture": "宮崎県",
+      "lat": 31.91,
+      "lon": 131.42,
+      "overall_clearance_pct": 53.2,
+      "by_type": {
+        "murder": 96.8,
+        "robbery": 86.5,
+        "assault": 79.5,
+        "theft": 41.0,
+        "fraud": 50.5,
+        "intellectual_crime": 64.0
+      },
+      "juvenile_rate_per_1000": 2.8,
+      "deviation_from_national": 7.2,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "15",
+      "prefecture": "新潟県",
+      "lat": 37.9,
+      "lon": 139.02,
+      "overall_clearance_pct": 53.5,
+      "by_type": {
+        "murder": 96.8,
+        "robbery": 86.5,
+        "assault": 79.8,
+        "theft": 41.2,
+        "fraud": 50.5,
+        "intellectual_crime": 64.0
+      },
+      "juvenile_rate_per_1000": 2.7,
+      "deviation_from_national": 7.5,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "42",
+      "prefecture": "長崎県",
+      "lat": 32.74,
+      "lon": 129.87,
+      "overall_clearance_pct": 53.8,
+      "by_type": {
+        "murder": 96.8,
+        "robbery": 87.0,
+        "assault": 80.0,
+        "theft": 41.5,
+        "fraud": 51.0,
+        "intellectual_crime": 64.5
+      },
+      "juvenile_rate_per_1000": 2.8,
+      "deviation_from_national": 7.8,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "20",
+      "prefecture": "長野県",
+      "lat": 36.23,
+      "lon": 138.18,
+      "overall_clearance_pct": 54.0,
+      "by_type": {
+        "murder": 96.8,
+        "robbery": 87.2,
+        "assault": 80.0,
+        "theft": 41.8,
+        "fraud": 51.2,
+        "intellectual_crime": 64.5
+      },
+      "juvenile_rate_per_1000": 2.6,
+      "deviation_from_national": 8.0,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "02",
+      "prefecture": "青森県",
+      "lat": 40.82,
+      "lon": 140.74,
+      "overall_clearance_pct": 54.3,
+      "by_type": {
+        "murder": 97.0,
+        "robbery": 88.2,
+        "assault": 80.5,
+        "theft": 42.1,
+        "fraud": 52.3,
+        "intellectual_crime": 65.4
+      },
+      "juvenile_rate_per_1000": 2.8,
+      "deviation_from_national": 8.3,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "41",
+      "prefecture": "佐賀県",
+      "lat": 33.25,
+      "lon": 130.3,
+      "overall_clearance_pct": 54.5,
+      "by_type": {
+        "murder": 97.0,
+        "robbery": 87.5,
+        "assault": 80.5,
+        "theft": 42.5,
+        "fraud": 52.0,
+        "intellectual_crime": 65.0
+      },
+      "juvenile_rate_per_1000": 2.9,
+      "deviation_from_national": 8.5,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "17",
+      "prefecture": "石川県",
+      "lat": 36.59,
+      "lon": 136.63,
+      "overall_clearance_pct": 54.8,
+      "by_type": {
+        "murder": 97.0,
+        "robbery": 88.5,
+        "assault": 80.8,
+        "theft": 42.5,
+        "fraud": 52.0,
+        "intellectual_crime": 65.5
+      },
+      "juvenile_rate_per_1000": 2.5,
+      "deviation_from_national": 8.8,
+      "risk_tier": "標準"
+    },
+    {
+      "prefecture_code": "35",
+      "prefecture": "山口県",
+      "lat": 34.19,
+      "lon": 131.47,
+      "overall_clearance_pct": 55.0,
+      "by_type": {
+        "murder": 97.0,
+        "robbery": 88.8,
+        "assault": 81.0,
+        "theft": 43.0,
+        "fraud": 52.5,
+        "intellectual_crime": 65.8
+      },
+      "juvenile_rate_per_1000": 2.5,
+      "deviation_from_national": 9.0,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "39",
+      "prefecture": "高知県",
+      "lat": 33.56,
+      "lon": 133.53,
+      "overall_clearance_pct": 55.5,
+      "by_type": {
+        "murder": 97.2,
+        "robbery": 89.0,
+        "assault": 81.5,
+        "theft": 43.5,
+        "fraud": 52.8,
+        "intellectual_crime": 66.0
+      },
+      "juvenile_rate_per_1000": 2.5,
+      "deviation_from_national": 9.5,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "16",
+      "prefecture": "富山県",
+      "lat": 36.7,
+      "lon": 137.21,
+      "overall_clearance_pct": 55.9,
+      "by_type": {
+        "murder": 97.2,
+        "robbery": 89.0,
+        "assault": 81.5,
+        "theft": 43.8,
+        "fraud": 53.0,
+        "intellectual_crime": 66.1
+      },
+      "juvenile_rate_per_1000": 2.4,
+      "deviation_from_national": 9.9,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "36",
+      "prefecture": "徳島県",
+      "lat": 34.07,
+      "lon": 134.56,
+      "overall_clearance_pct": 56.5,
+      "by_type": {
+        "murder": 97.5,
+        "robbery": 89.5,
+        "assault": 82.0,
+        "theft": 44.2,
+        "fraud": 53.5,
+        "intellectual_crime": 66.8
+      },
+      "juvenile_rate_per_1000": 2.4,
+      "deviation_from_national": 10.5,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "03",
+      "prefecture": "岩手県",
+      "lat": 39.7,
+      "lon": 141.15,
+      "overall_clearance_pct": 56.8,
+      "by_type": {
+        "murder": 97.5,
+        "robbery": 90.0,
+        "assault": 82.3,
+        "theft": 44.5,
+        "fraud": 54.0,
+        "intellectual_crime": 67.2
+      },
+      "juvenile_rate_per_1000": 2.5,
+      "deviation_from_national": 10.8,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "18",
+      "prefecture": "福井県",
+      "lat": 36.07,
+      "lon": 136.22,
+      "overall_clearance_pct": 57.0,
+      "by_type": {
+        "murder": 97.5,
+        "robbery": 90.5,
+        "assault": 82.8,
+        "theft": 45.0,
+        "fraud": 54.8,
+        "intellectual_crime": 67.5
+      },
+      "juvenile_rate_per_1000": 2.3,
+      "deviation_from_national": 11.0,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "06",
+      "prefecture": "山形県",
+      "lat": 38.24,
+      "lon": 140.33,
+      "overall_clearance_pct": 57.5,
+      "by_type": {
+        "murder": 97.8,
+        "robbery": 90.8,
+        "assault": 83.0,
+        "theft": 45.7,
+        "fraud": 54.5,
+        "intellectual_crime": 67.8
+      },
+      "juvenile_rate_per_1000": 2.3,
+      "deviation_from_national": 11.5,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "05",
+      "prefecture": "秋田県",
+      "lat": 39.72,
+      "lon": 140.1,
+      "overall_clearance_pct": 58.2,
+      "by_type": {
+        "murder": 98.0,
+        "robbery": 91.5,
+        "assault": 83.7,
+        "theft": 46.3,
+        "fraud": 55.8,
+        "intellectual_crime": 68.9
+      },
+      "juvenile_rate_per_1000": 2.2,
+      "deviation_from_national": 12.2,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "31",
+      "prefecture": "鳥取県",
+      "lat": 35.5,
+      "lon": 134.24,
+      "overall_clearance_pct": 59.5,
+      "by_type": {
+        "murder": 98.0,
+        "robbery": 92.0,
+        "assault": 84.5,
+        "theft": 47.8,
+        "fraud": 57.0,
+        "intellectual_crime": 70.0
+      },
+      "juvenile_rate_per_1000": 2.1,
+      "deviation_from_national": 13.5,
+      "risk_tier": "安全"
+    },
+    {
+      "prefecture_code": "32",
+      "prefecture": "島根県",
+      "lat": 35.47,
+      "lon": 133.05,
+      "overall_clearance_pct": 60.2,
+      "by_type": {
+        "murder": 98.5,
+        "robbery": 92.5,
+        "assault": 85.0,
+        "theft": 48.5,
+        "fraud": 57.5,
+        "intellectual_crime": 70.5
+      },
+      "juvenile_rate_per_1000": 2.0,
+      "deviation_from_national": 14.2,
+      "risk_tier": "安全"
+    }
+  ]
+}

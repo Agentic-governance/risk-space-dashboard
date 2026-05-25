@@ -1,0 +1,3563 @@
+{
+  "metadata": {
+    "standard": "JIS X 0410",
+    "mesh_level": 3,
+    "resolution_km": 1.0,
+    "city": "大阪市",
+    "city_key": "osaka",
+    "prefecture_code": "27",
+    "city_code": "27100",
+    "cell_count": 273
+  },
+  "cells": [
+    {
+      "mesh_code": "51356393",
+      "center_lat": 34.579167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51356394",
+      "center_lat": 34.579167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51356395",
+      "center_lat": 34.579167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51356396",
+      "center_lat": 34.579167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51356397",
+      "center_lat": 34.579167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51356398",
+      "center_lat": 34.579167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51356399",
+      "center_lat": 34.579167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51356490",
+      "center_lat": 34.579167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51356491",
+      "center_lat": 34.579167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51356492",
+      "center_lat": 34.579167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51356493",
+      "center_lat": 34.579167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51356494",
+      "center_lat": 34.579167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51356495",
+      "center_lat": 34.579167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.575,
+        "north": 34.58333333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357303",
+      "center_lat": 34.5875,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357304",
+      "center_lat": 34.5875,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357305",
+      "center_lat": 34.5875,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357306",
+      "center_lat": 34.5875,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357307",
+      "center_lat": 34.5875,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357308",
+      "center_lat": 34.5875,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357309",
+      "center_lat": 34.5875,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357313",
+      "center_lat": 34.595833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357314",
+      "center_lat": 34.595833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357315",
+      "center_lat": 34.595833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357316",
+      "center_lat": 34.595833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357317",
+      "center_lat": 34.595833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357318",
+      "center_lat": 34.595833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357319",
+      "center_lat": 34.595833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357323",
+      "center_lat": 34.604167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357324",
+      "center_lat": 34.604167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357325",
+      "center_lat": 34.604167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357326",
+      "center_lat": 34.604167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357327",
+      "center_lat": 34.604167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357328",
+      "center_lat": 34.604167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357329",
+      "center_lat": 34.604167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357333",
+      "center_lat": 34.6125,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357334",
+      "center_lat": 34.6125,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357335",
+      "center_lat": 34.6125,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357336",
+      "center_lat": 34.6125,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357337",
+      "center_lat": 34.6125,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357338",
+      "center_lat": 34.6125,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357339",
+      "center_lat": 34.6125,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357343",
+      "center_lat": 34.620833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357344",
+      "center_lat": 34.620833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357345",
+      "center_lat": 34.620833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357346",
+      "center_lat": 34.620833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357347",
+      "center_lat": 34.620833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357348",
+      "center_lat": 34.620833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357349",
+      "center_lat": 34.620833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357353",
+      "center_lat": 34.629167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357354",
+      "center_lat": 34.629167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357355",
+      "center_lat": 34.629167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357356",
+      "center_lat": 34.629167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357357",
+      "center_lat": 34.629167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357358",
+      "center_lat": 34.629167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357359",
+      "center_lat": 34.629167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357363",
+      "center_lat": 34.6375,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357364",
+      "center_lat": 34.6375,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357365",
+      "center_lat": 34.6375,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357366",
+      "center_lat": 34.6375,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357367",
+      "center_lat": 34.6375,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357368",
+      "center_lat": 34.6375,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357369",
+      "center_lat": 34.6375,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357373",
+      "center_lat": 34.645833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357374",
+      "center_lat": 34.645833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357375",
+      "center_lat": 34.645833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357376",
+      "center_lat": 34.645833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357377",
+      "center_lat": 34.645833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357378",
+      "center_lat": 34.645833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357379",
+      "center_lat": 34.645833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357383",
+      "center_lat": 34.654167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357384",
+      "center_lat": 34.654167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357385",
+      "center_lat": 34.654167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357386",
+      "center_lat": 34.654167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357387",
+      "center_lat": 34.654167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357388",
+      "center_lat": 34.654167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357389",
+      "center_lat": 34.654167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357393",
+      "center_lat": 34.6625,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "51357394",
+      "center_lat": 34.6625,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "51357395",
+      "center_lat": 34.6625,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "51357396",
+      "center_lat": 34.6625,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "51357397",
+      "center_lat": 34.6625,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "51357398",
+      "center_lat": 34.6625,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "51357399",
+      "center_lat": 34.6625,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "51357400",
+      "center_lat": 34.5875,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357401",
+      "center_lat": 34.5875,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357402",
+      "center_lat": 34.5875,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357403",
+      "center_lat": 34.5875,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357404",
+      "center_lat": 34.5875,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357405",
+      "center_lat": 34.5875,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.58333333,
+        "north": 34.59166667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357410",
+      "center_lat": 34.595833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357411",
+      "center_lat": 34.595833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357412",
+      "center_lat": 34.595833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357413",
+      "center_lat": 34.595833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357414",
+      "center_lat": 34.595833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357415",
+      "center_lat": 34.595833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.59166667,
+        "north": 34.6,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357420",
+      "center_lat": 34.604167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357421",
+      "center_lat": 34.604167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357422",
+      "center_lat": 34.604167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357423",
+      "center_lat": 34.604167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357424",
+      "center_lat": 34.604167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357425",
+      "center_lat": 34.604167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.6,
+        "north": 34.60833333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357430",
+      "center_lat": 34.6125,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357431",
+      "center_lat": 34.6125,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357432",
+      "center_lat": 34.6125,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357433",
+      "center_lat": 34.6125,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357434",
+      "center_lat": 34.6125,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357435",
+      "center_lat": 34.6125,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.60833333,
+        "north": 34.61666667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357440",
+      "center_lat": 34.620833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357441",
+      "center_lat": 34.620833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357442",
+      "center_lat": 34.620833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357443",
+      "center_lat": 34.620833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357444",
+      "center_lat": 34.620833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357445",
+      "center_lat": 34.620833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.61666667,
+        "north": 34.625,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357450",
+      "center_lat": 34.629167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357451",
+      "center_lat": 34.629167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357452",
+      "center_lat": 34.629167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357453",
+      "center_lat": 34.629167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357454",
+      "center_lat": 34.629167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357455",
+      "center_lat": 34.629167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.625,
+        "north": 34.63333333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357460",
+      "center_lat": 34.6375,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357461",
+      "center_lat": 34.6375,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357462",
+      "center_lat": 34.6375,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357463",
+      "center_lat": 34.6375,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357464",
+      "center_lat": 34.6375,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357465",
+      "center_lat": 34.6375,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.63333333,
+        "north": 34.64166667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357470",
+      "center_lat": 34.645833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357471",
+      "center_lat": 34.645833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357472",
+      "center_lat": 34.645833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357473",
+      "center_lat": 34.645833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357474",
+      "center_lat": 34.645833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357475",
+      "center_lat": 34.645833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.64166667,
+        "north": 34.65,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357480",
+      "center_lat": 34.654167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357481",
+      "center_lat": 34.654167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357482",
+      "center_lat": 34.654167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357483",
+      "center_lat": 34.654167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357484",
+      "center_lat": 34.654167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357485",
+      "center_lat": 34.654167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65,
+        "north": 34.65833333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "51357490",
+      "center_lat": 34.6625,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "51357491",
+      "center_lat": 34.6625,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "51357492",
+      "center_lat": 34.6625,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "51357493",
+      "center_lat": 34.6625,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "51357494",
+      "center_lat": 34.6625,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "51357495",
+      "center_lat": 34.6625,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.65833333,
+        "north": 34.66666667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350303",
+      "center_lat": 34.670833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350304",
+      "center_lat": 34.670833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350305",
+      "center_lat": 34.670833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350306",
+      "center_lat": 34.670833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350307",
+      "center_lat": 34.670833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350308",
+      "center_lat": 34.670833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350309",
+      "center_lat": 34.670833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350313",
+      "center_lat": 34.679167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350314",
+      "center_lat": 34.679167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350315",
+      "center_lat": 34.679167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350316",
+      "center_lat": 34.679167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350317",
+      "center_lat": 34.679167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350318",
+      "center_lat": 34.679167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350319",
+      "center_lat": 34.679167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350323",
+      "center_lat": 34.6875,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350324",
+      "center_lat": 34.6875,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350325",
+      "center_lat": 34.6875,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350326",
+      "center_lat": 34.6875,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350327",
+      "center_lat": 34.6875,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350328",
+      "center_lat": 34.6875,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350329",
+      "center_lat": 34.6875,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350333",
+      "center_lat": 34.695833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350334",
+      "center_lat": 34.695833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350335",
+      "center_lat": 34.695833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350336",
+      "center_lat": 34.695833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350337",
+      "center_lat": 34.695833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350338",
+      "center_lat": 34.695833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350339",
+      "center_lat": 34.695833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350343",
+      "center_lat": 34.704167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350344",
+      "center_lat": 34.704167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350345",
+      "center_lat": 34.704167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350346",
+      "center_lat": 34.704167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350347",
+      "center_lat": 34.704167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350348",
+      "center_lat": 34.704167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350349",
+      "center_lat": 34.704167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350353",
+      "center_lat": 34.7125,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350354",
+      "center_lat": 34.7125,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350355",
+      "center_lat": 34.7125,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350356",
+      "center_lat": 34.7125,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350357",
+      "center_lat": 34.7125,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350358",
+      "center_lat": 34.7125,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350359",
+      "center_lat": 34.7125,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350363",
+      "center_lat": 34.720833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350364",
+      "center_lat": 34.720833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350365",
+      "center_lat": 34.720833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350366",
+      "center_lat": 34.720833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350367",
+      "center_lat": 34.720833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350368",
+      "center_lat": 34.720833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350369",
+      "center_lat": 34.720833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350373",
+      "center_lat": 34.729167,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350374",
+      "center_lat": 34.729167,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350375",
+      "center_lat": 34.729167,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350376",
+      "center_lat": 34.729167,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350377",
+      "center_lat": 34.729167,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350378",
+      "center_lat": 34.729167,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350379",
+      "center_lat": 34.729167,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350383",
+      "center_lat": 34.7375,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350384",
+      "center_lat": 34.7375,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350385",
+      "center_lat": 34.7375,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350386",
+      "center_lat": 34.7375,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350387",
+      "center_lat": 34.7375,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350388",
+      "center_lat": 34.7375,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350389",
+      "center_lat": 34.7375,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350393",
+      "center_lat": 34.745833,
+      "center_lng": 135.41875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.4125,
+        "east": 135.425
+      }
+    },
+    {
+      "mesh_code": "52350394",
+      "center_lat": 34.745833,
+      "center_lng": 135.43125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.425,
+        "east": 135.4375
+      }
+    },
+    {
+      "mesh_code": "52350395",
+      "center_lat": 34.745833,
+      "center_lng": 135.44375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.4375,
+        "east": 135.45
+      }
+    },
+    {
+      "mesh_code": "52350396",
+      "center_lat": 34.745833,
+      "center_lng": 135.45625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.45,
+        "east": 135.4625
+      }
+    },
+    {
+      "mesh_code": "52350397",
+      "center_lat": 34.745833,
+      "center_lng": 135.46875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.4625,
+        "east": 135.475
+      }
+    },
+    {
+      "mesh_code": "52350398",
+      "center_lat": 34.745833,
+      "center_lng": 135.48125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.475,
+        "east": 135.4875
+      }
+    },
+    {
+      "mesh_code": "52350399",
+      "center_lat": 34.745833,
+      "center_lng": 135.49375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.4875,
+        "east": 135.5
+      }
+    },
+    {
+      "mesh_code": "52350400",
+      "center_lat": 34.670833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350401",
+      "center_lat": 34.670833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350402",
+      "center_lat": 34.670833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350403",
+      "center_lat": 34.670833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350404",
+      "center_lat": 34.670833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350405",
+      "center_lat": 34.670833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.66666667,
+        "north": 34.675,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350410",
+      "center_lat": 34.679167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350411",
+      "center_lat": 34.679167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350412",
+      "center_lat": 34.679167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350413",
+      "center_lat": 34.679167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350414",
+      "center_lat": 34.679167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350415",
+      "center_lat": 34.679167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.675,
+        "north": 34.68333333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350420",
+      "center_lat": 34.6875,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350421",
+      "center_lat": 34.6875,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350422",
+      "center_lat": 34.6875,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350423",
+      "center_lat": 34.6875,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350424",
+      "center_lat": 34.6875,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350425",
+      "center_lat": 34.6875,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.68333333,
+        "north": 34.69166667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350430",
+      "center_lat": 34.695833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350431",
+      "center_lat": 34.695833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350432",
+      "center_lat": 34.695833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350433",
+      "center_lat": 34.695833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350434",
+      "center_lat": 34.695833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350435",
+      "center_lat": 34.695833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.69166667,
+        "north": 34.7,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350440",
+      "center_lat": 34.704167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350441",
+      "center_lat": 34.704167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350442",
+      "center_lat": 34.704167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350443",
+      "center_lat": 34.704167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350444",
+      "center_lat": 34.704167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350445",
+      "center_lat": 34.704167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.7,
+        "north": 34.70833333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350450",
+      "center_lat": 34.7125,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350451",
+      "center_lat": 34.7125,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350452",
+      "center_lat": 34.7125,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350453",
+      "center_lat": 34.7125,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350454",
+      "center_lat": 34.7125,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350455",
+      "center_lat": 34.7125,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.70833333,
+        "north": 34.71666667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350460",
+      "center_lat": 34.720833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350461",
+      "center_lat": 34.720833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350462",
+      "center_lat": 34.720833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350463",
+      "center_lat": 34.720833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350464",
+      "center_lat": 34.720833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350465",
+      "center_lat": 34.720833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.71666667,
+        "north": 34.725,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350470",
+      "center_lat": 34.729167,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350471",
+      "center_lat": 34.729167,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350472",
+      "center_lat": 34.729167,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350473",
+      "center_lat": 34.729167,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350474",
+      "center_lat": 34.729167,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350475",
+      "center_lat": 34.729167,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.725,
+        "north": 34.73333333,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350480",
+      "center_lat": 34.7375,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350481",
+      "center_lat": 34.7375,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350482",
+      "center_lat": 34.7375,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350483",
+      "center_lat": 34.7375,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350484",
+      "center_lat": 34.7375,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350485",
+      "center_lat": 34.7375,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.73333333,
+        "north": 34.74166667,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    },
+    {
+      "mesh_code": "52350490",
+      "center_lat": 34.745833,
+      "center_lng": 135.50625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.5,
+        "east": 135.5125
+      }
+    },
+    {
+      "mesh_code": "52350491",
+      "center_lat": 34.745833,
+      "center_lng": 135.51875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.5125,
+        "east": 135.525
+      }
+    },
+    {
+      "mesh_code": "52350492",
+      "center_lat": 34.745833,
+      "center_lng": 135.53125,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.525,
+        "east": 135.5375
+      }
+    },
+    {
+      "mesh_code": "52350493",
+      "center_lat": 34.745833,
+      "center_lng": 135.54375,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.5375,
+        "east": 135.55
+      }
+    },
+    {
+      "mesh_code": "52350494",
+      "center_lat": 34.745833,
+      "center_lng": 135.55625,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.55,
+        "east": 135.5625
+      }
+    },
+    {
+      "mesh_code": "52350495",
+      "center_lat": 34.745833,
+      "center_lng": 135.56875,
+      "prefecture_code": "27",
+      "city_code": "27100",
+      "bounding_box": {
+        "south": 34.74166667,
+        "north": 34.75,
+        "west": 135.5625,
+        "east": 135.575
+      }
+    }
+  ]
+}

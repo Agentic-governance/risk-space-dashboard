@@ -1,0 +1,498 @@
+{
+  "generated_at": "2026-05-25T09:26:21.874597+00:00",
+  "layer_id": "vacancy",
+  "layer_name": "空き家率",
+  "layer_name_en": "Vacancy Rate",
+  "description": "空き家率 by prefecture from 住宅・土地統計調査 2023 (総務省統計局). National average 13.8%.",
+  "data_source": {
+    "name": "住宅・土地統計調査",
+    "year": 2023,
+    "publisher": "総務省統計局",
+    "url": "https://www.stat.go.jp/data/jyutaku/2023/pdf/kihon_gaiyou.pdf",
+    "survey_date": "2023-10-01",
+    "release_date": "2024-04-30"
+  },
+  "national_average_pct": 13.8,
+  "color_scale": {
+    "low": "#4caf50",
+    "mid": "#ff9800",
+    "high": "#f44336",
+    "thresholds": [
+      10,
+      15,
+      20
+    ]
+  },
+  "prefectures": [
+    {
+      "prefecture_code": "30",
+      "prefecture": "和歌山県",
+      "lat": 34.23,
+      "lon": 135.17,
+      "total_vacancy_rate": 21.2,
+      "abandoned_vacancy_rate": 16.9,
+      "z_score": 2.082,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "36",
+      "prefecture": "徳島県",
+      "lat": 34.07,
+      "lon": 134.56,
+      "total_vacancy_rate": 21.2,
+      "abandoned_vacancy_rate": 16.7,
+      "z_score": 2.082,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "39",
+      "prefecture": "高知県",
+      "lat": 33.56,
+      "lon": 133.53,
+      "total_vacancy_rate": 20.6,
+      "abandoned_vacancy_rate": 16.4,
+      "z_score": 1.86,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "19",
+      "prefecture": "山梨県",
+      "lat": 35.66,
+      "lon": 138.57,
+      "total_vacancy_rate": 20.5,
+      "abandoned_vacancy_rate": 13.6,
+      "z_score": 1.823,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "20",
+      "prefecture": "長野県",
+      "lat": 36.23,
+      "lon": 138.18,
+      "total_vacancy_rate": 19.5,
+      "abandoned_vacancy_rate": 12.7,
+      "z_score": 1.454,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "46",
+      "prefecture": "鹿児島県",
+      "lat": 31.56,
+      "lon": 130.56,
+      "total_vacancy_rate": 18.4,
+      "abandoned_vacancy_rate": 14.3,
+      "z_score": 1.047,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "05",
+      "prefecture": "秋田県",
+      "lat": 39.72,
+      "lon": 140.1,
+      "total_vacancy_rate": 18.3,
+      "abandoned_vacancy_rate": 14.1,
+      "z_score": 1.01,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "38",
+      "prefecture": "愛媛県",
+      "lat": 33.84,
+      "lon": 132.77,
+      "total_vacancy_rate": 18.2,
+      "abandoned_vacancy_rate": 14.0,
+      "z_score": 0.973,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "37",
+      "prefecture": "香川県",
+      "lat": 34.34,
+      "lon": 134.04,
+      "total_vacancy_rate": 18.1,
+      "abandoned_vacancy_rate": 13.9,
+      "z_score": 0.936,
+      "risk_tier": "高"
+    },
+    {
+      "prefecture_code": "35",
+      "prefecture": "山口県",
+      "lat": 34.19,
+      "lon": 131.47,
+      "total_vacancy_rate": 17.6,
+      "abandoned_vacancy_rate": 13.7,
+      "z_score": 0.752,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "03",
+      "prefecture": "岩手県",
+      "lat": 39.7,
+      "lon": 141.15,
+      "total_vacancy_rate": 17.2,
+      "abandoned_vacancy_rate": 12.9,
+      "z_score": 0.604,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "42",
+      "prefecture": "長崎県",
+      "lat": 32.74,
+      "lon": 129.87,
+      "total_vacancy_rate": 16.7,
+      "abandoned_vacancy_rate": 12.9,
+      "z_score": 0.419,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "10",
+      "prefecture": "群馬県",
+      "lat": 36.39,
+      "lon": 139.06,
+      "total_vacancy_rate": 16.6,
+      "abandoned_vacancy_rate": 12.1,
+      "z_score": 0.382,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "31",
+      "prefecture": "鳥取県",
+      "lat": 35.5,
+      "lon": 134.24,
+      "total_vacancy_rate": 16.5,
+      "abandoned_vacancy_rate": 12.8,
+      "z_score": 0.345,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "02",
+      "prefecture": "青森県",
+      "lat": 40.82,
+      "lon": 140.74,
+      "total_vacancy_rate": 16.4,
+      "abandoned_vacancy_rate": 12.3,
+      "z_score": 0.308,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "22",
+      "prefecture": "静岡県",
+      "lat": 34.98,
+      "lon": 138.38,
+      "total_vacancy_rate": 16.4,
+      "abandoned_vacancy_rate": 11.8,
+      "z_score": 0.308,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "32",
+      "prefecture": "島根県",
+      "lat": 35.47,
+      "lon": 133.05,
+      "total_vacancy_rate": 16.4,
+      "abandoned_vacancy_rate": 12.6,
+      "z_score": 0.308,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "06",
+      "prefecture": "山形県",
+      "lat": 38.24,
+      "lon": 140.33,
+      "total_vacancy_rate": 16.3,
+      "abandoned_vacancy_rate": 12.1,
+      "z_score": 0.271,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "18",
+      "prefecture": "福井県",
+      "lat": 36.07,
+      "lon": 136.22,
+      "total_vacancy_rate": 16.3,
+      "abandoned_vacancy_rate": 12.2,
+      "z_score": 0.271,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "09",
+      "prefecture": "栃木県",
+      "lat": 36.57,
+      "lon": 139.88,
+      "total_vacancy_rate": 16.2,
+      "abandoned_vacancy_rate": 12.0,
+      "z_score": 0.234,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "45",
+      "prefecture": "宮崎県",
+      "lat": 31.91,
+      "lon": 131.42,
+      "total_vacancy_rate": 16.2,
+      "abandoned_vacancy_rate": 12.6,
+      "z_score": 0.234,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "15",
+      "prefecture": "新潟県",
+      "lat": 37.9,
+      "lon": 139.02,
+      "total_vacancy_rate": 16.1,
+      "abandoned_vacancy_rate": 12.0,
+      "z_score": 0.197,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "44",
+      "prefecture": "大分県",
+      "lat": 33.24,
+      "lon": 131.61,
+      "total_vacancy_rate": 16.1,
+      "abandoned_vacancy_rate": 12.3,
+      "z_score": 0.197,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "07",
+      "prefecture": "福島県",
+      "lat": 37.75,
+      "lon": 140.47,
+      "total_vacancy_rate": 15.6,
+      "abandoned_vacancy_rate": 11.5,
+      "z_score": 0.013,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "33",
+      "prefecture": "岡山県",
+      "lat": 34.66,
+      "lon": 133.93,
+      "total_vacancy_rate": 15.6,
+      "abandoned_vacancy_rate": 11.6,
+      "z_score": 0.013,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "21",
+      "prefecture": "岐阜県",
+      "lat": 35.39,
+      "lon": 136.72,
+      "total_vacancy_rate": 15.3,
+      "abandoned_vacancy_rate": 11.3,
+      "z_score": -0.098,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "16",
+      "prefecture": "富山県",
+      "lat": 36.7,
+      "lon": 137.21,
+      "total_vacancy_rate": 15.2,
+      "abandoned_vacancy_rate": 11.0,
+      "z_score": -0.135,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "24",
+      "prefecture": "三重県",
+      "lat": 34.73,
+      "lon": 136.51,
+      "total_vacancy_rate": 15.2,
+      "abandoned_vacancy_rate": 11.3,
+      "z_score": -0.135,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "27",
+      "prefecture": "大阪府",
+      "lat": 34.69,
+      "lon": 135.52,
+      "total_vacancy_rate": 15.2,
+      "abandoned_vacancy_rate": 10.7,
+      "z_score": -0.135,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "34",
+      "prefecture": "広島県",
+      "lat": 34.4,
+      "lon": 132.46,
+      "total_vacancy_rate": 15.1,
+      "abandoned_vacancy_rate": 10.8,
+      "z_score": -0.172,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "08",
+      "prefecture": "茨城県",
+      "lat": 36.34,
+      "lon": 140.45,
+      "total_vacancy_rate": 14.8,
+      "abandoned_vacancy_rate": 10.9,
+      "z_score": -0.283,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "17",
+      "prefecture": "石川県",
+      "lat": 36.59,
+      "lon": 136.63,
+      "total_vacancy_rate": 14.5,
+      "abandoned_vacancy_rate": 10.3,
+      "z_score": -0.394,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "41",
+      "prefecture": "佐賀県",
+      "lat": 33.25,
+      "lon": 130.3,
+      "total_vacancy_rate": 14.5,
+      "abandoned_vacancy_rate": 10.8,
+      "z_score": -0.394,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "43",
+      "prefecture": "熊本県",
+      "lat": 32.79,
+      "lon": 130.74,
+      "total_vacancy_rate": 14.3,
+      "abandoned_vacancy_rate": 10.5,
+      "z_score": -0.468,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "29",
+      "prefecture": "奈良県",
+      "lat": 34.69,
+      "lon": 135.83,
+      "total_vacancy_rate": 14.1,
+      "abandoned_vacancy_rate": 10.4,
+      "z_score": -0.542,
+      "risk_tier": "中"
+    },
+    {
+      "prefecture_code": "28",
+      "prefecture": "兵庫県",
+      "lat": 34.69,
+      "lon": 135.18,
+      "total_vacancy_rate": 13.4,
+      "abandoned_vacancy_rate": 9.5,
+      "z_score": -0.8,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "26",
+      "prefecture": "京都府",
+      "lat": 35.02,
+      "lon": 135.76,
+      "total_vacancy_rate": 13.3,
+      "abandoned_vacancy_rate": 9.2,
+      "z_score": -0.837,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "25",
+      "prefecture": "滋賀県",
+      "lat": 35.0,
+      "lon": 135.87,
+      "total_vacancy_rate": 13.2,
+      "abandoned_vacancy_rate": 9.5,
+      "z_score": -0.874,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "40",
+      "prefecture": "福岡県",
+      "lat": 33.59,
+      "lon": 130.42,
+      "total_vacancy_rate": 12.9,
+      "abandoned_vacancy_rate": 8.9,
+      "z_score": -0.985,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "47",
+      "prefecture": "沖縄県",
+      "lat": 26.34,
+      "lon": 127.68,
+      "total_vacancy_rate": 12.7,
+      "abandoned_vacancy_rate": 8.5,
+      "z_score": -1.059,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "12",
+      "prefecture": "千葉県",
+      "lat": 35.61,
+      "lon": 140.12,
+      "total_vacancy_rate": 12.3,
+      "abandoned_vacancy_rate": 8.6,
+      "z_score": -1.207,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "01",
+      "prefecture": "北海道",
+      "lat": 43.06,
+      "lon": 141.35,
+      "total_vacancy_rate": 12.1,
+      "abandoned_vacancy_rate": 8.3,
+      "z_score": -1.281,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "04",
+      "prefecture": "宮城県",
+      "lat": 38.27,
+      "lon": 140.87,
+      "total_vacancy_rate": 12.0,
+      "abandoned_vacancy_rate": 8.7,
+      "z_score": -1.318,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "23",
+      "prefecture": "愛知県",
+      "lat": 35.18,
+      "lon": 136.91,
+      "total_vacancy_rate": 11.7,
+      "abandoned_vacancy_rate": 8.0,
+      "z_score": -1.429,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "13",
+      "prefecture": "東京都",
+      "lat": 35.68,
+      "lon": 139.69,
+      "total_vacancy_rate": 11.0,
+      "abandoned_vacancy_rate": 6.4,
+      "z_score": -1.687,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "11",
+      "prefecture": "埼玉県",
+      "lat": 35.86,
+      "lon": 139.65,
+      "total_vacancy_rate": 10.4,
+      "abandoned_vacancy_rate": 7.2,
+      "z_score": -1.909,
+      "risk_tier": "低"
+    },
+    {
+      "prefecture_code": "14",
+      "prefecture": "神奈川県",
+      "lat": 35.45,
+      "lon": 139.64,
+      "total_vacancy_rate": 10.2,
+      "abandoned_vacancy_rate": 6.8,
+      "z_score": -1.983,
+      "risk_tier": "低"
+    }
+  ]
+}

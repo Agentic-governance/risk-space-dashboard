@@ -1,0 +1,778 @@
+{
+  "generated_at": "2026-05-25T09:26:21.874597+00:00",
+  "layer_id": "hazard_composite",
+  "layer_name": "複合ハザード指標",
+  "layer_name_en": "Compound Hazard Index",
+  "description": "洪水・土砂・津波・地震の4災害を統合した都道府県別ハザードスコア",
+  "weights": {
+    "flood": 0.25,
+    "landslide": 0.2,
+    "tsunami": 0.25,
+    "seismic": 0.3,
+    "note": "内陸県は津波ウェイトを地震(+15%)・洪水(+10%)に再配分"
+  },
+  "color_scale": {
+    "low": "#4caf50",
+    "mid": "#ff9800",
+    "high": "#f44336",
+    "thresholds": [
+      0.3,
+      0.5,
+      0.7
+    ]
+  },
+  "prefectures": [
+    {
+      "prefecture_code": "39",
+      "prefecture": "高知県",
+      "lat": 33.56,
+      "lon": 133.53,
+      "composite_score": 0.7056,
+      "risk_tier": "極高",
+      "subscores": {
+        "flood": 0.2584,
+        "landslide": 0.4552,
+        "tsunami": 1.0,
+        "seismic": 1.0
+      },
+      "is_coastal": true,
+      "population_10k": 68
+    },
+    {
+      "prefecture_code": "36",
+      "prefecture": "徳島県",
+      "lat": 34.07,
+      "lon": 134.56,
+      "composite_score": 0.649,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.377,
+        "landslide": 0.4432,
+        "tsunami": 0.6958,
+        "seismic": 0.9739
+      },
+      "is_coastal": true,
+      "population_10k": 70
+    },
+    {
+      "prefecture_code": "23",
+      "prefecture": "愛知県",
+      "lat": 35.18,
+      "lon": 136.91,
+      "composite_score": 0.6112,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.8558,
+        "landslide": 0.3407,
+        "tsunami": 0.5901,
+        "seismic": 0.6052
+      },
+      "is_coastal": true,
+      "population_10k": 748
+    },
+    {
+      "prefecture_code": "22",
+      "prefecture": "静岡県",
+      "lat": 34.98,
+      "lon": 138.38,
+      "composite_score": 0.5887,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.2785,
+        "landslide": 0.313,
+        "tsunami": 0.7083,
+        "seismic": 0.9312
+      },
+      "is_coastal": true,
+      "population_10k": 358
+    },
+    {
+      "prefecture_code": "24",
+      "prefecture": "三重県",
+      "lat": 34.73,
+      "lon": 136.51,
+      "composite_score": 0.559,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.3131,
+        "landslide": 0.3546,
+        "tsunami": 0.6192,
+        "seismic": 0.8501
+      },
+      "is_coastal": true,
+      "population_10k": 174
+    },
+    {
+      "prefecture_code": "27",
+      "prefecture": "大阪府",
+      "lat": 34.69,
+      "lon": 135.52,
+      "composite_score": 0.5543,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.9252,
+        "landslide": 0.5085,
+        "tsunami": 0.4215,
+        "seismic": 0.3865
+      },
+      "is_coastal": true,
+      "population_10k": 880
+    },
+    {
+      "prefecture_code": "11",
+      "prefecture": "埼玉県",
+      "lat": 35.86,
+      "lon": 139.65,
+      "composite_score": 0.5465,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 1.0,
+        "landslide": 0.0944,
+        "tsunami": null,
+        "seismic": 0.3948
+      },
+      "is_coastal": false,
+      "population_10k": 734
+    },
+    {
+      "prefecture_code": "30",
+      "prefecture": "和歌山県",
+      "lat": 34.23,
+      "lon": 135.17,
+      "composite_score": 0.5414,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.231,
+        "landslide": 0.5291,
+        "tsunami": 0.5888,
+        "seismic": 0.7689
+      },
+      "is_coastal": true,
+      "population_10k": 90
+    },
+    {
+      "prefecture_code": "13",
+      "prefecture": "東京都",
+      "lat": 35.68,
+      "lon": 139.69,
+      "composite_score": 0.5187,
+      "risk_tier": "高",
+      "subscores": {
+        "flood": 0.823,
+        "landslide": 0.3651,
+        "tsunami": 0.2186,
+        "seismic": 0.6176
+      },
+      "is_coastal": true,
+      "population_10k": 1404
+    },
+    {
+      "prefecture_code": "44",
+      "prefecture": "大分県",
+      "lat": 33.24,
+      "lon": 131.61,
+      "composite_score": 0.4672,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.2821,
+        "landslide": 0.4243,
+        "tsunami": 0.3772,
+        "seismic": 0.7249
+      },
+      "is_coastal": true,
+      "population_10k": 111
+    },
+    {
+      "prefecture_code": "45",
+      "prefecture": "宮崎県",
+      "lat": 31.91,
+      "lon": 131.42,
+      "composite_score": 0.4523,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.2967,
+        "landslide": 0.4422,
+        "tsunami": 0.4574,
+        "seismic": 0.5846
+      },
+      "is_coastal": true,
+      "population_10k": 105
+    },
+    {
+      "prefecture_code": "14",
+      "prefecture": "神奈川県",
+      "lat": 35.45,
+      "lon": 139.64,
+      "composite_score": 0.4096,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.3369,
+        "landslide": 0.4567,
+        "tsunami": 0.3388,
+        "seismic": 0.4979
+      },
+      "is_coastal": true,
+      "population_10k": 924
+    },
+    {
+      "prefecture_code": "12",
+      "prefecture": "千葉県",
+      "lat": 35.61,
+      "lon": 140.12,
+      "composite_score": 0.4087,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.3861,
+        "landslide": 0.0433,
+        "tsunami": 0.2237,
+        "seismic": 0.8253
+      },
+      "is_coastal": true,
+      "population_10k": 628
+    },
+    {
+      "prefecture_code": "34",
+      "prefecture": "広島県",
+      "lat": 34.4,
+      "lon": 132.46,
+      "composite_score": 0.3777,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.2693,
+        "landslide": 1.0,
+        "tsunami": 0.0817,
+        "seismic": 0.2999
+      },
+      "is_coastal": true,
+      "population_10k": 275
+    },
+    {
+      "prefecture_code": "38",
+      "prefecture": "愛媛県",
+      "lat": 33.84,
+      "lon": 132.77,
+      "composite_score": 0.3392,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.0438,
+        "landslide": 0.4806,
+        "tsunami": 0.2189,
+        "seismic": 0.5915
+      },
+      "is_coastal": true,
+      "population_10k": 131
+    },
+    {
+      "prefecture_code": "43",
+      "prefecture": "熊本県",
+      "lat": 32.79,
+      "lon": 130.74,
+      "composite_score": 0.31,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.6223,
+        "landslide": 0.3935,
+        "tsunami": 0.1526,
+        "seismic": 0.1252
+      },
+      "is_coastal": true,
+      "population_10k": 172
+    },
+    {
+      "prefecture_code": "04",
+      "prefecture": "宮城県",
+      "lat": 38.27,
+      "lon": 140.87,
+      "composite_score": 0.3016,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.3661,
+        "landslide": 0.1869,
+        "tsunami": 0.6035,
+        "seismic": 0.0729
+      },
+      "is_coastal": true,
+      "population_10k": 228
+    },
+    {
+      "prefecture_code": "46",
+      "prefecture": "鹿児島県",
+      "lat": 31.56,
+      "lon": 130.56,
+      "composite_score": 0.3013,
+      "risk_tier": "中",
+      "subscores": {
+        "flood": 0.2511,
+        "landslide": 0.4949,
+        "tsunami": 0.2843,
+        "seismic": 0.2283
+      },
+      "is_coastal": true,
+      "population_10k": 157
+    },
+    {
+      "prefecture_code": "37",
+      "prefecture": "香川県",
+      "lat": 34.34,
+      "lon": 134.04,
+      "composite_score": 0.2969,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.1113,
+        "landslide": 0.4059,
+        "tsunami": 0.1045,
+        "seismic": 0.5392
+      },
+      "is_coastal": true,
+      "population_10k": 94
+    },
+    {
+      "prefecture_code": "08",
+      "prefecture": "茨城県",
+      "lat": 36.34,
+      "lon": 140.45,
+      "composite_score": 0.2871,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.4445,
+        "landslide": 0.046,
+        "tsunami": 0.1635,
+        "seismic": 0.4195
+      },
+      "is_coastal": true,
+      "population_10k": 284
+    },
+    {
+      "prefecture_code": "15",
+      "prefecture": "新潟県",
+      "lat": 37.9,
+      "lon": 139.02,
+      "composite_score": 0.2838,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.6934,
+        "landslide": 0.1548,
+        "tsunami": 0.1381,
+        "seismic": 0.1499
+      },
+      "is_coastal": true,
+      "population_10k": 215
+    },
+    {
+      "prefecture_code": "41",
+      "prefecture": "佐賀県",
+      "lat": 33.25,
+      "lon": 130.3,
+      "composite_score": 0.2651,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.4664,
+        "landslide": 0.4208,
+        "tsunami": 0.1747,
+        "seismic": 0.0688
+      },
+      "is_coastal": true,
+      "population_10k": 80
+    },
+    {
+      "prefecture_code": "28",
+      "prefecture": "兵庫県",
+      "lat": 34.69,
+      "lon": 135.18,
+      "composite_score": 0.2582,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2985,
+        "landslide": 0.4141,
+        "tsunami": 0.1901,
+        "seismic": 0.1774
+      },
+      "is_coastal": true,
+      "population_10k": 540
+    },
+    {
+      "prefecture_code": "03",
+      "prefecture": "岩手県",
+      "lat": 39.7,
+      "lon": 141.15,
+      "composite_score": 0.2252,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2128,
+        "landslide": 0.0998,
+        "tsunami": 0.5785,
+        "seismic": 0.0248
+      },
+      "is_coastal": true,
+      "population_10k": 118
+    },
+    {
+      "prefecture_code": "47",
+      "prefecture": "沖縄県",
+      "lat": 26.34,
+      "lon": 127.68,
+      "composite_score": 0.2165,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0018,
+        "landslide": 0.2169,
+        "tsunami": 0.3769,
+        "seismic": 0.2613
+      },
+      "is_coastal": true,
+      "population_10k": 146
+    },
+    {
+      "prefecture_code": "21",
+      "prefecture": "岐阜県",
+      "lat": 35.39,
+      "lon": 136.72,
+      "composite_score": 0.2094,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2931,
+        "landslide": 0.2307,
+        "tsunami": null,
+        "seismic": 0.1348
+      },
+      "is_coastal": false,
+      "population_10k": 195
+    },
+    {
+      "prefecture_code": "40",
+      "prefecture": "福岡県",
+      "lat": 33.59,
+      "lon": 130.42,
+      "composite_score": 0.2086,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.3551,
+        "landslide": 0.4159,
+        "tsunami": 0.0442,
+        "seismic": 0.0853
+      },
+      "is_coastal": true,
+      "population_10k": 513
+    },
+    {
+      "prefecture_code": "33",
+      "prefecture": "岡山県",
+      "lat": 34.66,
+      "lon": 133.93,
+      "composite_score": 0.2066,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.3642,
+        "landslide": 0.2772,
+        "tsunami": 0.1,
+        "seismic": 0.1169
+      },
+      "is_coastal": true,
+      "population_10k": 186
+    },
+    {
+      "prefecture_code": "26",
+      "prefecture": "京都府",
+      "lat": 35.02,
+      "lon": 135.76,
+      "composite_score": 0.2054,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2657,
+        "landslide": 0.4125,
+        "tsunami": 0.041,
+        "seismic": 0.1541
+      },
+      "is_coastal": true,
+      "population_10k": 255
+    },
+    {
+      "prefecture_code": "09",
+      "prefecture": "栃木県",
+      "lat": 36.57,
+      "lon": 139.88,
+      "composite_score": 0.1926,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.304,
+        "landslide": 0.1182,
+        "tsunami": null,
+        "seismic": 0.1389
+      },
+      "is_coastal": false,
+      "population_10k": 191
+    },
+    {
+      "prefecture_code": "01",
+      "prefecture": "北海道",
+      "lat": 43.06,
+      "lon": 141.35,
+      "composite_score": 0.1881,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2566,
+        "landslide": 0.0,
+        "tsunami": 0.4958,
+        "seismic": 0.0
+      },
+      "is_coastal": true,
+      "population_10k": 514
+    },
+    {
+      "prefecture_code": "29",
+      "prefecture": "奈良県",
+      "lat": 34.69,
+      "lon": 135.83,
+      "composite_score": 0.1871,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0401,
+        "landslide": 0.361,
+        "tsunami": null,
+        "seismic": 0.2242
+      },
+      "is_coastal": false,
+      "population_10k": 131
+    },
+    {
+      "prefecture_code": "18",
+      "prefecture": "福井県",
+      "lat": 36.07,
+      "lon": 136.22,
+      "composite_score": 0.1831,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2748,
+        "landslide": 0.2611,
+        "tsunami": 0.0506,
+        "seismic": 0.1651
+      },
+      "is_coastal": true,
+      "population_10k": 75
+    },
+    {
+      "prefecture_code": "42",
+      "prefecture": "長崎県",
+      "lat": 32.74,
+      "lon": 129.87,
+      "composite_score": 0.1828,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0237,
+        "landslide": 0.6346,
+        "tsunami": 0.1849,
+        "seismic": 0.0124
+      },
+      "is_coastal": true,
+      "population_10k": 129
+    },
+    {
+      "prefecture_code": "07",
+      "prefecture": "福島県",
+      "lat": 37.75,
+      "lon": 140.47,
+      "composite_score": 0.1815,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2456,
+        "landslide": 0.0853,
+        "tsunami": 0.366,
+        "seismic": 0.0385
+      },
+      "is_coastal": true,
+      "population_10k": 180
+    },
+    {
+      "prefecture_code": "16",
+      "prefecture": "富山県",
+      "lat": 36.7,
+      "lon": 137.21,
+      "composite_score": 0.1726,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.3588,
+        "landslide": 0.2188,
+        "tsunami": 0.0824,
+        "seismic": 0.0619
+      },
+      "is_coastal": true,
+      "population_10k": 101
+    },
+    {
+      "prefecture_code": "02",
+      "prefecture": "青森県",
+      "lat": 40.82,
+      "lon": 140.74,
+      "composite_score": 0.1681,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0438,
+        "landslide": 0.1064,
+        "tsunami": 0.4955,
+        "seismic": 0.0399
+      },
+      "is_coastal": true,
+      "population_10k": 120
+    },
+    {
+      "prefecture_code": "19",
+      "prefecture": "山梨県",
+      "lat": 35.66,
+      "lon": 138.57,
+      "composite_score": 0.1679,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0,
+        "landslide": 0.2764,
+        "tsunami": null,
+        "seismic": 0.2503
+      },
+      "is_coastal": false,
+      "population_10k": 80
+    },
+    {
+      "prefecture_code": "20",
+      "prefecture": "長野県",
+      "lat": 36.23,
+      "lon": 138.18,
+      "composite_score": 0.1437,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2091,
+        "landslide": 0.1918,
+        "tsunami": null,
+        "seismic": 0.0715
+      },
+      "is_coastal": false,
+      "population_10k": 202
+    },
+    {
+      "prefecture_code": "25",
+      "prefecture": "滋賀県",
+      "lat": 35.0,
+      "lon": 135.87,
+      "composite_score": 0.1284,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.1277,
+        "landslide": 0.1739,
+        "tsunami": null,
+        "seismic": 0.1087
+      },
+      "is_coastal": false,
+      "population_10k": 141
+    },
+    {
+      "prefecture_code": "31",
+      "prefecture": "鳥取県",
+      "lat": 35.5,
+      "lon": 134.24,
+      "composite_score": 0.1157,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0639,
+        "landslide": 0.3627,
+        "tsunami": 0.0096,
+        "seismic": 0.0825
+      },
+      "is_coastal": true,
+      "population_10k": 54
+    },
+    {
+      "prefecture_code": "35",
+      "prefecture": "山口県",
+      "lat": 34.19,
+      "lon": 131.47,
+      "composite_score": 0.1133,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0383,
+        "landslide": 0.3962,
+        "tsunami": 0.0567,
+        "seismic": 0.0344
+      },
+      "is_coastal": true,
+      "population_10k": 131
+    },
+    {
+      "prefecture_code": "06",
+      "prefecture": "山形県",
+      "lat": 38.24,
+      "lon": 140.33,
+      "composite_score": 0.1118,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.2949,
+        "landslide": 0.0993,
+        "tsunami": 0.0532,
+        "seismic": 0.0165
+      },
+      "is_coastal": true,
+      "population_10k": 104
+    },
+    {
+      "prefecture_code": "17",
+      "prefecture": "石川県",
+      "lat": 36.59,
+      "lon": 136.63,
+      "composite_score": 0.1079,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0693,
+        "landslide": 0.2407,
+        "tsunami": 0.1186,
+        "seismic": 0.0426
+      },
+      "is_coastal": true,
+      "population_10k": 110
+    },
+    {
+      "prefecture_code": "32",
+      "prefecture": "島根県",
+      "lat": 35.47,
+      "lon": 133.05,
+      "composite_score": 0.1038,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.042,
+        "landslide": 0.3865,
+        "tsunami": 0.0276,
+        "seismic": 0.0303
+      },
+      "is_coastal": true,
+      "population_10k": 65
+    },
+    {
+      "prefecture_code": "05",
+      "prefecture": "秋田県",
+      "lat": 39.72,
+      "lon": 140.1,
+      "composite_score": 0.1029,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.273,
+        "landslide": 0.0733,
+        "tsunami": 0.0551,
+        "seismic": 0.0206
+      },
+      "is_coastal": true,
+      "population_10k": 93
+    },
+    {
+      "prefecture_code": "10",
+      "prefecture": "群馬県",
+      "lat": 36.39,
+      "lon": 139.06,
+      "composite_score": 0.0876,
+      "risk_tier": "低",
+      "subscores": {
+        "flood": 0.0602,
+        "landslide": 0.184,
+        "tsunami": null,
+        "seismic": 0.066
+      },
+      "is_coastal": false,
+      "population_10k": 191
+    }
+  ]
+}

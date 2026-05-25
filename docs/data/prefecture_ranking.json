@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-05-25T08:01:00.907335+00:00",
+  "description": "Prefecture risk ranking by composite crime rate (NPA 2023)",
+  "rankings": [
+    {
+      "rank": 1,
+      "prefecture_code": "27",
+      "prefecture": "大阪府",
+      "crime_rate_per_100k": 897,
+      "population": 8839000,
+      "risk_tier": "VERY_HIGH"
+    },
+    {
+      "rank": 2,
+      "prefecture_code": "13",
+      "prefecture": "東京都",
+      "crime_rate_per_100k": 893,
+      "population": 13960000,
+      "risk_tier": "VERY_HIGH"
+    },
+    {
+      "rank": 3,
+      "prefecture_code": "40",
+      "prefecture": "福岡県",
+      "crime_rate_per_100k": 624,
+      "population": 5135000,
+      "risk_tier": "VERY_HIGH"
+    },
+    {
+      "rank": 4,
+      "prefecture_code": "23",
+      "prefecture": "愛知県",
+      "crime_rate_per_100k": 612,
+      "population": 7542000,
+      "risk_tier": "VERY_HIGH"
+    },
+    {
+      "rank": 5,
+      "prefecture_code": "26",
+      "prefecture": "京都府",
+      "crime_rate_per_100k": 547,
+      "population": 2578000,
+      "risk_tier": "HIGH"
+    },
+    {
+      "rank": 6,
+      "prefecture_code": "12",
+      "prefecture": "千葉県",
+      "crime_rate_per_100k": 502,
+      "population": 6279000,
+      "risk_tier": "HIGH"
+    },
+    {
+      "rank": 7,
+      "prefecture_code": "14",
+      "prefecture": "神奈川県",
+      "crime_rate_per_100k": 481,
+      "population": 9237000,
+      "risk_tier": "HIGH"
+    },
+    {
+      "rank": 8,
+      "prefecture_code": "11",
+      "prefecture": "埼玉県",
+      "crime_rate_per_100k": 441,
+      "population": 7344000,
+      "risk_tier": "HIGH"
+    },
+    {
+      "rank": 9,
+      "prefecture_code": "28",
+      "prefecture": "兵庫県",
+      "crime_rate_per_100k": 436,
+      "population": 5465000,
+      "risk_tier": "HIGH"
+    },
+    {
+      "rank": 10,
+      "prefecture_code": "08",
+      "prefecture": "茨城県",
+      "crime_rate_per_100k": 398,
+      "population": 2867000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 11,
+      "prefecture_code": "01",
+      "prefecture": "北海道",
+      "crime_rate_per_100k": 389,
+      "population": 5228000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 12,
+      "prefecture_code": "47",
+      "prefecture": "沖縄県",
+      "crime_rate_per_100k": 389,
+      "population": 1467000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 13,
+      "prefecture_code": "09",
+      "prefecture": "栃木県",
+      "crime_rate_per_100k": 374,
+      "population": 1934000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 14,
+      "prefecture_code": "10",
+      "prefecture": "群馬県",
+      "crime_rate_per_100k": 367,
+      "population": 1940000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 15,
+      "prefecture_code": "34",
+      "prefecture": "広島県",
+      "crime_rate_per_100k": 362,
+      "population": 2800000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 16,
+      "prefecture_code": "22",
+      "prefecture": "静岡県",
+      "crime_rate_per_100k": 357,
+      "population": 3633000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 17,
+      "prefecture_code": "33",
+      "prefecture": "岡山県",
+      "crime_rate_per_100k": 321,
+      "population": 1888000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 18,
+      "prefecture_code": "04",
+      "prefecture": "宮城県",
+      "crime_rate_per_100k": 312,
+      "population": 2302000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 19,
+      "prefecture_code": "30",
+      "prefecture": "和歌山県",
+      "crime_rate_per_100k": 312,
+      "population": 922000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 20,
+      "prefecture_code": "25",
+      "prefecture": "滋賀県",
+      "crime_rate_per_100k": 302,
+      "population": 1413000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 21,
+      "prefecture_code": "17",
+      "prefecture": "石川県",
+      "crime_rate_per_100k": 287,
+      "population": 1133000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 22,
+      "prefecture_code": "39",
+      "prefecture": "高知県",
+      "crime_rate_per_100k": 276,
+      "population": 692000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 23,
+      "prefecture_code": "43",
+      "prefecture": "熊本県",
+      "crime_rate_per_100k": 272,
+      "population": 1738000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 24,
+      "prefecture_code": "37",
+      "prefecture": "香川県",
+      "crime_rate_per_100k": 271,
+      "population": 950000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 25,
+      "prefecture_code": "35",
+      "prefecture": "山口県",
+      "crime_rate_per_100k": 264,
+      "population": 1342000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 26,
+      "prefecture_code": "24",
+      "prefecture": "三重県",
+      "crime_rate_per_100k": 261,
+      "population": 1770000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 27,
+      "prefecture_code": "46",
+      "prefecture": "鹿児島県",
+      "crime_rate_per_100k": 258,
+      "population": 1588000,
+      "risk_tier": "MEDIUM"
+    },
+    {
+      "rank": 28,
+      "prefecture_code": "38",
+      "prefecture": "愛媛県",
+      "crime_rate_per_100k": 248,
+      "population": 1335000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 29,
+      "prefecture_code": "42",
+      "prefecture": "長崎県",
+      "crime_rate_per_100k": 248,
+      "population": 1312000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 30,
+      "prefecture_code": "44",
+      "prefecture": "大分県",
+      "crime_rate_per_100k": 247,
+      "population": 1124000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 31,
+      "prefecture_code": "29",
+      "prefecture": "奈良県",
+      "crime_rate_per_100k": 243,
+      "population": 1324000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 32,
+      "prefecture_code": "02",
+      "prefecture": "青森県",
+      "crime_rate_per_100k": 241,
+      "population": 1238000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 33,
+      "prefecture_code": "19",
+      "prefecture": "山梨県",
+      "crime_rate_per_100k": 241,
+      "population": 810000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 34,
+      "prefecture_code": "45",
+      "prefecture": "宮崎県",
+      "crime_rate_per_100k": 236,
+      "population": 1069000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 35,
+      "prefecture_code": "36",
+      "prefecture": "徳島県",
+      "crime_rate_per_100k": 234,
+      "population": 720000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 36,
+      "prefecture_code": "41",
+      "prefecture": "佐賀県",
+      "crime_rate_per_100k": 231,
+      "population": 811000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 37,
+      "prefecture_code": "21",
+      "prefecture": "岐阜県",
+      "crime_rate_per_100k": 228,
+      "population": 1979000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 38,
+      "prefecture_code": "07",
+      "prefecture": "福島県",
+      "crime_rate_per_100k": 215,
+      "population": 1834000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 39,
+      "prefecture_code": "16",
+      "prefecture": "富山県",
+      "crime_rate_per_100k": 201,
+      "population": 1035000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 40,
+      "prefecture_code": "18",
+      "prefecture": "福井県",
+      "crime_rate_per_100k": 198,
+      "population": 767000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 41,
+      "prefecture_code": "31",
+      "prefecture": "鳥取県",
+      "crime_rate_per_100k": 198,
+      "population": 553000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 42,
+      "prefecture_code": "20",
+      "prefecture": "長野県",
+      "crime_rate_per_100k": 193,
+      "population": 2048000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 43,
+      "prefecture_code": "15",
+      "prefecture": "新潟県",
+      "crime_rate_per_100k": 183,
+      "population": 2201000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 44,
+      "prefecture_code": "32",
+      "prefecture": "島根県",
+      "crime_rate_per_100k": 182,
+      "population": 671000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 45,
+      "prefecture_code": "03",
+      "prefecture": "岩手県",
+      "crime_rate_per_100k": 178,
+      "population": 1211000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 46,
+      "prefecture_code": "06",
+      "prefecture": "山形県",
+      "crime_rate_per_100k": 172,
+      "population": 1068000,
+      "risk_tier": "LOW"
+    },
+    {
+      "rank": 47,
+      "prefecture_code": "05",
+      "prefecture": "秋田県",
+      "crime_rate_per_100k": 168,
+      "population": 960000,
+      "risk_tier": "LOW"
+    }
+  ]
+}
