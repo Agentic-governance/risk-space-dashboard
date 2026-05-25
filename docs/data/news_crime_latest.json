@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-25T11:11:09+00:00",
-    "total_count": 67,
+    "fetched_at": "2026-05-25T14:26:37+00:00",
+    "total_count": 70,
     "source_counts": {
-      "nhk_crime": 67
+      "nhk_crime": 70
     },
     "type_counts": {
+      "assault": 9,
+      "crime_news": 25,
       "robbery": 8,
-      "assault": 8,
       "murder": 21,
-      "crime_news": 23,
       "drug": 3,
       "weapon": 1,
       "confinement": 1,
@@ -27,20 +27,60 @@
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 22,
+      "東京": 23,
       "栃木": 14,
       "北海道": 8,
       "兵庫": 4,
       "岩手": 3,
       "福岡": 2,
       "三重": 2,
+      "山形": 1,
       "新潟": 1,
-      "沖縄": 1,
-      "神奈川": 1
+      "沖縄": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "プロ野球 巨人の阿部慎之助監督逮捕 18歳の娘に暴行した疑い",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131291000.html",
+      "date": "2026-05-25",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "山形 酒田 男性死亡はクマ被害と判明 県内では1988年以来",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131221000.html",
+      "date": "2026-05-25",
+      "prefecture": "山形",
+      "subtype": "crime_news",
+      "lat": 38.2404,
+      "lon": 140.3636,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 銀座の複合施設内で刺激臭 25人が体調不良訴える",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130791000.html",
+      "date": "2026-05-25",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 秋葉原 “ポケモンカード” 約300枚盗んだか 2人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131111000.html",
+      "date": "2026-05-25",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "東京 小金井 強盗予備などの疑い 新たに男の容疑者逮捕 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131041000.html",
@@ -59,16 +99,6 @@
       "subtype": "assault",
       "lat": 37.9026,
       "lon": 139.0232,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 銀座の複合施設内で刺激臭 25人が体調不良訴える",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130791000.html",
-      "date": "2026-05-25",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {

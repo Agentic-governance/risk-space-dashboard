@@ -6,19 +6,19 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-25T11:10:59+00:00",
-    "fetched_at_jst": "2026-05-25T20:10:59+09:00",
+    "fetched_at": "2026-05-25T14:26:27+00:00",
+    "fetched_at_jst": "2026-05-25T23:26:27+09:00",
     "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
       "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "construction": 1,
       "disaster": 2,
       "congestion": 1,
-      "restriction": 2
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -34,7 +34,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T11:10:59+00:00",
+      "occurred_at": "2026-05-25T14:26:27+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -48,7 +48,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T11:10:59+00:00",
+      "occurred_at": "2026-05-25T14:26:27+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -62,7 +62,7 @@
       "description": "保守工事の影響で、29日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T11:10:59+00:00",
+      "occurred_at": "2026-05-25T14:26:27+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -76,7 +76,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T11:10:59+00:00",
+      "occurred_at": "2026-05-25T14:26:27+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -90,7 +90,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T11:10:59+00:00",
+      "occurred_at": "2026-05-25T14:26:27+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -112,15 +112,15 @@
       "event_id": "traffic_20260525_0006",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "スカイマーク機が羽田空港に緊急着陸 C滑走路閉鎖 — 国土交通省東京空港事務所によりますと、25日午後、羽田空港を離陸して福岡空港に向かっていたスカイマーク19便が、飛行中にタイヤのトラブルを検知して羽田空港に引き返し、緊急着陸したということです。機体は午後6時50分時点、C滑走路上で停止していて、C滑走路は閉鎖されています。",
+      "description": "山形 酒田 男性死亡はクマ被害と判明 県内では1988年以来 — 今月5日、山形県酒田市の山で遺体で見つかった男性について、警察はクマに襲われて死亡したと発表しました。山形県によりますと、県内でクマによる死亡事故が起きたのは38年前の1988年以来だということです。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-25T09:58:19+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131151000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-05-25T12:31:28+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131221000.html",
+      "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260525_0007",
