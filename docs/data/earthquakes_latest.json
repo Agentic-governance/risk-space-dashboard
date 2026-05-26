@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-26T02:12:29+00:00",
+    "fetched_at": "2026-05-26T13:53:23+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260526154754_20260526154510_VXSE5k_1",
+      "time": "2026-05-26T06:45:00+00:00",
+      "time_jst": "2026-05-26T15:45:00+09:00",
+      "lat": 35.9,
+      "lon": 137.3,
+      "magnitude": 3.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Hida, Gifu Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260526141118_20260526140829_VXSE5k_1",
+      "time": "2026-05-26T05:08:00+00:00",
+      "time_jst": "2026-05-26T14:08:00+09:00",
+      "lat": 40.7,
+      "lon": 142.1,
+      "magnitude": 3.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the east Coast of Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260526135914_20260526135616_VXSE5k_1",
+      "time": "2026-05-26T04:56:00+00:00",
+      "time_jst": "2026-05-26T13:56:00+09:00",
+      "lat": 41.2,
+      "lon": 141.3,
+      "magnitude": 3.4,
+      "depth_km": 90.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Shimokita Region, Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
     {
       "event_id": "20260526092140_20260526091833_VXSE5k_1",
       "time": "2026-05-26T00:18:00+00:00",
@@ -35,34 +77,6 @@
       "location_name": "Adjacent Sea of Okinawa Main Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260525201820_20260525201513_VXSE5k_1",
-      "time": "2026-05-25T11:15:00+00:00",
-      "time_jst": "2026-05-25T20:15:00+09:00",
-      "lat": 26.3,
-      "lon": 127.4,
-      "magnitude": 3.6,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Okinawa Main Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260525171825_20260525171453_VXSE5k_1",
-      "time": "2026-05-25T08:14:00+00:00",
-      "time_jst": "2026-05-25T17:14:00+09:00",
-      "lat": 40.1,
-      "lon": 142.4,
-      "magnitude": 4.5,
-      "depth_km": 40.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
     }
   ]
 }

@@ -10,25 +10,26 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-26T02:12:41+00:00",
-    "total_count": 62,
+    "fetched_at": "2026-05-26T13:53:35+00:00",
+    "total_count": 67,
     "source_counts": {
-      "nhk_crime": 62
+      "nhk_crime": 66,
+      "nhk_society": 1
     },
     "type_counts": {
+      "murder": 19,
+      "assault": 9,
+      "fraud": 2,
+      "robbery": 9,
       "weapon": 2,
-      "assault": 7,
       "crime_news": 21,
-      "robbery": 8,
-      "murder": 18,
       "drug": 3,
       "confinement": 1,
-      "fraud": 1,
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 20,
-      "栃木": 11,
+      "東京": 23,
+      "栃木": 12,
       "北海道": 8,
       "兵庫": 4,
       "岩手": 3,
@@ -41,6 +42,56 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 不審車の容疑者再逮捕へ 住宅侵入工具所持か",
+      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015132051000.html",
+      "date": "2026-05-26",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 銀座 男が入店直後にスプレー噴射か 警視庁が行方捜査",
+      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131951000.html",
+      "date": "2026-05-26",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "海外で「かけ子」させる目的で女性誘拐か 暴力団員逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131551000.html",
+      "date": "2026-05-26",
+      "prefecture": "東京",
+      "subtype": "fraud",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "新宿 酒店強盗未遂事件 “数百万円の報酬もらう予定”供述",
+      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131521000.html",
+      "date": "2026-05-26",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "巨人 阿部慎之助監督が辞任 娘への暴行疑いで逮捕を受けて",
+      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131461000.html",
+      "date": "2026-05-26",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_society"
+    },
     {
       "title": "兵庫 母娘殺害事件 容疑者は事件後に着替えて逃走か",
       "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131271000.html",
