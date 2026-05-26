@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-25T23:04:13+00:00",
+    "fetched_at": "2026-05-26T02:12:29+00:00",
     "filter_window_hours": 24,
-    "total_count": 3,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260526092140_20260526091833_VXSE5k_1",
+      "time": "2026-05-26T00:18:00+00:00",
+      "time_jst": "2026-05-26T09:18:00+09:00",
+      "lat": 35.2,
+      "lon": 139.1,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Western Kanagawa Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260526065313_20260526064954_VXSE5k_1",
       "time": "2026-05-25T21:49:00+00:00",
