@@ -1714,11 +1714,15 @@ function applyLang(){
   if(jsonBtn)jsonBtn.textContent=L.json_export;
   /* Section titles */
   var titles=document.querySelectorAll('.section-title');
-  var titleMap={ja:['表示モード','時間帯シミュレーション','データレイヤー','分析モード','EH ホットスポット','凡例','動的リスク乗数','Safe Haven（最寄り施設）','周辺Safe Haven一覧（500m以内）','観光地安全カード','24時間リスク変動','不審者種別（周辺500m）','不審者 時間帯別（周辺2km）','アドバイス','データエクスポート','データ出典'],en:['Display Mode','Time Simulation','Data Layers','Analysis Mode','EH Hotspots','Legend','Dynamic Risk Multipliers','Safe Haven (Nearest)','Nearby Safe Havens (500m)','Tourist Area Safety','24H Risk Variation','Suspicious Types (500m)','Suspicious by Hour (2km)','Advice','Data Export','Data Sources'],zh:['显示模式','时间模拟','数据图层','分析模式','EH 热点','图例','动态风险系数','安全避难所（最近）','周边避难所（500m）','观光地安全','24小时风险变化','可疑类型（500m）','可疑活动时段（2km）','建议','数据导出','数据来源'],ko:['표시 모드','시간대 시뮬레이션','데이터 레이어','분석 모드','EH 핫스팟','범례','동적 위험 승수','안전 피난처(최근)','주변 피난처(500m)','관광지 안전','24시간 위험 변동','의심 유형(500m)','의심 활동 시간대(2km)','조언','데이터 내보내기','데이터 출처']};
-  var lang=currentLang;
-  titles.forEach(function(el,i){
-    if(titleMap[lang]&&titleMap[lang][i]){el.textContent=titleMap[lang][i]}
-  });
+  /* titleMap disabled - section titles use HTML defaults (Japanese) */
+  /* Multi-language section titles only for English */
+  if(currentLang==='en'){
+    var enTitles=['Display Mode','Time Simulation','Data Layers','Analysis Mode','EH Hotspots','Legend','Dynamic Risk Multipliers','Safe Haven (Nearest)','Nearby Safe Havens (500m)','Tourist Area Safety','24H Risk Variation','Suspicious Types (500m)','Suspicious by Hour (2km)','Advice','Data Export','Data Sources'];
+    titles.forEach(function(el,i){if(enTitles[i])el.textContent=enTitles[i]});
+  } else {
+    var jaTitles=['表示モード','時間帯シミュレーション','データレイヤー','分析モード','EH ホットスポット','凡例','動的リスク乗数','Safe Haven（最寄り施設）','周辺Safe Haven一覧（500m以内）','観光地安全カード','24時間リスク変動','不審者種別（周辺500m）','不審者 時間帯別（周辺2km）','アドバイス','データエクスポート','データ出典'];
+    titles.forEach(function(el,i){if(jaTitles[i])el.textContent=jaTitles[i]});
+  }
   /* Update fushinsha filter button labels */
   document.querySelectorAll('.fushinsha-filter-btn').forEach(function(b){
     var dt=b.getAttribute('data-type');
