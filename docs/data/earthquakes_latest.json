@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-27T20:03:47+00:00",
+    "fetched_at": "2026-05-27T21:58:00+00:00",
     "filter_window_hours": 24,
     "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260528051607_20260528051335_VXSE5k_1",
+      "time": "2026-05-27T20:13:00+00:00",
+      "time_jst": "2026-05-28T05:13:00+09:00",
+      "lat": 35.9,
+      "lon": 137.4,
+      "magnitude": 2.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Hida, Gifu Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260528020220_20260528015945_VXSE5k_1",
       "time": "2026-05-27T16:59:00+00:00",
@@ -105,20 +119,6 @@
       "location_name": "Southern Inland of Akita Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260527052402_20260527052108_VXSE5k_1",
-      "time": "2026-05-26T20:21:00+00:00",
-      "time_jst": "2026-05-27T05:21:00+09:00",
-      "lat": 38.9,
-      "lon": 142.1,
-      "magnitude": 4.3,
-      "depth_km": 40.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Miyagi Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
     }
   ]
 }

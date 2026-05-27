@@ -6,15 +6,14 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-27T20:03:53+00:00",
-    "fetched_at_jst": "2026-05-28T05:03:53+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-05-27T21:58:03+00:00",
+    "fetched_at_jst": "2026-05-28T06:58:03+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "construction": 1,
       "disaster": 1,
       "congestion": 1
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-27T20:03:53+00:00",
+      "occurred_at": "2026-05-27T21:58:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-27T20:03:53+00:00",
+      "occurred_at": "2026-05-27T21:58:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +60,7 @@
       "description": "保守工事の影響で、29日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-27T20:03:53+00:00",
+      "occurred_at": "2026-05-27T21:58:03+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-27T20:03:53+00:00",
+      "occurred_at": "2026-05-27T21:58:03+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,23 +88,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-27T20:03:53+00:00",
+      "occurred_at": "2026-05-27T21:58:03+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260527_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "埼玉 小児医療センター 調査では薬液が混入した原因特定できず — 埼玉県立小児医療センターで抗がん剤を投与する「髄くう内注射」を受けた患者から使用が禁止されている薬液が検出され1人が死亡、2人が意識不明の重体となっている問題で、病院が設けた医療事故調査委員会の調査では薬液が混入した原因の特定には至らなかったことがわかりました。病院は今後、再発防止策を盛り込んだ報告書がまとまり次第、患者の家族などに報告するとしています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-27T15:24:45+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133501000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }
