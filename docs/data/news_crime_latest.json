@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-27T10:52:10+00:00",
-    "total_count": 63,
+    "fetched_at": "2026-05-27T14:25:47+00:00",
+    "total_count": 64,
     "source_counts": {
-      "nhk_crime": 62,
+      "nhk_crime": 63,
       "nhk_society": 1
     },
     "type_counts": {
+      "assault": 11,
       "murder": 19,
-      "assault": 10,
       "crime_news": 18,
       "fraud": 1,
       "robbery": 9,
@@ -31,16 +31,26 @@
       "栃木": 11,
       "北海道": 9,
       "兵庫": 4,
+      "大阪": 2,
       "岩手": 2,
       "山形": 1,
       "新潟": 1,
       "沖縄": 1,
-      "神奈川": 1,
-      "大阪": 1
+      "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大阪地検特捜部の特別公務員暴行陵虐事件 検事側が無罪主張へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015133471000.html",
+      "date": "2026-05-27",
+      "prefecture": "大阪",
+      "subtype": "assault",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 主導役とみられる容疑者 東南アジアへ逃亡か",
       "url": "http://www3.nhk.or.jp/news/html/20260527/k10015132501000.html",
