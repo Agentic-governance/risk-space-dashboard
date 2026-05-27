@@ -1388,33 +1388,54 @@ function exportGeoJSON() {
 }
 
 /* === Feature A1: findNearestHaven - find nearest 24H facility === */
+var havenTileCache={};
+function _loadHavenTile(key){
+  if(havenTileCache[key])return Promise.resolve(havenTileCache[key]);
+  return fetch(D+'/haven_tiles/haven_'+key+'.json').then(function(r){return r.json()}).then(function(hs){
+    havenTileCache[key]=Array.isArray(hs)?hs:[];
+    return havenTileCache[key];
+  }).catch(function(){havenTileCache[key]=[];return []});
+}
 function findNearestHaven(lat,lon){
-  /* Collect havens from loaded haven tiles */
   var havens=allLoadedHavens.slice();
-  /* Also include pharmacy data if loaded */
   if(pharmacyData&&pharmacyData.features){
     pharmacyData.features.forEach(function(p){
+      if(!p.lat||!p.lon)return;
       havens.push({lat:p.lat,lon:p.lon,name:p.name||'24H薬局',type:'pharmacy_24h',is_24h:true});
     });
   }
-  /* If no haven tiles loaded for this area, trigger a load */
-  if(havens.length===0&&havenTileIdx){
-    var tileKey=Math.floor(lat)+'_'+Math.floor(lon);
-    if(havenTileIdx[tileKey]&&!loadedHT[tileKey]){
-      /* Synchronous-ish: fetch and wait */
-      return fetch(D+'/haven_tiles/haven_'+tileKey+'.json').then(function(r){return r.json()}).then(function(hs){
-        loadedHT[tileKey]=1;
-        hs.forEach(function(h){if(h.lat&&h.lon)allLoadedHavens.push(h)});
-        return _findNearest24H(lat,lon,allLoadedHavens.concat(pharmacyData&&pharmacyData.features?pharmacyData.features.map(function(p){return{lat:p.lat,lon:p.lon,name:p.name||'24H薬局',type:'pharmacy_24h',is_24h:true}}):[]))
+  var best=_findNearestFacility(lat,lon,havens);
+  if(best&&best.distance_m<=3000)return Promise.resolve(best);
+  if(!havenTileIdx)return Promise.resolve(best);
+  var keys=Object.keys(havenTileIdx);
+  var la=Math.floor(lat),lo=Math.floor(lon);
+  keys.sort(function(a,b){
+    var pa=a.split('_').map(Number),pb=b.split('_').map(Number);
+    var da=(pa[0]-la)*(pa[0]-la)+(pa[1]-lo)*(pa[1]-lo);
+    var db=(pb[0]-la)*(pb[0]-la)+(pb[1]-lo)*(pb[1]-lo);
+    return da-db;
+  });
+  var batchSizes=[16,48,120];
+  var chain=Promise.resolve(best);
+  batchSizes.forEach(function(n){
+    chain=chain.then(function(currentBest){
+      if(currentBest&&currentBest.distance_m<=1200)return currentBest;
+      return Promise.all(keys.slice(0,n).map(_loadHavenTile)).then(function(chunks){
+        var extra=[];
+        chunks.forEach(function(hs){
+          hs.forEach(function(h){if(h&&h.lat&&h.lon)extra.push(h)});
+        });
+        var merged=havens.concat(extra);
+        allLoadedHavens=allLoadedHavens.concat(extra);
+        return _findNearestFacility(lat,lon,merged)||currentBest;
       });
-    }
-  }
-  return Promise.resolve(_findNearest24H(lat,lon,havens));
+    });
+  });
+  return chain;
 }
-function _findNearest24H(lat,lon,havens){
+function _findNearestFacility(lat,lon,havens){
   var best=null,bestDist=Infinity;
   havens.forEach(function(h){
-    if(!h.is_24h)return;
     if(!h.lat||!h.lon)return;
     var dLat=(h.lat-lat)*111320;
     var dLon=(h.lon-lon)*111320*Math.cos(lat*Math.PI/180);
