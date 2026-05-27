@@ -10,27 +10,27 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-27T14:25:47+00:00",
-    "total_count": 64,
+    "fetched_at": "2026-05-27T17:44:29+00:00",
+    "total_count": 51,
     "source_counts": {
-      "nhk_crime": 63,
+      "nhk_crime": 50,
       "nhk_society": 1
     },
     "type_counts": {
-      "assault": 11,
-      "murder": 19,
-      "crime_news": 18,
+      "assault": 10,
+      "murder": 14,
+      "crime_news": 13,
       "fraud": 1,
-      "robbery": 9,
+      "robbery": 7,
       "weapon": 2,
       "drug": 3,
       "confinement": 1
     },
     "top_prefectures": {
-      "東京": 22,
-      "栃木": 11,
-      "北海道": 9,
-      "兵庫": 4,
+      "東京": 15,
+      "栃木": 8,
+      "北海道": 8,
+      "兵庫": 3,
       "大阪": 2,
       "岩手": 2,
       "山形": 1,
@@ -547,136 +547,6 @@
       "date": "2026-05-21",
       "prefecture": "兵庫",
       "subtype": "murder",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 新宿で強盗準備か 2人逮捕 同じ現場で2月にも事件",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015128141000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "「トクリュウ」とみられる強盗などの事件相次ぐ 背景は",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127491000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 練馬区 改造した偽パトカーで飲酒・暴走事故か 2人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127621000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 面識あった高校生1人に実行役集めさせたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127861000.html",
-      "date": "2026-05-21",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "旭山動物園 遺体焼却したとして職員を起訴 殺人容疑で再逮捕へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015128031000.html",
-      "date": "2026-05-21",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "リチウムイオン電池火災の消火薬剤 東京消防庁と企業が開発へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127701000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 14人死傷暴走事故 殺人罪などで38歳被告を起訴 東京地検",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127961000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "murder",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "都内の大学で不正受験か 中国籍の塾講師を逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127781000.html",
-      "date": "2026-05-21",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 警察が指示役として逮捕した夫婦の自宅捜索",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127481000.html",
-      "date": "2026-05-21",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "郵便回収入札めぐる贈収賄事件 接待で予算上限近い額示したか",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127661000.html",
-      "date": "2026-05-21",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "郵便回収入札めぐる贈収賄事件 携帯で応札額を具体的に指示か",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127141000.html",
-      "date": "2026-05-20",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 容疑者 周到に準備も想定外の状況に陥ったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127301000.html",
-      "date": "2026-05-20",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "兵庫 母娘死亡 2人の遺体の首に刺し傷 死因など捜査へ 警察",
-      "url": "http://www3.nhk.or.jp/news/html/20260521/k10015127241000.html",
-      "date": "2026-05-20",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
       "lat": 34.6913,
       "lon": 135.183,
       "source": "nhk_crime"
