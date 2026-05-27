@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-27T02:49:59+00:00",
-    "total_count": 59,
+    "fetched_at": "2026-05-27T07:01:37+00:00",
+    "total_count": 60,
     "source_counts": {
-      "nhk_crime": 58,
+      "nhk_crime": 59,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 18,
       "murder": 17,
       "assault": 9,
       "fraud": 1,
       "robbery": 9,
       "weapon": 2,
-      "crime_news": 17,
       "drug": 3,
       "confinement": 1
     },
@@ -42,7 +42,17 @@
   },
   "incidents": [
     {
-      "title": "栃木強盗殺人事件 事件主導か 新たに40代容疑者に逮捕状 警察",
+      "title": "シチズン時計の元部長逮捕 倉庫の腕時計を横領か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015132711000.html",
+      "date": "2026-05-27",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 事件主導しすでに出国か 40代容疑者に逮捕状",
       "url": "http://www3.nhk.or.jp/news/html/20260527/k10015132501000.html",
       "date": "2026-05-27",
       "prefecture": "栃木",
