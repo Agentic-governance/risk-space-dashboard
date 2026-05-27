@@ -2586,8 +2586,10 @@ if(document.readyState==='loading'){
   var savedLang=localStorage.getItem('riskspace_lang');
   if(savedLang&&LANG[savedLang]){
     currentLang=savedLang;
-    setTimeout(function(){try{applyLang();}catch(e){}},100);
+  } else {
+    currentLang='ja';
   }
+  setTimeout(function(){try{applyLang();}catch(e){}},100);
 })();
 
 /* === FINAL Feature A: Saved Locations (home/school/office) === */
