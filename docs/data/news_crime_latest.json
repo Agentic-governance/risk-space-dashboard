@@ -10,37 +10,108 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-28T01:28:45+00:00",
-    "total_count": 52,
+    "fetched_at": "2026-05-28T05:47:40+00:00",
+    "total_count": 59,
     "source_counts": {
-      "nhk_crime": 51,
+      "nhk_crime": 58,
       "nhk_society": 1
     },
     "type_counts": {
-      "murder": 15,
-      "assault": 10,
-      "crime_news": 13,
+      "stalking": 1,
+      "drug": 4,
+      "assault": 11,
+      "crime_news": 14,
+      "robbery": 8,
+      "murder": 17,
       "fraud": 1,
-      "robbery": 7,
       "weapon": 2,
-      "drug": 3,
       "confinement": 1
     },
     "top_prefectures": {
-      "東京": 15,
-      "栃木": 9,
+      "東京": 16,
+      "栃木": 10,
       "北海道": 8,
       "兵庫": 3,
+      "神奈川": 2,
       "大阪": 2,
       "岩手": 2,
+      "京都": 1,
       "山形": 1,
-      "新潟": 1,
-      "沖縄": 1,
-      "神奈川": 1
+      "新潟": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "ストーカー対策でGPS機器装着など 研究進める 木原官房長官",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133921000.html",
+      "date": "2026-05-28",
+      "prefecture": "",
+      "subtype": "stalking",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "バレーボール男子日本代表 佐藤駿一郎 大麻所持したとして逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133871000.html",
+      "date": "2026-05-28",
+      "prefecture": "",
+      "subtype": "drug",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "川崎 児童や保護者20人殺傷事件から7年 現場で祈り",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133841000.html",
+      "date": "2026-05-28",
+      "prefecture": "神奈川",
+      "subtype": "assault",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "スカウト「ナチュラル」トップ再逮捕 現金回収役の幹部も逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133791000.html",
+      "date": "2026-05-28",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "新宿 酒店強盗未遂事件で新たに1人逮捕 実行役か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133721000.html",
+      "date": "2026-05-28",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人 逮捕状の容疑者が事件前に凶器のバール購入か",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133751000.html",
+      "date": "2026-05-28",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 南丹 男子児童殺害事件 父親を殺人と死体遺棄の罪で起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133771000.html",
+      "date": "2026-05-28",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 40代の容疑者 指示役の夫と事件前から知り合いか",
       "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133461000.html",
