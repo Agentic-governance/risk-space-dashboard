@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-27T23:16:10+00:00",
+    "fetched_at": "2026-05-28T01:28:30+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -105,20 +105,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260527091639_20260527091350_VXSE5k_1",
-      "time": "2026-05-27T00:13:00+00:00",
-      "time_jst": "2026-05-27T09:13:00+09:00",
-      "lat": 39.5,
-      "lon": 140.4,
-      "magnitude": 2.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Inland of Akita Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
