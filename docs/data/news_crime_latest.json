@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-28T19:59:37+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-05-28T21:57:27+00:00",
+    "total_count": 50,
     "source_counts": {
-      "nhk_crime": 46,
+      "nhk_crime": 48,
       "nhk_society": 2
     },
     "type_counts": {
+      "crime_news": 12,
       "murder": 14,
-      "crime_news": 10,
       "assault": 11,
       "drug": 3,
       "fraud": 2,
@@ -30,10 +30,10 @@
       "東京": 11,
       "栃木": 10,
       "北海道": 5,
+      "熊本": 2,
       "大阪": 2,
       "神奈川": 2,
       "兵庫": 2,
-      "熊本": 1,
       "広島": 1,
       "京都": 1,
       "山形": 1
@@ -41,6 +41,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "首都直下地震対策 感震ブレーカーをおおむね設置 基本計画案",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134381000.html",
+      "date": "2026-05-28",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "熊本 八代新庁舎汚職事件 ジャーナリスト名乗り職員に接触か",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134401000.html",
+      "date": "2026-05-28",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 海外出国の逮捕状出された容疑者を公開手配へ",
       "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134441000.html",
