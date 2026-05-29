@@ -10,37 +10,97 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-29T01:37:33+00:00",
-    "total_count": 50,
+    "fetched_at": "2026-05-29T05:57:00+00:00",
+    "total_count": 56,
     "source_counts": {
-      "nhk_crime": 48,
+      "nhk_crime": 54,
       "nhk_society": 2
     },
     "type_counts": {
-      "crime_news": 12,
-      "murder": 14,
+      "crime_news": 16,
+      "murder": 15,
+      "drug": 4,
       "assault": 11,
-      "drug": 3,
       "fraud": 2,
       "stalking": 1,
       "robbery": 6,
       "weapon": 1
     },
     "top_prefectures": {
+      "栃木": 11,
       "東京": 11,
-      "栃木": 10,
       "北海道": 5,
-      "熊本": 2,
-      "大阪": 2,
+      "大阪": 3,
+      "熊本": 3,
+      "岩手": 2,
       "神奈川": 2,
       "兵庫": 2,
-      "広島": 1,
-      "京都": 1,
-      "山形": 1
+      "愛知": 1,
+      "広島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "岩手 大槌町の山林火災が鎮火 発生から1か月余",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134941000.html",
+      "date": "2026-05-29",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大阪 和泉 母娘殺害事件の容疑者を鑑定留置 検察",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134871000.html",
+      "date": "2026-05-29",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "熊本 八代新庁舎汚職事件 現金をさらに別の複数口座に移動か",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134851000.html",
+      "date": "2026-05-29",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人 40代容疑者が住宅の情報送信か 公開手配へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134801000.html",
+      "date": "2026-05-29",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大麻所持疑い逮捕のバレーボール選手“名古屋でもらった”説明",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134741000.html",
+      "date": "2026-05-29",
+      "prefecture": "愛知",
+      "subtype": "drug",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 大槌町の山林火災を「局地激甚災害」に指定 政府",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134731000.html",
+      "date": "2026-05-29",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
     {
       "title": "首都直下地震対策 感震ブレーカーをおおむね設置 基本計画案",
       "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134381000.html",
