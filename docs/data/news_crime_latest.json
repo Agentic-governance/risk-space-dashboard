@@ -10,37 +10,67 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-29T09:40:19+00:00",
-    "total_count": 58,
+    "fetched_at": "2026-05-29T16:40:37+00:00",
+    "total_count": 56,
     "source_counts": {
-      "nhk_crime": 56,
-      "nhk_society": 2
+      "nhk_crime": 53,
+      "nhk_society": 3
     },
     "type_counts": {
-      "murder": 15,
-      "crime_news": 16,
-      "fraud": 3,
+      "fraud": 4,
+      "murder": 16,
+      "crime_news": 13,
       "robbery": 7,
       "drug": 4,
-      "assault": 11,
+      "assault": 10,
       "stalking": 1,
       "weapon": 1
     },
     "top_prefectures": {
       "東京": 12,
       "栃木": 11,
-      "北海道": 5,
+      "北海道": 4,
       "大阪": 3,
       "熊本": 3,
+      "愛知": 2,
       "岩手": 2,
-      "神奈川": 2,
       "兵庫": 2,
-      "愛知": 1,
+      "神奈川": 1,
       "広島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "検察の違法性を認定 国に110万円の賠償命じる 名古屋地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135421000.html",
+      "date": "2026-05-29",
+      "prefecture": "愛知",
+      "subtype": "fraud",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "事件の偽情報でアプリ登録誘導 「詳細はここから」に注意",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135351000.html",
+      "date": "2026-05-29",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 旭川 高校生殺害事件 被告“被害者おいて立ち去った”",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135091000.html",
+      "date": "2026-05-29",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 48歳容疑者を公開手配 事件を主導か",
       "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134801000.html",
@@ -120,6 +150,16 @@
       "lat": 39.7036,
       "lon": 141.1527,
       "source": "nhk_crime"
+    },
+    {
+      "title": "バレー日本代表の大麻所持 元所属チームが薬物検査実施へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135621000.html",
+      "date": "2026-05-29",
+      "prefecture": "",
+      "subtype": "drug",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_society"
     },
     {
       "title": "首都直下地震対策 感震ブレーカーをおおむね設置 基本計画案",
@@ -555,66 +595,6 @@
       "title": "妻殺害容疑の旭山動物園職員 事件数か月前から殺害行為検索か",
       "url": "http://www3.nhk.or.jp/news/html/20260524/k10015130101000.html",
       "date": "2026-05-24",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 逮捕の夫婦は別行動で逃亡・潜伏を画策か",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129751000.html",
-      "date": "2026-05-23",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "妻殺害疑いの旭山動物園職員 “スマホ 壊した”と供述",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129761000.html",
-      "date": "2026-05-23",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "沖縄 駐留米兵が女性に性的暴行などの疑いで書類送検",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129631000.html",
-      "date": "2026-05-23",
-      "prefecture": "沖縄",
-      "subtype": "assault",
-      "lat": 26.2124,
-      "lon": 127.6809,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "横浜 車8台関係する事故 高校生をひき逃げなどの疑いで逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129531000.html",
-      "date": "2026-05-22",
-      "prefecture": "神奈川",
-      "subtype": "crime_news",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大麻由来成分「CBN」6月から所持や販売など禁止 適切に廃棄を",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129251000.html",
-      "date": "2026-05-22",
-      "prefecture": "",
-      "subtype": "drug",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "旭山動物園職員 妻殺害容疑で再逮捕 園内から複数のロープ押収",
-      "url": "http://www3.nhk.or.jp/news/html/20260523/k10015129331000.html",
-      "date": "2026-05-22",
       "prefecture": "北海道",
       "subtype": "crime_news",
       "lat": 43.0642,
