@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-29T21:27:14+00:00",
+    "fetched_at": "2026-05-29T22:54:38+00:00",
     "filter_window_hours": 24,
-    "total_count": 3,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260530064223_20260530063835_VXSE5k_1",
+      "time": "2026-05-29T21:38:00+00:00",
+      "time_jst": "2026-05-30T06:38:00+09:00",
+      "lat": 35.4,
+      "lon": 140.3,
+      "magnitude": 3.9,
+      "depth_km": 30.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Northeastern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260530064129_20260530063835_VXSE52_0",
+      "time": "2026-05-29T21:38:00+00:00",
+      "time_jst": "2026-05-30T06:38:00+09:00",
+      "lat": 35.4,
+      "lon": 140.3,
+      "magnitude": 3.9,
+      "depth_km": 30.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Northeastern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
+    {
+      "event_id": "20260530064006_20260530063835_VXSE51_0",
+      "time": "2026-05-29T21:38:00+00:00",
+      "time_jst": "2026-05-30T06:38:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.05
+    },
     {
       "event_id": "20260530052350_20260530052101_VXSE5k_1",
       "time": "2026-05-29T20:21:00+00:00",
