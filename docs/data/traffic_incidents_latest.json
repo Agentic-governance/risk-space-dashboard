@@ -6,15 +6,14 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-29T19:33:28+00:00",
-    "fetched_at_jst": "2026-05-30T04:33:28+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-05-29T21:27:15+00:00",
+    "fetched_at_jst": "2026-05-30T06:27:15+09:00",
+    "total_count": 4,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 1
+      "yahoo_transit": 4
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "disaster": 1,
       "congestion": 1
     },
@@ -32,7 +31,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-29T19:33:28+00:00",
+      "occurred_at": "2026-05-29T21:27:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +45,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-29T19:33:28+00:00",
+      "occurred_at": "2026-05-29T21:27:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +59,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-29T19:33:28+00:00",
+      "occurred_at": "2026-05-29T21:27:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,23 +73,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-29T19:33:28+00:00",
+      "occurred_at": "2026-05-29T21:27:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260529_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "名古屋 マイクロバスが歩行者に衝突 男女2人死亡 — 29日夕方、名古屋市南区の交差点でマイクロバスが歩行者2人と衝突し、30代くらいの女性と男性のあわせて2人が死亡しました。警察はマイクロバスを運転していた高齢の男性から話を聴くなどして事故の詳しい状況を調べています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-29T12:35:12+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135381000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }

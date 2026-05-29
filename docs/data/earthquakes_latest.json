@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-05-29T19:33:27+00:00",
+    "fetched_at": "2026-05-29T21:27:14+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260530052350_20260530052101_VXSE5k_1",
+      "time": "2026-05-29T20:21:00+00:00",
+      "time_jst": "2026-05-30T05:21:00+09:00",
+      "lat": 27.4,
+      "lon": 128.6,
+      "magnitude": 2.9,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Okinawa Main Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.1
+    },
     {
       "event_id": "20260530011757_20260530011506_VXSE5k_1",
       "time": "2026-05-29T16:15:00+00:00",
