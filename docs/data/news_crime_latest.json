@@ -10,25 +10,25 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-29T05:57:00+00:00",
-    "total_count": 56,
+    "fetched_at": "2026-05-29T09:40:19+00:00",
+    "total_count": 58,
     "source_counts": {
-      "nhk_crime": 54,
+      "nhk_crime": 56,
       "nhk_society": 2
     },
     "type_counts": {
-      "crime_news": 16,
       "murder": 15,
+      "crime_news": 16,
+      "fraud": 3,
+      "robbery": 7,
       "drug": 4,
       "assault": 11,
-      "fraud": 2,
       "stalking": 1,
-      "robbery": 6,
       "weapon": 1
     },
     "top_prefectures": {
+      "東京": 12,
       "栃木": 11,
-      "東京": 11,
       "北海道": 5,
       "大阪": 3,
       "熊本": 3,
@@ -42,6 +42,16 @@
   },
   "incidents": [
     {
+      "title": "栃木強盗殺人 48歳容疑者を公開手配 事件を主導か",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134801000.html",
+      "date": "2026-05-29",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
       "title": "岩手 大槌町の山林火災が鎮火 発生から1か月余",
       "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134941000.html",
       "date": "2026-05-29",
@@ -49,6 +59,26 @@
       "subtype": "crime_news",
       "lat": 39.7036,
       "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "詐欺グループ「受け子」か逮捕 アプリで指示受けたか 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135061000.html",
+      "date": "2026-05-29",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 江戸川区 強盗予備の疑いで2人逮捕 金塊ねらったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135051000.html",
+      "date": "2026-05-29",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
@@ -69,16 +99,6 @@
       "subtype": "crime_news",
       "lat": 32.7898,
       "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 40代容疑者が住宅の情報送信か 公開手配へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134801000.html",
-      "date": "2026-05-29",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
       "source": "nhk_crime"
     },
     {
