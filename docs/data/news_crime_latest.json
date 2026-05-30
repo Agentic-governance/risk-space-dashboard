@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-30T19:10:21+00:00",
+    "fetched_at": "2026-05-30T20:39:24+00:00",
     "total_count": 57,
     "source_counts": {
       "nhk_crime": 54,
@@ -42,7 +42,7 @@
   },
   "incidents": [
     {
-      "title": "小6の息子殺害で66歳の父親逮捕 “お金がなく将来を悲観”",
+      "title": "小6の息子殺害の疑いで66歳の父親逮捕 “お金なく将来を悲観”",
       "url": "http://www3.nhk.or.jp/news/html/20260530/k10015136121000.html",
       "date": "2026-05-30",
       "prefecture": "千葉",
