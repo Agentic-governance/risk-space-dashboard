@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-30T07:41:06+00:00",
-    "total_count": 58,
+    "fetched_at": "2026-05-30T09:57:04+00:00",
+    "total_count": 60,
     "source_counts": {
-      "nhk_crime": 55,
+      "nhk_crime": 57,
       "nhk_society": 3
     },
     "type_counts": {
-      "murder": 17,
-      "crime_news": 14,
+      "murder": 18,
+      "crime_news": 15,
       "fraud": 4,
       "robbery": 7,
       "drug": 4,
@@ -27,10 +27,10 @@
       "weapon": 1
     },
     "top_prefectures": {
-      "栃木": 12,
+      "栃木": 13,
       "東京": 12,
+      "愛知": 4,
       "北海道": 4,
-      "愛知": 3,
       "大阪": 3,
       "熊本": 3,
       "岩手": 2,
@@ -41,6 +41,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 手配容疑者が多額報酬示し知人つなげ勧誘か",
+      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015136031000.html",
+      "date": "2026-05-30",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "愛知 2歳男児はねられ死亡 運転の82歳を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135981000.html",
+      "date": "2026-05-30",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 新たに18歳高校生を逮捕 実行役1人紹介か",
       "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135911000.html",
