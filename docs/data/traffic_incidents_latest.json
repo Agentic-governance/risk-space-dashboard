@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-30T09:56:54+00:00",
-    "fetched_at_jst": "2026-05-30T18:56:54+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-05-30T11:18:35+00:00",
+    "fetched_at_jst": "2026-05-30T20:18:35+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 5,
+      "accident": 6,
       "disaster": 1,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "新川崎駅で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T09:56:54+00:00",
+      "occurred_at": "2026-05-30T11:18:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "横須賀線内で発生した人身事故の影...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T09:56:54+00:00",
+      "occurred_at": "2026-05-30T11:18:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T09:56:54+00:00",
+      "occurred_at": "2026-05-30T11:18:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T09:56:54+00:00",
+      "occurred_at": "2026-05-30T11:18:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +88,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T09:56:54+00:00",
+      "occurred_at": "2026-05-30T11:18:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +102,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T09:56:54+00:00",
+      "occurred_at": "2026-05-30T11:18:35+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -118,6 +118,20 @@
       "lon": null,
       "occurred_at": "2026-05-30T08:26:35+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135981000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260530_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "名古屋 歩行者の2人死亡 バスは赤信号で交差点進入か — 29日、名古屋市の交差点で、スイミングスクールのマイクロバスで歩行者2人をはねて死亡させ、そのまま立ち去ったとして85歳の運転手が逮捕された事件で、バスのドライブレコーダーには赤信号で交差点に進入する様子が写っていたことが、スクール側への取材でわかりました。警察が事故の状況などを詳しく調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-05-30T11:10:04+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135741000.html",
       "traffic_multiplier": 1.6
     }
   ]
