@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-31T02:22:10+00:00",
-    "total_count": 57,
+    "fetched_at": "2026-05-31T09:49:08+00:00",
+    "total_count": 58,
     "source_counts": {
-      "nhk_crime": 54,
+      "nhk_crime": 55,
       "nhk_society": 3
     },
     "type_counts": {
-      "crime_news": 15,
+      "crime_news": 16,
       "murder": 16,
       "fraud": 4,
       "robbery": 6,
@@ -29,7 +29,7 @@
     "top_prefectures": {
       "栃木": 12,
       "東京": 11,
-      "愛知": 4,
+      "愛知": 5,
       "北海道": 3,
       "大阪": 3,
       "熊本": 3,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "名古屋 マイクロバス事故 現場にブレーキかけた痕跡なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260531/k10015136371000.html",
+      "date": "2026-05-31",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
     {
       "title": "小6の息子殺害の疑いで66歳の父親逮捕 “お金なく将来を悲観”",
       "url": "http://www3.nhk.or.jp/news/html/20260530/k10015136121000.html",
