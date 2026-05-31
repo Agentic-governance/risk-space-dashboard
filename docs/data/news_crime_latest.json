@@ -10,29 +10,29 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-31T15:53:16+00:00",
-    "total_count": 58,
+    "fetched_at": "2026-05-31T17:02:09+00:00",
+    "total_count": 48,
     "source_counts": {
-      "nhk_crime": 55,
+      "nhk_crime": 45,
       "nhk_society": 3
     },
     "type_counts": {
-      "crime_news": 16,
-      "murder": 16,
+      "crime_news": 14,
+      "murder": 14,
       "fraud": 4,
-      "robbery": 6,
+      "robbery": 3,
       "drug": 4,
-      "assault": 10,
+      "assault": 7,
       "stalking": 1,
       "weapon": 1
     },
     "top_prefectures": {
-      "栃木": 12,
-      "東京": 11,
+      "栃木": 11,
+      "東京": 6,
       "愛知": 5,
-      "北海道": 3,
       "大阪": 3,
       "熊本": 3,
+      "北海道": 2,
       "岩手": 2,
       "千葉": 1,
       "神奈川": 1,
@@ -519,106 +519,6 @@
       "subtype": "assault",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "山形 酒田 男性死亡はクマ被害と判明 県内では1988年以来",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131221000.html",
-      "date": "2026-05-25",
-      "prefecture": "山形",
-      "subtype": "crime_news",
-      "lat": 38.2404,
-      "lon": 140.3636,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 銀座の複合施設内で刺激臭 25人が体調不良訴える",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130791000.html",
-      "date": "2026-05-25",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 秋葉原 “ポケモンカード” 約300枚盗んだか 2人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131111000.html",
-      "date": "2026-05-25",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 小金井 強盗予備などの疑い 新たに男の容疑者逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131041000.html",
-      "date": "2026-05-25",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "新潟 同居男性の傷害致死事件 差し戻し審で懲役6年確定へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131071000.html",
-      "date": "2026-05-25",
-      "prefecture": "新潟",
-      "subtype": "assault",
-      "lat": 37.9026,
-      "lon": 139.0232,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "警察庁長官「トクリュウ」実態解明と取締り強化を改めて指示",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131081000.html",
-      "date": "2026-05-25",
-      "prefecture": "",
-      "subtype": "robbery",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北海道 旭川 高校生殺害事件 被告は初公判で殺人など争う姿勢",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130681000.html",
-      "date": "2026-05-25",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "性的暴行疑いで逮捕の東京消防庁署員2人を釈放 任意で捜査へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130921000.html",
-      "date": "2026-05-25",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 葛飾 金塊入ったリュックサック強奪か 2人逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130751000.html",
-      "date": "2026-05-25",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 新宿 酒買い取り販売店で強盗未遂か 6人逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015130741000.html",
-      "date": "2026-05-25",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
       "source": "nhk_crime"
     }
   ]
