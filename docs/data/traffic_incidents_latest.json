@@ -6,25 +6,23 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-05-30T23:58:27+00:00",
-    "fetched_at_jst": "2026-05-31T08:58:27+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-05-31T02:21:58+00:00",
+    "fetched_at_jst": "2026-05-31T11:21:58+09:00",
+    "total_count": 4,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 1
+      "yahoo_transit": 4
     },
     "type_counts": {
       "accident": 2,
       "disaster": 1,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260530_0000",
+      "event_id": "traffic_20260531_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +31,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T23:58:27+00:00",
+      "occurred_at": "2026-05-31T02:21:58+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260530_0001",
+      "event_id": "traffic_20260531_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -47,12 +45,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T23:58:27+00:00",
+      "occurred_at": "2026-05-31T02:21:58+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260530_0002",
+      "event_id": "traffic_20260531_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -61,12 +59,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T23:58:27+00:00",
+      "occurred_at": "2026-05-31T02:21:58+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260530_0003",
+      "event_id": "traffic_20260531_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -75,23 +73,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-05-30T23:58:27+00:00",
+      "occurred_at": "2026-05-31T02:21:58+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260530_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "渋谷区のマンション建設 東京地裁“工事の停止を”判断 — 東京 渋谷区で進められていたマンションの建設工事をめぐり、近隣の住民が盛り土による土砂崩れのおそれがあると申し立てたのに対し、東京地方裁判所はことし3月、「放置すれば土砂の流出のおそれがあり、住民の生命に危険が及ぶ」として、渋谷区に工事を停止させる判断をしました。専門家によりますと、行政による盛り土の規制をめぐって司法判断が示されたのは、初めてだということです。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-05-30T12:27:39+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135921000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
