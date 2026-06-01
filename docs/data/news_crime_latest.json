@@ -10,25 +10,25 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-05-31T22:54:15+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-06-01T02:54:04+00:00",
+    "total_count": 49,
     "source_counts": {
-      "nhk_crime": 45,
+      "nhk_crime": 46,
       "nhk_society": 3
     },
     "type_counts": {
+      "assault": 8,
       "crime_news": 14,
       "murder": 14,
       "fraud": 4,
       "robbery": 3,
       "drug": 4,
-      "assault": 7,
       "stalking": 1,
       "weapon": 1
     },
     "top_prefectures": {
       "栃木": 11,
-      "東京": 6,
+      "東京": 7,
       "愛知": 5,
       "大阪": 3,
       "熊本": 3,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "東京 大田区 路線バスの乗客 男に顔切られけが 車内トラブルか",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137011000.html",
+      "date": "2026-06-01",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "名古屋 マイクロバス事故 現場にブレーキかけた痕跡なし",
       "url": "http://www3.nhk.or.jp/news/html/20260531/k10015136371000.html",
