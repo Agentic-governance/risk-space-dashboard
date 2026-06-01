@@ -10,25 +10,24 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-01T14:37:41+00:00",
-    "total_count": 54,
+    "fetched_at": "2026-06-01T19:35:13+00:00",
+    "total_count": 47,
     "source_counts": {
-      "nhk_crime": 51,
-      "nhk_society": 3
+      "nhk_crime": 45,
+      "nhk_society": 2
     },
     "type_counts": {
+      "murder": 15,
       "crime_news": 15,
-      "murder": 16,
-      "robbery": 4,
+      "robbery": 3,
       "drug": 6,
-      "fraud": 4,
-      "assault": 7,
-      "stalking": 1,
-      "weapon": 1
+      "fraud": 3,
+      "assault": 4,
+      "stalking": 1
     },
     "top_prefectures": {
-      "栃木": 11,
-      "東京": 10,
+      "栃木": 10,
+      "東京": 7,
       "愛知": 6,
       "大阪": 3,
       "熊本": 3,
@@ -42,16 +41,6 @@
   },
   "incidents": [
     {
-      "title": "名古屋 マイクロバス事故 時速30キロ以下で男女2人をはねたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137071000.html",
-      "date": "2026-06-01",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
       "title": "埼玉 川口 ケアマネ女性刺し自らも刺したか 殺人容疑で捜査",
       "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137361000.html",
       "date": "2026-06-01",
@@ -59,6 +48,16 @@
       "subtype": "murder",
       "lat": 35.8573,
       "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "名古屋 マイクロバス事故 時速30キロ以下で男女2人をはねたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137071000.html",
+      "date": "2026-06-01",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
       "source": "nhk_crime"
     },
     {
@@ -507,76 +506,6 @@
       "date": "2026-05-27",
       "prefecture": "",
       "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 不審車の容疑者再逮捕へ 住宅侵入工具所持か",
-      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015132051000.html",
-      "date": "2026-05-26",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 銀座 男が入店直後にスプレー噴射か 警視庁が行方捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131951000.html",
-      "date": "2026-05-26",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "海外で「かけ子」させる目的で女性誘拐か 暴力団員逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131551000.html",
-      "date": "2026-05-26",
-      "prefecture": "東京",
-      "subtype": "fraud",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "新宿 酒店強盗未遂事件 “数百万円の報酬もらう予定”供述",
-      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131521000.html",
-      "date": "2026-05-26",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "巨人 阿部慎之助監督が辞任 娘への暴行疑いで逮捕を受けて",
-      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131461000.html",
-      "date": "2026-05-26",
-      "prefecture": "",
-      "subtype": "assault",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_society"
-    },
-    {
-      "title": "兵庫 母娘殺害事件 容疑者は事件後に着替えて逃走か",
-      "url": "http://www3.nhk.or.jp/news/html/20260526/k10015131271000.html",
-      "date": "2026-05-25",
-      "prefecture": "兵庫",
-      "subtype": "weapon",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "巨人の阿部慎之助監督を逮捕 18歳長女に暴行か その後釈放",
-      "url": "http://www3.nhk.or.jp/news/html/20260525/k10015131291000.html",
-      "date": "2026-05-25",
-      "prefecture": "",
-      "subtype": "assault",
       "lat": null,
       "lon": null,
       "source": "nhk_crime"
