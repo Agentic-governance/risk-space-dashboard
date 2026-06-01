@@ -10,45 +10,95 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-01T02:54:04+00:00",
-    "total_count": 49,
+    "fetched_at": "2026-06-01T08:30:35+00:00",
+    "total_count": 54,
     "source_counts": {
-      "nhk_crime": 46,
+      "nhk_crime": 51,
       "nhk_society": 3
     },
     "type_counts": {
+      "robbery": 4,
       "assault": 8,
-      "crime_news": 14,
-      "murder": 14,
+      "murder": 15,
+      "drug": 6,
+      "crime_news": 15,
       "fraud": 4,
-      "robbery": 3,
-      "drug": 4,
       "stalking": 1,
       "weapon": 1
     },
     "top_prefectures": {
       "栃木": 11,
-      "東京": 7,
-      "愛知": 5,
+      "東京": 10,
+      "愛知": 6,
       "大阪": 3,
       "熊本": 3,
       "北海道": 2,
       "岩手": 2,
+      "埼玉": 1,
       "千葉": 1,
-      "神奈川": 1,
-      "広島": 1
+      "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "東京 大田区 路線バスの乗客 男に顔切られけが 車内トラブルか",
+      "title": "東京 小金井 住居侵入疑いで容疑者逮捕 トクリュウの標的か",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137081000.html",
+      "date": "2026-06-01",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "埼玉 川口 “ケアマネ刺した”と通報 現場で男女2人が心肺停止",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137361000.html",
+      "date": "2026-06-01",
+      "prefecture": "埼玉",
+      "subtype": "assault",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 大田区 バス降車後の乗客切りつけたか 75歳容疑者を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137011000.html",
       "date": "2026-06-01",
       "prefecture": "東京",
-      "subtype": "assault",
+      "subtype": "murder",
       "lat": 35.6762,
       "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「XG」元プロデューサー コカイン使用の罪で有罪判決 東京地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137261000.html",
+      "date": "2026-06-01",
+      "prefecture": "東京",
+      "subtype": "drug",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "プロ野球 広島 羽月元選手にエトミデート譲渡か 容疑者再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137111000.html",
+      "date": "2026-06-01",
+      "prefecture": "東京",
+      "subtype": "drug",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "名古屋 マイクロバス事故 運転手の勤務先と自宅捜索 警察",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137071000.html",
+      "date": "2026-06-01",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
       "source": "nhk_crime"
     },
     {
