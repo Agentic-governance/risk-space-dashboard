@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-01T19:35:13+00:00",
-    "total_count": 47,
+    "fetched_at": "2026-06-01T22:26:38+00:00",
+    "total_count": 48,
     "source_counts": {
-      "nhk_crime": 45,
+      "nhk_crime": 46,
       "nhk_society": 2
     },
     "type_counts": {
-      "murder": 15,
+      "murder": 16,
       "crime_news": 15,
       "robbery": 3,
       "drug": 6,
@@ -31,15 +31,25 @@
       "愛知": 6,
       "大阪": 3,
       "熊本": 3,
+      "埼玉": 2,
       "北海道": 2,
       "岩手": 2,
-      "埼玉": 1,
       "千葉": 1,
       "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "埼玉 ケアマネ殺害疑いの息子は一方的な思い込みで事件か",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015137721000.html",
+      "date": "2026-06-01",
+      "prefecture": "埼玉",
+      "subtype": "murder",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
     {
       "title": "埼玉 川口 ケアマネ女性刺し自らも刺したか 殺人容疑で捜査",
       "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137361000.html",
