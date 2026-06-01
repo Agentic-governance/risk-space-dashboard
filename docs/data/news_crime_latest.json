@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-01T08:30:35+00:00",
+    "fetched_at": "2026-06-01T14:37:41+00:00",
     "total_count": 54,
     "source_counts": {
       "nhk_crime": 51,
       "nhk_society": 3
     },
     "type_counts": {
-      "robbery": 4,
-      "assault": 8,
-      "murder": 15,
-      "drug": 6,
       "crime_news": 15,
+      "murder": 16,
+      "robbery": 4,
+      "drug": 6,
       "fraud": 4,
+      "assault": 7,
       "stalking": 1,
       "weapon": 1
     },
@@ -42,6 +42,26 @@
   },
   "incidents": [
     {
+      "title": "名古屋 マイクロバス事故 時速30キロ以下で男女2人をはねたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137071000.html",
+      "date": "2026-06-01",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "埼玉 川口 ケアマネ女性刺し自らも刺したか 殺人容疑で捜査",
+      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137361000.html",
+      "date": "2026-06-01",
+      "prefecture": "埼玉",
+      "subtype": "murder",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
       "title": "東京 小金井 住居侵入疑いで容疑者逮捕 トクリュウの標的か",
       "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137081000.html",
       "date": "2026-06-01",
@@ -49,16 +69,6 @@
       "subtype": "robbery",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "埼玉 川口 “ケアマネ刺した”と通報 現場で男女2人が心肺停止",
-      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137361000.html",
-      "date": "2026-06-01",
-      "prefecture": "埼玉",
-      "subtype": "assault",
-      "lat": 35.8573,
-      "lon": 139.6489,
       "source": "nhk_crime"
     },
     {
@@ -89,16 +99,6 @@
       "subtype": "drug",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "名古屋 マイクロバス事故 運転手の勤務先と自宅捜索 警察",
-      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137071000.html",
-      "date": "2026-06-01",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
       "source": "nhk_crime"
     },
     {

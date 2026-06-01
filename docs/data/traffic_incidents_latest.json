@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-01T08:30:26+00:00",
-    "fetched_at_jst": "2026-06-01T17:30:26+09:00",
+    "fetched_at": "2026-06-01T14:37:30+00:00",
+    "fetched_at_jst": "2026-06-01T23:37:30+09:00",
     "total_count": 8,
     "source_counts": {
       "yahoo_transit": 7,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、2日・3日の各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "内房線内での保守工事の影響で、2...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +75,7 @@
       "description": "常陸大宮駅構内での工事の影響で、...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -89,7 +89,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -103,7 +103,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -117,7 +117,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:30:26+00:00",
+      "occurred_at": "2026-06-01T14:37:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -128,10 +128,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風6号 沖縄本島に最接近 九州南部などあす線状降水帯おそれ — 台風6号はまもなく沖縄本島地方に最も近づく見込みで、すでに40メートルを超える最大瞬間風速を観測するなど、外出が危険な非常に強い風が吹いています。奄美と九州南部ではあすの明け方から夕方にかけて線状降水帯が発生して災害の危険度が急激に高まるおそれがあり、気象庁は、暴風や高波、土砂災害、低い土地の浸水などに厳重に警戒するよう呼びかけています。西日本と東日本でも大雨や暴風のおそれがあり、早めに備えを進めてください。",
+      "description": "台風6号 沖縄・奄美で非常に強い風 線状降水帯発生のおそれも — 台風6号はこの時間、沖縄本島地方に最も近づいていて、沖縄・奄美では、外出が危険な非常に強い風が吹いています。奄美と九州南部では2日の明け方から線状降水帯が発生して災害の危険度が急激に高まるおそれがあり、気象庁は、暴風や高波、土砂災害、低い土地の浸水などに厳重に警戒するよう呼びかけています。西日本と東日本でも大雨や暴風のおそれがあり、早めに備えを進めてください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-01T08:20:24+00:00",
+      "occurred_at": "2026-06-01T13:59:57+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260601/k10015136781000.html",
       "traffic_multiplier": 2.4
     }
