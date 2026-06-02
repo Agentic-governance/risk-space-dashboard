@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-02T11:55:30+00:00",
+    "fetched_at": "2026-06-02T16:04:23+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 2,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -35,34 +35,6 @@
       "location_name": "Off the Coast of Ibaraki Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260602005650_20260602005127_VXSE5k_1",
-      "time": "2026-06-01T15:51:00+00:00",
-      "time_jst": "2026-06-02T00:51:00+09:00",
-      "lat": 36.4,
-      "lon": 141.1,
-      "magnitude": 3.8,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260602005619_20260602005031_VXSE5k_1",
-      "time": "2026-06-01T15:50:00+00:00",
-      "time_jst": "2026-06-02T00:50:00+09:00",
-      "lat": 36.8,
-      "lon": 140.6,
-      "magnitude": 2.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
