@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-02T16:04:24+00:00",
-    "fetched_at_jst": "2026-06-03T01:04:24+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-06-02T19:45:54+00:00",
+    "fetched_at_jst": "2026-06-03T04:45:54+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 4
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 2,
-      "congestion": 1
+      "disaster": 4,
+      "congestion": 1,
+      "fallen_tree": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-02T16:04:24+00:00",
+      "occurred_at": "2026-06-02T19:45:54+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-02T16:04:24+00:00",
+      "occurred_at": "2026-06-02T19:45:54+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-02T16:04:24+00:00",
+      "occurred_at": "2026-06-02T19:45:54+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-02T16:04:24+00:00",
+      "occurred_at": "2026-06-02T19:45:54+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,12 +86,54 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風6号 徳島でレベル4 土砂災害と氾濫の危険警報 — 四国の沖合を進む台風6号の影響で四国や東海で雨が強まっていて、徳島県の勝浦川水系の勝浦川に「レベル4氾濫危険警報」、徳島県南部に「レベル4土砂災害危険警報」が発表されています。気象庁は、高知県と徳島県では線状降水帯が発生する可能性が高まっているとしています。近畿、東海、関東甲信、それに伊豆諸島でも3日の明け方から夕方にかけて線状降水帯が発生する可能性があり、気象庁は、土砂災害や低い土地の浸水などに厳重に警戒するよう呼びかけています。",
+      "description": "台風6号 和歌山 徳島で線状降水帯 関東甲信も線状降水帯おそれ — 和歌山県沖の海上を進む台風6号の影響で徳島県と和歌山県では3日未明、線状降水帯が相次いで発生しました。和歌山県では「レベル4氾濫危険警報」が発表されている川があるほか、徳島県と和歌山県、それに奈良県と三重県には「レベル4土砂災害危険警報」が発表されている地域があります。東海、関東甲信などでも線状降水帯が発生して災害の危険度が急激に高まるおそれがあり気象庁は、土砂災害や川の氾濫、低い土地の浸水などに厳重に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-02T15:57:35+00:00",
+      "occurred_at": "2026-06-02T18:55:49+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260603/k10015138881000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260602_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "和歌山県南部で線状降水帯が発生 災害危険度高まる 安全確保を — 気象庁は3日午前2時10分、和歌山県南部に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-02T17:14:11+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015138981000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260602_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "徳島県南部で線状降水帯が発生 災害危険度高まる 安全確保を — 気象庁は3日午前1時21分、徳島県南部に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-02T16:25:47+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015138961000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260602_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "fallen_tree",
+      "severity": 2,
+      "road_name": "",
+      "description": "【台風被害】松山 城山公園で倒木 奈良では建築用の足場倒れる — 3日午前1時半ごろ、松山市中心部の城山公園の道沿いに植えられている木が倒れているのが見つかりました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-02T19:16:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139021000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }

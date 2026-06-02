@@ -10,33 +10,33 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-02T16:04:35+00:00",
-    "total_count": 55,
+    "fetched_at": "2026-06-02T19:46:05+00:00",
+    "total_count": 49,
     "source_counts": {
-      "nhk_crime": 53,
+      "nhk_crime": 47,
       "nhk_society": 2
     },
     "type_counts": {
       "weapon": 2,
       "robbery": 4,
-      "crime_news": 17,
+      "crime_news": 16,
       "fraud": 4,
-      "assault": 5,
-      "murder": 16,
+      "assault": 3,
+      "murder": 13,
       "drug": 6,
       "stalking": 1
     },
     "top_prefectures": {
-      "栃木": 10,
-      "東京": 9,
+      "東京": 8,
+      "栃木": 8,
       "愛知": 6,
       "埼玉": 4,
-      "大阪": 3,
       "熊本": 3,
-      "北海道": 2,
       "岩手": 2,
+      "大阪": 2,
       "秋田": 1,
-      "千葉": 1
+      "千葉": 1,
+      "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -529,66 +529,6 @@
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪地検特捜部の特別公務員暴行陵虐事件 検事側が無罪主張へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015133471000.html",
-      "date": "2026-05-27",
-      "prefecture": "大阪",
-      "subtype": "assault",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 主導役とみられる容疑者 東南アジアへ逃亡か",
-      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015132501000.html",
-      "date": "2026-05-27",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北海道 旭川 高校生殺害事件の裁判で証人「被告が押した」",
-      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015133131000.html",
-      "date": "2026-05-27",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 不審車両の容疑者が侵入工具所持か 再逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015133141000.html",
-      "date": "2026-05-27",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 足立区 一時保護所の元職員を逮捕 高校生に性的暴行疑い",
-      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015133031000.html",
-      "date": "2026-05-27",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "シチズン時計の元部長逮捕 倉庫の腕時計を横領か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260527/k10015132711000.html",
-      "date": "2026-05-27",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
       "source": "nhk_crime"
     }
   ]
