@@ -10,15 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-02T02:43:21+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-06-02T07:23:07+00:00",
+    "total_count": 51,
     "source_counts": {
-      "nhk_crime": 46,
+      "nhk_crime": 49,
       "nhk_society": 2
     },
     "type_counts": {
+      "crime_news": 17,
+      "weapon": 1,
       "murder": 16,
-      "crime_news": 15,
       "robbery": 3,
       "drug": 6,
       "fraud": 3,
@@ -27,19 +28,49 @@
     },
     "top_prefectures": {
       "栃木": 10,
-      "東京": 7,
+      "東京": 8,
       "愛知": 6,
+      "埼玉": 3,
       "大阪": 3,
       "熊本": 3,
-      "埼玉": 2,
       "北海道": 2,
       "岩手": 2,
-      "千葉": 1,
-      "神奈川": 1
+      "秋田": 1,
+      "千葉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "秋田 高齢女性が死亡 近くでクマ駆除 襲われたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138051000.html",
+      "date": "2026-06-02",
+      "prefecture": "秋田",
+      "subtype": "crime_news",
+      "lat": 39.7186,
+      "lon": 140.1024,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "埼玉 殺害されたケアマネ 訪問直後に玄関付近で襲われたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138081000.html",
+      "date": "2026-06-02",
+      "prefecture": "埼玉",
+      "subtype": "weapon",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「嵐」最終公演の東京ドームに作業員など装い侵入か 3人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138071000.html",
+      "date": "2026-06-02",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "埼玉 ケアマネ殺害疑いの息子は一方的な思い込みで事件か",
       "url": "http://www3.nhk.or.jp/news/html/20260602/k10015137721000.html",
