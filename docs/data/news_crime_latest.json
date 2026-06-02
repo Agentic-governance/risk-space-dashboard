@@ -10,27 +10,27 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-02T07:23:07+00:00",
-    "total_count": 51,
+    "fetched_at": "2026-06-02T11:55:42+00:00",
+    "total_count": 55,
     "source_counts": {
-      "nhk_crime": 49,
+      "nhk_crime": 53,
       "nhk_society": 2
     },
     "type_counts": {
+      "weapon": 2,
+      "robbery": 4,
       "crime_news": 17,
-      "weapon": 1,
+      "fraud": 4,
+      "assault": 5,
       "murder": 16,
-      "robbery": 3,
       "drug": 6,
-      "fraud": 3,
-      "assault": 4,
       "stalking": 1
     },
     "top_prefectures": {
       "栃木": 10,
-      "東京": 8,
+      "東京": 9,
       "愛知": 6,
-      "埼玉": 3,
+      "埼玉": 4,
       "大阪": 3,
       "熊本": 3,
       "北海道": 2,
@@ -42,13 +42,53 @@
   },
   "incidents": [
     {
-      "title": "秋田 高齢女性が死亡 近くでクマ駆除 襲われたか",
+      "title": "埼玉 ケアマネ殺害事件 以前から息子 “母の金なくなった”",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138551000.html",
+      "date": "2026-06-02",
+      "prefecture": "埼玉",
+      "subtype": "weapon",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 銀座 ひったくり被害装い2000万円余強奪か 3人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138541000.html",
+      "date": "2026-06-02",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "秋田 高齢女性が死亡 近くでクマを駆除 襲われたか",
       "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138051000.html",
       "date": "2026-06-02",
       "prefecture": "秋田",
       "subtype": "crime_news",
       "lat": 39.7186,
       "lon": 140.1024,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "マネーロンダリング目的の口座売買厳罰化 改正法成立",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138501000.html",
+      "date": "2026-06-02",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "ジャンポケ斉藤元メンバー 被告人質問 “同意あると思った”",
+      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138321000.html",
+      "date": "2026-06-02",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {
