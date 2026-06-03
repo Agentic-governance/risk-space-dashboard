@@ -10,37 +10,68 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-02T22:22:14+00:00",
-    "total_count": 49,
+    "fetched_at": "2026-06-03T05:32:10+00:00",
+    "total_count": 52,
     "source_counts": {
-      "nhk_crime": 47,
+      "nhk_crime": 50,
       "nhk_society": 2
     },
     "type_counts": {
+      "assault": 4,
+      "fraud": 5,
+      "theft": 1,
       "weapon": 2,
       "robbery": 4,
       "crime_news": 16,
-      "fraud": 4,
-      "assault": 3,
       "murder": 13,
       "drug": 6,
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 9,
       "栃木": 8,
       "愛知": 6,
       "埼玉": 4,
       "熊本": 3,
+      "千葉": 2,
       "岩手": 2,
       "大阪": 2,
       "秋田": 1,
-      "千葉": 1,
       "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "施設に通う9歳女児に性的暴行か 元職員3回目の逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139601000.html",
+      "date": "2026-06-03",
+      "prefecture": "千葉",
+      "subtype": "assault",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "暴力団・幸平一家傘下組織の暴力団員逮捕 詐欺の疑い 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139581000.html",
+      "date": "2026-06-03",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 台東区 4億円余窃盗疑いで新たに3人逮捕 指示役か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139561000.html",
+      "date": "2026-06-03",
+      "prefecture": "東京",
+      "subtype": "theft",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "埼玉 ケアマネ殺害事件 以前から息子 “母の金なくなった”",
       "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138551000.html",
