@@ -1,82 +1,26 @@
 {
   "metadata": {
-    "source": "Japan Meteorological Agency (JMA)",
-    "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-03T15:19:53+00:00",
+    "source": "USGS FDSN (JMA unavailable)",
+    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-02&minlatitude=24&maxlatitude=46&minlongitude=122&maxlongitude=146&minmagnitude=2",
+    "fetched_at": "2026-06-03T19:11:54+00:00",
     "filter_window_hours": 24,
-    "total_count": 5,
+    "total_count": 1,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
     {
-      "event_id": "20260603133006_20260603132731_VXSE5k_1",
-      "time": "2026-06-03T04:27:00+00:00",
-      "time_jst": "2026-06-03T13:27:00+09:00",
-      "lat": 35.2,
-      "lon": 139.0,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Western Kanagawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260603104806_20260603104544_VXSE5k_1",
-      "time": "2026-06-03T01:45:00+00:00",
-      "time_jst": "2026-06-03T10:45:00+09:00",
-      "lat": 35.5,
-      "lon": 139.0,
-      "magnitude": 2.6,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Eastern Region · Fuji Five Lakes, Yamanashi Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.3
-    },
-    {
-      "event_id": "20260603085310_20260603085008_VXSE5k_1",
-      "time": "2026-06-02T23:50:00+00:00",
-      "time_jst": "2026-06-03T08:50:00+09:00",
-      "lat": 34.9,
-      "lon": 135.6,
-      "magnitude": 3.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Northern Osaka Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260603060132_20260603055828_VXSE5k_1",
-      "time": "2026-06-02T20:58:00+00:00",
-      "time_jst": "2026-06-03T05:58:00+09:00",
-      "lat": 31.1,
-      "lon": 131.5,
-      "magnitude": 4.4,
-      "depth_km": 30.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the east Coast of Osumi Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260603040839_20260603040542_VXSE5k_1",
-      "time": "2026-06-02T19:05:00+00:00",
-      "time_jst": "2026-06-03T04:05:00+09:00",
-      "lat": 34.2,
-      "lon": 136.6,
-      "magnitude": 3.8,
-      "depth_km": 30.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the southeast Coast of Mie Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
+      "event_id": "us7000sq9k",
+      "time": "2026-06-03T12:29:44+00:00",
+      "time_jst": "2026-06-03T21:29:44+09:00",
+      "lat": 29.2221,
+      "lon": 142.1149,
+      "magnitude": 4.6,
+      "depth_km": 10,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Izu Islands, Japan region",
+      "source": "usgs_fdsn",
+      "earthquake_multiplier": 2.0
     }
   ]
 }

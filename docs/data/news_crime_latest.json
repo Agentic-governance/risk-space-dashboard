@@ -10,35 +10,34 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-03T15:20:07+00:00",
-    "total_count": 56,
+    "fetched_at": "2026-06-03T19:12:05+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 54,
-      "nhk_society": 2
+      "nhk_crime": 41,
+      "nhk_society": 1
     },
     "type_counts": {
-      "murder": 14,
+      "murder": 10,
       "terrorism": 1,
       "theft": 2,
-      "crime_news": 17,
-      "fraud": 5,
-      "assault": 4,
+      "crime_news": 14,
+      "fraud": 4,
+      "assault": 2,
       "weapon": 2,
-      "robbery": 4,
-      "drug": 6,
-      "stalking": 1
+      "robbery": 3,
+      "drug": 4
     },
     "top_prefectures": {
-      "東京": 10,
-      "栃木": 9,
+      "東京": 9,
+      "栃木": 6,
       "愛知": 6,
       "埼玉": 4,
-      "熊本": 3,
       "千葉": 2,
       "岩手": 2,
-      "大阪": 2,
+      "熊本": 2,
       "兵庫": 1,
-      "秋田": 1
+      "秋田": 1,
+      "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -457,146 +456,6 @@
       "title": "栃木強盗殺人 海外出国の逮捕状出された容疑者を公開手配へ",
       "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134441000.html",
       "date": "2026-05-28",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "熊本 八代 新庁舎めぐる汚職事件 現金2000万円を資金洗浄か",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015134251000.html",
-      "date": "2026-05-28",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪地検特捜部の特別公務員暴行陵虐事件 7月10日に初公判",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015134141000.html",
-      "date": "2026-05-28",
-      "prefecture": "大阪",
-      "subtype": "assault",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 逮捕状の容疑者はタイに向かった情報も 行方捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015134161000.html",
-      "date": "2026-05-28",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "川崎 児童や保護者20人殺傷事件から7年 現場や学校で祈り",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133841000.html",
-      "date": "2026-05-28",
-      "prefecture": "神奈川",
-      "subtype": "assault",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 呉 船解体現場火災 「重機から出火目撃」と従業員",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133821000.html",
-      "date": "2026-05-28",
-      "prefecture": "広島",
-      "subtype": "crime_news",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "バレーボール男子日本代表 佐藤駿一郎選手 大麻所持容疑で逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133871000.html",
-      "date": "2026-05-28",
-      "prefecture": "",
-      "subtype": "drug",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "特殊詐欺の被害金回収へ 警察庁とメガバンクなどが新協定",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133971000.html",
-      "date": "2026-05-28",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京都 南丹 男子児童殺害事件 父親を殺人と死体遺棄の罪で起訴",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133771000.html",
-      "date": "2026-05-28",
-      "prefecture": "京都",
-      "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ストーカー対策でGPS機器装着など 研究進める 木原官房長官",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133921000.html",
-      "date": "2026-05-28",
-      "prefecture": "",
-      "subtype": "stalking",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "スカウト「ナチュラル」トップ再逮捕 現金回収役の幹部も逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133791000.html",
-      "date": "2026-05-28",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "新宿 酒店強盗未遂事件で新たに1人逮捕 実行役か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133721000.html",
-      "date": "2026-05-28",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 逮捕状の容疑者が事件前に凶器のバール購入か",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133751000.html",
-      "date": "2026-05-28",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "バレーボール協会 代表選手の逮捕受け謝罪 尿検査実施へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015134281000.html",
-      "date": "2026-05-28",
-      "prefecture": "",
-      "subtype": "drug",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_society"
-    },
-    {
-      "title": "栃木強盗殺人 40代の容疑者 指示役の夫と事件前から知り合いか",
-      "url": "http://www3.nhk.or.jp/news/html/20260528/k10015133461000.html",
-      "date": "2026-05-27",
       "prefecture": "栃木",
       "subtype": "murder",
       "lat": 36.5658,
