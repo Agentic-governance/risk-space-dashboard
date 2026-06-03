@@ -6,19 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-03T05:32:00+00:00",
-    "fetched_at_jst": "2026-06-03T14:32:00+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-06-03T10:24:01+00:00",
+    "fetched_at_jst": "2026-06-03T19:24:01+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 4
+      "nhk_rss": 1
     },
     "type_counts": {
-      "fallen_tree": 1,
+      "disaster": 2,
       "accident": 2,
-      "disaster": 3,
       "congestion": 1,
-      "restriction": 2
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -28,15 +27,15 @@
       "event_id": "traffic_20260603_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
-      "incident_type": "fallen_tree",
-      "severity": 2,
+      "incident_type": "disaster",
+      "severity": 4,
       "road_name": "",
-      "description": "羽鳥〜岩間駅間で発生した倒木の影...",
+      "description": "台風災害の影響で、終日、伊豆高原...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-03T05:32:00+00:00",
+      "occurred_at": "2026-06-03T10:24:01+00:00",
       "url": "",
-      "traffic_multiplier": 1.3
+      "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260603_0001",
@@ -48,7 +47,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-03T05:32:00+00:00",
+      "occurred_at": "2026-06-03T10:24:01+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -62,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-03T05:32:00+00:00",
+      "occurred_at": "2026-06-03T10:24:01+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -76,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-03T05:32:00+00:00",
+      "occurred_at": "2026-06-03T10:24:01+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -90,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-03T05:32:00+00:00",
+      "occurred_at": "2026-06-03T10:24:01+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -98,56 +97,14 @@
       "event_id": "traffic_20260603_0005",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "台風6号 関東に最接近 氾濫や土砂災害など厳重警戒 — 大型の台風6号はこの時間、関東に最も近づいています。3日朝は神奈川県東部で線状降水帯が発生するなど関東南部と静岡県で大雨になりました。関東南部の雨は弱まりつつありますが、気象庁は、土砂災害や低い土地の浸水、川の氾濫などに引き続き厳重に警戒するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-03T05:04:03+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015138881000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260603_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "神奈川県東部に線状降水帯が発生 災害危険度高まる 安全確保を — 気象庁は3日午前9時2分、神奈川県東部に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-03T00:06:11+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139351000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260603_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
       "incident_type": "restriction",
       "severity": 1,
       "road_name": "",
-      "description": "【台風 各地の影響】川崎で道路や商店街が冠水 — 台風6号の影響で、各地で大雨による道路や商店街が冠水するなど被害が出ています。",
+      "description": "【台風 各地の影響】川崎で道路や商店街が冠水 — 台風6号の影響で、各地で道路の崩落や冠水などの被害が出ています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-03T04:44:22+00:00",
+      "occurred_at": "2026-06-03T09:34:36+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139571000.html",
-      "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260603_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "台風6号 首都圏在来線に運休や遅れ相次ぐ 空の便欠航も — 台風6号による交通機関への影響をまとめています。各新幹線はおおむね平常どおり運行していますが、首都圏の在来線は運休や遅れが相次ぎ、ダイヤが乱れています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-03T05:07:16+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138791000.html",
       "traffic_multiplier": 1.0
     }
   ]
