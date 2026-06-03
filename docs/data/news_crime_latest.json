@@ -10,20 +10,20 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-03T19:12:05+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-06-03T22:15:03+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 41,
+      "nhk_crime": 44,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 16,
+      "weapon": 3,
       "murder": 10,
       "terrorism": 1,
       "theft": 2,
-      "crime_news": 14,
       "fraud": 4,
       "assault": 2,
-      "weapon": 2,
       "robbery": 3,
       "drug": 4
     },
@@ -31,17 +31,47 @@
       "東京": 9,
       "栃木": 6,
       "愛知": 6,
-      "埼玉": 4,
+      "埼玉": 5,
+      "兵庫": 3,
       "千葉": 2,
       "岩手": 2,
       "熊本": 2,
-      "兵庫": 1,
       "秋田": 1,
       "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "兵庫 たつの 母娘殺害事件 川で見つかった遺体は容疑者と確認",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015140301000.html",
+      "date": "2026-06-03",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "川口ケアマネ殺害事件受け 複数人での訪問費用助成へ 厚労省",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015140191000.html",
+      "date": "2026-06-03",
+      "prefecture": "埼玉",
+      "subtype": "weapon",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "兵庫 たつの 母娘殺害事件容疑者と似た服装の遺体 身元特定へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015140161000.html",
+      "date": "2026-06-03",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 高校生と指示役夫婦 計6人を順次再逮捕へ",
       "url": "http://www3.nhk.or.jp/news/html/20260603/k10015139961000.html",
