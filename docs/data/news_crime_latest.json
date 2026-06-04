@@ -10,39 +10,46 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-04T16:00:47+00:00",
-    "total_count": 49,
+    "fetched_at": "2026-06-04T20:37:54+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 48,
-      "nhk_society": 1
+      "nhk_crime": 35
     },
     "type_counts": {
+      "robbery": 3,
       "voyeurism": 1,
-      "crime_news": 19,
+      "crime_news": 13,
       "weapon": 3,
-      "murder": 10,
+      "murder": 6,
       "terrorism": 1,
       "theft": 2,
-      "fraud": 4,
+      "fraud": 2,
       "assault": 2,
-      "robbery": 3,
-      "drug": 4
+      "drug": 2
     },
     "top_prefectures": {
-      "東京": 9,
-      "愛知": 7,
-      "栃木": 6,
+      "東京": 8,
+      "愛知": 5,
       "埼玉": 5,
       "兵庫": 4,
+      "栃木": 3,
       "千葉": 2,
-      "岩手": 2,
-      "熊本": 2,
       "広島": 1,
       "秋田": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "金の取引実態把握へ警視庁が立ち入り 相次ぐ強盗など受け",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015141531000.html",
+      "date": "2026-06-04",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "児童盗撮画像をSNSで共有 名古屋の元教諭に懲役3年6か月の判決",
       "url": "http://www3.nhk.or.jp/news/html/20260604/k10015141411000.html",
@@ -381,156 +388,6 @@
       "subtype": "crime_news",
       "lat": 35.1802,
       "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "検察の違法性を認定 国に110万円の賠償命じる 名古屋地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135421000.html",
-      "date": "2026-05-29",
-      "prefecture": "愛知",
-      "subtype": "fraud",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "事件の偽情報でアプリ登録誘導 「詳細はここから」に注意",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135351000.html",
-      "date": "2026-05-29",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北海道 旭川 高校生殺害事件 被告“被害者おいて立ち去った”",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135091000.html",
-      "date": "2026-05-29",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 48歳容疑者を公開手配 事件を主導か",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134801000.html",
-      "date": "2026-05-29",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町の山林火災が鎮火 発生から1か月余",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134941000.html",
-      "date": "2026-05-29",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "詐欺グループ「受け子」か逮捕 アプリで指示受けたか 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135061000.html",
-      "date": "2026-05-29",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 江戸川区 強盗予備の疑いで2人逮捕 金塊ねらったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135051000.html",
-      "date": "2026-05-29",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪 和泉 母娘殺害事件の容疑者を鑑定留置 検察",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134871000.html",
-      "date": "2026-05-29",
-      "prefecture": "大阪",
-      "subtype": "crime_news",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "熊本 八代新庁舎汚職事件 現金をさらに別の複数口座に移動か",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134851000.html",
-      "date": "2026-05-29",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大麻所持疑い逮捕のバレーボール選手“名古屋でもらった”説明",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134741000.html",
-      "date": "2026-05-29",
-      "prefecture": "愛知",
-      "subtype": "drug",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岩手 大槌町の山林火災を「局地激甚災害」に指定 政府",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134731000.html",
-      "date": "2026-05-29",
-      "prefecture": "岩手",
-      "subtype": "crime_news",
-      "lat": 39.7036,
-      "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "バレー元日本代表の大麻所持 元所属チームが薬物検査実施へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015135621000.html",
-      "date": "2026-05-29",
-      "prefecture": "",
-      "subtype": "drug",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_society"
-    },
-    {
-      "title": "首都直下地震対策 感震ブレーカーをおおむね設置 基本計画案",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134381000.html",
-      "date": "2026-05-28",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "熊本 八代新庁舎汚職事件 ジャーナリスト名乗り職員に接触か",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134401000.html",
-      "date": "2026-05-28",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 海外出国の逮捕状出された容疑者を公開手配へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260529/k10015134441000.html",
-      "date": "2026-05-28",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
       "source": "nhk_crime"
     }
   ]
