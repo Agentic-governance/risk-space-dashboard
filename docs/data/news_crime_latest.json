@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-03T22:15:03+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-06-04T05:23:55+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 44,
+      "nhk_crime": 45,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 16,
+      "crime_news": 17,
       "weapon": 3,
       "murder": 10,
       "terrorism": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "870億円無登録集金の会社 違法な勧誘報酬を正当と仮装か",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015140481000.html",
+      "date": "2026-06-04",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "兵庫 たつの 母娘殺害事件 川で見つかった遺体は容疑者と確認",
       "url": "http://www3.nhk.or.jp/news/html/20260604/k10015140301000.html",
