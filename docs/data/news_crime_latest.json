@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-04T20:37:54+00:00",
-    "total_count": 35,
+    "fetched_at": "2026-06-04T22:12:24+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 35
+      "nhk_crime": 37
     },
     "type_counts": {
+      "murder": 8,
       "robbery": 3,
       "voyeurism": 1,
       "crime_news": 13,
       "weapon": 3,
-      "murder": 6,
       "terrorism": 1,
       "theft": 2,
       "fraud": 2,
@@ -31,15 +31,36 @@
       "東京": 8,
       "愛知": 5,
       "埼玉": 5,
+      "栃木": 4,
       "兵庫": 4,
-      "栃木": 3,
       "千葉": 2,
+      "北海道": 1,
       "広島": 1,
       "秋田": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "路上で女性刺され死亡 殺人未遂疑いで男逮捕 北海道 千歳",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015141621000.html",
+      "date": "2026-06-04",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人事件 最初に確保の高校生をきょう再逮捕へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015141651000.html",
+      "date": "2026-06-04",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "金の取引実態把握へ警視庁が立ち入り 相次ぐ強盗など受け",
       "url": "http://www3.nhk.or.jp/news/html/20260605/k10015141531000.html",

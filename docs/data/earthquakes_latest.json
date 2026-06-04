@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-04T20:37:38+00:00",
+    "fetched_at": "2026-06-04T22:12:10+00:00",
     "filter_window_hours": 24,
     "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260605055746_20260605055446_VXSE5k_1",
+      "time": "2026-06-04T20:54:00+00:00",
+      "time_jst": "2026-06-05T05:54:00+09:00",
+      "lat": 35.0,
+      "lon": 136.8,
+      "magnitude": 3.0,
+      "depth_km": 20.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Ise Bay",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20260604123732_20260604123456_VXSE5k_1",
       "time": "2026-06-04T03:34:00+00:00",
@@ -105,20 +119,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260604060250_20260604060003_VXSE5k_1",
-      "time": "2026-06-03T21:00:00+00:00",
-      "time_jst": "2026-06-04T06:00:00+09:00",
-      "lat": 34.1,
-      "lon": 139.4,
-      "magnitude": 3.1,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Miyakejima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
