@@ -10,14 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-04T09:14:10+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-06-04T16:00:47+00:00",
+    "total_count": 49,
     "source_counts": {
-      "nhk_crime": 45,
+      "nhk_crime": 48,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 17,
+      "voyeurism": 1,
+      "crime_news": 19,
       "weapon": 3,
       "murder": 10,
       "terrorism": 1,
@@ -29,19 +30,49 @@
     },
     "top_prefectures": {
       "東京": 9,
+      "愛知": 7,
       "栃木": 6,
-      "愛知": 6,
       "埼玉": 5,
-      "兵庫": 3,
+      "兵庫": 4,
       "千葉": 2,
       "岩手": 2,
       "熊本": 2,
-      "秋田": 1,
-      "北海道": 1
+      "広島": 1,
+      "秋田": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "児童盗撮画像をSNSで共有 名古屋の元教諭に懲役3年6か月の判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015141411000.html",
+      "date": "2026-06-04",
+      "prefecture": "愛知",
+      "subtype": "voyeurism",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "兵庫 母娘殺害事件 容疑者の旧居に血の付いたペットボトル",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015141381000.html",
+      "date": "2026-06-04",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "老人ホームの入所者放置で逮捕の元職員 不起訴に 広島地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260604/k10015141371000.html",
+      "date": "2026-06-04",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "870億円無登録集金の会社 違法な勧誘報酬を正当と仮装か",
       "url": "http://www3.nhk.or.jp/news/html/20260604/k10015140481000.html",
