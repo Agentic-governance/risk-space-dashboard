@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-05T13:53:12+00:00",
-    "total_count": 43,
+    "fetched_at": "2026-06-05T16:32:17+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 43
+      "nhk_crime": 39
     },
     "type_counts": {
-      "murder": 9,
+      "murder": 7,
       "assault": 5,
-      "crime_news": 14,
+      "crime_news": 12,
       "theft": 3,
       "robbery": 3,
       "voyeurism": 1,
@@ -29,10 +29,10 @@
     },
     "top_prefectures": {
       "東京": 11,
-      "栃木": 5,
-      "愛知": 5,
       "埼玉": 5,
       "兵庫": 4,
+      "栃木": 3,
+      "愛知": 3,
       "北海道": 2,
       "千葉": 2,
       "大阪": 1,
@@ -430,46 +430,6 @@
       "subtype": "crime_news",
       "lat": 35.6073,
       "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "名古屋 歩行者の2人死亡 バスは赤信号で交差点進入か",
-      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135741000.html",
-      "date": "2026-05-30",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 新たに18歳高校生を逮捕 実行役1人紹介か",
-      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135911000.html",
-      "date": "2026-05-30",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人事件 手配容疑者が多額報酬示し知人つなげ勧誘か",
-      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015136031000.html",
-      "date": "2026-05-30",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "愛知 2歳男児はねられ死亡 運転の82歳を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260530/k10015135981000.html",
-      "date": "2026-05-30",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
       "source": "nhk_crime"
     }
   ]
