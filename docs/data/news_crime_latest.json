@@ -10,37 +10,98 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-05T02:19:14+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-06-05T10:47:47+00:00",
+    "total_count": 43,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 43
     },
     "type_counts": {
-      "murder": 8,
+      "murder": 9,
+      "assault": 5,
+      "crime_news": 14,
+      "theft": 3,
       "robbery": 3,
       "voyeurism": 1,
-      "crime_news": 13,
       "weapon": 3,
       "terrorism": 1,
-      "theft": 2,
       "fraud": 2,
-      "assault": 2,
       "drug": 2
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 11,
+      "栃木": 5,
       "愛知": 5,
       "埼玉": 5,
-      "栃木": 4,
       "兵庫": 4,
+      "北海道": 2,
       "千葉": 2,
-      "北海道": 1,
+      "大阪": 1,
       "広島": 1,
       "秋田": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人事件 公開手配の1人は中国経由でカンボジア移動か",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015142331000.html",
+      "date": "2026-06-05",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 千歳 路上で女性刺され死亡 現場近くで包丁2本見つかる",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015142381000.html",
+      "date": "2026-06-05",
+      "prefecture": "北海道",
+      "subtype": "assault",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "IT関連会社 遺体遺棄事件 静岡の山林で男性遺体見つかる",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015142311000.html",
+      "date": "2026-06-05",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "検察庁の全職員対象にハラスメント調査実施へ 平口法相",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015142021000.html",
+      "date": "2026-06-05",
+      "prefecture": "大阪",
+      "subtype": "assault",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 1000万円窃盗事件で新たに容疑者逮捕 トクリュウ指示役か",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015141811000.html",
+      "date": "2026-06-05",
+      "prefecture": "東京",
+      "subtype": "theft",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 歌舞伎町 14歳女子中学生に性的暴行か 容疑者再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015141901000.html",
+      "date": "2026-06-05",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "路上で女性刺され死亡 殺人未遂疑いで男逮捕 北海道 千歳",
       "url": "http://www3.nhk.or.jp/news/html/20260604/k10015141621000.html",
