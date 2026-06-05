@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-04T23:50:00+00:00",
+    "fetched_at": "2026-06-05T02:19:02+00:00",
     "filter_window_hours": 24,
-    "total_count": 5,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -63,20 +63,6 @@
       "location_name": "Adjacent Sea of Okinawa Main Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260604111342_20260604111012_VXSE5k_1",
-      "time": "2026-06-04T02:10:00+00:00",
-      "time_jst": "2026-06-04T11:10:00+09:00",
-      "lat": 36.1,
-      "lon": 140.1,
-      "magnitude": 2.7,
-      "depth_km": 70.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.0
     }
   ]
 }
