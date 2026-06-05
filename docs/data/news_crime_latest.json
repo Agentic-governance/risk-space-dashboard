@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-05T16:32:17+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-06-05T20:28:02+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 40
     },
     "type_counts": {
-      "murder": 7,
+      "murder": 8,
       "assault": 5,
       "crime_news": 12,
       "theft": 3,
@@ -30,8 +30,8 @@
     "top_prefectures": {
       "東京": 11,
       "埼玉": 5,
+      "栃木": 4,
       "兵庫": 4,
-      "栃木": 3,
       "愛知": 3,
       "北海道": 2,
       "千葉": 2,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人 事件後出国の48歳容疑者を国際手配",
+      "url": "http://www3.nhk.or.jp/news/html/20260606/k10015142661000.html",
+      "date": "2026-06-05",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 公開手配の1人は中国経由でカンボジア移動か",
       "url": "http://www3.nhk.or.jp/news/html/20260605/k10015142331000.html",

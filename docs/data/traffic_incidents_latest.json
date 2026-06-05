@@ -6,15 +6,14 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-05T16:32:06+00:00",
-    "fetched_at_jst": "2026-06-06T01:32:06+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-06-05T20:27:51+00:00",
+    "fetched_at_jst": "2026-06-06T05:27:51+09:00",
+    "total_count": 7,
     "source_counts": {
-      "yahoo_transit": 7,
-      "nhk_rss": 1
+      "yahoo_transit": 7
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "construction": 2,
       "disaster": 2,
       "congestion": 1
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -44,10 +43,10 @@
       "incident_type": "construction",
       "severity": 1,
       "road_name": "",
-      "description": "保守工事の影響で、6日の終日、東...",
+      "description": "保守工事の影響で、終日、東京〜品...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +60,7 @@
       "description": "横須賀線内での保守工事の影響で、...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +74,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +88,7 @@
       "description": "台風災害の影響で、片瀬白田〜伊豆...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +102,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -117,23 +116,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-05T16:32:06+00:00",
+      "occurred_at": "2026-06-05T20:27:51+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260605_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "信号装置設定ミス JRなど全国12事業者36駅で確認 国交省 — 国土交通省は、去年、東急田園都市線で列車どうしが衝突した事故を受けて、事故の原因となった信号装置の設定ミスがほかの鉄道でも起きていないか調べた結果、12の事業者の36駅で同様のミスが見つかったと発表しました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-05T11:42:41+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260605/k10015142471000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }
