@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-06T17:04:45+00:00",
+    "fetched_at": "2026-06-06T19:57:22+00:00",
     "filter_window_hours": 24,
-    "total_count": 5,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260607035550_20260607035233_VXSE5k_1",
+      "time": "2026-06-06T18:52:00+00:00",
+      "time_jst": "2026-06-07T03:52:00+09:00",
+      "lat": 40.1,
+      "lon": 142.5,
+      "magnitude": 4.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20260606203235_20260606202926_VXSE5k_1",
       "time": "2026-06-06T11:29:00+00:00",
