@@ -6,17 +6,19 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-06T07:45:55+00:00",
-    "fetched_at_jst": "2026-06-06T16:45:55+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-06-06T09:58:07+00:00",
+    "fetched_at_jst": "2026-06-06T18:58:07+09:00",
+    "total_count": 11,
     "source_counts": {
-      "yahoo_transit": 7
+      "yahoo_transit": 8,
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 4,
       "construction": 2,
-      "disaster": 2,
-      "congestion": 1
+      "disaster": 3,
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -29,10 +31,10 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "鷹の台駅で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
+      "occurred_at": "2026-06-06T09:58:07+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -40,15 +42,15 @@
       "event_id": "traffic_20260606_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
-      "incident_type": "construction",
-      "severity": 1,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "保守工事の影響で、終日、東京〜品...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
+      "occurred_at": "2026-06-06T09:58:07+00:00",
       "url": "",
-      "traffic_multiplier": 1.0
+      "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260606_0002",
@@ -57,15 +59,29 @@
       "incident_type": "construction",
       "severity": 1,
       "road_name": "",
-      "description": "横須賀線内での保守工事の影響で、...",
+      "description": "保守工事の影響で、終日、東京〜品...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
+      "occurred_at": "2026-06-06T09:58:07+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260606_0003",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "construction",
+      "severity": 1,
+      "road_name": "",
+      "description": "横須賀線内での保守工事の影響で、...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-06T09:58:07+00:00",
+      "url": "",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260606_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -74,23 +90,9 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
+      "occurred_at": "2026-06-06T09:58:07+00:00",
       "url": "",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260606_0004",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "台風災害の影響で、片瀬白田〜伊豆...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
-      "url": "",
-      "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260606_0005",
@@ -99,15 +101,29 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "天気アプリの決定版 Yahoo!天気・災害",
+      "description": "台風災害の影響で、片瀬白田〜伊豆...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
+      "occurred_at": "2026-06-06T09:58:07+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260606_0006",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "天気アプリの決定版 Yahoo!天気・災害",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-06T09:58:07+00:00",
+      "url": "",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260606_0007",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -116,9 +132,51 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-06T07:45:55+00:00",
+      "occurred_at": "2026-06-06T09:58:07+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260606_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "九州南部 線状降水帯発生のおそれ 7日未明～昼前 — 前線上の低気圧が7日、九州南部を通過して本州の南岸へ進む影響で、西日本の太平洋側を中心に非常に激しい雨が降る見込みです。九州南部では7日未明から昼前にかけて線状降水帯が発生するおそれがあり、気象庁は土砂災害などに警戒するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-06T09:11:14+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260606/k10015142821000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260606_0009",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "タンクローリー転落 81歳男性が海に飛び込み運転手救出 和歌山 — 和歌山市の漁港でタンクローリーが海に転落する事故がありましたが、近くにいた81歳の男性が海に飛び込んで運転していた男性を救出しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-06T09:03:30+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260606/k10015142931000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260606_0010",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "福島県内の7割の地域 放射線量が全国と同レベルに — 原子力規制委員会は東京電力福島第一原子力発電所の事故のあと、およそ15年間にわたり続けてきた福島県内の放射線量の測定結果をまとめました。去年12月には、県内の面積の7割にあたる地域で1時間当たりの放射線量が全国と同じレベルになったとしています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-06T09:19:19+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260606/k10015142831000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
