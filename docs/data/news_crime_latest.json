@@ -10,13 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-06T19:57:33+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-06-06T21:00:29+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 42
     },
     "type_counts": {
-      "murder": 9,
+      "fraud": 3,
+      "murder": 10,
       "crime_news": 11,
       "assault": 5,
       "theft": 3,
@@ -24,7 +25,6 @@
       "voyeurism": 1,
       "weapon": 3,
       "terrorism": 1,
-      "fraud": 2,
       "drug": 2
     },
     "top_prefectures": {
@@ -34,14 +34,34 @@
       "兵庫": 4,
       "北海道": 3,
       "愛知": 2,
+      "長野": 1,
       "大阪": 1,
       "広島": 1,
-      "千葉": 1,
-      "秋田": 1
+      "千葉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "カンボジア詐欺拠点の幹部か タイで日本人の男を拘束 警察発表",
+      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143041000.html",
+      "date": "2026-06-06",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "長野 天龍村 85歳妻をバットで殴るなどし殺害か 88歳夫を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143181000.html",
+      "date": "2026-06-06",
+      "prefecture": "長野",
+      "subtype": "murder",
+      "lat": 36.6513,
+      "lon": 138.181,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 高校生ら3人を再逮捕 容疑を否認",
       "url": "http://www3.nhk.or.jp/news/html/20260606/k10015142961000.html",
