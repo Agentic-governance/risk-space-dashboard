@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-07T10:05:08+00:00",
+    "fetched_at": "2026-06-07T11:52:53+00:00",
     "filter_window_hours": 24,
-    "total_count": 5,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -61,20 +61,6 @@
       "max_shindo_raw": "2",
       "max_shindo": 2,
       "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260606203235_20260606202926_VXSE5k_1",
-      "time": "2026-06-06T11:29:00+00:00",
-      "time_jst": "2026-06-06T20:29:00+09:00",
-      "lat": 33.3,
-      "lon": 140.8,
-      "magnitude": 4.8,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the east Coast of Hachijojima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
     }
