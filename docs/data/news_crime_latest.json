@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-07T07:05:13+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-06-07T10:05:22+00:00",
+    "total_count": 43,
     "source_counts": {
-      "nhk_crime": 42
+      "nhk_crime": 43
     },
     "type_counts": {
+      "murder": 11,
       "fraud": 3,
-      "murder": 10,
       "crime_news": 11,
       "assault": 5,
       "theft": 3,
@@ -29,7 +29,7 @@
     },
     "top_prefectures": {
       "東京": 11,
-      "栃木": 5,
+      "栃木": 6,
       "埼玉": 5,
       "兵庫": 4,
       "北海道": 3,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木強盗殺人 現場指示役か夫婦再逮捕「知らない」容疑を否認",
+      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143501000.html",
+      "date": "2026-06-07",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "カンボジア詐欺拠点の幹部か タイで日本人の男を拘束 警察発表",
       "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143041000.html",
