@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-07T02:47:55+00:00",
-    "fetched_at_jst": "2026-06-07T11:47:55+09:00",
+    "fetched_at": "2026-06-07T07:05:03+00:00",
+    "fetched_at_jst": "2026-06-07T16:05:03+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T02:47:55+00:00",
+      "occurred_at": "2026-06-07T07:05:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T02:47:55+00:00",
+      "occurred_at": "2026-06-07T07:05:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T02:47:55+00:00",
+      "occurred_at": "2026-06-07T07:05:03+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T02:47:55+00:00",
+      "occurred_at": "2026-06-07T07:05:03+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,11 +85,11 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "九州南部で局地的な大雨 四国などでも非常に激しい雨のおそれ — 前線と低気圧の影響で、九州南部では大気の状態が非常に不安定になり、局地的な大雨となりました。低気圧は次第に東へ移動し、四国などでも非常に激しい雨が降るおそれがあり、土砂災害などに十分注意が必要です。",
+      "description": "関東甲信と東海が梅雨入り 四国や近畿など激しい雨に注意 — 前線や低気圧の影響で九州南部では局地的な大雨となったほか、東日本でも雲が広がり、気象庁は7日午前11時、「関東甲信と東海が梅雨入りしたとみられる」と発表しました。四国や近畿などでは非常に激しい雨が降るおそれがあり、土砂災害などに十分注意が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T01:00:20+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143061000.html",
+      "occurred_at": "2026-06-07T03:41:44+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143271000.html",
       "traffic_multiplier": 2.4
     }
   ]
