@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-07T13:25:58+00:00",
-    "fetched_at_jst": "2026-06-07T22:25:58+09:00",
+    "fetched_at": "2026-06-07T15:14:00+00:00",
+    "fetched_at_jst": "2026-06-08T00:14:00+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T13:25:58+00:00",
+      "occurred_at": "2026-06-07T15:14:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T13:25:58+00:00",
+      "occurred_at": "2026-06-07T15:14:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T13:25:58+00:00",
+      "occurred_at": "2026-06-07T15:14:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T13:25:58+00:00",
+      "occurred_at": "2026-06-07T15:14:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -86,10 +86,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "沖縄 大雨に厳重警戒を 関東甲信と東海で梅雨入り — 前線や湿った空気の影響で東日本では雲が広がり、気象庁は7日、「関東甲信と東海が梅雨入りしたとみられる」と発表しました。一方、沖縄県では前線の活動が活発化して雨が強まっていて、「レベル4土砂災害危険警報」が発表されている地域があり、厳重な警戒が必要です。",
+      "description": "沖縄 土砂災害などに十分注意を 関東甲信と東海で梅雨入り — 前線や湿った空気の影響で東日本では雲が広がり、気象庁は7日、「関東甲信と東海が梅雨入りしたとみられる」と発表しました。一方、沖縄県では前線の活動が活発化して雨が強まっていて、土砂災害などに十分注意してください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T11:46:55+00:00",
+      "occurred_at": "2026-06-07T13:47:39+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143271000.html",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "陸自大規模演習「高速滑空弾」発射機 配備開始以来初めて公開 — 離島の防衛を想定した陸上自衛隊の大規模な実弾射撃演習が静岡県の演習場で行われました。この中で、「反撃能力」としても使うとされる長射程ミサイル「25式高速滑空弾」の発射機が、配備開始以来初めて公開されました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-07T08:47:06+00:00",
+      "occurred_at": "2026-06-07T13:51:30+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143411000.html",
       "traffic_multiplier": 1.0
     }
