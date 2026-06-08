@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-08T20:07:26+00:00",
+    "fetched_at": "2026-06-08T21:57:44+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260609055006_20260609054708_VXSE5k_1",
+      "time": "2026-06-08T20:47:00+00:00",
+      "time_jst": "2026-06-09T05:47:00+09:00",
+      "lat": 31.9,
+      "lon": 131.0,
+      "magnitude": 2.8,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Area along Mountains of Southern Miyazaki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260609030754_20260609030456_VXSE5k_1",
       "time": "2026-06-08T18:04:00+00:00",
