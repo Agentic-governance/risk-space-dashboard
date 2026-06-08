@@ -10,15 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-08T01:45:38+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-06-08T11:31:54+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 38
+      "nhk_crime": 40
     },
     "type_counts": {
+      "crime_news": 11,
+      "arson": 1,
       "murder": 10,
       "fraud": 3,
-      "crime_news": 10,
       "assault": 5,
       "theft": 3,
       "robbery": 2,
@@ -32,15 +33,35 @@
       "埼玉": 5,
       "兵庫": 4,
       "北海道": 3,
+      "愛知": 2,
+      "福島": 1,
       "長野": 1,
       "大阪": 1,
-      "愛知": 1,
-      "広島": 1,
-      "千葉": 1
+      "広島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "北陸道2人死亡事故 トラック運転手を酒気帯びなど疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260608/k10015144421000.html",
+      "date": "2026-06-08",
+      "prefecture": "福島",
+      "subtype": "crime_news",
+      "lat": 37.7502,
+      "lon": 140.4675,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "愛知 アパートに放火し3人殺害の事件 被告の弁護士が無罪主張",
+      "url": "http://www3.nhk.or.jp/news/html/20260608/k10015144371000.html",
+      "date": "2026-06-08",
+      "prefecture": "愛知",
+      "subtype": "arson",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 現場指示役か夫婦再逮捕 「知らない」と容疑否認",
       "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143501000.html",
