@@ -10,34 +10,34 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-08T15:01:27+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-06-08T17:49:07+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 31
     },
     "type_counts": {
-      "crime_news": 11,
+      "crime_news": 9,
       "arson": 1,
-      "murder": 10,
-      "fraud": 3,
-      "assault": 5,
+      "murder": 8,
+      "fraud": 2,
+      "assault": 4,
       "theft": 3,
-      "robbery": 2,
+      "robbery": 1,
       "voyeurism": 1,
-      "weapon": 3,
+      "weapon": 1,
       "terrorism": 1
     },
     "top_prefectures": {
-      "東京": 7,
       "栃木": 6,
-      "埼玉": 5,
+      "東京": 5,
       "兵庫": 4,
       "北海道": 3,
       "愛知": 2,
       "福島": 1,
       "長野": 1,
       "大阪": 1,
-      "広島": 1
+      "広島": 1,
+      "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -350,96 +350,6 @@
       "subtype": "theft",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "埼玉 ケアマネ殺害事件 以前から息子 “母の金なくなった”",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138551000.html",
-      "date": "2026-06-02",
-      "prefecture": "埼玉",
-      "subtype": "weapon",
-      "lat": 35.8573,
-      "lon": 139.6489,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 銀座 ひったくり被害装い2000万円余強奪か 3人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138541000.html",
-      "date": "2026-06-02",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "秋田 高齢女性が死亡 近くでクマを駆除 襲われたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138051000.html",
-      "date": "2026-06-02",
-      "prefecture": "秋田",
-      "subtype": "crime_news",
-      "lat": 39.7186,
-      "lon": 140.1024,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "マネーロンダリング目的の口座売買厳罰化 改正法成立",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138501000.html",
-      "date": "2026-06-02",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ジャンポケ斉藤元メンバー 被告人質問 “同意あると思った”",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138321000.html",
-      "date": "2026-06-02",
-      "prefecture": "",
-      "subtype": "assault",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "埼玉 殺害されたケアマネ 訪問直後に玄関付近で襲われたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138081000.html",
-      "date": "2026-06-02",
-      "prefecture": "埼玉",
-      "subtype": "weapon",
-      "lat": 35.8573,
-      "lon": 139.6489,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "「嵐」最終公演の東京ドームに作業員など装い侵入か 3人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015138071000.html",
-      "date": "2026-06-02",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "埼玉 ケアマネ殺害疑いの息子は一方的な思い込みで事件か",
-      "url": "http://www3.nhk.or.jp/news/html/20260602/k10015137721000.html",
-      "date": "2026-06-01",
-      "prefecture": "埼玉",
-      "subtype": "murder",
-      "lat": 35.8573,
-      "lon": 139.6489,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "埼玉 川口 ケアマネ女性刺し自らも刺したか 殺人容疑で捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260601/k10015137361000.html",
-      "date": "2026-06-01",
-      "prefecture": "埼玉",
-      "subtype": "murder",
-      "lat": 35.8573,
-      "lon": 139.6489,
       "source": "nhk_crime"
     }
   ]
