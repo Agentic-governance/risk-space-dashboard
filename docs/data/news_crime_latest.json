@@ -10,26 +10,26 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-09T01:33:36+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-06-09T05:46:08+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 33
     },
     "type_counts": {
       "assault": 5,
+      "theft": 4,
       "crime_news": 9,
       "arson": 1,
       "murder": 8,
       "fraud": 2,
-      "theft": 3,
       "robbery": 1,
       "voyeurism": 1,
       "weapon": 1,
       "terrorism": 1
     },
     "top_prefectures": {
+      "東京": 6,
       "栃木": 6,
-      "東京": 5,
       "兵庫": 4,
       "北海道": 3,
       "愛知": 2,
@@ -43,13 +43,23 @@
   },
   "incidents": [
     {
-      "title": "巨人 阿部慎之助前監督を暴行の疑いで書類送検 警視庁",
+      "title": "巨人 阿部前監督を暴行の疑いで書類送検 起訴求めず 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260609/k10015144791000.html",
       "date": "2026-06-09",
       "prefecture": "",
       "subtype": "assault",
       "lat": null,
       "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 台東区 4億円窃盗事件 暴力団員初公判で起訴内容認める",
+      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015144971000.html",
+      "date": "2026-06-09",
+      "prefecture": "東京",
+      "subtype": "theft",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
