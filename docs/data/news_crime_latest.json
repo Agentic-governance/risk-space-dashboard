@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-08T23:13:51+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-06-09T01:33:36+00:00",
+    "total_count": 32,
     "source_counts": {
-      "nhk_crime": 31
+      "nhk_crime": 32
     },
     "type_counts": {
+      "assault": 5,
       "crime_news": 9,
       "arson": 1,
       "murder": 8,
       "fraud": 2,
-      "assault": 4,
       "theft": 3,
       "robbery": 1,
       "voyeurism": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "巨人 阿部慎之助前監督を暴行の疑いで書類送検 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015144791000.html",
+      "date": "2026-06-09",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "北陸道2人死亡事故 トラック運転手を酒気帯びなど疑いで逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260608/k10015144421000.html",

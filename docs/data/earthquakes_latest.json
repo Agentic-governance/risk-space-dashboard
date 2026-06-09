@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-08T23:13:37+00:00",
+    "fetched_at": "2026-06-09T01:33:23+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -77,48 +77,6 @@
       "location_name": "Hamadori, Fukushima Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260608120858_20260608084413_VXSE5e_3",
-      "time": "2026-06-07T23:38:00+00:00",
-      "time_jst": "2026-06-08T08:38:00+09:00",
-      "lat": 5.7,
-      "lon": 125.2,
-      "magnitude": 8.2,
-      "depth_km": null,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Adjacent Philippines",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 4.0
-    },
-    {
-      "event_id": "20260608105809_20260608084413_VXSE5e_2",
-      "time": "2026-06-07T23:38:00+00:00",
-      "time_jst": "2026-06-08T08:38:00+09:00",
-      "lat": 5.7,
-      "lon": 125.2,
-      "magnitude": 8.2,
-      "depth_km": null,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Adjacent Philippines",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 4.0
-    },
-    {
-      "event_id": "20260608090655_20260608084413_VXSE5e_1",
-      "time": "2026-06-07T23:38:00+00:00",
-      "time_jst": "2026-06-08T08:38:00+09:00",
-      "lat": 5.7,
-      "lon": 125.2,
-      "magnitude": 8.2,
-      "depth_km": null,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Adjacent Philippines",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 4.0
     }
   ]
 }
