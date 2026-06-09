@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-09T21:36:32+00:00",
-    "fetched_at_jst": "2026-06-10T06:36:32+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-06-09T23:05:27+00:00",
+    "fetched_at_jst": "2026-06-10T08:05:27+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 1,
+      "disaster": 2,
       "congestion": 1,
       "restriction": 1
     },
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T21:36:32+00:00",
+      "occurred_at": "2026-06-09T23:05:27+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T21:36:32+00:00",
+      "occurred_at": "2026-06-09T23:05:27+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T21:36:32+00:00",
+      "occurred_at": "2026-06-09T23:05:27+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,12 +75,26 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T21:36:32+00:00",
+      "occurred_at": "2026-06-09T23:05:27+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260609_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "沖縄・奄美 11日にかけて激しい雨のおそれ 落雷や突風にも注意 — 停滞する梅雨前線の影響で、沖縄・奄美では11日にかけて大気の状態が非常に不安定になり、局地的に激しい雨が降るおそれがあります。気象庁は土砂災害や低い土地の浸水などに十分注意するとともに、落雷や突風にも注意するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-09T21:55:28+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145641000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260609_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "restriction",
