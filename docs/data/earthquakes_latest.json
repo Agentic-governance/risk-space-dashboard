@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-09T09:04:44+00:00",
+    "fetched_at": "2026-06-09T14:48:49+00:00",
     "filter_window_hours": 24,
     "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260609222057_20260609221550_VXSE5k_1",
+      "time": "2026-06-09T13:15:00+00:00",
+      "time_jst": "2026-06-09T22:15:00+09:00",
+      "lat": 36.7,
+      "lon": 140.6,
+      "magnitude": 2.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260609072953_20260609072634_VXSE5k_1",
       "time": "2026-06-08T22:26:00+00:00",
@@ -47,20 +61,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Toyama Bay",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260608234555_20260608234240_VXSE5k_1",
-      "time": "2026-06-08T14:42:00+00:00",
-      "time_jst": "2026-06-08T23:42:00+09:00",
-      "lat": 32.0,
-      "lon": 129.7,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusanada Sea",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }

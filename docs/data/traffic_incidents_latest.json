@@ -6,14 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-09T09:04:46+00:00",
-    "fetched_at_jst": "2026-06-09T18:04:46+09:00",
-    "total_count": 4,
+    "fetched_at": "2026-06-09T14:48:50+00:00",
+    "fetched_at_jst": "2026-06-09T23:48:50+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 4
+      "yahoo_transit": 5,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 4,
       "disaster": 1,
       "congestion": 1
     },
@@ -28,10 +29,10 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "新柏駅で発生した人身事故の影響で...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T09:04:46+00:00",
+      "occurred_at": "2026-06-09T14:48:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -41,16 +42,30 @@
       "source": "yahoo_transit",
       "incident_type": "accident",
       "severity": 3,
-      "road_name": "中川駅間での脱線",
-      "description": "国吉〜上総中川駅間での脱線事故の...",
+      "road_name": "",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T09:04:46+00:00",
+      "occurred_at": "2026-06-09T14:48:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260609_0002",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "中川駅間での脱線",
+      "description": "国吉〜上総中川駅間での脱線事故の...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-09T14:48:50+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260609_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -59,12 +74,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T09:04:46+00:00",
+      "occurred_at": "2026-06-09T14:48:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260609_0003",
+      "event_id": "traffic_20260609_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -73,9 +88,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T09:04:46+00:00",
+      "occurred_at": "2026-06-09T14:48:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260609_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "北海道 知床沖沈没事故 民事訴訟 社長「気象情報確認した」 — 北海道・知床半島沖で観光船が沈没し、乗客と乗員合わせて20人が死亡し、6人が行方不明となっている事故で、乗客の家族などが運航会社や社長に賠償を求めている裁判で、運航会社の社長は「気象情報を確認し、出航の判断について船長と協議していた」と述べました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-09T11:34:53+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015145331000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }

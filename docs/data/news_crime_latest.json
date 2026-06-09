@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-09T09:04:55+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-06-09T14:49:00+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 34
     },
     "type_counts": {
+      "crime_news": 10,
       "assault": 5,
       "theft": 4,
-      "crime_news": 9,
       "arson": 1,
       "murder": 8,
       "fraud": 2,
@@ -30,8 +30,8 @@
     "top_prefectures": {
       "東京": 6,
       "栃木": 6,
+      "北海道": 4,
       "兵庫": 4,
-      "北海道": 3,
       "愛知": 2,
       "福島": 1,
       "長野": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "北海道 知床沖沈没事故 民事訴訟 社長「気象情報確認した」",
+      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015145331000.html",
+      "date": "2026-06-09",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "巨人 阿部前監督を暴行の疑いで書類送検 起訴求めず 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260609/k10015144791000.html",
