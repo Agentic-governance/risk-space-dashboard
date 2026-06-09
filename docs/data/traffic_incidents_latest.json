@@ -6,16 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-09T19:38:20+00:00",
-    "fetched_at_jst": "2026-06-10T04:38:20+09:00",
-    "total_count": 4,
+    "fetched_at": "2026-06-09T21:36:32+00:00",
+    "fetched_at_jst": "2026-06-10T06:36:32+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 4
+      "yahoo_transit": 4,
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 2,
       "disaster": 1,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -31,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T19:38:20+00:00",
+      "occurred_at": "2026-06-09T21:36:32+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -45,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T19:38:20+00:00",
+      "occurred_at": "2026-06-09T21:36:32+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -59,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T19:38:20+00:00",
+      "occurred_at": "2026-06-09T21:36:32+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -73,9 +75,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-09T19:38:20+00:00",
+      "occurred_at": "2026-06-09T21:36:32+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260609_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "サプリメントの安全性確保へ 製造の適正管理義務づけ 消費者庁 — 健康のためにとる「サプリメント」の安全性を確保するため、消費者庁の審議会は、製造する事業者などに適正な品質管理を義務づける新たな規制を導入する案を取りまとめました。記事の後半では、なぜサプリ規制？とQ＆Aで詳しく解説しています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-09T21:33:06+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145491000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
