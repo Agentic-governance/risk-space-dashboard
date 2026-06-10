@@ -10,37 +10,68 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-09T23:05:39+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-06-10T05:00:41+00:00",
+    "total_count": 30,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 30
     },
     "type_counts": {
-      "crime_news": 9,
+      "groping": 1,
+      "crime_news": 10,
+      "voyeurism": 2,
       "assault": 4,
       "theft": 2,
       "arson": 1,
       "murder": 7,
       "fraud": 1,
       "robbery": 1,
-      "voyeurism": 1,
       "weapon": 1
     },
     "top_prefectures": {
+      "東京": 5,
       "栃木": 5,
       "北海道": 4,
-      "東京": 4,
       "兵庫": 3,
       "愛知": 2,
+      "滋賀": 1,
       "福島": 1,
       "長野": 1,
       "大阪": 1,
-      "広島": 1,
-      "埼玉": 1
+      "広島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "痴漢防止へ 防犯アプリ「デジポリス」利用など呼びかけ 東京",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145981000.html",
+      "date": "2026-06-10",
+      "prefecture": "東京",
+      "subtype": "groping",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "日本サイクリング協会代表理事ら逮捕 3000万円詐取か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145941000.html",
+      "date": "2026-06-10",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "分べん台の妊婦を盗撮か 元研修医を書類送検へ 大阪府警",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145921000.html",
+      "date": "2026-06-10",
+      "prefecture": "滋賀",
+      "subtype": "voyeurism",
+      "lat": 35.0045,
+      "lon": 135.8686,
+      "source": "nhk_crime"
+    },
     {
       "title": "北海道 知床沖沈没事故 民事訴訟 社長「気象情報確認した」",
       "url": "http://www3.nhk.or.jp/news/html/20260609/k10015145331000.html",
