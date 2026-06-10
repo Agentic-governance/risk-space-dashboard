@@ -6,15 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-10T05:00:32+00:00",
-    "fetched_at_jst": "2026-06-10T14:00:32+09:00",
-    "total_count": 4,
+    "fetched_at": "2026-06-10T08:49:15+00:00",
+    "fetched_at_jst": "2026-06-10T17:49:15+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 4
+      "yahoo_transit": 4,
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 1,
+      "disaster": 3,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -31,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-10T05:00:32+00:00",
+      "occurred_at": "2026-06-10T08:49:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -45,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-10T05:00:32+00:00",
+      "occurred_at": "2026-06-10T08:49:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -59,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-10T05:00:32+00:00",
+      "occurred_at": "2026-06-10T08:49:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -73,9 +74,37 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-10T05:00:32+00:00",
+      "occurred_at": "2026-06-10T08:49:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260610_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "沖縄 宮古島市の池間島全域に避難指示 — 沖縄県の宮古島市は土砂災害危険警報が発表されたことを受けて午後3時半、池間島全域に避難指示を出しました。5段階の警戒レベルのうちレベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-10T07:03:47+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146101000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260610_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "沖縄・奄美に前線停滞 東海～九州は梅雨の晴れ間 熱中症対策を — 停滞する梅雨前線の影響で、沖縄・奄美では11日にかけて局地的に激しい雨が降るおそれがあり、気象庁は土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。一方、東海から九州にかけては気温が上がり、30度以上の真夏日となるところもある見込みで、熱中症対策を心がけるようにしてください。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-10T05:18:41+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145641000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }

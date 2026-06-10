@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-10T05:00:41+00:00",
+    "fetched_at": "2026-06-10T08:49:25+00:00",
     "total_count": 30,
     "source_counts": {
       "nhk_crime": 30
     },
     "type_counts": {
+      "voyeurism": 2,
       "groping": 1,
       "crime_news": 10,
-      "voyeurism": 2,
       "assault": 4,
       "theft": 2,
       "arson": 1,
@@ -43,6 +43,16 @@
   },
   "incidents": [
     {
+      "title": "分べん台の妊婦を盗撮か 元研修医を書類送検 大阪府警",
+      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145921000.html",
+      "date": "2026-06-10",
+      "prefecture": "滋賀",
+      "subtype": "voyeurism",
+      "lat": 35.0045,
+      "lon": 135.8686,
+      "source": "nhk_crime"
+    },
+    {
       "title": "痴漢防止へ 防犯アプリ「デジポリス」利用など呼びかけ 東京",
       "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145981000.html",
       "date": "2026-06-10",
@@ -60,16 +70,6 @@
       "subtype": "crime_news",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "分べん台の妊婦を盗撮か 元研修医を書類送検へ 大阪府警",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145921000.html",
-      "date": "2026-06-10",
-      "prefecture": "滋賀",
-      "subtype": "voyeurism",
-      "lat": 35.0045,
-      "lon": 135.8686,
       "source": "nhk_crime"
     },
     {
