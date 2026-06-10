@@ -2,12 +2,68 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-10T08:49:12+00:00",
+    "fetched_at": "2026-06-10T16:19:35+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260610225159_20260610224854_VXSE5k_1",
+      "time": "2026-06-10T13:48:00+00:00",
+      "time_jst": "2026-06-10T22:48:00+09:00",
+      "lat": 36.5,
+      "lon": 137.9,
+      "magnitude": 1.8,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Nagano Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260610194058_20260610193518_VXSE5k_1",
+      "time": "2026-06-10T10:35:00+00:00",
+      "time_jst": "2026-06-10T19:35:00+09:00",
+      "lat": 43.4,
+      "lon": 136.1,
+      "magnitude": 5.6,
+      "depth_km": 350.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Sea of Japan",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.2
+    },
+    {
+      "event_id": "20260610185835_20260610185552_VXSE5k_1",
+      "time": "2026-06-10T09:55:00+00:00",
+      "time_jst": "2026-06-10T18:55:00+09:00",
+      "lat": 39.9,
+      "lon": 142.4,
+      "magnitude": 3.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260610180429_20260610180130_VXSE5k_1",
+      "time": "2026-06-10T09:01:00+00:00",
+      "time_jst": "2026-06-10T18:01:00+09:00",
+      "lat": 34.2,
+      "lon": 135.8,
+      "magnitude": 3.6,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Nara Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260610161830_20260610161433_VXSE5k_1",
       "time": "2026-06-10T07:14:00+00:00",
@@ -49,20 +105,6 @@
       "location_name": "Off the east Coast of Hokkaido",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260609222057_20260609221550_VXSE5k_1",
-      "time": "2026-06-09T13:15:00+00:00",
-      "time_jst": "2026-06-09T22:15:00+09:00",
-      "lat": 36.7,
-      "lon": 140.6,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
