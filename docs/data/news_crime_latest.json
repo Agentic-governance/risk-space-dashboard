@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-11T11:24:31+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-06-11T15:08:23+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 35,
+      "nhk_crime": 38,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 8,
+      "crime_news": 10,
+      "assault": 7,
       "murder": 8,
       "robbery": 4,
       "drug": 2,
       "indecent_act": 1,
-      "assault": 6,
       "suspicious_person": 1,
       "voyeurism": 1,
       "groping": 1,
@@ -35,24 +35,44 @@
       "北海道": 5,
       "栃木": 5,
       "大阪": 3,
+      "愛知": 2,
+      "沖縄": 1,
       "神奈川": 1,
       "埼玉": 1,
       "茨城": 1,
-      "滋賀": 1,
-      "福島": 1,
-      "愛知": 1
+      "滋賀": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "違法スカウトグループ「ナチュラル」ナンバー2を逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147671000.html",
+      "title": "暗号資産のマネロンを手助けか 2人逮捕 海外当局と共同捜査",
+      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147881000.html",
       "date": "2026-06-11",
-      "prefecture": "大阪",
+      "prefecture": "",
       "subtype": "crime_news",
-      "lat": 34.6937,
-      "lon": 135.5023,
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "沖縄 性的暴行疑いで書類送検の米兵 不起訴に",
+      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147731000.html",
+      "date": "2026-06-11",
+      "prefecture": "沖縄",
+      "subtype": "assault",
+      "lat": 26.2124,
+      "lon": 127.6809,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "名古屋 マイクロバス2人死亡事故で運転手の鑑定留置始まる",
+      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147781000.html",
+      "date": "2026-06-11",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
       "source": "nhk_crime"
     },
     {
@@ -63,6 +83,16 @@
       "subtype": "murder",
       "lat": 35.4478,
       "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "違法スカウトグループ「ナチュラル」ナンバー2を逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147671000.html",
+      "date": "2026-06-11",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
       "source": "nhk_crime"
     },
     {
