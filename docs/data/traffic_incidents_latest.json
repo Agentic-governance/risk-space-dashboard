@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-11T22:52:45+00:00",
-    "fetched_at_jst": "2026-06-12T07:52:45+09:00",
+    "fetched_at": "2026-06-12T05:19:19+00:00",
+    "fetched_at_jst": "2026-06-12T14:19:19+09:00",
     "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
-      "accident": 3,
+      "fallen_tree": 1,
+      "accident": 2,
       "disaster": 1,
       "congestion": 1
     },
@@ -23,7 +23,21 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260611_0000",
+      "event_id": "traffic_20260612_0000",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "fallen_tree",
+      "severity": 2,
+      "road_name": "",
+      "description": "金子〜東飯能駅間で発生した倒木の...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-12T05:19:19+00:00",
+      "url": "",
+      "traffic_multiplier": 1.3
+    },
+    {
+      "event_id": "traffic_20260612_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +46,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-11T22:52:45+00:00",
+      "occurred_at": "2026-06-12T05:19:19+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260611_0001",
+      "event_id": "traffic_20260612_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +60,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-11T22:52:45+00:00",
+      "occurred_at": "2026-06-12T05:19:19+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260611_0002",
+      "event_id": "traffic_20260612_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +74,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-11T22:52:45+00:00",
+      "occurred_at": "2026-06-12T05:19:19+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260611_0003",
+      "event_id": "traffic_20260612_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -74,23 +88,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-11T22:52:45+00:00",
+      "occurred_at": "2026-06-12T05:19:19+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260611_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "チョルノービリ原発周辺自治体 事故の復興で双葉町と協定へ — チョルノービリ原子力発電所、ロシア語ではチェルノブイリ原発で、“史上最悪”と言われる事故が発生してからことしで40年。ウクライナにある原発周辺の自治体は、同じく原発事故を経験した福島県双葉町と、今月下旬にも連携協定を結び、復興に向けた意見交換や事故の教訓の情報共有などを行う方向で調整を進めていることがわかりました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-11T21:32:02+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260612/k10015147861000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }
