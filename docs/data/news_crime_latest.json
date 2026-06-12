@@ -10,18 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-12T05:19:29+00:00",
+    "fetched_at": "2026-06-12T09:47:43+00:00",
     "total_count": 34,
     "source_counts": {
       "nhk_crime": 33,
       "nhk_society": 1
     },
     "type_counts": {
-      "weapon": 1,
+      "assault": 5,
       "murder": 7,
       "robbery": 4,
       "crime_news": 9,
-      "assault": 4,
       "drug": 2,
       "indecent_act": 1,
       "suspicious_person": 1,
@@ -47,11 +46,11 @@
   },
   "incidents": [
     {
-      "title": "JR新潟駅近く 男性切りつけられたか 立ち去った人物の行方捜査",
+      "title": "JR新潟駅近く 男性切りつけられたか 傷害事件として捜査",
       "url": "http://www3.nhk.or.jp/news/html/20260612/k10015148351000.html",
       "date": "2026-06-12",
       "prefecture": "新潟",
-      "subtype": "weapon",
+      "subtype": "assault",
       "lat": 37.9026,
       "lon": 139.0232,
       "source": "nhk_crime"
