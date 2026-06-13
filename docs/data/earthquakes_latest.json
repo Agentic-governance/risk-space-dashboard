@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-13T10:17:17+00:00",
+    "fetched_at": "2026-06-13T14:41:22+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260613225421_20260613225140_VXSE5k_1",
+      "time": "2026-06-13T13:51:00+00:00",
+      "time_jst": "2026-06-13T22:51:00+09:00",
+      "lat": 24.5,
+      "lon": 123.9,
+      "magnitude": 2.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Iriomotejima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260613200256_20260613195956_VXSE5k_1",
+      "time": "2026-06-13T10:59:00+00:00",
+      "time_jst": "2026-06-13T19:59:00+09:00",
+      "lat": 38.3,
+      "lon": 141.9,
+      "magnitude": 3.5,
+      "depth_km": 70.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
     {
       "event_id": "20260613045305_20260613044937_VXSE5k_1",
       "time": "2026-06-12T19:49:00+00:00",
