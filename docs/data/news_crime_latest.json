@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-13T16:14:44+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-06-13T17:57:25+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 31,
+      "nhk_crime": 28,
       "nhk_society": 1
     },
     "type_counts": {
-      "murder": 6,
+      "murder": 4,
       "assault": 5,
       "robbery": 4,
       "crime_news": 8,
@@ -27,8 +27,7 @@
       "voyeurism": 1,
       "groping": 1,
       "theft": 1,
-      "arson": 1,
-      "fraud": 1
+      "arson": 1
     },
     "top_prefectures": {
       "東京": 8,
@@ -333,36 +332,6 @@
       "subtype": "arson",
       "lat": 35.1802,
       "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 現場指示役か夫婦再逮捕 「知らない」と容疑否認",
-      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143501000.html",
-      "date": "2026-06-07",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "カンボジア詐欺拠点の幹部か タイで日本人の男を拘束 警察発表",
-      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143041000.html",
-      "date": "2026-06-06",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "長野 天龍村 85歳妻をバットで殴るなどし殺害か 88歳夫を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260607/k10015143181000.html",
-      "date": "2026-06-06",
-      "prefecture": "長野",
-      "subtype": "murder",
-      "lat": 36.6513,
-      "lon": 138.181,
       "source": "nhk_crime"
     }
   ]
