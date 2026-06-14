@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-14T15:30:05+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-06-14T16:58:02+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 30,
+      "nhk_crime": 28,
       "nhk_society": 1
     },
     "type_counts": {
       "assault": 6,
-      "crime_news": 9,
+      "crime_news": 8,
       "murder": 4,
       "robbery": 4,
       "drug": 2,
@@ -26,19 +26,18 @@
       "suspicious_person": 1,
       "voyeurism": 1,
       "groping": 1,
-      "theft": 1,
-      "arson": 1
+      "theft": 1
     },
     "top_prefectures": {
       "東京": 8,
       "神奈川": 4,
-      "愛知": 2,
       "大阪": 2,
       "北海道": 2,
       "千葉": 1,
       "岩手": 1,
       "新潟": 1,
       "沖縄": 1,
+      "愛知": 1,
       "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
@@ -332,26 +331,6 @@
       "subtype": "theft",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北陸道2人死亡事故 トラック運転手を酒気帯びなど疑いで逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260608/k10015144421000.html",
-      "date": "2026-06-08",
-      "prefecture": "福島",
-      "subtype": "crime_news",
-      "lat": 37.7502,
-      "lon": 140.4675,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "愛知 アパートに放火し3人殺害の事件 被告の弁護士が無罪主張",
-      "url": "http://www3.nhk.or.jp/news/html/20260608/k10015144371000.html",
-      "date": "2026-06-08",
-      "prefecture": "愛知",
-      "subtype": "arson",
-      "lat": 35.1802,
-      "lon": 136.9066,
       "source": "nhk_crime"
     }
   ]
