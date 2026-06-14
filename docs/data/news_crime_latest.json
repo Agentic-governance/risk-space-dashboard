@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-13T23:01:24+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-06-14T03:36:33+00:00",
+    "total_count": 30,
     "source_counts": {
-      "nhk_crime": 28,
+      "nhk_crime": 29,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 9,
       "murder": 4,
       "assault": 5,
       "robbery": 4,
-      "crime_news": 8,
       "drug": 2,
       "indecent_act": 1,
       "suspicious_person": 1,
@@ -35,15 +35,25 @@
       "愛知": 2,
       "大阪": 2,
       "北海道": 2,
+      "岩手": 1,
       "新潟": 1,
       "沖縄": 1,
       "埼玉": 1,
-      "茨城": 1,
-      "滋賀": 1
+      "茨城": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "岩手・宮城内陸地震から18年 7人死亡の旅館近くの慰霊碑で追悼",
+      "url": "http://www3.nhk.or.jp/news/html/20260614/k10015149581000.html",
+      "date": "2026-06-14",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
     {
       "title": "女子高校生殺害事件 逮捕の19歳元交際相手“カッとなった”",
       "url": "http://www3.nhk.or.jp/news/html/20260612/k10015148681000.html",
