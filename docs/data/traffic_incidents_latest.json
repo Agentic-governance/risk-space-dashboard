@@ -6,17 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-15T20:28:17+00:00",
-    "fetched_at_jst": "2026-06-16T05:28:17+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-06-15T22:38:46+00:00",
+    "fetched_at_jst": "2026-06-16T07:38:46+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
       "accident": 2,
       "construction": 1,
-      "disaster": 2,
+      "disaster": 1,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-15T20:28:17+00:00",
+      "occurred_at": "2026-06-15T22:38:46+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-15T20:28:17+00:00",
+      "occurred_at": "2026-06-15T22:38:46+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-15T20:28:17+00:00",
+      "occurred_at": "2026-06-15T22:38:46+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-15T20:28:17+00:00",
+      "occurred_at": "2026-06-15T22:38:46+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,23 +88,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-15T20:28:17+00:00",
+      "occurred_at": "2026-06-15T22:38:46+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260615_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "沖縄と鹿児島 激しい雨のおそれ 沖縄ではレベル4危険警報も — 梅雨前線の影響で沖縄県では断続的に雨が強まり、「レベル4土砂災害危険警報」が発表されている地域があります。沖縄県から鹿児島県では16日夜にかけて大気の不安定な状態が続き、雨が激しく降るおそれがあり、気象庁は、土砂災害に厳重に警戒するとともに、低い土地の浸水などにも十分注意するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-15T15:53:05+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150381000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
