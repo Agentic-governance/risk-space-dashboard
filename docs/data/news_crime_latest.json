@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-15T05:40:47+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-06-15T11:51:17+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 30,
+      "nhk_crime": 33,
       "nhk_society": 1
     },
     "type_counts": {
+      "murder": 5,
+      "assault": 7,
+      "crime_news": 10,
       "voyeurism": 2,
-      "crime_news": 9,
-      "assault": 6,
-      "murder": 4,
       "robbery": 4,
       "drug": 2,
       "indecent_act": 1,
@@ -29,9 +29,9 @@
       "theft": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 10,
       "神奈川": 5,
-      "大阪": 2,
+      "大阪": 3,
       "北海道": 2,
       "京都": 1,
       "千葉": 1,
@@ -43,6 +43,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大阪 高齢男性死亡 同じマンション元住人を強盗殺人容疑で逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150491000.html",
+      "date": "2026-06-15",
+      "prefecture": "大阪",
+      "subtype": "murder",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "巨人 阿部前監督を起訴猶予に 東京地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150531000.html",
+      "date": "2026-06-15",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 港区 地域通貨「みなトクPAY」40万円分詐取か 少年を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150451000.html",
+      "date": "2026-06-15",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "児童にわいせつなどの罪 横浜の元教諭に懲役8年 名古屋地裁",
       "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150221000.html",
