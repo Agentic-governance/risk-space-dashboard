@@ -10,29 +10,28 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-15T11:51:17+00:00",
-    "total_count": 34,
+    "fetched_at": "2026-06-15T17:00:59+00:00",
+    "total_count": 32,
     "source_counts": {
-      "nhk_crime": 33,
+      "nhk_crime": 31,
       "nhk_society": 1
     },
     "type_counts": {
-      "murder": 5,
-      "assault": 7,
-      "crime_news": 10,
+      "murder": 6,
+      "assault": 6,
+      "crime_news": 9,
       "voyeurism": 2,
       "robbery": 4,
       "drug": 2,
       "indecent_act": 1,
       "suspicious_person": 1,
-      "groping": 1,
-      "theft": 1
+      "groping": 1
     },
     "top_prefectures": {
-      "東京": 10,
+      "東京": 9,
       "神奈川": 5,
       "大阪": 3,
-      "北海道": 2,
+      "大分": 1,
       "京都": 1,
       "千葉": 1,
       "岩手": 1,
@@ -43,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "別府市ひき逃げ事件 八田與一容疑者の新たな手配ポスター公開",
+      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150661000.html",
+      "date": "2026-06-15",
+      "prefecture": "大分",
+      "subtype": "murder",
+      "lat": 33.2382,
+      "lon": 131.6126,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪 高齢男性死亡 同じマンション元住人を強盗殺人容疑で逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150491000.html",
@@ -352,36 +361,6 @@
       "lat": null,
       "lon": null,
       "source": "nhk_society"
-    },
-    {
-      "title": "北海道 知床沖沈没事故 民事訴訟 社長「気象情報確認した」",
-      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015145331000.html",
-      "date": "2026-06-09",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "巨人 阿部前監督を暴行の疑いで書類送検 起訴求めず 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015144791000.html",
-      "date": "2026-06-09",
-      "prefecture": "",
-      "subtype": "assault",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 台東区 4億円窃盗事件 暴力団員初公判で起訴内容認める",
-      "url": "http://www3.nhk.or.jp/news/html/20260609/k10015144971000.html",
-      "date": "2026-06-09",
-      "prefecture": "東京",
-      "subtype": "theft",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
     }
   ]
 }
