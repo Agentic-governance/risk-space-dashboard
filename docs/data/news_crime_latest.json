@@ -10,39 +10,59 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-14T23:04:23+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-06-15T05:40:47+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 28,
+      "nhk_crime": 30,
       "nhk_society": 1
     },
     "type_counts": {
+      "voyeurism": 2,
+      "crime_news": 9,
       "assault": 6,
-      "crime_news": 8,
       "murder": 4,
       "robbery": 4,
       "drug": 2,
       "indecent_act": 1,
       "suspicious_person": 1,
-      "voyeurism": 1,
       "groping": 1,
       "theft": 1
     },
     "top_prefectures": {
       "東京": 8,
-      "神奈川": 4,
+      "神奈川": 5,
       "大阪": 2,
       "北海道": 2,
+      "京都": 1,
       "千葉": 1,
       "岩手": 1,
       "新潟": 1,
       "沖縄": 1,
-      "愛知": 1,
-      "埼玉": 1
+      "愛知": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "児童にわいせつなどの罪 横浜の元教諭に懲役8年 名古屋地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150221000.html",
+      "date": "2026-06-15",
+      "prefecture": "神奈川",
+      "subtype": "voyeurism",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 本田衆議院議員事務所に車突っ込み逃走か 容疑者逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260615/k10015150141000.html",
+      "date": "2026-06-15",
+      "prefecture": "京都",
+      "subtype": "crime_news",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
     {
       "title": "ボビー・オロゴン容疑者を性的暴行の疑いで逮捕  容疑を否認",
       "url": "http://www3.nhk.or.jp/news/html/20260614/k10015149671000.html",
