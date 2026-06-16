@@ -10,26 +10,27 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-16T05:49:43+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-06-16T11:00:10+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 32,
+      "nhk_crime": 34,
       "nhk_society": 1
     },
     "type_counts": {
+      "fraud": 1,
+      "robbery": 5,
       "exposure": 1,
       "murder": 6,
       "assault": 6,
       "crime_news": 9,
       "voyeurism": 2,
-      "robbery": 4,
       "drug": 2,
       "indecent_act": 1,
       "suspicious_person": 1,
       "groping": 1
     },
     "top_prefectures": {
-      "東京": 9,
+      "東京": 10,
       "神奈川": 5,
       "大阪": 3,
       "大分": 1,
@@ -43,6 +44,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "カンボジア拠点の特殊詐欺 日本人を逮捕 オーナーの立場か",
+      "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151151000.html",
+      "date": "2026-06-16",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "新宿 質店強盗未遂事件で新たに2人逮捕 指示役か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151361000.html",
+      "date": "2026-06-16",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "SFTS患者数 過去最多を上回るペースで増加 マダニ対策の徹底を",
       "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151141000.html",
