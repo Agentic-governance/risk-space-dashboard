@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-16T19:34:21+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-06-16T22:06:38+00:00",
+    "total_count": 28,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 28
     },
     "type_counts": {
+      "crime_news": 7,
       "stalking": 1,
       "fraud": 1,
       "robbery": 5,
       "exposure": 1,
       "murder": 6,
       "assault": 4,
-      "crime_news": 6,
       "voyeurism": 1,
       "drug": 1,
       "indecent_act": 1
@@ -30,18 +30,28 @@
     "top_prefectures": {
       "東京": 7,
       "神奈川": 5,
+      "北海道": 2,
       "大阪": 2,
       "大分": 1,
       "京都": 1,
       "千葉": 1,
       "岩手": 1,
       "新潟": 1,
-      "沖縄": 1,
-      "愛知": 1
+      "沖縄": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "知床沖 観光船沈没事故 運航会社社長の刑事裁判 きょう判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015151961000.html",
+      "date": "2026-06-16",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "ストーカーに治療促す取り組み強化へ公認心理師と連携 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151491000.html",
