@@ -10,11 +10,10 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-16T15:53:58+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-06-16T19:34:21+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 35,
-      "nhk_society": 1
+      "nhk_crime": 27
     },
     "type_counts": {
       "stalking": 1,
@@ -22,18 +21,16 @@
       "robbery": 5,
       "exposure": 1,
       "murder": 6,
-      "assault": 6,
-      "crime_news": 9,
-      "voyeurism": 2,
-      "drug": 2,
-      "indecent_act": 1,
-      "suspicious_person": 1,
-      "groping": 1
+      "assault": 4,
+      "crime_news": 6,
+      "voyeurism": 1,
+      "drug": 1,
+      "indecent_act": 1
     },
     "top_prefectures": {
-      "東京": 10,
+      "東京": 7,
       "神奈川": 5,
-      "大阪": 3,
+      "大阪": 2,
       "大分": 1,
       "京都": 1,
       "千葉": 1,
@@ -314,96 +311,6 @@
       "lat": 35.6762,
       "lon": 139.6503,
       "source": "nhk_crime"
-    },
-    {
-      "title": "大阪 天王寺の地下街で女性刺される 襲った2人組は逃走",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146371000.html",
-      "date": "2026-06-10",
-      "prefecture": "大阪",
-      "subtype": "assault",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "恐喝未遂の疑いで高校生5人逮捕 生成AIに相談し金額決めたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146341000.html",
-      "date": "2026-06-10",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "日本郵便 入札不正事件 元社員を再逮捕 別業者からも賄賂か",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146231000.html",
-      "date": "2026-06-10",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "さいたまの中学校でスプレー誤って噴射 生徒ら18人搬送",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146091000.html",
-      "date": "2026-06-10",
-      "prefecture": "埼玉",
-      "subtype": "suspicious_person",
-      "lat": 35.8573,
-      "lon": 139.6489,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ワゴン車盗の疑い 2人とヤード側を逮捕 300台超か 神奈川県警",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146161000.html",
-      "date": "2026-06-10",
-      "prefecture": "茨城",
-      "subtype": "crime_news",
-      "lat": 36.3418,
-      "lon": 140.4468,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "分べん台の妊婦を盗撮か 元研修医を書類送検 大阪府警",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145921000.html",
-      "date": "2026-06-10",
-      "prefecture": "滋賀",
-      "subtype": "voyeurism",
-      "lat": 35.0045,
-      "lon": 135.8686,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "痴漢防止へ 防犯アプリ「デジポリス」利用など呼びかけ 東京",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145981000.html",
-      "date": "2026-06-10",
-      "prefecture": "東京",
-      "subtype": "groping",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "日本サイクリング協会代表理事ら逮捕 3000万円詐取か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015145941000.html",
-      "date": "2026-06-10",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "バレー日本代表の大麻所持 SVリーグが薬物検査実施へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260610/k10015146431000.html",
-      "date": "2026-06-10",
-      "prefecture": "",
-      "subtype": "drug",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_society"
     }
   ]
 }
