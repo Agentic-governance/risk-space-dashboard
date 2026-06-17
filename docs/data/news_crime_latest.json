@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-17T20:39:55+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-06-17T22:36:45+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 29
     },
     "type_counts": {
+      "murder": 8,
       "crime_news": 7,
       "arson": 1,
       "terrorism": 1,
       "fraud": 4,
-      "murder": 7,
       "stalking": 1,
       "robbery": 2,
       "exposure": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "”介護殺人”加害者7割超が心身不調も相談は3人に1人 NHK分析",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015152831000.html",
+      "date": "2026-06-17",
+      "prefecture": "",
+      "subtype": "murder",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "自作プログラムでキャンペーン多数応募しギフトカード詐取か",
       "url": "http://www3.nhk.or.jp/news/html/20260618/k10015152891000.html",
