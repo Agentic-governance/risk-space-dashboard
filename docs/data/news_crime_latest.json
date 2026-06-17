@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-17T02:05:12+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-06-17T07:16:23+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 31
     },
     "type_counts": {
+      "fraud": 3,
       "crime_news": 8,
       "stalking": 1,
-      "fraud": 1,
       "robbery": 5,
       "exposure": 1,
       "murder": 6,
@@ -42,6 +42,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "地下銀行運営で詐欺の被害金を資金洗浄か 2人逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152371000.html",
+      "date": "2026-06-17",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "カンボジア拠点の特殊詐欺 だまし取った金の3割受け取ったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152231000.html",
+      "date": "2026-06-17",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "知床沖観光船事故めぐり判決 運航会社社長に禁錮5年 釧路地裁",
       "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152141000.html",
