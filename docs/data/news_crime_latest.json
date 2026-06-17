@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-16T23:31:49+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-06-17T02:05:12+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 29
     },
     "type_counts": {
-      "crime_news": 7,
+      "crime_news": 8,
       "stalking": 1,
       "fraud": 1,
       "robbery": 5,
@@ -30,7 +30,7 @@
     "top_prefectures": {
       "東京": 7,
       "神奈川": 5,
-      "北海道": 2,
+      "北海道": 3,
       "大阪": 2,
       "大分": 1,
       "京都": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "知床沖観光船事故めぐり判決 運航会社社長に禁錮5年 釧路地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152141000.html",
+      "date": "2026-06-17",
+      "prefecture": "北海道",
+      "subtype": "crime_news",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "知床沖 観光船沈没事故 運航会社社長の刑事裁判 きょう判決",
       "url": "http://www3.nhk.or.jp/news/html/20260617/k10015151961000.html",

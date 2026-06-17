@@ -6,14 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-16T23:31:38+00:00",
-    "fetched_at_jst": "2026-06-17T08:31:38+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-06-17T02:05:02+00:00",
+    "fetched_at_jst": "2026-06-17T11:05:02+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 5
+      "yahoo_transit": 5,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "construction": 1,
       "disaster": 1,
       "congestion": 1
@@ -23,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260616_0000",
+      "event_id": "traffic_20260617_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-16T23:31:38+00:00",
+      "occurred_at": "2026-06-17T02:05:02+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260616_0001",
+      "event_id": "traffic_20260617_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -46,12 +47,12 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-16T23:31:38+00:00",
+      "occurred_at": "2026-06-17T02:05:02+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260616_0002",
+      "event_id": "traffic_20260617_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -60,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-16T23:31:38+00:00",
+      "occurred_at": "2026-06-17T02:05:02+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260616_0003",
+      "event_id": "traffic_20260617_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -74,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-16T23:31:38+00:00",
+      "occurred_at": "2026-06-17T02:05:02+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260616_0004",
+      "event_id": "traffic_20260617_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -88,9 +89,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-16T23:31:38+00:00",
+      "occurred_at": "2026-06-17T02:05:02+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260617_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "知床沖観光船事故めぐり判決 運航会社社長に禁錮5年 釧路地裁 — 北海道の知床半島沖で観光船が沈没して乗客と乗員あわせて20人が死亡し、6人が行方不明になっている事故で、業務上過失致死の罪に問われた運航会社社長の62歳の被告に釧路地方裁判所は、禁錮5年の判決を言い渡しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-17T01:51:40+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152141000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }

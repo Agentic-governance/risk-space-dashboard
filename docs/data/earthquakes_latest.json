@@ -2,7 +2,7 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-16T23:31:35+00:00",
+    "fetched_at": "2026-06-17T02:04:57+00:00",
     "filter_window_hours": 24,
     "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
