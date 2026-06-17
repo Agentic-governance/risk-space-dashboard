@@ -10,40 +10,48 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-17T15:46:08+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-06-17T20:39:55+00:00",
+    "total_count": 28,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 28
     },
     "type_counts": {
+      "crime_news": 7,
       "arson": 1,
       "terrorism": 1,
-      "crime_news": 9,
       "fraud": 4,
-      "murder": 8,
+      "murder": 7,
       "stalking": 1,
-      "robbery": 5,
+      "robbery": 2,
       "exposure": 1,
-      "assault": 4,
-      "voyeurism": 1,
-      "drug": 1,
-      "indecent_act": 1
+      "assault": 3,
+      "voyeurism": 1
     },
     "top_prefectures": {
-      "東京": 7,
-      "神奈川": 5,
-      "北海道": 3,
-      "愛知": 2,
-      "大阪": 2,
+      "東京": 4,
+      "神奈川": 4,
+      "北海道": 2,
+      "愛知": 1,
       "福岡": 1,
       "埼玉": 1,
       "大分": 1,
+      "大阪": 1,
       "京都": 1,
       "千葉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "自作プログラムでキャンペーン多数応募しギフトカード詐取か",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015152891000.html",
+      "date": "2026-06-17",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "愛知 弥富 アパート放火で3人殺害事件 検察が無期懲役求刑",
       "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152711000.html",
@@ -307,106 +315,6 @@
     {
       "title": "住居侵入疑いで逮捕の2人 当日に三鷹市の現場も下見か",
       "url": "http://www3.nhk.or.jp/news/html/20260612/k10015147851000.html",
-      "date": "2026-06-11",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "暗号資産のマネロンを手助けか 2人逮捕 海外当局と共同捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147881000.html",
-      "date": "2026-06-11",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "沖縄 性的暴行疑いで書類送検の米兵 不起訴に",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147731000.html",
-      "date": "2026-06-11",
-      "prefecture": "沖縄",
-      "subtype": "assault",
-      "lat": 26.2124,
-      "lon": 127.6809,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "名古屋 マイクロバス2人死亡事故で運転手の鑑定留置始まる",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147781000.html",
-      "date": "2026-06-11",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "女子高校生が河川敷で死亡 元交際相手を殺人疑いで逮捕 相模原",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015146971000.html",
-      "date": "2026-06-11",
-      "prefecture": "神奈川",
-      "subtype": "murder",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "違法スカウトグループ「ナチュラル」ナンバー2を逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147671000.html",
-      "date": "2026-06-11",
-      "prefecture": "大阪",
-      "subtype": "crime_news",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北海道 江別 強盗致死事件 当時18歳被告に懲役20年求刑",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147501000.html",
-      "date": "2026-06-11",
-      "prefecture": "北海道",
-      "subtype": "robbery",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "「Def Tech」メンバー コカイン使用の罪などで有罪判決",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147311000.html",
-      "date": "2026-06-11",
-      "prefecture": "東京",
-      "subtype": "drug",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "トクリュウの実行役とみられる2人を再逮捕 別事件にも関与か",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147071000.html",
-      "date": "2026-06-11",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "わいせつ行為ライブ配信か 3人逮捕 約1億円利益か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015147111000.html",
-      "date": "2026-06-11",
-      "prefecture": "",
-      "subtype": "indecent_act",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 池袋の路上で強盗傷害事件 約800万円被害か",
-      "url": "http://www3.nhk.or.jp/news/html/20260611/k10015146911000.html",
       "date": "2026-06-11",
       "prefecture": "東京",
       "subtype": "robbery",
