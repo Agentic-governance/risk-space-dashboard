@@ -10,31 +10,31 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-18T07:33:02+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-06-18T11:40:52+00:00",
+    "total_count": 36,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 36
     },
     "type_counts": {
-      "drug": 1,
+      "robbery": 3,
       "crime_news": 8,
-      "fraud": 5,
+      "fraud": 7,
+      "voyeurism": 2,
+      "drug": 1,
       "murder": 8,
       "arson": 1,
       "terrorism": 1,
       "stalking": 1,
-      "robbery": 2,
       "exposure": 1,
-      "assault": 3,
-      "voyeurism": 1
+      "assault": 3
     },
     "top_prefectures": {
       "東京": 5,
       "神奈川": 4,
+      "埼玉": 2,
       "北海道": 2,
       "愛知": 1,
       "福岡": 1,
-      "埼玉": 1,
       "大分": 1,
       "大阪": 1,
       "京都": 1,
@@ -43,6 +43,56 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "トクリュウ 案件屋など主に5段階の役割か 情報100万円で売買も",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153611000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "中国からベビーシッター不正に入国させたか 会社役員ら逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153211000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "詐欺拠点の摘発相次ぐ東南アジア 「リエゾン」配置で連携強化",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153751000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "カンボジア拠点の特殊詐欺 100万円で「かけ子」送り込みか",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153711000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "略式命令に誤り 検事総長が「非常上告」で取り消し求める",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153651000.html",
+      "date": "2026-06-18",
+      "prefecture": "埼玉",
+      "subtype": "voyeurism",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
     {
       "title": "大麻所持の罪で起訴 バレーボール元日本代表が保釈され謝罪",
       "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153461000.html",
@@ -71,16 +121,6 @@
       "subtype": "fraud",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "中国からベビーシッター不正に入国させたか会社役員ら逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153211000.html",
-      "date": "2026-06-18",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
       "source": "nhk_crime"
     },
     {
