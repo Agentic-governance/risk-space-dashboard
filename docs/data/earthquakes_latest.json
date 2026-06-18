@@ -1,26 +1,68 @@
 {
   "metadata": {
-    "source": "USGS FDSN (JMA unavailable)",
-    "url": "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2026-06-17&minlatitude=24&maxlatitude=46&minlongitude=122&maxlongitude=146&minmagnitude=2",
-    "fetched_at": "2026-06-18T11:40:40+00:00",
+    "source": "Japan Meteorological Agency (JMA)",
+    "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
+    "fetched_at": "2026-06-18T14:49:59+00:00",
     "filter_window_hours": 24,
-    "total_count": 1,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
     {
-      "event_id": "us7000stna",
-      "time": "2026-06-17T14:28:50+00:00",
-      "time_jst": "2026-06-17T23:28:50+09:00",
-      "lat": 38.8127,
-      "lon": 144.6073,
-      "magnitude": 4.7,
-      "depth_km": 10,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "240 km ESE of Yamada, Japan",
-      "source": "usgs_fdsn",
-      "earthquake_multiplier": 2.0
+      "event_id": "20260618130935_20260618130602_VXSE5k_1",
+      "time": "2026-06-18T04:06:00+00:00",
+      "time_jst": "2026-06-18T13:06:00+09:00",
+      "lat": 36.5,
+      "lon": 137.9,
+      "magnitude": 2.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Nagano Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260618111815_20260618111518_VXSE5k_1",
+      "time": "2026-06-18T02:15:00+00:00",
+      "time_jst": "2026-06-18T11:15:00+09:00",
+      "lat": 34.3,
+      "lon": 135.2,
+      "magnitude": 2.3,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southern Osaka Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260618033853_20260618033559_VXSE5k_1",
+      "time": "2026-06-17T18:35:00+00:00",
+      "time_jst": "2026-06-18T03:35:00+09:00",
+      "lat": 38.3,
+      "lon": 141.6,
+      "magnitude": 3.5,
+      "depth_km": 60.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260618021010_20260618020719_VXSE5k_1",
+      "time": "2026-06-17T17:07:00+00:00",
+      "time_jst": "2026-06-18T02:07:00+09:00",
+      "lat": 32.1,
+      "lon": 131.9,
+      "magnitude": 3.1,
+      "depth_km": 30.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Hyuganada Sea",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
     }
   ]
 }
