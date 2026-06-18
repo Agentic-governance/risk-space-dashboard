@@ -10,17 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-18T02:58:10+00:00",
-    "total_count": 30,
+    "fetched_at": "2026-06-18T07:33:02+00:00",
+    "total_count": 32,
     "source_counts": {
-      "nhk_crime": 30
+      "nhk_crime": 32
     },
     "type_counts": {
+      "drug": 1,
       "crime_news": 8,
+      "fraud": 5,
       "murder": 8,
       "arson": 1,
       "terrorism": 1,
-      "fraud": 4,
       "stalking": 1,
       "robbery": 2,
       "exposure": 1,
@@ -28,7 +29,7 @@
       "voyeurism": 1
     },
     "top_prefectures": {
-      "東京": 4,
+      "東京": 5,
       "神奈川": 4,
       "北海道": 2,
       "愛知": 1,
@@ -43,7 +44,37 @@
   },
   "incidents": [
     {
-      "title": "中国からベビーシッター不正に入国させたか 会社役員ら逮捕",
+      "title": "大麻所持の罪で起訴 バレーボール元日本代表が保釈され謝罪",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153461000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "drug",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "自作プログラムでキャンペーンに多数応募 ギフトカード詐取か",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015152891000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "元衆議院議員 弁護士の名義貸した罪で猶予付き有罪判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153291000.html",
+      "date": "2026-06-18",
+      "prefecture": "東京",
+      "subtype": "fraud",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "中国からベビーシッター不正に入国させたか会社役員ら逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153211000.html",
       "date": "2026-06-18",
       "prefecture": "",
@@ -58,16 +89,6 @@
       "date": "2026-06-17",
       "prefecture": "",
       "subtype": "murder",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "自作プログラムでキャンペーン多数応募しギフトカード詐取か",
-      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015152891000.html",
-      "date": "2026-06-17",
-      "prefecture": "",
-      "subtype": "crime_news",
       "lat": null,
       "lon": null,
       "source": "nhk_crime"
