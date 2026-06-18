@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-17T22:36:45+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-06-18T02:58:10+00:00",
+    "total_count": 30,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 30
     },
     "type_counts": {
+      "crime_news": 8,
       "murder": 8,
-      "crime_news": 7,
       "arson": 1,
       "terrorism": 1,
       "fraud": 4,
@@ -43,7 +43,17 @@
   },
   "incidents": [
     {
-      "title": "”介護殺人”加害者7割超が心身不調も相談は3人に1人 NHK分析",
+      "title": "中国からベビーシッター不正に入国させたか 会社役員ら逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153211000.html",
+      "date": "2026-06-18",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“介護殺人”加害者7割超が心身不調も相談は3人に1人 NHK分析",
       "url": "http://www3.nhk.or.jp/news/html/20260618/k10015152831000.html",
       "date": "2026-06-17",
       "prefecture": "",
