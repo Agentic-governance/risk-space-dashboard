@@ -10,33 +10,33 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-18T14:50:11+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-06-18T20:16:29+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 36
+      "nhk_crime": 31
     },
     "type_counts": {
-      "robbery": 3,
+      "robbery": 2,
       "crime_news": 8,
       "fraud": 7,
       "voyeurism": 2,
       "drug": 1,
-      "murder": 8,
+      "murder": 5,
       "arson": 1,
       "terrorism": 1,
       "stalking": 1,
       "exposure": 1,
-      "assault": 3
+      "assault": 2
     },
     "top_prefectures": {
-      "東京": 5,
-      "神奈川": 4,
+      "東京": 4,
       "埼玉": 2,
       "北海道": 2,
       "愛知": 1,
       "福岡": 1,
       "大分": 1,
       "大阪": 1,
+      "神奈川": 1,
       "京都": 1,
       "千葉": 1
     },
@@ -351,56 +351,6 @@
       "subtype": "crime_news",
       "lat": 39.7036,
       "lon": 141.1527,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "女子高校生殺害事件 逮捕の19歳元交際相手“カッとなった”",
-      "url": "http://www3.nhk.or.jp/news/html/20260612/k10015148681000.html",
-      "date": "2026-06-12",
-      "prefecture": "神奈川",
-      "subtype": "murder",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "JR新潟駅近く 男性切りつけられたか 傷害事件として捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260612/k10015148351000.html",
-      "date": "2026-06-12",
-      "prefecture": "新潟",
-      "subtype": "assault",
-      "lat": 37.9026,
-      "lon": 139.0232,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "女子高校生殺害 逮捕の19歳元交際相手 “復縁断られた”",
-      "url": "http://www3.nhk.or.jp/news/html/20260612/k10015148311000.html",
-      "date": "2026-06-12",
-      "prefecture": "神奈川",
-      "subtype": "murder",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "相模原 女子高校生死亡 隠した形跡なし スマホも残されたまま",
-      "url": "http://www3.nhk.or.jp/news/html/20260612/k10015147871000.html",
-      "date": "2026-06-11",
-      "prefecture": "神奈川",
-      "subtype": "murder",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "住居侵入疑いで逮捕の2人 当日に三鷹市の現場も下見か",
-      "url": "http://www3.nhk.or.jp/news/html/20260612/k10015147851000.html",
-      "date": "2026-06-11",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     }
   ]
