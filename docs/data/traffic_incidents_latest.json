@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-19T21:47:56+00:00",
-    "fetched_at_jst": "2026-06-20T06:47:56+09:00",
+    "fetched_at": "2026-06-19T22:49:43+00:00",
+    "fetched_at_jst": "2026-06-20T07:49:43+09:00",
     "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T21:47:56+00:00",
+      "occurred_at": "2026-06-19T22:49:43+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "工事の影響で、終日、里見〜上総中...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T21:47:56+00:00",
+      "occurred_at": "2026-06-19T22:49:43+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T21:47:56+00:00",
+      "occurred_at": "2026-06-19T22:49:43+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T21:47:56+00:00",
+      "occurred_at": "2026-06-19T22:49:43+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T21:47:56+00:00",
+      "occurred_at": "2026-06-19T22:49:43+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,7 +114,7 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "イギリス南東部 列車どうしが衝突 1人死亡 多数けが — イギリス南東部で19日、列車どうしが衝突する事故があり、1人が死亡し、多くの人がけがをしているということで、警察が詳しい状況を調べています。",
+      "description": "イギリス南東部 列車どうしが衝突 1人死亡 けが人多数 — イギリス南東部で19日、列車どうしが衝突する事故があり、1人が死亡し、多くの人がけがをしているということで、警察が詳しい状況を調べています。",
       "lat": null,
       "lon": null,
       "occurred_at": "2026-06-19T21:15:26+00:00",
