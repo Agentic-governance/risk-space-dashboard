@@ -10,16 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-19T05:38:27+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-06-19T10:18:21+00:00",
+    "total_count": 38,
     "source_counts": {
-      "nhk_crime": 36
+      "nhk_crime": 38
     },
     "type_counts": {
+      "robbery": 3,
+      "fraud": 8,
+      "weapon": 1,
       "murder": 7,
       "crime_news": 10,
-      "fraud": 8,
-      "robbery": 2,
       "voyeurism": 2,
       "drug": 1,
       "arson": 1,
@@ -29,7 +30,7 @@
       "assault": 2
     },
     "top_prefectures": {
-      "東京": 5,
+      "東京": 7,
       "大阪": 2,
       "埼玉": 2,
       "北海道": 2,
@@ -43,6 +44,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "強盗傷害事件直後から30年フィリピンに逃亡の被告に懲役5年",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154601000.html",
+      "date": "2026-06-19",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "医療法人の事業譲渡めぐり3億5000万円詐取疑いで逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154101000.html",
+      "date": "2026-06-19",
+      "prefecture": "大阪",
+      "subtype": "fraud",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“北陸新幹線に刃物持った乗客” けが人なし 乗客から話聞く",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154471000.html",
+      "date": "2026-06-19",
+      "prefecture": "東京",
+      "subtype": "weapon",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "滋賀 日野町の強盗殺人事件の再審で検察が有罪主張しない方針",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154181000.html",
@@ -71,16 +102,6 @@
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "医療法人の事業譲渡めぐり3億5000万円詐取疑いで逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154101000.html",
-      "date": "2026-06-19",
-      "prefecture": "大阪",
-      "subtype": "fraud",
-      "lat": 34.6937,
-      "lon": 135.5023,
       "source": "nhk_crime"
     },
     {
