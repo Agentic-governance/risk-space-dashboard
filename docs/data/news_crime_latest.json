@@ -10,18 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-18T22:35:23+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-06-19T05:38:27+00:00",
+    "total_count": 36,
     "source_counts": {
-      "nhk_crime": 31
+      "nhk_crime": 36
     },
     "type_counts": {
+      "murder": 7,
+      "crime_news": 10,
+      "fraud": 8,
       "robbery": 2,
-      "crime_news": 8,
-      "fraud": 7,
       "voyeurism": 2,
       "drug": 1,
-      "murder": 5,
       "arson": 1,
       "terrorism": 1,
       "stalking": 1,
@@ -29,20 +29,70 @@
       "assault": 2
     },
     "top_prefectures": {
-      "東京": 4,
+      "東京": 5,
+      "大阪": 2,
       "埼玉": 2,
       "北海道": 2,
+      "滋賀": 1,
+      "栃木": 1,
+      "兵庫": 1,
       "愛知": 1,
       "福岡": 1,
-      "大分": 1,
-      "大阪": 1,
-      "神奈川": 1,
-      "京都": 1,
-      "千葉": 1
+      "大分": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "滋賀 日野町の強盗殺人事件の再審で検察が有罪主張しない方針",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154181000.html",
+      "date": "2026-06-19",
+      "prefecture": "滋賀",
+      "subtype": "murder",
+      "lat": 35.0045,
+      "lon": 135.8686,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "LINE交換しキャバクラスカウトか 2人逮捕 女性警察官か確認か",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154331000.html",
+      "date": "2026-06-19",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木 強盗殺人事件で逮捕の容疑者 新宿区での金庫盗にも関与か",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154301000.html",
+      "date": "2026-06-19",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "医療法人の事業譲渡めぐり3億5000万円詐取疑いで逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154101000.html",
+      "date": "2026-06-19",
+      "prefecture": "大阪",
+      "subtype": "fraud",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "兵庫 丹波篠山 住宅火災 2人死亡",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154061000.html",
+      "date": "2026-06-18",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "トクリュウ 案件屋など主に5段階の役割か 情報100万円で売買も",
       "url": "http://www3.nhk.or.jp/news/html/20260618/k10015153611000.html",
