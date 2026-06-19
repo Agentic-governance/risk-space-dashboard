@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-19T10:18:10+00:00",
+    "fetched_at": "2026-06-19T13:59:07+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260619202035_20260619201755_VXSE5k_1",
+      "time": "2026-06-19T11:17:00+00:00",
+      "time_jst": "2026-06-19T20:17:00+09:00",
+      "lat": 33.7,
+      "lon": 134.9,
+      "magnitude": 3.0,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kiisuido Strait",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260619073629_20260619073313_VXSE5k_1",
       "time": "2026-06-18T22:33:00+00:00",

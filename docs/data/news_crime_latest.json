@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-19T10:18:21+00:00",
+    "fetched_at": "2026-06-19T13:59:18+00:00",
     "total_count": 38,
     "source_counts": {
       "nhk_crime": 38
     },
     "type_counts": {
+      "murder": 7,
       "robbery": 3,
       "fraud": 8,
       "weapon": 1,
-      "murder": 7,
       "crime_news": 10,
       "voyeurism": 2,
       "drug": 1,
@@ -44,6 +44,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "滋賀 日野町の強盗殺人事件の再審で検察が有罪主張しない方針",
+      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154181000.html",
+      "date": "2026-06-19",
+      "prefecture": "滋賀",
+      "subtype": "murder",
+      "lat": 35.0045,
+      "lon": 135.8686,
+      "source": "nhk_crime"
+    },
     {
       "title": "強盗傷害事件直後から30年フィリピンに逃亡の被告に懲役5年",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154601000.html",
@@ -72,16 +82,6 @@
       "subtype": "weapon",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "滋賀 日野町の強盗殺人事件の再審で検察が有罪主張しない方針",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154181000.html",
-      "date": "2026-06-19",
-      "prefecture": "滋賀",
-      "subtype": "murder",
-      "lat": 35.0045,
-      "lon": 135.8686,
       "source": "nhk_crime"
     },
     {
