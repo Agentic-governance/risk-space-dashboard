@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-19T16:33:10+00:00",
+    "fetched_at": "2026-06-19T20:17:10+00:00",
     "filter_window_hours": 24,
     "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260620032100_20260620031724_VXSE5k_1",
+      "time": "2026-06-19T18:17:00+00:00",
+      "time_jst": "2026-06-20T03:17:00+09:00",
+      "lat": 36.8,
+      "lon": 137.9,
+      "magnitude": 4.2,
+      "depth_km": 220.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Nagano Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260619202035_20260619201755_VXSE5k_1",
       "time": "2026-06-19T11:17:00+00:00",
@@ -35,20 +49,6 @@
       "location_name": "Off the Coast of Fukushima Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260619034710_20260619034408_VXSE5k_1",
-      "time": "2026-06-18T18:44:00+00:00",
-      "time_jst": "2026-06-19T03:44:00+09:00",
-      "lat": 35.2,
-      "lon": 140.5,
-      "magnitude": 3.7,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the east Coast of Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
