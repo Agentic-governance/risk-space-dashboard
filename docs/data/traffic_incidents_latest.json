@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-19T20:17:11+00:00",
-    "fetched_at_jst": "2026-06-20T05:17:11+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-06-19T21:47:56+00:00",
+    "fetched_at_jst": "2026-06-20T06:47:56+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 5,
       "construction": 1,
       "disaster": 1,
       "congestion": 1
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T20:17:11+00:00",
+      "occurred_at": "2026-06-19T21:47:56+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "工事の影響で、終日、里見〜上総中...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T20:17:11+00:00",
+      "occurred_at": "2026-06-19T21:47:56+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T20:17:11+00:00",
+      "occurred_at": "2026-06-19T21:47:56+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T20:17:11+00:00",
+      "occurred_at": "2026-06-19T21:47:56+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T20:17:11+00:00",
+      "occurred_at": "2026-06-19T21:47:56+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,10 +114,24 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "東海道・山陽新幹線 始発から平常どおり運行へ — 東海道新幹線は、19日夕方、浜松駅で起きた人身事故の影響でダイヤが大幅に乱れました。20日は始発から平常どおり運行するということです。",
+      "description": "イギリス南東部 列車どうしが衝突 1人死亡 多数けが — イギリス南東部で19日、列車どうしが衝突する事故があり、1人が死亡し、多くの人がけがをしているということで、警察が詳しい状況を調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-19T19:54:00+00:00",
+      "occurred_at": "2026-06-19T21:15:26+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155071000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260619_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "東海道・山陽新幹線 始発から平常どおり運行 — 東海道新幹線は、19日夕方、浜松駅で起きた人身事故の影響でダイヤが大幅に乱れました。20日は始発から平常どおり運行しています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-19T21:14:37+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155011000.html",
       "traffic_multiplier": 1.6
     }
