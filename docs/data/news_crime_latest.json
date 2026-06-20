@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-20T10:32:33+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-06-20T14:43:43+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 38
+      "nhk_crime": 39
     },
     "type_counts": {
+      "crime_news": 11,
       "murder": 7,
       "robbery": 3,
       "fraud": 8,
       "weapon": 1,
-      "crime_news": 10,
       "voyeurism": 2,
       "drug": 1,
       "arson": 1,
@@ -31,12 +31,12 @@
     },
     "top_prefectures": {
       "東京": 7,
+      "兵庫": 2,
       "大阪": 2,
       "埼玉": 2,
       "北海道": 2,
       "滋賀": 1,
       "栃木": 1,
-      "兵庫": 1,
       "愛知": 1,
       "福岡": 1,
       "大分": 1
@@ -44,6 +44,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "神戸 マンションで切断された遺体見つかる",
+      "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155511000.html",
+      "date": "2026-06-20",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "滋賀 日野町の強盗殺人事件の再審で検察が有罪主張しない方針",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154181000.html",
