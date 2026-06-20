@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-20T03:45:39+00:00",
-    "fetched_at_jst": "2026-06-20T12:45:39+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-06-20T07:48:14+00:00",
+    "fetched_at_jst": "2026-06-20T16:48:14+09:00",
+    "total_count": 9,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 2
+      "yahoo_transit": 6,
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 6,
       "construction": 1,
-      "disaster": 2,
+      "disaster": 1,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -30,15 +30,29 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "館山〜九重駅間で発生した踏切事故...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-20T03:45:39+00:00",
+      "occurred_at": "2026-06-20T07:48:14+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260620_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "事故・遅延情報はありません",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-20T07:48:14+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260620_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +61,12 @@
       "description": "工事の影響で、終日、里見〜上総中...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-20T03:45:39+00:00",
+      "occurred_at": "2026-06-20T07:48:14+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260620_0002",
+      "event_id": "traffic_20260620_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -61,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-20T03:45:39+00:00",
+      "occurred_at": "2026-06-20T07:48:14+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260620_0003",
+      "event_id": "traffic_20260620_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-20T03:45:39+00:00",
+      "occurred_at": "2026-06-20T07:48:14+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260620_0004",
+      "event_id": "traffic_20260620_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -89,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-20T03:45:39+00:00",
+      "occurred_at": "2026-06-20T07:48:14+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260620_0005",
+      "event_id": "traffic_20260620_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -108,18 +122,32 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260620_0006",
+      "event_id": "traffic_20260620_0007",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "東北南部と新潟県含む北陸が梅雨入り 激しい雨のおそれ — 梅雨前線が北上している影響で西日本から北日本の広い範囲で曇りや雨となっていて気象庁は20日午前11時、「東北南部と北陸が梅雨入りしたとみられる」と発表しました。九州から東北南部を中心に21日にかけて激しい雨が降るおそれがあり、気象庁は土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。",
+      "description": "ドイツ南部で貨物列車どうしが衝突し橋から落下 1人重傷 — ロイター通信によりますとドイツ南部のミュンヘンで20日、貨物列車どうしが衝突する事故があり、一部の車両が脱線して橋から落下しました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-20T03:03:12+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155191000.html",
-      "traffic_multiplier": 2.4
+      "occurred_at": "2026-06-20T07:22:20+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155341000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260620_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "イギリス南東部で列車どうしが衝突 1人死亡 約90人けが — イギリス南東部で19日、列車どうしが衝突する事故があり、1人が死亡し、90人近くがけがをしているということで、警察が詳しい状況を調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-19T22:57:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155071000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
