@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-21T20:15:07+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-06-21T21:54:51+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 33
     },
     "type_counts": {
+      "murder": 6,
       "assault": 1,
       "crime_news": 8,
-      "murder": 5,
       "robbery": 3,
       "fraud": 8,
       "weapon": 1,
@@ -31,9 +31,9 @@
     },
     "top_prefectures": {
       "東京": 5,
+      "北海道": 3,
       "兵庫": 2,
       "埼玉": 2,
-      "北海道": 2,
       "神奈川": 1,
       "滋賀": 1,
       "大阪": 1,
@@ -44,6 +44,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "北海道 旭川 高校生殺害事件の裁判 23歳被告にきょう判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015155831000.html",
+      "date": "2026-06-21",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "横浜 ランニングの男性刺されけが 通り魔事件とみて捜査",
       "url": "http://www3.nhk.or.jp/news/html/20260621/k10015155601000.html",
