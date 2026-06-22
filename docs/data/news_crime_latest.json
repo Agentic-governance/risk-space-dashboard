@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-21T23:06:49+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-06-22T05:45:23+00:00",
+    "total_count": 36,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 36
     },
     "type_counts": {
+      "crime_news": 10,
+      "fraud": 9,
       "murder": 6,
       "assault": 1,
-      "crime_news": 8,
       "robbery": 3,
-      "fraud": 8,
       "weapon": 1,
       "voyeurism": 1,
       "drug": 1,
@@ -30,20 +30,50 @@
       "exposure": 1
     },
     "top_prefectures": {
-      "東京": 5,
+      "東京": 6,
       "北海道": 3,
       "兵庫": 2,
       "埼玉": 2,
+      "鹿児島": 1,
       "神奈川": 1,
       "滋賀": 1,
       "大阪": 1,
       "栃木": 1,
-      "愛知": 1,
-      "福岡": 1
+      "愛知": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "人形に隠し金塊を密輸しようとしたか 中国籍社長ら6人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156161000.html",
+      "date": "2026-06-22",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“国際犯罪組織”幹部か うその転入届提出疑いで逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156011000.html",
+      "date": "2026-06-22",
+      "prefecture": "東京",
+      "subtype": "fraud",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "鹿児島 霧島 温泉施設で5歳男児が行方不明 川に流されたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156081000.html",
+      "date": "2026-06-22",
+      "prefecture": "鹿児島",
+      "subtype": "crime_news",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "source": "nhk_crime"
+    },
     {
       "title": "北海道 旭川 高校生殺害事件の裁判 23歳被告にきょう判決",
       "url": "http://www3.nhk.or.jp/news/html/20260622/k10015155831000.html",
