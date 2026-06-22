@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-22T05:45:23+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-06-22T11:38:28+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 36
+      "nhk_crime": 40
     },
     "type_counts": {
-      "crime_news": 10,
+      "murder": 7,
+      "crime_news": 12,
+      "robbery": 4,
       "fraud": 9,
-      "murder": 6,
       "assault": 1,
-      "robbery": 3,
       "weapon": 1,
       "voyeurism": 1,
       "drug": 1,
@@ -30,9 +30,9 @@
       "exposure": 1
     },
     "top_prefectures": {
-      "東京": 6,
-      "北海道": 3,
-      "兵庫": 2,
+      "東京": 7,
+      "北海道": 4,
+      "兵庫": 3,
       "埼玉": 2,
       "鹿児島": 1,
       "神奈川": 1,
@@ -45,13 +45,53 @@
   },
   "incidents": [
     {
-      "title": "人形に隠し金塊を密輸しようとしたか 中国籍社長ら6人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156161000.html",
+      "title": "北海道 旭川 高校生転落死事件 23歳被告に懲役27年 旭川地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156111000.html",
+      "date": "2026-06-22",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "神戸 冷凍庫切断遺体  複数の袋に 冷凍庫は電源切れた状態",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156391000.html",
+      "date": "2026-06-22",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“国際犯罪組織幹部”逮捕 「高度専門職」在留資格で入国か",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156401000.html",
       "date": "2026-06-22",
       "prefecture": "",
       "subtype": "crime_news",
       "lat": null,
       "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "鹿児島 行方不明の5歳男児 川に流されたか あすも捜索へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156081000.html",
+      "date": "2026-06-22",
+      "prefecture": "鹿児島",
+      "subtype": "crime_news",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "強盗未遂などの疑いで逮捕 指示役兼リクルート役か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156351000.html",
+      "date": "2026-06-22",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
@@ -65,13 +105,13 @@
       "source": "nhk_crime"
     },
     {
-      "title": "鹿児島 霧島 温泉施設で5歳男児が行方不明 川に流されたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156081000.html",
+      "title": "人形に隠し金塊を密輸しようとしたか 中国籍社長ら6人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156161000.html",
       "date": "2026-06-22",
-      "prefecture": "鹿児島",
+      "prefecture": "",
       "subtype": "crime_news",
-      "lat": 31.5602,
-      "lon": 130.5581,
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {

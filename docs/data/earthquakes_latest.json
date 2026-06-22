@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-22T05:45:10+00:00",
+    "fetched_at": "2026-06-22T11:38:17+00:00",
     "filter_window_hours": 24,
-    "total_count": 3,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260622164055_20260622163812_VXSE5k_1",
+      "time": "2026-06-22T07:38:00+00:00",
+      "time_jst": "2026-06-22T16:38:00+09:00",
+      "lat": 42.9,
+      "lon": 144.0,
+      "magnitude": 3.0,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Kushiro",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260622072309_20260622071950_VXSE5k_1",
       "time": "2026-06-21T22:19:00+00:00",
