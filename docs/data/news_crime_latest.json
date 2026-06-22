@@ -10,29 +10,27 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-22T11:38:28+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-06-22T16:33:06+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 37
     },
     "type_counts": {
+      "crime_news": 13,
       "murder": 7,
-      "crime_news": 12,
-      "robbery": 4,
-      "fraud": 9,
+      "robbery": 3,
+      "fraud": 8,
       "assault": 1,
       "weapon": 1,
       "voyeurism": 1,
       "drug": 1,
       "arson": 1,
-      "terrorism": 1,
-      "stalking": 1,
-      "exposure": 1
+      "terrorism": 1
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 6,
+      "兵庫": 4,
       "北海道": 4,
-      "兵庫": 3,
       "埼玉": 2,
       "鹿児島": 1,
       "神奈川": 1,
@@ -45,13 +43,13 @@
   },
   "incidents": [
     {
-      "title": "北海道 旭川 高校生転落死事件 23歳被告に懲役27年 旭川地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156111000.html",
+      "title": "神戸 冷凍庫切断遺体 死体損壊などの疑いで捜査本部設置",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156711000.html",
       "date": "2026-06-22",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
       "source": "nhk_crime"
     },
     {
@@ -62,6 +60,26 @@
       "subtype": "crime_news",
       "lat": 34.6913,
       "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "人形に隠し金塊を密輸しようとしたか 中国籍社長ら6人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156161000.html",
+      "date": "2026-06-22",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 旭川 高校生転落死事件 23歳被告に懲役27年 旭川地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156111000.html",
+      "date": "2026-06-22",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
       "source": "nhk_crime"
     },
     {
@@ -102,16 +120,6 @@
       "subtype": "fraud",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "人形に隠し金塊を密輸しようとしたか 中国籍社長ら6人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260622/k10015156161000.html",
-      "date": "2026-06-22",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
       "source": "nhk_crime"
     },
     {
@@ -402,46 +410,6 @@
       "subtype": "crime_news",
       "lat": 43.0642,
       "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ストーカーに治療促す取り組み強化へ公認心理師と連携 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151491000.html",
-      "date": "2026-06-16",
-      "prefecture": "",
-      "subtype": "stalking",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "カンボジア拠点の特殊詐欺 日本人を逮捕 オーナーの立場か",
-      "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151151000.html",
-      "date": "2026-06-16",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "新宿 質店強盗未遂事件で新たに2人逮捕 指示役か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151361000.html",
-      "date": "2026-06-16",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "SFTS患者数 過去最多を上回るペースで増加 マダニ対策の徹底を",
-      "url": "http://www3.nhk.or.jp/news/html/20260616/k10015151141000.html",
-      "date": "2026-06-16",
-      "prefecture": "",
-      "subtype": "exposure",
-      "lat": null,
-      "lon": null,
       "source": "nhk_crime"
     }
   ]
