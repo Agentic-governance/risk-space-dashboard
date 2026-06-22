@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-22T22:01:52+00:00",
+    "fetched_at": "2026-06-22T23:17:47+00:00",
     "total_count": 39,
     "source_counts": {
       "nhk_crime": 39
@@ -63,7 +63,7 @@
       "source": "nhk_crime"
     },
     {
-      "title": "神戸 冷凍庫切断遺体 死体損壊などの疑いで捜査本部設置",
+      "title": "神戸 冷凍庫から発見の遺体 部屋の元住人で2011年ごろに死亡か",
       "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156711000.html",
       "date": "2026-06-22",
       "prefecture": "兵庫",
