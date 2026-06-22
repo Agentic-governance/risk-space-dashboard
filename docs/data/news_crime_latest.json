@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-22T19:58:25+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-06-22T22:01:52+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 39
     },
     "type_counts": {
-      "crime_news": 13,
+      "crime_news": 14,
+      "fraud": 9,
       "murder": 7,
       "robbery": 3,
-      "fraud": 8,
       "assault": 1,
       "weapon": 1,
       "voyeurism": 1,
@@ -29,7 +29,7 @@
     },
     "top_prefectures": {
       "東京": 6,
-      "兵庫": 4,
+      "兵庫": 5,
       "北海道": 4,
       "埼玉": 2,
       "鹿児島": 1,
@@ -42,6 +42,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "逮捕の“国際犯罪組織幹部” プライベートジェットで入国歴も",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156661000.html",
+      "date": "2026-06-22",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "カンボジア拠点の特殊詐欺 グループ幹部を逮捕へ 兵庫県警",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156571000.html",
+      "date": "2026-06-22",
+      "prefecture": "兵庫",
+      "subtype": "fraud",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "神戸 冷凍庫切断遺体 死体損壊などの疑いで捜査本部設置",
       "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156711000.html",
