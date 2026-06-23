@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-23T19:07:29+00:00",
+    "fetched_at": "2026-06-23T21:17:48+00:00",
     "filter_window_hours": 24,
     "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260624052001_20260624051708_VXSE5k_1",
+      "time": "2026-06-23T20:17:00+00:00",
+      "time_jst": "2026-06-24T05:17:00+09:00",
+      "lat": 33.6,
+      "lon": 130.4,
+      "magnitude": 2.7,
+      "depth_km": 20.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Fukuoka Region, Fukuoka Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.3
+    },
     {
       "event_id": "20260624005152_20260624004908_VXSE5k_1",
       "time": "2026-06-23T15:49:00+00:00",
@@ -63,20 +77,6 @@
       "location_name": "Adjacent Sea of​ Miyakojima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260623043057_20260623042751_VXSE5k_1",
-      "time": "2026-06-22T19:27:00+00:00",
-      "time_jst": "2026-06-23T04:27:00+09:00",
-      "lat": 28.5,
-      "lon": 129.7,
-      "magnitude": 3.5,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Amami-Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }

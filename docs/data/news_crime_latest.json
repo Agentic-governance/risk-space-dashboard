@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-23T19:07:41+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-06-23T21:18:01+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 39
     },
     "type_counts": {
-      "crime_news": 14,
+      "crime_news": 16,
       "assault": 3,
       "murder": 6,
       "fraud": 8,
@@ -30,6 +30,7 @@
       "東京": 7,
       "鹿児島": 2,
       "北海道": 2,
+      "島根": 1,
       "神奈川": 1,
       "滋賀": 1,
       "大阪": 1,
@@ -40,7 +41,27 @@
   },
   "incidents": [
     {
-      "title": "神戸 冷凍庫から男性遺体 元妻を遺体遺棄の疑いで逮捕",
+      "title": "島根 出雲 商店街火災“ほぼ消し止め” けが人の情報なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157651000.html",
+      "date": "2026-06-23",
+      "prefecture": "島根",
+      "subtype": "crime_news",
+      "lat": 35.4723,
+      "lon": 133.0505,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "カードで大量不正購入か 偽の住所変更で督促免れたか 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157561000.html",
+      "date": "2026-06-23",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "神戸 冷凍庫切断遺体事件 遺体を遺棄した疑いで元妻逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157631000.html",
       "date": "2026-06-23",
       "prefecture": "兵庫",
