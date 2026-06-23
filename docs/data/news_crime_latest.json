@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-23T22:50:49+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-06-23T23:55:25+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 40
     },
     "type_counts": {
+      "murder": 7,
       "crime_news": 16,
       "assault": 3,
-      "murder": 6,
       "fraud": 8,
       "robbery": 3,
       "weapon": 1,
@@ -30,16 +30,26 @@
       "東京": 7,
       "鹿児島": 2,
       "北海道": 2,
+      "群馬": 1,
       "島根": 1,
       "神奈川": 1,
       "滋賀": 1,
       "大阪": 1,
-      "栃木": 1,
-      "埼玉": 1
+      "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "群馬 高崎の駐車場 女性が血を流して死亡 殺人事件で捜査",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157771000.html",
+      "date": "2026-06-23",
+      "prefecture": "群馬",
+      "subtype": "murder",
+      "lat": 36.3911,
+      "lon": 139.0608,
+      "source": "nhk_crime"
+    },
     {
       "title": "島根 出雲 商店街火災“ほぼ消し止め” けが人の情報なし",
       "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157651000.html",

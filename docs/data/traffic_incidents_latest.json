@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-23T22:50:39+00:00",
-    "fetched_at_jst": "2026-06-24T07:50:39+09:00",
+    "fetched_at": "2026-06-23T23:55:14+00:00",
+    "fetched_at_jst": "2026-06-24T08:55:14+09:00",
     "total_count": 11,
     "source_counts": {
       "yahoo_transit": 5,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T22:50:39+00:00",
+      "occurred_at": "2026-06-23T23:55:14+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T22:50:39+00:00",
+      "occurred_at": "2026-06-23T23:55:14+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T22:50:39+00:00",
+      "occurred_at": "2026-06-23T23:55:14+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T22:50:39+00:00",
+      "occurred_at": "2026-06-23T23:55:14+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T22:50:39+00:00",
+      "occurred_at": "2026-06-23T23:55:14+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,10 +114,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "線状降水帯 九州北部で発生おそれ 長崎県南部には「直前予測」 — 停滞する梅雨前線の影響で九州北部では非常に激しい雨が降り、長崎県と佐賀県では土砂災害や浸水などの危険性が非常に高まり、レベル4の危険警報が発表されている地域があります。九州北部では24日昼すぎにかけて線状降水帯が発生するおそれがあり、特に長崎県南部では今後3時間以内に発生する可能性が高まっているとして「線状降水帯直前予測」が発表されていて、厳重な警戒が必要です。",
+      "description": "線状降水帯 九州北部で発生おそれ 長崎県南部には「直前予測」 — 停滞する梅雨前線の影響で九州北部では非常に激しい雨が降り、長崎県では「レベル4土砂災害危険警報」が発表されている地域があります。九州北部では24日昼すぎにかけて線状降水帯が発生するおそれがあり、特に長崎県南部では今後3時間以内に発生する可能性が高まっているとして「線状降水帯直前予測」が発表されていて、厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T22:11:59+00:00",
+      "occurred_at": "2026-06-23T23:07:02+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157571000.html",
       "traffic_multiplier": 2.4
     },
@@ -128,15 +128,29 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "佐賀 鹿島 一部地域に避難指示 — 佐賀県鹿島市はレベル4土砂災害危険警報の発表に伴い、24日午前4時9分、能古見地区の1159世帯3125人、古枝地区の988世帯2605人、七浦地区の909世帯2354人に避難指示を出しました。5段階の警戒レベルのうち警戒レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "description": "線状降水帯直前予測 鹿児島 薩摩地方で発生おそれ — 気象庁は鹿児島県の薩摩地方では今後3時間以内に線状降水帯が発生する可能性が高まっているとして午前8時19分「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、鹿児島県の薩摩地方では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T19:40:27+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157711000.html",
+      "occurred_at": "2026-06-23T23:28:29+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157801000.html",
       "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260623_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "長崎市 市内全域に避難指示 — 長崎市はレベル4の土砂災害危険警報と大雨危険警報が発表されたため、24日午前5時36分に市内全域の20万5479世帯、38万3274人に避難指示を出しました。5段階の警戒レベルのうち警戒レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-23T21:47:50+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157761000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260623_0009",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
@@ -150,32 +164,18 @@
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260623_0009",
+      "event_id": "traffic_20260623_0010",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "JR山手線 内回りで運転見合わせ 人身事故の影響 — JR山手線は東京 豊島区の駒込駅で起きた人身事故の影響で午前6時17分ごろから内回りで運転を見合わせています。",
+      "description": "欧州 熱波続く フランス気象当局「23日は観測史上最も暑い日」 — ヨーロッパでは各地で40度以上を記録する熱波が続いていて、フランスではこれまでに水の事故で40人が亡くなりました。フランスの気象当局は、23日は観測史上最も暑い日だったとしています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T21:55:40+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157751000.html",
+      "occurred_at": "2026-06-23T22:44:22+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157601000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260623_0010",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "長崎市 市内全域に避難指示 — 長崎市はレベル4の土砂災害危険警報と大雨危険警報が発表されたため、24日午前5時36分に市内全域の20万5479世帯、38万3274人に避難指示を出しました。5段階の警戒レベルのうち警戒レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-23T21:47:50+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157761000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
