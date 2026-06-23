@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-23T09:03:56+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-06-23T14:31:42+00:00",
+    "total_count": 47,
     "source_counts": {
-      "nhk_crime": 42
+      "nhk_crime": 47
     },
     "type_counts": {
-      "crime_news": 15,
+      "crime_news": 17,
+      "assault": 3,
       "murder": 8,
-      "assault": 2,
-      "fraud": 9,
+      "fraud": 11,
       "robbery": 3,
       "weapon": 1,
       "voyeurism": 1,
@@ -28,11 +28,11 @@
       "terrorism": 1
     },
     "top_prefectures": {
-      "兵庫": 7,
-      "東京": 6,
+      "兵庫": 8,
+      "東京": 7,
       "北海道": 4,
+      "鹿児島": 2,
       "埼玉": 2,
-      "鹿児島": 1,
       "神奈川": 1,
       "滋賀": 1,
       "大阪": 1,
@@ -43,8 +43,8 @@
   },
   "incidents": [
     {
-      "title": "神戸 冷凍庫遺体 室内に荒らされた跡や目立った血痕なし",
-      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157231000.html",
+      "title": "神戸 冷凍庫から男性遺体 元妻を遺体遺棄の疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157631000.html",
       "date": "2026-06-23",
       "prefecture": "兵庫",
       "subtype": "crime_news",
@@ -53,11 +53,61 @@
       "source": "nhk_crime"
     },
     {
+      "title": "性的暴行疑いで逮捕の消防署員2人を不起訴 東京地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157471000.html",
+      "date": "2026-06-23",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
       "title": "神戸 9年前の拳銃殺害事件 殺人などの疑いで暴力団員を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156941000.html",
       "date": "2026-06-23",
       "prefecture": "兵庫",
       "subtype": "murder",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "鹿児島 温泉施設で行方不明の5歳男児 捜索続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157401000.html",
+      "date": "2026-06-23",
+      "prefecture": "鹿児島",
+      "subtype": "crime_news",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "詐欺深刻化で警察庁がカンボジア当局と現地協議 連携強化へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157431000.html",
+      "date": "2026-06-23",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "ラオス 警察当局 日本人9人を拘束と発表 特殊詐欺に関与か",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157341000.html",
+      "date": "2026-06-23",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "神戸 冷凍庫遺体 室内に荒らされた跡や目立った血痕なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157231000.html",
+      "date": "2026-06-23",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
       "lat": 34.6913,
       "lon": 135.183,
       "source": "nhk_crime"
