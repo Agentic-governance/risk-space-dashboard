@@ -10,34 +10,31 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-23T14:31:42+00:00",
-    "total_count": 47,
+    "fetched_at": "2026-06-23T16:53:00+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 47
+      "nhk_crime": 37
     },
     "type_counts": {
-      "crime_news": 17,
+      "crime_news": 14,
       "assault": 3,
-      "murder": 8,
-      "fraud": 11,
+      "murder": 6,
+      "fraud": 8,
       "robbery": 3,
       "weapon": 1,
       "voyeurism": 1,
-      "drug": 1,
-      "arson": 1,
-      "terrorism": 1
+      "drug": 1
     },
     "top_prefectures": {
       "兵庫": 8,
       "東京": 7,
-      "北海道": 4,
       "鹿児島": 2,
-      "埼玉": 2,
+      "北海道": 2,
       "神奈川": 1,
       "滋賀": 1,
       "大阪": 1,
       "栃木": 1,
-      "愛知": 1
+      "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -410,106 +407,6 @@
       "subtype": "murder",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "愛知 弥富 アパート放火で3人殺害事件 検察が無期懲役求刑",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152711000.html",
-      "date": "2026-06-17",
-      "prefecture": "愛知",
-      "subtype": "arson",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ドローン規制の区域拡大 改正法が成立 性能向上でテロ脅威",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152641000.html",
-      "date": "2026-06-17",
-      "prefecture": "",
-      "subtype": "terrorism",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "返金装い電子マネー詐取疑いで逮捕 中国語で指示か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152401000.html",
-      "date": "2026-06-17",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "知床沖観光船事故めぐり判決 運航会社社長に禁錮5年 釧路地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152141000.html",
-      "date": "2026-06-17",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "カンボジア拠点の特殊詐欺 38歳の容疑者 現地で複数拠点運営か",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152741000.html",
-      "date": "2026-06-17",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "工藤会系幹部 7つの事件に関与の罪で無期懲役確定へ 最高裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152731000.html",
-      "date": "2026-06-17",
-      "prefecture": "福岡",
-      "subtype": "murder",
-      "lat": 33.6064,
-      "lon": 130.4183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "20代女性2人承諾殺人の罪 被告に懲役13年求刑 さいたま地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152671000.html",
-      "date": "2026-06-17",
-      "prefecture": "埼玉",
-      "subtype": "murder",
-      "lat": 35.8573,
-      "lon": 139.6489,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "地下銀行運営で詐欺の被害金を資金洗浄か 2人逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152371000.html",
-      "date": "2026-06-17",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "カンボジア拠点の特殊詐欺 だまし取った金の3割受け取ったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015152231000.html",
-      "date": "2026-06-17",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "知床沖 観光船沈没事故 運航会社社長の刑事裁判 きょう判決",
-      "url": "http://www3.nhk.or.jp/news/html/20260617/k10015151961000.html",
-      "date": "2026-06-16",
-      "prefecture": "北海道",
-      "subtype": "crime_news",
-      "lat": 43.0642,
-      "lon": 141.3469,
       "source": "nhk_crime"
     }
   ]
