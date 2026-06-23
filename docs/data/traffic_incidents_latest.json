@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-23T21:17:50+00:00",
-    "fetched_at_jst": "2026-06-24T06:17:50+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-06-23T22:50:39+00:00",
+    "fetched_at_jst": "2026-06-24T07:50:39+09:00",
+    "total_count": 11,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 4
+      "nhk_rss": 6
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "construction": 1,
-      "disaster": 4,
+      "disaster": 5,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T21:17:50+00:00",
+      "occurred_at": "2026-06-23T22:50:39+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T21:17:50+00:00",
+      "occurred_at": "2026-06-23T22:50:39+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T21:17:50+00:00",
+      "occurred_at": "2026-06-23T22:50:39+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T21:17:50+00:00",
+      "occurred_at": "2026-06-23T22:50:39+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T21:17:50+00:00",
+      "occurred_at": "2026-06-23T22:50:39+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,10 +114,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "九州北部で非常に激しい雨 長崎 熊本 佐賀で線状降水帯おそれ — 停滞する梅雨前線の影響で九州北部では非常に激しい雨を観測し、佐賀県と長崎県では「レベル4土砂災害危険警報」が発表されている地域があり、厳重な警戒が必要です。西日本では25日にかけて大雨が続く見込みで、特に長崎県と熊本県、佐賀県では24日の昼すぎにかけて線状降水帯が発生するおそれがあり、気象庁は土砂災害や低い土地の浸水、川の氾濫に警戒するよう呼びかけています。",
+      "description": "線状降水帯 九州北部で発生おそれ 長崎県南部には「直前予測」 — 停滞する梅雨前線の影響で九州北部では非常に激しい雨が降り、長崎県と佐賀県では土砂災害や浸水などの危険性が非常に高まり、レベル4の危険警報が発表されている地域があります。九州北部では24日昼すぎにかけて線状降水帯が発生するおそれがあり、特に長崎県南部では今後3時間以内に発生する可能性が高まっているとして「線状降水帯直前予測」が発表されていて、厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T20:29:39+00:00",
+      "occurred_at": "2026-06-23T22:11:59+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157571000.html",
       "traffic_multiplier": 2.4
     },
@@ -147,6 +147,34 @@
       "lon": null,
       "occurred_at": "2026-06-23T20:26:33+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157721000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260623_0009",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "JR山手線 内回りで運転見合わせ 人身事故の影響 — JR山手線は東京 豊島区の駒込駅で起きた人身事故の影響で午前6時17分ごろから内回りで運転を見合わせています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-23T21:55:40+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157751000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260623_0010",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "長崎市 市内全域に避難指示 — 長崎市はレベル4の土砂災害危険警報と大雨危険警報が発表されたため、24日午前5時36分に市内全域の20万5479世帯、38万3274人に避難指示を出しました。5段階の警戒レベルのうち警戒レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-23T21:47:50+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157761000.html",
       "traffic_multiplier": 2.4
     }
   ]
