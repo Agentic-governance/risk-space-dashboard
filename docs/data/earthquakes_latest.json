@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-23T05:44:48+00:00",
+    "fetched_at": "2026-06-23T09:03:43+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -49,20 +49,6 @@
       "location_name": "Adjacent Sea of Amami-Oshima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260622164055_20260622163812_VXSE5k_1",
-      "time": "2026-06-22T07:38:00+00:00",
-      "time_jst": "2026-06-22T16:38:00+09:00",
-      "lat": 42.9,
-      "lon": 144.0,
-      "magnitude": 3.0,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Kushiro",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }

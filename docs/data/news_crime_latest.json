@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-23T05:45:00+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-06-23T09:03:56+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 42
     },
     "type_counts": {
+      "crime_news": 15,
       "murder": 8,
-      "crime_news": 14,
+      "assault": 2,
       "fraud": 9,
       "robbery": 3,
-      "assault": 1,
       "weapon": 1,
       "voyeurism": 1,
       "drug": 1,
@@ -28,7 +28,7 @@
       "terrorism": 1
     },
     "top_prefectures": {
-      "兵庫": 6,
+      "兵庫": 7,
       "東京": 6,
       "北海道": 4,
       "埼玉": 2,
@@ -43,6 +43,16 @@
   },
   "incidents": [
     {
+      "title": "神戸 冷凍庫遺体 室内に荒らされた跡や目立った血痕なし",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157231000.html",
+      "date": "2026-06-23",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
       "title": "神戸 9年前の拳銃殺害事件 殺人などの疑いで暴力団員を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260623/k10015156941000.html",
       "date": "2026-06-23",
@@ -50,6 +60,16 @@
       "subtype": "murder",
       "lat": 34.6913,
       "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "デヴィ・スカルノ被告 暴行などの罪 起訴内容認める",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157251000.html",
+      "date": "2026-06-23",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {

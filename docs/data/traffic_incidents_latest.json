@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-23T05:44:50+00:00",
-    "fetched_at_jst": "2026-06-23T14:44:50+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-06-23T09:03:44+00:00",
+    "fetched_at_jst": "2026-06-23T18:03:44+09:00",
+    "total_count": 8,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 6,
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "construction": 1,
-      "disaster": 1,
+      "disaster": 2,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -30,15 +30,29 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "京王堀之内駅で発生した人身事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T05:44:50+00:00",
+      "occurred_at": "2026-06-23T09:03:44+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260623_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "事故・遅延情報はありません",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-23T09:03:44+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260623_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +61,12 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T05:44:50+00:00",
+      "occurred_at": "2026-06-23T09:03:44+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260623_0002",
+      "event_id": "traffic_20260623_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -61,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T05:44:50+00:00",
+      "occurred_at": "2026-06-23T09:03:44+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260623_0003",
+      "event_id": "traffic_20260623_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T05:44:50+00:00",
+      "occurred_at": "2026-06-23T09:03:44+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260623_0004",
+      "event_id": "traffic_20260623_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -89,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T05:44:50+00:00",
+      "occurred_at": "2026-06-23T09:03:44+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260623_0005",
+      "event_id": "traffic_20260623_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -106,6 +120,20 @@
       "occurred_at": "2026-06-19T12:55:59+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154861000.html",
       "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260623_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "長崎 新上五島町 全域に避難指示 — 長崎県新上五島町は、大雨と土砂災害に関する警報が夜間に発表されるおそれがあるため、早めに避難を呼びかけるとして、午後4時、町内全域に避難指示を出しました。5段階の警戒レベルのうち、レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-23T08:27:09+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157281000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
