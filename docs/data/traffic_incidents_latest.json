@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-24T10:02:59+00:00",
-    "fetched_at_jst": "2026-06-24T19:02:59+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-06-24T15:22:50+00:00",
+    "fetched_at_jst": "2026-06-25T00:22:50+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "construction": 1,
       "disaster": 1,
       "congestion": 1
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T10:02:59+00:00",
+      "occurred_at": "2026-06-24T15:22:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T10:02:59+00:00",
+      "occurred_at": "2026-06-24T15:22:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T10:02:59+00:00",
+      "occurred_at": "2026-06-24T15:22:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T10:02:59+00:00",
+      "occurred_at": "2026-06-24T15:22:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T10:02:59+00:00",
+      "occurred_at": "2026-06-24T15:22:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -105,20 +105,6 @@
       "lon": null,
       "occurred_at": "2026-06-19T12:55:59+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154861000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260624_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "群馬 高崎 女性殺人事件 逃走の知人は埼玉県内で事故死か — 群馬県高崎市で女性が刃物で刺されて殺害された事件で、死亡したのは近くに住む28歳の女性と分かりました。警察はおよそ1時間後に埼玉県内で起きた交通事故で死亡した会社員が事件に関わった疑いがあるとみて調べています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-24T09:33:40+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158551000.html",
       "traffic_multiplier": 1.6
     }
   ]
