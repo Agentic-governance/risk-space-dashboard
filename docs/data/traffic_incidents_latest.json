@@ -6,25 +6,26 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-23T23:55:14+00:00",
-    "fetched_at_jst": "2026-06-24T08:55:14+09:00",
-    "total_count": 11,
+    "fetched_at": "2026-06-24T02:16:28+00:00",
+    "fetched_at_jst": "2026-06-24T11:16:28+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 6
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "construction": 1,
-      "disaster": 5,
-      "congestion": 1
+      "disaster": 2,
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260623_0000",
+      "event_id": "traffic_20260624_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +34,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:55:14+00:00",
+      "occurred_at": "2026-06-24T02:16:28+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260623_0001",
+      "event_id": "traffic_20260624_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +48,12 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:55:14+00:00",
+      "occurred_at": "2026-06-24T02:16:28+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260623_0002",
+      "event_id": "traffic_20260624_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -61,12 +62,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:55:14+00:00",
+      "occurred_at": "2026-06-24T02:16:28+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260623_0003",
+      "event_id": "traffic_20260624_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +76,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:55:14+00:00",
+      "occurred_at": "2026-06-24T02:16:28+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260623_0004",
+      "event_id": "traffic_20260624_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -89,12 +90,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:55:14+00:00",
+      "occurred_at": "2026-06-24T02:16:28+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260623_0005",
+      "event_id": "traffic_20260624_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -108,74 +109,32 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260623_0006",
+      "event_id": "traffic_20260624_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "線状降水帯 九州北部で発生おそれ 長崎県南部には「直前予測」 — 停滞する梅雨前線の影響で九州北部では非常に激しい雨が降り、長崎県では「レベル4土砂災害危険警報」が発表されている地域があります。九州北部では24日昼すぎにかけて線状降水帯が発生するおそれがあり、特に長崎県南部では今後3時間以内に発生する可能性が高まっているとして「線状降水帯直前予測」が発表されていて、厳重な警戒が必要です。",
+      "description": "鹿児島県で猛烈な雨 薩摩地方では線状降水帯発生 厳重警戒を — 停滞する梅雨前線の影響で九州では発達した雨雲がかかり続けていて、鹿児島県では猛烈な雨が降り、薩摩地方で線状降水帯が発生したほか、宮崎県南部の山沿いでも、線状降水帯が今後3時間以内に発生する可能性が高まっているとして、「線状降水帯直前予測」が発表されました。気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:07:02+00:00",
+      "occurred_at": "2026-06-24T02:07:05+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157571000.html",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260623_0007",
+      "event_id": "traffic_20260624_0007",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
+      "incident_type": "restriction",
+      "severity": 1,
       "road_name": "",
-      "description": "線状降水帯直前予測 鹿児島 薩摩地方で発生おそれ — 気象庁は鹿児島県の薩摩地方では今後3時間以内に線状降水帯が発生する可能性が高まっているとして午前8時19分「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、鹿児島県の薩摩地方では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
+      "description": "【大雨影響】鹿児島 いちき串木野で土砂崩れの情報2件 — 停滞する梅雨前線の影響で九州では非常に激しい雨が降っています。鹿児島県のいちき串木野市によりますと、大雨の影響で土砂崩れが起きたという情報が2件入っていて、確認を進めているということです。これまでのところ、けが人などの情報は入っていないということです。被害の情報をまとめてお伝えします。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-23T23:28:29+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157801000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260623_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "長崎市 市内全域に避難指示 — 長崎市はレベル4の土砂災害危険警報と大雨危険警報が発表されたため、24日午前5時36分に市内全域の20万5479世帯、38万3274人に避難指示を出しました。5段階の警戒レベルのうち警戒レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-23T21:47:50+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157761000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260623_0009",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "線状降水帯直前予測 長崎県南部で発生おそれ — 気象庁は長崎県南部では今後3時間以内に線状降水帯が発生する可能性が高まっているとして、午前5時8分「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、長崎県南部では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-23T20:26:33+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157721000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260623_0010",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "欧州 熱波続く フランス気象当局「23日は観測史上最も暑い日」 — ヨーロッパでは各地で40度以上を記録する熱波が続いていて、フランスではこれまでに水の事故で40人が亡くなりました。フランスの気象当局は、23日は観測史上最も暑い日だったとしています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-23T22:44:22+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157601000.html",
-      "traffic_multiplier": 1.6
+      "occurred_at": "2026-06-24T01:52:07+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157861000.html",
+      "traffic_multiplier": 1.0
     }
   ]
 }
