@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-24T21:13:12+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-06-24T22:51:06+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 38
+      "nhk_crime": 39
     },
     "type_counts": {
+      "murder": 9,
       "crime_news": 18,
       "fraud": 6,
-      "murder": 8,
       "assault": 3,
       "robbery": 2,
       "weapon": 1
@@ -27,16 +27,26 @@
       "兵庫": 12,
       "東京": 8,
       "群馬": 3,
+      "滋賀": 2,
       "鹿児島": 2,
       "北海道": 2,
       "神奈川": 1,
-      "滋賀": 1,
       "大阪": 1,
       "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "滋賀 患者殺害のえん罪めぐる国賠訴訟きょう2審判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158811000.html",
+      "date": "2026-06-24",
+      "prefecture": "滋賀",
+      "subtype": "murder",
+      "lat": 35.0045,
+      "lon": 135.8686,
+      "source": "nhk_crime"
+    },
     {
       "title": "神戸 冷凍庫遺体遺棄事件 元妻「電気代去年ごろまで払う」供述",
       "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158821000.html",

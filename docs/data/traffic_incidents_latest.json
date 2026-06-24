@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-24T21:13:03+00:00",
-    "fetched_at_jst": "2026-06-25T06:13:03+09:00",
+    "fetched_at": "2026-06-24T22:50:56+00:00",
+    "fetched_at_jst": "2026-06-25T07:50:56+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T21:13:03+00:00",
+      "occurred_at": "2026-06-24T22:50:56+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T21:13:03+00:00",
+      "occurred_at": "2026-06-24T22:50:56+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T21:13:03+00:00",
+      "occurred_at": "2026-06-24T22:50:56+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T21:13:03+00:00",
+      "occurred_at": "2026-06-24T22:50:56+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T21:13:03+00:00",
+      "occurred_at": "2026-06-24T22:50:56+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,11 +114,11 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "九州北部 線状降水帯のおそれ 台風7号は沖縄に近づく見込み — 停滞する梅雨前線の影響で、九州北部では激しい雨が降り、長崎県ではレベル4土砂災害危険警報が発表されている地域があります。九州北部で25日昼前にかけて線状降水帯が発生するおそれがあり、安全な場所で過ごすようにしてください。また、強い台風7号は、26日にかけて沖縄県に近づく見込みで、沖縄県では暴風に厳重に警戒してください。",
+      "description": "九州北部で非常に激しい雨 昼前にかけ線状降水帯発生おそれ — 停滞する梅雨前線の影響で九州北部では非常に激しい雨が降っていて、「レベル4土砂災害危険警報」が発表されている地域があります。九州北部では25日昼前にかけて線状降水帯が発生して、災害の危険度が急激に高まるおそれがあり、厳重な警戒が必要です。また、台風7号は26日にかけて沖縄・奄美に近づく見込みで、暴風に厳重に警戒してください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-24T15:36:59+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157571000.html",
+      "occurred_at": "2026-06-24T21:38:05+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158771000.html",
       "traffic_multiplier": 2.4
     }
   ]
