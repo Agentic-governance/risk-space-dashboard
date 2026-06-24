@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-24T15:22:45+00:00",
+    "fetched_at": "2026-06-24T17:31:34+00:00",
     "filter_window_hours": 24,
-    "total_count": 13,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -175,20 +175,6 @@
       "location_name": "Fukuoka Region, Fukuoka Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.3
-    },
-    {
-      "event_id": "20260624005152_20260624004908_VXSE5k_1",
-      "time": "2026-06-23T15:49:00+00:00",
-      "time_jst": "2026-06-24T00:49:00+09:00",
-      "lat": 35.2,
-      "lon": 135.3,
-      "magnitude": 2.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Kyoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
