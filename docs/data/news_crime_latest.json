@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-24T19:15:14+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-06-24T21:13:12+00:00",
+    "total_count": 38,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 38
     },
     "type_counts": {
-      "crime_news": 17,
+      "crime_news": 18,
       "fraud": 6,
       "murder": 8,
       "assault": 3,
@@ -24,7 +24,7 @@
       "weapon": 1
     },
     "top_prefectures": {
-      "兵庫": 11,
+      "兵庫": 12,
       "東京": 8,
       "群馬": 3,
       "鹿児島": 2,
@@ -37,6 +37,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "神戸 冷凍庫遺体遺棄事件 元妻「電気代去年ごろまで払う」供述",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158821000.html",
+      "date": "2026-06-24",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
     {
       "title": "人形に隠して金塊密輸か 東京税関が53億円相当押収 解明へ",
       "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158541000.html",
