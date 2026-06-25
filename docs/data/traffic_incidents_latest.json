@@ -6,19 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-25T02:54:39+00:00",
-    "fetched_at_jst": "2026-06-25T11:54:39+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-06-25T10:16:42+00:00",
+    "fetched_at_jst": "2026-06-25T19:16:42+09:00",
+    "total_count": 7,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 3
+      "yahoo_transit": 6,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "construction": 1,
-      "disaster": 2,
-      "congestion": 1,
-      "restriction": 1
+      "disaster": 1,
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -31,15 +30,29 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "日暮里駅で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T02:54:39+00:00",
+      "occurred_at": "2026-06-25T10:16:42+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260625_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "事故・遅延情報はありません",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260625_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -48,12 +61,12 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T02:54:39+00:00",
+      "occurred_at": "2026-06-25T10:16:42+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260625_0002",
+      "event_id": "traffic_20260625_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -62,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T02:54:39+00:00",
+      "occurred_at": "2026-06-25T10:16:42+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260625_0003",
+      "event_id": "traffic_20260625_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -76,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T02:54:39+00:00",
+      "occurred_at": "2026-06-25T10:16:42+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260625_0004",
+      "event_id": "traffic_20260625_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -90,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T02:54:39+00:00",
+      "occurred_at": "2026-06-25T10:16:42+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260625_0005",
+      "event_id": "traffic_20260625_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -107,34 +120,6 @@
       "occurred_at": "2026-06-19T12:55:59+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154861000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260625_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "梅雨前線で九州北部で雨降り続く 台風は北上 厳重警戒を — 停滞する梅雨前線の影響で九州北部では雨が降り続き、「レベル4土砂災害危険警報」が発表されている地域があります。台風7号の北上に伴って西日本と東日本ではさらに雨量が増えるおそれがあるほか、沖縄・奄美では暴風のおそれがあり、厳重に警戒してください。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-25T01:39:57+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158771000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260625_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "【交通影響】東北新幹線 秋田新幹線 一部で運転再開 — 午前7時半ごろ、青森県で震度6強の揺れを観測する地震がありました。この地震で沿岸では若干の海面変動があるかもしれませんが被害の心配はありません。交通への影響をまとめています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-25T02:19:09+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159071000.html",
-      "traffic_multiplier": 1.0
     }
   ]
 }
