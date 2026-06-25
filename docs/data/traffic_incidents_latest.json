@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-25T10:16:42+00:00",
-    "fetched_at_jst": "2026-06-25T19:16:42+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-06-25T15:43:20+00:00",
+    "fetched_at_jst": "2026-06-26T00:43:20+09:00",
+    "total_count": 10,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 4
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 5,
       "construction": 1,
-      "disaster": 1,
+      "disaster": 3,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +33,7 @@
       "description": "日暮里駅で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "occurred_at": "2026-06-25T15:43:20+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "occurred_at": "2026-06-25T15:43:20+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "occurred_at": "2026-06-25T15:43:20+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "occurred_at": "2026-06-25T15:43:20+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "occurred_at": "2026-06-25T15:43:20+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T10:16:42+00:00",
+      "occurred_at": "2026-06-25T15:43:20+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -119,6 +119,48 @@
       "lon": null,
       "occurred_at": "2026-06-19T12:55:59+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154861000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260625_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "線状降水帯直前予測 熊本地方 阿蘇地方で発生おそれ — 気象庁は熊本県の熊本地方では今後3時間以内に線状降水帯が発生する可能性が高まっているとして、午前0時19分「線状降水帯直前予測」の気象防災速報を発表しました。熊本県には阿蘇地方にも「線状降水帯直前予測」の気象防災速報が発表されています。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、熊本県の熊本地方と阿蘇地方では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-25T15:26:56+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160511000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260625_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "九州北部・中国地方にレベル4危険警報 沖縄は線状降水帯おそれ — 停滞する梅雨前線の影響で九州北部と中国地方では雨が強まり、レベル4の危険警報が発表されている地域があるなど土砂災害や低い土地の浸水、川の氾濫に厳重な警戒が必要です。また、台風7号が近づいている沖縄県では26日の明け方から昼前にかけて線状降水帯が発生して、災害の危険度が急激に高まるおそれがあります。東日本でも27日にかけて総雨量が多くなるおそれがあり、早めに備えを進めるようにしてください。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-25T14:51:22+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158771000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260625_0009",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "スクールバスなど6台絡む事故 中高生など5人けが 大阪 — 25日夕方、大阪・河内長野市の国道の交差点で中学生や高校生が乗ったスクールバスが反対車線にはみ出して乗用車やオートバイに次々と衝突し、乗用車など6台が絡む事故がありました。警察によりますと、中学生と高校生3人を含むあわせて5人がけがをしたということで、警察はスクールバスの運転手を過失運転傷害の疑いでその場で逮捕して、詳しい状況を調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-25T14:39:13+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160481000.html",
       "traffic_multiplier": 1.6
     }
   ]

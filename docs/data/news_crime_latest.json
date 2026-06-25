@@ -10,17 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-25T10:16:56+00:00",
-    "total_count": 43,
+    "fetched_at": "2026-06-25T15:43:30+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 43
+      "nhk_crime": 46
     },
     "type_counts": {
+      "assault": 4,
+      "robbery": 4,
+      "stalking": 1,
       "crime_news": 20,
-      "robbery": 3,
       "murder": 10,
       "fraud": 6,
-      "assault": 3,
       "weapon": 1
     },
     "top_prefectures": {
@@ -30,6 +31,7 @@
       "滋賀": 3,
       "群馬": 3,
       "鹿児島": 2,
+      "長野": 1,
       "神奈川": 1,
       "大阪": 1,
       "栃木": 1
@@ -38,13 +40,13 @@
   },
   "incidents": [
     {
-      "title": "“保護”のきっかけ 約半数は地域住民などの通報",
-      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159631000.html",
+      "title": "スクールバスなど6台絡む事故 中高生など5人けが 大阪",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160481000.html",
       "date": "2026-06-25",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
+      "prefecture": "長野",
+      "subtype": "assault",
+      "lat": 36.6513,
+      "lon": 138.181,
       "source": "nhk_crime"
     },
     {
@@ -55,6 +57,36 @@
       "subtype": "robbery",
       "lat": 43.0642,
       "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "厚労省係長 部下女性へのストーカー行為で起訴 自宅侵入も",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160311000.html",
+      "date": "2026-06-25",
+      "prefecture": "",
+      "subtype": "stalking",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“ルフィグループ”幹部か フィリピンで日本人容疑者拘束",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160281000.html",
+      "date": "2026-06-25",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“保護”のきっかけ 約半数は地域住民などの通報",
+      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015159631000.html",
+      "date": "2026-06-25",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {
