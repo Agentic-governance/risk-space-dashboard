@@ -10,41 +10,38 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-25T15:43:30+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-06-25T20:35:21+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 46
+      "nhk_crime": 39
     },
     "type_counts": {
-      "assault": 4,
-      "robbery": 4,
+      "crime_news": 19,
+      "robbery": 3,
       "stalking": 1,
-      "crime_news": 20,
-      "murder": 10,
-      "fraud": 6,
-      "weapon": 1
+      "murder": 8,
+      "fraud": 5,
+      "assault": 3
     },
     "top_prefectures": {
-      "兵庫": 13,
-      "東京": 8,
+      "兵庫": 12,
+      "東京": 5,
       "北海道": 3,
-      "滋賀": 3,
       "群馬": 3,
+      "滋賀": 2,
       "鹿児島": 2,
       "長野": 1,
-      "神奈川": 1,
-      "大阪": 1,
-      "栃木": 1
+      "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "スクールバスなど6台絡む事故 中高生など5人けが 大阪",
+      "title": "スクールバスが反対車線へ 6台絡む事故で5人けが 運転手を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160481000.html",
       "date": "2026-06-25",
       "prefecture": "長野",
-      "subtype": "assault",
+      "subtype": "crime_news",
       "lat": 36.6513,
       "lon": 138.181,
       "source": "nhk_crime"
@@ -423,76 +420,6 @@
       "title": "神戸 マンションの冷凍庫から切断された男性の遺体見つかる",
       "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155511000.html",
       "date": "2026-06-20",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "滋賀 日野町の強盗殺人事件の再審で検察が有罪主張しない方針",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154181000.html",
-      "date": "2026-06-19",
-      "prefecture": "滋賀",
-      "subtype": "murder",
-      "lat": 35.0045,
-      "lon": 135.8686,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "強盗傷害事件直後から30年フィリピンに逃亡の被告に懲役5年",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154601000.html",
-      "date": "2026-06-19",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "医療法人の事業譲渡めぐり3億5000万円詐取疑いで逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154101000.html",
-      "date": "2026-06-19",
-      "prefecture": "大阪",
-      "subtype": "fraud",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "“北陸新幹線に刃物持った乗客” けが人なし 乗客から話聞く",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154471000.html",
-      "date": "2026-06-19",
-      "prefecture": "東京",
-      "subtype": "weapon",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "LINE交換しキャバクラスカウトか 2人逮捕 女性警察官か確認か",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154331000.html",
-      "date": "2026-06-19",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人事件で逮捕の容疑者 新宿区での金庫盗にも関与か",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154301000.html",
-      "date": "2026-06-19",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "兵庫 丹波篠山 住宅火災 2人死亡",
-      "url": "http://www3.nhk.or.jp/news/html/20260619/k10015154061000.html",
-      "date": "2026-06-18",
       "prefecture": "兵庫",
       "subtype": "crime_news",
       "lat": 34.6913,
