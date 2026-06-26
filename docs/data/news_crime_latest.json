@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-26T17:18:54+00:00",
+    "fetched_at": "2026-06-26T19:21:33+00:00",
     "total_count": 47,
     "source_counts": {
       "nhk_crime": 47
@@ -39,7 +39,7 @@
   },
   "incidents": [
     {
-      "title": "山口 平生町 住宅の裏山崩れ1人行方不明 3人搬送",
+      "title": "山口 平生町 住宅の裏山崩れ1人行方不明 3人けが",
       "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162131000.html",
       "date": "2026-06-26",
       "prefecture": "山口",
