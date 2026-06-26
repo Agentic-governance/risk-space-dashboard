@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-26T15:14:43+00:00",
-    "fetched_at_jst": "2026-06-27T00:14:43+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-06-26T17:18:45+00:00",
+    "fetched_at_jst": "2026-06-27T02:18:45+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 2,
       "disaster": 2,
       "congestion": 1,
+      "restriction": 1,
       "road_closure": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +34,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T15:14:43+00:00",
+      "occurred_at": "2026-06-26T17:18:45+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +48,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T15:14:43+00:00",
+      "occurred_at": "2026-06-26T17:18:45+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +62,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T15:14:43+00:00",
+      "occurred_at": "2026-06-26T17:18:45+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +76,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T15:14:43+00:00",
+      "occurred_at": "2026-06-26T17:18:45+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -86,10 +87,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "2つの台風 相次ぎ接近 総雨量多くなるおそれ 土砂災害厳重警戒 — 台風8号は速度を上げながら本州に近づいていて、東日本と西日本の太平洋側などでは発達した雨雲がかかっています。台風8号は関東甲信や東海に接近し、上陸するおそれもあるほか、台風7号も西日本と東日本へ近づくため、総雨量はかなり多くなるおそれがあります。気象庁は土砂災害に厳重に警戒するとともに川の増水や氾濫、低い土地の浸水、暴風や高波にも警戒するよう呼びかけています。",
+      "description": "2つの台風 相次ぎ接近 総雨量多くなるおそれ 土砂災害厳重警戒 — 台風8号は紀伊半島の南の海上を北寄りに進んでいて、東日本の太平洋側などでは発達した雨雲がかかっています。台風8号は27日朝にかけて関東甲信や東海に接近し、上陸するおそれもあるほか、台風7号も西日本と東日本へ近づくため、総雨量はかなり多くなるおそれがあります。気象庁は土砂災害に厳重に警戒するとともに川の増水や氾濫、低い土地の浸水、暴風や高波にも警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T13:11:23+00:00",
+      "occurred_at": "2026-06-26T17:13:18+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160621000.html",
       "traffic_multiplier": 2.4
     },
@@ -97,13 +98,27 @@
       "event_id": "traffic_20260626_0005",
       "layer": "traffic",
       "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "山口 平生町 住宅の裏山崩れ1人行方不明 3人搬送 — 消防によりますと、26日午後7時45分ごろ、山口県平生町で住宅の裏山が崩れて家の中に土砂が流れ込み、男性1人の行方が分からなくなっているということです。ほかにこの家にいた3人が病院に搬送されたということです。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-26T16:01:14+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162131000.html",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260626_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
       "incident_type": "road_closure",
       "severity": 4,
       "road_name": "",
-      "description": "【高速道路】東名・新東名 中央道 一部区間で通行止め — 日本道路交通情報センターによりますと、地震のあと、▽東名高速道路は静岡県の沼津インターチェンジと富士インターチェンジの間▽新東名高速道路は静岡県の長泉沼津インターチェンジと新富士インターチェンジの間で、いずれも安全確認のため通行止めになっているということです。また、中央自動車道は山梨県の上野原インターチェンジと勝沼インターチェンジの間、大月ジャンクションと河口湖インターチェンジの間で通行止めになっているということです。",
+      "description": "【高速道路】 新東名は解除も東名・中央道は一部通行止め — 中日本高速道路によりますと、26日夜の地震の影響で、新東名高速道路の長泉沼津インターチェンジと新富士インターチェンジの間の上下線が通行止めとなっていましたが、午前1時に解除されました。東名高速道路の沼津インターチェンジと富士インターチェンジの間の上下線は引き続き通行止めとなっています。中央自動車道は山梨県の上野原インターチェンジと勝沼インターチェンジの間、大月ジャンクションと富士吉田インターチェンジの間で通行止めになっているということです。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T14:20:44+00:00",
+      "occurred_at": "2026-06-26T16:00:09+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260626/k10015162061000.html",
       "traffic_multiplier": 2.4
     }

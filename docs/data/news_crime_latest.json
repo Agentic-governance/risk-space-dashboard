@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-26T15:14:54+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-06-26T17:18:54+00:00",
+    "total_count": 47,
     "source_counts": {
-      "nhk_crime": 46
+      "nhk_crime": 47
     },
     "type_counts": {
-      "crime_news": 20,
+      "crime_news": 21,
       "assault": 5,
       "murder": 10,
       "fraud": 7,
@@ -30,14 +30,24 @@
       "群馬": 3,
       "滋賀": 2,
       "鹿児島": 2,
+      "山口": 1,
       "島根": 1,
       "栃木": 1,
-      "長野": 1,
-      "神奈川": 1
+      "長野": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "山口 平生町 住宅の裏山崩れ1人行方不明 3人搬送",
+      "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162131000.html",
+      "date": "2026-06-26",
+      "prefecture": "山口",
+      "subtype": "crime_news",
+      "lat": 34.1859,
+      "lon": 131.4706,
+      "source": "nhk_crime"
+    },
     {
       "title": "増水した川に流されたか 新聞配達員の男性死亡 兵庫 淡路",
       "url": "http://www3.nhk.or.jp/news/html/20260626/k10015161561000.html",
