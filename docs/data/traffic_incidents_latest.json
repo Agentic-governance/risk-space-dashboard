@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-26T09:39:44+00:00",
-    "fetched_at_jst": "2026-06-26T18:39:44+09:00",
+    "fetched_at": "2026-06-26T15:14:43+00:00",
+    "fetched_at_jst": "2026-06-27T00:14:43+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
@@ -17,7 +17,7 @@
       "accident": 2,
       "disaster": 2,
       "congestion": 1,
-      "restriction": 1
+      "road_closure": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T09:39:44+00:00",
+      "occurred_at": "2026-06-26T15:14:43+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T09:39:44+00:00",
+      "occurred_at": "2026-06-26T15:14:43+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T09:39:44+00:00",
+      "occurred_at": "2026-06-26T15:14:43+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T09:39:44+00:00",
+      "occurred_at": "2026-06-26T15:14:43+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -86,10 +86,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "前線停滞で断続的に激しい雨 台風も接近 土砂災害に厳重警戒 — 停滞する梅雨前線の影響で西日本と東日本では断続的に激しい雨が降っていて、これまで大雨となった西日本ではレベル3の警報やレベル4の危険警報が発表されている地域があります。27日にかけて台風7号と8号が接近するため、西日本と東日本では雨量がさらに増えるおそれがあり、備えを進めてください。",
+      "description": "2つの台風 相次ぎ接近 総雨量多くなるおそれ 土砂災害厳重警戒 — 台風8号は速度を上げながら本州に近づいていて、東日本と西日本の太平洋側などでは発達した雨雲がかかっています。台風8号は関東甲信や東海に接近し、上陸するおそれもあるほか、台風7号も西日本と東日本へ近づくため、総雨量はかなり多くなるおそれがあります。気象庁は土砂災害に厳重に警戒するとともに川の増水や氾濫、低い土地の浸水、暴風や高波にも警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T09:26:42+00:00",
+      "occurred_at": "2026-06-26T13:11:23+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160621000.html",
       "traffic_multiplier": 2.4
     },
@@ -97,15 +97,15 @@
       "event_id": "traffic_20260626_0005",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
+      "incident_type": "road_closure",
+      "severity": 4,
       "road_name": "",
-      "description": "【交通情報】あすの見通し 東海道新幹線 運転見合わせ可能性も — 台風7号は今後速度を上げて27日、西日本や東日本に接近する見込みです。また、台風8号も27日、東日本にかなり接近し、上陸するおそれもあります。27日の交通情報をまとめています。",
+      "description": "【高速道路】東名・新東名 中央道 一部区間で通行止め — 日本道路交通情報センターによりますと、地震のあと、▽東名高速道路は静岡県の沼津インターチェンジと富士インターチェンジの間▽新東名高速道路は静岡県の長泉沼津インターチェンジと新富士インターチェンジの間で、いずれも安全確認のため通行止めになっているということです。また、中央自動車道は山梨県の上野原インターチェンジと勝沼インターチェンジの間、大月ジャンクションと河口湖インターチェンジの間で通行止めになっているということです。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-26T09:23:26+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015161421000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-06-26T14:20:44+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015162061000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
