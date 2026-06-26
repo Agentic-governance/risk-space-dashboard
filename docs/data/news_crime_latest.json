@@ -10,18 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-25T23:27:47+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-06-26T01:42:24+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 41
     },
     "type_counts": {
+      "fraud": 6,
+      "assault": 4,
       "crime_news": 19,
       "robbery": 3,
       "stalking": 1,
-      "murder": 8,
-      "fraud": 5,
-      "assault": 3
+      "murder": 8
     },
     "top_prefectures": {
       "兵庫": 12,
@@ -36,6 +36,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "稲川会暴力団員ら4人逮捕 盗難車を不正に名義変更か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160761000.html",
+      "date": "2026-06-26",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "俳優の村上虹郎さんを傷害疑いで書類送検 交際相手に暴行か",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160771000.html",
+      "date": "2026-06-25",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "スクールバスが反対車線へ 6台絡む事故で5人けが 運転手を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160481000.html",

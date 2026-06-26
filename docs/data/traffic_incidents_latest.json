@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-25T23:27:36+00:00",
-    "fetched_at_jst": "2026-06-26T08:27:36+09:00",
+    "fetched_at": "2026-06-26T01:42:13+00:00",
+    "fetched_at_jst": "2026-06-26T10:42:13+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
       "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "construction": 1,
-      "disaster": 2,
+      "disaster": 3,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -24,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260625_0000",
+      "event_id": "traffic_20260626_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T23:27:36+00:00",
+      "occurred_at": "2026-06-26T01:42:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260625_0001",
+      "event_id": "traffic_20260626_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +47,12 @@
       "description": "保守工事の影響で、7月3日までの...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T23:27:36+00:00",
+      "occurred_at": "2026-06-26T01:42:13+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260625_0002",
+      "event_id": "traffic_20260626_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -61,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T23:27:36+00:00",
+      "occurred_at": "2026-06-26T01:42:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260625_0003",
+      "event_id": "traffic_20260626_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T23:27:36+00:00",
+      "occurred_at": "2026-06-26T01:42:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260625_0004",
+      "event_id": "traffic_20260626_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -89,37 +89,37 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T23:27:36+00:00",
+      "occurred_at": "2026-06-26T01:42:13+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260625_0005",
+      "event_id": "traffic_20260626_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風7号と8号接近 各地レベル4危険警報 厳重警戒 — 停滞する梅雨前線の影響で近畿や中国・四国、九州でレベル4の危険警報が発表されている地域があり土砂災害や川の氾濫、低い土地の浸水に厳重に警戒が必要です。また、沖縄県には台風7号がかなり近づいていて、暴風とともに、昼前にかけて線状降水帯の発生のおそれもあり厳重に警戒が必要です。27日にかけては東日本でも台風7号と8号の接近に伴って雨量がかなり増えるおそれがあり備えを進めてください。",
+      "description": "台風7号と8号接近 各地レベル4危険警報 厳重警戒 — 停滞する梅雨前線の影響で近畿や中国・四国、九州でレベル4の危険警報が発表されている地域があり土砂災害や川の氾濫、低い土地の浸水に厳重に警戒が必要です。また、沖縄県には台風7号がかなり近づいていて、暴風とともに、このあと数時間は線状降水帯の発生のおそれもあり厳重に警戒が必要です。27日にかけては東日本でも台風7号と8号の接近に伴って雨量がかなり増えるおそれがあり備えを進めてください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T22:53:04+00:00",
+      "occurred_at": "2026-06-26T00:51:39+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160621000.html",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260625_0006",
+      "event_id": "traffic_20260626_0006",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
+      "incident_type": "disaster",
+      "severity": 4,
       "road_name": "",
-      "description": "スクールバスが反対車線へ 6台絡む事故で5人けが 運転手を逮捕 — 25日夕方、大阪・河内長野市の国道の交差点で中高生が乗ったスクールバスが反対車線にはみ出して乗用車などと衝突し、あわせて6台が絡む事故があり、5人がけがをしました。警察は、スクールバスの運転手をその場で逮捕して、詳しい状況を調べています。",
+      "description": "京都 精華町東畑地区に緊急安全確保 命助かる可能性高い行動を — 京都府精華町は、土砂災害が発生しているとして、午前8時15分に、東畑地区の239世帯、529人を対象に「緊急安全確保」を出しました。警戒レベルで最も高いレベル5で、周囲の状況を確認し、近くの建物や自宅の2階以上、斜面から離れた場所など少しでも安全な場所で命が助かる可能性の高い行動をとるよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-25T16:47:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260625/k10015160481000.html",
-      "traffic_multiplier": 1.6
+      "occurred_at": "2026-06-26T00:06:32+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260626/k10015160751000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
