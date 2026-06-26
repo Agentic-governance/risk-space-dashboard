@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-26T21:07:24+00:00",
+    "fetched_at": "2026-06-26T22:46:28+00:00",
     "filter_window_hours": 24,
-    "total_count": 28,
+    "total_count": 29,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260627070325_20260627070057_VXSE5k_1",
+      "time": "2026-06-26T22:00:00+00:00",
+      "time_jst": "2026-06-27T07:00:00+09:00",
+      "lat": 34.8,
+      "lon": 134.4,
+      "magnitude": 3.0,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southwestern Hyogo Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260627043242_20260627043008_VXSE5k_1",
       "time": "2026-06-26T19:30:00+00:00",
