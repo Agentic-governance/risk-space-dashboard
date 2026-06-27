@@ -10,21 +10,21 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-27T15:52:59+00:00",
-    "total_count": 47,
+    "fetched_at": "2026-06-27T17:02:49+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 47
+      "nhk_crime": 45
     },
     "type_counts": {
-      "crime_news": 21,
-      "assault": 5,
+      "crime_news": 20,
+      "assault": 4,
       "murder": 10,
       "fraud": 7,
       "robbery": 3,
       "stalking": 1
     },
     "top_prefectures": {
-      "兵庫": 13,
+      "兵庫": 12,
       "東京": 6,
       "北海道": 3,
       "群馬": 3,
@@ -486,26 +486,6 @@
       "subtype": "murder",
       "lat": 43.0642,
       "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "横浜 ランニングの男性刺されけが 通り魔事件とみて捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260621/k10015155601000.html",
-      "date": "2026-06-21",
-      "prefecture": "神奈川",
-      "subtype": "assault",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "神戸 マンションの冷凍庫から切断された男性の遺体見つかる",
-      "url": "http://www3.nhk.or.jp/news/html/20260620/k10015155511000.html",
-      "date": "2026-06-20",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
-      "lat": 34.6913,
-      "lon": 135.183,
       "source": "nhk_crime"
     }
   ]
