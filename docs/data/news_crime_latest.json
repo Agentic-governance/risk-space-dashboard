@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-27T02:11:40+00:00",
+    "fetched_at": "2026-06-27T09:15:14+00:00",
     "total_count": 47,
     "source_counts": {
       "nhk_crime": 47
@@ -39,9 +39,9 @@
   },
   "incidents": [
     {
-      "title": "山口 平生町 住宅の裏山崩れ1人行方不明 3人けが",
+      "title": "山口 平生町 住宅に土砂流入 住人の高齢男性が死亡 3人けが",
       "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162131000.html",
-      "date": "2026-06-26",
+      "date": "2026-06-27",
       "prefecture": "山口",
       "subtype": "crime_news",
       "lat": 34.1859,
