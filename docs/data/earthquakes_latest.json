@@ -2,12 +2,68 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-27T19:09:22+00:00",
+    "fetched_at": "2026-06-27T20:41:34+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260628052624_20260628052159_VXSE5k_1",
+      "time": "2026-06-27T20:21:00+00:00",
+      "time_jst": "2026-06-28T05:21:00+09:00",
+      "lat": 40.2,
+      "lon": 142.4,
+      "magnitude": 6.1,
+      "depth_km": 40.0,
+      "max_shindo_raw": "5-",
+      "max_shindo": 4.5,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.3
+    },
+    {
+      "event_id": "20260628052452_20260628052159_VXSE52_0",
+      "time": "2026-06-27T20:21:00+00:00",
+      "time_jst": "2026-06-28T05:21:00+09:00",
+      "lat": 40.2,
+      "lon": 142.4,
+      "magnitude": 6.1,
+      "depth_km": 40.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.1
+    },
+    {
+      "event_id": "20260628052429_20260628052159_VXSE51_0",
+      "time": "2026-06-27T20:21:00+00:00",
+      "time_jst": "2026-06-28T05:21:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "5-",
+      "max_shindo": 4.5,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.2
+    },
+    {
+      "event_id": "20260628052329_20260628052159_VXSE51_0",
+      "time": "2026-06-27T20:21:00+00:00",
+      "time_jst": "2026-06-28T05:21:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "5-",
+      "max_shindo": 4.5,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.2
+    },
     {
       "event_id": "20260628024636_20260628024359_VXSE5k_1",
       "time": "2026-06-27T17:43:00+00:00",
@@ -91,20 +147,6 @@
       "location_name": "Southwestern Hyogo Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260627043242_20260627043008_VXSE5k_1",
-      "time": "2026-06-26T19:30:00+00:00",
-      "time_jst": "2026-06-27T04:30:00+09:00",
-      "lat": 36.2,
-      "lon": 140.0,
-      "magnitude": 3.2,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
