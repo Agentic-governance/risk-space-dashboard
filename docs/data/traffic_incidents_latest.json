@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-27T11:14:41+00:00",
-    "fetched_at_jst": "2026-06-27T20:14:41+09:00",
+    "fetched_at": "2026-06-27T14:30:03+00:00",
+    "fetched_at_jst": "2026-06-27T23:30:03+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-27T11:14:41+00:00",
+      "occurred_at": "2026-06-27T14:30:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-27T11:14:41+00:00",
+      "occurred_at": "2026-06-27T14:30:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-27T11:14:41+00:00",
+      "occurred_at": "2026-06-27T14:30:03+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-27T11:14:41+00:00",
+      "occurred_at": "2026-06-27T14:30:03+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -86,11 +86,11 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風7号 今夜にかけ関東や伊豆諸島で非常に激しい雨のおそれ — 台風7号は千葉県の南の海上を進み関東に接近していて、千葉県ではレベル4土砂災害危険警報が発表されている地域があります。関東と伊豆諸島ではこのあと数時間、非常に激しい雨が降るおそれあり、気象庁は土砂災害に厳重に警戒するとともに、川の増水や氾濫、低い土地の浸水、高波にも警戒するよう呼びかけています。",
+      "description": "台風7号 温帯低気圧に 引き続き土砂災害など十分注意を — 台風7号は日本の東の海上で温帯低気圧に変わりました。これまでの大雨で東日本の太平洋側を中心に地盤が緩んでいる地域があり、気象庁は土砂災害などに十分注意するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-27T10:27:21+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162281000.html",
+      "occurred_at": "2026-06-27T14:15:20+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162731000.html",
       "traffic_multiplier": 2.4
     },
     {
