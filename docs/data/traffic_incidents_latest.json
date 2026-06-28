@@ -6,18 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-28T02:34:36+00:00",
-    "fetched_at_jst": "2026-06-28T11:34:36+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-06-28T09:57:44+00:00",
+    "fetched_at_jst": "2026-06-28T18:57:44+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 1
+      "yahoo_transit": 6
     },
     "type_counts": {
+      "disaster": 3,
       "accident": 2,
-      "disaster": 1,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -27,15 +25,15 @@
       "event_id": "traffic_20260628_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
+      "incident_type": "disaster",
+      "severity": 4,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "台風災害の影響で、終日、上総牛久...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-28T02:34:36+00:00",
+      "occurred_at": "2026-06-28T09:57:44+00:00",
       "url": "",
-      "traffic_multiplier": 1.6
+      "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260628_0001",
@@ -43,11 +41,11 @@
       "source": "yahoo_transit",
       "incident_type": "accident",
       "severity": 3,
-      "road_name": "中川駅間での脱線",
-      "description": "国吉〜上総中川駅間での脱線事故の...",
+      "road_name": "",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-28T02:34:36+00:00",
+      "occurred_at": "2026-06-28T09:57:44+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -58,15 +56,43 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "天気アプリの決定版 Yahoo!天気・災害",
+      "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-28T02:34:36+00:00",
+      "occurred_at": "2026-06-28T09:57:44+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260628_0003",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "中川駅間での脱線",
+      "description": "国吉〜上総中川駅間での脱線事故の...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-28T09:57:44+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260628_0004",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "天気アプリの決定版 Yahoo!天気・災害",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-06-28T09:57:44+00:00",
+      "url": "",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260628_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -75,22 +101,8 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-28T02:34:36+00:00",
+      "occurred_at": "2026-06-28T09:57:44+00:00",
       "url": "",
-      "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260628_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "青森 八戸 25日の地震で被害のビル 市が新たな被害ないか確認 — 震度5弱の揺れを観測した青森県八戸市は、25日の地震で中心部にある複数のビルの外壁の一部が崩落するなどの被害を受けていて、28日朝の地震を受けて市の担当者が新たな被害がないか確認していました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-28T01:36:38+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260628/k10015162881000.html",
       "traffic_multiplier": 1.0
     }
   ]

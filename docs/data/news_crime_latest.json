@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-28T02:34:47+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-06-28T09:57:54+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 45
+      "nhk_crime": 46
     },
     "type_counts": {
-      "crime_news": 20,
+      "crime_news": 21,
       "assault": 4,
       "murder": 10,
       "fraud": 7,
@@ -26,10 +26,10 @@
     "top_prefectures": {
       "兵庫": 12,
       "東京": 6,
+      "鹿児島": 3,
       "北海道": 3,
       "群馬": 3,
       "滋賀": 2,
-      "鹿児島": 2,
       "山口": 1,
       "島根": 1,
       "栃木": 1,
@@ -38,6 +38,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "鹿児島 霧島の温泉施設で5歳男児行方不明から1週間 捜索続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260628/k10015163111000.html",
+      "date": "2026-06-28",
+      "prefecture": "鹿児島",
+      "subtype": "crime_news",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "source": "nhk_crime"
+    },
     {
       "title": "山口 平生町 住宅に土砂流入 住人の高齢男性が死亡 3人けが",
       "url": "http://www3.nhk.or.jp/news/html/20260627/k10015162131000.html",
