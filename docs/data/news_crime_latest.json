@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-28T20:45:26+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-06-28T22:00:15+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 38
+      "nhk_crime": 39
     },
     "type_counts": {
+      "murder": 9,
       "crime_news": 17,
       "assault": 4,
-      "murder": 8,
       "fraud": 6,
       "robbery": 2,
       "stalking": 1
@@ -29,15 +29,25 @@
       "群馬": 3,
       "鹿児島": 2,
       "滋賀": 2,
+      "大分": 1,
       "山口": 1,
       "島根": 1,
       "栃木": 1,
-      "長野": 1,
-      "北海道": 1
+      "長野": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大分 別府ひき逃げ事件から4年 新映像公開し情報提供呼びかけ",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163331000.html",
+      "date": "2026-06-28",
+      "prefecture": "大分",
+      "subtype": "murder",
+      "lat": 33.2382,
+      "lon": 131.6126,
+      "source": "nhk_crime"
+    },
     {
       "title": "鹿児島 霧島の温泉施設で5歳男児行方不明から1週間 捜索続く",
       "url": "http://www3.nhk.or.jp/news/html/20260628/k10015163111000.html",
