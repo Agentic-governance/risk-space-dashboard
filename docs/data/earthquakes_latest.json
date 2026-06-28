@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-28T15:07:21+00:00",
+    "fetched_at": "2026-06-28T16:19:24+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260629010723_20260629010414_VXSE5k_1",
+      "time": "2026-06-28T16:04:00+00:00",
+      "time_jst": "2026-06-29T01:04:00+09:00",
+      "lat": 35.5,
+      "lon": 139.0,
+      "magnitude": 2.5,
+      "depth_km": 20.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Eastern Region · Fuji Five Lakes, Yamanashi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.3
+    },
+    {
+      "event_id": "20260629002153_20260629001923_VXSE5k_1",
+      "time": "2026-06-28T15:19:00+00:00",
+      "time_jst": "2026-06-29T00:19:00+09:00",
+      "lat": 36.1,
+      "lon": 140.0,
+      "magnitude": 3.2,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southern Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260628235315_20260628234930_VXSE5k_1",
       "time": "2026-06-28T14:49:00+00:00",
