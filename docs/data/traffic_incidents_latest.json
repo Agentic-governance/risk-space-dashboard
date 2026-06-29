@@ -6,18 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-06-29T09:04:11+00:00",
-    "fetched_at_jst": "2026-06-29T18:04:11+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-06-29T13:11:31+00:00",
+    "fetched_at_jst": "2026-06-29T22:11:31+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 6,
-      "nhk_rss": 2
+      "yahoo_transit": 6
     },
     "type_counts": {
       "accident": 2,
       "disaster": 3,
-      "congestion": 1,
-      "restriction": 2
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +31,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-29T09:04:11+00:00",
+      "occurred_at": "2026-06-29T13:11:31+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +45,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-29T09:04:11+00:00",
+      "occurred_at": "2026-06-29T13:11:31+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +59,7 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-29T09:04:11+00:00",
+      "occurred_at": "2026-06-29T13:11:31+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +73,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-29T09:04:11+00:00",
+      "occurred_at": "2026-06-29T13:11:31+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +87,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-29T09:04:11+00:00",
+      "occurred_at": "2026-06-29T13:11:31+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,37 +101,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-06-29T09:04:11+00:00",
+      "occurred_at": "2026-06-29T13:11:31+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260629_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "中国 軍民両用品目の対日輸出禁止発表 日本の20の企業など追加 — 中国商務省は29日、「防衛省防衛研究所」など日本の20の団体や企業について、日本の軍事力の向上に関与しているとして輸出規制リストに追加し、軍民両用の品目の中国からの輸出を禁止すると発表しました。中国はことし2月にも日本の別の20の企業などに同様の措置をとっていて圧力を強めています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-29T08:23:58+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163591000.html",
-      "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260629_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "血管炎の薬「タブネオス」EUでの製造販売承認の取り消しを勧告 — 投与された患者の死亡が国内で報告された、難病の血管炎の治療薬「タブネオス」について、EUの規制当局の委員会は、薬のメリットがリスクを上回ることが証明されていないとして、製造販売承認の取り消しを勧告したと発表しました。国内でも製薬会社が国と対応を協議しています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-06-29T08:03:31+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163761000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
