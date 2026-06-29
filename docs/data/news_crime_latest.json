@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-28T23:00:14+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-06-29T04:06:09+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 42
     },
     "type_counts": {
-      "murder": 9,
-      "crime_news": 17,
+      "murder": 10,
+      "crime_news": 19,
       "assault": 4,
       "fraud": 6,
       "robbery": 2,
@@ -29,15 +29,45 @@
       "群馬": 3,
       "鹿児島": 2,
       "滋賀": 2,
+      "広島": 1,
+      "青森": 1,
+      "愛知": 1,
       "大分": 1,
-      "山口": 1,
-      "島根": 1,
-      "栃木": 1,
-      "長野": 1
+      "山口": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "広島 三原の遺体発見事件 強盗殺人の疑いで29歳容疑者逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163521000.html",
+      "date": "2026-06-29",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "青森市の山で男性行方不明 待ち合わせ場所付近でクマの目撃も",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163611000.html",
+      "date": "2026-06-29",
+      "prefecture": "青森",
+      "subtype": "crime_news",
+      "lat": 40.8244,
+      "lon": 140.74,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "名古屋市天白区の住宅で火災 2人死亡",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163531000.html",
+      "date": "2026-06-29",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
     {
       "title": "大分 別府ひき逃げ事件から4年 新映像公開し情報提供呼びかけ",
       "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163331000.html",
