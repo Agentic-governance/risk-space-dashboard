@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-29T19:03:58+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-06-29T20:55:07+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 36
+      "nhk_crime": 37
     },
     "type_counts": {
+      "murder": 14,
       "crime_news": 15,
-      "murder": 13,
       "assault": 2,
       "fraud": 3,
       "robbery": 2,
@@ -27,17 +27,27 @@
       "兵庫": 7,
       "東京": 3,
       "群馬": 3,
+      "広島": 2,
       "愛知": 2,
       "栃木": 2,
       "大分": 2,
       "滋賀": 2,
       "青森": 1,
-      "広島": 1,
       "京都": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "広島 三原 強盗殺人事件 請け負った工事の現場選んで事件か",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015164131000.html",
+      "date": "2026-06-29",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "青森市の八甲田山系 男性の遺体 かまれた痕も 付近でクマ目撃",
       "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163611000.html",
