@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-29T04:06:09+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-06-29T09:04:20+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 42
+      "nhk_crime": 45
     },
     "type_counts": {
-      "murder": 10,
+      "murder": 13,
       "crime_news": 19,
       "assault": 4,
       "fraud": 6,
@@ -27,13 +27,13 @@
       "兵庫": 11,
       "東京": 4,
       "群馬": 3,
+      "栃木": 2,
+      "大分": 2,
       "鹿児島": 2,
       "滋賀": 2,
       "広島": 1,
-      "青森": 1,
-      "愛知": 1,
-      "大分": 1,
-      "山口": 1
+      "京都": 1,
+      "青森": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -46,6 +46,36 @@
       "subtype": "murder",
       "lat": 34.3963,
       "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木 強盗殺人 指示役とみられる夫婦を強盗殺人などの罪で起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163741000.html",
+      "date": "2026-06-29",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「餃子の王将」社長殺害事件 検察が無期懲役を求刑 京都地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163711000.html",
+      "date": "2026-06-29",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大分 別府ひき逃げ事件 発生から4年 新画像のチラシ全国で配布",
+      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163671000.html",
+      "date": "2026-06-29",
+      "prefecture": "大分",
+      "subtype": "murder",
+      "lat": 33.2382,
+      "lon": 131.6126,
       "source": "nhk_crime"
     },
     {
