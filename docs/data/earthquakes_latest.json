@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-30T19:20:13+00:00",
+    "fetched_at": "2026-06-30T21:18:58+00:00",
     "filter_window_hours": 24,
     "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260701055831_20260701055533_VXSE5k_1",
+      "time": "2026-06-30T20:55:00+00:00",
+      "time_jst": "2026-07-01T05:55:00+09:00",
+      "lat": 28.7,
+      "lon": 129.5,
+      "magnitude": 3.4,
+      "depth_km": 20.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Amami-Oshima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20260701013431_20260701013154_VXSE5k_1",
       "time": "2026-06-30T16:31:00+00:00",
@@ -161,20 +175,6 @@
       "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260630052646_20260630052421_VXSE5k_1",
-      "time": "2026-06-29T20:24:00+00:00",
-      "time_jst": "2026-06-30T05:24:00+09:00",
-      "lat": 32.4,
-      "lon": 131.5,
-      "magnitude": 2.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Plain Area of Northern Miyazaki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
