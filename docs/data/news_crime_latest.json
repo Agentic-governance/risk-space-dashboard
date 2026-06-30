@@ -10,22 +10,22 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-30T10:30:57+00:00",
-    "total_count": 44,
+    "fetched_at": "2026-06-30T15:14:25+00:00",
+    "total_count": 47,
     "source_counts": {
-      "nhk_crime": 44
+      "nhk_crime": 47
     },
     "type_counts": {
+      "crime_news": 18,
+      "assault": 3,
       "murder": 18,
       "robbery": 3,
       "stalking": 2,
-      "crime_news": 16,
-      "assault": 2,
       "fraud": 3
     },
     "top_prefectures": {
+      "東京": 7,
       "兵庫": 7,
-      "東京": 5,
       "栃木": 4,
       "広島": 4,
       "群馬": 3,
@@ -38,6 +38,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大規模山林火災受け 消火薬剤のガイドライン策定 総務省消防庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015165271000.html",
+      "date": "2026-06-30",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "国の天然記念物のカメ捕獲疑いで逮捕の店長を不起訴 東京地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015165241000.html",
+      "date": "2026-06-30",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 町田 少年12人書類送検 バイクで危険走行か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260630/k10015165061000.html",
+      "date": "2026-06-30",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人事件 高校生ら4人の事件を横浜家裁支部へ移す決定",
       "url": "http://www3.nhk.or.jp/news/html/20260630/k10015165031000.html",
