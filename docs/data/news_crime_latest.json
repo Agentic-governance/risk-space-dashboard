@@ -10,30 +10,30 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-06-30T15:14:25+00:00",
-    "total_count": 47,
+    "fetched_at": "2026-06-30T17:28:20+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 47
+      "nhk_crime": 37
     },
     "type_counts": {
-      "crime_news": 18,
+      "crime_news": 12,
       "assault": 3,
-      "murder": 18,
+      "murder": 15,
       "robbery": 3,
       "stalking": 2,
-      "fraud": 3
+      "fraud": 2
     },
     "top_prefectures": {
-      "東京": 7,
-      "兵庫": 7,
+      "東京": 5,
       "栃木": 4,
       "広島": 4,
-      "群馬": 3,
+      "兵庫": 3,
       "愛知": 2,
       "大分": 2,
       "滋賀": 2,
       "千葉": 1,
-      "青森": 1
+      "青森": 1,
+      "京都": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -402,106 +402,6 @@
       "title": "神戸 冷凍庫遺体遺棄事件 元妻「電気代去年ごろまで払う」供述",
       "url": "http://www3.nhk.or.jp/news/html/20260625/k10015158821000.html",
       "date": "2026-06-24",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "人形に隠して金塊密輸か 東京税関が53億円相当押収 解明へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158541000.html",
-      "date": "2026-06-24",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京地検特捜部の取り調べめぐり 担当検事の刑事裁判開く決定",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158341000.html",
-      "date": "2026-06-24",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "カンボジア拠点 特殊詐欺グループ リーダー格を逮捕 兵庫県警",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158591000.html",
-      "date": "2026-06-24",
-      "prefecture": "兵庫",
-      "subtype": "fraud",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "群馬 高崎 女性殺人事件 逃走の知人は埼玉県内で事故死か",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158551000.html",
-      "date": "2026-06-24",
-      "prefecture": "群馬",
-      "subtype": "murder",
-      "lat": 36.3911,
-      "lon": 139.0608,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "神戸 冷凍庫に遺体 元妻“遺棄後も現場出入り”趣旨の供述",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158491000.html",
-      "date": "2026-06-24",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "群馬 高崎 女性殺人事件 逃走の男 埼玉県内の交通事故で死亡か",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158091000.html",
-      "date": "2026-06-24",
-      "prefecture": "群馬",
-      "subtype": "murder",
-      "lat": 36.3911,
-      "lon": 139.0608,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "カードで大量不正購入か 偽の住所変更で督促免れたか 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157561000.html",
-      "date": "2026-06-24",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "神戸 冷凍庫遺体遺棄事件 元妻発覚しないよう賃貸契約続けたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015158051000.html",
-      "date": "2026-06-24",
-      "prefecture": "兵庫",
-      "subtype": "crime_news",
-      "lat": 34.6913,
-      "lon": 135.183,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "群馬 高崎の駐車場 女性が血を流して死亡 殺人事件で捜査",
-      "url": "http://www3.nhk.or.jp/news/html/20260624/k10015157771000.html",
-      "date": "2026-06-23",
-      "prefecture": "群馬",
-      "subtype": "murder",
-      "lat": 36.3911,
-      "lon": 139.0608,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "神戸 冷凍庫切断遺体事件 遺体を遺棄した疑いで元妻逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260623/k10015157631000.html",
-      "date": "2026-06-23",
       "prefecture": "兵庫",
       "subtype": "crime_news",
       "lat": 34.6913,

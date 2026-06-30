@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-06-30T15:14:08+00:00",
+    "fetched_at": "2026-06-30T17:28:04+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260701013431_20260701013154_VXSE5k_1",
+      "time": "2026-06-30T16:31:00+00:00",
+      "time_jst": "2026-07-01T01:31:00+09:00",
+      "lat": 37.2,
+      "lon": 136.9,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Noto, Ishikawa Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260701003546_20260701003305_VXSE5k_1",
+      "time": "2026-06-30T15:33:00+00:00",
+      "time_jst": "2026-07-01T00:33:00+09:00",
+      "lat": 36.2,
+      "lon": 140.0,
+      "magnitude": 3.4,
+      "depth_km": 60.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southern Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260701000531_20260701000231_VXSE5k_1",
       "time": "2026-06-30T15:02:00+00:00",
