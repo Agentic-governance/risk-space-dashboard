@@ -10,34 +10,64 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-01T02:59:40+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-07-01T07:10:53+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 40
     },
     "type_counts": {
-      "crime_news": 12,
+      "murder": 17,
+      "crime_news": 13,
       "assault": 3,
-      "murder": 15,
       "robbery": 3,
       "stalking": 2,
       "fraud": 2
     },
     "top_prefectures": {
-      "東京": 5,
+      "東京": 6,
+      "広島": 5,
       "栃木": 4,
-      "広島": 4,
       "兵庫": 3,
+      "長野": 2,
       "愛知": 2,
       "大分": 2,
       "滋賀": 2,
       "千葉": 1,
-      "青森": 1,
-      "京都": 1
+      "青森": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "長野 東御 母娘か2人死亡 長男切りつけた疑い 父親を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165681000.html",
+      "date": "2026-07-01",
+      "prefecture": "長野",
+      "subtype": "murder",
+      "lat": 36.6513,
+      "lon": 138.181,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "女性を性風俗店に違法に紹介か “伝説のスカウト”逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165671000.html",
+      "date": "2026-07-01",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 強盗殺人事件 “工事手伝ってもらい その場で別れた”",
+      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165741000.html",
+      "date": "2026-07-01",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "大規模山林火災受け 消火薬剤のガイドライン策定 総務省消防庁",
       "url": "http://www3.nhk.or.jp/news/html/20260630/k10015165271000.html",
