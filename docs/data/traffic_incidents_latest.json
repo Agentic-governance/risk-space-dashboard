@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-01T22:05:10+00:00",
-    "fetched_at_jst": "2026-07-02T07:05:10+09:00",
+    "fetched_at": "2026-07-01T23:11:13+00:00",
+    "fetched_at_jst": "2026-07-02T08:11:13+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 6,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T22:05:10+00:00",
+      "occurred_at": "2026-07-01T23:11:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T22:05:10+00:00",
+      "occurred_at": "2026-07-01T23:11:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T22:05:10+00:00",
+      "occurred_at": "2026-07-01T23:11:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T22:05:10+00:00",
+      "occurred_at": "2026-07-01T23:11:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +88,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T22:05:10+00:00",
+      "occurred_at": "2026-07-01T23:11:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +102,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T22:05:10+00:00",
+      "occurred_at": "2026-07-01T23:11:13+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -116,7 +116,7 @@
       "description": "九州北部で線状降水帯発生 土砂災害・浸水などに厳重警戒 — 梅雨前線や低気圧の影響で九州北部では大雨となり、2日未明から相次いで線状降水帯が発生し、熊本県では川の水が堤防を越えて氾濫が発生しているところもあります。大分県ではレベル4の土砂災害危険警報が発表されていて、気象庁は、土砂災害や川の氾濫、低い土地の浸水に厳重に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T21:53:44+00:00",
+      "occurred_at": "2026-07-01T23:10:47+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166571000.html",
       "traffic_multiplier": 2.4
     }
