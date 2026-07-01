@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-01T20:28:02+00:00",
+    "fetched_at": "2026-07-01T22:05:02+00:00",
     "filter_window_hours": 24,
-    "total_count": 15,
+    "total_count": 16,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260702061324_20260702061031_VXSE5k_1",
+      "time": "2026-07-01T21:10:00+00:00",
+      "time_jst": "2026-07-02T06:10:00+09:00",
+      "lat": 41.9,
+      "lon": 142.5,
+      "magnitude": 4.2,
+      "depth_km": 60.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Urakawa",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20260702055811_20260702055545_VXSE5k_1",
+      "time": "2026-07-01T20:55:00+00:00",
+      "time_jst": "2026-07-02T05:55:00+09:00",
+      "lat": 35.6,
+      "lon": 137.2,
+      "magnitude": 2.6,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Eastern Mino, Gifu Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260702033503_20260702033234_VXSE5k_1",
       "time": "2026-07-01T18:32:00+00:00",
@@ -203,20 +231,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260701055831_20260701055533_VXSE5k_1",
-      "time": "2026-06-30T20:55:00+00:00",
-      "time_jst": "2026-07-01T05:55:00+09:00",
-      "lat": 28.7,
-      "lon": 129.5,
-      "magnitude": 3.4,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Amami-Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
