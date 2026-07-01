@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-01T16:20:32+00:00",
-    "fetched_at_jst": "2026-07-02T01:20:32+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-01T20:28:09+00:00",
+    "fetched_at_jst": "2026-07-02T05:28:09+09:00",
+    "total_count": 12,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 3
+      "nhk_rss": 6
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 6,
-      "congestion": 1
+      "disaster": 8,
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T16:20:32+00:00",
+      "occurred_at": "2026-07-01T20:28:09+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +47,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T16:20:32+00:00",
+      "occurred_at": "2026-07-01T20:28:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +61,7 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T16:20:32+00:00",
+      "occurred_at": "2026-07-01T20:28:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T16:20:32+00:00",
+      "occurred_at": "2026-07-01T20:28:09+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T16:20:32+00:00",
+      "occurred_at": "2026-07-01T20:28:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T16:20:32+00:00",
+      "occurred_at": "2026-07-01T20:28:09+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -110,15 +111,15 @@
       "event_id": "traffic_20260701_0006",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
+      "incident_type": "restriction",
+      "severity": 1,
       "road_name": "",
-      "description": "佐賀南部と長崎北部で線状降水帯が発生 災害危険度高まる — 気象庁は2日午前0時39分、佐賀県南部と長崎県北部に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
+      "description": "熊本 小国町 筑後川の杖立観測所付近 氾濫発生情報 — 国土交通省は、熊本県小国町を流れる筑後川の杖立観測所付近で川の水が堤防を越えて氾濫が起きている可能性があるとして、2日午前4時10分に警戒レベル5の「氾濫発生情報」を発表しました。国土交通省は小国町や大分県日田市で、浸水しているおそれがあるとして安全確保を図るよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T15:50:25+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166481000.html",
-      "traffic_multiplier": 2.4
+      "occurred_at": "2026-07-01T20:15:20+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166701000.html",
+      "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260701_0007",
@@ -127,11 +128,11 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "大分西部に「線状降水帯直前予測」を発表 気象庁 — 気象庁は大分県西部で、今後3時間以内に線状降水帯が発生する可能性が高まっているとして、1日午後11時58分、「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、大分県西部では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
+      "description": "熊本 阿蘇地方に線状降水帯が発生 災害危険度高まる — 気象庁は2日午前3時19分、熊本県阿蘇地方に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T15:07:54+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166541000.html",
+      "occurred_at": "2026-07-01T18:32:11+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166661000.html",
       "traffic_multiplier": 2.4
     },
     {
@@ -141,11 +142,53 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "佐賀 唐津 唐津地区の3万3758世帯の7万2275人に避難指示 — 佐賀県唐津市はレベル4土砂災害危険警報が発表されたことを受けて、午後10時半に、唐津地区の3万3758世帯の7万2275人に避難指示を出しました。5段階の警戒レベルのうち、レベル4にあたる情報で、危険な場所から全員避難するよう呼びかけています。",
+      "description": "大分西部で線状降水帯が発生 災害危険度高まる 厳重に警戒を — 気象庁は2日午前3時9分、大分県西部に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T14:16:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015166491000.html",
+      "occurred_at": "2026-07-01T18:28:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166651000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260701_0009",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "熊本 阿蘇地方に線状降水帯直前予測を発表 気象庁 — 気象庁は、熊本県の阿蘇地方では今後3時間以内に線状降水帯が発生する可能性が高まっているとして、午前2時49分、「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、熊本県の阿蘇地方では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-01T18:05:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166611000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260701_0010",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "福岡 筑後地方に線状降水帯が発生 災害危険度高まる — 気象庁は午前2時28分、福岡県筑後地方に「線状降水帯発生」の気象防災速報を発表しました。「線状降水帯」は、発達した積乱雲が連なって大雨をもたらす現象で、気象庁は、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まっているとして、厳重に警戒するとともに、安全を確保するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-01T17:39:55+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166601000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260701_0011",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "九州北部で線状降水帯発生 土砂災害・浸水などに厳重警戒 — 梅雨前線や低気圧の影響で九州北部では大雨となり、2日未明から相次いで線状降水帯が発生しました。この時間は熊本県で猛烈な雨が降ったほか、近畿でも局地的に雨雲が発達しています。九州北部の各地や滋賀県ではレベル4の危険警報が発表されていて、気象庁は、土砂災害や低い土地の浸水、川の氾濫に厳重に警戒するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-01T20:09:39+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166571000.html",
       "traffic_multiplier": 2.4
     }
   ]

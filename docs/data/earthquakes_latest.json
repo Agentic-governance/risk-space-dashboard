@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-01T16:20:24+00:00",
+    "fetched_at": "2026-07-01T20:28:02+00:00",
     "filter_window_hours": 24,
     "total_count": 15,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260702033503_20260702033234_VXSE5k_1",
+      "time": "2026-07-01T18:32:00+00:00",
+      "time_jst": "2026-07-02T03:32:00+09:00",
+      "lat": 32.4,
+      "lon": 131.5,
+      "magnitude": 2.8,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Plain Area of Northern Miyazaki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260702011858_20260702011538_VXSE5k_1",
       "time": "2026-07-01T16:15:00+00:00",
@@ -203,20 +217,6 @@
       "location_name": "Adjacent Sea of Amami-Oshima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260701013431_20260701013154_VXSE5k_1",
-      "time": "2026-06-30T16:31:00+00:00",
-      "time_jst": "2026-07-01T01:31:00+09:00",
-      "lat": 37.2,
-      "lon": 136.9,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Noto, Ishikawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
