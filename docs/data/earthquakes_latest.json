@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-02T20:20:05+00:00",
+    "fetched_at": "2026-07-02T21:47:35+00:00",
     "filter_window_hours": 24,
     "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260703053324_20260703053020_VXSE5k_1",
+      "time": "2026-07-02T20:30:00+00:00",
+      "time_jst": "2026-07-03T05:30:00+09:00",
+      "lat": 43.3,
+      "lon": 146.5,
+      "magnitude": 3.3,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260703052742_20260703052456_VXSE5k_1",
+      "time": "2026-07-02T20:24:00+00:00",
+      "time_jst": "2026-07-03T05:24:00+09:00",
+      "lat": 38.9,
+      "lon": 141.9,
+      "magnitude": 3.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260702234748_20260702234447_VXSE5k_1",
       "time": "2026-07-02T14:44:00+00:00",
@@ -77,34 +105,6 @@
       "location_name": "Off the east Coast of Aomori Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260702061324_20260702061031_VXSE5k_1",
-      "time": "2026-07-01T21:10:00+00:00",
-      "time_jst": "2026-07-02T06:10:00+09:00",
-      "lat": 41.9,
-      "lon": 142.5,
-      "magnitude": 4.2,
-      "depth_km": 60.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Urakawa",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260702055811_20260702055545_VXSE5k_1",
-      "time": "2026-07-01T20:55:00+00:00",
-      "time_jst": "2026-07-02T05:55:00+09:00",
-      "lat": 35.6,
-      "lon": 137.2,
-      "magnitude": 2.6,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Eastern Mino, Gifu Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
