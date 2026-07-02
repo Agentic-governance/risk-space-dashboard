@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-02T13:21:19+00:00",
+    "fetched_at": "2026-07-02T15:44:40+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260702234748_20260702234447_VXSE5k_1",
+      "time": "2026-07-02T14:44:00+00:00",
+      "time_jst": "2026-07-02T23:44:00+09:00",
+      "lat": 24.6,
+      "lon": 122.5,
+      "magnitude": 4.6,
+      "depth_km": 110.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Yonagunijima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260702205200_20260702204848_VXSE5k_1",
       "time": "2026-07-02T11:48:00+00:00",
@@ -119,34 +133,6 @@
       "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260701235552_20260701235051_VXSE5k_1",
-      "time": "2026-07-01T14:52:00+00:00",
-      "time_jst": "2026-07-01T23:52:00+09:00",
-      "lat": 40.1,
-      "lon": 142.5,
-      "magnitude": 4.2,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260701222623_20260701222348_VXSE5k_1",
-      "time": "2026-07-01T13:23:00+00:00",
-      "time_jst": "2026-07-01T22:23:00+09:00",
-      "lat": 31.3,
-      "lon": 131.6,
-      "magnitude": 3.1,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the east Coast of Osumi Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
