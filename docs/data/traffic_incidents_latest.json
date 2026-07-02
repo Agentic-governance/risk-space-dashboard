@@ -6,16 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-02T11:32:11+00:00",
-    "fetched_at_jst": "2026-07-02T20:32:11+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-07-02T13:21:23+00:00",
+    "fetched_at_jst": "2026-07-02T22:21:23+09:00",
+    "total_count": 8,
     "source_counts": {
-      "yahoo_transit": 6
+      "yahoo_transit": 6,
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
       "disaster": 3,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 2
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -31,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-02T11:32:11+00:00",
+      "occurred_at": "2026-07-02T13:21:23+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -45,7 +47,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-02T11:32:11+00:00",
+      "occurred_at": "2026-07-02T13:21:23+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -59,7 +61,7 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-02T11:32:11+00:00",
+      "occurred_at": "2026-07-02T13:21:23+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -73,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-02T11:32:11+00:00",
+      "occurred_at": "2026-07-02T13:21:23+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -87,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-02T11:32:11+00:00",
+      "occurred_at": "2026-07-02T13:21:23+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -101,8 +103,36 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-02T11:32:11+00:00",
+      "occurred_at": "2026-07-02T13:21:23+00:00",
       "url": "",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260702_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "各地で土砂崩れや氾濫も 週末は九州で再び大雨のおそれ — 梅雨前線や低気圧の影響で九州北部では2日明け方にかけて線状降水帯が相次いで発生するなど大雨となり、各地で土砂崩れや川の氾濫などの被害がでました。九州付近には梅雨前線が引き続き停滞し、4日土曜には活動が活発になって再び大雨になるおそれもあり、最新の情報を確認してください。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-02T10:12:25+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166571000.html",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260702_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "【大雨】各地で被害 熊本の旅館で浸水 長崎や大分でも土砂崩れ — 梅雨前線や低気圧の影響で九州北部では2日未明から明け方にかけて、線状降水帯が相次いで発生するなど大雨となり、土砂崩れや川の氾濫などの被害が各地で出ています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-02T09:23:08+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166881000.html",
       "traffic_multiplier": 1.0
     }
   ]
