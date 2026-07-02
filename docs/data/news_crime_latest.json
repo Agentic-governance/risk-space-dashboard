@@ -10,45 +10,45 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-02T08:46:57+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-07-02T11:32:21+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 39,
+      "nhk_crime": 41,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 12,
-      "robbery": 2,
-      "fraud": 4,
       "theft": 1,
+      "robbery": 3,
+      "crime_news": 13,
+      "fraud": 4,
       "murder": 16,
       "indecent_act": 1,
       "assault": 3,
       "stalking": 1
     },
     "top_prefectures": {
-      "東京": 6,
+      "東京": 7,
       "広島": 5,
       "栃木": 4,
       "愛知": 3,
       "長野": 3,
       "大分": 2,
+      "石川": 1,
       "神奈川": 1,
       "千葉": 1,
-      "青森": 1,
-      "京都": 1
+      "青森": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "名古屋 郵便局で“クマスプレー”まいた疑い 22歳容疑者を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167121000.html",
+      "title": "窃盗未遂疑いで4人逮捕 羽田の多額現金襲撃事件にも関与か",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166911000.html",
       "date": "2026-07-02",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
+      "prefecture": "",
+      "subtype": "theft",
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {
@@ -62,21 +62,41 @@
       "source": "nhk_crime"
     },
     {
+      "title": "能登半島地震 不明者捜索に関する工事 入札不調で捜索できず",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167261000.html",
+      "date": "2026-07-02",
+      "prefecture": "石川",
+      "subtype": "crime_news",
+      "lat": 36.5947,
+      "lon": 136.6256,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 新宿の強盗未遂事件で逮捕の男性を不起訴 東京地検",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167291000.html",
+      "date": "2026-07-02",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "名古屋 郵便局で“クマスプレー”まいた疑い 22歳容疑者を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167121000.html",
+      "date": "2026-07-02",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
       "title": "米国SNS詐欺の被害金が日本の口座に 資金洗浄か 7人逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167001000.html",
       "date": "2026-07-02",
       "prefecture": "",
       "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "窃盗未遂疑いで4人逮捕 羽田の多額現金襲撃事件にも関与か",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166911000.html",
-      "date": "2026-07-02",
-      "prefecture": "",
-      "subtype": "theft",
       "lat": null,
       "lon": null,
       "source": "nhk_crime"

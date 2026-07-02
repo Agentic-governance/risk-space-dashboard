@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-02T08:46:42+00:00",
+    "fetched_at": "2026-07-02T11:32:06+00:00",
     "filter_window_hours": 24,
     "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260702201723_20260702201348_VXSE5k_1",
+      "time": "2026-07-02T11:13:00+00:00",
+      "time_jst": "2026-07-02T20:13:00+09:00",
+      "lat": 34.7,
+      "lon": 137.5,
+      "magnitude": 3.6,
+      "depth_km": 30.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Western Shizuoka Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20260702162051_20260702161746_VXSE5k_1",
       "time": "2026-07-02T07:17:00+00:00",
@@ -161,20 +175,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260701200007_20260701195742_VXSE5k_1",
-      "time": "2026-07-01T10:57:00+00:00",
-      "time_jst": "2026-07-01T19:57:00+09:00",
-      "lat": 32.4,
-      "lon": 131.5,
-      "magnitude": 2.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Plain Area of Northern Miyazaki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
