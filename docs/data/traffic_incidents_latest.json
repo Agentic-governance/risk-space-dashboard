@@ -6,24 +6,25 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-01T23:11:13+00:00",
-    "fetched_at_jst": "2026-07-02T08:11:13+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-02T01:36:13+00:00",
+    "fetched_at_jst": "2026-07-02T10:36:13+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 4,
-      "congestion": 1
+      "disaster": 5,
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260701_0000",
+      "event_id": "traffic_20260702_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -32,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:11:13+00:00",
+      "occurred_at": "2026-07-02T01:36:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260701_0001",
+      "event_id": "traffic_20260702_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -46,12 +47,12 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:11:13+00:00",
+      "occurred_at": "2026-07-02T01:36:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260701_0002",
+      "event_id": "traffic_20260702_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -60,12 +61,12 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:11:13+00:00",
+      "occurred_at": "2026-07-02T01:36:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260701_0003",
+      "event_id": "traffic_20260702_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -74,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:11:13+00:00",
+      "occurred_at": "2026-07-02T01:36:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260701_0004",
+      "event_id": "traffic_20260702_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -88,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:11:13+00:00",
+      "occurred_at": "2026-07-02T01:36:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260701_0005",
+      "event_id": "traffic_20260702_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -102,23 +103,51 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:11:13+00:00",
+      "occurred_at": "2026-07-02T01:36:13+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260701_0006",
+      "event_id": "traffic_20260702_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "九州北部で線状降水帯発生 土砂災害・浸水などに厳重警戒 — 梅雨前線や低気圧の影響で九州北部では大雨となり、2日未明から相次いで線状降水帯が発生し、熊本県では川の水が堤防を越えて氾濫が発生しているところもあります。大分県ではレベル4の土砂災害危険警報が発表されていて、気象庁は、土砂災害や川の氾濫、低い土地の浸水に厳重に警戒するよう呼びかけています。",
+      "description": "九州北部で線状降水帯発生 土砂崩れや氾濫の発生も 警戒を — 梅雨前線や低気圧の影響で九州北部では2日未明から明け方にかけて、線状降水帯が相次いで発生するなど大雨となり、土砂崩れや川の氾濫などの被害が出ています。近畿や東海、関東甲信などでも昼前にかけて激しい雨が降るおそれがあり、気象庁は、土砂災害、川の氾濫や増水、低い土地の浸水に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-01T23:10:47+00:00",
+      "occurred_at": "2026-07-02T01:07:26+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166571000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260702_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "千葉 鴨川 小湊地区の244世帯 433人に避難指示 — 千葉県鴨川市は、大雨で土砂災害の危険性が高まっているとして、午前9時9分に市内の小湊地区の244世帯433人に避難指示を出しました。5段階の警戒レベルのうちレベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-02T01:12:02+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166841000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260702_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "滋賀 大津 市道沿いで土砂崩れ 通行できず — 警察によりますと、2日午前5時半ごろ、大津市富士見台の住宅街近くの片側1車線の市道沿いで、およそ10メートルにわたって土砂崩れが発生して付近の道路をふさぎ、通行できなくなっているということです。けが人などは出ていませんが、通行が再開できるめどは立っていないということです。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-01T23:09:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166741000.html",
+      "traffic_multiplier": 1.0
     }
   ]
 }
