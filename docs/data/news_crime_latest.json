@@ -10,19 +10,20 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-02T01:36:23+00:00",
-    "total_count": 36,
+    "fetched_at": "2026-07-02T05:39:14+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 35,
+      "nhk_crime": 38,
       "nhk_society": 1
     },
     "type_counts": {
+      "robbery": 2,
+      "fraud": 4,
+      "theft": 1,
       "murder": 16,
-      "fraud": 3,
       "indecent_act": 1,
       "crime_news": 11,
       "assault": 3,
-      "robbery": 1,
       "stalking": 1
     },
     "top_prefectures": {
@@ -40,6 +41,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "金塊扱う店舗に警視庁が一斉立ち入り 相次ぐ強盗など受け",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166991000.html",
+      "date": "2026-07-02",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "米国SNS詐欺の被害金が日本の口座に 資金洗浄か 7人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167001000.html",
+      "date": "2026-07-02",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "窃盗未遂疑いで4人逮捕 羽田の多額現金襲撃事件にも関与か",
+      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166911000.html",
+      "date": "2026-07-02",
+      "prefecture": "",
+      "subtype": "theft",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "長野 東御の住宅で親子3人死傷 逮捕の父親は自殺図ったか",
       "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166511000.html",
