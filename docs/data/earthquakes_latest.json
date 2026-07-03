@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-03T05:58:36+00:00",
+    "fetched_at": "2026-07-03T08:53:44+00:00",
     "filter_window_hours": 24,
     "total_count": 13,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260703173118_20260703172441_VXSE5k_1",
+      "time": "2026-07-03T08:24:00+00:00",
+      "time_jst": "2026-07-03T17:24:00+09:00",
+      "lat": 48.0,
+      "lon": 154.9,
+      "magnitude": 6.0,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northwest Pacific Ocean",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.5
+    },
     {
       "event_id": "20260703140654_20260703140342_VXSE5k_1",
       "time": "2026-07-03T05:03:00+00:00",
@@ -175,20 +189,6 @@
       "location_name": "Western Shizuoka Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260702162051_20260702161746_VXSE5k_1",
-      "time": "2026-07-02T07:17:00+00:00",
-      "time_jst": "2026-07-02T16:17:00+09:00",
-      "lat": 35.7,
-      "lon": 140.7,
-      "magnitude": 3.8,
-      "depth_km": 50.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Northeastern Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
