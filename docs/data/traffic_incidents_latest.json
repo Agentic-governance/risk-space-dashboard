@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-03T21:44:42+00:00",
-    "fetched_at_jst": "2026-07-04T06:44:42+09:00",
+    "fetched_at": "2026-07-03T23:00:35+00:00",
+    "fetched_at_jst": "2026-07-04T08:00:35+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 6,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:44:42+00:00",
+      "occurred_at": "2026-07-03T23:00:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:44:42+00:00",
+      "occurred_at": "2026-07-03T23:00:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:44:42+00:00",
+      "occurred_at": "2026-07-03T23:00:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:44:42+00:00",
+      "occurred_at": "2026-07-03T23:00:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +88,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:44:42+00:00",
+      "occurred_at": "2026-07-03T23:00:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +102,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:44:42+00:00",
+      "occurred_at": "2026-07-03T23:00:35+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -116,7 +116,7 @@
       "description": "九州北部と山口県 きょう夕方にかけ 線状降水帯発生のおそれ — 梅雨前線の活動が活発になる影響で、西日本を中心に大雨となる見込みで、特に九州北部と山口県では、4日夕方にかけて線状降水帯が発生するおそれがあります。気象庁は、土砂災害に厳重に警戒するとともに低い土地の浸水や川の増水に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T21:07:22+00:00",
+      "occurred_at": "2026-07-03T22:11:11+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260704/k10015168601000.html",
       "traffic_multiplier": 2.4
     }
