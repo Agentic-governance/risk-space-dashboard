@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-03T08:53:49+00:00",
-    "fetched_at_jst": "2026-07-03T17:53:49+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-03T11:31:50+00:00",
+    "fetched_at_jst": "2026-07-03T20:31:50+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
       "disaster": 4,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:53:49+00:00",
+      "occurred_at": "2026-07-03T11:31:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +47,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:53:49+00:00",
+      "occurred_at": "2026-07-03T11:31:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +61,7 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:53:49+00:00",
+      "occurred_at": "2026-07-03T11:31:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:53:49+00:00",
+      "occurred_at": "2026-07-03T11:31:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:53:49+00:00",
+      "occurred_at": "2026-07-03T11:31:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:53:49+00:00",
+      "occurred_at": "2026-07-03T11:31:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -113,12 +114,26 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "長崎 壱岐 市内全域1万1281世帯 高齢者等避難の情報 — 長崎県壱岐市は、土砂災害への警戒のため、午後4時、市内全域の1万1281世帯、2万3455人に、高齢者等避難の情報を出しました。5段階の警戒レベルのうちレベル3にあたる情報で、高齢者や体の不自由な人などに避難を始めるよう呼びかけています。",
+      "description": "前線活動活発に 九州北部は4日未明から非常に激しい雨おそれ — 梅雨前線の影響で、5日にかけて西日本を中心に雨が強まり、特に九州北部では4日未明以降、非常に激しい雨が降るおそれがあります。これまでの大雨で地盤が緩んでいる地域があり、気象庁は、土砂災害に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-03T08:14:45+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015168191000.html",
+      "occurred_at": "2026-07-03T10:37:49+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015168351000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260703_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "れいわ 山本代表 高速道路で速度違反 党が厳重注意処分 — れいわ新選組の山本代表は、去年、高速道路で法定速度を超える時速149キロでレンタカーを運転し、罰金の略式命令と運転免許停止の処分を受けました。これを受け、党は、山本氏を幹事長による厳重注意処分としました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-03T10:20:41+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260703/k10015168361000.html",
+      "traffic_multiplier": 1.0
     }
   ]
 }
