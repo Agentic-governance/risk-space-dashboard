@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-04T22:32:17+00:00",
-    "fetched_at_jst": "2026-07-05T07:32:17+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-04T23:35:09+00:00",
+    "fetched_at_jst": "2026-07-05T08:35:09+09:00",
+    "total_count": 10,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 2
+      "nhk_rss": 4
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 4,
+      "disaster": 6,
       "congestion": 1,
       "restriction": 1
     },
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T22:32:17+00:00",
+      "occurred_at": "2026-07-04T23:35:09+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T22:32:17+00:00",
+      "occurred_at": "2026-07-04T23:35:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +61,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T22:32:17+00:00",
+      "occurred_at": "2026-07-04T23:35:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T22:32:17+00:00",
+      "occurred_at": "2026-07-04T23:35:09+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T22:32:17+00:00",
+      "occurred_at": "2026-07-04T23:35:09+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T22:32:17+00:00",
+      "occurred_at": "2026-07-04T23:35:09+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,15 +114,43 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "九州北部で線状降水帯が発生するおそれ 土砂災害などに警戒を — 停滞する梅雨前線の影響で5日は、西日本を中心に雨が強まり、特に九州北部では非常に激しい雨が降る見込みで、福岡県と佐賀県、長崎県、熊本県では線状降水帯が発生するおそれがあります。これまでの大雨で地盤が緩んでいるおそれがあり、土砂災害などに警戒が必要です。",
+      "description": "九州北部で非常に激しい雨 昼過ぎにかけ線状降水帯のおそれ — 梅雨前線の活動が活発になり九州北部では非常に激しい雨が降り、福岡県と佐賀県、大分県ではレベル4の危険警報が発表されている地域があります。九州北部では6日にかけて、非常に激しい雨が降る見込みで、特に、5日昼過ぎにかけては福岡県と佐賀県、長崎県、熊本県では線状降水帯が発生するおそれがあり、土砂災害や低い土地の浸水、川の氾濫に厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T21:11:31+00:00",
+      "occurred_at": "2026-07-04T22:51:41+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260705/k10015168961000.html",
       "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260704_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "佐賀 唐津市 市内全域 5万1432世帯 11万3117人に避難指示 — 佐賀県唐津市は大雨による土砂災害の危険が高まっているとして午前6時半に市内全域の5万1432世帯11万3117人に避難指示を出しました。5段階の警戒レベルのうち、レベル4にあたる情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-04T22:44:23+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169041000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260704_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "福岡 筑紫野市 市内の一部 2311世帯 5261人に避難指示 — 福岡県筑紫野市は、市内にレベル3大雨警報とレベル4土砂災害危険警報が発表されたことを受けて午前6時43分に、市内の土砂災害警戒区域と浸水想定区域の2311世帯、5261人を対象に避難指示を出しました。5段階の警戒レベルのうち、レベル4にあたる情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-04T23:22:55+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169061000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260704_0009",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "restriction",
