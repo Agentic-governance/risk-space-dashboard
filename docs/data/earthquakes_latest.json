@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-04T02:09:48+00:00",
+    "fetched_at": "2026-07-04T08:35:47+00:00",
     "filter_window_hours": 24,
-    "total_count": 12,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260704172636_20260704172414_VXSE5k_1",
+      "time": "2026-07-04T08:24:00+00:00",
+      "time_jst": "2026-07-04T17:24:00+09:00",
+      "lat": 36.1,
+      "lon": 139.8,
+      "magnitude": 2.8,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southern Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.1
+    },
     {
       "event_id": "20260704101958_20260704101714_VXSE5k_1",
       "time": "2026-07-04T01:17:00+00:00",
@@ -91,90 +105,6 @@
       "location_name": "Eastern Region · Fuji Five Lakes, Yamanashi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.3
-    },
-    {
-      "event_id": "20260703173118_20260703172441_VXSE5k_1",
-      "time": "2026-07-03T08:24:00+00:00",
-      "time_jst": "2026-07-03T17:24:00+09:00",
-      "lat": 48.0,
-      "lon": 154.9,
-      "magnitude": 6.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northwest Pacific Ocean",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 3.5
-    },
-    {
-      "event_id": "20260703140654_20260703140342_VXSE5k_1",
-      "time": "2026-07-03T05:03:00+00:00",
-      "time_jst": "2026-07-03T14:03:00+09:00",
-      "lat": 37.3,
-      "lon": 141.4,
-      "magnitude": 3.6,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260703131113_20260703130504_VXSE5k_1",
-      "time": "2026-07-03T04:05:00+00:00",
-      "time_jst": "2026-07-03T13:05:00+09:00",
-      "lat": 26.0,
-      "lon": 125.8,
-      "magnitude": 6.4,
-      "depth_km": 0.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Off the northwest Coast of Miyakojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 3.55
-    },
-    {
-      "event_id": "20260703131012_20260703130504_VXSE52_0",
-      "time": "2026-07-03T04:05:00+00:00",
-      "time_jst": "2026-07-03T13:05:00+09:00",
-      "lat": 26.0,
-      "lon": 125.8,
-      "magnitude": 6.4,
-      "depth_km": 0.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Off the northwest Coast of Miyakojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 3.5
-    },
-    {
-      "event_id": "20260703130642_20260703130504_VXSE51_0",
-      "time": "2026-07-03T04:05:00+00:00",
-      "time_jst": "2026-07-03T13:05:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260703125801_20260703125339_VXSE5k_1",
-      "time": "2026-07-03T03:53:00+00:00",
-      "time_jst": "2026-07-03T12:53:00+09:00",
-      "lat": 26.0,
-      "lon": 125.9,
-      "magnitude": 5.0,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the northwest Coast of Miyakojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.7
     }
   ]
 }
