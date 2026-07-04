@@ -10,10 +10,10 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-04T15:45:37+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-07-04T16:58:30+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 41,
+      "nhk_crime": 40,
       "nhk_society": 1
     },
     "type_counts": {
@@ -22,7 +22,7 @@
       "indecent_act": 2,
       "assault": 2,
       "fraud": 3,
-      "crime_news": 11,
+      "crime_news": 10,
       "robbery": 3,
       "stalking": 1
     },
@@ -449,16 +449,6 @@
       "subtype": "murder",
       "lat": 33.2382,
       "lon": 131.6126,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "鹿児島 霧島の温泉施設で5歳男児行方不明から1週間 捜索続く",
-      "url": "http://www3.nhk.or.jp/news/html/20260628/k10015163111000.html",
-      "date": "2026-06-28",
-      "prefecture": "鹿児島",
-      "subtype": "crime_news",
-      "lat": 31.5602,
-      "lon": 130.5581,
       "source": "nhk_crime"
     }
   ]
