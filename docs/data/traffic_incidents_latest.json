@@ -6,25 +6,24 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-04T23:35:09+00:00",
-    "fetched_at_jst": "2026-07-05T08:35:09+09:00",
-    "total_count": 10,
+    "fetched_at": "2026-07-05T01:19:50+00:00",
+    "fetched_at_jst": "2026-07-05T10:19:50+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 4
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 6,
-      "congestion": 1,
-      "restriction": 1
+      "disaster": 4,
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260704_0000",
+      "event_id": "traffic_20260705_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T23:35:09+00:00",
+      "occurred_at": "2026-07-05T01:19:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260704_0001",
+      "event_id": "traffic_20260705_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -47,12 +46,12 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T23:35:09+00:00",
+      "occurred_at": "2026-07-05T01:19:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260704_0002",
+      "event_id": "traffic_20260705_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -61,12 +60,12 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T23:35:09+00:00",
+      "occurred_at": "2026-07-05T01:19:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260704_0003",
+      "event_id": "traffic_20260705_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -75,12 +74,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T23:35:09+00:00",
+      "occurred_at": "2026-07-05T01:19:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260704_0004",
+      "event_id": "traffic_20260705_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -89,12 +88,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T23:35:09+00:00",
+      "occurred_at": "2026-07-05T01:19:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260704_0005",
+      "event_id": "traffic_20260705_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -103,12 +102,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-04T23:35:09+00:00",
+      "occurred_at": "2026-07-05T01:19:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260704_0006",
+      "event_id": "traffic_20260705_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
@@ -120,48 +119,6 @@
       "occurred_at": "2026-07-04T22:51:41+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260705/k10015168961000.html",
       "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260704_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "佐賀 唐津市 市内全域 5万1432世帯 11万3117人に避難指示 — 佐賀県唐津市は大雨による土砂災害の危険が高まっているとして午前6時半に市内全域の5万1432世帯11万3117人に避難指示を出しました。5段階の警戒レベルのうち、レベル4にあたる情報で、危険な場所から全員避難するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-04T22:44:23+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169041000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260704_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "福岡 筑紫野市 市内の一部 2311世帯 5261人に避難指示 — 福岡県筑紫野市は、市内にレベル3大雨警報とレベル4土砂災害危険警報が発表されたことを受けて午前6時43分に、市内の土砂災害警戒区域と浸水想定区域の2311世帯、5261人を対象に避難指示を出しました。5段階の警戒レベルのうち、レベル4にあたる情報で、危険な場所から全員避難するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-04T23:22:55+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169061000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260704_0009",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "はやぶさ2が小惑星「トリフネ」に今夜 接近 高速で通過へ — 6年前、小惑星のサンプルを地球に届けたあと、次の目的地への飛行を続けている日本の探査機「はやぶさ2」は、5日午後、別の小惑星のすぐそばを極めて速いスピードで通過する「フライバイ」を行います。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-04T20:01:08+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015168951000.html",
-      "traffic_multiplier": 1.0
     }
   ]
 }
