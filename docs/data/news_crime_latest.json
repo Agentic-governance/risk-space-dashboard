@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-05T15:50:19+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-07-05T17:00:23+00:00",
+    "total_count": 38,
     "source_counts": {
-      "nhk_crime": 45,
+      "nhk_crime": 37,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 14,
+      "crime_news": 12,
       "theft": 4,
-      "murder": 17,
+      "murder": 11,
       "indecent_act": 2,
       "assault": 2,
       "fraud": 3,
@@ -28,15 +28,15 @@
     },
     "top_prefectures": {
       "東京": 8,
-      "広島": 5,
-      "栃木": 4,
+      "広島": 4,
       "長野": 3,
       "神奈川": 3,
-      "愛知": 3,
+      "栃木": 3,
       "千葉": 2,
-      "大分": 2,
       "福岡": 1,
-      "群馬": 1
+      "群馬": 1,
+      "岐阜": 1,
+      "大阪": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -419,86 +419,6 @@
       "subtype": "murder",
       "lat": 34.3963,
       "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "青森市の八甲田山系 男性の遺体 かまれた痕も 付近でクマ目撃",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163611000.html",
-      "date": "2026-06-29",
-      "prefecture": "青森",
-      "subtype": "crime_news",
-      "lat": 40.8244,
-      "lon": 140.74,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 三原の遺体発見事件 強盗殺人の疑いで29歳容疑者逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163521000.html",
-      "date": "2026-06-29",
-      "prefecture": "広島",
-      "subtype": "murder",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "「餃子の王将」社長殺害事件 検察が無期懲役を求刑 京都地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163711000.html",
-      "date": "2026-06-29",
-      "prefecture": "京都",
-      "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "愛知 弥富 3人死亡の放火殺人事件で懲役30年判決 名古屋地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163951000.html",
-      "date": "2026-06-29",
-      "prefecture": "愛知",
-      "subtype": "murder",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 強盗殺人 指示役とみられる夫婦を強盗殺人などの罪で起訴",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163741000.html",
-      "date": "2026-06-29",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大分 別府ひき逃げ事件 発生から4年 新画像のチラシ全国で配布",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163671000.html",
-      "date": "2026-06-29",
-      "prefecture": "大分",
-      "subtype": "murder",
-      "lat": 33.2382,
-      "lon": 131.6126,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "名古屋市天白区の住宅で火災 2人死亡",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163531000.html",
-      "date": "2026-06-29",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大分 別府ひき逃げ事件から4年 新映像公開し情報提供呼びかけ",
-      "url": "http://www3.nhk.or.jp/news/html/20260629/k10015163331000.html",
-      "date": "2026-06-28",
-      "prefecture": "大分",
-      "subtype": "murder",
-      "lat": 33.2382,
-      "lon": 131.6126,
       "source": "nhk_crime"
     }
   ]
