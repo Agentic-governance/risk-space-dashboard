@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-05T21:38:57+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-07-05T22:56:48+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 37,
+      "nhk_crime": 38,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 12,
+      "crime_news": 13,
       "theft": 4,
       "murder": 11,
       "indecent_act": 2,
@@ -32,15 +32,25 @@
       "長野": 3,
       "神奈川": 3,
       "栃木": 3,
+      "群馬": 2,
       "千葉": 2,
       "福岡": 1,
-      "群馬": 1,
       "岐阜": 1,
       "大阪": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "群馬 伊勢崎 住宅で6歳の長女と3歳の長男死亡 父親を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015169611000.html",
+      "date": "2026-07-05",
+      "prefecture": "群馬",
+      "subtype": "crime_news",
+      "lat": 36.3911,
+      "lon": 139.0608,
+      "source": "nhk_crime"
+    },
     {
       "title": "“安全に暮らせる場所ほしかった” 国際犯罪組織幹部か 再逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169361000.html",
