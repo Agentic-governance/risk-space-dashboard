@@ -6,18 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-05T08:29:59+00:00",
-    "fetched_at_jst": "2026-07-05T17:29:59+09:00",
-    "total_count": 10,
+    "fetched_at": "2026-07-05T10:41:01+00:00",
+    "fetched_at_jst": "2026-07-05T19:41:01+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 4
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 6,
-      "congestion": 1,
-      "restriction": 1
+      "disaster": 5,
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:29:59+00:00",
+      "occurred_at": "2026-07-05T10:41:01+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:29:59+00:00",
+      "occurred_at": "2026-07-05T10:41:01+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +60,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:29:59+00:00",
+      "occurred_at": "2026-07-05T10:41:01+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +74,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:29:59+00:00",
+      "occurred_at": "2026-07-05T10:41:01+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +88,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:29:59+00:00",
+      "occurred_at": "2026-07-05T10:41:01+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +102,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:29:59+00:00",
+      "occurred_at": "2026-07-05T10:41:01+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,11 +113,11 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "長崎 県南部に線状降水帯直前予測を発表 気象庁 — 気象庁は長崎県の南部で今後3時間以内に線状降水帯が発生する可能性が高まっているとして、午後3時48分に「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、長崎県の南部では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
+      "description": "6日にかけ梅雨前線停滞 九州北部で非常に激しい雨のおそれ — 梅雨前線の活動が活発になっている影響で、九州北部では非常に激しい雨が降り長崎県と佐賀県にはレベル4の危険警報が出されている地域があります。前線が停滞するため、九州北部では6日にかけて断続的に非常に激しい雨が降るおそれがあり、土砂災害などに厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T06:59:03+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169341000.html",
+      "occurred_at": "2026-07-05T10:38:22+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015168961000.html",
       "traffic_multiplier": 2.4
     },
     {
@@ -128,40 +127,12 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "6日にかけ梅雨前線停滞 長崎県には線状降水帯直前予測 警戒を — 梅雨前線の活動が活発になっている影響で、九州北部では断続的に雨雲が発達していて、長崎県では今後3時間以内に線状降水帯が発生する可能性が高まっているとして、午後4時前に「線状降水帯直前予測」が発表されました。前線が停滞するため、九州北部では6日にかけて非常に激しい雨が降るおそれがあり、土砂災害などに厳重な警戒が必要です。",
+      "description": "福岡 北九州市に高齢者等避難の情報 — 福岡県北九州市は大雨により土砂災害のおそれがあるとして、5日午後6時半、すべての区の土砂災害特別警戒区域などに住んでいる15万842世帯、27万9992人に高齢者等避難の情報を出しました。5段階の警戒レベルのうちレベル3にあたる情報で、高齢者や体の不自由な人などに避難を始めるよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-05T08:27:30+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015168961000.html",
+      "occurred_at": "2026-07-05T10:16:32+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169441000.html",
       "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260705_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "長崎市 外海・琴海地区に避難指示 他地域に高齢者等避難の情報 — 長崎市はレベル4土砂災害危険警報の発表を受けて、午後4時15分、外海地区と琴海地区の7566世帯、1万4396人に避難指示を出しました。5段階の警戒レベルのうち、レベル4にあたる情報で、危険な場所から全員避難するよう呼びかけています。また、長崎市は、避難指示を出した地区を除く市内に高齢者等避難の情報を出しました。こちらは5段階の警戒レベルのうちレベル3にあたる情報で、高齢者や体の不自由な人などに避難を始めるよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-05T07:53:04+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169371000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260705_0009",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "土砂崩れ被害も 九州北部 四国で非常に激しい雨 — 九州北部や四国で非常に激しい雨が降り、熊本県では昼前に線状降水帯が発生しました。各地で被害も出ています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-05T05:38:17+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169241000.html",
-      "traffic_multiplier": 1.0
     }
   ]
 }

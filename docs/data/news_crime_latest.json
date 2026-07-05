@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-05T08:30:09+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-05T10:41:11+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 44,
+      "nhk_crime": 45,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 13,
+      "crime_news": 14,
       "theft": 4,
       "murder": 17,
       "indecent_act": 2,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "“安全に暮らせる場所ほしかった” 国際犯罪組織幹部か 再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169361000.html",
+      "date": "2026-07-05",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "九州北部豪雨から9年 被害大きかった福岡 朝倉で犠牲者追悼",
       "url": "http://www3.nhk.or.jp/news/html/20260705/k10015169261000.html",
