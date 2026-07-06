@@ -10,13 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-06T19:45:44+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-06T21:25:40+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 32,
+      "nhk_crime": 34,
       "nhk_society": 1
     },
     "type_counts": {
+      "kidnapping": 1,
+      "confinement": 1,
       "crime_news": 15,
       "theft": 4,
       "murder": 6,
@@ -26,8 +28,8 @@
       "robbery": 2
     },
     "top_prefectures": {
-      "東京": 6,
-      "群馬": 3,
+      "東京": 7,
+      "群馬": 4,
       "長野": 3,
       "神奈川": 3,
       "福岡": 1,
@@ -40,6 +42,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "群馬 ゆかりちゃん事件30年 父親“早くみつかってほしい”",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170361000.html",
+      "date": "2026-07-06",
+      "prefecture": "群馬",
+      "subtype": "kidnapping",
+      "lat": 36.3911,
+      "lon": 139.0608,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 10代少女監禁事件 母親を再逮捕 ブルーシートで拘束か",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170331000.html",
+      "date": "2026-07-06",
+      "prefecture": "東京",
+      "subtype": "confinement",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "「マグロ漁船乗るか」と脅し海外に送り込もうとしたか 4人逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260706/k10015170141000.html",
