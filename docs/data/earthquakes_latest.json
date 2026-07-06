@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-06T14:48:02+00:00",
+    "fetched_at": "2026-07-06T17:41:20+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260707021220_20260707020907_VXSE5k_1",
+      "time": "2026-07-06T17:09:00+00:00",
+      "time_jst": "2026-07-07T02:09:00+09:00",
+      "lat": 40.1,
+      "lon": 142.5,
+      "magnitude": 4.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20260707013022_20260707012745_VXSE5k_1",
+      "time": "2026-07-06T16:27:00+00:00",
+      "time_jst": "2026-07-07T01:27:00+09:00",
+      "lat": 30.1,
+      "lon": 130.5,
+      "magnitude": 3.2,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tanegashima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260707000800_20260707000533_VXSE5k_1",
+      "time": "2026-07-06T15:05:00+00:00",
+      "time_jst": "2026-07-07T00:05:00+09:00",
+      "lat": 26.3,
+      "lon": 127.4,
+      "magnitude": 2.9,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Okinawa Main Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.1
+    },
     {
       "event_id": "20260706203318_20260706202942_VXSE5k_1",
       "time": "2026-07-06T11:29:00+00:00",
@@ -91,34 +133,6 @@
       "location_name": "Off the Coast of Fukushima Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260706022917_20260706022627_VXSE5k_1",
-      "time": "2026-07-05T17:26:00+00:00",
-      "time_jst": "2026-07-06T02:26:00+09:00",
-      "lat": 41.9,
-      "lon": 143.4,
-      "magnitude": 3.4,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Tokachi",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260706001032_20260706000642_VXSE5k_1",
-      "time": "2026-07-05T15:06:00+00:00",
-      "time_jst": "2026-07-06T00:06:00+09:00",
-      "lat": 43.8,
-      "lon": 146.7,
-      "magnitude": 4.4,
-      "depth_km": 50.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the east Coast of Hokkaido",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
     }
   ]
 }
