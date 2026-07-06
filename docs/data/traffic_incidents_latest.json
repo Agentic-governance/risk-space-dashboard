@@ -6,18 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-06T11:28:48+00:00",
-    "fetched_at_jst": "2026-07-06T20:28:48+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-06T14:48:06+00:00",
+    "fetched_at_jst": "2026-07-06T23:48:06+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 6,
-      "nhk_rss": 2
+      "yahoo_transit": 6
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 4,
-      "congestion": 1,
-      "fallen_tree": 1
+      "disaster": 3,
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +31,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-06T11:28:48+00:00",
+      "occurred_at": "2026-07-06T14:48:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +45,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-06T11:28:48+00:00",
+      "occurred_at": "2026-07-06T14:48:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +59,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-06T11:28:48+00:00",
+      "occurred_at": "2026-07-06T14:48:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +73,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-06T11:28:48+00:00",
+      "occurred_at": "2026-07-06T14:48:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +87,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-06T11:28:48+00:00",
+      "occurred_at": "2026-07-06T14:48:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,37 +101,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-06T11:28:48+00:00",
+      "occurred_at": "2026-07-06T14:48:06+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260706_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "九州北部 雨ピーク過ぎるも土砂災害十分注意 台風9号の情報も — 梅雨前線の影響で先週から断続的に激しい雨が降った九州北部では雨のピークはいったん過ぎましたが、これまでの大雨で地盤が緩んでいるところがあり、気象庁は土砂災害に十分注意するよう呼びかけています。また、大型で猛烈な台風9号は10日・金曜日から11日・土曜日ごろにかけて非常に強い勢力で沖縄県に接近する可能性があり、最新の情報を確認するようにしてください。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-06T10:10:25+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015169491000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260706_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "fallen_tree",
-      "severity": 2,
-      "road_name": "",
-      "description": "【映像】大型で猛烈な台風9号 グアム島接近 横殴りの雨 倒木も — 大型で猛烈な台風9号は6日午後6時の時点で中心気圧は910ヘクトパスカル、中心付近の最大風速は55メートル、最大瞬間風速は80メートルで日本のはるか南のマリアナ諸島付近を西寄りに進んでいます。アメリカのJTWC＝米軍合同台風警報センターは、「スーパータイフーン」＝「スーパー台風」だと解析しています。台風は7日、さらに勢力を強めると予想されていて、その後、北寄りに進路を変えて沖縄県に10日・金曜日から11日・土曜日ごろにかけて、非常に強い勢力で接近する可能性があります。台風の接近に伴って、沖縄・奄美では9日・木曜ごろから大しけと",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-06T09:54:38+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260706/k10015170161000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
