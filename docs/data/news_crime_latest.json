@@ -10,29 +10,28 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-07T15:44:46+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-07-07T17:58:04+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 41,
-      "nhk_society": 1
+      "nhk_crime": 37
     },
     "type_counts": {
-      "murder": 8,
-      "crime_news": 20,
+      "murder": 6,
+      "crime_news": 18,
       "kidnapping": 1,
       "confinement": 1,
       "theft": 4,
-      "indecent_act": 2,
+      "indecent_act": 1,
       "assault": 1,
       "fraud": 3,
       "robbery": 2
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 7,
       "群馬": 5,
-      "長野": 3,
-      "神奈川": 3,
       "岐阜": 2,
+      "長野": 2,
+      "神奈川": 2,
       "茨城": 1,
       "北海道": 1,
       "福岡": 1,
@@ -411,56 +410,6 @@
       "lat": null,
       "lon": null,
       "source": "nhk_crime"
-    },
-    {
-      "title": "長野 東御で母娘2人死亡 長男切りつけた疑い 46歳の父親を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165681000.html",
-      "date": "2026-07-01",
-      "prefecture": "長野",
-      "subtype": "murder",
-      "lat": 36.6513,
-      "lon": 138.181,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "横浜市議会議員が女性議員にキス 不同意わいせつ疑い書類送検",
-      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015166171000.html",
-      "date": "2026-07-01",
-      "prefecture": "神奈川",
-      "subtype": "indecent_act",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "女性を性風俗店に違法に紹介か “伝説のスカウト”逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165671000.html",
-      "date": "2026-07-01",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "広島 強盗殺人事件 “工事手伝ってもらい その場で別れた”",
-      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015165741000.html",
-      "date": "2026-07-01",
-      "prefecture": "広島",
-      "subtype": "murder",
-      "lat": 34.3963,
-      "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "NPB SNSでの審判員に対する「ひぼう中傷監視システム」導入",
-      "url": "http://www3.nhk.or.jp/news/html/20260701/k10015166191000.html",
-      "date": "2026-07-01",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_society"
     }
   ]
 }
