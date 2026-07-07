@@ -10,18 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-06T22:50:45+00:00",
-    "total_count": 35,
+    "fetched_at": "2026-07-07T02:46:46+00:00",
+    "total_count": 36,
     "source_counts": {
-      "nhk_crime": 34,
+      "nhk_crime": 35,
       "nhk_society": 1
     },
     "type_counts": {
+      "murder": 7,
       "kidnapping": 1,
       "confinement": 1,
       "crime_news": 15,
       "theft": 4,
-      "murder": 6,
       "indecent_act": 2,
       "assault": 1,
       "fraud": 3,
@@ -32,16 +32,26 @@
       "群馬": 4,
       "長野": 3,
       "神奈川": 3,
+      "北海道": 1,
       "福岡": 1,
       "岐阜": 1,
       "大阪": 1,
       "千葉": 1,
-      "栃木": 1,
-      "石川": 1
+      "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "北海道 旭川 高校生殺害事件 23歳被告の懲役27年の判決確定",
+      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170591000.html",
+      "date": "2026-07-07",
+      "prefecture": "北海道",
+      "subtype": "murder",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "群馬 ゆかりちゃん事件30年 父親“早くみつかってほしい”",
       "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170361000.html",
