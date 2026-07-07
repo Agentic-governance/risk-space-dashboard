@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-07T19:44:45+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-07-07T21:20:47+00:00",
+    "total_count": 38,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 38
     },
     "type_counts": {
+      "crime_news": 19,
       "murder": 6,
-      "crime_news": 18,
       "kidnapping": 1,
       "confinement": 1,
       "theft": 4,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "臓器移植法違反事件 “医師への謝礼”名目の金で借金返済か",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171251000.html",
+      "date": "2026-07-07",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "茨城 高齢者施設2人殺害事件 元職員に懲役20年 一部無罪",
       "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170831000.html",

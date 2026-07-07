@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-07T19:44:34+00:00",
+    "fetched_at": "2026-07-07T21:20:35+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 1,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -21,20 +21,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.0
-    },
-    {
-      "event_id": "20260707061926_20260707061650_VXSE5k_1",
-      "time": "2026-07-06T21:16:00+00:00",
-      "time_jst": "2026-07-07T06:16:00+09:00",
-      "lat": 34.7,
-      "lon": 132.0,
-      "magnitude": 3.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Western Shimane Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
