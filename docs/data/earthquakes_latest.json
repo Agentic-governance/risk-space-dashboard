@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-07T02:46:32+00:00",
+    "fetched_at": "2026-07-07T10:25:35+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260707170008_20260707170000_VYSE52_0",
+      "time": "2026-07-07T08:00:00+00:00",
+      "time_jst": "2026-07-07T17:00:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.0
+    },
     {
       "event_id": "20260707061926_20260707061650_VXSE5k_1",
       "time": "2026-07-06T21:16:00+00:00",
@@ -105,34 +119,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260706152249_20260706152001_VXSE5k_1",
-      "time": "2026-07-06T06:20:00+00:00",
-      "time_jst": "2026-07-06T15:20:00+09:00",
-      "lat": 36.2,
-      "lon": 137.4,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Hida, Gifu Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260706123117_20260706122831_VXSE5k_1",
-      "time": "2026-07-06T03:28:00+00:00",
-      "time_jst": "2026-07-06T12:28:00+09:00",
-      "lat": 27.7,
-      "lon": 128.8,
-      "magnitude": 3.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Amami-Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
