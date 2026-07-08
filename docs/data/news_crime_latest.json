@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-08T01:36:25+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-07-08T04:52:47+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 38
+      "nhk_crime": 40
     },
     "type_counts": {
-      "crime_news": 19,
+      "crime_news": 21,
       "murder": 6,
       "kidnapping": 1,
       "confinement": 1,
@@ -29,18 +29,38 @@
     "top_prefectures": {
       "東京": 7,
       "群馬": 5,
+      "大阪": 2,
+      "茨城": 2,
       "岐阜": 2,
       "長野": 2,
       "神奈川": 2,
-      "茨城": 1,
       "北海道": 1,
       "福岡": 1,
-      "大阪": 1,
       "千葉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "臓器移植法違反事件 大阪の院長に紹介状依頼し謝礼支払ったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171661000.html",
+      "date": "2026-07-08",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "同居女性の唇縫い付け疑い 被害者「怖くて逃げられなかった」",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171551000.html",
+      "date": "2026-07-08",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
     {
       "title": "臓器移植法違反事件 “医師への謝礼”名目の金で借金返済か",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171251000.html",
