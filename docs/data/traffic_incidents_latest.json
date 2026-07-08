@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-08T11:46:47+00:00",
-    "fetched_at_jst": "2026-07-08T20:46:47+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-08T13:34:02+00:00",
+    "fetched_at_jst": "2026-07-08T22:34:02+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "disaster": 3,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-08T11:46:47+00:00",
+      "occurred_at": "2026-07-08T13:34:02+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-08T11:46:47+00:00",
+      "occurred_at": "2026-07-08T13:34:02+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-08T11:46:47+00:00",
+      "occurred_at": "2026-07-08T13:34:02+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-08T11:46:47+00:00",
+      "occurred_at": "2026-07-08T13:34:02+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +88,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-08T11:46:47+00:00",
+      "occurred_at": "2026-07-08T13:34:02+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,12 +102,26 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-08T11:46:47+00:00",
+      "occurred_at": "2026-07-08T13:34:02+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260708_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "サッカー 三笘薫選手 車を運転中に自転車と衝突 女性けが — 8日午前、サッカーの三笘薫選手が運転する車が東京 板橋区の交差点で自転車と衝突し、相手の40代の女性がけがをしました。三笘選手の車が赤信号の交差点に進入したとみられるということで、警視庁が事故の状況を詳しく調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-08T10:59:20+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015172141000.html",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260708_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
