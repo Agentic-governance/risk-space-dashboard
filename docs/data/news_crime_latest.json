@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-08T07:29:36+00:00",
+    "fetched_at": "2026-07-08T09:49:40+00:00",
     "total_count": 41,
     "source_counts": {
       "nhk_crime": 41
@@ -29,18 +29,38 @@
     "top_prefectures": {
       "東京": 8,
       "群馬": 5,
-      "大阪": 2,
       "茨城": 2,
       "岐阜": 2,
       "長野": 2,
       "神奈川": 2,
       "北海道": 1,
       "福岡": 1,
+      "大阪": 1,
       "千葉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "臓器移植法違反事件 少なくとも4人から4500万円以上受領か",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171661000.html",
+      "date": "2026-07-08",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "茨城 同居女性の唇縫い付け事件 被害女性 食事とれない状態",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171551000.html",
+      "date": "2026-07-08",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
     {
       "title": "「ガンホー」元システム本部長を背任の疑いで逮捕 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171781000.html",
@@ -49,26 +69,6 @@
       "subtype": "crime_news",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "臓器移植法違反事件 大阪の院長に紹介状依頼し謝礼支払ったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171661000.html",
-      "date": "2026-07-08",
-      "prefecture": "大阪",
-      "subtype": "crime_news",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "同居女性の唇縫い付け疑い 被害者「怖くて逃げられなかった」",
-      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171551000.html",
-      "date": "2026-07-08",
-      "prefecture": "茨城",
-      "subtype": "crime_news",
-      "lat": 36.3418,
-      "lon": 140.4468,
       "source": "nhk_crime"
     },
     {
