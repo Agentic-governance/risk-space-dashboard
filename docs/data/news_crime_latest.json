@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-08T17:23:56+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-08T20:23:01+00:00",
+    "total_count": 36,
     "source_counts": {
-      "nhk_crime": 32,
+      "nhk_crime": 35,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 19,
+      "crime_news": 22,
       "terrorism": 1,
       "murder": 5,
       "kidnapping": 1,
@@ -30,7 +30,7 @@
     "top_prefectures": {
       "東京": 7,
       "群馬": 5,
-      "茨城": 2,
+      "茨城": 3,
       "岐阜": 2,
       "神奈川": 2,
       "広島": 1,
@@ -42,6 +42,36 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "ネットカフェ会社にサイバー攻撃の疑い 元男子生徒を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172281000.html",
+      "date": "2026-07-08",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "臓器移植法違反事件 病院で手術を口外しないよう誓約か",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172291000.html",
+      "date": "2026-07-08",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "同居女性の唇縫い付け事件“トラブルで怒りだした”被害者説明",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172391000.html",
+      "date": "2026-07-08",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
     {
       "title": "臓器移植法違反事件 少なくとも4人から4500万円以上受領か",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171661000.html",
