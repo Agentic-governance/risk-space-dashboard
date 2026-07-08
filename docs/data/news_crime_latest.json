@@ -10,35 +10,34 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-08T15:47:24+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-07-08T17:23:56+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 41,
+      "nhk_crime": 32,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 22,
+      "crime_news": 19,
       "terrorism": 1,
-      "murder": 6,
+      "murder": 5,
       "kidnapping": 1,
       "confinement": 1,
-      "theft": 4,
+      "theft": 3,
       "indecent_act": 1,
       "assault": 1,
-      "fraud": 3,
-      "robbery": 2
+      "fraud": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 7,
       "群馬": 5,
       "茨城": 2,
       "岐阜": 2,
-      "長野": 2,
       "神奈川": 2,
       "広島": 1,
       "北海道": 1,
       "福岡": 1,
-      "大阪": 1
+      "大阪": 1,
+      "長野": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -371,96 +370,6 @@
       "subtype": "fraud",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "占い師装い“宝くじ当てられる” 鑑定料名目で現金詐取か 逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167581000.html",
-      "date": "2026-07-02",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "窃盗未遂疑いで4人逮捕 羽田の多額現金襲撃事件にも関与か",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166911000.html",
-      "date": "2026-07-02",
-      "prefecture": "",
-      "subtype": "theft",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "金塊扱う店舗に警視庁が一斉立ち入り 相次ぐ強盗など受け",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166991000.html",
-      "date": "2026-07-02",
-      "prefecture": "",
-      "subtype": "robbery",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "能登半島地震 不明者捜索に関する工事 入札不調で捜索できず",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167261000.html",
-      "date": "2026-07-02",
-      "prefecture": "石川",
-      "subtype": "crime_news",
-      "lat": 36.5947,
-      "lon": 136.6256,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 新宿の強盗未遂事件で逮捕の男性を不起訴 東京地検",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167291000.html",
-      "date": "2026-07-02",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "名古屋 郵便局で“クマスプレー”まいた疑い 22歳容疑者を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167121000.html",
-      "date": "2026-07-02",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "米国SNS詐欺の被害金が日本の口座に 資金洗浄か 7人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015167001000.html",
-      "date": "2026-07-02",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "長野 東御の住宅で親子3人死傷 逮捕の父親は自殺図ったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166511000.html",
-      "date": "2026-07-01",
-      "prefecture": "長野",
-      "subtype": "murder",
-      "lat": 36.6513,
-      "lon": 138.181,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "インドネシア 特殊詐欺対策 SIMカード開通に「顔認証」導入",
-      "url": "http://www3.nhk.or.jp/news/html/20260702/k10015166271000.html",
-      "date": "2026-07-01",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
       "source": "nhk_crime"
     }
   ]
