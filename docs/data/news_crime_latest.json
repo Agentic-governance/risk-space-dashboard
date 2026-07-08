@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-08T04:52:47+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-07-08T07:29:36+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 41
     },
     "type_counts": {
-      "crime_news": 21,
+      "crime_news": 22,
       "murder": 6,
       "kidnapping": 1,
       "confinement": 1,
@@ -27,7 +27,7 @@
       "robbery": 2
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 8,
       "群馬": 5,
       "大阪": 2,
       "茨城": 2,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "「ガンホー」元システム本部長を背任の疑いで逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171781000.html",
+      "date": "2026-07-08",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "臓器移植法違反事件 大阪の院長に紹介状依頼し謝礼支払ったか",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015171661000.html",
