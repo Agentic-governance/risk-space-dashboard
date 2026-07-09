@@ -10,41 +10,41 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-09T03:03:12+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-07-09T10:34:42+00:00",
+    "total_count": 43,
     "source_counts": {
-      "nhk_crime": 36,
+      "nhk_crime": 42,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 23,
+      "crime_news": 26,
+      "fraud": 2,
+      "theft": 4,
+      "assault": 2,
       "terrorism": 1,
       "murder": 5,
       "kidnapping": 1,
       "confinement": 1,
-      "theft": 3,
-      "indecent_act": 1,
-      "assault": 1,
-      "fraud": 1
+      "indecent_act": 1
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 9,
       "群馬": 5,
-      "茨城": 3,
+      "茨城": 4,
       "岐阜": 2,
       "神奈川": 2,
+      "埼玉": 1,
+      "岩手": 1,
       "広島": 1,
       "北海道": 1,
-      "福岡": 1,
-      "大阪": 1,
-      "長野": 1
+      "福岡": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "臓器移植法違反事件 あっせん受けた患者の体験談聞かせたか",
-      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172551000.html",
+      "title": "「快活CLUB」運営会社にサイバー攻撃の疑い 元男子生徒を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172281000.html",
       "date": "2026-07-09",
       "prefecture": "",
       "subtype": "crime_news",
@@ -53,9 +53,69 @@
       "source": "nhk_crime"
     },
     {
-      "title": "ネットカフェ会社にサイバー攻撃の疑い 元男子生徒を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172281000.html",
-      "date": "2026-07-08",
+      "title": "茨城 同居女性の唇縫い付け事件 被害者の腕や足に複数のあざ",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172971000.html",
+      "date": "2026-07-09",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "さいたま 特殊詐欺3億円相当被害 会社役員を逮捕 “売却役”か",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172941000.html",
+      "date": "2026-07-09",
+      "prefecture": "埼玉",
+      "subtype": "fraud",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "臓器移植法違反事件 “アフターケア”うたい移植勧めたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172911000.html",
+      "date": "2026-07-09",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 台東区 4億円窃盗事件 暴力団員ら起訴内容認める",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172891000.html",
+      "date": "2026-07-09",
+      "prefecture": "東京",
+      "subtype": "theft",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 上野 飲食店で客を監禁・恐喝か 店長ら逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172701000.html",
+      "date": "2026-07-09",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "岩手 矢巾町 住宅全焼 焼け跡から2人の遺体見つかる",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172561000.html",
+      "date": "2026-07-09",
+      "prefecture": "岩手",
+      "subtype": "crime_news",
+      "lat": 39.7036,
+      "lon": 141.1527,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "臓器移植法違反事件 あっせん受けた患者の体験談聞かせたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172551000.html",
+      "date": "2026-07-09",
       "prefecture": "",
       "subtype": "crime_news",
       "lat": null,
