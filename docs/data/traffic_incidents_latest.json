@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-09T19:27:09+00:00",
-    "fetched_at_jst": "2026-07-10T04:27:09+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-09T21:06:53+00:00",
+    "fetched_at_jst": "2026-07-10T06:06:53+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 3,
       "disaster": 3,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T19:27:09+00:00",
+      "occurred_at": "2026-07-09T21:06:53+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +47,7 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T19:27:09+00:00",
+      "occurred_at": "2026-07-09T21:06:53+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +61,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T19:27:09+00:00",
+      "occurred_at": "2026-07-09T21:06:53+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T19:27:09+00:00",
+      "occurred_at": "2026-07-09T21:06:53+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T19:27:09+00:00",
+      "occurred_at": "2026-07-09T21:06:53+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T19:27:09+00:00",
+      "occurred_at": "2026-07-09T21:06:53+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -119,6 +120,20 @@
       "occurred_at": "2026-07-08T10:59:20+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015172141000.html",
       "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260709_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "北海道 羅臼岳 登山者に向かってくるヒグマ確認 登山道を閉鎖 — 去年発生したヒグマによる人身事故からおよそ11か月ぶりに入山規制が解除された、世界自然遺産、知床の羅臼岳は9日、ヒグマが登山道に出没し登山者に向かってきたことから、再び閉鎖されました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-09T20:26:53+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173221000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
