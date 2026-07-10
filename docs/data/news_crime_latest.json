@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-10T09:05:12+00:00",
-    "total_count": 43,
+    "fetched_at": "2026-07-10T11:58:42+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 42,
+      "nhk_crime": 44,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 30,
       "assault": 3,
       "confinement": 2,
       "fraud": 2,
-      "crime_news": 28,
       "robbery": 1,
       "theft": 2,
       "terrorism": 1,
@@ -28,20 +28,40 @@
       "kidnapping": 1
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 8,
       "茨城": 5,
       "群馬": 5,
       "大阪": 3,
       "埼玉": 2,
       "岐阜": 2,
+      "千葉": 1,
       "栃木": 1,
       "岩手": 1,
-      "広島": 1,
-      "北海道": 1
+      "広島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 松戸 質店で腕時計など盗んだ疑いで4人逮捕 トクリュウか",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173851000.html",
+      "date": "2026-07-10",
+      "prefecture": "千葉",
+      "subtype": "crime_news",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "認知症で長期行方不明者の家族 実態を知って支援を 東京",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173821000.html",
+      "date": "2026-07-10",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪地検特捜部 特別公務員暴行陵虐事件の裁判 検事が無罪主張",
       "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173071000.html",
