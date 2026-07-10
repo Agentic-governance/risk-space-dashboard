@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-10T11:58:42+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-10T14:02:41+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 44,
+      "nhk_crime": 45,
       "nhk_society": 1
     },
     "type_counts": {
+      "fraud": 3,
       "crime_news": 30,
       "assault": 3,
       "confinement": 2,
-      "fraud": 2,
       "robbery": 1,
       "theft": 2,
       "terrorism": 1,
@@ -34,14 +34,24 @@
       "大阪": 3,
       "埼玉": 2,
       "岐阜": 2,
+      "神奈川": 1,
       "千葉": 1,
       "栃木": 1,
-      "岩手": 1,
-      "広島": 1
+      "岩手": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "ニセ警察官詐欺で暗号資産2億4000万円分だまし取られる 横浜",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015174061000.html",
+      "date": "2026-07-10",
+      "prefecture": "神奈川",
+      "subtype": "fraud",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 松戸 質店で腕時計など盗んだ疑いで4人逮捕 トクリュウか",
       "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173851000.html",
