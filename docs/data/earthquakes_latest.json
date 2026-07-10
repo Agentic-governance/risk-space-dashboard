@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-10T05:58:45+00:00",
+    "fetched_at": "2026-07-10T09:05:00+00:00",
     "filter_window_hours": 24,
     "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260710151902_20260710151610_VXSE5k_1",
+      "time": "2026-07-10T06:16:00+00:00",
+      "time_jst": "2026-07-10T15:16:00+09:00",
+      "lat": 35.3,
+      "lon": 133.3,
+      "magnitude": 3.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Eastern Shimane Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260710012518_20260710012200_VXSE5k_1",
       "time": "2026-07-09T16:22:00+00:00",
@@ -85,20 +99,6 @@
       "lat": 34.2,
       "lon": 139.2,
       "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Niijima Island, Kozushima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260709174101_20260709173738_VXSE5k_1",
-      "time": "2026-07-09T08:37:00+00:00",
-      "time_jst": "2026-07-09T17:37:00+09:00",
-      "lat": 34.2,
-      "lon": 139.2,
-      "magnitude": 2.9,
       "depth_km": 10.0,
       "max_shindo_raw": "1",
       "max_shindo": 1,

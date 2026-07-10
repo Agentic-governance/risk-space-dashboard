@@ -10,28 +10,28 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-10T05:58:57+00:00",
-    "total_count": 41,
+    "fetched_at": "2026-07-10T09:05:12+00:00",
+    "total_count": 43,
     "source_counts": {
-      "nhk_crime": 40,
+      "nhk_crime": 42,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 28,
       "assault": 3,
+      "confinement": 2,
+      "fraud": 2,
+      "crime_news": 28,
       "robbery": 1,
-      "fraud": 1,
       "theft": 2,
       "terrorism": 1,
       "murder": 3,
-      "kidnapping": 1,
-      "confinement": 1
+      "kidnapping": 1
     },
     "top_prefectures": {
       "東京": 7,
       "茨城": 5,
       "群馬": 5,
-      "大阪": 2,
+      "大阪": 3,
       "埼玉": 2,
       "岐阜": 2,
       "栃木": 1,
@@ -43,16 +43,6 @@
   },
   "incidents": [
     {
-      "title": "ベネズエラ大地震 倒壊建物に多数の行方不明者 支援本格化",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173521000.html",
-      "date": "2026-07-10",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
       "title": "大阪地検特捜部 特別公務員暴行陵虐事件の裁判 検事が無罪主張",
       "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173071000.html",
       "date": "2026-07-10",
@@ -63,16 +53,6 @@
       "source": "nhk_crime"
     },
     {
-      "title": "栃木 貴金属店に車で突っ込むなどした疑いで逮捕 指示役か",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173511000.html",
-      "date": "2026-07-10",
-      "prefecture": "栃木",
-      "subtype": "crime_news",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
       "title": "茨城 つくば 中高生や小学生含む15人がハチに刺され搬送",
       "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173381000.html",
       "date": "2026-07-10",
@@ -80,6 +60,46 @@
       "subtype": "assault",
       "lat": 36.3418,
       "lon": 140.4468,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "兵庫 女児の手首縛り監禁か 大阪 豊中の消防職員逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173751000.html",
+      "date": "2026-07-10",
+      "prefecture": "大阪",
+      "subtype": "confinement",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "だましとった現金800万円を宅配ボックスで回収か 容疑者逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173651000.html",
+      "date": "2026-07-10",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "ベネズエラ大地震 倒壊建物に多数の行方不明者 支援本格化",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173521000.html",
+      "date": "2026-07-10",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木 貴金属店に車で突っ込むなどした疑いで逮捕 指示役か",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173511000.html",
+      "date": "2026-07-10",
+      "prefecture": "栃木",
+      "subtype": "crime_news",
+      "lat": 36.5658,
+      "lon": 139.8836,
       "source": "nhk_crime"
     },
     {
