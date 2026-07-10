@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-09T23:49:51+00:00",
+    "fetched_at": "2026-07-10T01:55:45+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -117,20 +117,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Western Kanagawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260709102536_20260709102249_VXSE5k_1",
-      "time": "2026-07-09T01:22:00+00:00",
-      "time_jst": "2026-07-09T10:22:00+09:00",
-      "lat": 29.9,
-      "lon": 130.0,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Tokara Islands",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
