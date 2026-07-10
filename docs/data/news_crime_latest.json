@@ -10,28 +10,28 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-10T14:02:41+00:00",
+    "fetched_at": "2026-07-10T16:21:53+00:00",
     "total_count": 46,
     "source_counts": {
       "nhk_crime": 45,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 31,
       "fraud": 3,
-      "crime_news": 30,
       "assault": 3,
       "confinement": 2,
       "robbery": 1,
       "theft": 2,
       "terrorism": 1,
-      "murder": 3,
+      "murder": 2,
       "kidnapping": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 9,
       "茨城": 5,
       "群馬": 5,
-      "大阪": 3,
+      "大阪": 2,
       "埼玉": 2,
       "岐阜": 2,
       "神奈川": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "古着買い取り販売会社の創業者 52億円余り所得隠し脱税か 逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015174121000.html",
+      "date": "2026-07-10",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "ニセ警察官詐欺で暗号資産2億4000万円分だまし取られる 横浜",
       "url": "http://www3.nhk.or.jp/news/html/20260710/k10015174061000.html",
@@ -490,16 +500,6 @@
       "subtype": "theft",
       "lat": 35.3911,
       "lon": 136.7223,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪 守口 交通トラブルで小学生をはねた建設作業員を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260704/k10015168901000.html",
-      "date": "2026-07-04",
-      "prefecture": "大阪",
-      "subtype": "murder",
-      "lat": 34.6937,
-      "lon": 135.5023,
       "source": "nhk_crime"
     }
   ]
