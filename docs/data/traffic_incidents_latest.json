@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-10T01:55:48+00:00",
-    "fetched_at_jst": "2026-07-10T10:55:48+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-10T05:58:48+00:00",
+    "fetched_at_jst": "2026-07-10T14:58:48+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 3,
-      "disaster": 4,
-      "congestion": 1
+      "accident": 4,
+      "disaster": 3,
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -29,10 +30,10 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "総武本線内で発生した人身事故の影...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-10T01:55:48+00:00",
+      "occurred_at": "2026-07-10T05:58:48+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -40,15 +41,15 @@
       "event_id": "traffic_20260710_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
-      "incident_type": "disaster",
-      "severity": 4,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "台風災害の影響で、久留里〜上総亀...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-10T01:55:48+00:00",
+      "occurred_at": "2026-07-10T05:58:48+00:00",
       "url": "",
-      "traffic_multiplier": 2.4
+      "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260710_0002",
@@ -60,7 +61,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-10T01:55:48+00:00",
+      "occurred_at": "2026-07-10T05:58:48+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-10T01:55:48+00:00",
+      "occurred_at": "2026-07-10T05:58:48+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -88,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-10T01:55:48+00:00",
+      "occurred_at": "2026-07-10T05:58:48+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-10T01:55:48+00:00",
+      "occurred_at": "2026-07-10T05:58:48+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -127,12 +128,26 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風9号 沖縄 先島諸島へ 暴風高波など厳重警戒 空の便欠航も — 大型で非常に強い台風9号が近づくため、沖縄県の先島諸島では、10日夕方ごろから暴風となり、11日にかけては一部の住宅が倒壊するような猛烈な風が吹くおそれがあります。また、11日にかけて雷を伴った猛烈な雨や非常に激しい雨も予想され、気象庁は、暴風や高波、高潮、土砂災害などに厳重に警戒するよう呼びかけています。",
+      "description": "台風9号 沖縄 先島諸島へ 暴風高波 土砂災害などに厳重警戒 — 大型で非常に強い台風9号は11日の午前中、沖縄県の先島諸島にかなり近づく見込みです。先島諸島では10日の夕方から11日の夜にかけて長時間暴風となる見込みで、気象庁は、暴風や高波、高潮、土砂災害などに厳重に警戒するよう呼びかけています。移動が難しくなる前に頑丈な建物など、安全な場所に移動するようにしてください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-09T21:53:37+00:00",
+      "occurred_at": "2026-07-10T05:54:45+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173061000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260710_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "改正個人情報保護法成立 AI開発促進へ個人情報取得の規制緩和 — AIの開発促進に向けて個人情報を取得する際の規制を緩和することなどを盛り込んだ改正個人情報保護法は、参議院本会議で可決・成立しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-10T05:42:37+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173591000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
