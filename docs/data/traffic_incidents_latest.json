@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-11T08:48:31+00:00",
-    "fetched_at_jst": "2026-07-11T17:48:31+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-07-11T10:14:41+00:00",
+    "fetched_at_jst": "2026-07-11T19:14:41+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 2,
+      "disaster": 3,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-11T08:48:31+00:00",
+      "occurred_at": "2026-07-11T10:14:41+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-11T08:48:31+00:00",
+      "occurred_at": "2026-07-11T10:14:41+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-11T08:48:31+00:00",
+      "occurred_at": "2026-07-11T10:14:41+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-11T08:48:31+00:00",
+      "occurred_at": "2026-07-11T10:14:41+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-11T08:48:31+00:00",
+      "occurred_at": "2026-07-11T10:14:41+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -105,6 +105,20 @@
       "occurred_at": "2026-07-08T10:59:20+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015172141000.html",
       "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260711_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "福岡 太宰府で39.3度 西日本と東日本は来週も猛烈な暑さに — 11日は福岡県太宰府市で最高気温が39.3度になるなど台風9号の影響も加わり、九州で危険な暑さとなりました。西日本と東日本では来週も猛烈な暑さが続く見込みで、熱中症対策を徹底してください。一方、東北では日本海側を中心に大雨のおそれがあり、土砂災害に厳重な警戒が必要です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-11T09:59:23+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260711/k10015174241000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
