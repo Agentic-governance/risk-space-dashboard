@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-12T01:36:21+00:00",
-    "total_count": 43,
+    "fetched_at": "2026-07-12T05:01:34+00:00",
+    "total_count": 44,
     "source_counts": {
-      "nhk_crime": 42,
+      "nhk_crime": 43,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 28,
       "murder": 3,
       "assault": 4,
-      "crime_news": 27,
       "fraud": 3,
       "confinement": 2,
       "robbery": 1,
@@ -34,18 +34,28 @@
       "大阪": 3,
       "北海道": 2,
       "埼玉": 2,
+      "鹿児島": 1,
       "神奈川": 1,
       "千葉": 1,
-      "栃木": 1,
-      "岩手": 1
+      "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
+      "title": "鹿児島 5歳男児行方不明から3週間 現場付近で捜索続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174911000.html",
+      "date": "2026-07-12",
+      "prefecture": "鹿児島",
+      "subtype": "crime_news",
+      "lat": 31.5602,
+      "lon": 130.5581,
+      "source": "nhk_crime"
+    },
+    {
       "title": "札幌のマンションで交際相手の女性を殺害か 33歳容疑者逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174801000.html",
-      "date": "2026-07-11",
+      "date": "2026-07-12",
       "prefecture": "北海道",
       "subtype": "murder",
       "lat": 43.0642,
