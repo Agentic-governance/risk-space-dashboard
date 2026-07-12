@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-12T21:44:25+00:00",
-    "fetched_at_jst": "2026-07-13T06:44:25+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-12T22:42:52+00:00",
+    "fetched_at_jst": "2026-07-13T07:42:52+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "construction": 1,
       "disaster": 2,
       "congestion": 1
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T21:44:25+00:00",
+      "occurred_at": "2026-07-12T22:42:52+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、14日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T21:44:25+00:00",
+      "occurred_at": "2026-07-12T22:42:52+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T21:44:25+00:00",
+      "occurred_at": "2026-07-12T22:42:52+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T21:44:25+00:00",
+      "occurred_at": "2026-07-12T22:42:52+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T21:44:25+00:00",
+      "occurred_at": "2026-07-12T22:42:52+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T21:44:25+00:00",
+      "occurred_at": "2026-07-12T22:42:52+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -119,20 +119,6 @@
       "lon": null,
       "occurred_at": "2026-07-08T10:59:20+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015172141000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260712_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "仏猛暑 水の事故の犠牲者130人超 イベントなどにも影響 — 猛暑が続いているフランスでは、先月19日以降、水の事故による死者が130人を超えたほか、エッフェル塔などの観光名所が営業時間を短縮するなど影響が広がっています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-12T21:07:41+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175251000.html",
       "traffic_multiplier": 1.6
     }
   ]

@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-12T21:44:34+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-07-12T22:43:02+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 38,
+      "nhk_crime": 39,
       "nhk_society": 1
     },
     "type_counts": {
+      "fraud": 4,
       "crime_news": 23,
       "murder": 3,
       "assault": 4,
-      "fraud": 3,
       "confinement": 2,
       "robbery": 1,
       "theft": 1,
@@ -42,6 +42,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "金塊購入させる詐欺の手口 被害60億円で業界に協力要請",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175231000.html",
+      "date": "2026-07-12",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "神奈川 平塚 海水浴場で高校生と見られる男性行方不明",
       "url": "http://www3.nhk.or.jp/news/html/20260712/k10015175041000.html",
