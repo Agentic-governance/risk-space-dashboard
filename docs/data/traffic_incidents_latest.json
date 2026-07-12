@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-12T20:59:09+00:00",
-    "fetched_at_jst": "2026-07-13T05:59:09+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-12T21:44:25+00:00",
+    "fetched_at_jst": "2026-07-13T06:44:25+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 3
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 4,
       "construction": 1,
-      "disaster": 3,
+      "disaster": 2,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:59:09+00:00",
+      "occurred_at": "2026-07-12T21:44:25+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、14日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:59:09+00:00",
+      "occurred_at": "2026-07-12T21:44:25+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:59:09+00:00",
+      "occurred_at": "2026-07-12T21:44:25+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:59:09+00:00",
+      "occurred_at": "2026-07-12T21:44:25+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:59:09+00:00",
+      "occurred_at": "2026-07-12T21:44:25+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:59:09+00:00",
+      "occurred_at": "2026-07-12T21:44:25+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -131,23 +131,9 @@
       "description": "仏猛暑 水の事故の犠牲者130人超 イベントなどにも影響 — 猛暑が続いているフランスでは、先月19日以降、水の事故による死者が130人を超えたほか、エッフェル塔などの観光名所が営業時間を短縮するなど影響が広がっています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T20:52:43+00:00",
+      "occurred_at": "2026-07-12T21:07:41+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175251000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260712_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "四国梅雨明け 九州や中国は38度超の危険な暑さ 13日も注意を — 12日は、九州や中国地方で最高気温が38度を超えて危険な暑さになりました。13日も西日本を中心に猛烈な暑さが続く見込みで、熱中症対策を徹底してください。一方、北日本では断続的に発達した雨雲が流れ込み、雨量が多くなっている地域があり、気象庁は土砂災害などに警戒するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-12T11:29:41+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174761000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
