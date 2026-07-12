@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-12T09:30:24+00:00",
-    "fetched_at_jst": "2026-07-12T18:30:24+09:00",
+    "fetched_at": "2026-07-12T10:57:06+00:00",
+    "fetched_at_jst": "2026-07-12T19:57:06+09:00",
     "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T09:30:24+00:00",
+      "occurred_at": "2026-07-12T10:57:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、13日・14日...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T09:30:24+00:00",
+      "occurred_at": "2026-07-12T10:57:06+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T09:30:24+00:00",
+      "occurred_at": "2026-07-12T10:57:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T09:30:24+00:00",
+      "occurred_at": "2026-07-12T10:57:06+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T09:30:24+00:00",
+      "occurred_at": "2026-07-12T10:57:06+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T09:30:24+00:00",
+      "occurred_at": "2026-07-12T10:57:06+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -128,10 +128,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "四国梅雨明け 九州や中国は38度超の危険な暑さ 熱中症対策を — 12日も西日本を中心に晴れ、九州や中国地方では気温が38度を超えて危険な暑さになっていて、熱中症対策を徹底してください。一方、北日本では雨雲が発達していて、北海道の十勝地方では猛烈な雨が降ったとみられ「記録的短時間大雨」の気象防災速報が発表されました。気象庁は土砂災害に厳重に警戒し、安全を確保するよう呼びかけています。",
+      "description": "四国梅雨明け 九州や中国は38度超の危険な暑さ 13日も注意を — 12日は、九州や中国地方で最高気温が38度を超えて危険な暑さになりました。13日も西日本を中心に猛烈な暑さが続く見込みで、熱中症対策を徹底してください。一方、北日本では断続的に発達した雨雲が流れ込み、雨量が多くなっている地域があり、気象庁は土砂災害などに警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-12T06:23:58+00:00",
+      "occurred_at": "2026-07-12T09:58:00+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174761000.html",
       "traffic_multiplier": 2.4
     }
