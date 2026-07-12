@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-12T07:31:05+00:00",
-    "total_count": 44,
+    "fetched_at": "2026-07-12T09:30:35+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 43,
+      "nhk_crime": 44,
       "nhk_society": 1
     },
     "type_counts": {
-      "crime_news": 28,
+      "crime_news": 29,
       "murder": 3,
       "assault": 4,
       "fraud": 3,
@@ -32,10 +32,10 @@
       "茨城": 5,
       "群馬": 4,
       "大阪": 3,
+      "神奈川": 2,
       "北海道": 2,
       "埼玉": 2,
       "鹿児島": 1,
-      "神奈川": 1,
       "千葉": 1,
       "栃木": 1
     },
@@ -43,13 +43,13 @@
   },
   "incidents": [
     {
-      "title": "鹿児島 5歳男児行方不明から3週間 現場付近で捜索続く",
-      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174911000.html",
+      "title": "神奈川 平塚 海水浴場で高校生と見られる男性行方不明",
+      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015175041000.html",
       "date": "2026-07-12",
-      "prefecture": "鹿児島",
+      "prefecture": "神奈川",
       "subtype": "crime_news",
-      "lat": 31.5602,
-      "lon": 130.5581,
+      "lat": 35.4478,
+      "lon": 139.6425,
       "source": "nhk_crime"
     },
     {
@@ -60,6 +60,16 @@
       "subtype": "murder",
       "lat": 43.0642,
       "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "鹿児島 5歳男児行方不明から3週間 現場付近で捜索続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174911000.html",
+      "date": "2026-07-12",
+      "prefecture": "鹿児島",
+      "subtype": "crime_news",
+      "lat": 31.5602,
+      "lon": 130.5581,
       "source": "nhk_crime"
     },
     {
