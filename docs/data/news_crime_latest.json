@@ -10,34 +10,33 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-13T14:09:12+00:00",
-    "total_count": 49,
+    "fetched_at": "2026-07-13T16:51:19+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 48,
+      "nhk_crime": 39,
       "nhk_society": 1
     },
     "type_counts": {
-      "murder": 5,
+      "murder": 3,
       "assault": 5,
-      "crime_news": 26,
+      "crime_news": 21,
       "robbery": 3,
       "fraud": 5,
-      "confinement": 2,
+      "confinement": 1,
       "theft": 1,
-      "terrorism": 1,
-      "kidnapping": 1
+      "terrorism": 1
     },
     "top_prefectures": {
-      "東京": 10,
-      "茨城": 5,
-      "北海道": 3,
+      "東京": 8,
+      "茨城": 4,
       "大阪": 3,
+      "北海道": 2,
       "神奈川": 2,
       "埼玉": 2,
-      "群馬": 2,
       "大分": 1,
       "京都": 1,
-      "秋田": 1
+      "秋田": 1,
+      "兵庫": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -440,96 +439,6 @@
       "subtype": "crime_news",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "茨城 高齢者施設2人殺害事件 元職員に懲役20年 一部無罪",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170831000.html",
-      "date": "2026-07-07",
-      "prefecture": "茨城",
-      "subtype": "murder",
-      "lat": 36.3418,
-      "lon": 140.4468,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "臓器移植法違反の疑い NPO法人の元理事ら3人を逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170971000.html",
-      "date": "2026-07-07",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "岐阜のごみ処理施設火災裁判 最高裁が審理やり直し命じる",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170991000.html",
-      "date": "2026-07-07",
-      "prefecture": "岐阜",
-      "subtype": "crime_news",
-      "lat": 35.3911,
-      "lon": 136.7223,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "国産スポーツカー「白タク」で人身事故の疑い 会社員を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015171011000.html",
-      "date": "2026-07-07",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "西日本豪雨8年 各地で犠牲者悼む",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170801000.html",
-      "date": "2026-07-07",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "群馬 きょうだい死亡 逮捕の父親「病気で会社休み将来悲観」",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170711000.html",
-      "date": "2026-07-07",
-      "prefecture": "群馬",
-      "subtype": "crime_news",
-      "lat": 36.3911,
-      "lon": 139.0608,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北海道 旭川 高校生殺害事件 23歳被告の懲役27年の判決確定",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170591000.html",
-      "date": "2026-07-07",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "群馬 ゆかりちゃん事件30年 父親“早くみつかってほしい”",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170361000.html",
-      "date": "2026-07-06",
-      "prefecture": "群馬",
-      "subtype": "kidnapping",
-      "lat": 36.3911,
-      "lon": 139.0608,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 10代少女監禁事件 母親を再逮捕 ブルーシートで拘束か",
-      "url": "http://www3.nhk.or.jp/news/html/20260707/k10015170331000.html",
-      "date": "2026-07-06",
-      "prefecture": "東京",
-      "subtype": "confinement",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     }
   ]
