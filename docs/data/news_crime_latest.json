@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-13T05:30:21+00:00",
-    "total_count": 44,
+    "fetched_at": "2026-07-13T08:37:07+00:00",
+    "total_count": 47,
     "source_counts": {
-      "nhk_crime": 43,
+      "nhk_crime": 46,
       "nhk_society": 1
     },
     "type_counts": {
-      "fraud": 5,
-      "robbery": 2,
       "assault": 5,
-      "crime_news": 24,
+      "crime_news": 26,
+      "robbery": 3,
+      "fraud": 5,
       "murder": 3,
       "confinement": 2,
       "theft": 1,
@@ -28,7 +28,7 @@
       "kidnapping": 1
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 9,
       "茨城": 5,
       "北海道": 3,
       "大阪": 3,
@@ -37,19 +37,29 @@
       "群馬": 2,
       "大分": 1,
       "秋田": 1,
-      "鹿児島": 1
+      "兵庫": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "投資詐欺9000万円余被害 受け子役か 44歳の容疑者逮捕 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175651000.html",
+      "title": "大分 佐伯 “包丁で刺された人いる” 4人けが 44歳男を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175551000.html",
       "date": "2026-07-13",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
+      "prefecture": "大分",
+      "subtype": "assault",
+      "lat": 33.2382,
+      "lon": 131.6126,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 警察署に勾留中のトルコ国籍男性が死亡 経緯調べる",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175761000.html",
+      "date": "2026-07-13",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
@@ -63,23 +73,43 @@
       "source": "nhk_crime"
     },
     {
-      "title": "大分 佐伯 “包丁で刺された人いる” 4人けが 44歳男を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175551000.html",
-      "date": "2026-07-13",
-      "prefecture": "大分",
-      "subtype": "assault",
-      "lat": 33.2382,
-      "lon": 131.6126,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "秋田 にかほ 住宅火災で2人の遺体 3人と連絡とれず",
+      "title": "秋田 2人死亡の火事 夫婦と連絡とれず 息子は交通事故で搬送",
       "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175591000.html",
       "date": "2026-07-13",
       "prefecture": "秋田",
       "subtype": "crime_news",
       "lat": 39.7186,
       "lon": 140.1024,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「トー横」出入りの10代少女に強盗傷害か 暴力団員逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175721000.html",
+      "date": "2026-07-13",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "神戸 冷凍庫遺体遺棄 逮捕の元妻 男性死亡後 離婚届自ら作成か",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175711000.html",
+      "date": "2026-07-13",
+      "prefecture": "兵庫",
+      "subtype": "crime_news",
+      "lat": 34.6913,
+      "lon": 135.183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "投資詐欺9000万円余被害 受け子役か 44歳の容疑者逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175651000.html",
+      "date": "2026-07-13",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {
