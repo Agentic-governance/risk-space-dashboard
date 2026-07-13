@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-13T21:49:32+00:00",
-    "fetched_at_jst": "2026-07-14T06:49:32+09:00",
+    "fetched_at": "2026-07-13T22:50:36+00:00",
+    "fetched_at_jst": "2026-07-14T07:50:36+09:00",
     "total_count": 9,
     "source_counts": {
       "yahoo_transit": 7,
@@ -35,7 +35,7 @@
       "description": "濃霧の影響で、一部列車に遅れが出...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 1.5
     },
@@ -49,7 +49,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -63,7 +63,7 @@
       "description": "保守工事の影響で、14日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -77,7 +77,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -91,7 +91,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -105,7 +105,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -119,7 +119,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T21:49:32+00:00",
+      "occurred_at": "2026-07-13T22:50:36+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -142,14 +142,14 @@
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "restriction",
-      "severity": 1,
+      "severity": 2,
       "road_name": "",
-      "description": "大分 佐伯 4人刺傷事件 被害者は刺した人物と面識なしか — 13日、大分県佐伯市の駐車場や道路で4人が刃物で刺されるなどしてけがをした事件で、被害者はいずれも刺した人物とは面識がないとみられることが警察への取材で分かりました。警察は4人が事件に巻き込まれた状況について、詳しく調べています。",
+      "description": "EU 子どものSNS利用を制限する方針 ことし秋にも具体策公表へ — 子どもによるSNSの利用規制に向けた動きが各国で広がるなか、EU＝ヨーロッパ連合のフォンデアライエン委員長は、子どもの年齢に応じてSNSの利用を制限する方針を示し、ことし秋にも具体的な方法を公表すると明らかにしました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T20:40:09+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176131000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-07-13T22:20:56+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176101000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
