@@ -6,20 +6,19 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-13T22:50:36+00:00",
-    "fetched_at_jst": "2026-07-14T07:50:36+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-13T23:49:12+00:00",
+    "fetched_at_jst": "2026-07-14T08:49:12+09:00",
+    "total_count": 10,
     "source_counts": {
-      "yahoo_transit": 7,
-      "nhk_rss": 2
+      "yahoo_transit": 9,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "dense_fog": 1,
-      "accident": 3,
+      "accident": 4,
+      "dense_fog": 2,
       "construction": 1,
       "disaster": 2,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -29,18 +28,46 @@
       "event_id": "traffic_20260713_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "横浜線内で発生した人身事故の影響...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-13T23:49:12+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260713_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "dense_fog",
+      "severity": 2,
+      "road_name": "",
+      "description": "濃霧の影響で、小金井〜宇都宮駅間...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-13T23:49:12+00:00",
+      "url": "",
+      "traffic_multiplier": 1.5
+    },
+    {
+      "event_id": "traffic_20260713_0002",
+      "layer": "traffic",
+      "source": "yahoo_transit",
       "incident_type": "dense_fog",
       "severity": 2,
       "road_name": "",
       "description": "濃霧の影響で、一部列車に遅れが出...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
+      "occurred_at": "2026-07-13T23:49:12+00:00",
       "url": "",
       "traffic_multiplier": 1.5
     },
     {
-      "event_id": "traffic_20260713_0001",
+      "event_id": "traffic_20260713_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -49,12 +76,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
+      "occurred_at": "2026-07-13T23:49:12+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260713_0002",
+      "event_id": "traffic_20260713_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -63,37 +90,9 @@
       "description": "保守工事の影響で、14日までの各...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
+      "occurred_at": "2026-07-13T23:49:12+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260713_0003",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "台風災害の影響で、里見〜上総中野...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
-      "url": "",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260713_0004",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "中川駅間での脱線",
-      "description": "国吉〜上総中川駅間での脱線事故の...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260713_0005",
@@ -102,15 +101,43 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "天気アプリの決定版 Yahoo!天気・災害",
+      "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
+      "occurred_at": "2026-07-13T23:49:12+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260713_0006",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "中川駅間での脱線",
+      "description": "国吉〜上総中川駅間での脱線事故の...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-13T23:49:12+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260713_0007",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "天気アプリの決定版 Yahoo!天気・災害",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-13T23:49:12+00:00",
+      "url": "",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260713_0008",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -119,12 +146,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-13T22:50:36+00:00",
+      "occurred_at": "2026-07-13T23:49:12+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260713_0007",
+      "event_id": "traffic_20260713_0009",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -136,20 +163,6 @@
       "occurred_at": "2026-07-08T10:59:20+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260708/k10015172141000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260713_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "EU 子どものSNS利用を制限する方針 ことし秋にも具体策公表へ — 子どもによるSNSの利用規制に向けた動きが各国で広がるなか、EU＝ヨーロッパ連合のフォンデアライエン委員長は、子どもの年齢に応じてSNSの利用を制限する方針を示し、ことし秋にも具体的な方法を公表すると明らかにしました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-13T22:20:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176101000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
