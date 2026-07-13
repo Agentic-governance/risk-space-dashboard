@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-13T11:45:29+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-07-13T14:09:12+00:00",
+    "total_count": 49,
     "source_counts": {
-      "nhk_crime": 47,
+      "nhk_crime": 48,
       "nhk_society": 1
     },
     "type_counts": {
-      "murder": 4,
+      "murder": 5,
       "assault": 5,
       "crime_news": 26,
       "robbery": 3,
@@ -28,28 +28,28 @@
       "kidnapping": 1
     },
     "top_prefectures": {
-      "東京": 9,
+      "東京": 10,
       "茨城": 5,
       "北海道": 3,
       "大阪": 3,
       "神奈川": 2,
       "埼玉": 2,
       "群馬": 2,
-      "京都": 1,
       "大分": 1,
+      "京都": 1,
       "秋田": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "京都 ひき逃げ 引きずっていると認識か 殺人などの疑いで逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175861000.html",
+      "title": "「無差別殺傷事件で死刑に」とナイフ準備 殺人予備で逮捕 富山",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015176151000.html",
       "date": "2026-07-13",
-      "prefecture": "京都",
+      "prefecture": "東京",
       "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
@@ -60,6 +60,16 @@
       "subtype": "assault",
       "lat": 33.2382,
       "lon": 131.6126,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 ひき逃げ 引きずっていると認識か 殺人などの疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175861000.html",
+      "date": "2026-07-13",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
       "source": "nhk_crime"
     },
     {
