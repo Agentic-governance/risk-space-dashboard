@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-13T01:50:48+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-07-13T05:30:21+00:00",
+    "total_count": 44,
     "source_counts": {
-      "nhk_crime": 39,
+      "nhk_crime": 43,
       "nhk_society": 1
     },
     "type_counts": {
-      "fraud": 4,
-      "crime_news": 23,
+      "fraud": 5,
+      "robbery": 2,
+      "assault": 5,
+      "crime_news": 24,
       "murder": 3,
-      "assault": 4,
       "confinement": 2,
-      "robbery": 1,
       "theft": 1,
       "terrorism": 1,
       "kidnapping": 1
@@ -30,18 +30,58 @@
     "top_prefectures": {
       "東京": 7,
       "茨城": 5,
+      "北海道": 3,
       "大阪": 3,
       "神奈川": 2,
-      "北海道": 2,
       "埼玉": 2,
       "群馬": 2,
-      "鹿児島": 1,
-      "千葉": 1,
-      "栃木": 1
+      "大分": 1,
+      "秋田": 1,
+      "鹿児島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "投資詐欺9000万円余被害 受け子役か 44歳の容疑者逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175651000.html",
+      "date": "2026-07-13",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 江別 公園での強盗致死事件 2人の被告が起訴内容認める",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175631000.html",
+      "date": "2026-07-13",
+      "prefecture": "北海道",
+      "subtype": "robbery",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大分 佐伯 “包丁で刺された人いる” 4人けが 44歳男を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175551000.html",
+      "date": "2026-07-13",
+      "prefecture": "大分",
+      "subtype": "assault",
+      "lat": 33.2382,
+      "lon": 131.6126,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "秋田 にかほ 住宅火災で2人の遺体 3人と連絡とれず",
+      "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175591000.html",
+      "date": "2026-07-13",
+      "prefecture": "秋田",
+      "subtype": "crime_news",
+      "lat": 39.7186,
+      "lon": 140.1024,
+      "source": "nhk_crime"
+    },
     {
       "title": "金塊購入させる詐欺の手口 被害60億円で業界に協力要請",
       "url": "http://www3.nhk.or.jp/news/html/20260713/k10015175231000.html",
