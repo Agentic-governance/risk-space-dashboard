@@ -10,18 +10,18 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-14T01:28:05+00:00",
-    "total_count": 43,
+    "fetched_at": "2026-07-14T04:27:13+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 42,
+      "nhk_crime": 44,
       "nhk_society": 1
     },
     "type_counts": {
+      "assault": 7,
+      "crime_news": 22,
       "fraud": 6,
       "arson": 1,
-      "assault": 6,
       "murder": 3,
-      "crime_news": 21,
       "robbery": 3,
       "confinement": 1,
       "theft": 1,
@@ -29,10 +29,10 @@
     },
     "top_prefectures": {
       "東京": 8,
+      "大阪": 4,
       "茨城": 4,
-      "大阪": 3,
+      "大分": 3,
       "秋田": 2,
-      "大分": 2,
       "北海道": 2,
       "神奈川": 2,
       "埼玉": 2,
@@ -42,6 +42,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大分 佐伯 4人刺傷事件 短時間で襲われる様子 防犯カメラに",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176441000.html",
+      "date": "2026-07-14",
+      "prefecture": "大分",
+      "subtype": "assault",
+      "lat": 33.2382,
+      "lon": 131.6126,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大阪 道頓堀ビル火災 たばこをポイ捨てか 従業員を書類送検",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176341000.html",
+      "date": "2026-07-14",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
     {
       "title": "暴力団 「幸平一家」傘下組織の2人逮捕 特殊詐欺関与か 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176281000.html",
