@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-14T17:08:22+00:00",
+    "fetched_at": "2026-07-14T20:09:52+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -91,20 +91,6 @@
       "location_name": "Aizu,  Fukushima Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260714023310_20260714023016_VXSE5k_1",
-      "time": "2026-07-13T17:30:00+00:00",
-      "time_jst": "2026-07-14T02:30:00+09:00",
-      "lat": 35.3,
-      "lon": 133.2,
-      "magnitude": 2.9,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Eastern Shimane Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.3
     }
   ]
 }
