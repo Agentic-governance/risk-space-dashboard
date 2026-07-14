@@ -10,15 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-14T04:27:13+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-14T09:04:28+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 44,
+      "nhk_crime": 45,
       "nhk_society": 1
     },
     "type_counts": {
-      "assault": 7,
       "crime_news": 22,
+      "indecent_act": 1,
+      "assault": 7,
       "fraud": 6,
       "arson": 1,
       "murder": 3,
@@ -28,7 +29,7 @@
       "terrorism": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 9,
       "大阪": 4,
       "茨城": 4,
       "大分": 3,
@@ -43,16 +44,6 @@
   },
   "incidents": [
     {
-      "title": "大分 佐伯 4人刺傷事件 短時間で襲われる様子 防犯カメラに",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176441000.html",
-      "date": "2026-07-14",
-      "prefecture": "大分",
-      "subtype": "assault",
-      "lat": 33.2382,
-      "lon": 131.6126,
-      "source": "nhk_crime"
-    },
-    {
       "title": "大阪 道頓堀ビル火災 たばこをポイ捨てか 従業員を書類送検",
       "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176341000.html",
       "date": "2026-07-14",
@@ -60,6 +51,26 @@
       "subtype": "crime_news",
       "lat": 34.6937,
       "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "全日空機長 客室乗務員にわいせつの罪で実刑判決 東京地裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176731000.html",
+      "date": "2026-07-14",
+      "prefecture": "東京",
+      "subtype": "indecent_act",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大分 佐伯 4人刺傷事件 短時間で襲われる様子 防犯カメラに",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176441000.html",
+      "date": "2026-07-14",
+      "prefecture": "大分",
+      "subtype": "assault",
+      "lat": 33.2382,
+      "lon": 131.6126,
       "source": "nhk_crime"
     },
     {
