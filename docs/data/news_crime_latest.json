@@ -10,26 +10,26 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-14T10:49:45+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-07-14T14:28:26+00:00",
+    "total_count": 48,
     "source_counts": {
-      "nhk_crime": 45,
+      "nhk_crime": 47,
       "nhk_society": 1
     },
     "type_counts": {
+      "murder": 4,
+      "robbery": 4,
       "crime_news": 22,
       "indecent_act": 1,
       "assault": 7,
       "fraud": 6,
       "arson": 1,
-      "murder": 3,
-      "robbery": 3,
       "confinement": 1,
       "theft": 1,
       "terrorism": 1
     },
     "top_prefectures": {
-      "東京": 9,
+      "東京": 10,
       "大阪": 4,
       "茨城": 4,
       "大分": 3,
@@ -37,12 +37,32 @@
       "北海道": 2,
       "神奈川": 2,
       "埼玉": 2,
-      "京都": 1,
-      "兵庫": 1
+      "滋賀": 1,
+      "京都": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "共同通信 日野町事件再審めぐり誤報 担当デスクら処分",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015177121000.html",
+      "date": "2026-07-14",
+      "prefecture": "滋賀",
+      "subtype": "murder",
+      "lat": 35.0045,
+      "lon": 135.8686,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 強盗予備疑いで2人逮捕 ナイフなど準備し金塊狙ったか",
+      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015177061000.html",
+      "date": "2026-07-14",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪 道頓堀ビル火災 たばこをポイ捨てか 従業員を書類送検",
       "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176341000.html",
