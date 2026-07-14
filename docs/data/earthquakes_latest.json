@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-14T20:09:52+00:00",
+    "fetched_at": "2026-07-14T21:34:44+00:00",
     "filter_window_hours": 24,
     "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260715052823_20260715052519_VXSE5k_1",
+      "time": "2026-07-14T20:25:00+00:00",
+      "time_jst": "2026-07-15T05:25:00+09:00",
+      "lat": 43.1,
+      "lon": 145.8,
+      "magnitude": 3.1,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260715004042_20260715003812_VXSE5k_1",
       "time": "2026-07-14T15:38:00+00:00",
@@ -77,20 +91,6 @@
       "location_name": "Off the Coast of Sanriku",
       "source": "jma_quake_list",
       "earthquake_multiplier": 2.0
-    },
-    {
-      "event_id": "20260714055001_20260714054626_VXSE5k_1",
-      "time": "2026-07-13T20:46:00+00:00",
-      "time_jst": "2026-07-14T05:46:00+09:00",
-      "lat": 37.1,
-      "lon": 139.4,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Aizu,  Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }

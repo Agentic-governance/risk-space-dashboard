@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-14T20:10:04+00:00",
-    "total_count": 44,
+    "fetched_at": "2026-07-14T21:34:56+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 43,
+      "nhk_crime": 44,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 19,
       "murder": 4,
       "robbery": 4,
-      "crime_news": 18,
       "indecent_act": 1,
       "assault": 7,
       "fraud": 6,
@@ -30,7 +30,7 @@
     },
     "top_prefectures": {
       "東京": 9,
-      "大阪": 4,
+      "大阪": 5,
       "大分": 3,
       "茨城": 3,
       "秋田": 2,
@@ -43,6 +43,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大阪・道頓堀ビル火災 出火の約15分前にたばこポイ捨てか",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177011000.html",
+      "date": "2026-07-14",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
     {
       "title": "共同通信 日野町事件再審めぐり誤報 担当デスクら処分",
       "url": "http://www3.nhk.or.jp/news/html/20260714/k10015177121000.html",
