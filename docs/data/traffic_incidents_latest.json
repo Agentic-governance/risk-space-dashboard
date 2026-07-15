@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-15T03:49:30+00:00",
-    "fetched_at_jst": "2026-07-15T12:49:30+09:00",
+    "fetched_at": "2026-07-15T08:46:52+00:00",
+    "fetched_at_jst": "2026-07-15T17:46:52+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 5,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T03:49:30+00:00",
+      "occurred_at": "2026-07-15T08:46:52+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T03:49:30+00:00",
+      "occurred_at": "2026-07-15T08:46:52+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T03:49:30+00:00",
+      "occurred_at": "2026-07-15T08:46:52+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T03:49:30+00:00",
+      "occurred_at": "2026-07-15T08:46:52+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T03:49:30+00:00",
+      "occurred_at": "2026-07-15T08:46:52+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -99,10 +99,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "午前中から猛暑 熱中症対策を 元台風で北日本 非常に激しい雨 — 15日は、全国的に気温が上がり、富山県では39度と危険な暑さが予想されています。熱中症対策を徹底してください。一方、台風9号から変わった低気圧が近づく影響で、北日本では15日夜は、非常に激しい雨が降るところがある見込みで、土砂災害などに警戒が必要です。",
+      "description": "東北～九州猛暑 危険な暑さも 北日本は非常に激しい雨の見込み — 15日は東北から九州の各地で猛暑日となり、静岡県では38度と危険な暑さとなっているところもあります。熱中症対策を徹底してください。一方、台風9号から変わった低気圧が近づく影響で、北日本では15日夜は、非常に激しい雨が降るところがある見込みで、土砂災害などに警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T02:59:54+00:00",
+      "occurred_at": "2026-07-15T07:58:13+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260715/k10015176981000.html",
       "traffic_multiplier": 2.4
     }

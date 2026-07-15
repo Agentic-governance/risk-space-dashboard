@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-15T03:49:40+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-07-15T08:47:02+00:00",
+    "total_count": 47,
     "source_counts": {
-      "nhk_crime": 45,
+      "nhk_crime": 46,
       "nhk_society": 1
     },
     "type_counts": {
+      "crime_news": 20,
       "robbery": 5,
-      "crime_news": 19,
       "murder": 4,
       "indecent_act": 1,
       "assault": 7,
@@ -31,18 +31,28 @@
     "top_prefectures": {
       "東京": 9,
       "大阪": 5,
+      "埼玉": 3,
       "大分": 3,
       "茨城": 3,
       "栃木": 2,
       "秋田": 2,
       "北海道": 2,
       "神奈川": 2,
-      "埼玉": 2,
       "滋賀": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "オンラインカジノ「決済代行」グループか 9人逮捕 埼玉県警",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177411000.html",
+      "date": "2026-07-15",
+      "prefecture": "埼玉",
+      "subtype": "crime_news",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
     {
       "title": "「実行役」が受けた指示は “短期間・複数箇所で事件起こせ”",
       "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177291000.html",
