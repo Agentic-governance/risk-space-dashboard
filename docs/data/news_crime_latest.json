@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-14T23:31:07+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-15T03:49:40+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 44,
+      "nhk_crime": 45,
       "nhk_society": 1
     },
     "type_counts": {
+      "robbery": 5,
       "crime_news": 19,
       "murder": 4,
-      "robbery": 4,
       "indecent_act": 1,
       "assault": 7,
       "fraud": 6,
@@ -33,16 +33,26 @@
       "大阪": 5,
       "大分": 3,
       "茨城": 3,
+      "栃木": 2,
       "秋田": 2,
       "北海道": 2,
       "神奈川": 2,
       "埼玉": 2,
-      "滋賀": 1,
-      "京都": 1
+      "滋賀": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "「実行役」が受けた指示は “短期間・複数箇所で事件起こせ”",
+      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177291000.html",
+      "date": "2026-07-15",
+      "prefecture": "栃木",
+      "subtype": "robbery",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪・道頓堀ビル火災 出火の約15分前にたばこポイ捨てか",
       "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177011000.html",
