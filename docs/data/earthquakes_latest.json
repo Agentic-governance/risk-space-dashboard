@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-15T14:22:40+00:00",
+    "fetched_at": "2026-07-15T16:03:29+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -49,20 +49,6 @@
       "location_name": "Off the southeast Coast of the Nemuro Peninsula",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260715004042_20260715003812_VXSE5k_1",
-      "time": "2026-07-14T15:38:00+00:00",
-      "time_jst": "2026-07-15T00:38:00+09:00",
-      "lat": 35.2,
-      "lon": 135.9,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Southern Shiga Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
