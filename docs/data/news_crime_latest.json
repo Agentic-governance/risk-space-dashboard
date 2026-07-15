@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-15T20:08:11+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-07-15T21:32:56+00:00",
+    "total_count": 40,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 40
     },
     "type_counts": {
-      "murder": 5,
+      "murder": 6,
       "robbery": 5,
       "assault": 7,
       "crime_news": 14,
@@ -28,8 +28,8 @@
     "top_prefectures": {
       "東京": 8,
       "大阪": 6,
+      "千葉": 3,
       "大分": 3,
-      "千葉": 2,
       "栃木": 2,
       "秋田": 2,
       "北海道": 2,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 点滴混入殺人 患者の急変直前に元職員が病室出入りか",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177951000.html",
+      "date": "2026-07-15",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 患者点滴に排せつ物混入し殺害か 元職員逮捕 容疑否認",
       "url": "http://www3.nhk.or.jp/news/html/20260715/k10015177731000.html",

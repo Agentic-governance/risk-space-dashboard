@@ -6,18 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-15T20:08:00+00:00",
-    "fetched_at_jst": "2026-07-16T05:08:00+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-07-15T21:32:47+00:00",
+    "fetched_at_jst": "2026-07-16T06:32:47+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 1
+      "yahoo_transit": 5
     },
     "type_counts": {
       "accident": 2,
       "disaster": 2,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +31,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T20:08:00+00:00",
+      "occurred_at": "2026-07-15T21:32:47+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +45,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T20:08:00+00:00",
+      "occurred_at": "2026-07-15T21:32:47+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +59,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T20:08:00+00:00",
+      "occurred_at": "2026-07-15T21:32:47+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +73,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T20:08:00+00:00",
+      "occurred_at": "2026-07-15T21:32:47+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,23 +87,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T20:08:00+00:00",
+      "occurred_at": "2026-07-15T21:32:47+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260715_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "浜岡原発データ不正問題 市議会で審査での防止対策を求める声 — 中部電力が、浜岡原子力発電所の審査で不正なデータ処理を行っていた問題を受けて、15日、原発が立地する静岡県御前崎市で開かれた市議会の特別委員会に原子力規制庁の担当者が出席し、議員側からは、電力会社の不正を防ぐ対策を審査に導入するよう求める意見が出されました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-15T14:36:52+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260715/k10015178001000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
