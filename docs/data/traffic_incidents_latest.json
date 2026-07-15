@@ -6,15 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-15T21:32:47+00:00",
-    "fetched_at_jst": "2026-07-16T06:32:47+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-07-15T22:34:08+00:00",
+    "fetched_at_jst": "2026-07-16T07:34:08+09:00",
+    "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 5
+      "yahoo_transit": 5,
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 2,
+      "disaster": 3,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -31,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T21:32:47+00:00",
+      "occurred_at": "2026-07-15T22:34:08+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -45,7 +46,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T21:32:47+00:00",
+      "occurred_at": "2026-07-15T22:34:08+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -59,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T21:32:47+00:00",
+      "occurred_at": "2026-07-15T22:34:08+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -73,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T21:32:47+00:00",
+      "occurred_at": "2026-07-15T22:34:08+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -87,9 +88,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-15T21:32:47+00:00",
+      "occurred_at": "2026-07-15T22:34:08+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260715_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "きょうも各地で気温上昇 猛烈な暑さに 熱中症対策の徹底を — 16日も北日本から西日本の各地で気温が上がり、猛烈な暑さとなる見込みです。エアコンを適切に使い、こまめに水分補給するなど、熱中症対策を徹底してください。一方、北海道を中心に発達した雨雲がかかり、土砂災害などに十分注意が必要です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-15T21:44:16+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177931000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
