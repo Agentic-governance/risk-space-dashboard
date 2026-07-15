@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-15T22:34:18+00:00",
-    "total_count": 40,
+    "fetched_at": "2026-07-15T23:33:45+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 40
+      "nhk_crime": 41
     },
     "type_counts": {
+      "crime_news": 15,
       "murder": 6,
       "robbery": 5,
       "assault": 7,
-      "crime_news": 14,
       "indecent_act": 1,
       "fraud": 5,
       "arson": 1,
@@ -35,11 +35,21 @@
       "北海道": 2,
       "神奈川": 2,
       "茨城": 2,
-      "埼玉": 1
+      "岐阜": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "岐阜 垂井町で住宅火災 焼け跡から2人の遺体 母子と連絡取れず",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178091000.html",
+      "date": "2026-07-15",
+      "prefecture": "岐阜",
+      "subtype": "crime_news",
+      "lat": 35.3911,
+      "lon": 136.7223,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 点滴混入殺人 患者の急変直前に元職員が病室出入りか",
       "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177951000.html",
