@@ -10,13 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T10:54:09+00:00",
+    "fetched_at": "2026-07-16T14:35:28+00:00",
     "total_count": 48,
     "source_counts": {
       "nhk_crime": 48
     },
     "type_counts": {
-      "murder": 10,
+      "stalking": 1,
+      "murder": 9,
       "crime_news": 18,
       "robbery": 5,
       "assault": 7,
@@ -41,6 +42,16 @@
   },
   "incidents": [
     {
+      "title": "相模原 女子高校生殺害 ストーカーなど疑いで元交際相手再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178511000.html",
+      "date": "2026-07-16",
+      "prefecture": "神奈川",
+      "subtype": "stalking",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
       "title": "“点滴混入”殺人事件 元職員 担当外の被害者の病室出入りか",
       "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178491000.html",
       "date": "2026-07-16",
@@ -48,16 +59,6 @@
       "subtype": "murder",
       "lat": 35.6073,
       "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "相模原 女子高校生殺害 ストーカーなど疑いで元交際相手再逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178511000.html",
-      "date": "2026-07-16",
-      "prefecture": "神奈川",
-      "subtype": "murder",
-      "lat": 35.4478,
-      "lon": 139.6425,
       "source": "nhk_crime"
     },
     {

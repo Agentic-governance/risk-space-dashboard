@@ -6,16 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-16T10:54:00+00:00",
-    "fetched_at_jst": "2026-07-16T19:54:00+09:00",
+    "fetched_at": "2026-07-16T14:35:19+00:00",
+    "fetched_at_jst": "2026-07-16T23:35:19+09:00",
     "total_count": 6,
     "source_counts": {
-      "yahoo_transit": 6
+      "yahoo_transit": 5,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "disaster": 2,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -28,29 +30,15 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "稲毛駅で発生した人身事故の影響で...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-16T10:54:00+00:00",
+      "occurred_at": "2026-07-16T14:35:19+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260716_0001",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "事故・遅延情報はありません",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-16T10:54:00+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260716_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -59,12 +47,12 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-16T10:54:00+00:00",
+      "occurred_at": "2026-07-16T14:35:19+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260716_0003",
+      "event_id": "traffic_20260716_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -73,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-16T10:54:00+00:00",
+      "occurred_at": "2026-07-16T14:35:19+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260716_0004",
+      "event_id": "traffic_20260716_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -87,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-16T10:54:00+00:00",
+      "occurred_at": "2026-07-16T14:35:19+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260716_0005",
+      "event_id": "traffic_20260716_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -101,9 +89,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-16T10:54:00+00:00",
+      "occurred_at": "2026-07-16T14:35:19+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260716_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "相模原 女子高校生殺害 ストーカーなど疑いで元交際相手再逮捕 — 6月、相模原市の河川敷で17歳の女子高校生を殺害したとして逮捕され、家庭裁判所に送られた19歳の元交際相手について、警察はスマートフォンのアプリで復縁を迫るメッセージを繰り返し送ったり、「家族全員殺す」などと脅したりしたとして16日、ストーカー規制法違反などの疑いで再逮捕しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-16T11:34:54+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178511000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
