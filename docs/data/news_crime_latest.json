@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T22:54:34+00:00",
-    "total_count": 38,
+    "fetched_at": "2026-07-16T23:54:46+00:00",
+    "total_count": 39,
     "source_counts": {
-      "nhk_crime": 38
+      "nhk_crime": 39
     },
     "type_counts": {
+      "stalking": 2,
       "murder": 10,
-      "stalking": 1,
       "crime_news": 12,
       "robbery": 5,
       "assault": 5,
@@ -29,8 +29,8 @@
       "東京": 7,
       "大阪": 5,
       "千葉": 4,
+      "神奈川": 3,
       "大分": 3,
-      "神奈川": 2,
       "秋田": 2,
       "北海道": 2,
       "島根": 1,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "相模原 女子高校生殺害 “位置情報共有アプリ消すな”",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178841000.html",
+      "date": "2026-07-16",
+      "prefecture": "神奈川",
+      "subtype": "stalking",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
     {
       "title": "点滴混入殺人 短時間で混入できる「栓」選んだか 千葉",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178771000.html",
