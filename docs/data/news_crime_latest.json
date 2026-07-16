@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T08:45:30+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-16T10:54:09+00:00",
+    "total_count": 48,
     "source_counts": {
-      "nhk_crime": 45
+      "nhk_crime": 48
     },
     "type_counts": {
-      "murder": 8,
-      "crime_news": 17,
+      "murder": 10,
+      "crime_news": 18,
       "robbery": 5,
       "assault": 7,
       "indecent_act": 1,
@@ -28,18 +28,48 @@
     "top_prefectures": {
       "東京": 9,
       "大阪": 7,
-      "千葉": 3,
+      "千葉": 4,
+      "神奈川": 3,
       "大分": 3,
       "栃木": 2,
       "秋田": 2,
       "北海道": 2,
-      "神奈川": 2,
       "茨城": 2,
       "島根": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "“点滴混入”殺人事件 元職員 担当外の被害者の病室出入りか",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178491000.html",
+      "date": "2026-07-16",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "相模原 女子高校生殺害 ストーカーなど疑いで元交際相手再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178511000.html",
+      "date": "2026-07-16",
+      "prefecture": "神奈川",
+      "subtype": "murder",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“災害への備えがまさか…” ポータブル電源火災 相次ぐ背景は",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178181000.html",
+      "date": "2026-07-16",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪 配送車奪い男性に大けがさせる 強盗殺人未遂容疑で逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178461000.html",
