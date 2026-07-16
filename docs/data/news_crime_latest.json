@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T04:00:45+00:00",
-    "total_count": 42,
+    "fetched_at": "2026-07-16T08:45:30+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 42
+      "nhk_crime": 45
     },
     "type_counts": {
-      "murder": 6,
-      "crime_news": 16,
+      "murder": 8,
+      "crime_news": 17,
       "robbery": 5,
       "assault": 7,
       "indecent_act": 1,
@@ -27,7 +27,7 @@
     },
     "top_prefectures": {
       "東京": 9,
-      "大阪": 6,
+      "大阪": 7,
       "千葉": 3,
       "大分": 3,
       "栃木": 2,
@@ -35,11 +35,21 @@
       "北海道": 2,
       "神奈川": 2,
       "茨城": 2,
-      "岐阜": 1
+      "島根": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "大阪 配送車奪い男性に大けがさせる 強盗殺人未遂容疑で逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178461000.html",
+      "date": "2026-07-16",
+      "prefecture": "大阪",
+      "subtype": "murder",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 “点滴混入”殺人事件 事件後に点滴のチューブ隠したか",
       "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177951000.html",
@@ -48,6 +58,26 @@
       "subtype": "murder",
       "lat": 35.6073,
       "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "島根 出雲 親子遺体遺棄事件 父親殺害の疑いで次男を再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178381000.html",
+      "date": "2026-07-16",
+      "prefecture": "島根",
+      "subtype": "crime_news",
+      "lat": 35.4723,
+      "lon": 133.0505,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "工藤会の代表者が26年トップの野村被告から変更 官報で公示",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178271000.html",
+      "date": "2026-07-16",
+      "prefecture": "福岡",
+      "subtype": "murder",
+      "lat": 33.6064,
+      "lon": 130.4183,
       "source": "nhk_crime"
     },
     {

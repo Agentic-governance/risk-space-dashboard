@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-16T04:00:34+00:00",
+    "fetched_at": "2026-07-16T08:45:18+00:00",
     "filter_window_hours": 24,
     "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260716150935_20260716150443_VXSE5k_1",
+      "time": "2026-07-16T06:04:00+00:00",
+      "time_jst": "2026-07-16T15:04:00+09:00",
+      "lat": 35.4,
+      "lon": 139.3,
+      "magnitude": 2.0,
+      "depth_km": 20.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Western Kanagawa Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.3
+    },
     {
       "event_id": "20260716090439_20260716090114_VXSE5k_1",
       "time": "2026-07-16T00:01:00+00:00",
@@ -49,20 +63,6 @@
       "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260715174212_20260715173924_VXSE5k_1",
-      "time": "2026-07-15T08:39:00+00:00",
-      "time_jst": "2026-07-15T17:39:00+09:00",
-      "lat": 38.5,
-      "lon": 142.0,
-      "magnitude": 3.9,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Miyagi Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
