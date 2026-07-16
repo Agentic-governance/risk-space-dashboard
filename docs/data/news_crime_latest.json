@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T01:01:13+00:00",
-    "total_count": 41,
+    "fetched_at": "2026-07-16T04:00:45+00:00",
+    "total_count": 42,
     "source_counts": {
-      "nhk_crime": 41
+      "nhk_crime": 42
     },
     "type_counts": {
-      "crime_news": 15,
       "murder": 6,
+      "crime_news": 16,
       "robbery": 5,
       "assault": 7,
       "indecent_act": 1,
@@ -26,7 +26,7 @@
       "confinement": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 9,
       "大阪": 6,
       "千葉": 3,
       "大分": 3,
@@ -41,6 +41,26 @@
   },
   "incidents": [
     {
+      "title": "千葉 “点滴混入”殺人事件 事件後に点滴のチューブ隠したか",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177951000.html",
+      "date": "2026-07-16",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "西東京 小学生が死亡した事故で会社員を逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178221000.html",
+      "date": "2026-07-16",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
       "title": "岐阜 垂井町で住宅火災 焼け跡から2人の遺体 母子と連絡取れず",
       "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178091000.html",
       "date": "2026-07-15",
@@ -48,16 +68,6 @@
       "subtype": "crime_news",
       "lat": 35.3911,
       "lon": 136.7223,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "千葉 点滴混入殺人 患者の急変直前に元職員が病室出入りか",
-      "url": "http://www3.nhk.or.jp/news/html/20260716/k10015177951000.html",
-      "date": "2026-07-15",
-      "prefecture": "千葉",
-      "subtype": "murder",
-      "lat": 35.6073,
-      "lon": 140.1063,
       "source": "nhk_crime"
     },
     {
