@@ -10,33 +10,32 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T16:02:48+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-07-16T17:09:13+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 48
+      "nhk_crime": 37
     },
     "type_counts": {
       "stalking": 1,
       "murder": 9,
-      "crime_news": 18,
+      "crime_news": 12,
       "robbery": 5,
-      "assault": 7,
+      "assault": 5,
       "indecent_act": 1,
-      "fraud": 5,
-      "arson": 1,
-      "confinement": 1
+      "fraud": 3,
+      "arson": 1
     },
     "top_prefectures": {
-      "東京": 9,
-      "大阪": 7,
-      "千葉": 4,
-      "神奈川": 3,
+      "東京": 7,
+      "大阪": 5,
+      "千葉": 3,
       "大分": 3,
-      "栃木": 2,
+      "神奈川": 2,
       "秋田": 2,
       "北海道": 2,
-      "茨城": 2,
-      "島根": 1
+      "島根": 1,
+      "福岡": 1,
+      "岐阜": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -409,116 +408,6 @@
       "subtype": "assault",
       "lat": 34.6937,
       "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "古着買い取り販売会社の創業者 52億円余り所得隠し脱税か 逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015174121000.html",
-      "date": "2026-07-10",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ニセ警察官詐欺で暗号資産2億4000万円分だまし取られる 横浜",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015174061000.html",
-      "date": "2026-07-10",
-      "prefecture": "神奈川",
-      "subtype": "fraud",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "千葉 松戸 質店で腕時計など盗んだ疑いで4人逮捕 トクリュウか",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173851000.html",
-      "date": "2026-07-10",
-      "prefecture": "千葉",
-      "subtype": "crime_news",
-      "lat": 35.6073,
-      "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "認知症で長期行方不明者の家族 実態を知って支援を 東京",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173821000.html",
-      "date": "2026-07-10",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪地検特捜部 特別公務員暴行陵虐事件の裁判 検事が無罪主張",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173071000.html",
-      "date": "2026-07-10",
-      "prefecture": "大阪",
-      "subtype": "assault",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "茨城 つくば 中高生や小学生含む15人がハチに刺され搬送",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173381000.html",
-      "date": "2026-07-10",
-      "prefecture": "茨城",
-      "subtype": "assault",
-      "lat": 36.3418,
-      "lon": 140.4468,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "兵庫 女児の手首縛り監禁か 大阪 豊中の消防職員逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173751000.html",
-      "date": "2026-07-10",
-      "prefecture": "大阪",
-      "subtype": "confinement",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "だましとった現金800万円を宅配ボックスで回収か 容疑者逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173651000.html",
-      "date": "2026-07-10",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ベネズエラ大地震 倒壊建物に多数の行方不明者 支援本格化",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173521000.html",
-      "date": "2026-07-10",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木 貴金属店に車で突っ込むなどした疑いで逮捕 指示役か",
-      "url": "http://www3.nhk.or.jp/news/html/20260710/k10015173511000.html",
-      "date": "2026-07-10",
-      "prefecture": "栃木",
-      "subtype": "crime_news",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "茨城 同居女性の唇縫い付け事件 被害者の腕や足に複数のあざ",
-      "url": "http://www3.nhk.or.jp/news/html/20260709/k10015172971000.html",
-      "date": "2026-07-09",
-      "prefecture": "茨城",
-      "subtype": "crime_news",
-      "lat": 36.3418,
-      "lon": 140.4468,
       "source": "nhk_crime"
     }
   ]
