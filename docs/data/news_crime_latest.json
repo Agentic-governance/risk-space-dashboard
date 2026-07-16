@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-16T20:00:58+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-07-16T20:50:08+00:00",
+    "total_count": 38,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 38
     },
     "type_counts": {
+      "murder": 10,
       "stalking": 1,
-      "murder": 9,
       "crime_news": 12,
       "robbery": 5,
       "assault": 5,
@@ -28,7 +28,7 @@
     "top_prefectures": {
       "東京": 7,
       "大阪": 5,
-      "千葉": 3,
+      "千葉": 4,
       "大分": 3,
       "神奈川": 2,
       "秋田": 2,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "点滴混入殺人 短時間で混入できる「栓」選んだか 千葉",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178771000.html",
+      "date": "2026-07-16",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
     {
       "title": "相模原 女子高校生殺害 ストーカーなど疑いで元交際相手再逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260716/k10015178511000.html",
