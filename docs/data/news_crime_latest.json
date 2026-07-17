@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T01:37:54+00:00",
-    "total_count": 39,
+    "fetched_at": "2026-07-17T04:59:56+00:00",
+    "total_count": 41,
     "source_counts": {
-      "nhk_crime": 39
+      "nhk_crime": 41
     },
     "type_counts": {
+      "murder": 12,
       "stalking": 2,
-      "murder": 10,
       "crime_news": 12,
       "robbery": 5,
       "assault": 5,
@@ -27,19 +27,39 @@
     },
     "top_prefectures": {
       "東京": 7,
+      "千葉": 5,
       "大阪": 5,
-      "千葉": 4,
       "神奈川": 3,
       "大分": 3,
       "秋田": 2,
       "北海道": 2,
+      "広島": 1,
       "島根": 1,
-      "福岡": 1,
-      "岐阜": 1
+      "福岡": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "東広島 殺人放火事件 被害者の会社の29歳元社員を再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179191000.html",
+      "date": "2026-07-17",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "“点滴混入”殺人 元職員 容体急変前に排せつ物管理室出入りか",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179151000.html",
+      "date": "2026-07-17",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
     {
       "title": "相模原 女子高校生殺害 “位置情報共有アプリ消すな”",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178841000.html",
