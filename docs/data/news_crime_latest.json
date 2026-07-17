@@ -10,15 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T04:59:56+00:00",
-    "total_count": 41,
+    "fetched_at": "2026-07-17T07:16:17+00:00",
+    "total_count": 43,
     "source_counts": {
-      "nhk_crime": 41
+      "nhk_crime": 43
     },
     "type_counts": {
+      "crime_news": 13,
+      "theft": 1,
       "murder": 12,
       "stalking": 2,
-      "crime_news": 12,
       "robbery": 5,
       "assault": 5,
       "indecent_act": 1,
@@ -26,20 +27,40 @@
       "arson": 1
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 8,
       "千葉": 5,
       "大阪": 5,
       "神奈川": 3,
       "大分": 3,
       "秋田": 2,
       "北海道": 2,
+      "熊本": 1,
       "広島": 1,
-      "島根": 1,
-      "福岡": 1
+      "島根": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "鹿児島 川から服着ていない遺体発見 不明の5歳男児の可能性も",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178991000.html",
+      "date": "2026-07-17",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京  台東区 コインパーキングで窃盗事件 被害総額3億円超か",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179161000.html",
+      "date": "2026-07-17",
+      "prefecture": "東京",
+      "subtype": "theft",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "東広島 殺人放火事件 被害者の会社の29歳元社員を再逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179191000.html",
