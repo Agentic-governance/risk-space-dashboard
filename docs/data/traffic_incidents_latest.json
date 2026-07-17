@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-17T11:08:44+00:00",
-    "fetched_at_jst": "2026-07-17T20:08:44+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-07-17T14:29:50+00:00",
+    "fetched_at_jst": "2026-07-17T23:29:50+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 1
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 3,
+      "disaster": 5,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T11:08:44+00:00",
+      "occurred_at": "2026-07-17T14:29:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T11:08:44+00:00",
+      "occurred_at": "2026-07-17T14:29:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T11:08:44+00:00",
+      "occurred_at": "2026-07-17T14:29:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T11:08:44+00:00",
+      "occurred_at": "2026-07-17T14:29:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T11:08:44+00:00",
+      "occurred_at": "2026-07-17T14:29:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -99,10 +99,38 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "関東で猛烈な雨相次ぐ 土砂災害・浸水・氾濫に厳重警戒を — 湿った空気の影響で、17日は関東を中心に大気の状態が非常に不安定になっていて、午前中から猛烈な雨が相次いで降っています。群馬県太田市では「記録的短時間大雨」の気象防災速報が発表されるなど、関東北部でも、当初の予想を上回る大雨となっています。土砂災害や低い土地の浸水、川の氾濫に厳重に警戒してください。",
+      "description": "栃木県南部と群馬県南部に「線状降水帯直前予測」発表 気象庁 — 気象庁は栃木県南部と群馬県南部で3時間以内に線状降水帯が発生する可能性が高まっているとして、午後9時48分、「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、栃木県南部と群馬県南部では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T10:06:33+00:00",
+      "occurred_at": "2026-07-17T12:55:33+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179751000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260717_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "栃木 佐野市西部の約3300世帯 9000人余りに避難指示 — 栃木県佐野市は、レベル4大雨危険警報と土砂災害危険警報が発表されたことを受けて、午後10時15分、市内西部のおよそ3300世帯、9000人余りに避難指示を出しました。5段階の警戒レベルのうち警戒レベル4の情報で、危険な場所から全員避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-17T13:54:32+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179841000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260717_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "関東で猛烈な雨相次ぐ 北海道など連休中は大雨になるおそれ — 湿った空気の影響で、17日は関東で局地的な大雨となり、関東北部では、当初の予想を上回る記録的な大雨となったところもあります。土砂災害や低い土地の浸水、川の氾濫に厳重な警戒が必要です。北海道などでは連休中は断続的に激しい雨が降って大雨になるおそれがあり、最新の気象情報に注意が必要です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-17T14:17:00+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178661000.html",
       "traffic_multiplier": 2.4
     }

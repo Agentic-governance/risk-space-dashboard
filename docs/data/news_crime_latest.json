@@ -10,13 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T11:08:54+00:00",
-    "total_count": 43,
+    "fetched_at": "2026-07-17T14:30:00+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 43
+      "nhk_crime": 45
     },
     "type_counts": {
-      "crime_news": 13,
+      "crime_news": 14,
+      "drug": 1,
       "murder": 12,
       "theft": 1,
       "stalking": 2,
@@ -32,15 +33,35 @@
       "大阪": 5,
       "神奈川": 3,
       "大分": 3,
+      "広島": 2,
       "鹿児島": 2,
       "秋田": 2,
       "北海道": 2,
-      "広島": 1,
-      "島根": 1
+      "三重": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "奈良 川岸に女性2人の遺体 37歳会社員を遺体遺棄の疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179671000.html",
+      "date": "2026-07-17",
+      "prefecture": "三重",
+      "subtype": "crime_news",
+      "lat": 34.7303,
+      "lon": 136.5086,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 矢野雅哉選手 1軍登録抹消 週刊誌報道受けて球団が説明",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179591000.html",
+      "date": "2026-07-17",
+      "prefecture": "広島",
+      "subtype": "drug",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "鹿児島 霧島 川で男性の遺体見つかる 不明の5歳男児の可能性",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178991000.html",
