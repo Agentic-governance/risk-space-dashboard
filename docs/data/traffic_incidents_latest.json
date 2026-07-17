@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-17T19:43:43+00:00",
-    "fetched_at_jst": "2026-07-18T04:43:43+09:00",
+    "fetched_at": "2026-07-17T20:47:51+00:00",
+    "fetched_at_jst": "2026-07-18T05:47:51+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
@@ -15,9 +15,9 @@
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 3,
+      "disaster": 2,
       "congestion": 1,
-      "restriction": 1
+      "restriction": 2
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T19:43:43+00:00",
+      "occurred_at": "2026-07-17T20:47:51+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T19:43:43+00:00",
+      "occurred_at": "2026-07-17T20:47:51+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T19:43:43+00:00",
+      "occurred_at": "2026-07-17T20:47:51+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T19:43:43+00:00",
+      "occurred_at": "2026-07-17T20:47:51+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -97,29 +97,29 @@
       "event_id": "traffic_20260717_0005",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "栃木 足利市と佐野市 レベル4大雨危険警報 解除 — 宇都宮地方気象台は午前2時54分、栃木県の足利市と佐野市に発表していたレベル4大雨危険警報を解除しました。足利市と佐野市には引き続き、レベル4土砂災害危険警報が発表されています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-17T18:33:43+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180001000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260717_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
       "incident_type": "restriction",
       "severity": 1,
       "road_name": "",
       "description": "【大雨 被害情報】群馬 浸水の通報相次ぐ 栃木 足利で土砂崩れ — 大雨による被害などの情報をまとめました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T16:30:30+00:00",
+      "occurred_at": "2026-07-17T19:52:12+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179921000.html",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260717_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "中国で日系企業ら会合 金杉大使「輸出規制強化に留意を」 — 中国・北京で日系企業の関係者などが参加する会合が開かれ、現地に駐在する金杉憲治大使は、中国で日本人2人がレアアースの輸出に関連して逮捕されたことを念頭に「最も留意すべきことの一つが輸出規制の強化だ」として、不安がある場合は大使館などに相談するよう呼びかけました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-17T20:36:37+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179691000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }

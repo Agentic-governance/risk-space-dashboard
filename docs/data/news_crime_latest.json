@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T19:43:53+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-17T20:48:01+00:00",
+    "total_count": 48,
     "source_counts": {
-      "nhk_crime": 45
+      "nhk_crime": 48
     },
     "type_counts": {
-      "crime_news": 14,
-      "murder": 13,
+      "murder": 15,
+      "crime_news": 15,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
@@ -29,19 +29,49 @@
     },
     "top_prefectures": {
       "東京": 8,
-      "千葉": 5,
+      "千葉": 6,
       "大阪": 4,
       "広島": 3,
       "神奈川": 3,
       "大分": 3,
+      "京都": 2,
       "鹿児島": 2,
       "秋田": 2,
-      "北海道": 2,
-      "三重": 1
+      "北海道": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 点滴殺人 元職員は警察の捜査伝えられた直後に自主退職",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179871000.html",
+      "date": "2026-07-17",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "奈良 遺体遺棄疑いで逮捕の会社員 女性のトラブルを通報か",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179861000.html",
+      "date": "2026-07-17",
+      "prefecture": "奈良",
+      "subtype": "crime_news",
+      "lat": 34.6851,
+      "lon": 135.8329,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京アニ放火殺人事件から7年 死刑囚めぐり 遺族「早く結論を」",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179541000.html",
+      "date": "2026-07-17",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
     {
       "title": "奈良 川岸に女性2人の遺体 37歳会社員を遺体遺棄の疑いで逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179671000.html",

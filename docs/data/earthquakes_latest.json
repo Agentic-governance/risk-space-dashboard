@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-17T19:43:39+00:00",
+    "fetched_at": "2026-07-17T20:47:49+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260718044819_20260718044522_VXSE5k_1",
+      "time": "2026-07-17T19:45:00+00:00",
+      "time_jst": "2026-07-18T04:45:00+09:00",
+      "lat": 35.7,
+      "lon": 141.1,
+      "magnitude": 4.3,
+      "depth_km": 40.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the east Coast of Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20260718001629_20260717235535_VXSE5e_1",
       "time": "2026-07-17T14:49:00+00:00",
