@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-17T07:16:07+00:00",
-    "fetched_at_jst": "2026-07-17T16:16:07+09:00",
+    "fetched_at": "2026-07-17T09:31:58+00:00",
+    "fetched_at_jst": "2026-07-17T18:31:58+09:00",
     "total_count": 6,
     "source_counts": {
       "yahoo_transit": 5,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T07:16:07+00:00",
+      "occurred_at": "2026-07-17T09:31:58+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "台風災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T07:16:07+00:00",
+      "occurred_at": "2026-07-17T09:31:58+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T07:16:07+00:00",
+      "occurred_at": "2026-07-17T09:31:58+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T07:16:07+00:00",
+      "occurred_at": "2026-07-17T09:31:58+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T07:16:07+00:00",
+      "occurred_at": "2026-07-17T09:31:58+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -99,10 +99,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "関東で局地的な大雨 浸水などに警戒 北海道などで猛暑日 — 湿った空気が流れ込んでいる影響で、関東や東北などでは大気の状態が不安定になり、局地的な大雨となっています。神奈川県と千葉県、それに東京都では「レベル4危険警報」が出ている地域があり、低い土地の浸水や川の氾濫、土砂災害に厳重に警戒してください。一方、17日は北海道でも猛暑日となっていて、熱中症への対策を徹底するようにしてください。",
+      "description": "青森や関東で局地的な大雨 土砂災害 浸水などに厳重警戒を — 湿った空気が流れ込んでいる影響で、青森県や関東で局地的な大雨となり、この時間は、関東北部でも非常に激しい雨が降っています。青森県と関東北部には「レベル4危険警報」が発表されている地域があります。気象庁は土砂災害や低い土地の浸水、川の氾濫に厳重に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-17T07:05:41+00:00",
+      "occurred_at": "2026-07-17T09:25:11+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178661000.html",
       "traffic_multiplier": 2.4
     }

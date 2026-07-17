@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T07:16:17+00:00",
+    "fetched_at": "2026-07-17T09:32:09+00:00",
     "total_count": 43,
     "source_counts": {
       "nhk_crime": 43
     },
     "type_counts": {
+      "murder": 12,
       "crime_news": 13,
       "theft": 1,
-      "murder": 12,
       "stalking": 2,
       "robbery": 5,
       "assault": 5,
@@ -32,9 +32,9 @@
       "大阪": 5,
       "神奈川": 3,
       "大分": 3,
+      "鹿児島": 2,
       "秋田": 2,
       "北海道": 2,
-      "熊本": 1,
       "広島": 1,
       "島根": 1
     },
@@ -42,13 +42,23 @@
   },
   "incidents": [
     {
+      "title": "東広島 殺人放火事件 被害者の会社の29歳元社員を再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179191000.html",
+      "date": "2026-07-17",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
+    {
       "title": "鹿児島 川から服着ていない遺体発見 不明の5歳男児の可能性も",
       "url": "http://www3.nhk.or.jp/news/html/20260717/k10015178991000.html",
       "date": "2026-07-17",
-      "prefecture": "熊本",
+      "prefecture": "鹿児島",
       "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
+      "lat": 31.5602,
+      "lon": 130.5581,
       "source": "nhk_crime"
     },
     {
@@ -59,16 +69,6 @@
       "subtype": "theft",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東広島 殺人放火事件 被害者の会社の29歳元社員を再逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179191000.html",
-      "date": "2026-07-17",
-      "prefecture": "広島",
-      "subtype": "murder",
-      "lat": 34.3963,
-      "lon": 132.4596,
       "source": "nhk_crime"
     },
     {
