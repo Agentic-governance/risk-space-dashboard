@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-17T14:29:49+00:00",
+    "fetched_at": "2026-07-17T15:57:59+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260718001629_20260717235535_VXSE5e_1",
+      "time": "2026-07-17T14:49:00+00:00",
+      "time_jst": "2026-07-17T23:49:00+09:00",
+      "lat": 14.4,
+      "lon": -93.0,
+      "magnitude": 7.4,
+      "depth_km": null,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Central America",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 4.0
+    },
     {
       "event_id": "20260717065334_20260717064952_VXSE5k_1",
       "time": "2026-07-16T21:49:00+00:00",

@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T14:30:00+00:00",
-    "total_count": 45,
+    "fetched_at": "2026-07-17T15:58:11+00:00",
+    "total_count": 46,
     "source_counts": {
-      "nhk_crime": 45
+      "nhk_crime": 46
     },
     "type_counts": {
       "crime_news": 14,
+      "murder": 13,
       "drug": 1,
-      "murder": 12,
       "theft": 1,
       "stalking": 2,
       "robbery": 5,
@@ -31,9 +31,9 @@
       "東京": 8,
       "千葉": 5,
       "大阪": 5,
+      "広島": 3,
       "神奈川": 3,
       "大分": 3,
-      "広島": 2,
       "鹿児島": 2,
       "秋田": 2,
       "北海道": 2,
@@ -50,6 +50,16 @@
       "subtype": "crime_news",
       "lat": 34.7303,
       "lon": 136.5086,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東広島 殺人放火事件 元社員が代金回収指示された日に事件か",
+      "url": "http://www3.nhk.or.jp/news/html/20260717/k10015179851000.html",
+      "date": "2026-07-17",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
       "source": "nhk_crime"
     },
     {
