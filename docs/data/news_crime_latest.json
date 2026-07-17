@@ -10,10 +10,10 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-17T15:58:11+00:00",
-    "total_count": 46,
+    "fetched_at": "2026-07-17T17:04:55+00:00",
+    "total_count": 45,
     "source_counts": {
-      "nhk_crime": 46
+      "nhk_crime": 45
     },
     "type_counts": {
       "crime_news": 14,
@@ -22,7 +22,7 @@
       "theft": 1,
       "stalking": 2,
       "robbery": 5,
-      "assault": 5,
+      "assault": 4,
       "indecent_act": 1,
       "fraud": 3,
       "arson": 1
@@ -30,7 +30,7 @@
     "top_prefectures": {
       "東京": 8,
       "千葉": 5,
-      "大阪": 5,
+      "大阪": 4,
       "広島": 3,
       "神奈川": 3,
       "大分": 3,
@@ -490,16 +490,6 @@
       "subtype": "crime_news",
       "lat": 31.5602,
       "lon": 130.5581,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪地検特捜部 特別公務員暴行陵虐事件の裁判 動画を再生へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260711/k10015174181000.html",
-      "date": "2026-07-10",
-      "prefecture": "大阪",
-      "subtype": "assault",
-      "lat": 34.6937,
-      "lon": 135.5023,
       "source": "nhk_crime"
     }
   ]
