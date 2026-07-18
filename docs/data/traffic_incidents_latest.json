@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-18T19:44:47+00:00",
-    "fetched_at_jst": "2026-07-19T04:44:47+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-07-18T20:43:00+00:00",
+    "fetched_at_jst": "2026-07-19T05:43:00+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 3,
+      "disaster": 4,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T19:44:47+00:00",
+      "occurred_at": "2026-07-18T20:43:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -43,10 +43,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "大雨災害の影響で、19日の終日、...",
+      "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T19:44:47+00:00",
+      "occurred_at": "2026-07-18T20:43:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T19:44:47+00:00",
+      "occurred_at": "2026-07-18T20:43:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T19:44:47+00:00",
+      "occurred_at": "2026-07-18T20:43:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,12 +88,26 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T19:44:47+00:00",
+      "occurred_at": "2026-07-18T20:43:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260718_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "栃木 足利 住宅に土砂流入し倒壊 行方不明者の捜索続く — 栃木県と群馬県では18日未明にかけて記録的な大雨となり、土砂災害や浸水被害が相次ぎました。栃木県足利市では住宅に土砂が流れ込んで建物が倒壊し、この家に住む60代の夫婦と連絡が取れていませんが市は18日夕方、現場から女性1人が見つかったと発表しました。警察などは夜を徹して行方不明者の捜索を行っています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-18T20:21:51+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180561000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260718_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",

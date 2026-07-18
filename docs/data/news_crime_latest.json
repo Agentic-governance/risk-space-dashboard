@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-18T19:44:57+00:00",
-    "total_count": 50,
+    "fetched_at": "2026-07-18T20:43:09+00:00",
+    "total_count": 51,
     "source_counts": {
-      "nhk_crime": 50
+      "nhk_crime": 51
     },
     "type_counts": {
+      "crime_news": 17,
       "murder": 16,
-      "crime_news": 16,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
@@ -33,15 +33,25 @@
       "大阪": 4,
       "広島": 3,
       "大分": 3,
+      "栃木": 2,
       "三重": 2,
       "京都": 2,
       "奈良": 2,
-      "神奈川": 2,
-      "秋田": 2
+      "神奈川": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "栃木 足利 住宅に土砂流入し倒壊 行方不明者の捜索続く",
+      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180561000.html",
+      "date": "2026-07-18",
+      "prefecture": "栃木",
+      "subtype": "crime_news",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 点滴殺人 患者は過去に担当変更希望か",
       "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180381000.html",
