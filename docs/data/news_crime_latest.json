@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-18T15:32:29+00:00",
-    "total_count": 53,
+    "fetched_at": "2026-07-18T16:31:12+00:00",
+    "total_count": 50,
     "source_counts": {
-      "nhk_crime": 53
+      "nhk_crime": 50
     },
     "type_counts": {
-      "murder": 17,
-      "crime_news": 18,
+      "murder": 16,
+      "crime_news": 16,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
@@ -32,12 +32,12 @@
       "東京": 8,
       "大阪": 4,
       "広島": 3,
-      "神奈川": 3,
       "大分": 3,
       "三重": 2,
       "京都": 2,
       "奈良": 2,
-      "鹿児島": 2
+      "神奈川": 2,
+      "秋田": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -540,36 +540,6 @@
       "subtype": "fraud",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "神奈川 平塚 海水浴場で高校生と見られる男性行方不明",
-      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015175041000.html",
-      "date": "2026-07-12",
-      "prefecture": "神奈川",
-      "subtype": "crime_news",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "札幌のマンションで交際相手の女性を殺害か 33歳容疑者逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174801000.html",
-      "date": "2026-07-12",
-      "prefecture": "北海道",
-      "subtype": "murder",
-      "lat": 43.0642,
-      "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "鹿児島 5歳男児行方不明から3週間 現場付近で捜索続く",
-      "url": "http://www3.nhk.or.jp/news/html/20260712/k10015174911000.html",
-      "date": "2026-07-12",
-      "prefecture": "鹿児島",
-      "subtype": "crime_news",
-      "lat": 31.5602,
-      "lon": 130.5581,
       "source": "nhk_crime"
     }
   ]
