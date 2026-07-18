@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-18T11:01:20+00:00",
-    "fetched_at_jst": "2026-07-18T20:01:20+09:00",
+    "fetched_at": "2026-07-18T11:50:24+00:00",
+    "fetched_at_jst": "2026-07-18T20:50:24+09:00",
     "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
@@ -34,7 +34,7 @@
       "description": "大雨災害の影響で、終日、新桐生〜...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T11:01:20+00:00",
+      "occurred_at": "2026-07-18T11:50:24+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -48,7 +48,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T11:01:20+00:00",
+      "occurred_at": "2026-07-18T11:50:24+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -62,7 +62,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T11:01:20+00:00",
+      "occurred_at": "2026-07-18T11:50:24+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -76,7 +76,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T11:01:20+00:00",
+      "occurred_at": "2026-07-18T11:50:24+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -90,7 +90,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T11:01:20+00:00",
+      "occurred_at": "2026-07-18T11:50:24+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -129,11 +129,11 @@
       "incident_type": "restriction",
       "severity": 1,
       "road_name": "",
-      "description": "栃木 足利 住宅に土砂流入し倒壊 現場から女性1人見つかる — 大雨の影響で17日夜、栃木県足利市で住宅に土砂が流れ込んで建物が倒壊しました。この家に住む、60代の夫婦と連絡が取れていませんが、足利市は18日夕方、現場から女性1人が見つかったと発表しました。",
+      "description": "栃木 群馬で記録的な大雨【各地の被害まとめ】 — 17日未明にかけて栃木県と群馬県で記録的な大雨となり浸水の被害が相次ぎました。このうち栃木県足利市で住宅に土砂が流れ込んで建物が倒壊し、この家に住む、60代の夫婦と連絡が取れていませんが、足利市は18日夕方、現場から女性1人が見つかったと発表しました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T10:52:43+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180441000.html",
+      "occurred_at": "2026-07-18T11:21:58+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179921000.html",
       "traffic_multiplier": 1.0
     }
   ]
