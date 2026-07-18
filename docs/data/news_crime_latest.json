@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-18T04:26:14+00:00",
-    "total_count": 49,
+    "fetched_at": "2026-07-18T08:22:28+00:00",
+    "total_count": 50,
     "source_counts": {
-      "nhk_crime": 49
+      "nhk_crime": 50
     },
     "type_counts": {
       "murder": 16,
-      "crime_news": 15,
+      "crime_news": 16,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
@@ -35,23 +35,13 @@
       "神奈川": 3,
       "大分": 3,
       "京都": 2,
+      "奈良": 2,
       "鹿児島": 2,
-      "秋田": 2,
-      "北海道": 2
+      "秋田": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
-    {
-      "title": "千葉 点滴殺人 元職員が死亡患者の病室を複数回出入りか",
-      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180141000.html",
-      "date": "2026-07-18",
-      "prefecture": "千葉",
-      "subtype": "murder",
-      "lat": 35.6073,
-      "lon": 140.1063,
-      "source": "nhk_crime"
-    },
     {
       "title": "京アニ放火殺人事件から7年 スタジオ跡地で追悼式 京都",
       "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179541000.html",
@@ -60,6 +50,26 @@
       "subtype": "murder",
       "lat": 35.0116,
       "lon": 135.7681,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "奈良 遺体遺棄事件 逮捕の会社員 「自分の車で遺体運んだ」",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180261000.html",
+      "date": "2026-07-18",
+      "prefecture": "奈良",
+      "subtype": "crime_news",
+      "lat": 34.6851,
+      "lon": 135.8329,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "千葉 点滴殺人 元職員が死亡患者の病室を複数回出入りか",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180141000.html",
+      "date": "2026-07-18",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
       "source": "nhk_crime"
     },
     {
