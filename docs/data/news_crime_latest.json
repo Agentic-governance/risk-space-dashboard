@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-18T09:59:21+00:00",
-    "total_count": 50,
+    "fetched_at": "2026-07-18T11:01:31+00:00",
+    "total_count": 53,
     "source_counts": {
-      "nhk_crime": 50
+      "nhk_crime": 53
     },
     "type_counts": {
-      "murder": 16,
-      "crime_news": 16,
+      "murder": 17,
+      "crime_news": 18,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
@@ -28,20 +28,50 @@
       "arson": 1
     },
     "top_prefectures": {
+      "千葉": 8,
       "東京": 8,
-      "千葉": 7,
       "大阪": 4,
       "広島": 3,
       "神奈川": 3,
       "大分": 3,
+      "三重": 2,
       "京都": 2,
       "奈良": 2,
-      "鹿児島": 2,
-      "秋田": 2
+      "鹿児島": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 点滴殺人 患者は過去に担当変更希望か",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180381000.html",
+      "date": "2026-07-18",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "奈良 遺体遺棄事件 1人は三重県の44歳の女性と確認",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180371000.html",
+      "date": "2026-07-18",
+      "prefecture": "三重",
+      "subtype": "crime_news",
+      "lat": 34.7303,
+      "lon": 136.5086,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "3歳女の子が乗用車にはねられ重体 運転手を逮捕 新潟 燕市",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180391000.html",
+      "date": "2026-07-18",
+      "prefecture": "新潟",
+      "subtype": "crime_news",
+      "lat": 37.9026,
+      "lon": 139.0232,
+      "source": "nhk_crime"
+    },
     {
       "title": "京アニ放火殺人事件から7年 スタジオ跡地で追悼式 京都",
       "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179541000.html",

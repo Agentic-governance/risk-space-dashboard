@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-18T09:59:10+00:00",
-    "fetched_at_jst": "2026-07-18T18:59:10+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-18T11:01:20+00:00",
+    "fetched_at_jst": "2026-07-18T20:01:20+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
       "disaster": 3,
       "accident": 2,
       "congestion": 1,
+      "construction": 1,
       "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -30,10 +31,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "大雨災害の影響で、終日、運転を見...",
+      "description": "大雨災害の影響で、終日、新桐生〜...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T09:59:10+00:00",
+      "occurred_at": "2026-07-18T11:01:20+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -47,7 +48,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T09:59:10+00:00",
+      "occurred_at": "2026-07-18T11:01:20+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +62,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T09:59:10+00:00",
+      "occurred_at": "2026-07-18T11:01:20+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +76,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T09:59:10+00:00",
+      "occurred_at": "2026-07-18T11:01:20+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,26 +90,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T09:59:10+00:00",
+      "occurred_at": "2026-07-18T11:01:20+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
       "event_id": "traffic_20260718_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "【大雨被害】栃木 住宅に土砂流入し倒壊 夫婦の安否確認続く — 大雨の影響で、17日夜、栃木県足利市で住宅に土砂が流れ込んで建物が倒壊し、この住宅で暮らしているとみられる60代の夫婦と連絡が取れていないことから警察と消防が確認を進めています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-18T09:50:44+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179921000.html",
-      "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260718_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
@@ -120,6 +107,34 @@
       "occurred_at": "2026-07-18T09:48:56+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179941000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260718_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "construction",
+      "severity": 1,
+      "road_name": "",
+      "description": "リニア中央新幹線 静岡県内着工へ 静岡県とJR東海協定締結 — 次世代の交通の大動脈とされるリニア中央新幹線をめぐり、静岡県とJR東海は、18日、着工の前提となる「自然環境保全協定」を締結し、こう着していた静岡県内の工事が動きだすことになりました。JR東海は今後、地元での説明会などを行った上で工事に着手する方針です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-18T10:44:09+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180281000.html",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260718_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "栃木 足利 住宅に土砂流入し倒壊 現場から女性1人見つかる — 大雨の影響で17日夜、栃木県足利市で住宅に土砂が流れ込んで建物が倒壊しました。この家に住む、60代の夫婦と連絡が取れていませんが、足利市は18日夕方、現場から女性1人が見つかったと発表しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-18T10:52:43+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180441000.html",
+      "traffic_multiplier": 1.0
     }
   ]
 }
