@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-18T21:45:14+00:00",
-    "fetched_at_jst": "2026-07-19T06:45:14+09:00",
+    "fetched_at": "2026-07-18T22:44:15+00:00",
+    "fetched_at_jst": "2026-07-19T07:44:15+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T21:45:14+00:00",
+      "occurred_at": "2026-07-18T22:44:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T21:45:14+00:00",
+      "occurred_at": "2026-07-18T22:44:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T21:45:14+00:00",
+      "occurred_at": "2026-07-18T22:44:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T21:45:14+00:00",
+      "occurred_at": "2026-07-18T22:44:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T21:45:14+00:00",
+      "occurred_at": "2026-07-18T22:44:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -99,10 +99,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "北海道 青森で大雨 レベル4危険警報も 土砂災害など厳重警戒 — 前線と低気圧の影響で、北海道や青森県では18日夜から局地的に大雨となり、「レベル4危険警報」が発表されている地域があります。このあとも激しい雨が降るおそれがあり、土砂災害などに厳重な警戒が必要です。",
+      "description": "北海道 青森で大雨 青森ではレベル4危険警報も 厳重警戒 — 前線と低気圧の影響で、北海道や青森県では18日夜から大雨となり、青森県では「レベル4土砂災害危険警報」が発表されている地域があります。このあとも激しい雨が降るおそれがあり、土砂災害に厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-18T20:56:31+00:00",
+      "occurred_at": "2026-07-18T22:25:03+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180531000.html",
       "traffic_multiplier": 2.4
     },
