@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-18T01:29:20+00:00",
-    "total_count": 48,
+    "fetched_at": "2026-07-18T04:26:14+00:00",
+    "total_count": 49,
     "source_counts": {
-      "nhk_crime": 48
+      "nhk_crime": 49
     },
     "type_counts": {
-      "murder": 15,
+      "murder": 16,
       "crime_news": 15,
       "drug": 1,
       "theft": 1,
@@ -29,7 +29,7 @@
     },
     "top_prefectures": {
       "東京": 8,
-      "千葉": 6,
+      "千葉": 7,
       "大阪": 4,
       "広島": 3,
       "神奈川": 3,
@@ -42,6 +42,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 点滴殺人 元職員が死亡患者の病室を複数回出入りか",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015180141000.html",
+      "date": "2026-07-18",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京アニ放火殺人事件から7年 スタジオ跡地で追悼式 京都",
+      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179541000.html",
+      "date": "2026-07-18",
+      "prefecture": "京都",
+      "subtype": "murder",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 点滴殺人 元職員は警察の捜査伝えられた直後に自主退職",
       "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179871000.html",
@@ -60,16 +80,6 @@
       "subtype": "crime_news",
       "lat": 34.6851,
       "lon": 135.8329,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京アニ放火殺人事件から7年 死刑囚めぐり 遺族「早く結論を」",
-      "url": "http://www3.nhk.or.jp/news/html/20260718/k10015179541000.html",
-      "date": "2026-07-17",
-      "prefecture": "京都",
-      "subtype": "murder",
-      "lat": 35.0116,
-      "lon": 135.7681,
       "source": "nhk_crime"
     },
     {
