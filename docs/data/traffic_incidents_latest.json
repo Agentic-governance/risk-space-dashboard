@@ -6,18 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-19T19:46:20+00:00",
-    "fetched_at_jst": "2026-07-20T04:46:20+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-19T20:42:33+00:00",
+    "fetched_at_jst": "2026-07-20T05:42:33+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 3
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 4,
       "disaster": 2,
-      "congestion": 1,
-      "fallen_tree": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T19:46:20+00:00",
+      "occurred_at": "2026-07-19T20:42:33+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T19:46:20+00:00",
+      "occurred_at": "2026-07-19T20:42:33+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T19:46:20+00:00",
+      "occurred_at": "2026-07-19T20:42:33+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T19:46:20+00:00",
+      "occurred_at": "2026-07-19T20:42:33+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T19:46:20+00:00",
+      "occurred_at": "2026-07-19T20:42:33+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -111,28 +110,14 @@
       "event_id": "traffic_20260719_0006",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "fallen_tree",
-      "severity": 2,
-      "road_name": "",
-      "description": "静岡 御殿場 グラウンド周辺で複数倒木 子ども含む7人搬送 — 19日午後、静岡県御殿場市にあるグラウンドの周辺で複数の木が倒れ、サッカーの試合を観戦していた子どもを含む7人が病院に搬送されました。警察が当時の詳しい状況を調べています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-19T09:47:43+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180731000.html",
-      "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260719_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "競輪の伏見俊昭選手が落車事故で死去 アテネ五輪で銀メダル — アテネオリンピックの自転車競技で銀メダルを獲得した、競輪の伏見俊昭選手が18日、レース中の落車事故で病院に運ばれていましたが、19日、亡くなりました。50歳でした。",
+      "description": "奈良 西名阪道で逆走か 軽乗用車どうしが正面衝突 2人死亡 — 20日未明、奈良県香芝市の西名阪自動車道で軽乗用車どうしが正面衝突し、2人が死亡し、1人が意識不明の重体となっています。現場の状況からいずれかの車が逆走していた可能性もあるとみて警察が事故の詳しい状況を調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T12:35:23+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180921000.html",
+      "occurred_at": "2026-07-19T20:38:13+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260720/k10015181011000.html",
       "traffic_multiplier": 1.6
     }
   ]
