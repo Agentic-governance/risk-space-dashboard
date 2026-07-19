@@ -10,14 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-19T07:28:49+00:00",
-    "total_count": 52,
+    "fetched_at": "2026-07-19T09:30:57+00:00",
+    "total_count": 54,
     "source_counts": {
-      "nhk_crime": 52
+      "nhk_crime": 54
     },
     "type_counts": {
+      "murder": 17,
+      "weapon": 1,
       "crime_news": 18,
-      "murder": 16,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
@@ -28,9 +29,9 @@
       "arson": 1
     },
     "top_prefectures": {
-      "千葉": 8,
+      "千葉": 9,
       "東京": 8,
-      "大阪": 4,
+      "大阪": 5,
       "神奈川": 3,
       "三重": 3,
       "広島": 3,
@@ -42,6 +43,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 点滴殺人 混入に使われたとみられる注射器見つからず",
+      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180821000.html",
+      "date": "2026-07-19",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大阪 マンションで家族3人切りつけ 死亡の10代の少年関与か",
+      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180801000.html",
+      "date": "2026-07-19",
+      "prefecture": "大阪",
+      "subtype": "weapon",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
     {
       "title": "遊漁船火災 全員避難 けが人なし 神奈川 三浦",
       "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180681000.html",
