@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-19T15:34:40+00:00",
-    "fetched_at_jst": "2026-07-20T00:34:40+09:00",
-    "total_count": 10,
+    "fetched_at": "2026-07-19T16:32:15+00:00",
+    "fetched_at_jst": "2026-07-20T01:32:15+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 7,
-      "nhk_rss": 3
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 6,
+      "accident": 5,
       "disaster": 2,
       "congestion": 1,
       "fallen_tree": 1
@@ -33,7 +33,7 @@
       "description": "武蔵野線内で発生した人身事故の影...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "西国分寺駅で発生した人身事故の影...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -103,7 +103,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -117,7 +117,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-19T15:34:40+00:00",
+      "occurred_at": "2026-07-19T16:32:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -148,20 +148,6 @@
       "occurred_at": "2026-07-19T09:47:43+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180731000.html",
       "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260719_0009",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "競輪の伏見俊昭選手が落車事故で死去 アテネ五輪で銀メダル — アテネオリンピックの自転車競技で銀メダルを獲得した、競輪の伏見俊昭選手が18日、レース中の落車事故で病院に運ばれていましたが、19日、亡くなりました。50歳でした。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-19T12:35:23+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180921000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }
