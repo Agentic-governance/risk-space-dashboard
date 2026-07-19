@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-19T01:35:12+00:00",
-    "total_count": 51,
+    "fetched_at": "2026-07-19T04:51:34+00:00",
+    "total_count": 52,
     "source_counts": {
-      "nhk_crime": 51
+      "nhk_crime": 52
     },
     "type_counts": {
-      "crime_news": 17,
+      "crime_news": 18,
       "murder": 16,
       "drug": 1,
       "theft": 1,
@@ -31,25 +31,35 @@
       "千葉": 8,
       "東京": 8,
       "大阪": 4,
+      "神奈川": 3,
+      "三重": 3,
       "広島": 3,
       "大分": 3,
-      "栃木": 2,
-      "三重": 2,
       "京都": 2,
       "奈良": 2,
-      "神奈川": 2
+      "秋田": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "栃木 足利 住宅に土砂流入し倒壊 行方不明者の捜索続く",
-      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180561000.html",
-      "date": "2026-07-18",
-      "prefecture": "栃木",
+      "title": "遊漁船火災 全員避難 けが人なし 神奈川 三浦",
+      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180681000.html",
+      "date": "2026-07-19",
+      "prefecture": "神奈川",
       "subtype": "crime_news",
-      "lat": 36.5658,
-      "lon": 139.8836,
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "女性2人遺体遺棄事件 容疑者が親子行方不明前日3人で会う 奈良",
+      "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180671000.html",
+      "date": "2026-07-19",
+      "prefecture": "三重",
+      "subtype": "crime_news",
+      "lat": 34.7303,
+      "lon": 136.5086,
       "source": "nhk_crime"
     },
     {
