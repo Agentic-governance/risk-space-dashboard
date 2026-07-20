@@ -10,35 +10,32 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-20T15:32:08+00:00",
-    "total_count": 44,
+    "fetched_at": "2026-07-20T16:57:34+00:00",
+    "total_count": 36,
     "source_counts": {
-      "nhk_crime": 44
+      "nhk_crime": 36
     },
     "type_counts": {
-      "murder": 15,
+      "murder": 14,
       "weapon": 1,
-      "crime_news": 15,
+      "crime_news": 14,
       "drug": 1,
       "theft": 1,
       "stalking": 2,
-      "robbery": 3,
-      "assault": 3,
-      "indecent_act": 1,
-      "fraud": 1,
-      "arson": 1
+      "robbery": 2,
+      "assault": 1
     },
     "top_prefectures": {
       "千葉": 9,
-      "大阪": 5,
-      "東京": 5,
+      "大阪": 4,
       "神奈川": 3,
       "三重": 3,
       "広島": 3,
+      "東京": 3,
       "奈良": 2,
-      "大分": 2,
       "新潟": 1,
-      "京都": 1
+      "京都": 1,
+      "鹿児島": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -401,86 +398,6 @@
       "subtype": "crime_news",
       "lat": 34.6937,
       "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "共同通信 日野町事件再審めぐり誤報 担当デスクら処分",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015177121000.html",
-      "date": "2026-07-14",
-      "prefecture": "滋賀",
-      "subtype": "murder",
-      "lat": 35.0045,
-      "lon": 135.8686,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 強盗予備疑いで2人逮捕 ナイフなど準備し金塊狙ったか",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015177061000.html",
-      "date": "2026-07-14",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪 道頓堀ビル火災 たばこをポイ捨てか 従業員を書類送検",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176341000.html",
-      "date": "2026-07-14",
-      "prefecture": "大阪",
-      "subtype": "crime_news",
-      "lat": 34.6937,
-      "lon": 135.5023,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "全日空機長 客室乗務員にわいせつの罪で実刑判決 東京地裁",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176731000.html",
-      "date": "2026-07-14",
-      "prefecture": "東京",
-      "subtype": "indecent_act",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大分 佐伯 4人刺傷事件 短時間で襲われる様子 防犯カメラに",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176441000.html",
-      "date": "2026-07-14",
-      "prefecture": "大分",
-      "subtype": "assault",
-      "lat": 33.2382,
-      "lon": 131.6126,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "暴力団 「幸平一家」傘下組織の2人逮捕 特殊詐欺関与か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176281000.html",
-      "date": "2026-07-14",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "秋田 にかほ 住宅全焼 夫婦と連絡取れず 長男を放火疑いで逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176271000.html",
-      "date": "2026-07-14",
-      "prefecture": "秋田",
-      "subtype": "arson",
-      "lat": 39.7186,
-      "lon": 140.1024,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大分 佐伯 4人刺傷事件 被害者は刺した人物と面識なしか",
-      "url": "http://www3.nhk.or.jp/news/html/20260714/k10015176131000.html",
-      "date": "2026-07-13",
-      "prefecture": "大分",
-      "subtype": "assault",
-      "lat": 33.2382,
-      "lon": 131.6126,
       "source": "nhk_crime"
     }
   ]
