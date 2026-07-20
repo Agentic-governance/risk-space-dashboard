@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-20T11:24:56+00:00",
-    "fetched_at_jst": "2026-07-20T20:24:56+09:00",
-    "total_count": 12,
+    "fetched_at": "2026-07-20T13:27:57+00:00",
+    "fetched_at_jst": "2026-07-20T22:27:57+09:00",
+    "total_count": 10,
     "source_counts": {
-      "yahoo_transit": 7,
-      "nhk_rss": 5
+      "yahoo_transit": 6,
+      "nhk_rss": 4
     },
     "type_counts": {
-      "accident": 8,
+      "accident": 6,
       "disaster": 2,
       "construction": 1,
       "congestion": 1
@@ -30,29 +30,15 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "新木駅で発生した人身事故の影響で...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
+      "occurred_at": "2026-07-20T13:27:57+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260720_0001",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "事故・遅延情報はありません",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260720_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -61,12 +47,12 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
+      "occurred_at": "2026-07-20T13:27:57+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260720_0003",
+      "event_id": "traffic_20260720_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -75,12 +61,12 @@
       "description": "災害復旧工事の影響で、21日〜3...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
+      "occurred_at": "2026-07-20T13:27:57+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260720_0004",
+      "event_id": "traffic_20260720_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -89,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
+      "occurred_at": "2026-07-20T13:27:57+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260720_0005",
+      "event_id": "traffic_20260720_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -103,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
+      "occurred_at": "2026-07-20T13:27:57+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260720_0006",
+      "event_id": "traffic_20260720_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -117,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T11:24:56+00:00",
+      "occurred_at": "2026-07-20T13:27:57+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260720_0007",
+      "event_id": "traffic_20260720_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -136,21 +122,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260720_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "マンション転落 巻き込まれ死亡の女性は食事後帰宅途中 名古屋 — 19日、名古屋市中心部の歩道で20代の女性がマンションから転落した男性に巻き込まれて死亡した事故で、女性は当時、友人と食事を終えて帰宅する途中だったことが警察への取材でわかりました。男性はマンションの住民ではないということで、警察は転落したいきさつを詳しく調べています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-20T03:25:26+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260720/k10015181181000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260720_0009",
+      "event_id": "traffic_20260720_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -164,7 +136,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260720_0010",
+      "event_id": "traffic_20260720_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -178,17 +150,17 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260720_0011",
+      "event_id": "traffic_20260720_0009",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "奈良 西名阪道 軽自動車が正面衝突し2人死亡1人大けが 逆走か — 20日未明、奈良県香芝市の西名阪自動車道で軽自動車どうしが正面衝突して2人が死亡し、1人が大けがをしました。事故の直前に5キロほど離れた料金所でUターンして逆走する車が目撃されており、警察はどちらかの車が逆走を続けた末に事故が起きたとみて、詳しい状況を調べています。",
+      "description": "マンション転落 巻き込まれ死亡の女性は食事後帰宅途中 名古屋 — 19日、名古屋市中心部の歩道で20代の女性がマンションから転落した男性に巻き込まれて死亡した事故で、女性は当時、友人と食事を終えて帰宅する途中だったことが警察への取材でわかりました。男性はマンションの住民ではないということで、警察は転落したいきさつを詳しく調べています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-20T09:49:26+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260720/k10015181011000.html",
+      "occurred_at": "2026-07-20T03:25:26+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260720/k10015181181000.html",
       "traffic_multiplier": 1.6
     }
   ]
