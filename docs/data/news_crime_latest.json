@@ -10,22 +10,22 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-21T22:31:36+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-07-21T23:33:17+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 33
     },
     "type_counts": {
+      "crime_news": 13,
       "robbery": 2,
       "murder": 13,
       "weapon": 1,
-      "crime_news": 12,
       "drug": 1,
       "theft": 1,
       "stalking": 2
     },
     "top_prefectures": {
-      "千葉": 8,
+      "千葉": 9,
       "神奈川": 3,
       "三重": 3,
       "広島": 3,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉 八街で住宅火災 4人が遺体で見つかる 警察",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182281000.html",
+      "date": "2026-07-21",
+      "prefecture": "千葉",
+      "subtype": "crime_news",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
     {
       "title": "羽田空港 強盗未遂事件 1時間近く前から被害車両を尾行か",
       "url": "http://www3.nhk.or.jp/news/html/20260721/k10015181951000.html",
