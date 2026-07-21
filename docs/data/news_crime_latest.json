@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-21T10:07:13+00:00",
-    "total_count": 37,
+    "fetched_at": "2026-07-21T11:51:51+00:00",
+    "total_count": 38,
     "source_counts": {
-      "nhk_crime": 37
+      "nhk_crime": 38
     },
     "type_counts": {
-      "robbery": 3,
+      "robbery": 4,
       "murder": 14,
       "weapon": 1,
       "crime_news": 14,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "羽田空港 強盗未遂事件 1時間近く前から被害車両を尾行か",
+      "url": "http://www3.nhk.or.jp/news/html/20260721/k10015181951000.html",
+      "date": "2026-07-21",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "羽田空港 1億9500万円強盗未遂事件で4人逮捕 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260721/k10015181551000.html",
