@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-21T20:04:02+00:00",
+    "fetched_at": "2026-07-21T21:11:25+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260722055420_20260722054936_VXSE5k_1",
+      "time": "2026-07-21T20:49:00+00:00",
+      "time_jst": "2026-07-22T05:49:00+09:00",
+      "lat": 33.1,
+      "lon": 130.5,
+      "magnitude": 2.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Chikugo Region,  Fukuoka Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260722054950_20260722054558_VXSE5k_1",
+      "time": "2026-07-21T20:45:00+00:00",
+      "time_jst": "2026-07-22T05:45:00+09:00",
+      "lat": 36.4,
+      "lon": 138.0,
+      "magnitude": 3.2,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Central Nagano Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260722005058_20260722004746_VXSE5k_1",
       "time": "2026-07-21T15:47:00+00:00",
