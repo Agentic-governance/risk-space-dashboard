@@ -10,13 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-21T23:33:17+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-22T04:01:22+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 34
     },
     "type_counts": {
       "crime_news": 13,
+      "fraud": 1,
       "robbery": 2,
       "murder": 13,
       "weapon": 1,
@@ -32,21 +33,31 @@
       "大阪": 2,
       "奈良": 2,
       "東京": 2,
+      "北海道": 1,
       "新潟": 1,
-      "京都": 1,
-      "鹿児島": 1
+      "京都": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "千葉 八街で住宅火災 4人が遺体で見つかる 警察",
+      "title": "千葉 八街で住宅全焼 4人死亡 警察が確認進める",
       "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182281000.html",
-      "date": "2026-07-21",
+      "date": "2026-07-22",
       "prefecture": "千葉",
       "subtype": "crime_news",
       "lat": 35.6073,
       "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "北海道 風力発電所の事業権譲渡装い2億円詐取か 3人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182401000.html",
+      "date": "2026-07-22",
+      "prefecture": "北海道",
+      "subtype": "fraud",
+      "lat": 43.0642,
+      "lon": 141.3469,
       "source": "nhk_crime"
     },
     {

@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-21T23:33:06+00:00",
-    "fetched_at_jst": "2026-07-22T08:33:06+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-22T04:01:12+00:00",
+    "fetched_at_jst": "2026-07-22T13:01:12+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 3,
+      "disaster": 2,
       "construction": 1,
       "congestion": 1
     },
@@ -24,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260721_0000",
+      "event_id": "traffic_20260722_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-21T23:33:06+00:00",
+      "occurred_at": "2026-07-22T04:01:12+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260721_0001",
+      "event_id": "traffic_20260722_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -47,12 +47,12 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-21T23:33:06+00:00",
+      "occurred_at": "2026-07-22T04:01:12+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260721_0002",
+      "event_id": "traffic_20260722_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -61,12 +61,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-21T23:33:06+00:00",
+      "occurred_at": "2026-07-22T04:01:12+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260721_0003",
+      "event_id": "traffic_20260722_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -75,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-21T23:33:06+00:00",
+      "occurred_at": "2026-07-22T04:01:12+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260721_0004",
+      "event_id": "traffic_20260722_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -89,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-21T23:33:06+00:00",
+      "occurred_at": "2026-07-22T04:01:12+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260721_0005",
+      "event_id": "traffic_20260722_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -103,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-21T23:33:06+00:00",
+      "occurred_at": "2026-07-22T04:01:12+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260721_0006",
+      "event_id": "traffic_20260722_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -120,20 +120,6 @@
       "occurred_at": "2026-07-19T12:35:23+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180921000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260721_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "関東と東海「酷暑日」予想 熱中症に厳重警戒 東北では激しい雨 — 21日は、岐阜県と愛知県で最高気温が40度以上となり、気象庁が運用を始めてから初めての「酷暑日」となりましたが、22日も関東と東海で「酷暑日」が予想されています。熱中症に厳重に警戒してください。一方、東北では雷を伴って激しい雨が降るおそれがあり、土砂災害などに十分注意が必要です。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-21T21:14:38+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182151000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
