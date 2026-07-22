@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-22T04:01:22+00:00",
-    "total_count": 34,
+    "fetched_at": "2026-07-22T09:12:49+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 34
+      "nhk_crime": 35
     },
     "type_counts": {
-      "crime_news": 13,
+      "crime_news": 14,
       "fraud": 1,
       "robbery": 2,
       "murder": 13,
@@ -33,9 +33,9 @@
       "大阪": 2,
       "奈良": 2,
       "東京": 2,
+      "長野": 1,
       "北海道": 1,
-      "新潟": 1,
-      "京都": 1
+      "新潟": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -48,6 +48,16 @@
       "subtype": "crime_news",
       "lat": 35.6073,
       "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "長野 松本 乗鞍高原で希少なチョウ捕獲したか 会社員を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182591000.html",
+      "date": "2026-07-22",
+      "prefecture": "長野",
+      "subtype": "crime_news",
+      "lat": 36.6513,
+      "lon": 138.181,
       "source": "nhk_crime"
     },
     {
