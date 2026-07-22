@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-22T21:39:54+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-07-22T22:58:38+00:00",
+    "total_count": 30,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 30
     },
     "type_counts": {
+      "fraud": 3,
       "crime_news": 11,
       "weapon": 2,
-      "fraud": 2,
       "robbery": 2,
       "murder": 9,
       "drug": 1,
@@ -29,17 +29,27 @@
       "千葉": 7,
       "三重": 3,
       "広島": 3,
+      "北海道": 2,
       "神奈川": 2,
       "奈良": 2,
       "愛知": 1,
       "熊本": 1,
       "高知": 1,
-      "長野": 1,
-      "北海道": 1
+      "長野": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "風力発電事業めぐる詐欺事件 “外資系企業が興味”と伝えたか",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183021000.html",
+      "date": "2026-07-22",
+      "prefecture": "北海道",
+      "subtype": "fraud",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "愛知 大治町 住宅全焼 焼け跡から2人の遺体 夫婦と連絡取れず",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183241000.html",
