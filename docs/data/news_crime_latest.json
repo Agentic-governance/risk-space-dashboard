@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-22T19:02:14+00:00",
-    "total_count": 26,
+    "fetched_at": "2026-07-22T20:12:33+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 26
+      "nhk_crime": 29
     },
     "type_counts": {
-      "crime_news": 10,
-      "fraud": 1,
+      "crime_news": 11,
+      "weapon": 2,
+      "fraud": 2,
       "robbery": 2,
       "murder": 9,
-      "weapon": 1,
       "drug": 1,
       "theft": 1,
       "stalking": 1
@@ -31,15 +31,45 @@
       "広島": 3,
       "神奈川": 2,
       "奈良": 2,
+      "愛知": 1,
+      "熊本": 1,
+      "高知": 1,
       "長野": 1,
-      "北海道": 1,
-      "大阪": 1,
-      "新潟": 1,
-      "京都": 1
+      "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "愛知 大治町 住宅全焼 焼け跡から2人の遺体 夫婦と連絡取れず",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183241000.html",
+      "date": "2026-07-22",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "熊本 合志 公務執行妨害疑いの容疑者に警察官が発砲",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183251000.html",
+      "date": "2026-07-22",
+      "prefecture": "熊本",
+      "subtype": "weapon",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "全仏オープン優勝の元プロテニス選手 詐欺の疑いで逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183261000.html",
+      "date": "2026-07-22",
+      "prefecture": "高知",
+      "subtype": "fraud",
+      "lat": 33.5597,
+      "lon": 133.5311,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉 八街で住宅全焼 4人死亡 警察が確認進める",
       "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182281000.html",
