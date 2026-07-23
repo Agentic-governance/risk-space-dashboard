@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-23T16:24:09+00:00",
-    "total_count": 26,
+    "fetched_at": "2026-07-23T19:03:14+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 26
+      "nhk_crime": 27
     },
     "type_counts": {
+      "murder": 7,
       "crime_news": 11,
       "assault": 2,
-      "murder": 6,
       "fraud": 3,
       "weapon": 2,
       "robbery": 2
@@ -38,6 +38,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "「日本赤軍」岡本公三容疑者 死亡と発表 亡命先のレバノンで",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015184681000.html",
+      "date": "2026-07-23",
+      "prefecture": "",
+      "subtype": "murder",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "川崎クレーン事故 遺体は行方不明の作業員と確認 死者4人に",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184251000.html",
