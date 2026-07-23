@@ -10,25 +10,26 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-23T05:20:46+00:00",
-    "total_count": 30,
+    "fetched_at": "2026-07-23T08:01:43+00:00",
+    "total_count": 32,
     "source_counts": {
-      "nhk_crime": 30
+      "nhk_crime": 32
     },
     "type_counts": {
+      "assault": 1,
+      "murder": 10,
       "fraud": 3,
       "crime_news": 11,
       "weapon": 2,
       "robbery": 2,
-      "murder": 9,
       "drug": 1,
       "theft": 1,
       "stalking": 1
     },
     "top_prefectures": {
       "千葉": 7,
+      "広島": 4,
       "三重": 3,
-      "広島": 3,
       "北海道": 2,
       "神奈川": 2,
       "奈良": 2,
@@ -40,6 +41,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "サッカー三笘薫選手を過失運転傷害の疑いで書類送検 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184061000.html",
+      "date": "2026-07-23",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "野村証券元社員 強盗殺人未遂事件2審も懲役18年 広島高裁",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184001000.html",
+      "date": "2026-07-23",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "風力発電事業めぐる詐欺事件 “外資系企業が興味”と伝えたか",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015183021000.html",
