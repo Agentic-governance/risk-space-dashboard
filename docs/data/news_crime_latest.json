@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-23T19:03:14+00:00",
+    "fetched_at": "2026-07-23T20:15:55+00:00",
     "total_count": 27,
     "source_counts": {
       "nhk_crime": 27
@@ -39,7 +39,7 @@
   },
   "incidents": [
     {
-      "title": "「日本赤軍」岡本公三容疑者 死亡と発表 亡命先のレバノンで",
+      "title": "「日本赤軍」 岡本公三容疑者死亡 空港乱射事件で国際手配",
       "url": "http://www3.nhk.or.jp/news/html/20260724/k10015184681000.html",
       "date": "2026-07-23",
       "prefecture": "",
