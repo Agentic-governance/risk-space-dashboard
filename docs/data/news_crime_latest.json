@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-23T08:01:43+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-07-23T10:17:10+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 33
     },
     "type_counts": {
-      "assault": 1,
+      "assault": 2,
       "murder": 10,
       "fraud": 3,
       "crime_news": 11,
@@ -30,17 +30,27 @@
       "千葉": 7,
       "広島": 4,
       "三重": 3,
+      "京都": 2,
       "北海道": 2,
       "神奈川": 2,
       "奈良": 2,
       "愛知": 1,
       "熊本": 1,
-      "高知": 1,
-      "長野": 1
+      "高知": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "京都 大音量で住民に健康被害か 傷害の疑いで61歳住人を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184121000.html",
+      "date": "2026-07-23",
+      "prefecture": "京都",
+      "subtype": "assault",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
     {
       "title": "サッカー三笘薫選手を過失運転傷害の疑いで書類送検 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184061000.html",
