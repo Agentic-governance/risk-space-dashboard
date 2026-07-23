@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-23T10:17:10+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-23T14:45:19+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 34
     },
     "type_counts": {
+      "crime_news": 12,
       "assault": 2,
       "murder": 10,
       "fraud": 3,
-      "crime_news": 11,
       "weapon": 2,
       "robbery": 2,
       "drug": 1,
@@ -29,10 +29,10 @@
     "top_prefectures": {
       "千葉": 7,
       "広島": 4,
+      "神奈川": 3,
       "三重": 3,
       "京都": 2,
       "北海道": 2,
-      "神奈川": 2,
       "奈良": 2,
       "愛知": 1,
       "熊本": 1,
@@ -41,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "川崎クレーン事故 遺体は行方不明の作業員と確認 死者4人に",
+      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184251000.html",
+      "date": "2026-07-23",
+      "prefecture": "神奈川",
+      "subtype": "crime_news",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
     {
       "title": "京都 大音量で住民に健康被害か 傷害の疑いで61歳住人を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184121000.html",
