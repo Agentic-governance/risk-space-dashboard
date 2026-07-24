@@ -10,14 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-24T05:05:24+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-07-24T07:38:23+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 31
     },
     "type_counts": {
+      "crime_news": 14,
+      "drug": 1,
       "murder": 7,
-      "crime_news": 13,
       "assault": 2,
       "fraud": 3,
       "weapon": 2,
@@ -27,17 +28,37 @@
       "千葉": 5,
       "京都": 3,
       "三重": 3,
+      "愛知": 2,
       "神奈川": 2,
       "北海道": 2,
       "奈良": 2,
       "島根": 1,
       "広島": 1,
-      "愛知": 1,
       "熊本": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "日本政策金融公庫 元職員逮捕で特別調査委員会を設置",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185291000.html",
+      "date": "2026-07-24",
+      "prefecture": "愛知",
+      "subtype": "crime_news",
+      "lat": 35.1802,
+      "lon": 136.9066,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "バレーボール元代表 佐藤駿一郎被告 大麻所持で起訴内容認める",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185171000.html",
+      "date": "2026-07-24",
+      "prefecture": "",
+      "subtype": "drug",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "「日本赤軍」 岡本公三容疑者死亡 空港乱射事件で国際手配",
       "url": "http://www3.nhk.or.jp/news/html/20260724/k10015184681000.html",
