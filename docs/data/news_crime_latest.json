@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-24T01:48:42+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-07-24T05:05:24+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 29
     },
     "type_counts": {
       "murder": 7,
-      "crime_news": 11,
+      "crime_news": 13,
       "assault": 2,
       "fraud": 3,
       "weapon": 2,
@@ -25,15 +25,15 @@
     },
     "top_prefectures": {
       "千葉": 5,
+      "京都": 3,
       "三重": 3,
       "神奈川": 2,
-      "京都": 2,
       "北海道": 2,
       "奈良": 2,
+      "島根": 1,
       "広島": 1,
       "愛知": 1,
-      "熊本": 1,
-      "高知": 1
+      "熊本": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -46,6 +46,26 @@
       "subtype": "murder",
       "lat": null,
       "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "京都 住宅街で大音量“ゲームセンター内並み” 住人は容疑否認",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185041000.html",
+      "date": "2026-07-24",
+      "prefecture": "京都",
+      "subtype": "crime_news",
+      "lat": 35.0116,
+      "lon": 135.7681,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "島根 出雲 住宅火災で2人死亡 夫婦と連絡取れず",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185081000.html",
+      "date": "2026-07-24",
+      "prefecture": "島根",
+      "subtype": "crime_news",
+      "lat": 35.4723,
+      "lon": 133.0505,
       "source": "nhk_crime"
     },
     {

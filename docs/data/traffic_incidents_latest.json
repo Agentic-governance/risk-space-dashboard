@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-24T01:48:32+00:00",
-    "fetched_at_jst": "2026-07-24T10:48:32+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-24T05:05:15+00:00",
+    "fetched_at_jst": "2026-07-24T14:05:15+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 3
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 4,
-      "disaster": 3,
+      "disaster": 2,
       "construction": 1,
       "congestion": 1
     },
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-24T01:48:32+00:00",
+      "occurred_at": "2026-07-24T05:05:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-24T01:48:32+00:00",
+      "occurred_at": "2026-07-24T05:05:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +61,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-24T01:48:32+00:00",
+      "occurred_at": "2026-07-24T05:05:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-24T01:48:32+00:00",
+      "occurred_at": "2026-07-24T05:05:15+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-24T01:48:32+00:00",
+      "occurred_at": "2026-07-24T05:05:15+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-24T01:48:32+00:00",
+      "occurred_at": "2026-07-24T05:05:15+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -134,20 +134,6 @@
       "occurred_at": "2026-07-19T12:35:23+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260719/k10015180921000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260724_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "新潟 佐渡市に土砂災害危険警報発表 土砂災害に厳重な警戒を — 新潟地方気象台は午前8時47分、佐渡市にレベル4土砂災害危険警報を発表しました。土砂災害の危険性が非常に高くなっているため、厳重な警戒が必要です。気象台は自治体からの避難の情報を確認し、崖の近くなど危険な場所にいる人は速やかに安全な場所に避難するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-24T00:37:36+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015184821000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
