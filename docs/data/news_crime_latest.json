@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-24T07:38:23+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-07-24T10:12:25+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 31
+      "nhk_crime": 34
     },
     "type_counts": {
-      "crime_news": 14,
+      "crime_news": 15,
+      "murder": 9,
       "drug": 1,
-      "murder": 7,
       "assault": 2,
       "fraud": 3,
       "weapon": 2,
@@ -28,17 +28,47 @@
       "千葉": 5,
       "京都": 3,
       "三重": 3,
+      "熊本": 2,
+      "長野": 2,
       "愛知": 2,
       "神奈川": 2,
       "北海道": 2,
       "奈良": 2,
-      "島根": 1,
-      "広島": 1,
-      "熊本": 1
+      "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "鹿児島 霧島 川から見つかった遺体 不明の5歳男児と確認",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185431000.html",
+      "date": "2026-07-24",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "栃木強盗殺人 “実行役”事件当時高校生の16歳少年起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185341000.html",
+      "date": "2026-07-24",
+      "prefecture": "栃木",
+      "subtype": "murder",
+      "lat": 36.5658,
+      "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "長野 親子3人死傷事件 父親を長女殺害の疑いで再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185301000.html",
+      "date": "2026-07-24",
+      "prefecture": "長野",
+      "subtype": "murder",
+      "lat": 36.6513,
+      "lon": 138.181,
+      "source": "nhk_crime"
+    },
     {
       "title": "日本政策金融公庫 元職員逮捕で特別調査委員会を設置",
       "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185291000.html",
