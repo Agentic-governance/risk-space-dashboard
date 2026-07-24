@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-24T10:12:25+00:00",
-    "total_count": 34,
+    "fetched_at": "2026-07-24T13:46:27+00:00",
+    "total_count": 37,
     "source_counts": {
-      "nhk_crime": 34
+      "nhk_crime": 37
     },
     "type_counts": {
-      "crime_news": 15,
+      "crime_news": 17,
+      "assault": 3,
       "murder": 9,
       "drug": 1,
-      "assault": 2,
       "fraud": 3,
       "weapon": 2,
       "robbery": 2
@@ -28,25 +28,45 @@
       "千葉": 5,
       "京都": 3,
       "三重": 3,
+      "東京": 2,
       "熊本": 2,
       "長野": 2,
       "愛知": 2,
       "神奈川": 2,
       "北海道": 2,
-      "奈良": 2,
-      "栃木": 1
+      "奈良": 2
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "鹿児島 霧島 川から見つかった遺体 不明の5歳男児と確認",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185431000.html",
+      "title": "渋谷駅近くで不審物から煙出る 爆発物ではないと確認",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185641000.html",
       "date": "2026-07-24",
-      "prefecture": "熊本",
+      "prefecture": "東京",
       "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "茨城 同居女性の唇縫わせたか 強要の疑いで再逮捕 容疑否認",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185451000.html",
+      "date": "2026-07-24",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "映画監督 榊英雄被告 性的暴行の罪で2審も懲役8年の判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185481000.html",
+      "date": "2026-07-24",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
@@ -57,6 +77,16 @@
       "subtype": "murder",
       "lat": 36.5658,
       "lon": 139.8836,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "鹿児島 霧島 川から見つかった遺体 不明の5歳男児と確認",
+      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185431000.html",
+      "date": "2026-07-24",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
       "source": "nhk_crime"
     },
     {
