@@ -6,19 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-25T13:04:46+00:00",
-    "fetched_at_jst": "2026-07-25T22:04:46+09:00",
-    "total_count": 12,
+    "fetched_at": "2026-07-25T14:43:04+00:00",
+    "fetched_at_jst": "2026-07-25T23:43:04+09:00",
+    "total_count": 10,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 6
+      "nhk_rss": 4
     },
     "type_counts": {
       "accident": 4,
-      "disaster": 5,
+      "disaster": 4,
       "construction": 1,
-      "congestion": 1,
-      "fallen_tree": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -34,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T13:04:46+00:00",
+      "occurred_at": "2026-07-25T14:43:04+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -48,7 +47,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T13:04:46+00:00",
+      "occurred_at": "2026-07-25T14:43:04+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -62,7 +61,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T13:04:46+00:00",
+      "occurred_at": "2026-07-25T14:43:04+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -76,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T13:04:46+00:00",
+      "occurred_at": "2026-07-25T14:43:04+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -90,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T13:04:46+00:00",
+      "occurred_at": "2026-07-25T14:43:04+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -104,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T13:04:46+00:00",
+      "occurred_at": "2026-07-25T14:43:04+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -157,40 +156,12 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "新潟 新発田の1890世帯 4543人に避難指示 — 新潟県新発田市は大雨による土砂災害の危険が高まっているとして、午後5時35分、山沿いの菅谷地区と加治地区、それに加治川地区のあわせて1890世帯、4543人に避難指示を出しました。避難指示は5段階の警戒レベルのうちレベル4にあたる情報で、危険な場所から避難するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-25T12:02:51+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260725/k10015186181000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260725_0010",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
       "description": "5日連続「酷暑日」で最長に 26日も各地猛暑予想 熱中症対策を — 25日、東海と山梨県では最高気温40度以上の「酷暑日」となり、国内では5日連続と最も長くなりました。26日も危険な暑さになるところがあると予想されていて、熱中症対策を徹底してください。一方、湿った空気の影響で山梨県では夕方に猛烈な雨が降ったとみられ、「レベル4土砂災害危険警報」が発表されている地域もあり、土砂災害や低い土地の浸水に厳重に警戒してください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T11:04:04+00:00",
+      "occurred_at": "2026-07-25T13:36:20+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260725/k10015185701000.html",
       "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260725_0011",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "fallen_tree",
-      "severity": 2,
-      "road_name": "",
-      "description": "「クビアカツヤカミキリ」被害拡大 昨年度全国で3万7000本超 — サクラやウメなどの木を食い荒らす特定外来生物の「クビアカツヤカミキリ」による被害が全国各地で相次いでいます。NHKが全国の自治体に被害について取材したところ、昨年度確認されただけで少なくとも3万7000本に上っていることが分かり、倒木のおそれから各地では伐採などの対応が取られています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-25T11:30:57+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260725/k10015186041000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
