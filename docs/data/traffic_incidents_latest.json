@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-25T21:21:24+00:00",
-    "fetched_at_jst": "2026-07-26T06:21:24+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-25T22:22:04+00:00",
+    "fetched_at_jst": "2026-07-26T07:22:04+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 3,
+      "disaster": 2,
       "construction": 1,
       "congestion": 1
     },
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T21:21:24+00:00",
+      "occurred_at": "2026-07-25T22:22:04+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T21:21:24+00:00",
+      "occurred_at": "2026-07-25T22:22:04+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +61,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T21:21:24+00:00",
+      "occurred_at": "2026-07-25T22:22:04+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T21:21:24+00:00",
+      "occurred_at": "2026-07-25T22:22:04+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T21:21:24+00:00",
+      "occurred_at": "2026-07-25T22:22:04+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T21:21:24+00:00",
+      "occurred_at": "2026-07-25T22:22:04+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -120,20 +120,6 @@
       "occurred_at": "2026-07-23T07:23:55+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184061000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260725_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "5日連続「酷暑日」で最長に 26日も各地猛暑予想 熱中症対策を — 25日、東海と山梨県では最高気温40度以上の「酷暑日」となり、国内では5日連続と最も長くなりました。26日も危険な暑さになるところがあると予想されていて、熱中症対策を徹底してください。一方、湿った空気の影響で山梨県では夕方に猛烈な雨が降ったとみられ、「レベル4土砂災害危険警報」が発表されている地域もあり、土砂災害や低い土地の浸水に厳重に警戒してください。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-25T13:36:20+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260725/k10015185701000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
