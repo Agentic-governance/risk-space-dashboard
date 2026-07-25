@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-25T16:50:57+00:00",
-    "fetched_at_jst": "2026-07-26T01:50:57+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-25T17:55:07+00:00",
+    "fetched_at_jst": "2026-07-26T02:55:07+09:00",
+    "total_count": 10,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 3
+      "nhk_rss": 4
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 4,
+      "disaster": 5,
       "construction": 1,
       "congestion": 1
     },
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T16:50:57+00:00",
+      "occurred_at": "2026-07-25T17:55:07+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T16:50:57+00:00",
+      "occurred_at": "2026-07-25T17:55:07+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -61,7 +61,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T16:50:57+00:00",
+      "occurred_at": "2026-07-25T17:55:07+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T16:50:57+00:00",
+      "occurred_at": "2026-07-25T17:55:07+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T16:50:57+00:00",
+      "occurred_at": "2026-07-25T17:55:07+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T16:50:57+00:00",
+      "occurred_at": "2026-07-25T17:55:07+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -128,6 +128,20 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
+      "description": "新潟 村上市にレベル4土砂災害危険警報 厳重な警戒を — 新潟地方気象台は26日午前2時24分、村上市にレベル4土砂災害危険警報を発表しました。土砂災害の危険性が非常に高くなっているため、厳重な警戒が必要です。気象台は自治体からの避難の情報を確認し、崖の近くなど危険な場所にいる人は速やかに安全な場所に避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-25T17:43:44+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186291000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260725_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
       "description": "山梨で猛烈な雨 新潟や東北でも大雨のおそれ — 前線に向かって暖かく湿った空気が流れ込んでいる影響で、関東甲信などで局地的に雨雲が発達し、山梨県では25日夕方に猛烈な雨が降ったとみられます。新潟県でも、26日にかけて非常に激しい雨が降るおそれがあり、土砂災害に厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
@@ -136,7 +150,7 @@
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260725_0008",
+      "event_id": "traffic_20260725_0009",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
