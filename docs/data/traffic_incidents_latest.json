@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-25T23:33:18+00:00",
-    "fetched_at_jst": "2026-07-26T08:33:18+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-26T01:10:55+00:00",
+    "fetched_at_jst": "2026-07-26T10:10:55+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 1
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 2,
+      "disaster": 4,
       "construction": 1,
       "congestion": 1
     },
@@ -24,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260725_0000",
+      "event_id": "traffic_20260726_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T23:33:18+00:00",
+      "occurred_at": "2026-07-26T01:10:55+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260725_0001",
+      "event_id": "traffic_20260726_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -47,12 +47,12 @@
       "description": "大雨災害の影響で、新桐生〜赤城駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T23:33:18+00:00",
+      "occurred_at": "2026-07-26T01:10:55+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260725_0002",
+      "event_id": "traffic_20260726_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -61,12 +61,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T23:33:18+00:00",
+      "occurred_at": "2026-07-26T01:10:55+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260725_0003",
+      "event_id": "traffic_20260726_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -75,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T23:33:18+00:00",
+      "occurred_at": "2026-07-26T01:10:55+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260725_0004",
+      "event_id": "traffic_20260726_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -89,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T23:33:18+00:00",
+      "occurred_at": "2026-07-26T01:10:55+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260725_0005",
+      "event_id": "traffic_20260726_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -103,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-25T23:33:18+00:00",
+      "occurred_at": "2026-07-26T01:10:55+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260725_0006",
+      "event_id": "traffic_20260726_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -120,6 +120,34 @@
       "occurred_at": "2026-07-23T07:23:55+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184061000.html",
       "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260726_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "新潟 長岡市 柏崎市 刈羽村にレベル4土砂災害危険警報 — 新潟地方気象台は午前8時15分、長岡市と柏崎市、刈羽村にレベル4土砂災害危険警報を発表しました。土砂災害の危険性が非常に高くなっているため、厳重な警戒が必要です。気象台は自治体からの避難の情報を確認し、崖の近くなど危険な場所にいる人は速やかに安全な場所に避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-25T23:32:36+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186381000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260726_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "新潟 北陸 東北で大雨 厳重警戒を 西日本などは危険な暑さに — 前線の影響で、新潟県と北陸では断続的に非常に激しい雨が降っています。東北でも大雨となっていて、土砂災害や低い土地の浸水などに厳重な警戒が必要です。一方、東海と近畿、四国、九州では26日も危険な暑さが予想され、引き続き熱中症への対策を徹底してください。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-26T01:05:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186311000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
