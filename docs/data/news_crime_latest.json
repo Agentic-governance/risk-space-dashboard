@@ -10,35 +10,65 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-26T01:11:07+00:00",
-    "total_count": 24,
+    "fetched_at": "2026-07-26T04:56:29+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 24
+      "nhk_crime": 27
     },
     "type_counts": {
-      "crime_news": 10,
+      "murder": 5,
+      "crime_news": 12,
       "assault": 3,
-      "murder": 4,
       "drug": 1,
       "fraud": 3,
       "weapon": 1,
       "robbery": 2
     },
     "top_prefectures": {
-      "東京": 2,
+      "東京": 3,
+      "神奈川": 2,
+      "茨城": 2,
       "熊本": 2,
       "長野": 2,
       "愛知": 2,
       "京都": 2,
       "北海道": 2,
-      "茨城": 1,
       "栃木": 1,
-      "島根": 1,
-      "神奈川": 1
+      "島根": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "津久井やまゆり園 再建した施設で園長に 向き合い続けた10年",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186411000.html",
+      "date": "2026-07-26",
+      "prefecture": "神奈川",
+      "subtype": "murder",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 大田区 店舗と住宅が入る建物で火災 4人けが",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186481000.html",
+      "date": "2026-07-26",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "茨城 同居生活で唇縫うよう強要疑い ほかにも唇に針と糸の傷",
+      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186431000.html",
+      "date": "2026-07-26",
+      "prefecture": "茨城",
+      "subtype": "crime_news",
+      "lat": 36.3418,
+      "lon": 140.4468,
+      "source": "nhk_crime"
+    },
     {
       "title": "渋谷駅近くで不審物から煙出る 爆発物ではないと確認",
       "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185641000.html",
