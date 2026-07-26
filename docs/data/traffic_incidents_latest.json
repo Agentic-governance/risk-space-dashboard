@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-26T20:09:17+00:00",
-    "fetched_at_jst": "2026-07-27T05:09:17+09:00",
+    "fetched_at": "2026-07-26T21:29:24+00:00",
+    "fetched_at_jst": "2026-07-27T06:29:24+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T20:09:17+00:00",
+      "occurred_at": "2026-07-26T21:29:24+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T20:09:17+00:00",
+      "occurred_at": "2026-07-26T21:29:24+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T20:09:17+00:00",
+      "occurred_at": "2026-07-26T21:29:24+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T20:09:17+00:00",
+      "occurred_at": "2026-07-26T21:29:24+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T20:09:17+00:00",
+      "occurred_at": "2026-07-26T21:29:24+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -114,11 +114,11 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "新潟と富山で再び局地的に雨が強まる 土砂災害など厳重警戒 — 前線の影響で、26日新潟県や東北、北陸では大雨となり、関東でも局地的な雷雨となりました。新潟県と富山県では再び局地的に雨が強まり、新潟県糸魚川市と富山県入善町の付近では27日未明にかけて猛烈な雨が降ったとみられます。気象庁は、土砂災害などに厳重な警戒を呼びかけています。",
+      "description": "北陸など土砂災害に厳重警戒 西日本中心に危険な暑さ続く — 湿った空気の影響で、北陸などでは局地的に雨が強まり猛烈な雨が降ったとみられ、気象庁は土砂災害や低い土地の浸水などに厳重な警戒を呼びかけています。27日も東北から九州にかけての広い範囲で大気の非常に不安定な状態が続く見込みで、気象情報や雨の降り方に十分注意が必要です。一方、西日本を中心に危険な暑さが続く見込みで、引き続き熱中症への対策を徹底してください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T19:10:49+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186311000.html",
+      "occurred_at": "2026-07-26T21:09:00+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015186851000.html",
       "traffic_multiplier": 2.4
     }
   ]
