@@ -6,17 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-26T07:36:45+00:00",
-    "fetched_at_jst": "2026-07-26T16:36:45+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-26T09:40:30+00:00",
+    "fetched_at_jst": "2026-07-26T18:40:30+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 3,
       "construction": 1,
-      "disaster": 2,
+      "disaster": 1,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T07:36:45+00:00",
+      "occurred_at": "2026-07-26T09:40:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T07:36:45+00:00",
+      "occurred_at": "2026-07-26T09:40:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T07:36:45+00:00",
+      "occurred_at": "2026-07-26T09:40:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -75,7 +75,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T07:36:45+00:00",
+      "occurred_at": "2026-07-26T09:40:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -89,7 +89,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T07:36:45+00:00",
+      "occurred_at": "2026-07-26T09:40:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -106,20 +106,6 @@
       "occurred_at": "2026-07-23T07:23:55+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184061000.html",
       "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260726_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "新潟や東北中心に大雨 関東も激しい雷雨に 西日本では39度超も — 前線の影響で、新潟県や東北を中心に大雨となっていて、土砂災害や低い土地の浸水などに厳重な警戒が必要です。一方、26日も西日本と東日本を中心に気温が上がり、各地で38度を超える危険な暑さとなっていて、引き続き熱中症への対策を徹底してください。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-26T06:46:01+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186311000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
