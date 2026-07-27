@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-27T01:12:12+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-07-27T05:07:58+00:00",
+    "total_count": 28,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 28
     },
     "type_counts": {
+      "fraud": 4,
       "crime_news": 12,
       "murder": 5,
       "assault": 3,
       "drug": 1,
-      "fraud": 3,
       "weapon": 1,
       "robbery": 2
     },
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "IT企業「はてな」資金流出で報告書公表 特殊詐欺による被害",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187211000.html",
+      "date": "2026-07-27",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "東京 大田区 店舗と住宅が入る建物で火災 1人死亡 3人けが",
       "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186481000.html",
