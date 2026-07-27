@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-27T08:56:42+00:00",
+    "fetched_at": "2026-07-27T15:25:44+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -91,34 +91,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260726234815_20260726234530_VXSE5k_1",
-      "time": "2026-07-26T14:45:00+00:00",
-      "time_jst": "2026-07-26T23:45:00+09:00",
-      "lat": 36.8,
-      "lon": 140.6,
-      "magnitude": 3.1,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260726220138_20260726215831_VXSE5k_1",
-      "time": "2026-07-26T12:58:00+00:00",
-      "time_jst": "2026-07-26T21:58:00+09:00",
-      "lat": 29.3,
-      "lon": 129.5,
-      "magnitude": 2.3,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Tokara Islands",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.3
     }
   ]
 }

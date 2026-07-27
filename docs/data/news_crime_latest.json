@@ -10,22 +10,22 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-27T08:56:54+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-07-27T15:25:55+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 31
     },
     "type_counts": {
+      "assault": 4,
+      "crime_news": 13,
       "weapon": 2,
       "fraud": 4,
-      "crime_news": 12,
       "murder": 5,
-      "assault": 3,
       "drug": 1,
       "robbery": 2
     },
     "top_prefectures": {
-      "東京": 4,
+      "東京": 6,
       "神奈川": 2,
       "茨城": 2,
       "熊本": 2,
@@ -39,6 +39,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "棒で交際男性殴打か 50代女の容疑者逮捕 男性死亡で関連調べる",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187461000.html",
+      "date": "2026-07-27",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "飲酒死亡事故か 危険運転致死の疑いで逮捕 法改正後初 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187391000.html",
+      "date": "2026-07-27",
+      "prefecture": "東京",
+      "subtype": "crime_news",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "中国大使館侵入で逮捕の24歳陸上自衛官 脅迫の罪でも起訴",
       "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187301000.html",

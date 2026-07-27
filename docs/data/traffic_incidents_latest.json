@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-27T08:56:44+00:00",
-    "fetched_at_jst": "2026-07-27T17:56:44+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-27T15:25:46+00:00",
+    "fetched_at_jst": "2026-07-28T00:25:46+09:00",
+    "total_count": 8,
     "source_counts": {
-      "yahoo_transit": 7,
+      "yahoo_transit": 6,
       "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "construction": 2,
       "disaster": 2,
       "congestion": 1
@@ -30,29 +30,15 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "京急新子安駅で発生した人身事故の...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
+      "occurred_at": "2026-07-27T15:25:46+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260727_0001",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "事故・遅延情報はありません",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260727_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -61,12 +47,12 @@
       "description": "保守工事の影響で、28日09:3...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
+      "occurred_at": "2026-07-27T15:25:46+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0003",
+      "event_id": "traffic_20260727_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -75,12 +61,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
+      "occurred_at": "2026-07-27T15:25:46+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0004",
+      "event_id": "traffic_20260727_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -89,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
+      "occurred_at": "2026-07-27T15:25:46+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260727_0005",
+      "event_id": "traffic_20260727_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -103,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
+      "occurred_at": "2026-07-27T15:25:46+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260727_0006",
+      "event_id": "traffic_20260727_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -117,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T08:56:44+00:00",
+      "occurred_at": "2026-07-27T15:25:46+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0007",
+      "event_id": "traffic_20260727_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -136,16 +122,16 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260727_0008",
+      "event_id": "traffic_20260727_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "東北から九州にかけて大気が非常に不安定 局地的に雨雲発達 — 27日は湿った空気の影響などで、東北から九州にかけての広い範囲で大気の状態が非常に不安定になり局地的に雨雲が発達していて、気象庁は土砂災害などに十分注意するよう呼びかけています。",
+      "description": "東北～九州 28日も大気不安定 土砂災害など十分注意 — 湿った空気の影響で長野県では27日夜、猛烈な雨が降ったとみられるなど関東甲信や東海などで雨が強まりました。東北から九州にかけては28日も局地的に非常に激しい雨が降って大雨になるおそれがあり、気象庁は土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T07:16:52+00:00",
+      "occurred_at": "2026-07-27T13:30:15+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187251000.html",
       "traffic_multiplier": 2.4
     }
