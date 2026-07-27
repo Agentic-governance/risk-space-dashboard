@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-27T20:19:05+00:00",
-    "total_count": 30,
+    "fetched_at": "2026-07-27T21:41:38+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 30
+      "nhk_crime": 31
     },
     "type_counts": {
+      "crime_news": 14,
       "theft": 1,
       "assault": 4,
-      "crime_news": 13,
       "weapon": 2,
       "fraud": 4,
       "murder": 5,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "別の男性にも臓器移植手術あっせんか NPO元理事を再逮捕へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187541000.html",
+      "date": "2026-07-27",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "スピード違反取締り装置盗んだか 容疑者逮捕 埼玉県警",
       "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187621000.html",

@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-27T20:18:55+00:00",
-    "fetched_at_jst": "2026-07-28T05:18:55+09:00",
-    "total_count": 10,
+    "fetched_at": "2026-07-27T21:41:27+00:00",
+    "fetched_at_jst": "2026-07-28T06:41:27+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 4
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 3,
-      "construction": 4,
+      "construction": 3,
       "disaster": 2,
       "congestion": 1
     },
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T20:18:55+00:00",
+      "occurred_at": "2026-07-27T21:41:27+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "保守工事の影響で、09:35頃〜...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T20:18:55+00:00",
+      "occurred_at": "2026-07-27T21:41:27+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -61,7 +61,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T20:18:55+00:00",
+      "occurred_at": "2026-07-27T21:41:27+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -75,7 +75,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T20:18:55+00:00",
+      "occurred_at": "2026-07-27T21:41:27+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -89,7 +89,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T20:18:55+00:00",
+      "occurred_at": "2026-07-27T21:41:27+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -103,7 +103,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T20:18:55+00:00",
+      "occurred_at": "2026-07-27T21:41:27+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -125,20 +125,6 @@
       "event_id": "traffic_20260727_0007",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "東北～九州 28日も大気不安定 土砂災害など十分注意 — 湿った空気の影響で長野県では27日夜、猛烈な雨が降ったとみられるなど関東甲信や東海などで雨が強まりました。東北から九州にかけては28日も局地的に非常に激しい雨が降って大雨になるおそれがあり、気象庁は土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-27T13:30:15+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187251000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260727_0008",
-      "layer": "traffic",
-      "source": "nhk_rss",
       "incident_type": "construction",
       "severity": 1,
       "road_name": "",
@@ -150,18 +136,18 @@
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0009",
+      "event_id": "traffic_20260727_0008",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "construction",
-      "severity": 1,
+      "incident_type": "disaster",
+      "severity": 4,
       "road_name": "",
-      "description": "埼玉 八潮の道路陥没から1年半 16市町で“期限内の対策困難” — 去年1月、埼玉県八潮市で起きた大規模な道路の陥没事故では、下水道管の腐食が原因とされ、国は遅くとも来年2月末までに緊急度が高い場所の補修工事などを行うよう自治体に求めています。事故から28日で1年半となる中、埼玉県内の対象自治体のうち、76％に上る16の市と町が対策を期限内に終えるのは難しいとしていて、下水が流れる中で作業を進める難しさなどが浮き彫りになっています。",
+      "description": "東北～九州 28日も大気不安定 土砂災害など十分注意 — 湿った空気の影響で長野県では27日夜、猛烈な雨が降ったとみられるなど関東甲信や東海などで雨が強まりました。東北から九州にかけては28日も局地的に非常に激しい雨が降って大雨になるおそれがあり、気象庁は土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T19:28:58+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187581000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-07-27T13:30:15+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187251000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }

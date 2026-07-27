@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-27T20:18:54+00:00",
+    "fetched_at": "2026-07-27T21:41:26+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260728060304_20260728060014_VXSE5k_1",
+      "time": "2026-07-27T21:00:00+00:00",
+      "time_jst": "2026-07-28T06:00:00+09:00",
+      "lat": 34.2,
+      "lon": 135.2,
+      "magnitude": 2.5,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Northern Wakayama Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260727135943_20260727135626_VXSE5k_1",
       "time": "2026-07-27T04:56:00+00:00",
