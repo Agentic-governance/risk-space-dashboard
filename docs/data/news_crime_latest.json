@@ -10,12 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-27T17:20:14+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-07-27T20:19:05+00:00",
+    "total_count": 30,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 30
     },
     "type_counts": {
+      "theft": 1,
       "assault": 4,
       "crime_news": 13,
       "weapon": 2,
@@ -32,12 +33,22 @@
       "愛知": 2,
       "京都": 2,
       "北海道": 2,
-      "栃木": 1,
-      "島根": 1
+      "埼玉": 1,
+      "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "スピード違反取締り装置盗んだか 容疑者逮捕 埼玉県警",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187621000.html",
+      "date": "2026-07-27",
+      "prefecture": "埼玉",
+      "subtype": "theft",
+      "lat": 35.8573,
+      "lon": 139.6489,
+      "source": "nhk_crime"
+    },
     {
       "title": "棒で交際男性殴打か 50代女の容疑者逮捕 男性死亡で関連調べる",
       "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187461000.html",
