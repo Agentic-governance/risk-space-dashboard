@@ -10,22 +10,22 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-27T05:07:58+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-07-27T08:56:54+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 29
     },
     "type_counts": {
+      "weapon": 2,
       "fraud": 4,
       "crime_news": 12,
       "murder": 5,
       "assault": 3,
       "drug": 1,
-      "weapon": 1,
       "robbery": 2
     },
     "top_prefectures": {
-      "東京": 3,
+      "東京": 4,
       "神奈川": 2,
       "茨城": 2,
       "熊本": 2,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "中国大使館侵入で逮捕の24歳陸上自衛官 脅迫の罪でも起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187301000.html",
+      "date": "2026-07-27",
+      "prefecture": "東京",
+      "subtype": "weapon",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "IT企業「はてな」資金流出で報告書公表 特殊詐欺による被害",
       "url": "http://www3.nhk.or.jp/news/html/20260727/k10015187211000.html",
