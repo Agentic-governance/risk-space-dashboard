@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-26T23:35:07+00:00",
-    "fetched_at_jst": "2026-07-27T08:35:07+09:00",
+    "fetched_at": "2026-07-27T01:12:03+00:00",
+    "fetched_at_jst": "2026-07-27T10:12:03+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 5,
@@ -24,7 +24,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260726_0000",
+      "event_id": "traffic_20260727_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T23:35:07+00:00",
+      "occurred_at": "2026-07-27T01:12:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260726_0001",
+      "event_id": "traffic_20260727_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +47,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T23:35:07+00:00",
+      "occurred_at": "2026-07-27T01:12:03+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260726_0002",
+      "event_id": "traffic_20260727_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -61,12 +61,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T23:35:07+00:00",
+      "occurred_at": "2026-07-27T01:12:03+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260726_0003",
+      "event_id": "traffic_20260727_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +75,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T23:35:07+00:00",
+      "occurred_at": "2026-07-27T01:12:03+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260726_0004",
+      "event_id": "traffic_20260727_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -89,12 +89,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T23:35:07+00:00",
+      "occurred_at": "2026-07-27T01:12:03+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260726_0005",
+      "event_id": "traffic_20260727_0005",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -108,16 +108,16 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260726_0006",
+      "event_id": "traffic_20260727_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "北陸など土砂災害に厳重警戒 西日本中心に危険な暑さ続く — 湿った空気の影響で、北陸などでは局地的に雨が強まり猛烈な雨が降ったとみられ、気象庁は土砂災害や低い土地の浸水などに厳重な警戒を呼びかけています。27日も東北から九州にかけての広い範囲で大気の非常に不安定な状態が続く見込みで、気象情報や雨の降り方に十分注意が必要です。一方、西日本を中心に危険な暑さが続く見込みで、引き続き熱中症への対策を徹底してください。",
+      "description": "東北から九州にかけ大気不安定 西日本中心に熱中症対策徹底を — 湿った空気の影響で、北陸などでは局地的に雨が強まり27日朝にかけて猛烈な雨が降りました。日中も東北から九州にかけての広い範囲で大気の非常に不安定な状態が続く見込みで、気象庁は土砂災害や低い土地の浸水などに十分注意するよう呼びかけています。一方、西日本を中心に危険な暑さが続く見込みで、引き続き熱中症への対策を徹底してください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-26T22:39:03+00:00",
+      "occurred_at": "2026-07-27T00:03:42+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260727/k10015186851000.html",
       "traffic_multiplier": 2.4
     }
