@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-28T07:39:28+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-28T10:29:58+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 35
     },
     "type_counts": {
+      "crime_news": 17,
       "stalking": 1,
-      "crime_news": 15,
       "theft": 1,
       "assault": 4,
       "weapon": 2,
@@ -27,9 +27,9 @@
     },
     "top_prefectures": {
       "東京": 6,
+      "熊本": 4,
       "神奈川": 2,
       "茨城": 2,
-      "熊本": 2,
       "長野": 2,
       "愛知": 2,
       "京都": 2,
@@ -40,6 +40,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "木原官房長官「家屋倒壊や火災など通報多数」熊本県で震度7",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188701000.html",
+      "date": "2026-07-28",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "高市首相「救命・救助活動を最優先」熊本県で震度7",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188421000.html",
+      "date": "2026-07-28",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
     {
       "title": "ストーカー加害者にGPS装着を政府が検討  被害者保護で",
       "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187881000.html",
