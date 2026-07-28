@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-28T01:31:41+00:00",
-    "fetched_at_jst": "2026-07-28T10:31:41+09:00",
-    "total_count": 9,
+    "fetched_at": "2026-07-28T04:42:50+00:00",
+    "fetched_at_jst": "2026-07-28T13:42:50+09:00",
+    "total_count": 8,
     "source_counts": {
-      "yahoo_transit": 7,
+      "yahoo_transit": 6,
       "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 3,
       "construction": 2,
       "disaster": 2,
       "congestion": 1
@@ -30,29 +30,15 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "京成大和田駅で発生した人身事故の...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "occurred_at": "2026-07-28T04:42:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260728_0001",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "事故・遅延情報はありません",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260728_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -61,12 +47,12 @@
       "description": "保守工事の影響で、09:35頃〜...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "occurred_at": "2026-07-28T04:42:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260728_0003",
+      "event_id": "traffic_20260728_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -75,12 +61,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "occurred_at": "2026-07-28T04:42:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260728_0004",
+      "event_id": "traffic_20260728_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -89,12 +75,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "occurred_at": "2026-07-28T04:42:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260728_0005",
+      "event_id": "traffic_20260728_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -103,12 +89,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "occurred_at": "2026-07-28T04:42:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260728_0006",
+      "event_id": "traffic_20260728_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -117,12 +103,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "occurred_at": "2026-07-28T04:42:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260728_0007",
+      "event_id": "traffic_20260728_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -136,16 +122,16 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260728_0008",
+      "event_id": "traffic_20260728_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "東北～九州 局地的に非常に激しい雨 西日本中心に危険な暑さ — 低気圧の影響などで、28日は東北から九州にかけての広い範囲で大気の状態が非常に不安定になり、局地的に非常に激しい雨が降って大雨になるおそれがあります。気象庁は土砂災害や低い土地の浸水などに警戒するよう呼びかけています。一方、西日本を中心に危険な暑さとなる見込みで、引き続き熱中症への対策を徹底してください。",
+      "description": "東北から近畿で大雨のおそれ 西日本は午後危険な暑さに — 低気圧の影響などで、東日本を中心に大気の状態が非常に不安定になり、激しい雨が降っています。東北から近畿では28日、激しい雨や非常に激しい雨が降って大雨になるところもある見込みで、気象庁は土砂災害や低い土地の浸水などに警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T21:47:37+00:00",
+      "occurred_at": "2026-07-28T03:01:02+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187561000.html",
       "traffic_multiplier": 2.4
     }

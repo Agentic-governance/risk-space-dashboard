@@ -10,13 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-28T01:31:53+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-07-28T04:43:00+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 31
+      "nhk_crime": 33
     },
     "type_counts": {
-      "crime_news": 14,
+      "stalking": 1,
+      "crime_news": 15,
       "theft": 1,
       "assault": 4,
       "weapon": 2,
@@ -39,6 +40,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "ストーカー加害者にGPS装着を政府が検討  被害者保護で",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187881000.html",
+      "date": "2026-07-28",
+      "prefecture": "",
+      "subtype": "stalking",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "別の男性にも臓器移植手術あっせんか NPO元理事を再逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187851000.html",
+      "date": "2026-07-28",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "別の男性にも臓器移植手術あっせんか NPO元理事を再逮捕へ",
       "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187541000.html",
