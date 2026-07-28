@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-28T16:35:54+00:00",
-    "total_count": 32,
+    "fetched_at": "2026-07-28T17:59:11+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 32
+      "nhk_crime": 33
     },
     "type_counts": {
-      "crime_news": 15,
+      "crime_news": 16,
       "stalking": 1,
       "theft": 1,
       "assault": 4,
@@ -27,8 +27,8 @@
     },
     "top_prefectures": {
       "東京": 6,
+      "神奈川": 3,
       "熊本": 3,
-      "神奈川": 2,
       "茨城": 2,
       "愛知": 2,
       "京都": 2,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "NHKドラマを誰でもダウンロードできる状態にしたか 男を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189101000.html",
+      "date": "2026-07-28",
+      "prefecture": "神奈川",
+      "subtype": "crime_news",
+      "lat": 35.4478,
+      "lon": 139.6425,
+      "source": "nhk_crime"
+    },
     {
       "title": "臓器移植法違反事件 帰国後の男性 受診拒否で医療機関を転々",
       "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188961000.html",
