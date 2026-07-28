@@ -6,12 +6,12 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-28T15:03:53+00:00",
-    "fetched_at_jst": "2026-07-29T00:03:53+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-28T16:35:44+00:00",
+    "fetched_at_jst": "2026-07-29T01:35:44+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 6,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
       "fallen_tree": 1,
@@ -19,7 +19,7 @@
       "construction": 1,
       "disaster": 1,
       "congestion": 1,
-      "restriction": 1
+      "restriction": 2
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -35,7 +35,7 @@
       "description": "倒木の影響で、水戸〜常陸大子駅間...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "occurred_at": "2026-07-28T16:35:44+00:00",
       "url": "",
       "traffic_multiplier": 1.3
     },
@@ -49,7 +49,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "occurred_at": "2026-07-28T16:35:44+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -63,7 +63,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "occurred_at": "2026-07-28T16:35:44+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -77,7 +77,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "occurred_at": "2026-07-28T16:35:44+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -91,7 +91,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "occurred_at": "2026-07-28T16:35:44+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -105,7 +105,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "occurred_at": "2026-07-28T16:35:44+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -130,10 +130,24 @@
       "incident_type": "restriction",
       "severity": 1,
       "road_name": "",
-      "description": "熊本 八代 日本製紙の工場 “要救助が9人いる”総務省消防庁 — 総務省消防庁によりますと、震度6強の揺れを観測し、煙突が崩落するなどの被害が出た熊本県八代市の日本製紙の八代工場では、午後10時までに地元の消防から「救助が必要な人が9人いる」という報告が寄せられたということです。救助された人もいるという情報があるということですが、容体など詳細は確認中だということです。",
+      "description": "イオンモール熊本「ガスが漏れていたと報告」 10人安否不明 — 熊本県によりますと地震のあと爆発があり、2階部分が崩落した、嘉島町のショッピングセンター「イオンモール熊本」では、これまでに現場から4人が救助され、いずれも命に別状はないということです。一方、10人の安否が分かっていないということです。政権幹部の1人は、28日夜記者団に対し、爆発があった「イオンモール熊本」について、「爆発の原因かどうかは分からないが、ガスが漏れていたとの報告があった。ガスの元栓を閉めた上で、警察や消防、自衛隊が救助活動にあたっている」と述べました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T13:11:41+00:00",
+      "occurred_at": "2026-07-28T15:58:04+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188721000.html",
+      "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260728_0008",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "熊本 八代 日本製紙の工場 2人が心肺停止 9人が安否不明 — 総務省消防庁によりますと、震度6強の揺れを観測し、煙突が崩落するなどの被害が出た熊本県八代市の日本製紙の八代工場では、午後10時までに、地元の消防から「救助が必要な人が9人いる」という報告が寄せられたということです。熊本県によりますと、この地震で、煙突が崩落するなどの被害が出た熊本県八代市の日本製紙の八代工場では、2人が心肺停止の状態で見つかったということです。県によりますと、ほかに安否がわからない人が9人いるということです。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-28T15:48:30+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188691000.html",
       "traffic_multiplier": 1.0
     }

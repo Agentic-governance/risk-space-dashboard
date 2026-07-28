@@ -10,32 +10,32 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-28T15:04:04+00:00",
-    "total_count": 35,
+    "fetched_at": "2026-07-28T16:35:54+00:00",
+    "total_count": 32,
     "source_counts": {
-      "nhk_crime": 35
+      "nhk_crime": 32
     },
     "type_counts": {
-      "crime_news": 17,
+      "crime_news": 15,
       "stalking": 1,
       "theft": 1,
       "assault": 4,
       "weapon": 2,
-      "fraud": 4,
+      "fraud": 3,
       "murder": 5,
       "drug": 1
     },
     "top_prefectures": {
       "東京": 6,
       "熊本": 3,
-      "千葉": 2,
       "神奈川": 2,
       "茨城": 2,
-      "長野": 2,
       "愛知": 2,
       "京都": 2,
-      "北海道": 2,
-      "埼玉": 1
+      "千葉": 1,
+      "埼玉": 1,
+      "栃木": 1,
+      "長野": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -358,36 +358,6 @@
       "subtype": "fraud",
       "lat": 33.5597,
       "lon": 133.5311,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "千葉 八街で住宅全焼 4人死亡 警察が確認進める",
-      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182281000.html",
-      "date": "2026-07-22",
-      "prefecture": "千葉",
-      "subtype": "crime_news",
-      "lat": 35.6073,
-      "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "長野 松本 乗鞍高原で希少なチョウ捕獲したか 会社員を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182591000.html",
-      "date": "2026-07-22",
-      "prefecture": "長野",
-      "subtype": "crime_news",
-      "lat": 36.6513,
-      "lon": 138.181,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "北海道 風力発電所の事業権譲渡装い2億円詐取か 3人逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260722/k10015182401000.html",
-      "date": "2026-07-22",
-      "prefecture": "北海道",
-      "subtype": "fraud",
-      "lat": 43.0642,
-      "lon": 141.3469,
       "source": "nhk_crime"
     }
   ]
