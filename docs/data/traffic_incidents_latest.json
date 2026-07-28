@@ -6,19 +6,19 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-28T20:46:52+00:00",
-    "fetched_at_jst": "2026-07-29T05:46:52+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-28T22:02:50+00:00",
+    "fetched_at_jst": "2026-07-29T07:02:50+09:00",
+    "total_count": 9,
     "source_counts": {
       "yahoo_transit": 5,
-      "nhk_rss": 3
+      "nhk_rss": 4
     },
     "type_counts": {
       "accident": 3,
       "construction": 1,
-      "disaster": 1,
+      "disaster": 3,
       "congestion": 1,
-      "restriction": 2
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -34,7 +34,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T20:46:52+00:00",
+      "occurred_at": "2026-07-28T22:02:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -48,7 +48,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T20:46:52+00:00",
+      "occurred_at": "2026-07-28T22:02:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -62,7 +62,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T20:46:52+00:00",
+      "occurred_at": "2026-07-28T22:02:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -76,7 +76,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T20:46:52+00:00",
+      "occurred_at": "2026-07-28T22:02:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -90,7 +90,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T20:46:52+00:00",
+      "occurred_at": "2026-07-28T22:02:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -112,18 +112,32 @@
       "event_id": "traffic_20260728_0006",
       "layer": "traffic",
       "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
+      "incident_type": "disaster",
+      "severity": 4,
       "road_name": "",
-      "description": "イオンモール熊本「ガスが漏れていたと報告」 10人安否不明 — 熊本県によりますと地震のあと爆発があり、2階部分が崩落した、嘉島町のショッピングセンター「イオンモール熊本」では、これまでに現場から4人が救助され、いずれも命に別状はないということです。一方、10人の安否が分かっていないということです。政権幹部の1人は、28日夜記者団に対し、爆発があった「イオンモール熊本」について、「爆発の原因かどうかは分からないが、ガスが漏れていたとの報告があった。ガスの元栓を閉めた上で、警察や消防、自衛隊が救助活動にあたっている」と述べました。",
+      "description": "伊豆諸島南部 線状降水帯発生のおそれ 直前予測を発表 — 気象庁は、東京の伊豆諸島南部では今後3時間以内に線状降水帯が発生する可能性が高まっているとして29日午前6時18分、「線状降水帯直前予測」の気象防災速報を発表しました。「線状降水帯」は発達した積乱雲が連なって大雨をもたらす現象で、東京の伊豆諸島南部では非常に激しい雨が降り続いて、命に危険が及ぶ土砂災害や洪水が発生する危険性が急激に高まる可能性があります。気象庁は、崖や川の近くなどにいる人は自治体からの避難の情報や周囲の状況を確認するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T15:58:04+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188721000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-07-28T21:30:39+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189311000.html",
+      "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260728_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "東京 八丈町にレベル4土砂災害危険警報 厳重警戒を — 気象庁は29日午前6時31分、東京 八丈町に「レベル4土砂災害危険警報」を発表しました。土砂災害の危険性が非常に高くなっているため、厳重な警戒が必要です。気象庁は、自治体からの避難の情報を確認し、崖の近くなど危険な場所にいる人は速やかに安全な場所に避難するよう呼びかけています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-28T21:45:59+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189331000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260728_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "restriction",
