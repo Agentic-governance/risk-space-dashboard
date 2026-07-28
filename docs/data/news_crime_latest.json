@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-28T10:29:58+00:00",
+    "fetched_at": "2026-07-28T15:04:04+00:00",
     "total_count": 35,
     "source_counts": {
       "nhk_crime": 35
@@ -27,32 +27,32 @@
     },
     "top_prefectures": {
       "東京": 6,
-      "熊本": 4,
+      "熊本": 3,
+      "千葉": 2,
       "神奈川": 2,
       "茨城": 2,
       "長野": 2,
       "愛知": 2,
       "京都": 2,
       "北海道": 2,
-      "埼玉": 1,
-      "栃木": 1
+      "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
     {
-      "title": "木原官房長官「家屋倒壊や火災など通報多数」熊本県で震度7",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188701000.html",
+      "title": "臓器移植法違反事件 帰国後の男性 受診拒否で医療機関を転々",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188961000.html",
       "date": "2026-07-28",
-      "prefecture": "熊本",
+      "prefecture": "千葉",
       "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
+      "lat": 35.6073,
+      "lon": 140.1063,
       "source": "nhk_crime"
     },
     {
-      "title": "高市首相「救命・救助活動を最優先」熊本県で震度7",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188421000.html",
+      "title": "木原官房長官「家屋倒壊や火災など通報多数」熊本県で震度7",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188701000.html",
       "date": "2026-07-28",
       "prefecture": "熊本",
       "subtype": "crime_news",

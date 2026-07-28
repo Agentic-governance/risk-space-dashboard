@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-28T10:29:47+00:00",
-    "fetched_at_jst": "2026-07-28T19:29:47+09:00",
-    "total_count": 10,
+    "fetched_at": "2026-07-28T15:03:53+00:00",
+    "fetched_at_jst": "2026-07-29T00:03:53+09:00",
+    "total_count": 8,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 5
+      "yahoo_transit": 6,
+      "nhk_rss": 2
     },
     "type_counts": {
+      "fallen_tree": 1,
       "accident": 3,
       "construction": 1,
-      "disaster": 4,
+      "disaster": 1,
       "congestion": 1,
       "restriction": 1
     },
@@ -28,18 +29,32 @@
       "event_id": "traffic_20260728_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
+      "incident_type": "fallen_tree",
+      "severity": 2,
+      "road_name": "",
+      "description": "倒木の影響で、水戸〜常陸大子駅間...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-28T15:03:53+00:00",
+      "url": "",
+      "traffic_multiplier": 1.3
+    },
+    {
+      "event_id": "traffic_20260728_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T10:29:47+00:00",
+      "occurred_at": "2026-07-28T15:03:53+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260728_0001",
+      "event_id": "traffic_20260728_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -48,12 +63,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T10:29:47+00:00",
+      "occurred_at": "2026-07-28T15:03:53+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260728_0002",
+      "event_id": "traffic_20260728_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -62,12 +77,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T10:29:47+00:00",
+      "occurred_at": "2026-07-28T15:03:53+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260728_0003",
+      "event_id": "traffic_20260728_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -76,12 +91,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T10:29:47+00:00",
+      "occurred_at": "2026-07-28T15:03:53+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260728_0004",
+      "event_id": "traffic_20260728_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -90,12 +105,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T10:29:47+00:00",
+      "occurred_at": "2026-07-28T15:03:53+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260728_0005",
+      "event_id": "traffic_20260728_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -109,60 +124,18 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260728_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "【速報】イオンモール熊本で爆発音 多数が閉じ込めか けが人も — 28日夕方、熊本県嘉島町にあるショッピングセンター「イオンモール熊本」で「爆発音がして白い煙が上がっている」と複数の通報があり、警察と消防が詳しい状況を調べています。消防庁の災害対策本部によりますと、2階部分が崩落して多数の人が閉じ込められているという情報が、管轄する上益城消防組合消防本部から寄せられているということです。消防本部で現在、確認などを進めているということです。また、けが人が出ていて、病院に搬送しているということです。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-28T10:24:18+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188721000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
       "event_id": "traffic_20260728_0007",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "熊本で震度7 建物被害相次ぎ けが人多数 交通網も遮断 — 28日午後4時27分ごろ、熊本県熊本地方を震源とする地震があり、熊本県の宇城市と氷川町で震度7の揺れを観測しました。熊本県嘉島町にあるショッピングセンター「イオンモール熊本」で「爆発音がして白い煙が上がっている」と複数の通報があり、警察と消防が詳しい状況を調べています。消防庁の災害対策本部によりますと、2階部分が崩落して多数の人が閉じ込められているという情報が、管轄する上益城消防組合消防本部から寄せられているということです。ほかにも建物の被害が相次いでいるほか、けが人も多数搬送されるなどしているということです。また、地震を受けて、九州",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-28T09:40:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188221000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260728_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "restriction",
       "severity": 1,
       "road_name": "",
-      "description": "【地震】熊本 八代 道路の高架で被害か 上空からの映像 — 震度6強の揺れを観測した熊本県八代市にある九州自動車道の八代インターチェンジの上空から午後5時50分ごろにNHKのヘリコプターが撮影した映像では、高架部分の道路の継ぎ目で段差ができ、ずれ落ちているのが確認されました。",
+      "description": "熊本 八代 日本製紙の工場 “要救助が9人いる”総務省消防庁 — 総務省消防庁によりますと、震度6強の揺れを観測し、煙突が崩落するなどの被害が出た熊本県八代市の日本製紙の八代工場では、午後10時までに地元の消防から「救助が必要な人が9人いる」という報告が寄せられたということです。救助された人もいるという情報があるということですが、容体など詳細は確認中だということです。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-28T09:01:54+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188611000.html",
+      "occurred_at": "2026-07-28T13:11:41+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188691000.html",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260728_0009",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "東北から近畿で大雨のおそれ 愛知で竜巻など突風発生か — 低気圧の影響などで、大気の状態が非常に不安定になり、東海では局地的に非常に激しい雨が降ったほか、愛知県では竜巻などの突風が発生したとみられます。東北から近畿を中心に激しい雨や非常に激しい雨が降って大雨になるところもある見込みで、気象庁は土砂災害や低い土地の浸水などに警戒するとともに落雷や竜巻などの激しい突風に注意するよう呼びかけています。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-28T07:09:42+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187561000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
