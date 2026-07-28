@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-27T22:56:06+00:00",
+    "fetched_at": "2026-07-28T01:31:39+00:00",
     "filter_window_hours": 24,
-    "total_count": 3,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260728094303_20260728093944_VXSE5k_1",
+      "time": "2026-07-28T00:39:00+00:00",
+      "time_jst": "2026-07-28T09:39:00+09:00",
+      "lat": 32.0,
+      "lon": 130.2,
+      "magnitude": 3.7,
+      "depth_km": 0.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Satsuma Region, Kagoshima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.7
+    },
+    {
+      "event_id": "20260728094212_20260728093944_VXSE52_0",
+      "time": "2026-07-28T00:39:00+00:00",
+      "time_jst": "2026-07-28T09:39:00+09:00",
+      "lat": 32.0,
+      "lon": 130.2,
+      "magnitude": 3.7,
+      "depth_km": 0.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Satsuma Region, Kagoshima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260728094118_20260728093944_VXSE51_0",
+      "time": "2026-07-28T00:39:00+00:00",
+      "time_jst": "2026-07-28T09:39:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.05
+    },
     {
       "event_id": "20260728060304_20260728060014_VXSE5k_1",
       "time": "2026-07-27T21:00:00+00:00",

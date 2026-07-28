@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-27T22:56:08+00:00",
-    "fetched_at_jst": "2026-07-28T07:56:08+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-07-28T01:31:41+00:00",
+    "fetched_at_jst": "2026-07-28T10:31:41+09:00",
+    "total_count": 9,
     "source_counts": {
-      "yahoo_transit": 6,
+      "yahoo_transit": 7,
       "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "construction": 2,
       "disaster": 2,
       "congestion": 1
@@ -24,7 +24,21 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20260727_0000",
+      "event_id": "traffic_20260728_0000",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "京成大和田駅で発生した人身事故の...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-28T01:31:41+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260728_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -33,12 +47,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T22:56:08+00:00",
+      "occurred_at": "2026-07-28T01:31:41+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260727_0001",
+      "event_id": "traffic_20260728_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -47,12 +61,12 @@
       "description": "保守工事の影響で、09:35頃〜...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T22:56:08+00:00",
+      "occurred_at": "2026-07-28T01:31:41+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0002",
+      "event_id": "traffic_20260728_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "construction",
@@ -61,12 +75,12 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T22:56:08+00:00",
+      "occurred_at": "2026-07-28T01:31:41+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0003",
+      "event_id": "traffic_20260728_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -75,12 +89,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T22:56:08+00:00",
+      "occurred_at": "2026-07-28T01:31:41+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260727_0004",
+      "event_id": "traffic_20260728_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -89,12 +103,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T22:56:08+00:00",
+      "occurred_at": "2026-07-28T01:31:41+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260727_0005",
+      "event_id": "traffic_20260728_0006",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -103,12 +117,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-27T22:56:08+00:00",
+      "occurred_at": "2026-07-28T01:31:41+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260727_0006",
+      "event_id": "traffic_20260728_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -122,7 +136,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260727_0007",
+      "event_id": "traffic_20260728_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
