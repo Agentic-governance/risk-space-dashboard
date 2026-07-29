@@ -6,19 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-29T14:46:31+00:00",
-    "fetched_at_jst": "2026-07-29T23:46:31+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-07-29T16:22:24+00:00",
+    "fetched_at_jst": "2026-07-30T01:22:24+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5,
-      "nhk_rss": 2
+      "yahoo_transit": 5
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "construction": 1,
       "disaster": 1,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -34,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-29T14:46:31+00:00",
+      "occurred_at": "2026-07-29T16:22:24+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -48,7 +46,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-29T14:46:31+00:00",
+      "occurred_at": "2026-07-29T16:22:24+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -62,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-29T14:46:31+00:00",
+      "occurred_at": "2026-07-29T16:22:24+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -76,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-29T14:46:31+00:00",
+      "occurred_at": "2026-07-29T16:22:24+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -90,37 +88,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-29T14:46:31+00:00",
+      "occurred_at": "2026-07-29T16:22:24+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260729_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "サッカー三笘薫選手を過失運転傷害の疑いで書類送検 警視庁 — 今月、サッカーの三笘薫選手が運転する車が都内の交差点で自転車と衝突し、相手の女性がけがをした事故で、警視庁が三笘選手を23日、過失運転傷害の疑いで書類送検したことが捜査関係者への取材で分かりました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-23T07:23:55+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260723/k10015184061000.html",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260729_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 2,
-      "road_name": "",
-      "description": "【震度5弱】川内原発 玄海原発 伊方原発 異常なし — 原子力規制庁によりますと、鹿児島県薩摩川内市にある九州電力の川内原子力発電所は1号機と2号機が運転中で、地震による異常は確認されていないということです。佐賀県玄海町にある九州電力の玄海原発は3号機が定期検査で停止中、4号機が運転中で、地震による異常は確認されていないということです。いずれの原発も周辺の放射線量を測定するモニタリングポストの値に変化はないということです。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-29T13:52:30+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015190181000.html",
-      "traffic_multiplier": 1.3
     }
   ]
 }
