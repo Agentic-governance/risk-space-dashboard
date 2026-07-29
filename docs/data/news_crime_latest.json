@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-29T04:50:37+00:00",
-    "total_count": 34,
+    "fetched_at": "2026-07-29T07:45:16+00:00",
+    "total_count": 35,
     "source_counts": {
-      "nhk_crime": 34
+      "nhk_crime": 35
     },
     "type_counts": {
+      "crime_news": 17,
       "murder": 6,
-      "crime_news": 16,
       "stalking": 1,
       "theft": 1,
       "assault": 4,
@@ -27,8 +27,8 @@
     },
     "top_prefectures": {
       "東京": 7,
+      "熊本": 4,
       "神奈川": 3,
-      "熊本": 3,
       "茨城": 2,
       "愛知": 2,
       "京都": 2,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "高市首相「イオンモール熊本で発生した建物崩壊で3人死亡」",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189461000.html",
+      "date": "2026-07-29",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
     {
       "title": "池袋の商業施設で女性殺害した疑い 元交際相手を書類送検",
       "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189471000.html",
