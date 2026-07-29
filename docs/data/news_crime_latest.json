@@ -10,23 +10,23 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-29T01:35:51+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-29T04:50:37+00:00",
+    "total_count": 34,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 34
     },
     "type_counts": {
+      "murder": 6,
       "crime_news": 16,
       "stalking": 1,
       "theft": 1,
       "assault": 4,
       "weapon": 2,
       "fraud": 3,
-      "murder": 5,
       "drug": 1
     },
     "top_prefectures": {
-      "東京": 6,
+      "東京": 7,
       "神奈川": 3,
       "熊本": 3,
       "茨城": 2,
@@ -40,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "池袋の商業施設で女性殺害した疑い 元交際相手を書類送検",
+      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189471000.html",
+      "date": "2026-07-29",
+      "prefecture": "東京",
+      "subtype": "murder",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "NHKドラマを誰でもダウンロードできる状態にしたか 男を逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189101000.html",
