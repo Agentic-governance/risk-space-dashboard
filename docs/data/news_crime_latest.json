@@ -10,25 +10,25 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-30T09:18:03+00:00",
-    "total_count": 31,
+    "fetched_at": "2026-07-30T11:33:48+00:00",
+    "total_count": 33,
     "source_counts": {
-      "nhk_crime": 31
+      "nhk_crime": 33
     },
     "type_counts": {
-      "murder": 6,
+      "fraud": 2,
+      "theft": 2,
       "stalking": 2,
+      "murder": 6,
       "robbery": 1,
       "indecent_act": 1,
       "crime_news": 15,
-      "theft": 1,
       "assault": 2,
       "weapon": 1,
-      "fraud": 1,
       "drug": 1
     },
     "top_prefectures": {
-      "東京": 9,
+      "東京": 10,
       "熊本": 3,
       "神奈川": 2,
       "茨城": 2,
@@ -43,11 +43,21 @@
   },
   "incidents": [
     {
-      "title": "八王子スーパー強盗殺人事件31年 警視庁が情報提供呼びかけ",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190611000.html",
+      "title": "特殊詐欺被害 上半期で1816億円 過去最悪の去年を大幅に上回る",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191121000.html",
+      "date": "2026-07-30",
+      "prefecture": "",
+      "subtype": "fraud",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 台東区 4億円余窃盗事件で逮捕の42歳男性 不起訴に",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191091000.html",
       "date": "2026-07-30",
       "prefecture": "東京",
-      "subtype": "murder",
+      "subtype": "theft",
       "lat": 35.6762,
       "lon": 139.6503,
       "source": "nhk_crime"
@@ -60,6 +70,16 @@
       "subtype": "stalking",
       "lat": null,
       "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "八王子スーパー強盗殺人事件31年 警視庁が情報提供呼びかけ",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190611000.html",
+      "date": "2026-07-30",
+      "prefecture": "東京",
+      "subtype": "murder",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
