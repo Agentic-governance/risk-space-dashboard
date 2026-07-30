@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-30T20:06:24+00:00",
-    "fetched_at_jst": "2026-07-31T05:06:24+09:00",
+    "fetched_at": "2026-07-30T21:14:55+00:00",
+    "fetched_at_jst": "2026-07-31T06:14:55+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 5
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-30T20:06:24+00:00",
+      "occurred_at": "2026-07-30T21:14:55+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "災害復旧工事の影響で、31日まで...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-30T20:06:24+00:00",
+      "occurred_at": "2026-07-30T21:14:55+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -60,7 +60,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-30T20:06:24+00:00",
+      "occurred_at": "2026-07-30T21:14:55+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-30T20:06:24+00:00",
+      "occurred_at": "2026-07-30T21:14:55+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -88,7 +88,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-30T20:06:24+00:00",
+      "occurred_at": "2026-07-30T21:14:55+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     }
