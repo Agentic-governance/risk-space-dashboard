@@ -10,15 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-30T03:56:16+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-07-30T09:18:03+00:00",
+    "total_count": 31,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 31
     },
     "type_counts": {
       "murder": 6,
+      "stalking": 2,
+      "robbery": 1,
+      "indecent_act": 1,
       "crime_news": 15,
-      "stalking": 1,
       "theft": 1,
       "assault": 2,
       "weapon": 1,
@@ -26,7 +28,7 @@
       "drug": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 9,
       "熊本": 3,
       "神奈川": 2,
       "茨城": 2,
@@ -48,6 +50,36 @@
       "subtype": "murder",
       "lat": 35.6762,
       "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "犯罪被害者の刑事手続き関与拡充について法制審の議論開始",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190921000.html",
+      "date": "2026-07-30",
+      "prefecture": "",
+      "subtype": "stalking",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "東京 江東区 強盗未遂事件 新たに1人逮捕 “案件屋”か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190781000.html",
+      "date": "2026-07-30",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "歌指導と称し女性俳優にわいせつ行為か 音楽クリエイター逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190671000.html",
+      "date": "2026-07-30",
+      "prefecture": "",
+      "subtype": "indecent_act",
+      "lat": null,
+      "lon": null,
       "source": "nhk_crime"
     },
     {
