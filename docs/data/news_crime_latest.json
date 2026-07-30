@@ -10,34 +10,29 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-30T15:35:33+00:00",
-    "total_count": 33,
+    "fetched_at": "2026-07-30T17:06:54+00:00",
+    "total_count": 22,
     "source_counts": {
-      "nhk_crime": 33
+      "nhk_crime": 22
     },
     "type_counts": {
       "fraud": 2,
       "theft": 2,
       "stalking": 2,
-      "murder": 6,
+      "murder": 3,
       "robbery": 1,
       "indecent_act": 1,
-      "crime_news": 15,
-      "assault": 2,
-      "weapon": 1,
-      "drug": 1
+      "crime_news": 9,
+      "assault": 1,
+      "weapon": 1
     },
     "top_prefectures": {
-      "東京": 10,
-      "熊本": 3,
+      "東京": 8,
+      "熊本": 2,
       "神奈川": 2,
-      "茨城": 2,
       "千葉": 1,
       "埼玉": 1,
-      "栃木": 1,
-      "長野": 1,
-      "愛知": 1,
-      "京都": 1
+      "茨城": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -260,116 +255,6 @@
       "subtype": "crime_news",
       "lat": 36.3418,
       "lon": 140.4468,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "渋谷駅近くで不審物から煙出る 爆発物ではないと確認",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185641000.html",
-      "date": "2026-07-24",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "茨城 同居女性の唇縫わせたか 強要の疑いで再逮捕 容疑否認",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185451000.html",
-      "date": "2026-07-24",
-      "prefecture": "茨城",
-      "subtype": "crime_news",
-      "lat": 36.3418,
-      "lon": 140.4468,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "映画監督 榊英雄被告 性的暴行の罪で2審も懲役8年の判決",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185481000.html",
-      "date": "2026-07-24",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 “実行役”事件当時高校生の16歳少年起訴",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185341000.html",
-      "date": "2026-07-24",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "鹿児島 霧島 川から見つかった遺体 不明の5歳男児と確認",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185431000.html",
-      "date": "2026-07-24",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "長野 親子3人死傷事件 父親を長女殺害の疑いで再逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185301000.html",
-      "date": "2026-07-24",
-      "prefecture": "長野",
-      "subtype": "murder",
-      "lat": 36.6513,
-      "lon": 138.181,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "日本政策金融公庫 元職員逮捕で特別調査委員会を設置",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185291000.html",
-      "date": "2026-07-24",
-      "prefecture": "愛知",
-      "subtype": "crime_news",
-      "lat": 35.1802,
-      "lon": 136.9066,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "バレーボール元代表 佐藤駿一郎被告 大麻所持で起訴内容認める",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185171000.html",
-      "date": "2026-07-24",
-      "prefecture": "",
-      "subtype": "drug",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "「日本赤軍」 岡本公三容疑者死亡 空港乱射事件で国際手配",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015184681000.html",
-      "date": "2026-07-24",
-      "prefecture": "",
-      "subtype": "murder",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "京都 住宅街で大音量“ゲームセンター内並み” 住人は容疑否認",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185041000.html",
-      "date": "2026-07-24",
-      "prefecture": "京都",
-      "subtype": "crime_news",
-      "lat": 35.0116,
-      "lon": 135.7681,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "島根 出雲 住宅火災で2人死亡 夫婦と連絡取れず",
-      "url": "http://www3.nhk.or.jp/news/html/20260724/k10015185081000.html",
-      "date": "2026-07-24",
-      "prefecture": "島根",
-      "subtype": "crime_news",
-      "lat": 35.4723,
-      "lon": 133.0505,
       "source": "nhk_crime"
     }
   ]
