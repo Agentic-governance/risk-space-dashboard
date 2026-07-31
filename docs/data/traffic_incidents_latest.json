@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-31T08:20:40+00:00",
-    "fetched_at_jst": "2026-07-31T17:20:40+09:00",
+    "fetched_at": "2026-07-31T11:10:53+00:00",
+    "fetched_at_jst": "2026-07-31T20:10:53+09:00",
     "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5
+      "yahoo_transit": 4,
+      "nhk_rss": 1
     },
     "type_counts": {
       "accident": 2,
-      "construction": 1,
-      "disaster": 1,
+      "disaster": 2,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,26 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T08:20:40+00:00",
+      "occurred_at": "2026-07-31T11:10:53+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260731_0001",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "construction",
-      "severity": 1,
-      "road_name": "",
-      "description": "災害復旧工事の影響で、31日まで...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-07-31T08:20:40+00:00",
-      "url": "",
-      "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260731_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -60,12 +46,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T08:20:40+00:00",
+      "occurred_at": "2026-07-31T11:10:53+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260731_0003",
+      "event_id": "traffic_20260731_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -74,12 +60,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T08:20:40+00:00",
+      "occurred_at": "2026-07-31T11:10:53+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260731_0004",
+      "event_id": "traffic_20260731_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -88,9 +74,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T08:20:40+00:00",
+      "occurred_at": "2026-07-31T11:10:53+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260731_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "あすも熊本県など猛烈な暑さ予想 できるかぎりの熱中症対策を — 31日も西日本と東日本を中心に広い範囲で気温が上がり、危険な暑さとなったところがありました。1日も気温が上がり、熊本県の地震の被災地でも猛烈な暑さが予想されていて、熱中症を防ぐためにできるかぎりの対策を行ってください。一方、湿った空気の影響で東北や新潟県では断続的に雨が降っていて、福島県ではレベル4の危険警報が発表されている地域があり、土砂災害に厳重な警戒が必要です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-31T10:26:25+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191291000.html",
+      "traffic_multiplier": 2.4
     }
   ]
 }
