@@ -10,24 +10,25 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-31T01:53:57+00:00",
-    "total_count": 22,
+    "fetched_at": "2026-07-31T05:31:28+00:00",
+    "total_count": 24,
     "source_counts": {
-      "nhk_crime": 22
+      "nhk_crime": 24
     },
     "type_counts": {
+      "robbery": 2,
+      "drug": 1,
       "fraud": 2,
       "theft": 2,
       "stalking": 2,
       "murder": 3,
-      "robbery": 1,
       "indecent_act": 1,
       "crime_news": 9,
       "assault": 1,
       "weapon": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 10,
       "熊本": 2,
       "神奈川": 2,
       "千葉": 1,
@@ -37,6 +38,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "新宿 酒店強盗未遂事件で18歳容疑者を逮捕 指示役か",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191891000.html",
+      "date": "2026-07-31",
+      "prefecture": "東京",
+      "subtype": "robbery",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "バレーボール元代表 佐藤駿一郎被告 大麻所持で有罪判決",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191811000.html",
+      "date": "2026-07-31",
+      "prefecture": "東京",
+      "subtype": "drug",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "特殊詐欺被害 上半期で1816億円 過去最悪の去年を大幅に上回る",
       "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191121000.html",
