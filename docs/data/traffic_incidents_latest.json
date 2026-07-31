@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-31T21:41:57+00:00",
-    "fetched_at_jst": "2026-08-01T06:41:57+09:00",
+    "fetched_at": "2026-07-31T22:56:22+00:00",
+    "fetched_at_jst": "2026-08-01T07:56:22+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T21:41:57+00:00",
+      "occurred_at": "2026-07-31T22:56:22+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T21:41:57+00:00",
+      "occurred_at": "2026-07-31T22:56:22+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T21:41:57+00:00",
+      "occurred_at": "2026-07-31T22:56:22+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T21:41:57+00:00",
+      "occurred_at": "2026-07-31T22:56:22+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -88,7 +88,7 @@
       "description": "39度予想 熊本被災地でも猛暑日に できるかぎりの対策を — 西日本と東日本では1日、広い範囲で38度以上の危険な暑さとなり、熊本県の地震の被災地でも31日より気温が高くなると予想されています。熱中症を防ぐためにできるかぎりの対策を行ってください。一方、前線や湿った空気の影響で東北では激しい雨が降るおそれがあり、気象庁は土砂災害などに厳重に警戒するよう呼びかけています。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T21:27:29+00:00",
+      "occurred_at": "2026-07-31T22:10:50+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193191000.html",
       "traffic_multiplier": 2.4
     }
