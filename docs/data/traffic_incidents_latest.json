@@ -6,17 +6,18 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-07-31T13:18:18+00:00",
-    "fetched_at_jst": "2026-07-31T22:18:18+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-07-31T15:41:55+00:00",
+    "fetched_at_jst": "2026-08-01T00:41:55+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 2,
       "disaster": 2,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -32,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T13:18:18+00:00",
+      "occurred_at": "2026-07-31T15:41:55+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T13:18:18+00:00",
+      "occurred_at": "2026-07-31T15:41:55+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T13:18:18+00:00",
+      "occurred_at": "2026-07-31T15:41:55+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T13:18:18+00:00",
+      "occurred_at": "2026-07-31T15:41:55+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,12 +86,26 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "あすも熊本県など猛烈な暑さ予想 できるかぎりの熱中症対策を — 31日も西日本と東日本を中心に広い範囲で気温が上がり、危険な暑さとなったところがありました。1日も気温が上がり、熊本県の地震の被災地でも猛烈な暑さが予想されていて、熱中症を防ぐためにできるかぎりの対策を行ってください。一方、湿った空気の影響で東北や新潟県では断続的に雨が降っていて、福島県ではレベル4の危険警報が発表されている地域があり、土砂災害に厳重な警戒が必要です。",
+      "description": "きょうも熊本など猛烈な暑さ予想 できるかぎりの熱中症対策を — 31日も西日本と東日本を中心に広い範囲で気温が上がり、危険な暑さとなったところがありました。1日も気温が上がり、熊本県の地震の被災地でも猛烈な暑さが予想されていて、熱中症を防ぐためにできるかぎりの対策を行ってください。一方、湿った空気の影響で東北や新潟県では断続的に雨が降っていて、福島県ではレベル4の危険警報が発表されている地域があり、土砂災害に厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-07-31T13:02:54+00:00",
+      "occurred_at": "2026-07-31T15:11:55+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191291000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260731_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 1,
+      "road_name": "",
+      "description": "自転車の交通違反 「青切符」導入3か月で全国7000件交付 — 自転車の交通違反に対して反則金の納付を通告するいわゆる「青切符」による取り締まりはことし4月の導入後3か月間に全国で7000件余りで、中でもスマホを見ながらの運転に対する青切符の交付が最も多くなっています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-07-31T12:05:44+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192671000.html",
+      "traffic_multiplier": 1.0
     }
   ]
 }

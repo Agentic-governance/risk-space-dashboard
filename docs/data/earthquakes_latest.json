@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-07-31T13:18:00+00:00",
+    "fetched_at": "2026-07-31T15:41:35+00:00",
     "filter_window_hours": 24,
-    "total_count": 47,
+    "total_count": 43,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260801000819_20260801000534_VXSE5k_1",
+      "time": "2026-07-31T15:05:00+00:00",
+      "time_jst": "2026-08-01T00:05:00+09:00",
+      "lat": 32.7,
+      "lon": 130.7,
+      "magnitude": 2.3,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260731223742_20260731223512_VXSE5k_1",
+      "time": "2026-07-31T13:35:00+00:00",
+      "time_jst": "2026-07-31T22:35:00+09:00",
+      "lat": 32.7,
+      "lon": 130.7,
+      "magnitude": 2.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260731220205_20260731215942_VXSE5k_1",
       "time": "2026-07-31T12:59:00+00:00",
@@ -581,90 +609,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260731002404_20260731002128_VXSE5k_1",
-      "time": "2026-07-30T15:21:00+00:00",
-      "time_jst": "2026-07-31T00:21:00+09:00",
-      "lat": 32.6,
-      "lon": 130.7,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260730233032_20260730232753_VXSE5k_1",
-      "time": "2026-07-30T14:27:00+00:00",
-      "time_jst": "2026-07-30T23:27:00+09:00",
-      "lat": 32.6,
-      "lon": 130.7,
-      "magnitude": 2.7,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260730225128_20260730224743_VXSE5k_1",
-      "time": "2026-07-30T13:47:00+00:00",
-      "time_jst": "2026-07-30T22:47:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 4.8,
-      "depth_km": 20.0,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.0
-    },
-    {
-      "event_id": "20260730225026_20260730224743_VXSE52_0",
-      "time": "2026-07-30T13:47:00+00:00",
-      "time_jst": "2026-07-30T22:47:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 4.8,
-      "depth_km": 20.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260730225014_20260730224743_VXSE51_0",
-      "time": "2026-07-30T13:47:00+00:00",
-      "time_jst": "2026-07-30T22:47:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260730224914_20260730224743_VXSE51_0",
-      "time": "2026-07-30T13:47:00+00:00",
-      "time_jst": "2026-07-30T22:47:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
     }
   ]
 }
