@@ -10,12 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-07-31T11:11:04+00:00",
-    "total_count": 26,
+    "fetched_at": "2026-07-31T13:18:30+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 26
+      "nhk_crime": 27
     },
     "type_counts": {
+      "assault": 2,
       "murder": 4,
       "robbery": 2,
       "crime_news": 10,
@@ -24,11 +25,10 @@
       "theft": 2,
       "stalking": 2,
       "indecent_act": 1,
-      "assault": 1,
       "weapon": 1
     },
     "top_prefectures": {
-      "東京": 11,
+      "東京": 12,
       "熊本": 2,
       "神奈川": 2,
       "栃木": 1,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "過失運転傷害疑いで書類送検のサッカー三笘薫選手 不起訴に",
+      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192541000.html",
+      "date": "2026-07-31",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "栃木強盗殺人 “実行役”高校生2人起訴 4人全員起訴に",
       "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192081000.html",
