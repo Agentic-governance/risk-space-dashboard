@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-01T01:55:28+00:00",
-    "fetched_at_jst": "2026-08-01T10:55:28+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-08-01T05:24:22+00:00",
+    "fetched_at_jst": "2026-08-01T14:24:22+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "disaster": 2,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-01T01:55:28+00:00",
+      "occurred_at": "2026-08-01T05:24:22+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-01T01:55:28+00:00",
+      "occurred_at": "2026-08-01T05:24:22+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-01T01:55:28+00:00",
+      "occurred_at": "2026-08-01T05:24:22+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-01T01:55:28+00:00",
+      "occurred_at": "2026-08-01T05:24:22+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,12 +85,26 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "広い範囲で危険な暑さ 熊本被災地でも猛暑日に 熱中症対策を — 西日本と東日本では1日、広い範囲で38度以上の危険な暑さとなり、熊本県の地震の被災地でも31日より気温が高くなると予想されています。熱中症を防ぐためにできるかぎりの対策を行ってください。一方、前線や湿った空気の影響で東北では激しい雨が降るおそれがあり、気象庁は土砂災害などに厳重に警戒するよう呼びかけています。",
+      "description": "きょうも危険な暑さに 地震被災地も猛暑予想 熱中症対策を — 1日も西日本と東日本を中心に気温が上がり、午前中から猛烈な暑さとなっています。熊本県の地震の被災地では連日、猛暑となっていて、引き続き熱中症への対策を徹底してください。一方、前線の影響で東北では雨が強まって「レベル4土砂災害危険警報」が発表されている地域があり、土砂災害に厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-01T00:58:48+00:00",
+      "occurred_at": "2026-08-01T03:17:08+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193191000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260801_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "浪江町の請戸海水浴場が16年ぶりの海開きでにぎわい 福島 — 東日本大震災と東京電力福島第一原発の事故の影響で閉鎖が続いていた、福島県浪江町の請戸海水浴場が、震災のあと初めての海開きを迎えました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-01T04:44:11+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193411000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
