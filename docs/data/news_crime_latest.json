@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-01T22:33:21+00:00",
-    "total_count": 26,
+    "fetched_at": "2026-08-01T23:32:46+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 26
+      "nhk_crime": 27
     },
     "type_counts": {
-      "crime_news": 10,
+      "crime_news": 11,
       "assault": 2,
       "murder": 3,
       "robbery": 2,
@@ -29,7 +29,7 @@
     },
     "top_prefectures": {
       "東京": 11,
-      "岡山": 2,
+      "岡山": 3,
       "熊本": 2,
       "栃木": 1,
       "神奈川": 1,
@@ -39,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "岡山 矢掛町 行方不明の2歳男児 祖母の家近くの山で無事発見",
+      "url": "http://www3.nhk.or.jp/news/html/20260802/k10015194021000.html",
+      "date": "2026-08-01",
+      "prefecture": "岡山",
+      "subtype": "crime_news",
+      "lat": 34.6618,
+      "lon": 133.9344,
+      "source": "nhk_crime"
+    },
     {
       "title": "岡山 矢掛町で2歳男児が行方不明 きょうも警察と消防が捜索",
       "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193901000.html",
