@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-01T11:17:03+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-08-01T14:28:48+00:00",
+    "total_count": 28,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 28
     },
     "type_counts": {
+      "crime_news": 11,
       "assault": 2,
       "murder": 4,
       "robbery": 2,
-      "crime_news": 10,
       "drug": 1,
       "fraud": 2,
       "theft": 2,
@@ -31,6 +31,7 @@
       "東京": 12,
       "熊本": 2,
       "神奈川": 2,
+      "岡山": 1,
       "栃木": 1,
       "千葉": 1,
       "埼玉": 1,
@@ -39,6 +40,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "岡山 矢掛町 2歳の男の子が行方不明 祖母の家に帰省中",
+      "url": "http://www3.nhk.or.jp/news/html/20260801/k10015193811000.html",
+      "date": "2026-08-01",
+      "prefecture": "岡山",
+      "subtype": "crime_news",
+      "lat": 34.6618,
+      "lon": 133.9344,
+      "source": "nhk_crime"
+    },
     {
       "title": "過失運転傷害疑いで書類送検のサッカー三笘薫選手 不起訴に",
       "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192541000.html",
