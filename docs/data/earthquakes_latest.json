@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-01T14:28:20+00:00",
+    "fetched_at": "2026-08-01T15:40:44+00:00",
     "filter_window_hours": 24,
-    "total_count": 39,
+    "total_count": 40,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260802002544_20260802002256_VXSE5k_1",
+      "time": "2026-08-01T15:22:00+00:00",
+      "time_jst": "2026-08-02T00:22:00+09:00",
+      "lat": 24.1,
+      "lon": 123.7,
+      "magnitude": 3.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Iriomotejima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260801235244_20260801235004_VXSE5k_1",
+      "time": "2026-08-01T14:50:00+00:00",
+      "time_jst": "2026-08-01T23:50:00+09:00",
+      "lat": 32.6,
+      "lon": 130.6,
+      "magnitude": 2.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260801230201_20260801225901_VXSE5k_1",
       "time": "2026-08-01T13:59:00+00:00",
@@ -530,20 +558,6 @@
       "event_id": "20260801010020_20260801005729_VXSE5k_1",
       "time": "2026-07-31T15:57:00+00:00",
       "time_jst": "2026-08-01T00:57:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260801000819_20260801000534_VXSE5k_1",
-      "time": "2026-07-31T15:05:00+00:00",
-      "time_jst": "2026-08-01T00:05:00+09:00",
       "lat": 32.7,
       "lon": 130.7,
       "magnitude": 2.3,
