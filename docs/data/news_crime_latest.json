@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-01T15:41:09+00:00",
-    "total_count": 28,
+    "fetched_at": "2026-08-01T16:52:44+00:00",
+    "total_count": 25,
     "source_counts": {
-      "nhk_crime": 28
+      "nhk_crime": 25
     },
     "type_counts": {
-      "crime_news": 11,
+      "crime_news": 9,
       "assault": 2,
-      "murder": 4,
+      "murder": 3,
       "robbery": 2,
       "drug": 1,
       "fraud": 2,
@@ -28,14 +28,13 @@
       "weapon": 1
     },
     "top_prefectures": {
-      "東京": 12,
+      "東京": 11,
       "熊本": 2,
-      "神奈川": 2,
       "岡山": 1,
       "栃木": 1,
+      "神奈川": 1,
       "千葉": 1,
-      "埼玉": 1,
-      "茨城": 1
+      "埼玉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -288,36 +287,6 @@
       "subtype": "fraud",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 大田区 店舗と住宅が入る建物で火災 1人死亡 3人けが",
-      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186481000.html",
-      "date": "2026-07-26",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "津久井やまゆり園 再建した施設で園長に 向き合い続けた10年",
-      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186411000.html",
-      "date": "2026-07-26",
-      "prefecture": "神奈川",
-      "subtype": "murder",
-      "lat": 35.4478,
-      "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "茨城 同居生活で唇縫うよう強要疑い ほかにも唇に針と糸の傷",
-      "url": "http://www3.nhk.or.jp/news/html/20260726/k10015186431000.html",
-      "date": "2026-07-26",
-      "prefecture": "茨城",
-      "subtype": "crime_news",
-      "lat": 36.3418,
-      "lon": 140.4468,
       "source": "nhk_crime"
     }
   ]
