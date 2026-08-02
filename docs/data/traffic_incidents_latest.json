@@ -6,14 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-02T16:52:08+00:00",
-    "fetched_at_jst": "2026-08-03T01:52:08+09:00",
-    "total_count": 4,
+    "fetched_at": "2026-08-02T17:58:37+00:00",
+    "fetched_at_jst": "2026-08-03T02:58:37+09:00",
+    "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 4
+      "yahoo_transit": 4,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "disaster": 1,
       "congestion": 1
     },
@@ -31,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T16:52:08+00:00",
+      "occurred_at": "2026-08-02T17:58:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -45,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T16:52:08+00:00",
+      "occurred_at": "2026-08-02T17:58:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -59,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T16:52:08+00:00",
+      "occurred_at": "2026-08-02T17:58:37+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -73,9 +74,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T16:52:08+00:00",
+      "occurred_at": "2026-08-02T17:58:37+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260802_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "乗用車2台が正面衝突 1人死亡 2人重体 5人けが 千葉 柏 — 2日午後、千葉県柏市で乗用車2台が正面衝突する事故があり、1人が死亡したほか、2人が意識不明の重体、さらに子ども2人を含む、あわせて5人がけがをして病院で手当てを受けています。警察が事故の原因を詳しく調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-02T13:04:14+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260802/k10015194391000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
