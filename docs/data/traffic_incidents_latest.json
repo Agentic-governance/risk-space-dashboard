@@ -6,16 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-02T09:36:47+00:00",
-    "fetched_at_jst": "2026-08-02T18:36:47+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-08-02T11:05:37+00:00",
+    "fetched_at_jst": "2026-08-02T20:05:37+09:00",
+    "total_count": 4,
     "source_counts": {
-      "yahoo_transit": 4,
-      "nhk_rss": 1
+      "yahoo_transit": 4
     },
     "type_counts": {
       "accident": 2,
-      "disaster": 2,
+      "disaster": 1,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +31,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T09:36:47+00:00",
+      "occurred_at": "2026-08-02T11:05:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +45,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T09:36:47+00:00",
+      "occurred_at": "2026-08-02T11:05:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +59,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T09:36:47+00:00",
+      "occurred_at": "2026-08-02T11:05:37+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,23 +73,9 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T09:36:47+00:00",
+      "occurred_at": "2026-08-02T11:05:37+00:00",
       "url": "",
       "traffic_multiplier": 1.0
-    },
-    {
-      "event_id": "traffic_20260802_0004",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "高知・和歌山で40度超の酷暑日 東北・関東甲信は激しい雨警戒 — 西日本と東日本は2日も気温が上がり、高知県と和歌山県では40度を超える酷暑日に、熊本県でも39度を超える危険な暑さになっているところがあり、引き続き熱中症への対策を徹底してください。一方、前線などの影響で東北では土砂災害や氾濫の危険性が非常に高まっている地域があり、厳重な警戒が必要です。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-08-02T05:51:03+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193981000.html",
-      "traffic_multiplier": 2.4
     }
   ]
 }
