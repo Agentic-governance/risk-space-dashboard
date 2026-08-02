@@ -10,7 +10,7 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-01T23:32:46+00:00",
+    "fetched_at": "2026-08-02T01:09:15+00:00",
     "total_count": 27,
     "source_counts": {
       "nhk_crime": 27
@@ -42,7 +42,7 @@
     {
       "title": "岡山 矢掛町 行方不明の2歳男児 祖母の家近くの山で無事発見",
       "url": "http://www3.nhk.or.jp/news/html/20260802/k10015194021000.html",
-      "date": "2026-08-01",
+      "date": "2026-08-02",
       "prefecture": "岡山",
       "subtype": "crime_news",
       "lat": 34.6618,
