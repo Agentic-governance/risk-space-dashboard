@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-02T01:09:05+00:00",
-    "fetched_at_jst": "2026-08-02T10:09:05+09:00",
-    "total_count": 5,
+    "fetched_at": "2026-08-02T04:53:33+00:00",
+    "fetched_at_jst": "2026-08-02T13:53:33+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 1
+      "nhk_rss": 2
     },
     "type_counts": {
-      "accident": 2,
+      "accident": 3,
       "disaster": 2,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T01:09:05+00:00",
+      "occurred_at": "2026-08-02T04:53:33+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T01:09:05+00:00",
+      "occurred_at": "2026-08-02T04:53:33+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T01:09:05+00:00",
+      "occurred_at": "2026-08-02T04:53:33+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-02T01:09:05+00:00",
+      "occurred_at": "2026-08-02T04:53:33+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,12 +85,26 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "大分 日田で40度の酷暑日予想 東北は土砂災害などに厳重警戒を — 西日本と東日本は2日も気温が上がり、大分県日田市では40度と酷暑日が予想されているほか、熊本県の地震の被災地でも危険な暑さとなる見込みで、引き続き熱中症への対策を徹底してください。一方、低気圧などの影響で東北では「レベル4土砂災害危険警報」が発表されている地域があるほか、岩手県を流れる北上川上流には「レベル4氾濫危険警報」が発表されていて、土砂災害や川の氾濫に厳重な警戒が必要です。",
+      "description": "和歌山・高知で40度超の酷暑日 東北 関東甲信は激しい雨警戒を — 西日本と東日本は2日も気温が上がり、和歌山県と高知県では40度を超える酷暑日となっているところがあるほか、熊本県の地震の被災地でも猛烈な暑さになっていて引き続き熱中症への対策を徹底してください。一方、前線などの影響で東北では土砂災害や氾濫の危険性が非常に高まっている地域があり、厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-01T23:24:24+00:00",
+      "occurred_at": "2026-08-02T04:40:16+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260802/k10015193981000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260802_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "千葉 マンション爆発 約5時間前に「ガスのにおい」関連調べる — 1日、千葉県市川市のマンションで起きた爆発事故で、事故のおよそ5時間半前に住民からガスのにおいがするという通報がガス会社にあり、作業員が駆けつけて対応にあたっていたことが会社への取材で分かりました。警察が爆発との関連を調べています。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-02T04:01:56+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260802/k10015194171000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
