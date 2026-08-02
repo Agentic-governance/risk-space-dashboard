@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-02T20:12:07+00:00",
-    "total_count": 24,
+    "fetched_at": "2026-08-02T21:22:27+00:00",
+    "total_count": 25,
     "source_counts": {
-      "nhk_crime": 24
+      "nhk_crime": 25
     },
     "type_counts": {
-      "crime_news": 11,
+      "crime_news": 12,
       "assault": 1,
       "murder": 3,
       "robbery": 2,
@@ -38,6 +38,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "女子生徒などの画像を裸に加工し投稿の疑い 32歳会社員を逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194511000.html",
+      "date": "2026-08-02",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "90代女性遺体見つかる 別事件で逮捕のベトナム人が遺棄か 埼玉",
       "url": "http://www3.nhk.or.jp/news/html/20260802/k10015194271000.html",
