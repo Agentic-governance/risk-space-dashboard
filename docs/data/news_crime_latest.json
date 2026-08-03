@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-03T08:29:03+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-08-03T11:59:26+00:00",
+    "total_count": 29,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 29
     },
     "type_counts": {
+      "crime_news": 15,
       "robbery": 3,
-      "crime_news": 13,
       "assault": 1,
       "murder": 3,
       "drug": 1,
@@ -39,6 +39,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "「ロールス・ロイス」購入時に運輸局にうその申請か 4人逮捕",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195171000.html",
+      "date": "2026-08-03",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "女子陸上選手の画像 生成AIで性的画像に加工か 逮捕の会社員",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195151000.html",
+      "date": "2026-08-03",
+      "prefecture": "",
+      "subtype": "crime_news",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "北海道 江別 強盗致死事件 当時18歳の被告に無期懲役を求刑",
       "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195071000.html",
