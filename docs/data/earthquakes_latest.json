@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-03T16:49:55+00:00",
+    "fetched_at": "2026-08-03T20:27:28+00:00",
     "filter_window_hours": 24,
-    "total_count": 20,
+    "total_count": 19,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260804022128_20260804021855_VXSE5k_1",
+      "time": "2026-08-03T17:18:00+00:00",
+      "time_jst": "2026-08-04T02:18:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 2.3,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260804001547_20260804001331_VXSE5k_1",
       "time": "2026-08-03T15:13:00+00:00",
@@ -257,34 +271,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260803050536_20260803050227_VXSE5k_1",
-      "time": "2026-08-02T20:02:00+00:00",
-      "time_jst": "2026-08-03T05:02:00+09:00",
-      "lat": 43.2,
-      "lon": 147.2,
-      "magnitude": 4.3,
-      "depth_km": 20.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the east Coast of Hokkaido",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260803042058_20260803041746_VXSE5k_1",
-      "time": "2026-08-02T19:17:00+00:00",
-      "time_jst": "2026-08-03T04:17:00+09:00",
-      "lat": 32.7,
-      "lon": 130.8,
-      "magnitude": 1.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
