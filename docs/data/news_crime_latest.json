@@ -10,31 +10,30 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-03T14:20:20+00:00",
-    "total_count": 29,
+    "fetched_at": "2026-08-03T16:50:16+00:00",
+    "total_count": 23,
     "source_counts": {
-      "nhk_crime": 29
+      "nhk_crime": 23
     },
     "type_counts": {
-      "crime_news": 15,
+      "crime_news": 11,
       "robbery": 3,
       "assault": 1,
       "murder": 3,
       "drug": 1,
       "fraud": 1,
-      "theft": 2,
-      "stalking": 2,
+      "theft": 1,
+      "stalking": 1,
       "indecent_act": 1
     },
     "top_prefectures": {
       "東京": 8,
-      "埼玉": 3,
       "岡山": 3,
-      "熊本": 2,
+      "埼玉": 2,
       "北海道": 1,
       "栃木": 1,
-      "神奈川": 1,
-      "千葉": 1
+      "熊本": 1,
+      "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -267,66 +266,6 @@
       "subtype": "crime_news",
       "lat": 35.4478,
       "lon": 139.6425,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "臓器移植法違反事件 帰国後の男性 受診拒否で医療機関を転々",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188961000.html",
-      "date": "2026-07-28",
-      "prefecture": "千葉",
-      "subtype": "crime_news",
-      "lat": 35.6073,
-      "lon": 140.1063,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "木原官房長官「家屋倒壊や火災など通報多数」熊本県で震度7",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015188701000.html",
-      "date": "2026-07-28",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "ストーカー加害者にGPS装着を政府が検討  被害者保護で",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187881000.html",
-      "date": "2026-07-28",
-      "prefecture": "",
-      "subtype": "stalking",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "別の男性にも臓器移植手術あっせんか NPO元理事を再逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187851000.html",
-      "date": "2026-07-28",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "別の男性にも臓器移植手術あっせんか NPO元理事を再逮捕へ",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187541000.html",
-      "date": "2026-07-27",
-      "prefecture": "",
-      "subtype": "crime_news",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "スピード違反取締り装置盗んだか 容疑者逮捕 埼玉県警",
-      "url": "http://www3.nhk.or.jp/news/html/20260728/k10015187621000.html",
-      "date": "2026-07-27",
-      "prefecture": "埼玉",
-      "subtype": "theft",
-      "lat": 35.8573,
-      "lon": 139.6489,
       "source": "nhk_crime"
     }
   ]

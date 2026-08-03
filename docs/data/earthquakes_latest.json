@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-03T14:20:00+00:00",
+    "fetched_at": "2026-08-03T16:49:55+00:00",
     "filter_window_hours": 24,
-    "total_count": 23,
+    "total_count": 20,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260804001547_20260804001331_VXSE5k_1",
+      "time": "2026-08-03T15:13:00+00:00",
+      "time_jst": "2026-08-04T00:13:00+09:00",
+      "lat": 32.6,
+      "lon": 130.6,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260803234329_20260803234002_VXSE5k_1",
+      "time": "2026-08-03T14:40:00+00:00",
+      "time_jst": "2026-08-03T23:40:00+09:00",
+      "lat": 43.1,
+      "lon": 146.8,
+      "magnitude": 4.3,
+      "depth_km": 70.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260803222408_20260803222151_VXSE5k_1",
       "time": "2026-08-03T13:21:00+00:00",
@@ -259,76 +287,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260803002926_20260803002640_VXSE5k_1",
-      "time": "2026-08-02T15:26:00+00:00",
-      "time_jst": "2026-08-03T00:26:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260803002823_20260803002515_VXSE5k_1",
-      "time": "2026-08-02T15:25:00+00:00",
-      "time_jst": "2026-08-03T00:25:00+09:00",
-      "lat": 32.3,
-      "lon": 130.5,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260802235358_20260802234955_VXSE5k_1",
-      "time": "2026-08-02T14:49:00+00:00",
-      "time_jst": "2026-08-02T23:49:00+09:00",
-      "lat": 42.3,
-      "lon": 143.0,
-      "magnitude": 4.8,
-      "depth_km": 60.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Eastern Hidaka Region, Hokkaido",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260802235250_20260802234955_VXSE52_0",
-      "time": "2026-08-02T14:49:00+00:00",
-      "time_jst": "2026-08-02T23:49:00+09:00",
-      "lat": 42.3,
-      "lon": 143.0,
-      "magnitude": 4.8,
-      "depth_km": 60.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Eastern Hidaka Region, Hokkaido",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260802235139_20260802234955_VXSE51_0",
-      "time": "2026-08-02T14:49:00+00:00",
-      "time_jst": "2026-08-02T23:49:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }
