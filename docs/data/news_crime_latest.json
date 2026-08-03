@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-03T05:02:19+00:00",
-    "total_count": 26,
+    "fetched_at": "2026-08-03T08:29:03+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 26
+      "nhk_crime": 27
     },
     "type_counts": {
+      "robbery": 3,
       "crime_news": 13,
       "assault": 1,
       "murder": 3,
-      "robbery": 2,
       "drug": 1,
       "fraud": 1,
       "theft": 2,
@@ -31,6 +31,7 @@
       "埼玉": 3,
       "岡山": 3,
       "熊本": 2,
+      "北海道": 1,
       "栃木": 1,
       "神奈川": 1,
       "千葉": 1
@@ -38,6 +39,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "北海道 江別 強盗致死事件 当時18歳の被告に無期懲役を求刑",
+      "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195071000.html",
+      "date": "2026-08-03",
+      "prefecture": "北海道",
+      "subtype": "robbery",
+      "lat": 43.0642,
+      "lon": 141.3469,
+      "source": "nhk_crime"
+    },
     {
       "title": "埼玉女性遺体遺棄「腹減って盗み入り居合わせた女性殺害」供述",
       "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194571000.html",
