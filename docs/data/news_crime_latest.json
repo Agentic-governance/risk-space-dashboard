@@ -10,19 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-03T01:09:26+00:00",
+    "fetched_at": "2026-08-03T05:02:19+00:00",
     "total_count": 26,
     "source_counts": {
       "nhk_crime": 26
     },
     "type_counts": {
-      "theft": 3,
-      "crime_news": 12,
+      "crime_news": 13,
       "assault": 1,
       "murder": 3,
       "robbery": 2,
       "drug": 1,
       "fraud": 1,
+      "theft": 2,
       "stalking": 2,
       "indecent_act": 1
     },
@@ -39,19 +39,19 @@
   },
   "incidents": [
     {
-      "title": "女性遺体 別事件逮捕のベトナム人「窃盗目的で家に」供述 埼玉",
+      "title": "埼玉女性遺体遺棄「腹減って盗み入り居合わせた女性殺害」供述",
       "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194571000.html",
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "prefecture": "埼玉",
-      "subtype": "theft",
+      "subtype": "crime_news",
       "lat": 35.8573,
       "lon": 139.6489,
       "source": "nhk_crime"
     },
     {
-      "title": "女子生徒などの画像を裸に加工し投稿の疑い 32歳会社員を逮捕",
+      "title": "女子生徒などの画像を裸に加工し投稿した疑い 32歳会社員 逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260803/k10015194511000.html",
-      "date": "2026-08-02",
+      "date": "2026-08-03",
       "prefecture": "",
       "subtype": "crime_news",
       "lat": null,
