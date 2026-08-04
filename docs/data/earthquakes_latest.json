@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-04T22:08:03+00:00",
+    "fetched_at": "2026-08-04T23:37:19+00:00",
     "filter_window_hours": 24,
-    "total_count": 33,
+    "total_count": 32,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260805070700_20260805070422_VXSE5k_1",
+      "time": "2026-08-04T22:04:00+00:00",
+      "time_jst": "2026-08-05T07:04:00+09:00",
+      "lat": 35.6,
+      "lon": 139.0,
+      "magnitude": 2.6,
+      "depth_km": 20.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Eastern Region · Fuji Five Lakes, Yamanashi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.3
+    },
     {
       "event_id": "20260805055511_20260805055233_VXSE5k_1",
       "time": "2026-08-04T20:52:00+00:00",
@@ -438,34 +452,6 @@
       "depth_km": 10.0,
       "max_shindo_raw": "1",
       "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260804081406_20260804081112_VXSE5k_1",
-      "time": "2026-08-03T23:11:00+00:00",
-      "time_jst": "2026-08-04T08:11:00+09:00",
-      "lat": 32.6,
-      "lon": 130.7,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260804071559_20260804071240_VXSE5k_1",
-      "time": "2026-08-03T22:12:00+00:00",
-      "time_jst": "2026-08-04T07:12:00+09:00",
-      "lat": 32.5,
-      "lon": 130.5,
-      "magnitude": 3.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
