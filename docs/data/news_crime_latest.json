@@ -10,13 +10,13 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-04T17:18:08+00:00",
+    "fetched_at": "2026-08-04T19:07:52+00:00",
     "total_count": 24,
     "source_counts": {
       "nhk_crime": 24
     },
     "type_counts": {
-      "suspicious_person": 1,
+      "weapon": 1,
       "theft": 2,
       "murder": 3,
       "robbery": 4,
@@ -41,11 +41,11 @@
   },
   "incidents": [
     {
-      "title": "大阪 河内長野 不審者に警察官が発砲 命中し病院搬送",
+      "title": "大阪 河内長野 警察官が容疑者に拳銃発砲し逮捕 容疑者は死亡",
       "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196461000.html",
       "date": "2026-08-04",
       "prefecture": "長野",
-      "subtype": "suspicious_person",
+      "subtype": "weapon",
       "lat": 36.6513,
       "lon": 138.181,
       "source": "nhk_crime"

@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-04T17:17:38+00:00",
+    "fetched_at": "2026-08-04T19:07:18+00:00",
     "filter_window_hours": 24,
-    "total_count": 35,
+    "total_count": 37,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260805040221_20260805035935_VXSE5k_1",
+      "time": "2026-08-04T18:59:00+00:00",
+      "time_jst": "2026-08-05T03:59:00+09:00",
+      "lat": 32.6,
+      "lon": 130.7,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260805034543_20260805034304_VXSE5k_1",
+      "time": "2026-08-04T18:43:00+00:00",
+      "time_jst": "2026-08-05T03:43:00+09:00",
+      "lat": 37.5,
+      "lon": 137.2,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Noto, Ishikawa Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260805032439_20260805032144_VXSE5k_1",
+      "time": "2026-08-04T18:21:00+00:00",
+      "time_jst": "2026-08-05T03:21:00+09:00",
+      "lat": 26.8,
+      "lon": 128.4,
+      "magnitude": 4.0,
+      "depth_km": 30.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Adjacent Sea of Okinawa Main Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.8
+    },
     {
       "event_id": "20260805012010_20260805011721_VXSE5k_1",
       "time": "2026-08-04T16:17:00+00:00",
@@ -483,20 +525,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260804022128_20260804021855_VXSE5k_1",
-      "time": "2026-08-03T17:18:00+00:00",
-      "time_jst": "2026-08-04T02:18:00+09:00",
-      "lat": 32.3,
-      "lon": 130.5,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
