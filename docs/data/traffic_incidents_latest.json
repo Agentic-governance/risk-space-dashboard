@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-04T10:48:07+00:00",
-    "fetched_at_jst": "2026-08-04T19:48:07+09:00",
+    "fetched_at": "2026-08-04T13:00:00+00:00",
+    "fetched_at_jst": "2026-08-04T22:00:00+09:00",
     "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
@@ -33,7 +33,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-04T10:48:07+00:00",
+      "occurred_at": "2026-08-04T13:00:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +47,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-04T10:48:07+00:00",
+      "occurred_at": "2026-08-04T13:00:00+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +61,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-04T10:48:07+00:00",
+      "occurred_at": "2026-08-04T13:00:00+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +75,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-04T10:48:07+00:00",
+      "occurred_at": "2026-08-04T13:00:00+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -84,14 +84,14 @@
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "restriction",
-      "severity": 1,
+      "severity": 2,
       "road_name": "",
-      "description": "全日空機で衝突防止装置が作動 国の検査機が付近を飛行 — 4日朝、羽田空港への着陸に向けて高度を下げていた全日空の旅客機で衝突防止装置が作動し、会社は航空法に基づいて国土交通省に報告しました。付近では羽田空港を離陸した国の検査機が飛行していて、国土交通省がニアミスにあたるかどうか調べています。",
+      "description": "安保3文書の有識者会議 経済的威圧に対処 法整備求める意見も — 安全保障関連の3文書の改定に向けた政府の有識者会議が開かれ、中国による重要鉱物の輸出規制を念頭に、出席者から、経済的な威圧を受けた場合に対処するための法整備を求める意見などが出されました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-04T10:06:33+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196031000.html",
-      "traffic_multiplier": 1.0
+      "occurred_at": "2026-08-04T11:59:59+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196301000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }

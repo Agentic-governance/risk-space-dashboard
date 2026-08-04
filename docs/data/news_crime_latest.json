@@ -10,35 +10,45 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-04T10:48:18+00:00",
-    "total_count": 25,
+    "fetched_at": "2026-08-04T13:00:10+00:00",
+    "total_count": 26,
     "source_counts": {
-      "nhk_crime": 25
+      "nhk_crime": 26
     },
     "type_counts": {
+      "theft": 2,
       "murder": 4,
       "robbery": 4,
       "crime_news": 11,
       "assault": 1,
       "drug": 1,
       "fraud": 1,
-      "theft": 1,
       "stalking": 1,
       "indecent_act": 1
     },
     "top_prefectures": {
       "東京": 8,
       "岡山": 3,
+      "熊本": 2,
       "埼玉": 2,
       "千葉": 1,
       "北海道": 1,
       "栃木": 1,
-      "熊本": 1,
       "神奈川": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "熊本地震 外国人がコンビニの食料品窃盗？偽情報に注意",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196331000.html",
+      "date": "2026-08-04",
+      "prefecture": "熊本",
+      "subtype": "theft",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
     {
       "title": "千葉点滴殺人 ポケットに注射器隠し混入か 殺人罪で元職員起訴",
       "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196201000.html",
