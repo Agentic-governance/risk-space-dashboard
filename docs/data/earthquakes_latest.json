@@ -2,12 +2,82 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-04T12:59:44+00:00",
+    "fetched_at": "2026-08-04T15:22:31+00:00",
     "filter_window_hours": 24,
-    "total_count": 31,
+    "total_count": 33,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260804234620_20260804234257_VXSE5k_1",
+      "time": "2026-08-04T14:42:00+00:00",
+      "time_jst": "2026-08-04T23:42:00+09:00",
+      "lat": 32.7,
+      "lon": 130.7,
+      "magnitude": 2.2,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260804230410_20260804230033_VXSE5k_1",
+      "time": "2026-08-04T14:00:00+00:00",
+      "time_jst": "2026-08-04T23:00:00+09:00",
+      "lat": 38.3,
+      "lon": 142.2,
+      "magnitude": 4.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260804230320_20260804230033_VXSE52_0",
+      "time": "2026-08-04T14:00:00+00:00",
+      "time_jst": "2026-08-04T23:00:00+09:00",
+      "lat": 38.3,
+      "lon": 142.2,
+      "magnitude": 4.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20260804230207_20260804230033_VXSE51_0",
+      "time": "2026-08-04T14:00:00+00:00",
+      "time_jst": "2026-08-04T23:00:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.05
+    },
+    {
+      "event_id": "20260804222619_20260804222337_VXSE5k_1",
+      "time": "2026-08-04T13:23:00+00:00",
+      "time_jst": "2026-08-04T22:23:00+09:00",
+      "lat": 32.8,
+      "lon": 130.8,
+      "magnitude": 2.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260804212842_20260804212556_VXSE5k_1",
       "time": "2026-08-04T12:25:00+00:00",
@@ -399,48 +469,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260804001547_20260804001331_VXSE5k_1",
-      "time": "2026-08-03T15:13:00+00:00",
-      "time_jst": "2026-08-04T00:13:00+09:00",
-      "lat": 32.6,
-      "lon": 130.6,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260803234329_20260803234002_VXSE5k_1",
-      "time": "2026-08-03T14:40:00+00:00",
-      "time_jst": "2026-08-03T23:40:00+09:00",
-      "lat": 43.1,
-      "lon": 146.8,
-      "magnitude": 4.3,
-      "depth_km": 70.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260803222408_20260803222151_VXSE5k_1",
-      "time": "2026-08-03T13:21:00+00:00",
-      "time_jst": "2026-08-03T22:21:00+09:00",
-      "lat": 26.9,
-      "lon": 128.2,
-      "magnitude": 3.1,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Okinawa Main Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
