@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-04T15:22:57+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-08-04T17:18:08+00:00",
+    "total_count": 24,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 24
     },
     "type_counts": {
       "suspicious_person": 1,
       "theft": 2,
-      "murder": 4,
+      "murder": 3,
       "robbery": 4,
-      "crime_news": 11,
+      "crime_news": 9,
       "assault": 1,
       "drug": 1,
       "fraud": 1,
@@ -28,15 +28,14 @@
       "indecent_act": 1
     },
     "top_prefectures": {
-      "東京": 8,
+      "東京": 7,
       "岡山": 3,
-      "熊本": 2,
       "埼玉": 2,
       "長野": 1,
+      "熊本": 1,
       "千葉": 1,
       "北海道": 1,
-      "栃木": 1,
-      "神奈川": 1
+      "栃木": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
@@ -279,36 +278,6 @@
       "subtype": "indecent_act",
       "lat": null,
       "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "高市首相「イオンモール熊本で発生した建物崩壊で3人死亡」",
-      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189461000.html",
-      "date": "2026-07-29",
-      "prefecture": "熊本",
-      "subtype": "crime_news",
-      "lat": 32.7898,
-      "lon": 130.7417,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "池袋の商業施設で女性殺害した疑い 元交際相手を書類送検",
-      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189471000.html",
-      "date": "2026-07-29",
-      "prefecture": "東京",
-      "subtype": "murder",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "NHKドラマを誰でもダウンロードできる状態にしたか 男を逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260729/k10015189101000.html",
-      "date": "2026-07-28",
-      "prefecture": "神奈川",
-      "subtype": "crime_news",
-      "lat": 35.4478,
-      "lon": 139.6425,
       "source": "nhk_crime"
     }
   ]
