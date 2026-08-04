@@ -10,16 +10,16 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-04T08:07:53+00:00",
-    "total_count": 23,
+    "fetched_at": "2026-08-04T10:48:18+00:00",
+    "total_count": 25,
     "source_counts": {
-      "nhk_crime": 23
+      "nhk_crime": 25
     },
     "type_counts": {
+      "murder": 4,
+      "robbery": 4,
       "crime_news": 11,
-      "robbery": 3,
       "assault": 1,
-      "murder": 3,
       "drug": 1,
       "fraud": 1,
       "theft": 1,
@@ -30,6 +30,7 @@
       "東京": 8,
       "岡山": 3,
       "埼玉": 2,
+      "千葉": 1,
       "北海道": 1,
       "栃木": 1,
       "熊本": 1,
@@ -38,6 +39,26 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "千葉点滴殺人 ポケットに注射器隠し混入か 殺人罪で元職員起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196201000.html",
+      "date": "2026-08-04",
+      "prefecture": "千葉",
+      "subtype": "murder",
+      "lat": 35.6073,
+      "lon": 140.1063,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "「ルフィ」強盗事件 幹部の小島智信被告 懲役20年確定へ",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196171000.html",
+      "date": "2026-08-04",
+      "prefecture": "",
+      "subtype": "robbery",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
     {
       "title": "「ロールス・ロイス」購入時に運輸局にうその申請か 4人逮捕",
       "url": "http://www3.nhk.or.jp/news/html/20260803/k10015195171000.html",
