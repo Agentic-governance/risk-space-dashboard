@@ -10,17 +10,17 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-04T23:37:45+00:00",
-    "total_count": 24,
+    "fetched_at": "2026-08-05T01:02:19+00:00",
+    "total_count": 25,
     "source_counts": {
-      "nhk_crime": 24
+      "nhk_crime": 25
     },
     "type_counts": {
+      "crime_news": 10,
       "weapon": 1,
       "theft": 2,
       "murder": 3,
       "robbery": 4,
-      "crime_news": 9,
       "assault": 1,
       "drug": 1,
       "fraud": 1,
@@ -31,6 +31,7 @@
       "東京": 7,
       "岡山": 3,
       "埼玉": 2,
+      "広島": 1,
       "長野": 1,
       "熊本": 1,
       "千葉": 1,
@@ -40,6 +41,16 @@
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "広島 東広島で住宅3棟が焼ける火事 焼け跡から3人の遺体",
+      "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196791000.html",
+      "date": "2026-08-05",
+      "prefecture": "広島",
+      "subtype": "crime_news",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "大阪 河内長野 警察官が容疑者に拳銃発砲し逮捕 容疑者は死亡",
       "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196461000.html",
