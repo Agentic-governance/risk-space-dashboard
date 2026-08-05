@@ -10,24 +10,22 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-05T15:59:11+00:00",
-    "total_count": 27,
+    "fetched_at": "2026-08-05T17:24:57+00:00",
+    "total_count": 21,
     "source_counts": {
-      "nhk_crime": 27
+      "nhk_crime": 21
     },
     "type_counts": {
-      "fraud": 2,
+      "fraud": 1,
       "crime_news": 11,
       "assault": 2,
-      "theft": 2,
-      "murder": 3,
-      "robbery": 4,
-      "drug": 1,
-      "stalking": 1,
-      "indecent_act": 1
+      "theft": 1,
+      "murder": 2,
+      "robbery": 3,
+      "drug": 1
     },
     "top_prefectures": {
-      "東京": 7,
+      "東京": 4,
       "岡山": 3,
       "埼玉": 2,
       "福岡": 1,
@@ -249,66 +247,6 @@
       "subtype": "drug",
       "lat": 35.6762,
       "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "特殊詐欺被害 上半期で1816億円 過去最悪の去年を大幅に上回る",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191121000.html",
-      "date": "2026-07-30",
-      "prefecture": "",
-      "subtype": "fraud",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 台東区 4億円余窃盗事件で逮捕の42歳男性 不起訴に",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015191091000.html",
-      "date": "2026-07-30",
-      "prefecture": "東京",
-      "subtype": "theft",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "犯罪被害者の刑事手続き関与拡充について法制審の議論開始",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190921000.html",
-      "date": "2026-07-30",
-      "prefecture": "",
-      "subtype": "stalking",
-      "lat": null,
-      "lon": null,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "八王子スーパー強盗殺人事件31年 警視庁が情報提供呼びかけ",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190611000.html",
-      "date": "2026-07-30",
-      "prefecture": "東京",
-      "subtype": "murder",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京 江東区 強盗未遂事件 新たに1人逮捕 “案件屋”か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190781000.html",
-      "date": "2026-07-30",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "歌指導と称し女性俳優にわいせつ行為か 音楽クリエイター逮捕",
-      "url": "http://www3.nhk.or.jp/news/html/20260730/k10015190671000.html",
-      "date": "2026-07-30",
-      "prefecture": "",
-      "subtype": "indecent_act",
-      "lat": null,
-      "lon": null,
       "source": "nhk_crime"
     }
   ]
