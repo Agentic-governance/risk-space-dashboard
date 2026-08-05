@@ -10,20 +10,19 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-05T09:21:42+00:00",
-    "total_count": 25,
+    "fetched_at": "2026-08-05T11:41:04+00:00",
+    "total_count": 27,
     "source_counts": {
-      "nhk_crime": 25
+      "nhk_crime": 27
     },
     "type_counts": {
-      "crime_news": 10,
-      "weapon": 1,
+      "fraud": 2,
+      "crime_news": 11,
+      "assault": 2,
       "theft": 2,
       "murder": 3,
       "robbery": 4,
-      "assault": 1,
       "drug": 1,
-      "fraud": 1,
       "stalking": 1,
       "indecent_act": 1
     },
@@ -31,8 +30,9 @@
       "東京": 7,
       "岡山": 3,
       "埼玉": 2,
-      "広島": 1,
+      "福岡": 1,
       "長野": 1,
+      "広島": 1,
       "熊本": 1,
       "千葉": 1,
       "北海道": 1,
@@ -42,6 +42,36 @@
   },
   "incidents": [
     {
+      "title": "「幸平一家」関わる特殊詐欺 別の暴力団と連携か 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260805/k10015197371000.html",
+      "date": "2026-08-05",
+      "prefecture": "福岡",
+      "subtype": "fraud",
+      "lat": 33.6064,
+      "lon": 130.4183,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "大阪 警察官が威嚇射撃の約2秒後に発砲 60歳の容疑者死亡",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196461000.html",
+      "date": "2026-08-05",
+      "prefecture": "長野",
+      "subtype": "crime_news",
+      "lat": 36.6513,
+      "lon": 138.181,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "ジャンポケ 斉藤元メンバー 性的暴行の罪 懲役7年を求刑",
+      "url": "http://www3.nhk.or.jp/news/html/20260805/k10015197341000.html",
+      "date": "2026-08-05",
+      "prefecture": "",
+      "subtype": "assault",
+      "lat": null,
+      "lon": null,
+      "source": "nhk_crime"
+    },
+    {
       "title": "東広島 住宅全焼する火事で4人の遺体 住人の家族4人か",
       "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196791000.html",
       "date": "2026-08-05",
@@ -49,16 +79,6 @@
       "subtype": "crime_news",
       "lat": 34.3963,
       "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪 警察官が威嚇射撃の約2秒後に容疑者に発砲 容疑者死亡",
-      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196461000.html",
-      "date": "2026-08-05",
-      "prefecture": "長野",
-      "subtype": "weapon",
-      "lat": 36.6513,
-      "lon": 138.181,
       "source": "nhk_crime"
     },
     {
