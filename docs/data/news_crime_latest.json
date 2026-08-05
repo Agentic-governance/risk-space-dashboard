@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-05T01:02:19+00:00",
+    "fetched_at": "2026-08-05T03:59:52+00:00",
     "total_count": 25,
     "source_counts": {
       "nhk_crime": 25
     },
     "type_counts": {
-      "crime_news": 10,
       "weapon": 1,
+      "crime_news": 10,
       "theft": 2,
       "murder": 3,
       "robbery": 4,
@@ -31,8 +31,8 @@
       "東京": 7,
       "岡山": 3,
       "埼玉": 2,
-      "広島": 1,
       "長野": 1,
+      "広島": 1,
       "熊本": 1,
       "千葉": 1,
       "北海道": 1,
@@ -42,23 +42,23 @@
   },
   "incidents": [
     {
-      "title": "広島 東広島で住宅3棟が焼ける火事 焼け跡から3人の遺体",
+      "title": "大阪 警察官が威嚇射撃の約2秒後に容疑者に発砲 容疑者死亡",
+      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196461000.html",
+      "date": "2026-08-05",
+      "prefecture": "長野",
+      "subtype": "weapon",
+      "lat": 36.6513,
+      "lon": 138.181,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "広島 東広島 住宅火災で3人死亡 家族4人と連絡取れず",
       "url": "http://www3.nhk.or.jp/news/html/20260805/k10015196791000.html",
       "date": "2026-08-05",
       "prefecture": "広島",
       "subtype": "crime_news",
       "lat": 34.3963,
       "lon": 132.4596,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "大阪 河内長野 警察官が容疑者に拳銃発砲し逮捕 容疑者は死亡",
-      "url": "http://www3.nhk.or.jp/news/html/20260804/k10015196461000.html",
-      "date": "2026-08-04",
-      "prefecture": "長野",
-      "subtype": "weapon",
-      "lat": 36.6513,
-      "lon": 138.181,
       "source": "nhk_crime"
     },
     {
