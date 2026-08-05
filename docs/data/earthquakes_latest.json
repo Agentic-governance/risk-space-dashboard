@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-05T19:05:34+00:00",
+    "fetched_at": "2026-08-05T20:32:00+00:00",
     "filter_window_hours": 24,
-    "total_count": 17,
+    "total_count": 16,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260806041347_20260806041051_VXSE5k_1",
+      "time": "2026-08-05T19:10:00+00:00",
+      "time_jst": "2026-08-06T04:10:00+09:00",
+      "lat": 32.6,
+      "lon": 130.7,
+      "magnitude": 2.3,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260806034611_20260806034328_VXSE5k_1",
       "time": "2026-08-05T18:43:00+00:00",
@@ -217,34 +231,6 @@
       "location_name": "Noto, Ishikawa Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260805050047_20260805045704_VXSE5k_1",
-      "time": "2026-08-04T19:57:00+00:00",
-      "time_jst": "2026-08-05T04:57:00+09:00",
-      "lat": 30.1,
-      "lon": 131.3,
-      "magnitude": 4.8,
-      "depth_km": 30.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the southeast Coast of Tanegashima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260805045047_20260805044653_VXSE5k_1",
-      "time": "2026-08-04T19:46:00+00:00",
-      "time_jst": "2026-08-05T04:46:00+09:00",
-      "lat": 32.6,
-      "lon": 130.7,
-      "magnitude": 2.2,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
