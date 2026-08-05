@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-05T11:40:45+00:00",
+    "fetched_at": "2026-08-05T13:46:43+00:00",
     "filter_window_hours": 24,
-    "total_count": 22,
+    "total_count": 21,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260805223354_20260805223112_VXSE5k_1",
+      "time": "2026-08-05T13:31:00+00:00",
+      "time_jst": "2026-08-05T22:31:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 3.0,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260805180858_20260805180614_VXSE5k_1",
       "time": "2026-08-05T09:06:00+00:00",
@@ -287,34 +301,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260804222619_20260804222337_VXSE5k_1",
-      "time": "2026-08-04T13:23:00+00:00",
-      "time_jst": "2026-08-04T22:23:00+09:00",
-      "lat": 32.8,
-      "lon": 130.8,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260804212842_20260804212556_VXSE5k_1",
-      "time": "2026-08-04T12:25:00+00:00",
-      "time_jst": "2026-08-04T21:25:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 2.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
