@@ -10,22 +10,22 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-06T04:44:41+00:00",
-    "total_count": 22,
+    "fetched_at": "2026-08-06T07:42:08+00:00",
+    "total_count": 23,
     "source_counts": {
-      "nhk_crime": 22
+      "nhk_crime": 23
     },
     "type_counts": {
       "crime_news": 12,
+      "assault": 3,
       "fraud": 1,
-      "assault": 2,
       "theft": 1,
       "murder": 2,
       "robbery": 3,
       "drug": 1
     },
     "top_prefectures": {
-      "東京": 4,
+      "東京": 5,
       "岡山": 3,
       "埼玉": 2,
       "大阪": 1,
@@ -47,6 +47,16 @@
       "subtype": "crime_news",
       "lat": 34.6937,
       "lon": 135.5023,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "前日治療せず事故か 睡眠時無呼吸症候群のドライバー書類送検",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197951000.html",
+      "date": "2026-08-06",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
