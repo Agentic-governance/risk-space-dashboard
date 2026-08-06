@@ -10,15 +10,15 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-06T07:42:08+00:00",
-    "total_count": 23,
+    "fetched_at": "2026-08-06T10:33:16+00:00",
+    "total_count": 25,
     "source_counts": {
-      "nhk_crime": 23
+      "nhk_crime": 25
     },
     "type_counts": {
-      "crime_news": 12,
       "assault": 3,
-      "fraud": 1,
+      "crime_news": 13,
+      "fraud": 2,
       "theft": 1,
       "murder": 2,
       "robbery": 3,
@@ -26,19 +26,29 @@
     },
     "top_prefectures": {
       "東京": 5,
+      "熊本": 3,
       "岡山": 3,
       "埼玉": 2,
       "大阪": 1,
       "福岡": 1,
       "長野": 1,
       "広島": 1,
-      "熊本": 1,
       "千葉": 1,
       "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "前日治療せず事故か 睡眠時無呼吸症候群のドライバー書類送検",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197951000.html",
+      "date": "2026-08-06",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
     {
       "title": "人気雑誌グッズを大量注文しキャンセル疑い 32歳を逮捕 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197981000.html",
@@ -50,13 +60,23 @@
       "source": "nhk_crime"
     },
     {
-      "title": "前日治療せず事故か 睡眠時無呼吸症候群のドライバー書類送検",
-      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197951000.html",
+      "title": "熊本地震 住宅修理トラブルや便乗した詐欺に注意を 消費者庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015198331000.html",
       "date": "2026-08-06",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
+      "prefecture": "熊本",
+      "subtype": "fraud",
+      "lat": 32.7898,
+      "lon": 130.7417,
+      "source": "nhk_crime"
+    },
+    {
+      "title": "熊本 宇城 竹やぶ火災で消火難航 地震で消火栓の水圧不足か",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015198241000.html",
+      "date": "2026-08-06",
+      "prefecture": "熊本",
+      "subtype": "crime_news",
+      "lat": 32.7898,
+      "lon": 130.7417,
       "source": "nhk_crime"
     },
     {

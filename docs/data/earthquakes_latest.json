@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-06T07:41:48+00:00",
+    "fetched_at": "2026-08-06T10:32:55+00:00",
     "filter_window_hours": 24,
     "total_count": 25,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260806192441_20260806192155_VXSE5k_1",
+      "time": "2026-08-06T10:21:00+00:00",
+      "time_jst": "2026-08-06T19:21:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 2.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260806191040_20260806190754_VXSE5k_1",
+      "time": "2026-08-06T10:07:00+00:00",
+      "time_jst": "2026-08-06T19:07:00+09:00",
+      "lat": 32.7,
+      "lon": 130.7,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260806182444_20260806182149_VXSE5k_1",
+      "time": "2026-08-06T09:21:00+00:00",
+      "time_jst": "2026-08-06T18:21:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 2.2,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260806162234_20260806161847_VXSE5k_1",
       "time": "2026-08-06T07:18:00+00:00",
@@ -315,48 +357,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260805180858_20260805180614_VXSE5k_1",
-      "time": "2026-08-05T09:06:00+00:00",
-      "time_jst": "2026-08-05T18:06:00+09:00",
-      "lat": 35.7,
-      "lon": 139.7,
-      "magnitude": 3.5,
-      "depth_km": 120.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "23 wards, Tokyo",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.15
-    },
-    {
-      "event_id": "20260805172639_20260805172417_VXSE5k_1",
-      "time": "2026-08-05T08:24:00+00:00",
-      "time_jst": "2026-08-05T17:24:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 2.5,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260805171858_20260805171615_VXSE5k_1",
-      "time": "2026-08-05T08:16:00+00:00",
-      "time_jst": "2026-08-05T17:16:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 1.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
