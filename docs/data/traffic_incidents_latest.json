@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-06T10:33:05+00:00",
-    "fetched_at_jst": "2026-08-06T19:33:05+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-08-06T14:48:37+00:00",
+    "fetched_at_jst": "2026-08-06T23:48:37+09:00",
+    "total_count": 5,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 1
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 2,
       "disaster": 2,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-06T10:33:05+00:00",
+      "occurred_at": "2026-08-06T14:48:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-06T10:33:05+00:00",
+      "occurred_at": "2026-08-06T14:48:37+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-06T10:33:05+00:00",
+      "occurred_at": "2026-08-06T14:48:37+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-06T10:33:05+00:00",
+      "occurred_at": "2026-08-06T14:48:37+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,26 +85,12 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風13号 大東島地方が暴風域 沖縄・奄美 猛烈な風のおそれ — 大型で強い台風13号は、沖縄県の大東島地方を暴風域に巻き込みながら西寄りに進んでいます。台風が接近する沖縄・奄美では一部の住宅が倒壊するような猛烈な風が吹くおそれがあるほか、雨も強まり沖縄県では線状降水帯が発生するおそれもあります。暴風や高波のほか、土砂災害などにも厳重な警戒が必要です。",
+      "description": "大型で強い台風13号 沖縄・奄美に接近へ 厳重警戒を — 大型で強い台風13号は、沖縄県の大東島地方を暴風域に巻き込みながら西寄りに進んでいます。台風が接近する沖縄・奄美では一部の住宅が倒壊するような猛烈な風が吹くおそれがあるほか、雨も強まり、沖縄県では線状降水帯が発生するおそれもあります。暴風や高波のほか、土砂災害などにも厳重な警戒が必要です。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-06T10:32:35+00:00",
+      "occurred_at": "2026-08-06T13:58:13+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197581000.html",
       "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260806_0005",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "前日治療せず事故か 睡眠時無呼吸症候群のドライバー書類送検 — ことし1月、東京 練馬区で車を運転中に居眠りし自転車と衝突して70代の女性に大けがをさせたとして、警視庁は6日、44歳の会社役員を危険運転傷害の疑いで書類送検しました。役員は「睡眠時無呼吸症候群」と診断されていましたが、事故の前日に自宅で必要な治療を行わず強い眠気に襲われていた疑いがあるということです。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-08-06T10:19:56+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197951000.html",
-      "traffic_multiplier": 1.6
     }
   ]
 }
