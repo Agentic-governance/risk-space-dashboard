@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-06T01:31:45+00:00",
-    "total_count": 21,
+    "fetched_at": "2026-08-06T04:44:41+00:00",
+    "total_count": 22,
     "source_counts": {
-      "nhk_crime": 21
+      "nhk_crime": 22
     },
     "type_counts": {
+      "crime_news": 12,
       "fraud": 1,
-      "crime_news": 11,
       "assault": 2,
       "theft": 1,
       "murder": 2,
@@ -28,17 +28,27 @@
       "東京": 4,
       "岡山": 3,
       "埼玉": 2,
+      "大阪": 1,
       "福岡": 1,
       "長野": 1,
       "広島": 1,
       "熊本": 1,
       "千葉": 1,
-      "北海道": 1,
-      "栃木": 1
+      "北海道": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "人気雑誌グッズを大量注文しキャンセル疑い 32歳を逮捕 警視庁",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197981000.html",
+      "date": "2026-08-06",
+      "prefecture": "大阪",
+      "subtype": "crime_news",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "source": "nhk_crime"
+    },
     {
       "title": "「幸平一家」関わる特殊詐欺 別の暴力団と連携か 警視庁",
       "url": "http://www3.nhk.or.jp/news/html/20260805/k10015197371000.html",
