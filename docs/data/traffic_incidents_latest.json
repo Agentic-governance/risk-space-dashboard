@@ -6,38 +6,25 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-05T23:54:01+00:00",
-    "fetched_at_jst": "2026-08-06T08:54:01+09:00",
+    "fetched_at": "2026-08-06T01:31:35+00:00",
+    "fetched_at_jst": "2026-08-06T10:31:35+09:00",
     "total_count": 5,
     "source_counts": {
-      "yahoo_transit": 5
+      "yahoo_transit": 4,
+      "nhk_rss": 1
     },
     "type_counts": {
-      "fallen_tree": 1,
       "accident": 2,
       "disaster": 1,
-      "congestion": 1
+      "congestion": 1,
+      "restriction": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
   },
   "incidents": [
     {
-      "event_id": "traffic_20260805_0000",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "fallen_tree",
-      "severity": 2,
-      "road_name": "",
-      "description": "鎌取〜誉田駅間で発生した倒木の影...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-08-05T23:54:01+00:00",
-      "url": "",
-      "traffic_multiplier": 1.3
-    },
-    {
-      "event_id": "traffic_20260805_0001",
+      "event_id": "traffic_20260806_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -46,12 +33,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-05T23:54:01+00:00",
+      "occurred_at": "2026-08-06T01:31:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260805_0002",
+      "event_id": "traffic_20260806_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -60,12 +47,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-05T23:54:01+00:00",
+      "occurred_at": "2026-08-06T01:31:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260805_0003",
+      "event_id": "traffic_20260806_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -74,12 +61,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-05T23:54:01+00:00",
+      "occurred_at": "2026-08-06T01:31:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260805_0004",
+      "event_id": "traffic_20260806_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -88,9 +75,23 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-05T23:54:01+00:00",
+      "occurred_at": "2026-08-06T01:31:35+00:00",
       "url": "",
       "traffic_multiplier": 1.0
+    },
+    {
+      "event_id": "traffic_20260806_0004",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "restriction",
+      "severity": 2,
+      "road_name": "",
+      "description": "中国 米に対抗措置 アメリカ向けドローンの輸出規制を強化 — 中国商務省はアメリカによる中国への貿易制限への対抗措置としてアメリカ向けのドローンの輸出規制などを強化すると発表しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-05T22:34:40+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260806/k10015197591000.html",
+      "traffic_multiplier": 1.3
     }
   ]
 }
