@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-07T10:30:35+00:00",
-    "fetched_at_jst": "2026-08-07T19:30:35+09:00",
+    "fetched_at": "2026-08-07T11:19:50+00:00",
+    "fetched_at_jst": "2026-08-07T20:19:50+09:00",
     "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T10:30:35+00:00",
+      "occurred_at": "2026-08-07T11:19:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T10:30:35+00:00",
+      "occurred_at": "2026-08-07T11:19:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T10:30:35+00:00",
+      "occurred_at": "2026-08-07T11:19:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T10:30:35+00:00",
+      "occurred_at": "2026-08-07T11:19:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -85,10 +85,10 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "東京五輪 競泳銀メダルの本多灯選手 危険運転傷害の罪で起訴 — 日本水泳連盟は、東京オリンピックの競泳、男子200メートルバタフライの銀メダリストで、24歳の本多灯選手が車で人身事故を起こして危険運転傷害の罪で起訴されたとして、来月のアジア大会などの出場を取りやめると発表しました。",
+      "description": "東京五輪 競泳銀の本多灯選手 危険運転傷害の罪で在宅起訴 — 東京オリンピックで銀メダルを獲得した競泳の本多灯選手が、去年、都内の一般道で、法定速度を大幅に超えて車を運転して事故を起こし、男性にけがをさせたなどとして危険運転傷害の罪で在宅起訴されていたことが捜査関係者などへの取材で分かりました。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T07:29:49+00:00",
+      "occurred_at": "2026-08-07T10:53:15+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199211000.html",
       "traffic_multiplier": 1.6
     },

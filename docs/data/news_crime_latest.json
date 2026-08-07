@@ -10,14 +10,14 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-07T10:30:44+00:00",
+    "fetched_at": "2026-08-07T11:20:00+00:00",
     "total_count": 22,
     "source_counts": {
       "nhk_crime": 22
     },
     "type_counts": {
-      "robbery": 3,
       "assault": 3,
+      "robbery": 3,
       "crime_news": 12,
       "fraud": 2,
       "theft": 1,
@@ -26,8 +26,8 @@
     "top_prefectures": {
       "熊本": 3,
       "岡山": 3,
-      "北海道": 2,
       "東京": 2,
+      "北海道": 2,
       "埼玉": 2,
       "大阪": 1,
       "福岡": 1,
@@ -39,6 +39,16 @@
   },
   "incidents": [
     {
+      "title": "東京五輪 競泳銀の本多灯選手 危険運転傷害の罪で在宅起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199211000.html",
+      "date": "2026-08-07",
+      "prefecture": "東京",
+      "subtype": "assault",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "source": "nhk_crime"
+    },
+    {
       "title": "北海道 江別 強盗致死事件裁判 当時18歳被告に無期懲役の判決",
       "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199131000.html",
       "date": "2026-08-07",
@@ -46,16 +56,6 @@
       "subtype": "robbery",
       "lat": 43.0642,
       "lon": 141.3469,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "東京五輪 競泳銀メダルの本多灯選手 危険運転傷害の罪で起訴",
-      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199211000.html",
-      "date": "2026-08-07",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     },
     {
