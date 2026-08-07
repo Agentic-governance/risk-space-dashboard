@@ -6,18 +6,17 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-07T08:11:50+00:00",
-    "fetched_at_jst": "2026-08-07T17:11:50+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-08-07T09:35:50+00:00",
+    "fetched_at_jst": "2026-08-07T18:35:50+09:00",
+    "total_count": 6,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 3
+      "nhk_rss": 2
     },
     "type_counts": {
       "accident": 3,
       "disaster": 2,
-      "congestion": 1,
-      "restriction": 1
+      "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
     "notes": "JARTIC (jartic.or.jp) was replaced with Yahoo!道路交通情報 (road.yahoo.co.jp) due to 404 errors on the JARTIC public page. NHK RSS cat7 covers society/traffic news (事故/渋滞/通行止め). Lat/lon is available only when the source provides coordinates directly."
@@ -33,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T08:11:50+00:00",
+      "occurred_at": "2026-08-07T09:35:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -47,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T08:11:50+00:00",
+      "occurred_at": "2026-08-07T09:35:50+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -61,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T08:11:50+00:00",
+      "occurred_at": "2026-08-07T09:35:50+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -75,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T08:11:50+00:00",
+      "occurred_at": "2026-08-07T09:35:50+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -100,26 +99,12 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風13号 沖縄本島北部に「線状降水帯直前予測」【中継も】 — 大型で非常に強い台風13号は、この時間、沖縄本島地方や奄美地方に最も近づいていて、雨風ともに強まり、沖縄本島北部では線状降水帯が発生する可能性が高まっているとして「線状降水帯直前予測」が発表されています。沖縄・奄美ではレベル4危険警報が発表されている地域もあり、暴風や高波のほか、大雨による浸水や土砂災害などにも厳重な警戒を続けてください。",
+      "description": "台風13号 沖縄本島北部に「線状降水帯直前予測」【中継も】 — 大型で非常に強い台風13号は、沖縄本島地方や奄美地方に最も近づいて、雨風ともに強まり、沖縄本島北部では線状降水帯が発生する可能性が高まっているとして「線状降水帯直前予測」が発表されています。沖縄・奄美ではレベル4危険警報が発表されている地域もあり、暴風や高波のほか、大雨による浸水や土砂災害などにも厳重な警戒を続けてください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T08:02:53+00:00",
+      "occurred_at": "2026-08-07T09:11:48+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198521000.html",
       "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260807_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "restriction",
-      "severity": 1,
-      "road_name": "",
-      "description": "土地取得ルール「届け出必要な対象拡大を」国交省の有識者会議 — 不適切な土地の利用による住民とのトラブルなどを防ぐため、国土交通省の有識者会議は土地を取得する際に届け出が必要となる対象を広げるべきなどとする提言をまとめました。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-08-07T07:31:38+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199271000.html",
-      "traffic_multiplier": 1.0
     }
   ]
 }
