@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-07T09:35:50+00:00",
-    "fetched_at_jst": "2026-08-07T18:35:50+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-08-07T10:30:35+00:00",
+    "fetched_at_jst": "2026-08-07T19:30:35+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 2,
+      "disaster": 3,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T09:35:50+00:00",
+      "occurred_at": "2026-08-07T10:30:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T09:35:50+00:00",
+      "occurred_at": "2026-08-07T10:30:35+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T09:35:50+00:00",
+      "occurred_at": "2026-08-07T10:30:35+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T09:35:50+00:00",
+      "occurred_at": "2026-08-07T10:30:35+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -99,11 +99,25 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風13号 沖縄本島北部に「線状降水帯直前予測」【中継も】 — 大型で非常に強い台風13号は、沖縄本島地方や奄美地方に最も近づいて、雨風ともに強まり、沖縄本島北部では線状降水帯が発生する可能性が高まっているとして「線状降水帯直前予測」が発表されています。沖縄・奄美ではレベル4危険警報が発表されている地域もあり、暴風や高波のほか、大雨による浸水や土砂災害などにも厳重な警戒を続けてください。",
+      "description": "大型で非常に強い台風13号 大雨や暴風など厳重警戒【中継も】 — 大型で非常に強い台風13号はこの時間、沖縄本島地方や奄美地方に最も近づいていて、沖縄・奄美では雨風ともに強まり、レベル4危険警報が発表されている地域があります。沖縄・奄美では雨や風の影響が長引くおそれがあり、暴風や高波のほか、大雨による浸水や土砂災害などにも厳重な警戒を続けてください。",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-07T09:11:48+00:00",
+      "occurred_at": "2026-08-07T09:58:33+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198521000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260807_0006",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "地震被害の熊本 夜も気温下がらず 熱中症対策 揺れにも備えを — 最大震度7の地震で大きな被害のあった熊本県は、7日も各地で猛烈な暑さとなりました。夜も気温は下がらず、熊本市の8日朝の最低気温は30度と予想されていて、熱中症対策は昼夜問わず徹底するようにしてください。また、台風13号の影響で雨が降っているところもあり、土砂災害への注意が必要です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-07T09:41:47+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015198731000.html",
       "traffic_multiplier": 2.4
     }
   ]
