@@ -10,25 +10,24 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-06T14:48:47+00:00",
-    "total_count": 25,
+    "fetched_at": "2026-08-07T03:30:24+00:00",
+    "total_count": 20,
     "source_counts": {
-      "nhk_crime": 25
+      "nhk_crime": 20
     },
     "type_counts": {
-      "assault": 3,
-      "crime_news": 13,
+      "assault": 2,
+      "crime_news": 12,
       "fraud": 2,
       "theft": 1,
-      "murder": 2,
-      "robbery": 3,
-      "drug": 1
+      "murder": 1,
+      "robbery": 2
     },
     "top_prefectures": {
-      "東京": 5,
       "熊本": 3,
       "岡山": 3,
       "埼玉": 2,
+      "東京": 1,
       "大阪": 1,
       "福岡": 1,
       "長野": 1,
@@ -237,56 +236,6 @@
       "subtype": "crime_news",
       "lat": 34.6618,
       "lon": 133.9344,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "過失運転傷害疑いで書類送検のサッカー三笘薫選手 不起訴に",
-      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192541000.html",
-      "date": "2026-07-31",
-      "prefecture": "東京",
-      "subtype": "assault",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "栃木強盗殺人 “実行役”高校生2人起訴 4人全員起訴に",
-      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192081000.html",
-      "date": "2026-07-31",
-      "prefecture": "栃木",
-      "subtype": "murder",
-      "lat": 36.5658,
-      "lon": 139.8836,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "新宿 酒店強盗未遂事件で18歳容疑者を逮捕 指示役か",
-      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191891000.html",
-      "date": "2026-07-31",
-      "prefecture": "東京",
-      "subtype": "robbery",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "タワマン賭博事件で新たに逮捕 部屋は日替わり拠点か 警視庁",
-      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015192131000.html",
-      "date": "2026-07-31",
-      "prefecture": "東京",
-      "subtype": "crime_news",
-      "lat": 35.6762,
-      "lon": 139.6503,
-      "source": "nhk_crime"
-    },
-    {
-      "title": "バレーボール元代表 佐藤駿一郎被告 大麻所持で有罪判決",
-      "url": "http://www3.nhk.or.jp/news/html/20260731/k10015191811000.html",
-      "date": "2026-07-31",
-      "prefecture": "東京",
-      "subtype": "drug",
-      "lat": 35.6762,
-      "lon": 139.6503,
       "source": "nhk_crime"
     }
   ]
