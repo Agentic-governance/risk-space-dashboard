@@ -10,34 +10,44 @@
       "kahoku_incident",
       "sankei_flash"
     ],
-    "fetched_at": "2026-08-07T11:20:00+00:00",
-    "total_count": 22,
+    "fetched_at": "2026-08-07T13:52:19+00:00",
+    "total_count": 23,
     "source_counts": {
-      "nhk_crime": 22
+      "nhk_crime": 23
     },
     "type_counts": {
+      "murder": 2,
       "assault": 3,
       "robbery": 3,
       "crime_news": 12,
       "fraud": 2,
-      "theft": 1,
-      "murder": 1
+      "theft": 1
     },
     "top_prefectures": {
       "熊本": 3,
       "岡山": 3,
+      "広島": 2,
       "東京": 2,
       "北海道": 2,
       "埼玉": 2,
       "大阪": 1,
       "福岡": 1,
       "長野": 1,
-      "広島": 1,
       "千葉": 1
     },
     "description": "Crime-related news headlines from Japanese RSS feeds. Prefecture and subtype are extracted from title/description. lat/lon is the approximate center of the inferred prefecture."
   },
   "incidents": [
+    {
+      "title": "東広島の事件 元社員の殺人容疑などは不起訴 放火罪などで起訴",
+      "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199601000.html",
+      "date": "2026-08-07",
+      "prefecture": "広島",
+      "subtype": "murder",
+      "lat": 34.3963,
+      "lon": 132.4596,
+      "source": "nhk_crime"
+    },
     {
       "title": "東京五輪 競泳銀の本多灯選手 危険運転傷害の罪で在宅起訴",
       "url": "http://www3.nhk.or.jp/news/html/20260807/k10015199211000.html",
