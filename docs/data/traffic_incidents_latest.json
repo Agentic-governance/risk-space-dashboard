@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-08T13:30:22+00:00",
-    "fetched_at_jst": "2026-08-08T22:30:22+09:00",
-    "total_count": 7,
+    "fetched_at": "2026-08-08T14:09:42+00:00",
+    "fetched_at_jst": "2026-08-08T23:09:42+09:00",
+    "total_count": 8,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 3
+      "nhk_rss": 4
     },
     "type_counts": {
-      "accident": 3,
+      "accident": 4,
       "disaster": 3,
       "congestion": 1
     },
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T13:30:22+00:00",
+      "occurred_at": "2026-08-08T14:09:42+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T13:30:22+00:00",
+      "occurred_at": "2026-08-08T14:09:42+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T13:30:22+00:00",
+      "occurred_at": "2026-08-08T14:09:42+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T13:30:22+00:00",
+      "occurred_at": "2026-08-08T14:09:42+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -119,6 +119,20 @@
       "occurred_at": "2026-08-08T12:12:41+00:00",
       "url": "http://www3.nhk.or.jp/news/html/20260808/k10015200211000.html",
       "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260808_0007",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "愛知県内で水難事故相次ぐ 2人死亡 — 8日、愛知県内の海と川で水難事故が相次ぎ、2人が死亡しました。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-08T14:06:51+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015200261000.html",
+      "traffic_multiplier": 1.6
     }
   ]
 }
