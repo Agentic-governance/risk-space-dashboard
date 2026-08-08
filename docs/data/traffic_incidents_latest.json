@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-08T08:12:14+00:00",
-    "fetched_at_jst": "2026-08-08T17:12:14+09:00",
-    "total_count": 6,
+    "fetched_at": "2026-08-08T09:13:13+00:00",
+    "fetched_at_jst": "2026-08-08T18:13:13+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 2
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 3,
-      "disaster": 1,
+      "disaster": 2,
       "congestion": 2
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T08:12:14+00:00",
+      "occurred_at": "2026-08-08T09:13:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T08:12:14+00:00",
+      "occurred_at": "2026-08-08T09:13:13+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T08:12:14+00:00",
+      "occurred_at": "2026-08-08T09:13:13+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T08:12:14+00:00",
+      "occurred_at": "2026-08-08T09:13:13+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -94,6 +94,20 @@
     },
     {
       "event_id": "traffic_20260808_0005",
+      "layer": "traffic",
+      "source": "nhk_rss",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "大気不安定 新潟 岩手 青森に記録的短時間大雨 厳重警戒を — 北日本から西日本にかけての広い範囲で、大気の状態が非常に不安定になり局地的に雨雲が発達しています。新潟県や岩手県、青森県では猛烈な雨が降ったとみられ、「記録的短時間大雨」の気象防災速報が相次いで発表されました。低い土地の浸水や川の増水・氾濫、土砂災害に厳重な警戒が必要です。",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-08T08:55:13+00:00",
+      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015200211000.html",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260808_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "congestion",
