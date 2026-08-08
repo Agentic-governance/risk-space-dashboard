@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-08T14:09:42+00:00",
-    "fetched_at_jst": "2026-08-08T23:09:42+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-08-08T15:01:10+00:00",
+    "fetched_at_jst": "2026-08-09T00:01:10+09:00",
+    "total_count": 7,
     "source_counts": {
       "yahoo_transit": 4,
-      "nhk_rss": 4
+      "nhk_rss": 3
     },
     "type_counts": {
       "accident": 4,
-      "disaster": 3,
+      "disaster": 2,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -32,7 +32,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T14:09:42+00:00",
+      "occurred_at": "2026-08-08T15:01:10+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T14:09:42+00:00",
+      "occurred_at": "2026-08-08T15:01:10+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T14:09:42+00:00",
+      "occurred_at": "2026-08-08T15:01:10+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -74,7 +74,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-08T14:09:42+00:00",
+      "occurred_at": "2026-08-08T15:01:10+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
@@ -108,20 +108,6 @@
     },
     {
       "event_id": "traffic_20260808_0006",
-      "layer": "traffic",
-      "source": "nhk_rss",
-      "incident_type": "disaster",
-      "severity": 4,
-      "road_name": "",
-      "description": "大気不安定 新潟 岩手 青森 富山に記録的短時間大雨 厳重警戒 — 北日本から西日本にかけての広い範囲で大気の状態が非常に不安定になり、局地的に雨雲が発達しています。富山県では1時間に100ミリ以上の猛烈な雨が降り、「記録的短時間大雨」の気象防災速報が発表されました。土砂災害や川の増水・氾濫などに厳重な警戒が必要です。",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-08-08T12:12:41+00:00",
-      "url": "http://www3.nhk.or.jp/news/html/20260808/k10015200211000.html",
-      "traffic_multiplier": 2.4
-    },
-    {
-      "event_id": "traffic_20260808_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
