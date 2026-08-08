@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-08T09:13:07+00:00",
+    "fetched_at": "2026-08-08T10:06:16+00:00",
     "filter_window_hours": 24,
-    "total_count": 15,
+    "total_count": 16,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260808185010_20260808184715_VXSE5k_1",
+      "time": "2026-08-08T09:47:00+00:00",
+      "time_jst": "2026-08-08T18:47:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260808165810_20260808165527_VXSE5k_1",
       "time": "2026-08-08T07:55:00+00:00",
