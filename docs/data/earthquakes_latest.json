@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-09T17:07:45+00:00",
+    "fetched_at": "2026-08-09T19:17:21+00:00",
     "filter_window_hours": 24,
-    "total_count": 27,
+    "total_count": 21,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260810022614_20260810022336_VXSE5k_1",
+      "time": "2026-08-09T17:23:00+00:00",
+      "time_jst": "2026-08-10T02:23:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 3.1,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260810005203_20260810004814_VXSE5k_1",
       "time": "2026-08-09T15:48:00+00:00",
@@ -287,104 +301,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260809035924_20260809035652_VXSE5k_1",
-      "time": "2026-08-08T18:56:00+00:00",
-      "time_jst": "2026-08-09T03:56:00+09:00",
-      "lat": 40.1,
-      "lon": 142.4,
-      "magnitude": 3.9,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260809031406_20260809031043_VXSE5k_1",
-      "time": "2026-08-08T18:10:00+00:00",
-      "time_jst": "2026-08-09T03:10:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 1.9,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260809030207_20260809025805_VXSE5k_1",
-      "time": "2026-08-08T17:58:00+00:00",
-      "time_jst": "2026-08-09T02:58:00+09:00",
-      "lat": 40.1,
-      "lon": 142.4,
-      "magnitude": 5.6,
-      "depth_km": 40.0,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.5
-    },
-    {
-      "event_id": "20260809030057_20260809025805_VXSE52_0",
-      "time": "2026-08-08T17:58:00+00:00",
-      "time_jst": "2026-08-09T02:58:00+09:00",
-      "lat": 40.1,
-      "lon": 142.4,
-      "magnitude": 5.6,
-      "depth_km": 40.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.3
-    },
-    {
-      "event_id": "20260809030036_20260809025805_VXSE51_0",
-      "time": "2026-08-08T17:58:00+00:00",
-      "time_jst": "2026-08-09T02:58:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260809025936_20260809025805_VXSE51_0",
-      "time": "2026-08-08T17:58:00+00:00",
-      "time_jst": "2026-08-09T02:58:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260809025608_20260809025347_VXSE5k_1",
-      "time": "2026-08-08T17:53:00+00:00",
-      "time_jst": "2026-08-09T02:53:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 3.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
