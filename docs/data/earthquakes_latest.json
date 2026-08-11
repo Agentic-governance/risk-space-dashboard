@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-11T21:40:29+00:00",
+    "fetched_at": "2026-08-11T22:37:10+00:00",
     "filter_window_hours": 24,
-    "total_count": 21,
+    "total_count": 22,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260812065604_20260812065312_VXSE5k_1",
+      "time": "2026-08-11T21:53:00+00:00",
+      "time_jst": "2026-08-12T06:53:00+09:00",
+      "lat": 32.5,
+      "lon": 130.5,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260812064923_20260812064603_VXSE5k_1",
+      "time": "2026-08-11T21:46:00+00:00",
+      "time_jst": "2026-08-12T06:46:00+09:00",
+      "lat": 41.6,
+      "lon": 142.1,
+      "magnitude": 4.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Urakawa",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20260812061302_20260812061001_VXSE5k_1",
       "time": "2026-08-11T21:10:00+00:00",
@@ -287,20 +315,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260811071438_20260811071215_VXSE5k_1",
-      "time": "2026-08-10T22:12:00+00:00",
-      "time_jst": "2026-08-11T07:12:00+09:00",
-      "lat": 32.5,
-      "lon": 130.5,
-      "magnitude": 3.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
