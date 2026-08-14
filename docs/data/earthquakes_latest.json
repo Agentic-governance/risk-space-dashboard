@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-14T22:18:24+00:00",
+    "fetched_at": "2026-08-14T22:52:47+00:00",
     "filter_window_hours": 24,
-    "total_count": 17,
+    "total_count": 18,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260815073137_20260815072907_VXSE5k_1",
+      "time": "2026-08-14T22:29:00+00:00",
+      "time_jst": "2026-08-15T07:29:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 2.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260815072904_20260815065850_VXSE5e_1",
+      "time": "2026-08-14T21:58:00+00:00",
+      "time_jst": "2026-08-15T06:58:00+09:00",
+      "lat": -8.3,
+      "lon": 121.4,
+      "magnitude": 7.7,
+      "depth_km": null,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Adjacent Indonesia",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 4.0
+    },
     {
       "event_id": "20260815071644_20260815071303_VXSE5k_1",
       "time": "2026-08-14T22:12:00+00:00",
@@ -231,20 +259,6 @@
       "location_name": "Bungosuido Strait",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260814075249_20260814074943_VXSE5k_1",
-      "time": "2026-08-13T22:50:00+00:00",
-      "time_jst": "2026-08-14T07:50:00+09:00",
-      "lat": 35.9,
-      "lon": 140.6,
-      "magnitude": 2.8,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northeastern Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.1
     }
   ]
 }
