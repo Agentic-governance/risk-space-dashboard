@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-14T20:06:21+00:00",
+    "fetched_at": "2026-08-14T20:58:50+00:00",
     "filter_window_hours": 24,
-    "total_count": 17,
+    "total_count": 14,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -203,48 +203,6 @@
       "location_name": "Northeastern Chiba Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.1
-    },
-    {
-      "event_id": "20260814054141_20260814053929_VXSE5k_1",
-      "time": "2026-08-13T20:39:00+00:00",
-      "time_jst": "2026-08-14T05:39:00+09:00",
-      "lat": 32.2,
-      "lon": 130.4,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260814053334_20260814053115_VXSE5k_1",
-      "time": "2026-08-13T20:31:00+00:00",
-      "time_jst": "2026-08-14T05:31:00+09:00",
-      "lat": 37.7,
-      "lon": 137.3,
-      "magnitude": 3.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Noto Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260814052624_20260814052333_VXSE5k_1",
-      "time": "2026-08-13T20:20:00+00:00",
-      "time_jst": "2026-08-14T05:20:00+09:00",
-      "lat": 42.7,
-      "lon": 142.2,
-      "magnitude": 2.2,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Western Hidaka Region, Hokkaido",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
