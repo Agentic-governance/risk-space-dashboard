@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-15T04:39:03+00:00",
+    "fetched_at": "2026-08-15T05:21:21+00:00",
     "filter_window_hours": 24,
-    "total_count": 24,
+    "total_count": 23,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -329,20 +329,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260814135936_20260814135419_VXSE5k_1",
-      "time": "2026-08-14T04:54:00+00:00",
-      "time_jst": "2026-08-14T13:54:00+09:00",
-      "lat": 28.0,
-      "lon": 140.3,
-      "magnitude": 5.1,
-      "depth_km": 450.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the west Coast of Ogasawara Islands",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.2
     }
   ]
 }
