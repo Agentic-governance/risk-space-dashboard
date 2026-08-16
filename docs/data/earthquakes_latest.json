@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-16T11:47:36+00:00",
+    "fetched_at": "2026-08-16T13:12:05+00:00",
     "filter_window_hours": 24,
     "total_count": 17,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260816214513_20260816214207_VXSE5k_1",
+      "time": "2026-08-16T12:42:00+00:00",
+      "time_jst": "2026-08-16T21:42:00+09:00",
+      "lat": 32.0,
+      "lon": 130.0,
+      "magnitude": 3.0,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusanada Sea",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260816212841_20260816212545_VXSE5k_1",
+      "time": "2026-08-16T12:25:00+00:00",
+      "time_jst": "2026-08-16T21:25:00+09:00",
+      "lat": 32.0,
+      "lon": 130.0,
+      "magnitude": 3.3,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusanada Sea",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260816180853_20260816180534_VXSE5k_1",
       "time": "2026-08-16T09:05:00+00:00",
@@ -217,34 +245,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260815214027_20260815213812_VXSE5k_1",
-      "time": "2026-08-15T12:38:00+00:00",
-      "time_jst": "2026-08-15T21:38:00+09:00",
-      "lat": 32.7,
-      "lon": 130.8,
-      "magnitude": 2.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260815210610_20260815210345_VXSE5k_1",
-      "time": "2026-08-15T12:03:00+00:00",
-      "time_jst": "2026-08-15T21:03:00+09:00",
-      "lat": 34.5,
-      "lon": 135.3,
-      "magnitude": 3.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Osaka Bay",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
