@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-16T13:12:05+00:00",
+    "fetched_at": "2026-08-16T13:56:06+00:00",
     "filter_window_hours": 24,
-    "total_count": 17,
+    "total_count": 18,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260816225204_20260816224921_VXSE5k_1",
+      "time": "2026-08-16T13:49:00+00:00",
+      "time_jst": "2026-08-16T22:49:00+09:00",
+      "lat": 32.7,
+      "lon": 130.7,
+      "magnitude": 2.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260816214513_20260816214207_VXSE5k_1",
       "time": "2026-08-16T12:42:00+00:00",
