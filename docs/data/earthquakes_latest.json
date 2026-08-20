@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-19T23:50:30+00:00",
+    "fetched_at": "2026-08-20T02:17:32+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260820094920_20260820094551_VXSE5k_1",
+      "time": "2026-08-20T00:45:00+00:00",
+      "time_jst": "2026-08-20T09:45:00+09:00",
+      "lat": 32.6,
+      "lon": 130.7,
+      "magnitude": 2.3,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260820090914_20260820090623_VXSE5k_1",
+      "time": "2026-08-20T00:06:00+00:00",
+      "time_jst": "2026-08-20T09:06:00+09:00",
+      "lat": 40.9,
+      "lon": 142.1,
+      "magnitude": 3.3,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the east Coast of Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260820085139_20260820084815_VXSE5k_1",
+      "time": "2026-08-19T23:48:00+00:00",
+      "time_jst": "2026-08-20T08:48:00+09:00",
+      "lat": 32.2,
+      "lon": 130.4,
+      "magnitude": 1.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260820084124_20260820083831_VXSE5k_1",
       "time": "2026-08-19T23:38:00+00:00",
@@ -131,20 +173,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Off the northwest Coast of Amami- Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260819094511_20260819094205_VXSE5k_1",
-      "time": "2026-08-19T00:42:00+00:00",
-      "time_jst": "2026-08-19T09:42:00+09:00",
-      "lat": 37.5,
-      "lon": 137.2,
-      "magnitude": 1.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Noto, Ishikawa Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
