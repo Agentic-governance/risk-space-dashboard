@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-20T15:08:44+00:00",
+    "fetched_at": "2026-08-20T16:03:14+00:00",
     "filter_window_hours": 24,
-    "total_count": 15,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260821004937_20260821004621_VXSE5k_1",
+      "time": "2026-08-20T15:46:00+00:00",
+      "time_jst": "2026-08-21T00:46:00+09:00",
+      "lat": 34.1,
+      "lon": 135.3,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Wakayama Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260820175141_20260820174830_VXSE5k_1",
       "time": "2026-08-20T08:48:00+00:00",
@@ -161,62 +175,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260820005829_20260820005522_VXSE5k_1",
-      "time": "2026-08-19T15:55:00+00:00",
-      "time_jst": "2026-08-20T00:55:00+09:00",
-      "lat": 41.9,
-      "lon": 143.1,
-      "magnitude": 3.5,
-      "depth_km": 40.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Urakawa",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260820005418_20260820005028_VXSE5k_1",
-      "time": "2026-08-19T15:50:00+00:00",
-      "time_jst": "2026-08-20T00:50:00+09:00",
-      "lat": 41.9,
-      "lon": 143.1,
-      "magnitude": 4.0,
-      "depth_km": 40.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Off the Coast of Urakawa",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260820005323_20260820005028_VXSE52_0",
-      "time": "2026-08-19T15:50:00+00:00",
-      "time_jst": "2026-08-20T00:50:00+09:00",
-      "lat": 41.9,
-      "lon": 143.1,
-      "magnitude": 4.0,
-      "depth_km": 40.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Off the Coast of Urakawa",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260820005200_20260820005028_VXSE51_0",
-      "time": "2026-08-19T15:50:00+00:00",
-      "time_jst": "2026-08-20T00:50:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }
