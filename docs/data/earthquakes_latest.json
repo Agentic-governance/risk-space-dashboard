@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-22T11:48:13+00:00",
+    "fetched_at": "2026-08-22T13:13:50+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -105,48 +105,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260821210756_20260821210216_VXSE5k_1",
-      "time": "2026-08-21T12:02:00+00:00",
-      "time_jst": "2026-08-21T21:02:00+09:00",
-      "lat": 33.7,
-      "lon": 140.5,
-      "magnitude": 5.5,
-      "depth_km": 60.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Off the east Coast of Hachijojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.35
-    },
-    {
-      "event_id": "20260821210458_20260821210216_VXSE52_0",
-      "time": "2026-08-21T12:02:00+00:00",
-      "time_jst": "2026-08-21T21:02:00+09:00",
-      "lat": 33.7,
-      "lon": 140.5,
-      "magnitude": 5.5,
-      "depth_km": 60.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Off the east Coast of Hachijojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.3
-    },
-    {
-      "event_id": "20260821210349_20260821210216_VXSE51_0",
-      "time": "2026-08-21T12:02:00+00:00",
-      "time_jst": "2026-08-21T21:02:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }
