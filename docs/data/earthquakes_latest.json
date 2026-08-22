@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-22T18:59:42+00:00",
+    "fetched_at": "2026-08-22T19:20:20+00:00",
     "filter_window_hours": 24,
-    "total_count": 13,
+    "total_count": 14,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260823040012_20260823020050_VXSE61_0",
+      "time": "2026-08-22T17:00:00+00:00",
+      "time_jst": "2026-08-23T02:00:00+09:00",
+      "lat": 3559.9,
+      "lon": 14005.7,
+      "magnitude": 5.9,
+      "depth_km": 68.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Southern Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.2
+    },
     {
       "event_id": "20260823024943_20260823024709_VXSE5k_1",
       "time": "2026-08-22T17:47:00+00:00",
