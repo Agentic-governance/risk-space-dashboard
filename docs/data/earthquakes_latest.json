@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-22T08:23:19+00:00",
+    "fetched_at": "2026-08-22T09:00:23+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260822174044_20260822173741_VXSE5k_1",
+      "time": "2026-08-22T08:37:00+00:00",
+      "time_jst": "2026-08-22T17:37:00+09:00",
+      "lat": 45.0,
+      "lon": 145.6,
+      "magnitude": 4.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Southern Sea of Okhotsk",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.0
+    },
     {
       "event_id": "20260822113834_20260822113559_VXSE5k_1",
       "time": "2026-08-22T02:35:00+00:00",
