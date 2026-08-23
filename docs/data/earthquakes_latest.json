@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-23T16:17:07+00:00",
+    "fetched_at": "2026-08-23T16:55:06+00:00",
     "filter_window_hours": 24,
-    "total_count": 17,
+    "total_count": 18,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260824013911_20260824013623_VXSE5k_1",
+      "time": "2026-08-23T16:36:00+00:00",
+      "time_jst": "2026-08-24T01:36:00+09:00",
+      "lat": 42.2,
+      "lon": 142.9,
+      "magnitude": 4.0,
+      "depth_km": 60.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Eastern Hidaka Region, Hokkaido",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20260823224904_20260823224502_VXSE5k_1",
       "time": "2026-08-23T13:45:00+00:00",
