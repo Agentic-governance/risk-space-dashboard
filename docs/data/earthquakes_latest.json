@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-23T17:18:46+00:00",
+    "fetched_at": "2026-08-23T17:48:13+00:00",
     "filter_window_hours": 24,
-    "total_count": 11,
+    "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -147,20 +147,6 @@
       "location_name": "Northern Osaka Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.3
-    },
-    {
-      "event_id": "20260823024943_20260823024709_VXSE5k_1",
-      "time": "2026-08-22T17:47:00+00:00",
-      "time_jst": "2026-08-23T02:47:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 3.1,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
