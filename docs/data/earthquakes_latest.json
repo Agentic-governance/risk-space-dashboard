@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-23T22:49:33+00:00",
+    "fetched_at": "2026-08-23T23:17:26+00:00",
     "filter_window_hours": 24,
     "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260824081550_20260824081215_VXSE5k_1",
+      "time": "2026-08-23T23:12:00+00:00",
+      "time_jst": "2026-08-24T08:12:00+09:00",
+      "lat": 32.6,
+      "lon": 130.7,
+      "magnitude": 2.2,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260824073527_20260824073240_VXSE5k_1",
       "time": "2026-08-23T22:32:00+00:00",
@@ -159,20 +173,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260823075923_20260823075637_VXSE5k_1",
-      "time": "2026-08-22T22:56:00+00:00",
-      "time_jst": "2026-08-23T07:56:00+09:00",
-      "lat": 37.3,
-      "lon": 136.8,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Noto, Ishikawa Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
