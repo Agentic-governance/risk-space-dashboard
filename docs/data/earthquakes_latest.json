@@ -2,12 +2,68 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-23T13:15:00+00:00",
+    "fetched_at": "2026-08-23T13:56:35+00:00",
     "filter_window_hours": 24,
-    "total_count": 14,
+    "total_count": 17,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260823224904_20260823224502_VXSE5k_1",
+      "time": "2026-08-23T13:45:00+00:00",
+      "time_jst": "2026-08-23T22:45:00+09:00",
+      "lat": 41.8,
+      "lon": 142.9,
+      "magnitude": 6.0,
+      "depth_km": 40.0,
+      "max_shindo_raw": "4",
+      "max_shindo": 4,
+      "location_name": "Off the Coast of Urakawa",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.3
+    },
+    {
+      "event_id": "20260823224804_20260823224502_VXSE52_0",
+      "time": "2026-08-23T13:45:00+00:00",
+      "time_jst": "2026-08-23T22:45:00+09:00",
+      "lat": 41.8,
+      "lon": 142.9,
+      "magnitude": 6.0,
+      "depth_km": 40.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Off the Coast of Urakawa",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.1
+    },
+    {
+      "event_id": "20260823224732_20260823224502_VXSE51_0",
+      "time": "2026-08-23T13:45:00+00:00",
+      "time_jst": "2026-08-23T22:45:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "4",
+      "max_shindo": 4,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.2
+    },
+    {
+      "event_id": "20260823224632_20260823224502_VXSE51_0",
+      "time": "2026-08-23T13:45:00+00:00",
+      "time_jst": "2026-08-23T22:45:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "4",
+      "max_shindo": 4,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.2
+    },
     {
       "event_id": "20260823193039_20260823192821_VXSE5k_1",
       "time": "2026-08-23T10:28:00+00:00",
@@ -189,20 +245,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260822224909_20260822224620_VXSE5k_1",
-      "time": "2026-08-22T13:46:00+00:00",
-      "time_jst": "2026-08-22T22:46:00+09:00",
-      "lat": 43.0,
-      "lon": 145.4,
-      "magnitude": 2.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Kushiro",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.1
     }
   ]
 }
