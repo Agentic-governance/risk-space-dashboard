@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-23T22:15:53+00:00",
+    "fetched_at": "2026-08-23T22:49:33+00:00",
     "filter_window_hours": 24,
-    "total_count": 11,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260824073527_20260824073240_VXSE5k_1",
+      "time": "2026-08-23T22:32:00+00:00",
+      "time_jst": "2026-08-24T07:32:00+09:00",
+      "lat": 34.1,
+      "lon": 140.3,
+      "magnitude": 3.8,
+      "depth_km": 30.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the south Coast of Boso Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20260824040939_20260824040526_VXSE5k_1",
       "time": "2026-08-23T19:05:00+00:00",
