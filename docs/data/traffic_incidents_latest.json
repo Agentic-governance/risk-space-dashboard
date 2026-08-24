@@ -6,8 +6,8 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-24T08:15:03+00:00",
-    "fetched_at_jst": "2026-08-24T17:15:03+09:00",
+    "fetched_at": "2026-08-24T09:16:59+00:00",
+    "fetched_at_jst": "2026-08-24T18:16:59+09:00",
     "total_count": 13,
     "source_counts": {
       "yahoo_transit": 10,
@@ -32,7 +32,7 @@
       "description": "青梅線内で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -46,7 +46,7 @@
       "description": "羽村駅で発生した人身事故の影響で...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -60,7 +60,7 @@
       "description": "潮見駅で発生した人身事故の影響で...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -74,7 +74,7 @@
       "description": "京葉線内で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -85,10 +85,10 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "踏切事故の影響で、列車に遅れが出...",
+      "description": "踏切事故の影響で、列車に遅れや運...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -102,7 +102,7 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -116,7 +116,7 @@
       "description": "大雨災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -130,7 +130,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -144,7 +144,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -158,7 +158,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-24T08:15:03+00:00",
+      "occurred_at": "2026-08-24T09:16:59+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
