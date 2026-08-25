@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-25T19:58:55+00:00",
+    "fetched_at": "2026-08-25T20:22:07+00:00",
     "filter_window_hours": 24,
-    "total_count": 14,
+    "total_count": 15,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260826050008_20260825184000_VXSE5e_4",
+      "time": "2026-08-25T09:40:00+00:00",
+      "time_jst": "2026-08-25T18:40:00+09:00",
+      "lat": -15.4,
+      "lon": 167.8,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "South Pacific Ocean",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.0
+    },
     {
       "event_id": "20260826044934_20260826044654_VXSE5k_1",
       "time": "2026-08-25T19:46:00+00:00",
