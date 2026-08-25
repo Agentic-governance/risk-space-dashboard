@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-25T09:10:59+00:00",
+    "fetched_at": "2026-08-25T10:03:53+00:00",
     "filter_window_hours": 24,
-    "total_count": 11,
+    "total_count": 13,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260825181141_20260825180733_VXSE5k_1",
+      "time": "2026-08-25T09:07:00+00:00",
+      "time_jst": "2026-08-25T18:07:00+09:00",
+      "lat": 43.1,
+      "lon": 145.7,
+      "magnitude": 4.8,
+      "depth_km": 80.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.55
+    },
+    {
+      "event_id": "20260825181021_20260825180733_VXSE52_0",
+      "time": "2026-08-25T09:07:00+00:00",
+      "time_jst": "2026-08-25T18:07:00+09:00",
+      "lat": 43.1,
+      "lon": 145.7,
+      "magnitude": 4.8,
+      "depth_km": 80.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260825180904_20260825180733_VXSE51_0",
       "time": "2026-08-25T09:07:00+00:00",
