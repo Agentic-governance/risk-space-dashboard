@@ -6,15 +6,15 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-08-25T10:03:57+00:00",
-    "fetched_at_jst": "2026-08-25T19:03:57+09:00",
-    "total_count": 8,
+    "fetched_at": "2026-08-25T10:32:33+00:00",
+    "fetched_at_jst": "2026-08-25T19:32:33+09:00",
+    "total_count": 9,
     "source_counts": {
-      "yahoo_transit": 5,
+      "yahoo_transit": 6,
       "nhk_rss": 3
     },
     "type_counts": {
-      "accident": 4,
+      "accident": 5,
       "disaster": 3,
       "congestion": 1
     },
@@ -29,15 +29,29 @@
       "incident_type": "accident",
       "severity": 3,
       "road_name": "",
-      "description": "事故・遅延情報はありません",
+      "description": "馬喰町駅で発生した人身事故の影響...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-25T10:03:57+00:00",
+      "occurred_at": "2026-08-25T10:32:33+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260825_0001",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "accident",
+      "severity": 3,
+      "road_name": "",
+      "description": "事故・遅延情報はありません",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-08-25T10:32:33+00:00",
+      "url": "",
+      "traffic_multiplier": 1.6
+    },
+    {
+      "event_id": "traffic_20260825_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -46,12 +60,12 @@
       "description": "大雨災害の影響で、里見〜上総中野...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-25T10:03:57+00:00",
+      "occurred_at": "2026-08-25T10:32:33+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260825_0002",
+      "event_id": "traffic_20260825_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -60,12 +74,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-25T10:03:57+00:00",
+      "occurred_at": "2026-08-25T10:32:33+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260825_0003",
+      "event_id": "traffic_20260825_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -74,12 +88,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-25T10:03:57+00:00",
+      "occurred_at": "2026-08-25T10:32:33+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260825_0004",
+      "event_id": "traffic_20260825_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -88,12 +102,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-08-25T10:03:57+00:00",
+      "occurred_at": "2026-08-25T10:32:33+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20260825_0005",
+      "event_id": "traffic_20260825_0006",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -107,7 +121,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20260825_0006",
+      "event_id": "traffic_20260825_0007",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
@@ -121,7 +135,7 @@
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20260825_0007",
+      "event_id": "traffic_20260825_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
