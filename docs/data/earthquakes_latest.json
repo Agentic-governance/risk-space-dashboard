@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-26T05:11:09+00:00",
+    "fetched_at": "2026-08-26T07:43:22+00:00",
     "filter_window_hours": 24,
-    "total_count": 22,
+    "total_count": 21,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260826163621_20260826163246_VXSE5k_1",
+      "time": "2026-08-26T07:32:00+00:00",
+      "time_jst": "2026-08-26T16:32:00+09:00",
+      "lat": 44.5,
+      "lon": 146.7,
+      "magnitude": 4.6,
+      "depth_km": 160.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Etorofu Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260826133619_20260826133337_VXSE5k_1",
       "time": "2026-08-26T04:33:00+00:00",
@@ -287,34 +301,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260825145314_20260825145000_VXSE5k_1",
-      "time": "2026-08-25T05:50:00+00:00",
-      "time_jst": "2026-08-25T14:50:00+09:00",
-      "lat": 32.3,
-      "lon": 130.5,
-      "magnitude": 1.5,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260825143237_20260825142933_VXSE5k_1",
-      "time": "2026-08-25T05:29:00+00:00",
-      "time_jst": "2026-08-25T14:29:00+09:00",
-      "lat": 26.6,
-      "lon": 127.9,
-      "magnitude": 3.6,
-      "depth_km": 30.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of Okinawa Main Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
     }
   ]
 }
