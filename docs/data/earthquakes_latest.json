@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-29T04:19:41+00:00",
+    "fetched_at": "2026-08-29T11:19:38+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260829185136_20260829184851_VXSE5k_1",
+      "time": "2026-08-29T09:48:00+00:00",
+      "time_jst": "2026-08-29T18:48:00+09:00",
+      "lat": 36.9,
+      "lon": 139.3,
+      "magnitude": 3.2,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Gunma Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260829140214_20260829135933_VXSE5k_1",
+      "time": "2026-08-29T04:59:00+00:00",
+      "time_jst": "2026-08-29T13:59:00+09:00",
+      "lat": 31.1,
+      "lon": 130.4,
+      "magnitude": 3.6,
+      "depth_km": 140.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the west Coast of Satsuma Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
     {
       "event_id": "20260829081732_20260829081458_VXSE5k_1",
       "time": "2026-08-28T23:14:00+00:00",
@@ -49,62 +77,6 @@
       "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260828191557_20260828191156_VXSE5k_1",
-      "time": "2026-08-28T10:11:00+00:00",
-      "time_jst": "2026-08-28T19:11:00+09:00",
-      "lat": 26.0,
-      "lon": 125.1,
-      "magnitude": 4.5,
-      "depth_km": 130.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the northwest Coast of Miyakojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260828181943_20260828181710_VXSE5k_1",
-      "time": "2026-08-28T09:17:00+00:00",
-      "time_jst": "2026-08-28T18:17:00+09:00",
-      "lat": 34.9,
-      "lon": 132.9,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Hiroshima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260828151241_20260828150958_VXSE5k_1",
-      "time": "2026-08-28T06:09:00+00:00",
-      "time_jst": "2026-08-28T15:09:00+09:00",
-      "lat": 32.4,
-      "lon": 130.5,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260828133443_20260828133142_VXSE5k_1",
-      "time": "2026-08-28T04:31:00+00:00",
-      "time_jst": "2026-08-28T13:31:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 2.3,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
