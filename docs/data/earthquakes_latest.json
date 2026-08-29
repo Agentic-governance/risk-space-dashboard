@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-28T23:14:50+00:00",
+    "fetched_at": "2026-08-29T04:19:41+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260829081732_20260829081458_VXSE5k_1",
+      "time": "2026-08-28T23:14:00+00:00",
+      "time_jst": "2026-08-29T08:14:00+09:00",
+      "lat": 41.3,
+      "lon": 139.5,
+      "magnitude": 3.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the west Coast of Aomori Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260829081443_20260829081037_VXSE5k_1",
+      "time": "2026-08-28T23:10:00+00:00",
+      "time_jst": "2026-08-29T08:10:00+09:00",
+      "lat": 39.6,
+      "lon": 143.4,
+      "magnitude": 4.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Sanriku",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.0
+    },
     {
       "event_id": "20260828233446_20260828233150_VXSE5k_1",
       "time": "2026-08-28T14:31:00+00:00",
@@ -75,20 +103,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260828085232_20260828084955_VXSE5k_1",
-      "time": "2026-08-27T23:49:00+00:00",
-      "time_jst": "2026-08-28T08:49:00+09:00",
-      "lat": 32.6,
-      "lon": 130.6,
-      "magnitude": 2.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
