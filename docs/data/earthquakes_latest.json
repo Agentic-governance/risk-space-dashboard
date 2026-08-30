@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-08-30T02:19:48+00:00",
+    "fetched_at": "2026-08-30T08:31:47+00:00",
     "filter_window_hours": 24,
     "total_count": 11,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260830141306_20260830141018_VXSE5k_1",
+      "time": "2026-08-30T05:10:00+00:00",
+      "time_jst": "2026-08-30T14:10:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 2.6,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260830111423_20260830111144_VXSE5k_1",
       "time": "2026-08-30T02:11:00+00:00",
@@ -147,20 +161,6 @@
       "location_name": "Northern Gunma Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260829140214_20260829135933_VXSE5k_1",
-      "time": "2026-08-29T04:59:00+00:00",
-      "time_jst": "2026-08-29T13:59:00+09:00",
-      "lat": 31.1,
-      "lon": 130.4,
-      "magnitude": 3.6,
-      "depth_km": 140.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the west Coast of Satsuma Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.15
     }
   ]
 }
