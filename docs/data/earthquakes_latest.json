@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-02T09:52:33+00:00",
+    "fetched_at": "2026-09-02T14:02:16+00:00",
     "filter_window_hours": 24,
-    "total_count": 12,
+    "total_count": 14,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260902225320_20260902225039_VXSE5k_1",
+      "time": "2026-09-02T13:50:00+00:00",
+      "time_jst": "2026-09-02T22:50:00+09:00",
+      "lat": 41.1,
+      "lon": 140.8,
+      "magnitude": 3.0,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Mutsu Bay",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260902191514_20260902191244_VXSE5k_1",
+      "time": "2026-09-02T10:12:00+00:00",
+      "time_jst": "2026-09-02T19:12:00+09:00",
+      "lat": 40.0,
+      "lon": 140.6,
+      "magnitude": 3.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Northern Inland of Akita Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260902172630_20260902172313_VXSE5k_1",
       "time": "2026-09-02T08:23:00+00:00",
