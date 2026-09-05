@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-05T13:42:46+00:00",
+    "fetched_at": "2026-09-05T16:28:54+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -105,20 +105,6 @@
       "location_name": "Adjacent Indonesia",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.0
-    },
-    {
-      "event_id": "20260904235523_20260904235244_VXSE5k_1",
-      "time": "2026-09-04T14:52:00+00:00",
-      "time_jst": "2026-09-04T23:52:00+09:00",
-      "lat": 42.8,
-      "lon": 144.7,
-      "magnitude": 3.5,
-      "depth_km": 50.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Kushiro",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
