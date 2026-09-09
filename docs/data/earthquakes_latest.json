@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-09T02:08:06+00:00",
+    "fetched_at": "2026-09-09T07:15:49+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260909150057_20260909145811_VXSE5k_1",
+      "time": "2026-09-09T05:58:00+00:00",
+      "time_jst": "2026-09-09T14:58:00+09:00",
+      "lat": 32.5,
+      "lon": 130.5,
+      "magnitude": 3.0,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20260909143033_20260909142740_VXSE5k_1",
+      "time": "2026-09-09T05:27:00+00:00",
+      "time_jst": "2026-09-09T14:27:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 2.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260909105910_20260909105553_VXSE5k_1",
       "time": "2026-09-09T01:55:00+00:00",
@@ -105,20 +133,6 @@
       "location_name": "Off the Coast of Miyagi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260908135756_20260908135456_VXSE5k_1",
-      "time": "2026-09-08T04:54:00+00:00",
-      "time_jst": "2026-09-08T13:54:00+09:00",
-      "lat": 32.5,
-      "lon": 130.5,
-      "magnitude": 3.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
