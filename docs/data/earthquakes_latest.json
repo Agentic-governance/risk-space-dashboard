@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-09T19:40:29+00:00",
+    "fetched_at": "2026-09-09T22:10:38+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -91,20 +91,6 @@
       "location_name": "Off the Coast of Kushiro",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260909052214_20260909051931_VXSE5k_1",
-      "time": "2026-09-08T20:19:00+00:00",
-      "time_jst": "2026-09-09T05:19:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 2.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
