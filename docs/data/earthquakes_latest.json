@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-10T05:04:04+00:00",
+    "fetched_at": "2026-09-10T09:28:56+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260910171809_20260910171528_VXSE5k_1",
+      "time": "2026-09-10T08:15:00+00:00",
+      "time_jst": "2026-09-10T17:15:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 3.1,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20260910115243_20260910114942_VXSE5k_1",
       "time": "2026-09-10T02:49:00+00:00",
@@ -63,48 +77,6 @@
       "location_name": "Adjacent Sea of​ Miyakojima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260909174052_20260909173819_VXSE5k_1",
-      "time": "2026-09-09T08:38:00+00:00",
-      "time_jst": "2026-09-09T17:38:00+09:00",
-      "lat": 40.0,
-      "lon": 140.6,
-      "magnitude": 2.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Inland of Akita Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260909150057_20260909145811_VXSE5k_1",
-      "time": "2026-09-09T05:58:00+00:00",
-      "time_jst": "2026-09-09T14:58:00+09:00",
-      "lat": 32.5,
-      "lon": 130.5,
-      "magnitude": 3.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260909143033_20260909142740_VXSE5k_1",
-      "time": "2026-09-09T05:27:00+00:00",
-      "time_jst": "2026-09-09T14:27:00+09:00",
-      "lat": 32.3,
-      "lon": 130.5,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
