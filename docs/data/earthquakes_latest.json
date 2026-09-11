@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-10T22:09:50+00:00",
+    "fetched_at": "2026-09-11T05:01:27+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260911101033_20260911100727_VXSE5k_1",
+      "time": "2026-09-11T01:07:00+00:00",
+      "time_jst": "2026-09-11T10:07:00+09:00",
+      "lat": 32.7,
+      "lon": 130.8,
+      "magnitude": 2.8,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260911021235_20260911020948_VXSE5k_1",
       "time": "2026-09-10T17:09:00+00:00",
@@ -77,48 +91,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260910115243_20260910114942_VXSE5k_1",
-      "time": "2026-09-10T02:49:00+00:00",
-      "time_jst": "2026-09-10T11:49:00+09:00",
-      "lat": 35.8,
-      "lon": 137.0,
-      "magnitude": 3.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Central and western Mino, Gifu Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260910102323_20260910102040_VXSE5k_1",
-      "time": "2026-09-10T01:20:00+00:00",
-      "time_jst": "2026-09-10T10:20:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260910081804_20260910081532_VXSE5k_1",
-      "time": "2026-09-09T23:15:00+00:00",
-      "time_jst": "2026-09-10T08:15:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 2.9,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
