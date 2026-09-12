@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-12T20:09:29+00:00",
+    "fetched_at": "2026-09-12T22:32:31+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260913053717_20260913053312_VXSE5k_1",
+      "time": "2026-09-12T20:33:00+00:00",
+      "time_jst": "2026-09-13T05:33:00+09:00",
+      "lat": 29.3,
+      "lon": 130.5,
+      "magnitude": 5.1,
+      "depth_km": 30.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the northeast Coast of Amami-Oshima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.5
+    },
     {
       "event_id": "20260913042129_20260913041849_VXSE5k_1",
       "time": "2026-09-12T19:18:00+00:00",
