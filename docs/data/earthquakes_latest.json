@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-17T15:28:26+00:00",
+    "fetched_at": "2026-09-17T19:13:13+00:00",
     "filter_window_hours": 24,
     "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260918030858_20260918030608_VXSE5k_1",
+      "time": "2026-09-17T18:06:00+00:00",
+      "time_jst": "2026-09-18T03:06:00+09:00",
+      "lat": 27.3,
+      "lon": 128.4,
+      "magnitude": 3.4,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Okinawa Main Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20260918020652_20260918020415_VXSE5k_1",
+      "time": "2026-09-17T17:04:00+00:00",
+      "time_jst": "2026-09-18T02:04:00+09:00",
+      "lat": 32.7,
+      "lon": 130.7,
+      "magnitude": 2.5,
+      "depth_km": 20.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.3
+    },
     {
       "event_id": "20260917224247_20260917224027_VXSE5k_1",
       "time": "2026-09-17T13:40:00+00:00",
@@ -61,34 +89,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Southern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260917034255_20260917034007_VXSE5k_1",
-      "time": "2026-09-16T18:40:00+00:00",
-      "time_jst": "2026-09-17T03:40:00+09:00",
-      "lat": 35.9,
-      "lon": 140.9,
-      "magnitude": 3.5,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20260917014836_20260917014532_VXSE5k_1",
-      "time": "2026-09-16T16:45:00+00:00",
-      "time_jst": "2026-09-17T01:45:00+09:00",
-      "lat": 40.2,
-      "lon": 142.3,
-      "magnitude": 3.8,
-      "depth_km": 40.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Iwate Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
     }
