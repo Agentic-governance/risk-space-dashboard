@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-17T05:41:55+00:00",
+    "fetched_at": "2026-09-17T10:42:56+00:00",
     "filter_window_hours": 24,
     "total_count": 10,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260917182737_20260917182451_VXSE5k_1",
+      "time": "2026-09-17T09:24:00+00:00",
+      "time_jst": "2026-09-17T18:24:00+09:00",
+      "lat": 32.4,
+      "lon": 130.5,
+      "magnitude": 2.3,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260917061425_20260917061143_VXSE5k_1",
       "time": "2026-09-16T21:11:00+00:00",
@@ -131,20 +145,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260916172411_20260916172127_VXSE5k_1",
-      "time": "2026-09-16T08:21:00+00:00",
-      "time_jst": "2026-09-16T17:21:00+09:00",
-      "lat": 36.8,
-      "lon": 139.4,
-      "magnitude": 2.7,
-      "depth_km": 0.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Northern Tochigi Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
