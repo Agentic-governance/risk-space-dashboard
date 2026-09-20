@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-20T07:55:08+00:00",
+    "fetched_at": "2026-09-20T16:43:41+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -77,62 +77,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260919212626_20260919212328_VXSE5k_1",
-      "time": "2026-09-19T12:23:00+00:00",
-      "time_jst": "2026-09-19T21:23:00+09:00",
-      "lat": 25.0,
-      "lon": 125.3,
-      "magnitude": 3.9,
-      "depth_km": 60.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of​ Miyakojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20260919211056_20260919210716_VXSE5k_1",
-      "time": "2026-09-19T12:07:00+00:00",
-      "time_jst": "2026-09-19T21:07:00+09:00",
-      "lat": 32.3,
-      "lon": 129.7,
-      "magnitude": 4.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "Amakusanada Sea",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.05
-    },
-    {
-      "event_id": "20260919210943_20260919210716_VXSE52_0",
-      "time": "2026-09-19T12:07:00+00:00",
-      "time_jst": "2026-09-19T21:07:00+09:00",
-      "lat": 32.3,
-      "lon": 129.7,
-      "magnitude": 4.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Amakusanada Sea",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.0
-    },
-    {
-      "event_id": "20260919210900_20260919210716_VXSE51_0",
-      "time": "2026-09-19T12:07:00+00:00",
-      "time_jst": "2026-09-19T21:07:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "3",
-      "max_shindo": 3,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.05
     }
   ]
 }
