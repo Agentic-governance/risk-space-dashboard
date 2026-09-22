@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-22T20:24:48+00:00",
+    "fetched_at": "2026-09-22T23:10:47+00:00",
     "filter_window_hours": 24,
     "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260923065427_20260923065118_VXSE5k_1",
+      "time": "2026-09-22T21:51:00+00:00",
+      "time_jst": "2026-09-23T06:51:00+09:00",
+      "lat": 32.2,
+      "lon": 130.4,
+      "magnitude": 2.2,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260923023607_20260923023348_VXSE5k_1",
       "time": "2026-09-22T17:33:00+00:00",
@@ -119,20 +133,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260922073302_20260922073003_VXSE5k_1",
-      "time": "2026-09-21T22:30:00+00:00",
-      "time_jst": "2026-09-22T07:30:00+09:00",
-      "lat": 37.5,
-      "lon": 142.1,
-      "magnitude": 4.5,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
     }
   ]
 }
