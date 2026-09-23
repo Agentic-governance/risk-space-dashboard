@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-23T07:00:12+00:00",
+    "fetched_at": "2026-09-23T17:26:00+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260924013603_20260924013305_VXSE5k_1",
+      "time": "2026-09-23T16:33:00+00:00",
+      "time_jst": "2026-09-24T01:33:00+09:00",
+      "lat": 32.2,
+      "lon": 130.4,
+      "magnitude": 2.2,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260924013345_20260924013045_VXSE5k_1",
+      "time": "2026-09-23T16:30:00+00:00",
+      "time_jst": "2026-09-24T01:30:00+09:00",
+      "lat": 24.7,
+      "lon": 125.4,
+      "magnitude": 3.3,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of​ Miyakojima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20260923093012_20260923092747_VXSE5k_1",
       "time": "2026-09-23T00:27:00+00:00",
@@ -49,48 +77,6 @@
       "location_name": "Off the Coast of Akita Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.3
-    },
-    {
-      "event_id": "20260922215339_20260922215120_VXSE5k_1",
-      "time": "2026-09-22T12:51:00+00:00",
-      "time_jst": "2026-09-22T21:51:00+09:00",
-      "lat": 32.3,
-      "lon": 130.5,
-      "magnitude": 2.5,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260922195104_20260922194629_VXSE5k_1",
-      "time": "2026-09-22T10:46:00+00:00",
-      "time_jst": "2026-09-22T19:46:00+09:00",
-      "lat": 29.0,
-      "lon": 128.7,
-      "magnitude": 4.9,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the northwest Coast of Amami- Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260922185137_20260922184907_VXSE5k_1",
-      "time": "2026-09-22T09:49:00+00:00",
-      "time_jst": "2026-09-22T18:49:00+09:00",
-      "lat": 27.6,
-      "lon": 128.9,
-      "magnitude": 3.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Amami-Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
