@@ -6,16 +6,16 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-09-24T07:00:36+00:00",
-    "fetched_at_jst": "2026-09-24T16:00:36+09:00",
+    "fetched_at": "2026-09-24T17:30:30+00:00",
+    "fetched_at_jst": "2026-09-25T02:30:30+09:00",
     "total_count": 14,
     "source_counts": {
       "yahoo_transit": 11,
       "nhk_rss": 3
     },
     "type_counts": {
-      "disaster": 9,
       "accident": 4,
+      "disaster": 9,
       "congestion": 1
     },
     "description": "Real-time road traffic incidents in Japan. Aggregated from Yahoo!道路交通情報, Yahoo!トランジット, NHK RSS (cat7), and MLIT. traffic_multiplier reflects incident impact on local risk model.",
@@ -26,15 +26,15 @@
       "event_id": "traffic_20260924_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
-      "incident_type": "disaster",
-      "severity": 4,
+      "incident_type": "accident",
+      "severity": 3,
       "road_name": "",
-      "description": "成田線内での台風災害の影響で、2...",
+      "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
-      "traffic_multiplier": 2.4
+      "traffic_multiplier": 1.6
     },
     {
       "event_id": "traffic_20260924_0001",
@@ -43,29 +43,15 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風災害の影響で、25日の終日、...",
+      "description": "成田線内での台風災害の影響で、2...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
       "event_id": "traffic_20260924_0002",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "accident",
-      "severity": 3,
-      "road_name": "",
-      "description": "事故・遅延情報はありません",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
-      "url": "",
-      "traffic_multiplier": 1.6
-    },
-    {
-      "event_id": "traffic_20260924_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -74,7 +60,21 @@
       "description": "台風災害の影響で、榎戸〜成東駅間...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
+      "url": "",
+      "traffic_multiplier": 2.4
+    },
+    {
+      "event_id": "traffic_20260924_0003",
+      "layer": "traffic",
+      "source": "yahoo_transit",
+      "incident_type": "disaster",
+      "severity": 4,
+      "road_name": "",
+      "description": "台風災害の影響で、姉ケ崎〜安房鴨...",
+      "lat": null,
+      "lon": null,
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -85,10 +85,10 @@
       "incident_type": "disaster",
       "severity": 4,
       "road_name": "",
-      "description": "台風災害の影響で、姉ケ崎〜安房鴨...",
+      "description": "台風災害の影響で、25日始発から...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -102,7 +102,7 @@
       "description": "台風災害の影響で、佐原〜銚子駅間...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -116,7 +116,7 @@
       "description": "台風災害の影響で、運転を見合わせ...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -130,7 +130,7 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -144,7 +144,7 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
@@ -158,7 +158,7 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
@@ -172,7 +172,7 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-09-24T07:00:36+00:00",
+      "occurred_at": "2026-09-24T17:30:30+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
