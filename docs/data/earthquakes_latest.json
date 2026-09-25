@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-25T08:07:42+00:00",
+    "fetched_at": "2026-09-25T14:05:12+00:00",
     "filter_window_hours": 24,
-    "total_count": 7,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20260925170816_20260925170457_VXSE5k_1",
+      "time": "2026-09-25T08:04:00+00:00",
+      "time_jst": "2026-09-25T17:04:00+09:00",
+      "lat": 32.6,
+      "lon": 130.7,
+      "magnitude": 2.0,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260925131538_20260925131340_VXSE5k_1",
       "time": "2026-09-25T04:11:00+00:00",
@@ -49,62 +63,6 @@
       "location_name": "Aizu,  Fukushima Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260924224839_20260924224618_VXSE5k_1",
-      "time": "2026-09-24T13:46:00+00:00",
-      "time_jst": "2026-09-24T22:46:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 2.7,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20260924224106_20260924223829_VXSE5k_1",
-      "time": "2026-09-24T13:38:00+00:00",
-      "time_jst": "2026-09-24T22:38:00+09:00",
-      "lat": 32.5,
-      "lon": 130.6,
-      "magnitude": 3.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20260924213330_20260924213048_VXSE5k_1",
-      "time": "2026-09-24T12:30:00+00:00",
-      "time_jst": "2026-09-24T21:30:00+09:00",
-      "lat": 38.2,
-      "lon": 141.7,
-      "magnitude": 4.1,
-      "depth_km": 50.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Miyagi Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260924173016_20260924172735_VXSE5k_1",
-      "time": "2026-09-24T08:27:00+00:00",
-      "time_jst": "2026-09-24T17:27:00+09:00",
-      "lat": 35.7,
-      "lon": 140.6,
-      "magnitude": 3.6,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northeastern Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
