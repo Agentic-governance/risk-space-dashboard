@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-29T15:18:53+00:00",
+    "fetched_at": "2026-09-29T20:10:33+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -49,76 +49,6 @@
       "location_name": "Southern Wakayama Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.3
-    },
-    {
-      "event_id": "20260929045414_20260929044513_VXSE5k_2",
-      "time": "2026-09-28T19:45:00+00:00",
-      "time_jst": "2026-09-29T04:45:00+09:00",
-      "lat": 36.1,
-      "lon": 139.9,
-      "magnitude": 4.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "Southern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260929044917_20260929044513_VXSE5k_1",
-      "time": "2026-09-28T19:45:00+00:00",
-      "time_jst": "2026-09-29T04:45:00+09:00",
-      "lat": 36.1,
-      "lon": 139.9,
-      "magnitude": 4.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "Southern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20260929044752_20260929044513_VXSE52_0",
-      "time": "2026-09-28T19:45:00+00:00",
-      "time_jst": "2026-09-29T04:45:00+09:00",
-      "lat": 36.1,
-      "lon": 139.9,
-      "magnitude": 4.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": null,
-      "max_shindo": null,
-      "location_name": "Southern Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20260929044743_20260929044513_VXSE51_0",
-      "time": "2026-09-28T19:45:00+00:00",
-      "time_jst": "2026-09-29T04:45:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
-    },
-    {
-      "event_id": "20260929044643_20260929044513_VXSE51_0",
-      "time": "2026-09-28T19:45:00+00:00",
-      "time_jst": "2026-09-29T04:45:00+09:00",
-      "lat": null,
-      "lon": null,
-      "magnitude": null,
-      "depth_km": null,
-      "max_shindo_raw": "4",
-      "max_shindo": 4,
-      "location_name": "",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.2
     }
   ]
 }
