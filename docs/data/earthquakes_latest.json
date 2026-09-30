@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-09-30T09:14:02+00:00",
+    "fetched_at": "2026-09-30T16:06:54+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261001010121_20261001005844_VXSE5k_1",
+      "time": "2026-09-30T15:58:00+00:00",
+      "time_jst": "2026-10-01T00:58:00+09:00",
+      "lat": 37.4,
+      "lon": 139.4,
+      "magnitude": 2.9,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Aizu,  Fukushima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260930213124_20260930212814_VXSE5k_1",
+      "time": "2026-09-30T12:28:00+00:00",
+      "time_jst": "2026-09-30T21:28:00+09:00",
+      "lat": 29.7,
+      "lon": 129.8,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20260930184930_20260930184627_VXSE5k_1",
+      "time": "2026-09-30T09:46:00+00:00",
+      "time_jst": "2026-09-30T18:46:00+09:00",
+      "lat": 29.7,
+      "lon": 129.8,
+      "magnitude": 2.7,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20260930140613_20260930140037_VXSE5k_1",
       "time": "2026-09-30T05:00:00+00:00",
@@ -49,20 +91,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.05
-    },
-    {
-      "event_id": "20260929225133_20260929224843_VXSE5k_1",
-      "time": "2026-09-29T13:48:00+00:00",
-      "time_jst": "2026-09-29T22:48:00+09:00",
-      "lat": 35.7,
-      "lon": 140.6,
-      "magnitude": 3.0,
-      "depth_km": 50.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northeastern Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
