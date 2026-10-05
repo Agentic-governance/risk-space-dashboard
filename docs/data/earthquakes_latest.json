@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-05T02:17:09+00:00",
+    "fetched_at": "2026-10-05T09:24:36+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261005124215_20261005123857_VXSE5k_1",
+      "time": "2026-10-05T03:39:00+00:00",
+      "time_jst": "2026-10-05T12:39:00+09:00",
+      "lat": 32.0,
+      "lon": 130.2,
+      "magnitude": 2.0,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Satsuma Region, Kagoshima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261005092107_20261005091811_VXSE5k_1",
       "time": "2026-10-05T00:18:00+00:00",
@@ -85,34 +99,6 @@
       "lat": 32.4,
       "lon": 130.5,
       "magnitude": 2.8,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261004132312_20261004131956_VXSE5k_1",
-      "time": "2026-10-04T04:19:00+00:00",
-      "time_jst": "2026-10-04T13:19:00+09:00",
-      "lat": 34.8,
-      "lon": 139.4,
-      "magnitude": 2.1,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of ​​Izu-Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261004113927_20261004113617_VXSE5k_1",
-      "time": "2026-10-04T02:36:00+00:00",
-      "time_jst": "2026-10-04T11:36:00+09:00",
-      "lat": 32.4,
-      "lon": 130.5,
-      "magnitude": 2.1,
       "depth_km": 10.0,
       "max_shindo_raw": "1",
       "max_shindo": 1,
