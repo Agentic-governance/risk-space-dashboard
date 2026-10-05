@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-04T23:27:24+00:00",
+    "fetched_at": "2026-10-05T02:17:09+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 8,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261005092107_20261005091811_VXSE5k_1",
+      "time": "2026-10-05T00:18:00+00:00",
+      "time_jst": "2026-10-05T09:18:00+09:00",
+      "lat": 32.8,
+      "lon": 130.8,
+      "magnitude": 2.6,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261005084204_20261005083916_VXSE5k_1",
+      "time": "2026-10-04T23:39:00+00:00",
+      "time_jst": "2026-10-05T08:39:00+09:00",
+      "lat": 28.7,
+      "lon": 129.0,
+      "magnitude": 3.8,
+      "depth_km": 90.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
     {
       "event_id": "20261005073042_20261005072814_VXSE5k_1",
       "time": "2026-10-04T22:28:00+00:00",
@@ -91,48 +119,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261004095436_20261004095203_VXSE5k_1",
-      "time": "2026-10-04T00:52:00+00:00",
-      "time_jst": "2026-10-04T09:52:00+09:00",
-      "lat": 37.2,
-      "lon": 136.8,
-      "magnitude": 2.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Noto, Ishikawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261004090108_20261004085824_VXSE5k_1",
-      "time": "2026-10-03T23:58:00+00:00",
-      "time_jst": "2026-10-04T08:58:00+09:00",
-      "lat": 32.7,
-      "lon": 130.7,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261004084900_20261004084522_VXSE5k_1",
-      "time": "2026-10-03T23:45:00+00:00",
-      "time_jst": "2026-10-04T08:45:00+09:00",
-      "lat": 24.8,
-      "lon": 125.4,
-      "magnitude": 3.9,
-      "depth_km": 50.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of​ Miyakojima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
