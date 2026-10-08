@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-08T01:32:45+00:00",
+    "fetched_at": "2026-10-08T07:46:06+00:00",
     "filter_window_hours": 24,
-    "total_count": 11,
+    "total_count": 13,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261008133300_20261008133018_VXSE5k_1",
+      "time": "2026-10-08T04:30:00+00:00",
+      "time_jst": "2026-10-08T13:30:00+09:00",
+      "lat": 43.0,
+      "lon": 145.8,
+      "magnitude": 3.8,
+      "depth_km": 30.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
+    {
+      "event_id": "20261008132547_20261008132305_VXSE5k_1",
+      "time": "2026-10-08T04:23:00+00:00",
+      "time_jst": "2026-10-08T13:23:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 3.0,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20261008114601_20261008114320_VXSE5k_1",
+      "time": "2026-10-08T02:43:00+00:00",
+      "time_jst": "2026-10-08T11:43:00+09:00",
+      "lat": 30.0,
+      "lon": 130.4,
+      "magnitude": 3.7,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20261008071752_20261008071415_VXSE5k_1",
       "time": "2026-10-07T22:14:00+00:00",
@@ -147,20 +189,6 @@
       "location_name": "",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.0
-    },
-    {
-      "event_id": "20261007160547_20261007160305_VXSE5k_1",
-      "time": "2026-10-07T07:03:00+00:00",
-      "time_jst": "2026-10-07T16:03:00+09:00",
-      "lat": 29.7,
-      "lon": 130.5,
-      "magnitude": 3.5,
-      "depth_km": 60.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the northeast Coast of Amami-Oshima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
