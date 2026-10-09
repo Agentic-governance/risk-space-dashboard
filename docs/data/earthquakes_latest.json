@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-09T19:21:23+00:00",
+    "fetched_at": "2026-10-09T23:28:10+00:00",
     "filter_window_hours": 24,
-    "total_count": 8,
+    "total_count": 9,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261010074623_20261010074306_VXSE5k_1",
+      "time": "2026-10-09T22:43:00+00:00",
+      "time_jst": "2026-10-10T07:43:00+09:00",
+      "lat": 32.2,
+      "lon": 130.4,
+      "magnitude": 2.2,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261010073723_20261010073407_VXSE5k_1",
+      "time": "2026-10-09T22:34:00+00:00",
+      "time_jst": "2026-10-10T07:34:00+09:00",
+      "lat": 32.2,
+      "lon": 130.4,
+      "magnitude": 1.8,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261010043055_20261010042723_VXSE5k_1",
+      "time": "2026-10-09T19:27:00+00:00",
+      "time_jst": "2026-10-10T04:27:00+09:00",
+      "lat": 32.2,
+      "lon": 130.4,
+      "magnitude": 1.8,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261010035024_20261010025608_VXSE5e_2",
       "time": "2026-10-09T17:56:00+00:00",
@@ -91,34 +133,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20261009071738_20261009071419_VXSE5k_1",
-      "time": "2026-10-08T22:14:00+00:00",
-      "time_jst": "2026-10-09T07:14:00+09:00",
-      "lat": 43.2,
-      "lon": 145.7,
-      "magnitude": 3.3,
-      "depth_km": 60.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20261009042624_20261009042307_VXSE5k_1",
-      "time": "2026-10-08T19:23:00+00:00",
-      "time_jst": "2026-10-09T04:23:00+09:00",
-      "lat": 40.5,
-      "lon": 142.9,
-      "magnitude": 4.1,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the east Coast of Aomori Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
     }
   ]
 }
