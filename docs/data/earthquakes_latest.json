@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-12T02:37:09+00:00",
+    "fetched_at": "2026-10-12T10:04:16+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261012165402_20261012165120_VXSE5k_1",
+      "time": "2026-10-12T07:51:00+00:00",
+      "time_jst": "2026-10-12T16:51:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 2.9,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261012124812_20261012124510_VXSE5k_1",
+      "time": "2026-10-12T03:45:00+00:00",
+      "time_jst": "2026-10-12T12:45:00+09:00",
+      "lat": 42.5,
+      "lon": 144.3,
+      "magnitude": 4.0,
+      "depth_km": 70.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Kushiro",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261012100017_20261012095423_VXSE5k_1",
       "time": "2026-10-12T00:53:00+00:00",
@@ -49,20 +77,6 @@
       "location_name": "Off the east Coast of Chiba Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.6
-    },
-    {
-      "event_id": "20261011155351_20261011154917_VXSE5k_1",
-      "time": "2026-10-11T06:49:00+00:00",
-      "time_jst": "2026-10-11T15:49:00+09:00",
-      "lat": 32.0,
-      "lon": 131.4,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Plain Area of Southern Miyazaki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
