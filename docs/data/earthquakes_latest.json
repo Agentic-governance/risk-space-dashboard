@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-13T16:39:35+00:00",
+    "fetched_at": "2026-10-13T21:44:55+00:00",
     "filter_window_hours": 24,
     "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261014043619_20261014043336_VXSE5k_1",
+      "time": "2026-10-13T19:33:00+00:00",
+      "time_jst": "2026-10-14T04:33:00+09:00",
+      "lat": 32.0,
+      "lon": 130.1,
+      "magnitude": 2.6,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusanada Sea",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261013220813_20261013220530_VXSE5k_1",
       "time": "2026-10-13T13:05:00+00:00",
@@ -63,20 +77,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20261013022837_20261013022557_VXSE5k_1",
-      "time": "2026-10-12T17:25:00+00:00",
-      "time_jst": "2026-10-13T02:25:00+09:00",
-      "lat": 39.5,
-      "lon": 142.6,
-      "magnitude": 4.3,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Iwate Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
     }
   ]
 }
