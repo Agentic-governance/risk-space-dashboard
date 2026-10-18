@@ -2,12 +2,68 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-18T11:33:55+00:00",
+    "fetched_at": "2026-10-18T14:48:56+00:00",
     "filter_window_hours": 24,
-    "total_count": 3,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261018224900_20261018224626_VXSE5k_1",
+      "time": "2026-10-18T13:46:00+00:00",
+      "time_jst": "2026-10-18T22:46:00+09:00",
+      "lat": 32.4,
+      "lon": 130.5,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261018220038_20261018215804_VXSE5k_1",
+      "time": "2026-10-18T12:58:00+00:00",
+      "time_jst": "2026-10-18T21:58:00+09:00",
+      "lat": 37.2,
+      "lon": 140.6,
+      "magnitude": 3.3,
+      "depth_km": 80.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Nakadori, Fukushima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.15
+    },
+    {
+      "event_id": "20261018212059_20261018211808_VXSE5k_1",
+      "time": "2026-10-18T12:18:00+00:00",
+      "time_jst": "2026-10-18T21:18:00+09:00",
+      "lat": 30.0,
+      "lon": 130.0,
+      "magnitude": 2.0,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261018205634_20261018205359_VXSE5k_1",
+      "time": "2026-10-18T11:53:00+00:00",
+      "time_jst": "2026-10-18T20:53:00+09:00",
+      "lat": 32.3,
+      "lon": 131.9,
+      "magnitude": 3.1,
+      "depth_km": 30.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Hyuganada Sea",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.45
+    },
     {
       "event_id": "20261018164002_20261018163729_VXSE5k_1",
       "time": "2026-10-18T07:37:00+00:00",
@@ -33,20 +89,6 @@
       "max_shindo_raw": "2",
       "max_shindo": 2,
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261017235039_20261017234801_VXSE5k_1",
-      "time": "2026-10-17T14:48:00+00:00",
-      "time_jst": "2026-10-17T23:48:00+09:00",
-      "lat": 36.6,
-      "lon": 137.9,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Northern Nagano Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
