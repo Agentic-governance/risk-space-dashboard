@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-20T22:34:25+00:00",
+    "fetched_at": "2026-10-21T05:37:01+00:00",
     "filter_window_hours": 24,
-    "total_count": 2,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261021100944_20261021100437_VXSE5k_1",
+      "time": "2026-10-21T01:04:00+00:00",
+      "time_jst": "2026-10-21T10:04:00+09:00",
+      "lat": 35.8,
+      "lon": 140.1,
+      "magnitude": 4.0,
+      "depth_km": 70.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Northwestern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261021024434_20261021024058_VXSE5k_1",
       "time": "2026-10-20T17:40:00+00:00",
