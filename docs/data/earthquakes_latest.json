@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-22T23:52:20+00:00",
+    "fetched_at": "2026-10-23T02:32:17+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 6,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261023112108_20261023111746_VXSE5k_1",
+      "time": "2026-10-23T02:17:00+00:00",
+      "time_jst": "2026-10-23T11:17:00+09:00",
+      "lat": 26.6,
+      "lon": 141.9,
+      "magnitude": 4.6,
+      "depth_km": 20.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Adjacent Sea of​ Chichijima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.8
+    },
+    {
+      "event_id": "20261023103402_20261023103127_VXSE5k_1",
+      "time": "2026-10-23T01:31:00+00:00",
+      "time_jst": "2026-10-23T10:31:00+09:00",
+      "lat": 32.4,
+      "lon": 130.5,
+      "magnitude": 2.6,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261023044553_20261023043806_VXSE5k_1",
       "time": "2026-10-22T19:38:00+00:00",
