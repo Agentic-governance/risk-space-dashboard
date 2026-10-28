@@ -2,12 +2,96 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-28T15:40:54+00:00",
+    "fetched_at": "2026-10-28T20:46:55+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 14,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261029052523_20261029052239_VXSE5k_1",
+      "time": "2026-10-28T20:22:00+00:00",
+      "time_jst": "2026-10-29T05:22:00+09:00",
+      "lat": 35.7,
+      "lon": 140.7,
+      "magnitude": 3.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northeastern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20261029033537_20261029033230_VXSE5k_1",
+      "time": "2026-10-28T18:32:00+00:00",
+      "time_jst": "2026-10-29T03:32:00+09:00",
+      "lat": 35.7,
+      "lon": 140.7,
+      "magnitude": 4.4,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Northeastern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20261029024757_20261029024518_VXSE5k_1",
+      "time": "2026-10-28T17:45:00+00:00",
+      "time_jst": "2026-10-29T02:45:00+09:00",
+      "lat": 36.8,
+      "lon": 140.5,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20261029021003_20261029000759_VXSE61_0",
+      "time": "2026-10-28T15:07:00+00:00",
+      "time_jst": "2026-10-29T00:07:00+09:00",
+      "lat": 3543.3,
+      "lon": 14042.9,
+      "magnitude": 5.5,
+      "depth_km": 52.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Northeastern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.3
+    },
+    {
+      "event_id": "20261029010711_20261029010430_VXSE5k_1",
+      "time": "2026-10-28T16:04:00+00:00",
+      "time_jst": "2026-10-29T01:04:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 2.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261029005243_20261029005006_VXSE5k_1",
+      "time": "2026-10-28T15:50:00+00:00",
+      "time_jst": "2026-10-29T00:50:00+09:00",
+      "lat": 34.1,
+      "lon": 135.1,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Kiisuido Strait",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261029001604_20261029000759_VXSE5k_2",
       "time": "2026-10-28T15:07:00+00:00",
@@ -119,20 +203,6 @@
       "location_name": "Adjacent Sea of Amami-Oshima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20261028033718_20261028033204_VXSE5k_1",
-      "time": "2026-10-27T18:32:00+00:00",
-      "time_jst": "2026-10-28T03:32:00+09:00",
-      "lat": 32.2,
-      "lon": 130.4,
-      "magnitude": 2.2,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
