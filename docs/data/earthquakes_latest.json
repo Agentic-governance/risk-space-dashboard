@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-30T02:52:16+00:00",
+    "fetched_at": "2026-10-30T09:21:33+00:00",
     "filter_window_hours": 24,
-    "total_count": 1,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261030174906_20261030174600_VXSE5k_1",
+      "time": "2026-10-30T08:45:00+00:00",
+      "time_jst": "2026-10-30T17:45:00+09:00",
+      "lat": 43.3,
+      "lon": 146.3,
+      "magnitude": 4.2,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20261030140134_20261030135835_VXSE5k_1",
+      "time": "2026-10-30T04:58:00+00:00",
+      "time_jst": "2026-10-30T13:58:00+09:00",
+      "lat": 40.1,
+      "lon": 142.5,
+      "magnitude": 4.1,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Iwate Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20261030132701_20261030132410_VXSE5k_1",
+      "time": "2026-10-30T04:24:00+00:00",
+      "time_jst": "2026-10-30T13:24:00+09:00",
+      "lat": 38.2,
+      "lon": 141.7,
+      "magnitude": 4.1,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20261030011254_20261030010642_VXSE5k_1",
       "time": "2026-10-29T16:06:00+00:00",
