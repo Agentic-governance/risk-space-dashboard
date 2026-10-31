@@ -2,9 +2,9 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-31T17:31:32+00:00",
+    "fetched_at": "2026-10-31T20:36:40+00:00",
     "filter_window_hours": 24,
-    "total_count": 6,
+    "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
@@ -63,34 +63,6 @@
       "location_name": "Amakusanada Sea",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20261031052945_20261031052651_VXSE5k_1",
-      "time": "2026-10-30T20:26:00+00:00",
-      "time_jst": "2026-10-31T05:26:00+09:00",
-      "lat": 30.4,
-      "lon": 131.2,
-      "magnitude": 4.0,
-      "depth_km": 30.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Adjacent Sea of Tanegashima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20261031045709_20261031045401_VXSE5k_1",
-      "time": "2026-10-30T19:54:00+00:00",
-      "time_jst": "2026-10-31T04:54:00+09:00",
-      "lat": 32.7,
-      "lon": 130.8,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Kumamoto Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
     }
   ]
 }
