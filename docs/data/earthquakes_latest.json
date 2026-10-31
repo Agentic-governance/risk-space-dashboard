@@ -2,12 +2,82 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-10-31T20:36:40+00:00",
+    "fetched_at": "2026-10-31T23:56:10+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261101072222_20261101071547_VXSE5k_1",
+      "time": "2026-10-31T22:15:00+00:00",
+      "time_jst": "2026-11-01T07:15:00+09:00",
+      "lat": 33.7,
+      "lon": 137.1,
+      "magnitude": 6.1,
+      "depth_km": 350.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Off the southeast Coast of Mie Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.05
+    },
+    {
+      "event_id": "20261101071939_20261101071547_VXSE52_0",
+      "time": "2026-10-31T22:15:00+00:00",
+      "time_jst": "2026-11-01T07:15:00+09:00",
+      "lat": 33.7,
+      "lon": 137.1,
+      "magnitude": 6.1,
+      "depth_km": 350.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Off the southeast Coast of Mie Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 3.0
+    },
+    {
+      "event_id": "20261101071831_20261101071547_VXSE51_0",
+      "time": "2026-10-31T22:15:00+00:00",
+      "time_jst": "2026-11-01T07:15:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.05
+    },
+    {
+      "event_id": "20261101071317_20261101071028_VXSE5k_1",
+      "time": "2026-10-31T22:10:00+00:00",
+      "time_jst": "2026-11-01T07:10:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 2.8,
+      "depth_km": 0.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261101062318_20261101062040_VXSE5k_1",
+      "time": "2026-10-31T21:20:00+00:00",
+      "time_jst": "2026-11-01T06:20:00+09:00",
+      "lat": 35.9,
+      "lon": 137.8,
+      "magnitude": 2.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Southern Nagano Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261031152247_20261031151957_VXSE5k_1",
       "time": "2026-10-31T06:19:00+00:00",
@@ -35,34 +105,6 @@
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261031061819_20261031061524_VXSE5k_1",
-      "time": "2026-10-30T21:15:00+00:00",
-      "time_jst": "2026-10-31T06:15:00+09:00",
-      "lat": 30.3,
-      "lon": 131.2,
-      "magnitude": 4.0,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of Tanegashima Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20261031055031_20261031054730_VXSE5k_1",
-      "time": "2026-10-30T20:47:00+00:00",
-      "time_jst": "2026-10-31T05:47:00+09:00",
-      "lat": 32.0,
-      "lon": 130.1,
-      "magnitude": 3.0,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusanada Sea",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
