@@ -6,15 +6,14 @@
       "nhk_rss",
       "mlit_road"
     ],
-    "fetched_at": "2026-11-02T23:50:43+00:00",
-    "fetched_at_jst": "2026-11-03T08:50:43+09:00",
-    "total_count": 12,
+    "fetched_at": "2026-11-03T04:34:34+00:00",
+    "fetched_at_jst": "2026-11-03T13:34:34+09:00",
+    "total_count": 11,
     "source_counts": {
-      "yahoo_transit": 9,
+      "yahoo_transit": 8,
       "nhk_rss": 3
     },
     "type_counts": {
-      "dense_fog": 1,
       "accident": 4,
       "disaster": 6,
       "congestion": 1
@@ -24,21 +23,7 @@
   },
   "incidents": [
     {
-      "event_id": "traffic_20261102_0000",
-      "layer": "traffic",
-      "source": "yahoo_transit",
-      "incident_type": "dense_fog",
-      "severity": 2,
-      "road_name": "",
-      "description": "宇都宮線内での濃霧の影響で、一部...",
-      "lat": null,
-      "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
-      "url": "",
-      "traffic_multiplier": 1.5
-    },
-    {
-      "event_id": "traffic_20261102_0001",
+      "event_id": "traffic_20261103_0000",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -47,12 +32,12 @@
       "description": "事故・遅延情報はありません",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20261102_0002",
+      "event_id": "traffic_20261103_0001",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -61,12 +46,12 @@
       "description": "台風災害の影響で、姉ケ崎〜長浦駅...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20261102_0003",
+      "event_id": "traffic_20261103_0002",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -75,12 +60,12 @@
       "description": "台風災害の影響で、千葉〜大網駅間...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20261102_0004",
+      "event_id": "traffic_20261103_0003",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -89,12 +74,12 @@
       "description": "台風災害の影響で、久留里〜上総亀...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20261102_0005",
+      "event_id": "traffic_20261103_0004",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -103,12 +88,12 @@
       "description": "台風災害の影響で、上総牛久〜上総...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20261102_0006",
+      "event_id": "traffic_20261103_0005",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "accident",
@@ -117,12 +102,12 @@
       "description": "国吉〜上総中川駅間での脱線事故の...",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20261102_0007",
+      "event_id": "traffic_20261103_0006",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "disaster",
@@ -131,12 +116,12 @@
       "description": "天気アプリの決定版 Yahoo!天気・災害",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20261102_0008",
+      "event_id": "traffic_20261103_0007",
       "layer": "traffic",
       "source": "yahoo_transit",
       "incident_type": "congestion",
@@ -145,12 +130,12 @@
       "description": "渋滞をチェック Yahoo!道路交通情報",
       "lat": null,
       "lon": null,
-      "occurred_at": "2026-11-02T23:50:43+00:00",
+      "occurred_at": "2026-11-03T04:34:34+00:00",
       "url": "",
       "traffic_multiplier": 1.0
     },
     {
-      "event_id": "traffic_20261102_0009",
+      "event_id": "traffic_20261103_0008",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
@@ -164,7 +149,7 @@
       "traffic_multiplier": 1.6
     },
     {
-      "event_id": "traffic_20261102_0010",
+      "event_id": "traffic_20261103_0009",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "disaster",
@@ -178,7 +163,7 @@
       "traffic_multiplier": 2.4
     },
     {
-      "event_id": "traffic_20261102_0011",
+      "event_id": "traffic_20261103_0010",
       "layer": "traffic",
       "source": "nhk_rss",
       "incident_type": "accident",
