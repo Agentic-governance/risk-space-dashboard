@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-04T15:04:19+00:00",
+    "fetched_at": "2026-11-04T21:06:47+00:00",
     "filter_window_hours": 24,
-    "total_count": 4,
+    "total_count": 3,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261105043201_20261105042852_VXSE5k_1",
+      "time": "2026-11-04T19:28:00+00:00",
+      "time_jst": "2026-11-05T04:28:00+09:00",
+      "lat": 32.2,
+      "lon": 130.2,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Satsuma Region, Kagoshima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20261105042440_20261105042154_VXSE5k_1",
+      "time": "2026-11-04T19:21:00+00:00",
+      "time_jst": "2026-11-05T04:21:00+09:00",
+      "lat": 38.3,
+      "lon": 141.8,
+      "magnitude": 4.1,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
     {
       "event_id": "20261104073117_20261104072834_VXSE5k_1",
       "time": "2026-11-03T22:28:00+00:00",
@@ -21,48 +49,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261104053711_20261104053431_VXSE5k_1",
-      "time": "2026-11-03T20:34:00+00:00",
-      "time_jst": "2026-11-04T05:34:00+09:00",
-      "lat": 35.4,
-      "lon": 140.4,
-      "magnitude": 3.4,
-      "depth_km": 60.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the east Coast of Chiba Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
-    },
-    {
-      "event_id": "20261104051513_20261104051155_VXSE5k_1",
-      "time": "2026-11-03T20:11:00+00:00",
-      "time_jst": "2026-11-04T05:11:00+09:00",
-      "lat": 34.2,
-      "lon": 135.3,
-      "magnitude": 1.9,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Wakayama Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261104015246_20261104014852_VXSE5k_1",
-      "time": "2026-11-03T16:48:00+00:00",
-      "time_jst": "2026-11-04T01:48:00+09:00",
-      "lat": 24.3,
-      "lon": 141.3,
-      "magnitude": 5.4,
-      "depth_km": 150.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Adjacent Sea of​ Ioto Island",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.2
     }
   ]
 }
