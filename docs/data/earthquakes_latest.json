@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-08T19:56:21+00:00",
+    "fetched_at": "2026-11-08T23:22:33+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 11,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261109051950_20261109051637_VXSE5k_1",
+      "time": "2026-11-08T20:16:00+00:00",
+      "time_jst": "2026-11-09T05:16:00+09:00",
+      "lat": 38.3,
+      "lon": 141.9,
+      "magnitude": 4.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20261109051843_20261109051637_VXSE52_0",
+      "time": "2026-11-08T20:16:00+00:00",
+      "time_jst": "2026-11-09T05:16:00+09:00",
+      "lat": 38.3,
+      "lon": 141.9,
+      "magnitude": 4.5,
+      "depth_km": 50.0,
+      "max_shindo_raw": null,
+      "max_shindo": null,
+      "location_name": "Off the Coast of Miyagi Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20261109051808_20261109051637_VXSE51_0",
+      "time": "2026-11-08T20:16:00+00:00",
+      "time_jst": "2026-11-09T05:16:00+09:00",
+      "lat": null,
+      "lon": null,
+      "magnitude": null,
+      "depth_km": null,
+      "max_shindo_raw": "3",
+      "max_shindo": 3,
+      "location_name": "",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.05
+    },
     {
       "event_id": "20261109031851_20261109031529_VXSE5k_1",
       "time": "2026-11-08T18:15:00+00:00",
@@ -119,20 +161,6 @@
       "location_name": "Kumamoto Region, Kumamoto Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20261108074136_20261108073835_VXSE5k_1",
-      "time": "2026-11-07T22:38:00+00:00",
-      "time_jst": "2026-11-08T07:38:00+09:00",
-      "lat": 37.6,
-      "lon": 141.8,
-      "magnitude": 3.9,
-      "depth_km": 60.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.25
     }
   ]
 }
