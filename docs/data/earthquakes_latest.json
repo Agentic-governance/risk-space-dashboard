@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-12T02:42:21+00:00",
+    "fetched_at": "2026-11-12T10:33:23+00:00",
     "filter_window_hours": 24,
     "total_count": 4,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261112134933_20261112134643_VXSE5k_1",
+      "time": "2026-11-12T04:46:00+00:00",
+      "time_jst": "2026-11-12T13:46:00+09:00",
+      "lat": 29.7,
+      "lon": 129.8,
+      "magnitude": 2.6,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Adjacent Sea of Tokara Islands",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261112131053_20261112130734_VXSE5k_1",
+      "time": "2026-11-12T04:07:00+00:00",
+      "time_jst": "2026-11-12T13:07:00+09:00",
+      "lat": 40.3,
+      "lon": 143.7,
+      "magnitude": 4.7,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Sanriku",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.0
+    },
     {
       "event_id": "20261112021817_20261112021536_VXSE5k_1",
       "time": "2026-11-11T17:15:00+00:00",
@@ -35,34 +63,6 @@
       "location_name": "Tachibana Bay",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261111152458_20261111152156_VXSE5k_1",
-      "time": "2026-11-11T06:21:00+00:00",
-      "time_jst": "2026-11-11T15:21:00+09:00",
-      "lat": 33.0,
-      "lon": 131.1,
-      "magnitude": 2.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Aso Region, Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261111130021_20261111125704_VXSE5k_1",
-      "time": "2026-11-11T03:57:00+00:00",
-      "time_jst": "2026-11-11T12:57:00+09:00",
-      "lat": 36.3,
-      "lon": 141.7,
-      "magnitude": 4.6,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Ibaraki Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
     }
   ]
 }
