@@ -2,12 +2,54 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-15T02:22:28+00:00",
+    "fetched_at": "2026-11-15T09:45:40+00:00",
     "filter_window_hours": 24,
-    "total_count": 10,
+    "total_count": 12,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261115162547_20261115162317_VXSE5k_1",
+      "time": "2026-11-15T07:23:00+00:00",
+      "time_jst": "2026-11-15T16:23:00+09:00",
+      "lat": 32.5,
+      "lon": 130.6,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Kumamoto Region, Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
+    {
+      "event_id": "20261115140244_20261115140024_VXSE5k_1",
+      "time": "2026-11-15T05:00:00+00:00",
+      "time_jst": "2026-11-15T14:00:00+09:00",
+      "lat": 36.6,
+      "lon": 141.1,
+      "magnitude": 3.6,
+      "depth_km": 40.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Ibaraki Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
+    {
+      "event_id": "20261115131846_20261115131559_VXSE5k_1",
+      "time": "2026-11-15T04:16:00+00:00",
+      "time_jst": "2026-11-15T13:16:00+09:00",
+      "lat": 41.9,
+      "lon": 140.9,
+      "magnitude": 2.6,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Eastern Oshima Region, Hokkaido",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261115063357_20261115063113_VXSE5k_1",
       "time": "2026-11-14T21:31:00+00:00",
@@ -133,20 +175,6 @@
       "location_name": "Northern Wakayama Prefecture",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261114154205_20261114153905_VXSE5k_1",
-      "time": "2026-11-14T06:39:00+00:00",
-      "time_jst": "2026-11-14T15:39:00+09:00",
-      "lat": 43.0,
-      "lon": 146.3,
-      "magnitude": 4.2,
-      "depth_km": 30.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the southeast Coast of the Nemuro Peninsula",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
     }
   ]
 }
