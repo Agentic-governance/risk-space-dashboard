@@ -2,12 +2,40 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-17T02:16:47+00:00",
+    "fetched_at": "2026-11-17T11:00:57+00:00",
     "filter_window_hours": 24,
     "total_count": 5,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261117193624_20261117193302_VXSE5k_1",
+      "time": "2026-11-17T10:33:00+00:00",
+      "time_jst": "2026-11-17T19:33:00+09:00",
+      "lat": 40.6,
+      "lon": 143.7,
+      "magnitude": 4.5,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Off the Coast of Sanriku",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 2.0
+    },
+    {
+      "event_id": "20261117170308_20261117170035_VXSE5k_1",
+      "time": "2026-11-17T08:00:00+00:00",
+      "time_jst": "2026-11-17T17:00:00+09:00",
+      "lat": 35.7,
+      "lon": 140.7,
+      "magnitude": 3.1,
+      "depth_km": 50.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northeastern Chiba Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.25
+    },
     {
       "event_id": "20261117104306_20261117104020_VXSE5k_1",
       "time": "2026-11-17T01:40:00+00:00",
@@ -49,34 +77,6 @@
       "location_name": "Adjacent Sea of​ Miyakojima Island",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.45
-    },
-    {
-      "event_id": "20261116133148_20261116132858_VXSE5k_1",
-      "time": "2026-11-16T04:28:00+00:00",
-      "time_jst": "2026-11-16T13:28:00+09:00",
-      "lat": 35.3,
-      "lon": 139.0,
-      "magnitude": 2.8,
-      "depth_km": 0.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Eastern Shizuoka Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261116132902_20261116132447_VXSE5k_1",
-      "time": "2026-11-16T04:24:00+00:00",
-      "time_jst": "2026-11-16T13:24:00+09:00",
-      "lat": 37.3,
-      "lon": 137.0,
-      "magnitude": 5.1,
-      "depth_km": 280.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Noto, Ishikawa Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 2.2
     }
   ]
 }
