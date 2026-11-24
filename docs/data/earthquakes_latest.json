@@ -2,12 +2,26 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-24T01:26:33+00:00",
+    "fetched_at": "2026-11-24T11:18:36+00:00",
     "filter_window_hours": 24,
-    "total_count": 9,
+    "total_count": 7,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261124172351_20261124172105_VXSE5k_1",
+      "time": "2026-11-24T08:21:00+00:00",
+      "time_jst": "2026-11-24T17:21:00+09:00",
+      "lat": 34.1,
+      "lon": 134.4,
+      "magnitude": 3.1,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Northern Tokushima Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.65
+    },
     {
       "event_id": "20261124060325_20261124060030_VXSE5k_1",
       "time": "2026-11-23T21:00:00+00:00",
@@ -89,48 +103,6 @@
       "max_shindo_raw": "1",
       "max_shindo": 1,
       "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261123195329_20261123195036_VXSE5k_1",
-      "time": "2026-11-23T10:50:00+00:00",
-      "time_jst": "2026-11-23T19:50:00+09:00",
-      "lat": 32.3,
-      "lon": 130.5,
-      "magnitude": 2.3,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261123141720_20261123141411_VXSE5k_1",
-      "time": "2026-11-23T05:14:00+00:00",
-      "time_jst": "2026-11-23T14:14:00+09:00",
-      "lat": 36.1,
-      "lon": 137.7,
-      "magnitude": 3.9,
-      "depth_km": 0.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Central Nagano Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20261123130513_20261123130228_VXSE5k_1",
-      "time": "2026-11-23T04:02:00+00:00",
-      "time_jst": "2026-11-23T13:02:00+09:00",
-      "lat": 32.0,
-      "lon": 130.1,
-      "magnitude": 2.6,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Amakusanada Sea",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
     }
