@@ -2,12 +2,68 @@
   "metadata": {
     "source": "Japan Meteorological Agency (JMA)",
     "url": "https://www.jma.go.jp/bosai/quake/data/list.json",
-    "fetched_at": "2026-11-25T04:29:28+00:00",
+    "fetched_at": "2026-11-25T14:48:41+00:00",
     "filter_window_hours": 24,
-    "total_count": 12,
+    "total_count": 13,
     "description": "Earthquakes in the last 24 hours with coordinates, magnitude, observed shindo, and earthquake_multiplier for the risk model."
   },
   "earthquakes": [
+    {
+      "event_id": "20261125231709_20261125231427_VXSE5k_1",
+      "time": "2026-11-25T14:14:00+00:00",
+      "time_jst": "2026-11-25T23:14:00+09:00",
+      "lat": 32.4,
+      "lon": 130.4,
+      "magnitude": 2.4,
+      "depth_km": 10.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261125193558_20261125193243_VXSE5k_1",
+      "time": "2026-11-25T10:32:00+00:00",
+      "time_jst": "2026-11-25T19:32:00+09:00",
+      "lat": 32.4,
+      "lon": 130.5,
+      "magnitude": 1.7,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
+    {
+      "event_id": "20261125192207_20261125191853_VXSE5k_1",
+      "time": "2026-11-25T10:18:00+00:00",
+      "time_jst": "2026-11-25T19:18:00+09:00",
+      "lat": 24.4,
+      "lon": 123.0,
+      "magnitude": 4.3,
+      "depth_km": 50.0,
+      "max_shindo_raw": "2",
+      "max_shindo": 2,
+      "location_name": "Adjacent Sea of Yonagunijima Island",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.6
+    },
+    {
+      "event_id": "20261125164055_20261125163830_VXSE5k_1",
+      "time": "2026-11-25T07:38:00+00:00",
+      "time_jst": "2026-11-25T16:38:00+09:00",
+      "lat": 32.3,
+      "lon": 130.5,
+      "magnitude": 2.3,
+      "depth_km": 0.0,
+      "max_shindo_raw": "1",
+      "max_shindo": 1,
+      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
+      "source": "jma_quake_list",
+      "earthquake_multiplier": 1.5
+    },
     {
       "event_id": "20261125104616_20261125104240_VXSE5k_1",
       "time": "2026-11-25T01:42:00+00:00",
@@ -133,48 +189,6 @@
       "location_name": "Off the west Coast of Satsuma Peninsula",
       "source": "jma_quake_list",
       "earthquake_multiplier": 1.5
-    },
-    {
-      "event_id": "20261124211005_20261124210714_VXSE5k_1",
-      "time": "2026-11-24T12:07:00+00:00",
-      "time_jst": "2026-11-24T21:07:00+09:00",
-      "lat": 37.0,
-      "lon": 141.1,
-      "magnitude": 4.0,
-      "depth_km": 20.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Off the Coast of Fukushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.8
-    },
-    {
-      "event_id": "20261124210132_20261124205828_VXSE5k_1",
-      "time": "2026-11-24T11:58:00+00:00",
-      "time_jst": "2026-11-24T20:58:00+09:00",
-      "lat": 32.3,
-      "lon": 130.4,
-      "magnitude": 3.4,
-      "depth_km": 10.0,
-      "max_shindo_raw": "2",
-      "max_shindo": 2,
-      "location_name": "Amakusa and Ashikita Region,  Kumamoto Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
-    },
-    {
-      "event_id": "20261124172351_20261124172105_VXSE5k_1",
-      "time": "2026-11-24T08:21:00+00:00",
-      "time_jst": "2026-11-24T17:21:00+09:00",
-      "lat": 34.1,
-      "lon": 134.4,
-      "magnitude": 3.1,
-      "depth_km": 10.0,
-      "max_shindo_raw": "1",
-      "max_shindo": 1,
-      "location_name": "Northern Tokushima Prefecture",
-      "source": "jma_quake_list",
-      "earthquake_multiplier": 1.65
     }
   ]
 }
